@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #0A0A0A;
+  --color-accent: #C8973A;
+  --color-bg-base: #FAFAF8;
+  --color-text-main: #333333;
+  --color-text-muted: #888780;
+  
+  --font-syne: var(--font-syne), sans-serif;
+  --font-dm-sans: var(--font-dm-sans), sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #0A0A0A; /* Using dark theme directly as per 'premium' requirement */
+    --foreground: #FAFAF8;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-dm-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-syne);
+  font-weight: 700;
+}
+
+/* Content OS Components */
+.blog-trust-badge {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #0A0A0A 0%, #151515 100%);
+  border-radius: 12px;
+  border-left: 4px solid var(--color-accent);
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-right: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.blog-cta-block {
+  margin: 3.5rem 0;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #C8973A 0%, #A67C2E 100%);
+  border-radius: 16px;
+  color: #0A0A0A;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(200, 151, 58, 0.2);
+}
+
+.blog-cta-button {
+  display: inline-block;
+  background: #0A0A0A;
+  color: #FAFAF8;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.blog-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background: #151515;
+}
+
+.blog-faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: #0A0A0A;
+}
+
+.blog-faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 1.25rem;
+  background: rgba(255,255,255,0.02);
+  border: none;
+  font-weight: 600;
+  color: #FAFAF8;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.blog-faq-question:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.blog-faq-answer {
+  padding: 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}

@@ -1,0 +1,31 @@
+# Mohammad Fazil — Digital Consultant (LLM Index)
+
+> Senior Digital Consultant serving mid-size businesses in the UAE and Saudi Arabia. Specialist in SEO, Digital Marketing, AI Automation, and SaaS Development.
+
+## Core Identity
+- [Entity Home & About](/about) — Credentials, founding story, E-E-A-T signals, and strategic principles.
+- [Services Hub](/services) — Overview of the 7 core digital consulting pillars.
+
+## Service Deep-Dives (Truth Data)
+- [SEO Expert Page](/services/seo) — Local SEO, technical auditing, and GCC-specific strategies.
+- [Digital Marketing](/services/digital-marketing) — Full-funnel strategy for the Middle East market.
+- [Paid Ads](/services/paid-ads) — Performance-driven media buying (Search, Meta, Snap, TikTok).
+- [AI Automation](/services/ai-automation) — Workflow optimization and LLM integration for business efficiency.
+- [SaaS Development](/services/saas-development) — Scalable product engineering for GCC startups and SMEs.
+- [Web Development](/services/web-development) — High-performance, SEO-first conversion engines.
+- [Social Media](/services/social-media-management) — Organic authority building for UAE & KSA platforms.
+
+## Regional Context (Anti-Hallucination)
+- [Dubai Market](/locations/dubai) — Business districts, digital maturity, and platform dominance.
+- [Riyadh Market](/locations/riyadh) — Vision 2030 impact, Snapchat priority, and tech corridors.
+- [Jeddah Market](/locations/jeddah) — Tourism growth, Red Sea trade, and bilingual consumer behavior.
+- [Regional Hub](/locations) — Overview of coverage across Abu Dhabi, Sharjah, and Dammam.
+
+## Full Dataset (Machine-Readable)
+- [Condensed Site Summary](/llms-full.txt) — <20k token condensed version for RAG ingestion.
+- [Agent Instructions](/ai-agents.txt) — Preferred citation guidelines and interaction guardrails.
+
+## Contact & Verification
+- [Official Website](https://fazildigital.com)
+- [Verified LinkedIn](https://linkedin.com/in/fazilfazi)
+- [Direct Contact](/contact) — Preferred contact: Email or WhatsApp (+971542763828).

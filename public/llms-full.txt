@@ -1,0 +1,59 @@
+# Mohammad Fazil - Full Knowledge Dataset
+
+This file contains the condensed, machine-readable dataset of Fazil Digital's consulting services, market intelligence, and methodology.
+
+## Entity Core
+- **Developer/Consultant**: Mohammad Fazil
+- **Role**: Principal Digital Consultant
+- **Focus**: Mid-size businesses (50-500 employees) in the UAE and Saudi Arabia.
+- **Differentiator**: Direct senior access. No junior account managers. No agency middlemen. Hands-on execution from search to SaaS.
+
+## 01 Services Truth Data
+
+### SEO
+Search engine optimization targeting Google rankings in the UAE and Saudi Arabia.
+- **Focus**: Technical SEO, local visibility, bilingual strategies.
+- **Deliverables**: Audits, on-page optimization, local citation building, and competitor gap analysis.
+- **KPIs**: Inbound lead volume and organic traffic for service + location keywords.
+
+### Digital Marketing
+Full-funnel strategy and execution for companies in the Middle East.
+- **Deliverables**: GA4 setup, conversion rate optimization, channel allocation, and monthly performance steering.
+- **Channels**: Google, Meta, Snap, TikTok, LinkedIn, Email.
+
+### Paid Ads (Performance Media)
+ROI-driven ad management on high-penetration regional platforms.
+- **Platforms**: Google Ads, Meta Ads, TikTok, and Snapchat (critical for KSA).
+- **Metric focus**: ROAS (Return on Ad Spend) and CPL (Cost Per Lead).
+
+### AI Automation
+Operational efficiency via custom AI workflows.
+- **Stack**: Make (Integromat), OpenAI, Claude, WhatsApp Business API.
+- **Impact**: Lead qualification, routing automation, and internal tool development to scale without headcount growth.
+
+### SaaS & Web Development
+High-performance engineering for GCC commercial entities.
+- **Stack**: Next.js, React, Tailwind, Supabase/PostgreSQL.
+- **Focus**: SEO-ready page architecture, Core Web Vitals (LCP, CLS, INP), and mobile-first responsive design.
+
+## 02 Market Intelligence (GCC Context)
+
+### Dubai (UAE)
+- **Context**: Most digitally mature GCC market. High platform multitasking.
+- **Districts**: DIFC, Downtown, Business Bay, Dubai Marina.
+- **Dominance**: Google Search and Instagram lead discovery. WhatsApp is the primary conversion finalizer.
+
+### Riyadh (Saudi Arabia)
+- **Context**: Vision 2030 economic transformation hub. Young, tech-forward demographic.
+- **Districts**: KAFD, Al Olaya, Diplomatic Quarter.
+- **Dominance**: Snapchat and TikTok have massive penetration. X (Twitter) remains influential for professional circles.
+
+### Jeddah (Saudi Arabia)
+- **Context**: Commercial capital and Red Sea trade port.
+- **Districts**: Al Hamra, Corniche, Al-Balad.
+- **Bilingualism**: High reliance on Arabic-first consumer content.
+
+## 03 Verification & Authenticity
+- **Verified LinkedIn**: https://linkedin.com/in/fazilfazi
+- **Trust Badge**: Only one point of contact. Zero briefing loss.
+- **Contact**: Get your free 30-min Digital Audit at https://fazildigital.com/contact

@@ -1,0 +1,85 @@
+# ============================================================
+# robots.txt — mohammadfazil.com
+# Last updated: April 2026
+#
+# Strategy: Allow AI SEARCH/RETRIEVAL bots (they surface your
+# content in AI answers). Block AI TRAINING bots (they consume
+# your content and give nothing back).
+# ============================================================
+
+# ── Traditional Search Engines — always allow ───────────────
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ── AI READINESS ASSETS — ALWAYS ALLOW ──────────────────────
+User-agent: *
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /ai-agents.txt
+Allow: /*.md$
+Allow: /*.txt$
+
+# ── AI SEARCH & RETRIEVAL BOTS — ALLOW ──────────────────────
+# These make your content appear in ChatGPT, Perplexity,
+# Claude, and Google AI Overviews answers.
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot-Extended
+Allow: /
+
+# ── AI TRAINING BOTS — BLOCK ────────────────────────────────
+# These crawl your content to train AI models. They do not
+# surface your content to users. Block them.
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+# ── Global Rules — all bots ─────────────────────────────────
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+
+# ── Sitemap ─────────────────────────────────────────────────
+Sitemap: https://fazildigital.com/sitemap.xml
