@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { Button } from "@/components/Button";
 import { blogPosts } from "@/data/blog";
 
@@ -33,8 +34,8 @@ export default function BlogPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
-            <article key={post.slug} className="group border border-white/10 bg-[#0A0A0A] hover:border-accent/40 hover:-translate-y-0.5 transition-all duration-300">
-              <div className="p-8">
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="group border border-white/10 bg-[#0A0A0A] hover:border-accent/40 hover:-translate-y-0.5 transition-all duration-300">
+              <article className="p-8">
                 <div className="flex items-center justify-between mb-6">
                   <span className={`text-xs font-bold tracking-widest uppercase ${categoryColors[post.category] ?? "text-accent"}`}>
                     {post.category}
@@ -45,11 +46,11 @@ export default function BlogPage() {
                   {post.title}
                 </h2>
                 <p className="text-text-muted text-sm leading-relaxed mb-8">{post.excerpt}</p>
-                <span className="text-accent text-sm font-medium inline-flex items-center">
+                <div className="text-accent text-sm font-medium inline-flex items-center">
                   Read Article <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-                </span>
-              </div>
-            </article>
+                </div>
+              </article>
+            </Link>
           ))}
         </div>
 
