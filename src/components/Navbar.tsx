@@ -53,7 +53,7 @@ export function Navbar() {
                 About
               </Link>
               <Link href="/blog" className="text-bg-base/80 hover:text-accent px-3 py-2 text-sm font-medium transition-colors">
-                Insights
+                Blog
               </Link>
             </div>
           </div>
@@ -87,7 +87,7 @@ export function Navbar() {
             <Link href="/services" className="text-bg-base/80 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Services</Link>
             <Link href="/case-studies" className="text-bg-base/80 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Case Studies</Link>
             <Link href="/about" className="text-bg-base/80 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">About</Link>
-            <Link href="/blog" className="text-bg-base/80 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Insights</Link>
+            <Link href="/blog" className="text-bg-base/80 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Blog</Link>
             <Link href="/contact" className="text-bg-base/80 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
           </div>
         </div>
