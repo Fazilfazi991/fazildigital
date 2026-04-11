@@ -215,7 +215,7 @@ export default function Home() {
       <section className="py-24 bg-primary px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base">Why Work With Mohammad Directly?</h2>
+            <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base">Why Work With Fazil Directly?</h2>
             <div className="w-20 h-1 bg-accent"></div>
             <p className="text-xl text-bg-base leading-relaxed font-medium">
               Imagine this: You book a strategy call. The person who answers is the same person who built your roadmap, executes your campaigns, and reviews your results.

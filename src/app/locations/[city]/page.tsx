@@ -137,11 +137,11 @@ export default async function LocationHubPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Why Businesses Choose Mohammad */}
+      {/* Why Businesses Choose Fazil */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12">
-            Why {location.city} Businesses Choose Mohammad
+            Why {location.city} Businesses Choose Fazil
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[

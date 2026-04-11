@@ -122,10 +122,10 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      {/* Why Mohammad */}
+      {/* Why Fazil */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#050505] border-b border-white/5">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-8">Why Mohammad</h2>
+          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-8">Why Fazil</h2>
           <div className="space-y-6 text-text-muted text-lg leading-relaxed">
             <p>
               Most agencies assign your account to a junior team member after the pitch. With Mohammad, you get the expert throughout — from the first strategy call to final delivery.
