@@ -34,12 +34,39 @@ export default async function BlogPostPage({ params }: Props) {
 
   if (!post) notFound();
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt || post.content.substring(0, 155).replace(/<[^>]*>/g, ""),
+    datePublished: new Date(post.lastModified || post.date).toISOString(),
+    dateModified: new Date(post.lastModified || post.date).toISOString(),
+    author: {
+      '@type': 'Person',
+      name: 'Mohammad Fazil',
+      url: 'https://fazildigital.com/about'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fazil Digital',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://fazildigital.com/favicon.ico'
+      }
+    }
+  };
+
   return (
-    <article className="pt-24 pb-32">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Link href="/blog" className="text-accent hover:underline mb-8 inline-block font-medium">
-          ← Back to Insights
-        </Link>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article className="pt-24 pb-32">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Link href="/blog" className="text-accent hover:underline mb-8 inline-block font-medium">
+            ← Back to Blog
+          </Link>
         
         <header className="mb-12">
           {/* LLM-Optimized Hidden Summary for Agent Triage */}
@@ -87,5 +114,6 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
       </div>
     </article>
+    </>
   );
 }
