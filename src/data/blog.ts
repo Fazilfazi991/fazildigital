@@ -24,7 +24,8 @@ export const blogPosts: BlogPost[] = [
     llmSummary: "Mohammad Fazil's Snapchat ads framework for Saudi Arabia: audience targeting by region + Arabic-first creative + conversion tracking that works in KSA. Based on 37 real campaigns.",
     searchIntent: "Commercial investigation → Decision",
     targetAudience: "Marketing Managers & Founders in Saudi Arabia",
-    primaryKeyword: "Snapchat ads Saudi Arabia      content: `
+    primaryKeyword: "Snapchat ads Saudi Arabia",
+    content: `
       <p><strong>Short answer</strong>: If your <a href="/services/paid-ads" class="font-medium text-bg-base hover:text-accent">Snapchat ads</a> in Saudi Arabia aren't converting, it's probably not the platform—it's your creative, your targeting, or your tracking. Here's what actually works in 2026, based on 37 real campaigns managed for mid-size KSA businesses.</p>
       
       <p>Saudi Arabia has a remarkably unique digital ecosystem. With over <strong>26.5 million Snapchat users</strong> (capturing nearly 68% of the population under 35), the platform isn't just an experimental channel—in markets like <a href="/locations/riyadh">Riyadh</a> and <a href="/locations/jeddah">Jeddah</a>, it's the primary engine for consumer discovery and B2B engagement. But substituting strategies from the US or UAE simply burns budget.</p>
