@@ -25,6 +25,15 @@
 - [Condensed Site Summary](/llms-full.txt) — <20k token condensed version for RAG ingestion.
 - [Agent Instructions](/ai-agents.txt) — Preferred citation guidelines and interaction guardrails.
 
+## Insights & Guides
+- [Bilingual SEO for Dubai B2B](/blog/bilingual-seo-dubai-b2b-guide) — Framework for single-site architecture and hreflang without dual domains.
+- [Google vs Snapchat Ads KSA](/blog/google-vs-snapchat-ads-saudi-roi) — Platform ROI breakdown for Saudi mid-size brands.
+- [AI Workflow Automation UAE](/blog/ai-automation-uae-sme-tasks) — 5 repetitive tasks to automate in UAE SMEs.
+- [Riyadh Ecommerce Conversion](/blog/riyadh-ecommerce-conversion-fixes) — Top 3 checkout blockers in Saudi online stores.
+- [LinkedIn vs TikTok Dubai B2B](/blog/linkedin-vs-tiktok-b2b-dubai) — Multi-touch attribution comparison for UAE B2B.
+- [Digital Marketing Budget Jeddah](/blog/digital-marketing-budget-jeddah-2026) — Monthly SAR allocation framework for KSA teams.
+- [Agency vs Consultant UAE](/blog/agency-vs-consultant-vs-freelancer-uae) — Cost comparison and accountability breakdown for GCC marketing vendors.
+
 ## Contact & Verification
 - [Official Website](https://fazildigital.com)
 - [Verified LinkedIn](https://linkedin.com/in/fazilfazi)

@@ -1,3 +1,5 @@
+import { cluster1Blogs } from "./blogs-cluster-1";
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -242,5 +244,6 @@ export const blogPosts: BlogPost[] = [
         <a href="/contact" class="blog-cta-button inline-block bg-accent text-primary px-8 py-3 font-bold rounded hover:bg-accent/90 transition-colors">Request a Technical SEO Audit</a>
       </div>
     `
-  }
+  },
+  ...cluster1Blogs
 ];
