@@ -3,6 +3,12 @@ import { services } from "@/data/services";
 import { locations } from "@/data/locations";
 import Link from "next/link";
 import Script from "next/script";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mohammad Fazil | Digital Marketing Expert in Dubai | SEO, Paid Ads & AI Automation | UAE & Saudi Arabia",
+  description: "Senior Digital Consultant based in Dubai. Direct access expertise for mid-size UAE & KSA businesses. SEO, Paid Ads, and AI Automation that actually moves the needle."
+};
 
 export default function Home() {
   const jsonLd = {
@@ -10,24 +16,44 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Person",
+        "@id": "https://fazildigital.com/#person",
         "name": "Mohammad Fazil",
         "url": "https://fazildigital.com",
-        "sameAs": ["https://linkedin.com/in/fazilfazi"],
+        "image": "https://fazildigital.com/images/mohammad-fazil.jpg",
+        "sameAs": [
+          "https://linkedin.com/in/fazilfazi",
+          "https://twitter.com/fazildigital"
+        ],
         "jobTitle": "Digital Consultant",
         "worksFor": {
           "@type": "Organization",
-          "name": "Mohammad Fazil Consulting"
-        }
-      },
-      {
-        "@type": "LocalBusiness",
-        "name": "Mohammad Fazil Digital Consulting",
-        "image": "https://fazildigital.com/og-image.jpg",
-        "url": "https://fazildigital.com",
+          "name": "Fazil Digital Consulting",
+          "url": "https://fazildigital.com"
+        },
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Dubai",
-          "addressRegion": "Dubai",
+          "addressCountry": "AE"
+        },
+        "areaServed": ["AE", "SA", "BH", "KW", "QA", "OM"],
+        "knowsAbout": [
+          "SEO",
+          "Digital Marketing",
+          "Paid Advertising",
+          "AI Automation",
+          "SaaS Development",
+          "GCC Markets"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "Fazil Digital Consulting",
+        "url": "https://fazildigital.com",
+        "image": "https://fazildigital.com/og-image.jpg",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dubai",
           "addressCountry": "AE"
         },
         "areaServed": [
@@ -38,7 +64,20 @@ export default function Home() {
           { "@type": "City", "name": "Riyadh", "sameAs": "https://en.wikipedia.org/wiki/Riyadh" },
           { "@type": "City", "name": "Jeddah", "sameAs": "https://en.wikipedia.org/wiki/Jeddah" },
           { "@type": "City", "name": "Dammam", "sameAs": "https://en.wikipedia.org/wiki/Dammam" }
-        ]
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Digital Consulting Services",
+          "itemListElement": services.map((s, i) => ({
+            "@type": "Offer",
+            "position": i + 1,
+            "itemOffered": {
+              "@type": "Service",
+              "name": s.name,
+              "description": s.shortDescription
+            }
+          }))
+        }
       }
     ]
   };
@@ -59,7 +98,9 @@ export default function Home() {
             The Digital Expert Mid-Size Businesses in Dubai Call First.
           </h1>
           <p className="text-lg md:text-xl text-text-muted max-w-3xl mx-auto leading-relaxed font-dm-sans">
-            You&apos;ve been burned before. You paid for a senior strategist — and got a junior executor. Mohammad Fazil is different. When you hire him, you get him. On every call. Every strategy. Every result. Direct access. Zero middlemen. Just growth that actually moves the needle.
+            You&apos;ve been burned before. You paid for a senior strategist — and got a junior executor.<br className="hidden md:block" />
+            Mohammad Fazil is different. When you hire him, you get him. On every call. Every strategy. Every result.<br className="hidden md:block" />
+            <span className="text-bg-base font-semibold">Direct access. Zero middlemen. Just growth that actually moves the needle.</span>
           </p>
           <div className="pt-8 flex flex-col items-center justify-center gap-4">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full">
@@ -79,28 +120,51 @@ export default function Home() {
 
             <p className="text-xs text-text-muted italic">30 minutes. No pitch. Just clarity on your biggest opportunity.</p>
           </div>
-          <div className="pt-12 text-sm text-text-muted flex flex-wrap justify-center gap-x-8 gap-y-4">
-            <span className="flex items-center"><span className="text-accent mr-2">✓</span> Based in Dubai</span>
-            <span className="flex items-center"><span className="text-accent mr-2">✓</span> Working across UAE & KSA</span>
-            <span className="flex items-center"><span className="text-accent mr-2">✓</span> 7 Core Services</span>
-            <span className="flex items-center"><span className="text-accent mr-2">✓</span> Direct Access</span>
-          </div>
         </div>
       </section>
 
-      {/* Social Proof Bar */}
-      <section className="bg-[#0f0f0f] border-b border-white/10 py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center items-center gap-4 text-xs md:text-sm font-semibold text-text-muted tracking-widest uppercase">
-            <span>7 Services</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-accent/50 hidden sm:block"></span>
-            <span>UAE & Saudi Arabia</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-accent/50 hidden sm:block"></span>
-            <span>50+ Projects</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-accent/50 hidden sm:block"></span>
-            <span>Direct Senior Access</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-accent/50 hidden sm:block"></span>
-            <span>GCC Markets</span>
+      {/* Green Serving Banner */}
+      <div className="max-w-4xl mx-auto px-4 mt-8">
+        <div style={{ textAlign: "center", padding: "1.5rem", background: "#f0fdf4", borderRadius: "12px", border: "1px solid #dcfce7" }}>
+          <p style={{ color: "#166534", fontWeight: "600", margin: "0", fontSize: "1.1rem" }}>
+            🎯 Now serving: Dubai, Abu Dhabi, Riyadh, Dammam & Jeddah<br />
+            <span style={{ fontWeight: "400", fontSize: "0.9rem", opacity: "0.9" }}>AI Automation • SEO • Paid Ads • Web Development</span>
+          </p>
+        </div>
+      </div>
+
+      {/* Loss Aversion Hook */}
+      <section className="bg-accent/5 border-b border-white/5 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-bg-base/80 text-lg md:text-xl font-medium italic">
+            &ldquo;Every month without a clear digital strategy in Dubai or Riyadh = <span className="text-accent font-bold">~AED 47,000 in missed organic leads*</span>&rdquo;
+          </p>
+          <p className="text-[10px] text-text-muted mt-2 uppercase tracking-widest">
+            *Based on average mid-size B2B client data, UAE market, 2025
+          </p>
+        </div>
+      </section>
+
+      {/* Trust Badges Strip */}
+      <section className="bg-primary/50 backdrop-blur-sm border-b border-white/10 py-8 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-60 hover:opacity-100 transition-all duration-500">
+             <div className="flex items-center gap-2">
+               <span className="text-2xl font-bold font-syne text-bg-base">50+</span>
+               <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Businesses<br/>Served</span>
+             </div>
+             <div className="flex items-center gap-2">
+               <span className="text-2xl font-bold font-syne text-bg-base">4.9/5</span>
+               <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Average<br/>Rating</span>
+             </div>
+             <div className="flex items-center gap-2">
+               <span className="text-2xl font-bold font-syne text-bg-base">100%</span>
+               <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Direct Senior<br/>Access</span>
+             </div>
+             <div className="flex items-center gap-2">
+               <span className="text-2xl font-bold font-syne text-bg-base">7+</span>
+               <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Years in<br/>GCC Market</span>
+             </div>
           </div>
         </div>
       </section>
@@ -110,7 +174,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-4">What I Do</h2>
-            <p className="text-lg text-text-muted max-w-2xl mx-auto">End-to-end digital services for mid-size businesses in the UAE and Saudi Arabia.</p>
+            <p className="text-lg text-text-muted max-w-2xl mx-auto">
+              As a senior <Link href="/digital-marketing-expert-dubai" className="text-bg-base border-b border-accent/40 hover:text-accent transition-colors">digital marketing expert in Dubai</Link>, Mohammad delivers end-to-end services for mid-size businesses across the UAE and Saudi Arabia.
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
@@ -178,7 +244,7 @@ export default function Home() {
               { 
                 step: "01", 
                 name: "Discovery Audit (Week 1)", 
-                desc: "We review your current presence, competitors, and goals. No jargon, just honest gaps and opportunities." 
+                desc: "We review your current presence, competitors, and goals — no jargon, just honest gaps and opportunities." 
               },
               { 
                 step: "02", 
@@ -207,6 +273,37 @@ export default function Home() {
             <Link href="/methodology" className="text-accent font-medium hover:underline underline-offset-4">
               Explore Our Full Methodology &rarr;
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* GCC Digital Health Check Lead Magnet */}
+      <section className="py-24 bg-[#0A0A0A] border-y border-white/5 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-accent/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div className="max-w-5xl mx-auto rounded-3xl border border-white/10 bg-white/[0.02] p-8 md:p-16 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-6">
+                Not Sure What You Need?
+              </h2>
+              <p className="text-xl text-text-muted mb-8 leading-relaxed">
+                Take our 90-second GCC Digital Health Check. Get a custom priority report (free) showing your biggest untapped channel and where to invest vs. where to pause.
+              </p>
+              <Button href="/contact?ref=health-check" className="text-lg px-8 py-4">Start Free Health Check &rarr;</Button>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+               {[
+                 "Untapped Channel Reveal",
+                 "Quick Win Identification",
+                 "Competitor Benchmark",
+                 "90-Day Priority Roadmap"
+               ].map(benefit => (
+                 <div key={benefit} className="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
+                   <span className="text-accent font-bold">✓</span>
+                   <span className="text-sm font-medium text-bg-base">{benefit}</span>
+                 </div>
+               ))}
+            </div>
           </div>
         </div>
       </section>
@@ -276,6 +373,34 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Popular Services Section */}
+      <section className="py-20 bg-primary/30 border-t border-white/5 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-white/[0.02] border border-white/10 rounded-3xl p-8 md:p-12 text-center">
+            <h3 className="text-xl md:text-2xl font-syne font-bold text-bg-base mb-8 italic opacity-80">
+              Popular Services in UAE & KSA
+            </h3>
+            <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
+               <Link href="/abu-dhabi/ai-automation" className="text-text-muted hover:text-accent transition-colors flex items-center gap-2">
+                 <span className="text-accent">→</span> AI Automation in Abu Dhabi
+               </Link>
+               <Link href="/riyadh/seo" className="text-text-muted hover:text-accent transition-colors flex items-center gap-2">
+                 <span className="text-accent">→</span> SEO in Riyadh
+               </Link>
+               <Link href="/digital-marketing-expert-dubai" className="text-text-muted hover:text-accent transition-colors flex items-center gap-2 font-bold">
+                 <span className="text-accent">→</span> Digital Marketing Expert Dubai
+               </Link>
+               <Link href="/dammam/paid-ads" className="text-text-muted hover:text-accent transition-colors flex items-center gap-2">
+                 <span className="text-accent">→</span> Paid Ads in Dammam
+               </Link>
+               <Link href="/jeddah/web-development" className="text-text-muted hover:text-accent transition-colors flex items-center gap-2">
+                 <span className="text-accent">→</span> Web Development in Jeddah
+               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-32 bg-primary px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 z-0 flex justify-center items-center opacity-10">
@@ -294,9 +419,13 @@ export default function Home() {
             </Button>
             <p className="text-sm text-text-muted italic">30 minutes. No pitch. Just clarity on your biggest opportunity.</p>
           </div>
-          <p className="mt-6 text-text-muted text-sm tracking-wide">
-            No agencies. No junior staff. Just Mohammad.
-          </p>
+          <div className="mt-8 pt-8 border-t border-white/5">
+            <p className="text-accent font-bold tracking-widest uppercase text-xs mb-2">Dynamic Availability</p>
+            <p className="text-bg-base/60 text-sm">
+              Fazil accepts 3 new clients per quarter to maintain direct access quality.<br/>
+              <span className="text-accent font-bold animate-pulse">Current availability: 1 spot remaining for Q2 2026.</span>
+            </p>
+          </div>
         </div>
       </section>
     </>

@@ -22,6 +22,33 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Quick Links Col */}
+          <div>
+             <h4 className="font-syne font-bold text-bg-base mb-6">Quick Links</h4>
+             <ul className="space-y-3">
+               <li>
+                 <Link href="/digital-marketing-expert-dubai" className="text-sm text-text-muted hover:text-accent transition-colors font-bold">
+                   Digital Marketing Expert Dubai
+                 </Link>
+               </li>
+               <li>
+                 <Link href="/dubai/seo" className="text-sm text-text-muted hover:text-accent transition-colors">
+                   SEO Dubai
+                 </Link>
+               </li>
+               <li>
+                 <Link href="/riyadh/paid-ads" className="text-sm text-text-muted hover:text-accent transition-colors">
+                   Paid Ads Riyadh
+                 </Link>
+               </li>
+               <li>
+                 <Link href="/abu-dhabi/ai-automation" className="text-sm text-text-muted hover:text-accent transition-colors">
+                   AI Automation Abu Dhabi
+                 </Link>
+               </li>
+             </ul>
+          </div>
+
           {/* Markets Col (Preserving SEO with Smart Links) */}
           <div>
             <h4 className="font-syne font-bold text-bg-base mb-6">Markets</h4>
@@ -32,18 +59,18 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/locations/uae" className="text-sm text-text-muted hover:text-accent transition-colors">
-                  United Arab Emirates
+                <Link href="/locations/dubai" className="text-sm text-text-muted hover:text-accent transition-colors">
+                  Dubai, UAE
                 </Link>
               </li>
               <li>
-                <Link href="/locations/saudi-arabia" className="text-sm text-text-muted hover:text-accent transition-colors">
-                  Saudi Arabia
+                <Link href="/locations/riyadh" className="text-sm text-text-muted hover:text-accent transition-colors">
+                  Riyadh, KSA
                 </Link>
               </li>
               <li>
-                <Link href="/markets" className="text-sm text-text-muted hover:text-accent transition-colors italic">
-                  Serving Oman, Kuwait & Bahrain
+                <Link href="/locations/abu-dhabi" className="text-sm text-text-muted hover:text-accent transition-colors">
+                  Abu Dhabi, UAE
                 </Link>
               </li>
             </ul>

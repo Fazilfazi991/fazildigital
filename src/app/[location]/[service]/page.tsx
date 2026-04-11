@@ -63,12 +63,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+import { specializedContentMap } from "@/data/specializedContent";
+
 export default async function MoneyPage({ params }: Props) {
   const { location: locationSlug, service: serviceSlug } = await params;
 
   const location = locations.find((l) => l.slug === locationSlug);
   const service = services.find((s) => s.slug === serviceSlug);
   if (!location || !service) notFound();
+
+  // Specialized content lookup
+  const specialized = specializedContentMap[`${locationSlug}-${serviceSlug}`];
+
+  // Merge FAQs: specialized first, then generic
+  const mergedFaqs = specialized?.additionalFAQs 
+    ? [...specialized.additionalFAQs, ...service.faqs]
+    : service.faqs;
 
   // JSON-LD structured data for SEO remains exactly the same
   const jsonLd = {
@@ -78,16 +88,21 @@ export default async function MoneyPage({ params }: Props) {
         "@type": "LocalBusiness",
         "name": "Mohammad Fazil Digital Consulting",
         "url": `https://fazildigital.com/${locationSlug}/${serviceSlug}`,
+        "image": "https://fazildigital.com/og-image.jpg",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": location.city,
           "addressRegion": location.city,
           "addressCountry": location.country === "UAE" ? "AE" : "SA",
         },
+        "areaServed": [
+          { "@type": "City", "name": location.city },
+          { "@type": "Country", "name": location.country === "UAE" ? "United Arab Emirates" : "Saudi Arabia" }
+        ]
       },
       {
         "@type": "Service",
-        "name": `${service.name} in ${location.city}`,
+        "name": `${service.name} Expert in ${location.city}`,
         "description": service.fullDescription,
         "provider": {
           "@type": "Person",
@@ -95,10 +110,10 @@ export default async function MoneyPage({ params }: Props) {
           "url": "https://fazildigital.com",
           "sameAs": "https://linkedin.com/in/fazilfazi",
         },
-        "areaServed": {
-          "@type": "City",
-          "name": location.city,
-        },
+        "areaServed": [
+          { "@type": "City", "name": location.city },
+          { "@type": "Country", "name": location.country === "UAE" ? "United Arab Emirates" : "Saudi Arabia" }
+        ],
       },
       {
         "@type": "BreadcrumbList",
@@ -110,7 +125,7 @@ export default async function MoneyPage({ params }: Props) {
       },
       {
         "@type": "FAQPage",
-        "mainEntity": service.faqs.map((faq) => ({
+        "mainEntity": mergedFaqs.map((faq) => ({
           "@type": "Question",
           "name": faq.question,
           "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
@@ -129,9 +144,12 @@ export default async function MoneyPage({ params }: Props) {
     locationSlug: location.slug,
     serviceName: service.name,
     serviceSlug: service.slug,
+    longOpening: service.longOpening,
     deliverables: service.deliverables,
-    faqs: service.faqs,
-    marketContext: location.marketContext,
+    faqs: mergedFaqs,
+    marketContext: specialized?.marketContext 
+      ? `${specialized.marketContext}\n<hr class="border-white/10 my-8"/>\n${location.marketContext}`
+      : location.marketContext,
     localDistricts: location.localDistricts,
     platformNotes: location.platformNotes,
     vision2030Note: location.vision2030Note,

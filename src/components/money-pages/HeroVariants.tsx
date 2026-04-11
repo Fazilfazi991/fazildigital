@@ -8,11 +8,12 @@ export interface HeroProps {
   locationSlug: string;
   serviceName: string;
   serviceSlug: string;
+  longOpening?: string;
   headingText?: string;
   paragraphText?: string;
 }
 
-export function HeroA({ locationCity, locationCountry, locationSlug, serviceName, serviceSlug, headingText, paragraphText }: HeroProps) {
+export function HeroA({ locationCity, locationCountry, locationSlug, serviceName, serviceSlug, longOpening, headingText, paragraphText }: HeroProps) {
   return (
     <section className="pt-24 pb-20 border-b border-white/5 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
@@ -30,7 +31,7 @@ export function HeroA({ locationCity, locationCountry, locationSlug, serviceName
           {headingText || `${serviceName} Expert in ${locationCity} — Direct Senior Access`}
         </h1>
         <p className="text-lg md:text-xl text-text-muted mb-10 max-w-3xl mx-auto leading-relaxed">
-          {paragraphText || `Mohammad Fazil is a ${serviceName.toLowerCase()} consultant delivering measurable results for mid-size businesses in ${locationCity}.`}
+          {paragraphText || longOpening || `Mohammad Fazil is a ${serviceName.toLowerCase()} consultant delivering measurable results for mid-size businesses in ${locationCity}.`}
         </p>
         <Button href="/contact" className="text-lg px-8 py-4">Get Your Free Digital Audit</Button>
       </div>
@@ -38,7 +39,7 @@ export function HeroA({ locationCity, locationCountry, locationSlug, serviceName
   );
 }
 
-export function HeroB({ locationCity, locationCountry, locationSlug, serviceName, serviceSlug, headingText, paragraphText }: HeroProps) {
+export function HeroB({ locationCity, locationCountry, locationSlug, serviceName, serviceSlug, longOpening, headingText, paragraphText }: HeroProps) {
   return (
     <section className="pt-32 pb-24 border-b border-white/5 px-4 sm:px-6 lg:px-8 bg-[#050505] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent/5 to-transparent pointer-events-none"></div>
@@ -55,7 +56,7 @@ export function HeroB({ locationCity, locationCountry, locationSlug, serviceName
             {headingText || `Leading ${serviceName} Services for ${locationCity} Brands`}
           </h1>
           <p className="text-xl text-text-muted mb-10 leading-relaxed">
-             {paragraphText || `Partner directly with Fazil to scale your ${locationCity} business through proven ${serviceName.toLowerCase()} strategies.`}
+             {paragraphText || longOpening || `Partner directly with Fazil to scale your ${locationCity} business through proven ${serviceName.toLowerCase()} strategies.`}
           </p>
           <div className="flex flex-wrap gap-4">
             <Button href="/contact" className="text-lg px-8 py-4">Book a Strategy Call</Button>
@@ -67,7 +68,7 @@ export function HeroB({ locationCity, locationCountry, locationSlug, serviceName
   );
 }
 
-export function HeroC({ locationCity, locationCountry, locationSlug, serviceName, serviceSlug, headingText, paragraphText }: HeroProps) {
+export function HeroC({ locationCity, locationCountry, locationSlug, serviceName, serviceSlug, longOpening, headingText, paragraphText }: HeroProps) {
   return (
     <section className="pt-24 pb-20 border-b border-white/5 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
@@ -77,7 +78,7 @@ export function HeroC({ locationCity, locationCountry, locationSlug, serviceName
             {headingText || `Scale Your Revenue in ${locationCity}`}
           </h1>
           <p className="text-xl md:text-2xl text-text-muted mb-10 max-w-2xl leading-relaxed font-light">
-             {paragraphText || `Direct execution. No agency bloat. Full accountability in ${locationCountry}.`}
+             {paragraphText || longOpening || `Direct execution. No agency bloat. Full accountability in ${locationCountry}.`}
           </p>
           <Button href="/contact" className="text-lg px-8 py-4 bg-transparent border-2 border-accent hover:bg-accent text-accent hover:text-primary transition-all">Start the Conversation →</Button>
         </div>

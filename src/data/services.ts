@@ -3,6 +3,7 @@ export interface Service {
   name: string;
   shortDescription: string;
   fullDescription: string;
+  longOpening?: string;
   deliverables: string[];
   whoItsFor: string;
   faqs: { question: string; answer: string }[];
@@ -15,6 +16,8 @@ export const services: Service[] = [
     shortDescription: "Rank higher on Google in Dubai and Saudi Arabia.",
     fullDescription:
       "Search engine optimization for mid-size businesses targeting Google rankings in the UAE and Saudi Arabia. Includes technical SEO, on-page optimization, content strategy, and local SEO for Dubai, Riyadh, Jeddah and wider GCC cities.",
+    longOpening:
+      "If you're a mid-size business in Dubai or Riyadh and you're not on page 1 of Google for your core service + location keywords, you're invisible to 74% of potential customers. Mohammad doesn't do generic 'SEO'. He builds search strategies for the GCC reality: bilingual search behavior, mobile-first users, Snapchat-driven discovery in KSA, and the unique commercial intent patterns of UAE consumers. This isn't about rankings. It's about being found by the right people, at the moment they're ready to buy.",
     whoItsFor:
       "Mid-size businesses in the UAE and Saudi Arabia that rely on Google to generate inbound leads — and currently aren't ranking on page 1 for their most valuable service + location keyword combinations.",
     deliverables: [
@@ -66,6 +69,8 @@ export const services: Service[] = [
     shortDescription: "End-to-end digital marketing strategy and execution.",
     fullDescription:
       "End-to-end digital marketing strategy and execution for companies in the UAE and KSA. Mohammad manages the full funnel — from brand awareness to lead generation — as a senior consultant who is directly accountable for results.",
+    longOpening:
+      "Frustrated with fragmented agency relationships where the left hand doesn't know what the right is doing? Mohammad provides cohesive, revenue-first digital marketing. He owns your entire funnel in the UAE and Saudi Arabia — from the first impression to the final conversion. This isn't about siloed tactics; it's about a unified strategy where every dirham of your budget is mapped to a tangible business outcome.",
     whoItsFor:
       "Mid-size businesses in the UAE and Saudi Arabia that need a coherent, cross-channel digital marketing strategy — not individual tactics in isolation. Typically founders or CMOs who are frustrated with fragmented agency relationships.",
     deliverables: [
@@ -112,6 +117,8 @@ export const services: Service[] = [
     shortDescription: "Performance-driven paid advertising on Google, Meta, TikTok, and Snapchat.",
     fullDescription:
       "Performance-driven paid advertising on Google, Meta, TikTok, and Snapchat. Built for mid-size businesses in Dubai and Saudi Arabia who need measurable ROI from ad spend, not just impressions.",
+    longOpening:
+      "Stop burning your ad budget on impressions that don't convert. Whether it's Google Search in Dubai or Snapchat in Riyadh, Mohammad builds performance-driven ad campaigns that prioritize Cost Per Lead (CPL) and ROAS over vanity metrics. In the KSA market especially, where Snapchat penetration is among the highest globally, you need a partner who understands platform-specific nuances — not just generic media buying.",
     whoItsFor:
       "Mid-size businesses in Dubai and Saudi Arabia spending or planning to spend on paid media who need a clear, accountable return on their ad budget — not just traffic.",
     deliverables: [
@@ -163,6 +170,8 @@ export const services: Service[] = [
     shortDescription: "Organic social media strategy and management.",
     fullDescription:
       "Organic social media strategy and management for Instagram, LinkedIn, TikTok, Snapchat, and X. Tailored for the UAE and Saudi audience, with content that builds brand authority and community.",
+    longOpening:
+      "Most GCC social media management is just noise. Mohammad builds authority. For B2B brands in DIFC or Riyadh, this means a LinkedIn strategy that actually opens doors. For consumer brands in Dubai, it's about authentic community management that turns followers into advocates. We don't just 'post'; we engineer presence that aligns with the specific cultural and commercial pace of the UAE and Saudi Arabia.",
     whoItsFor:
       "Mid-size businesses in the UAE and Saudi Arabia that need a consistent, professional social media presence but lack the internal capacity to produce and manage content at the required quality and frequency.",
     deliverables: [
@@ -209,6 +218,8 @@ export const services: Service[] = [
     shortDescription: "Professional website design and development.",
     fullDescription:
       "Professional website design and development for mid-size businesses in Dubai and across the GCC. Fast, SEO-optimized, mobile-first websites built to convert — not just look good.",
+    longOpening:
+      "Your website shouldn't just be a digital brochure; it should be your highest-performing salesperson. In the GCC's mobile-first market, a 3-second delay is a lost customer. Mohammad builds high-conversion Next.js engines that are SEO-optimized from the first line of code. We prioritize Core Web Vitals, RTL (Arabic) readiness, and UX patterns that resonate with Gulf-based users to ensure your site actually converts traffic into revenue.",
     whoItsFor:
       "Mid-size businesses in the UAE and Saudi Arabia with websites that are outdated, slow, not ranking on Google, or built on platforms that limit growth — and need a senior web consultant who understands both technical implementation and business outcomes.",
     deliverables: [
@@ -260,6 +271,8 @@ export const services: Service[] = [
     shortDescription: "Business process automation using AI tools and custom workflows.",
     fullDescription:
       "Business process automation using AI tools and custom workflows. Mohammad helps UAE and Saudi companies eliminate repetitive tasks, reduce operational costs, and scale without proportional headcount growth.",
+    longOpening:
+      "Are you still wasting hours on manual lead qualification, reporting, or data entry? AI automation is no longer a luxury; it's a necessity for scaling mid-market firms in the UAE and KSA. Mohammad implements custom intelligent workflows that integrate directly into your stack. From automated WhatsApp lead routing to AI-driven reporting hubs, we eliminate the operational 'tax' on your team's time so they can focus on high-value human work.",
     whoItsFor:
       "Mid-size businesses in the UAE and Saudi Arabia spending significant time and money on manual, repetitive business processes — lead qualification, reporting, data entry, customer communication, internal workflows — that could be automated with the right AI and integration setup.",
     deliverables: [
@@ -306,6 +319,8 @@ export const services: Service[] = [
     shortDescription: "Custom SaaS product development for businesses in the UAE and GCC.",
     fullDescription:
       "Custom SaaS product development for businesses in the UAE and GCC. From concept to launch — Mohammad works with clients to build scalable software products tailored to their market and users.",
+    longOpening:
+      "Got a SaaS idea but no technical partner to bring it to life? Mohammad acts as your strategic technical lead, taking you from wireframes to a market-ready MVP in 12 weeks. We build on modern, scalable stacks (Next.js, Supabase, Stripe) with full support for Arabic (RTL) users. This isn't just about 'dev'; it's about building a sustainable software business with a partner who understands the GCC's unique SaaS landscape.",
     whoItsFor:
       "Entrepreneurs and mid-size businesses in the UAE and Saudi Arabia with a validated SaaS idea that needs a technical co-founder-level partner — someone who can own both product strategy and engineering delivery from concept to a market-ready product.",
     deliverables: [

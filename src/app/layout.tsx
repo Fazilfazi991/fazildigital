@@ -37,10 +37,10 @@ export const metadata: Metadata = {
   },
   // llms.txt — machine-readable site overview for AI crawlers
   alternates: {
-    canonical: "/",
+    canonical: "https://fazildigital.com",
     languages: {
-      "en-US": "en-US",
-      "en": "en",
+      "en-ae": "https://fazildigital.com/locations/dubai",
+      "en-sa": "https://fazildigital.com/locations/riyadh",
     },
     types: {
       "text/plain": "https://fazildigital.com/llms.txt",
