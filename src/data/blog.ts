@@ -81,7 +81,6 @@ export const blogPosts: BlogPost[] = [
           <div class="blog-faq-answer text-text-muted">Yes—if you target decision-makers correctly. Snapchat consistently reaches younger executives (30-45) across Saudi Arabia at approximately 1/3 the CPA of LinkedIn, making it a highly viable channel for B2B.</div>
         </div>
       </div>
-    `     </div>
     `
   },
   {
@@ -95,7 +94,7 @@ export const blogPosts: BlogPost[] = [
     searchIntent: "Commercial investigation → Decision",
     targetAudience: "UAE Founders & Marketing Managers",
     primaryKeyword: "hire digital consultant Dubai",
-      content: `
+    content: `
       <p><strong>Short answer</strong>: Don't ask "What services do you offer?" Ask "Can I speak to a current client in my industry?" Here is the exact 7-point checklist savvy founders in <a href="/locations/dubai" class="font-medium text-bg-base hover:text-accent">Dubai</a> use to avoid wasting six-figure budgets on the wrong digital consultant.</p>
       
       <p>The Dubai digital landscape is incredibly noisy. Between traditional agencies attempting to transition into full-service powerhouses and freelance operators making lofty promises, knowing who to trust is difficult. The most expensive mistake a mid-size business can make is signing an annual retainer with a vendor who lacks genuine GCC context and an execution mindset.</p>
