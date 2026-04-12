@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button";
+import { Accordion } from "@/components/Accordion";
 
 export interface ActionBlockProps {
   locationCity: string;
@@ -73,14 +74,7 @@ export function FAQBlock({ locationCity, serviceName, faqs }: ActionBlockProps) 
         <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12">
           FAQ — {serviceName} in {locationCity}
         </h2>
-        <div className="space-y-4">
-          {faqs.map((faq, i) => (
-            <div key={i} className="border border-white/10 bg-[#0A0A0A] p-6 hover:border-white/20 transition-colors">
-              <h3 className="font-syne font-bold text-bg-base mb-3 text-lg">{faq.question}</h3>
-              <p className="text-text-muted leading-relaxed">{faq.answer}</p>
-            </div>
-          ))}
-        </div>
+        <Accordion items={faqs} />
       </div>
     </section>
   );

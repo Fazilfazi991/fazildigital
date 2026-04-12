@@ -4,6 +4,7 @@ import { Button } from "@/components/Button";
 import Script from "next/script";
 import ProcessTimeline from "@/components/visuals/ProcessTimeline";
 import AgencyComparison from "@/components/visuals/AgencyComparison";
+import { Accordion } from "@/components/Accordion";
 
 export const metadata: Metadata = {
   title: "Digital Marketing Expert in Dubai | Mohammad Fazil",
@@ -332,14 +333,7 @@ export default function DigitalMarketingExpertDubai() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white/[0.01] border-b border-white/5">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-syne font-bold text-bg-base mb-12 text-center">Common Questions</h2>
-          <div className="space-y-6">
-            {faqs.map((faq, i) => (
-              <div key={i} className="border-b border-white/10 pb-6">
-                <h3 className="font-syne font-semibold text-bg-base mb-2">{faq.q}</h3>
-                <p className="text-sm text-text-muted leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
+          <Accordion items={faqs} />
         </div>
       </section>
 

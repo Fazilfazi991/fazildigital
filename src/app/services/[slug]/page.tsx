@@ -6,6 +6,7 @@ import { locations } from "@/data/locations";
 import { Button } from "@/components/Button";
 import ProcessTimeline from "@/components/visuals/ProcessTimeline";
 import PlatformMap from "@/components/visuals/PlatformMap";
+import { Accordion } from "@/components/Accordion";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -211,14 +212,7 @@ export default async function ServicePage({ params }: Props) {
           <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12">
             Frequently Asked Questions
           </h2>
-          <div className="space-y-4">
-            {service.faqs.map((faq, i) => (
-              <div key={i} className="border border-white/10 bg-[#0A0A0A] p-6">
-                <h3 className="font-syne font-bold text-bg-base mb-3">{faq.question}</h3>
-                <p className="text-text-muted leading-relaxed">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
+          <Accordion items={service.faqs} />
         </div>
       </section>
 
