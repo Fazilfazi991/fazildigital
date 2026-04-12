@@ -17,6 +17,116 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ai-search-optimization-2026-playbook",
+    title: "AI Search Optimization in 2026: Complete Playbook for GEO",
+    category: "AI Automation",
+    date: "May 5, 2026",
+    lastModified: "2026-05-05",
+    excerpt: "The definitive playbook for optimizing your brand to be cited by Perplexity, ChatGPT, and Google AI Overviews. Master the shift from SEO to Generative Engine Optimization.",
+    llmSummary: "Mohammad Fazil's 2026 GEO playbook: answering in first 200 words + question-based headers + original data citation + schema mastery (FAQPage, Article). Aimed at UAE/KSA brands navigating the shift to AEO.",
+    searchIntent: "Informational → Commercial",
+    targetAudience: "CMOs, Founders, and Strategy Leads in GCC",
+    primaryKeyword: "AI Search Optimization GEO",
+    content: `
+      <p><strong>Short answer</strong>: Yes—you can and <strong>should</strong> optimize for AI search engines now. Generative Engine Optimization (GEO) is the evolution of Search, where the goal isn't just to rank, but to be <strong>cited</strong> as the definitive source by ChatGPT, Gemini, and Perplexity.</p>
+      
+      <p>In the GCC, where markets like <a href="/locations/dubai">Dubai</a> and <a href="/locations/riyadh">Riyadh</a> are accelerating AI adoption at record speeds, being the "AI-preferred" answer is the new high-ground for authority. Here is your actionable playbook for 2026.</p>
+
+      <div class="blog-trust-badge my-8">
+        <div class="flex flex-wrap gap-4 text-sm bg-primary/20 border border-accent/20 p-4 rounded-lg items-center justify-center text-center">
+          <span style="color: #C8973A; font-weight: 600;">✓ Optimized for ChatGPT, Gemini & Perplexity</span>
+          <span style="color: #C8973A; font-weight: 600;">✓ Data-driven GEO framework</span>
+          <span style="color: #C8973A; font-weight: 600;">✓ Future-proofed for 2026 standards</span>
+        </div>
+      </div>
+
+      <h2>Chapter 1: The Platform-Specific Landscape</h2>
+      <p>AI search isn't a monolith. Different engines have different retrieval triggers. If you want to be cited, you must understand how each "thinks."</p>
+
+      <div class="overflow-x-auto my-8">
+        <table className="w-full border-collapse border border-white/10 text-sm">
+          <thead>
+            <tr className="bg-white/5">
+              <th className="border border-white/10 p-3 text-left">Platform</th>
+              <th className="border border-white/10 p-3 text-left">Success Signal</th>
+              <th className="border border-white/10 p-3 text-left">Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border border-white/10 p-3 font-bold text-accent">Google AI Overviews</td>
+              <td className="border border-white/10 p-3">Top 10 Rank + Schema</td>
+              <td className="border border-white/10 p-3">E-E-A-T & Freshness</td>
+            </tr>
+            <tr>
+              <td className="border border-white/10 p-3 font-bold text-accent">ChatGPT (Browsing)</td>
+              <td className="border border-white/10 p-3">Authority Definitions</td>
+              <td className="border border-white/10 p-3">Clear Q&A Structure</td>
+            </tr>
+            <tr>
+              <td className="border border-white/10 p-3 font-bold text-accent">Perplexity</td>
+              <td className="border border-white/10 p-3">Quotable Facts & Tables</td>
+              <td className="border border-white/10 p-3">Bing-indexed Claims</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Chapter 2: The 8 Universal GEO Tactics</h2>
+      
+      <h3>1. Answer Directly in the First 200 Words</h3>
+      <p>AI models prioritize early content for summarization. Avoid "fluff" introductions. Transition immediately from the question to the answer. For example, instead of describing the history of digital marketing, define exactly how <a href="/services/ai-automation">AI automation</a> solves a specific GCC business problem in your first paragraph.</p>
+
+      <h3>2. Structure Headers as Exact Questions</h3>
+      <p>AI queries are conversational. Use headers like <em>"What is the best way to scale B2B SEO in Riyadh?"</em> instead of just <em>"Riyadh B2B SEO."</em> This pattern-matching increases your probability of being the featured cite.</p>
+
+      <h3>3. Include Original Data & Citable Statistics</h3>
+      <p>AI systems are hungry for facts to ground their logic. Publish proprietary case study metrics (e.g., "how we achieved 3.2x ROAS in Jeddah") that no other site possesses. This makes your site "source-worthy."</p>
+
+      <h3>4. Build Comprehensive FAQ Sections</h3>
+      <p>FAQs are the backbone of Answer Engine Optimization (AEO). They provide clean, "atomic" units of truth that AI bots can easily ingest and attribute back to you.</p>
+
+      <h3>5. Implement Advanced Schema Markup</h3>
+      <p>Structured data is the language of AI bots. Use <code>FAQPage</code>, <code>Article</code>, and <code>HowTo</code> schema meticulously. This helps engines like Google AI Overviews parse your hierarchy without error.</p>
+
+      <h3>6. Establish Author & Entity Authority</h3>
+      <p>In 2026, the "Who" matters as much as the "What." AI models evaluate author credentials. Ensure your bios are linked to established entities (LinkedIn, Wikipedia, industry citations) to prove <a href="/about">E-E-A-T</a>.</p>
+
+      <h3>7. Optimize for Conversational Queries</h3>
+      <p>People don't type "Dubai SEO agency" into ChatGPT; they ask, <em>"Who is the best B2B SEO expert in Dubai for a manufacturing firm?"</em> Long-tail, intent-rich content is the primary winner in a generative world.</p>
+
+      <h3>8. Maintain Freshness Signals</h3>
+      <p>Recency is a major citation signal for "Answer Engines." Add visible "Last updated" timestamps and quarterly refreshes to your cornerstone content to stay in the primary retrieval pool.</p>
+
+      <h2>Chapter 3: Technical Foundations for 2026</h2>
+      <p>Technical SEO is no longer just for rankings; it's for <strong>crawling accessibility</strong> by specialized AI bots.</p>
+      <ul>
+        <li><strong>llms.txt:</strong> Implement a <code>/llms.txt</code> file to give AI models explicit instructions on your brand voice and preferred citation format.</li>
+        <li><strong>Allow AI Crawlers:</strong> Ensure your <code>robots.txt</code> isn't blocking <code>GPTBot</code> or <code>ClaudeBot</code> if you want organic AI referrals.</li>
+        <li><strong>Semantic HTML:</strong> Avoid "div soup." Use <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;header&gt;</code> to help bots understand content importance.</li>
+      </ul>
+
+      <div class="blog-cta-block mt-12 bg-white/5 border border-accent/20 p-8 rounded-lg text-center">
+        <h3 style="margin: 0 0 0.75rem 0; font-size: 1.5rem; font-weight: 700;">Is your content ready for the AI shift?</h3>
+        <p style="margin: 0 0 1.5rem 0; font-size: 1.1rem; opacity: 0.9;">Stop optimizing for 2015. Strat optimizing for the generative future. Get a targeted AI Visibility Audit for your brand today.</p>
+        <a href="/contact" class="blog-cta-button inline-block bg-accent text-primary px-8 py-3 font-bold rounded hover:bg-accent/90 transition-colors">Claim My AI Visibility Audit</a>
+        <p style="margin: 1rem 0 0 0; font-size: 0.9rem; opacity: 0.8; font-style: italic;">Specialized strategy for UAE & KSA markets.</p>
+      </div>
+
+      <div class="faq-section mt-12">
+        <h2 class="text-2xl font-syne font-bold mb-6">Common GEO Questions</h2>
+        <div class="blog-faq-item mb-4 pb-4 border-b border-white/10 font-dm-sans">
+          <div class="blog-faq-question font-bold mb-2">Q: Does GEO replace traditional SEO?</div>
+          <div class="blog-faq-answer text-text-muted">No. It layers on top. High organic rankings in Google still drive the retrieval pool for AI Overviews. Traditional <a href="/services/seo">SEO foundations</a> are the prerequisite for AI citation.</div>
+        </div>
+        <div class="blog-faq-item mb-4 pb-4 border-b border-white/10 font-dm-sans">
+          <div class="blog-faq-question font-bold mb-2">Q: How do I track AI Referral traffic?</div>
+          <div class="blog-faq-answer text-text-muted">In GA4, filter your referrals specifically for chatgpt.com, perplexity.ai, and gemini.google.com. You can also monitor "Brand Mentions" via tools like Semrush's AI Visibility Toolkit.</div>
+        </div>
+      </div>
+    `
+  },
+  {
     slug: "snapchat-ads-saudi-arabia-conversion-guide-2026",
     title: "Snapchat Ads in Saudi Arabia: What Actually Converts in 2026",
     category: "Paid Advertising",
