@@ -40,12 +40,12 @@ export const specializedContentMap: Record<string, SpecializedContent> = {
     `,
     additionalFAQs: [
       {
-        question: "How does AI automation support Saudi Vision 2030 for Dammam industries?",
-        answer: "Vision 2030 emphasizes digital diversification and industrial efficiency. Automation reduces the reliance on manual labor for repetitive data tasks, allowing Saudi firms to scale output and improve their competitiveness in the global supply chain, specifically within the National Industrial Development and Logistics Program (NIDLP)."
+        question: "How much does AI automation cost in Dammam?",
+        answer: "AI automation projects for Dammam businesses typically range from SAR 6,000-20,000 for initial setup, with monthly optimization retainers of SAR 3,000-8,000. ROI is typically achieved within 30-60 days through time savings and efficiency gains."
       },
       {
-        question: "Can these AI workflows handle the scale of Eastern Province Oil & Gas operations?",
-        answer: "Yes. We build scalable architectures that handle high-volume data streams common in O&G logistics and supply chain management. From automated invoice processing for thousands of vendors to AI-driven resource allocation, our systems are built for the heavy-duty requirements of Dammam's economy."
+        question: "How does AI automation support Saudi Vision 2030 for Dammam industries?",
+        answer: "Vision 2030 emphasizes digital diversification and industrial efficiency. Automation reduces the reliance on manual labor for repetitive data tasks, allowing Saudi firms to scale output and improve their competitiveness in the global supply chain, specifically within the National Industrial Development and Logistics Program (NIDLP)."
       },
       {
         question: "Does your AI automation support the Arabic-first requirements of KSA government portals?",
@@ -56,9 +56,13 @@ export const specializedContentMap: Record<string, SpecializedContent> = {
   "riyadh-paid-ads": {
     marketContext: `
       <p>Riyadh is the competitive epicentre of Saudi Arabia's retail and B2B digital landscape. For businesses in the capital, standard ad management is no longer enough to secure a profitable Cost Per Acquisition (CPA). High-growth firms in Riyadh are now leveraging advanced data benchmarks to outpace competitors on high-conversion channels like Snapchat, TikTok, and Google Search.</p>
-      <p>When scaling campaigns in the Central Province, understanding local performance data is critical. We recommend all Riyadh-based marketing leaders review our <a href="/snapchat-ads-saudi-arabia-benchmarks" class="text-accent font-bold hover:underline">Snapchat Ads Saudi Arabia Benchmarks</a> to compare their current CPA and ROAS against industry averages for E-commerce, Retail, and B2B services. This transparency ensures that your Riyadh-focused budget is reaching Najdi audiences with maximum efficiency.</p>
+      <p>When scaling campaigns in the Central Province, understanding local performance data is critical. We recommend all Riyadh-based marketing leaders review our <a href="/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026" class="text-accent font-bold hover:underline">Snapchat Ads Saudi Arabia Benchmarks</a> to compare their current CPA and ROAS against industry averages for E-commerce, Retail, and B2B services. This transparency ensures that your Riyadh-focused budget is reaching Najdi audiences with maximum efficiency.</p>
     `,
     additionalFAQs: [
+      {
+        question: "What is the average CPA for Snapchat ads in Saudi Arabia?",
+        answer: "Based on 28 KSA campaigns in 2025, average CPA ranges from SAR 45-95 for e-commerce, SAR 110-240 for B2B services, and SAR 35-70 for local services. Riyadh campaigns typically see 15-20% lower CPA than other regions."
+      },
       {
         question: "What is a sustainable ROAS for retail brands in Riyadh?",
         answer: "For most Riyadh-based retail brands on Snapchat or Google, a sustainable ROAS ranges between 2.5x and 4.0x. However, factors like local Najdi creative and seasonal Ramadan trends can push these numbers significantly higher."

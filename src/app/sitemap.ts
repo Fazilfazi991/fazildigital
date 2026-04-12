@@ -25,8 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/methodology',
     '/markets',
     '/contact',
-    '/digital-marketing-expert-dubai',
-    '/snapchat-ads-saudi-arabia-benchmarks'
+    '/digital-marketing-expert-dubai'
   ].map((route) => ({
     url: `${SITE_URL}${route}`,
     lastModified: new Date(),

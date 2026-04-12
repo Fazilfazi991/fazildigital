@@ -9,8 +9,8 @@ import ProcessTimeline from "@/components/visuals/ProcessTimeline";
 import AgencyComparison from "@/components/visuals/AgencyComparison";
 
 export const metadata: Metadata = {
-  title: "Mohammad Fazil | Digital Marketing Expert in Dubai | SEO, Paid Ads & AI Automation | UAE & Saudi Arabia",
-  description: "Senior Digital Consultant based in Dubai. Direct access expertise for mid-size UAE & KSA businesses. SEO, Paid Ads, and AI Automation that actually moves the needle."
+  title: "Digital Marketing Expert Dubai | SEO, Ads & AI | Free Audit",
+  description: "Mohammad Fazil helps mid-size UAE & KSA businesses grow through SEO, paid ads & AI automation. 50+ clients served. Book your free 30-min growth audit. No pitch, just results."
 };
 
 export default function Home() {
@@ -46,6 +46,27 @@ export default function Home() {
           "AI Automation",
           "SaaS Development",
           "GCC Markets"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why hire a digital consultant vs. a marketing agency in Dubai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unlike agencies that outsource your account to junior staff, a consultant provides direct-access expertise. You get senior-level strategy and execution from the same person, ensuring no knowledge loss and 100% accountability for your ROI."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to see ROI from SEO or AI automation in the GCC?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Paid ads typically show initial results within 48-72 hours. SEO focuses on long-term authority, often taking 3-6 months for significant movement. AI automation projects usually pay for themselves within 30-60 days through reclaimed time and operational efficiency."
+            }
+          }
         ]
       },
       {

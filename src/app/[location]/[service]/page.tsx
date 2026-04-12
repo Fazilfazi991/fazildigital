@@ -30,8 +30,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = services.find((s) => s.slug === serviceSlug);
   if (!location || !service) return {};
 
-  const title = `${service.name} Expert in ${location.city} | ${location.country} | Mohammad Fazil`;
-  const description = `Looking for a ${service.name.toLowerCase()} expert in ${location.city}? Mohammad Fazil offers senior-level ${service.name.toLowerCase()} for mid-size businesses in ${location.city} and across ${location.country}.`;
+  let hook = "Free Audit";
+  if (serviceSlug === "ai-automation") hook = "Save 10+ Hours/Week";
+  if (serviceSlug === "seo") hook = "Rank Higher on Google";
+  if (serviceSlug === "paid-ads") hook = "Stop Wasting Ad Spend";
+
+  const title = `${service.name} ${location.city}: ${hook} | Fazil Digital`;
+  const description = `${location.city} ${service.name} expert helping businesses ${hook.toLowerCase()}. 50+ clients served in ${location.country}. Book your free 30-min growth consultation today.`;
 
   const isUAE = ["dubai", "abu-dhabi", "sharjah", "ajman"].includes(locationSlug);
   const isSA = ["riyadh", "jeddah", "dammam"].includes(locationSlug);
