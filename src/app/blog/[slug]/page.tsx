@@ -63,7 +63,7 @@ export default async function BlogPostPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <article className="pt-24 pb-32">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/blog" className="text-accent hover:underline mb-8 inline-block font-medium">
             ← Back to Blog
           </Link>
@@ -87,7 +87,7 @@ export default async function BlogPostPage({ params }: Props) {
               </>
             )}
           </div>
-          <h1 className="text-4xl md:text-5xl font-syne font-bold text-bg-base leading-tight mb-6">
+          <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base leading-tight mb-6">
             {post.title}
           </h1>
           <div className="flex items-center gap-3 pt-6 border-t border-white/5">
@@ -100,9 +100,7 @@ export default async function BlogPostPage({ params }: Props) {
         </header>
 
         <div 
-          className="prose prose-invert prose-lg max-w-none text-text-muted font-dm-sans leading-relaxed
-                     prose-headings:font-syne prose-headings:text-bg-base prose-headings:font-bold
-                     prose-a:text-accent prose-strong:text-bg-base"
+          className="blog-content-premium"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
