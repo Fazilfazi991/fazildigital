@@ -33,7 +33,9 @@ export default function BlogPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post) => (
+          {[...blogPosts]
+            .sort((a, b) => new Date(b.lastModified || b.date).getTime() - new Date(a.lastModified || a.date).getTime())
+            .map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group border border-white/10 bg-[#0A0A0A] hover:border-accent/40 hover:-translate-y-0.5 transition-all duration-300">
               <article className="p-8">
                 <div className="flex items-center justify-between mb-6">
