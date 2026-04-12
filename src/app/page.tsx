@@ -4,6 +4,9 @@ import { locations } from "@/data/locations";
 import Link from "next/link";
 import Script from "next/script";
 import { Metadata } from "next";
+import GrowthFlywheel from "@/components/visuals/GrowthFlywheel";
+import ProcessTimeline from "@/components/visuals/ProcessTimeline";
+import AgencyComparison from "@/components/visuals/AgencyComparison";
 
 export const metadata: Metadata = {
   title: "Mohammad Fazil | Digital Marketing Expert in Dubai | SEO, Paid Ads & AI Automation | UAE & Saudi Arabia",
@@ -169,6 +172,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Agency vs Independent Expert (Conversion Anchor) */}
+      <section className="py-24 bg-primary px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-4">Direct Senior Access &gt; Agency Layers</h2>
+            <p className="text-text-muted max-w-2xl mx-auto">Experience the difference of working directly with an expert who understands the GCC market, not an account manager.</p>
+          <AgencyComparison />
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-24 bg-primary px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -209,7 +221,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Location Signals Section */}
+      {/* How It Works */}
+      <section className="py-24 bg-[#050505] border-y border-white/5 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-3">How It Works</h2>
+            <p className="text-text-muted max-w-xl mx-auto">A straightforward four-step process from first conversation to measurable results.</p>
+          </div>
+          <ProcessTimeline />
+        </div>
+      </section>
+
+      {/* Growth Flywheel */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8">
+        <GrowthFlywheel />
+      </section>
+
       <section className="py-24 bg-[#050505] border-y border-white/5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-6">Serving Businesses Across the UAE & Saudi Arabia</h2>

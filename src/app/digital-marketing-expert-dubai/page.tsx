@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import Script from "next/script";
+import ProcessTimeline from "@/components/visuals/ProcessTimeline";
+import AgencyComparison from "@/components/visuals/AgencyComparison";
 
 export const metadata: Metadata = {
   title: "Digital Marketing Expert in Dubai | Mohammad Fazil",
@@ -213,6 +215,28 @@ export default function DigitalMarketingExpertDubai() {
               View all services →
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* ── AGENCY VS DIRECT ACCESS ── */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-black/20 border-b border-white/5">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-6">
+            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-3">Agency vs Direct Access</h2>
+            <p className="text-text-muted max-w-xl mx-auto italic text-sm">Why mid-size businesses are moving away from traditional agency models.</p>
+          </div>
+          <AgencyComparison />
+        </div>
+      </section>
+
+      {/* ── HOW IT WORKS ── */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5 bg-[#050505]">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-3">How It Works</h2>
+            <p className="text-text-muted max-w-xl mx-auto">A clear four-step process from first conversation to measurable results.</p>
+          </div>
+          <ProcessTimeline />
         </div>
       </section>
 

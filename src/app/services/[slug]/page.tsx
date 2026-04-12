@@ -4,6 +4,8 @@ import Link from "next/link";
 import { services } from "@/data/services";
 import { locations } from "@/data/locations";
 import { Button } from "@/components/Button";
+import ProcessTimeline from "@/components/visuals/ProcessTimeline";
+import PlatformMap from "@/components/visuals/PlatformMap";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -149,24 +151,21 @@ export default async function ServicePage({ params }: Props) {
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12">The Process</h2>
-          <div className="relative space-y-0">
-            {["Discovery Call & Audit", "Strategy & Roadmap", "Execution", "Reporting & Optimization"].map((step, i) => (
-              <div key={step} className="flex gap-8 pb-10 relative">
-                <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full border-2 border-accent flex items-center justify-center text-accent font-syne font-bold text-lg flex-shrink-0 bg-primary z-10">
-                    {i + 1}
-                  </div>
-                  {i < 3 && <div className="flex-1 w-px bg-white/10 mt-2"></div>}
-                </div>
-                <div className="pt-2 pb-10">
-                  <h3 className="text-xl font-syne font-bold text-bg-base mb-2">{step}</h3>
-                  <p className="text-text-muted">We handle this phase with transparency and clear communication throughout.</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ProcessTimeline />
         </div>
       </section>
+
+      {/* Platform Map — paid-ads and social-media-management only */}
+      {(slug === "paid-ads" || slug === "social-media-management") && (
+        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#050505] border-b border-white/5">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-syne font-bold text-bg-base mb-4">GCC Platform Strategy</h2>
+            <p className="text-text-muted mb-10">Not every platform performs equally in every market. Here's how each channel stacks up for UAE vs Saudi Arabia audiences.</p>
+            <PlatformMap />
+          </div>
+        </section>
+      )}
+
 
       {/* Where I Work (Strategic Internal Linking) */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#050505] border-b border-white/5">
