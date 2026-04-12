@@ -218,6 +218,12 @@ export const blogPosts: BlogPost[] = [
       <p>A common pitfall for digital marketing agencies operating out of North America or Europe is treating the Saudi audience as homogenous with the broader Middle East. <a href="/locations/riyadh">Riyadh</a> has fundamentally different search and consumption habits than Dubai.</p>
       <p>The reliance on broad audience networks, English-first copy translated via AI, and high-production but socially disconnected video assets results in abysmal click-through rates. Saudi audiences reward authenticity, native dialect, and fast pacing.</p>
 
+      <div class="blog-trust-badge my-10 bg-accent/5 border-accent/20">
+        <h4 class="text-bg-base font-bold mb-3 italic">"Are my Snapchat CPAs too high?"</h4>
+        <p class="text-sm mb-4">Before optimizing further, benchmark your current performance against Saudi-specific industry averages. Check our 2026 reference guide:</p>
+        <Link href="/snapchat-ads-saudi-arabia-benchmarks" class="text-accent font-bold hover:underline">View Snapchat Ads Saudi Arabia Benchmarks →</Link>
+      </div>
+
       <h2>Chapter 2: The 3 Snapchat Ad Mistakes Killing ROI</h2>
       <h3>Mistake #1: Using English-First or Auto-Translated Creative</h3>
       <p>In analyzing recent campaigns, Arabic-native creative had a <strong>3.2x higher CTR and 2.1x lower CPA</strong> compared to direct English translations. Never auto-translate. You must incorporate native Arabic copywriters who understand specific regional nuances (Najdi dialect for Riyadh vs. Hijazi dialect for Jeddah).</p>

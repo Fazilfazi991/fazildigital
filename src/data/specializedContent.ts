@@ -33,7 +33,10 @@ export const specializedContentMap: Record<string, SpecializedContent> = {
       
       <p>For mid-size industrial firms in Dammam, the challenge is scaling production while maintaining the rigorous standards of Saudi Aramco and other major entities. AI automation solves this by implementing automated quality control alerts, predictive maintenance scheduling, and real-time logistics optimization. We focus on bridging the gap between legacy industrial processes and the new 'NEOM technology corridor,' ensuring that Dammam-based companies are ready to act as key suppliers in the Saudi Giga-projects.</p>
       
-      <p>The Eastern Province's digital transformation is also characterized by a shift toward localized SaaS solutions and AI-driven reporting for environmental and safety compliance. By implementing custom AI workflows, Dammam businesses can automate nearly 70% of their recurring safety documentation and procurement updates. This operational efficiency is critical as Dammam continues to expand its role as a global logistics hub connecting the Kingdom to the GCC and beyond. Our strategy ensures your automation is built for the rugged, high-stakes reality of KSA's industrial core.</p>
+      <h3>AI Digital Marketing Services in Dammam</h3>
+      <p>AI Digital Marketing Services in Dammam applies the power of machine learning and large language models (LLMs) to solve specific conversion challenges for Eastern Province enterprises. In a region where Google Ads and Instagram/Snapchat are primary customer acquisition channels, AI automation shifts the needle from manual management to autonomous scaling. We implement automated reporting hubs that pull real-time data from disparate KSA-facing channels into a single decision dashboard, eliminating the delay of monthly manual exports. AI-powered ad optimization allows Dammam businesses to dynamically test thousands of Arabic creative variations against Najdi and Hijazi dialects, automatically reallocating budget to what converts in the local market. For Eastern Province businesses, chatbot lead capture is no longer just a trend; it is a necessity for 24/7 engagement on WhatsApp, ensuring no lead from the Dammam-Dhahran-Khobar corridor is lost during off-hours. Finally, automated social media management ensures that your brand remains top-of-mind with a consistent cadence of localized content that responds to KSA-specific trends and Ramadan/national holidays in real-time. This is the 'Direct Access' model of AI digital marketing: cutting-edge tech managed locally for Dammam commercial leaders.</p>
+
+      <p>The Eastern Province's digital transformation is also characterized by a shift toward localized SaaS solutions and AI-driven reporting for environmental and safety compliance. By implementing custom AI workflows, Dammam businesses can automate nearly 70% of their recurring safety documentation and procurement updates. This operational efficiency is critical as Dammam continues to expand its role as a global logistics hub connecting the Kingdom to the GCC and beyond.</p>
     `,
     additionalFAQs: [
       {
@@ -47,6 +50,30 @@ export const specializedContentMap: Record<string, SpecializedContent> = {
       {
         question: "Does your AI automation support the Arabic-first requirements of KSA government portals?",
         answer: "Bilingual capability is at the core of our KSA strategy. Our AI workflows can process, translate, and generate documentation in both Arabic and English, ensuring seamless integration with ZATCA (Fatoora) requirements and other local Saudi digital portals."
+      }
+    ]
+  },
+  "riyadh-paid-ads": {
+    marketContext: `
+      <p>Riyadh is the competitive epicentre of Saudi Arabia's retail and B2B digital landscape. For businesses in the capital, standard ad management is no longer enough to secure a profitable Cost Per Acquisition (CPA). High-growth firms in Riyadh are now leveraging advanced data benchmarks to outpace competitors on high-conversion channels like Snapchat, TikTok, and Google Search.</p>
+      <p>When scaling campaigns in the Central Province, understanding local performance data is critical. We recommend all Riyadh-based marketing leaders review our <a href="/snapchat-ads-saudi-arabia-benchmarks" class="text-accent font-bold hover:underline">Snapchat Ads Saudi Arabia Benchmarks</a> to compare their current CPA and ROAS against industry averages for E-commerce, Retail, and B2B services. This transparency ensures that your Riyadh-focused budget is reaching Najdi audiences with maximum efficiency.</p>
+    `,
+    additionalFAQs: [
+      {
+        question: "What is a sustainable ROAS for retail brands in Riyadh?",
+        answer: "For most Riyadh-based retail brands on Snapchat or Google, a sustainable ROAS ranges between 2.5x and 4.0x. However, factors like local Najdi creative and seasonal Ramadan trends can push these numbers significantly higher."
+      }
+    ]
+  },
+  "jeddah-paid-ads": {
+    marketContext: `
+      <p>Jeddah's commercial landscape is defined by its role as the Gateway to the Hijaz and a primary hub for lifestyle, tourism, and retail commerce. Reaching the Jeddah audience requires a blend of high-production vertical video and deep data sensitivity. As consumer buying habits in the Western Province continue to evolve, staying updated on platform benchmarks is the first step toward ad profitability.</p>
+      <p>If you are managing high-spend accounts from Jeddah, ensure your targeting is aligned with current market rates. Our <a href="/snapchat-ads-saudi-arabia-benchmarks" class="text-accent font-bold hover:underline">Snapchat Ads Saudi Arabia Benchmarks</a> guide provides the baseline data needed to audit your Western Province campaigns for CPC and conversion efficiency. Achieving 'Direct Access' results in Jeddah requires moving beyond vanity metrics to real-time performance tracking.</p>
+    `,
+    additionalFAQs: [
+      {
+        question: "How does Jeddah's ad performance differ from Riyadh?",
+        answer: "Jeddah often sees slightly lower CPCs in lifestyle and retail sectors due to a broader consumer demographic, though B2B acquisition can be more competitive. We use regional Hijazi-inflected creative to improve CTR for Jeddah-based audiences."
       }
     ]
   }
