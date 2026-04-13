@@ -199,111 +199,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* Web Development Projects Section */}
-      <section className="bg-[#f8f9fa] py-24 px-4 sm:px-6 lg:px-8 text-gray-900 border-y border-gray-200">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-syne font-bold text-slate-900 mb-4">
-              Web Development Projects
-            </h2>
-            <p className="text-slate-600 text-lg max-w-2xl mx-auto font-medium">
-              Custom websites built for performance, conversion, and user experience.
-            </p>
-            <p className="text-slate-500 italic mt-2">
-              From e-commerce to corporate sites — fast, responsive, and SEO-optimized.
-            </p>
-          </div>
-
-          <div className="space-y-20">
-            {featuredWebProjects.map((project, idx) => (
-              <div 
-                key={project.name}
-                className="group bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 flex flex-col lg:flex-row hover:shadow-blue-900/10 transition-shadow duration-500"
-              >
-                {/* Visual Area */}
-                <div 
-                  className="relative w-full lg:w-1/2 min-h-[400px] cursor-zoom-in overflow-hidden"
-                  onClick={() => setSelectedImage(project.image)}
-                >
-                  <Image 
-                    src={project.image} 
-                    alt={project.name} 
-                    fill 
-                    className="object-top object-cover transition-transform duration-700 group-hover:scale-105"
-                    unoptimized
-                  />
-                  <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors"></div>
-                  
-                  {/* Tech Stack Overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                    <div className="flex flex-wrap gap-2">
-                      {project.tech.map(t => (
-                        <span key={t} className="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-[10px] uppercase font-bold text-white tracking-widest">
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Info Area */}
-                <div className="p-8 lg:p-12 lg:w-1/2 flex flex-col justify-center">
-                  <div className="mb-6">
-                    <h3 className="text-3xl font-syne font-bold text-slate-900 mb-2">{project.name}</h3>
-                    <p className="text-blue-600 font-bold text-sm uppercase tracking-widest italic">{project.location}</p>
-                  </div>
-                  
-                  <p className="text-slate-600 leading-relaxed mb-8 text-lg">
-                    {project.description}
-                  </p>
-                  
-                  <div className="mb-10">
-                    <h4 className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-4">Key Deliverables</h4>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {project.features.map(f => (
-                        <li key={f} className="flex items-center text-sm text-slate-700 font-medium">
-                          <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-3 shrink-0"></span>
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <Link 
-                    href={project.url} 
-                    target="_blank"
-                    className="inline-flex items-center justify-center bg-blue-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-slate-900 transition-all shadow-lg shadow-blue-600/20 group-hover:translate-x-1"
-                  >
-                    Visit Website <span className="ml-2 group-hover:ml-4 transition-all">→</span>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* More Projects Section */}
-          <div className="mt-32">
-            <h3 className="text-3xl font-syne font-bold text-slate-900 text-center mb-12">More Successful Launches</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {otherPlatforms.map((platform) => (
-                <div key={platform.name} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
-                  <h4 className="text-lg font-bold text-slate-900 mb-1">{platform.name}</h4>
-                  <p className="text-xs text-slate-500 font-medium mb-4">{platform.industry}</p>
-                  <Link 
-                    href={platform.url} 
-                    target="_blank"
-                    className="text-blue-600 font-bold text-xs uppercase tracking-widest flex items-center group-hover:text-slate-900"
-                  >
-                    Launch Site <span className="ml-2 transition-all group-hover:translate-x-1">→</span>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Clients Section */}
+      {/* Clients Section (Trusted by Leading GCC Brands) */}
       <section className="bg-[#050505] py-32 border-y border-white/5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
@@ -406,6 +302,110 @@ export default function PortfolioPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Web Development Projects Section */}
+      <section className="bg-[#f8f9fa] py-24 px-4 sm:px-6 lg:px-8 text-gray-900 border-y border-gray-200">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-syne font-bold text-slate-900 mb-4">
+              Web Development Projects
+            </h2>
+            <p className="text-slate-600 text-lg max-w-2xl mx-auto font-medium">
+              Custom websites built for performance, conversion, and user experience.
+            </p>
+            <p className="text-slate-500 italic mt-2">
+              From e-commerce to corporate sites — fast, responsive, and SEO-optimized.
+            </p>
+          </div>
+
+          <div className="space-y-20">
+            {featuredWebProjects.map((project, idx) => (
+              <div 
+                key={project.name}
+                className="group bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 flex flex-col lg:flex-row hover:shadow-blue-900/10 transition-shadow duration-500"
+              >
+                {/* Visual Area */}
+                <div 
+                  className="relative w-full lg:w-1/2 min-h-[400px] cursor-zoom-in overflow-hidden"
+                  onClick={() => setSelectedImage(project.image)}
+                >
+                  <Image 
+                    src={project.image} 
+                    alt={project.name} 
+                    fill 
+                    className="object-top object-cover transition-transform duration-700 group-hover:scale-105"
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors"></div>
+                  
+                  {/* Tech Stack Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <div className="flex flex-wrap gap-2">
+                      {project.tech.map(t => (
+                        <span key={t} className="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-[10px] uppercase font-bold text-white tracking-widest">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Info Area */}
+                <div className="p-8 lg:p-12 lg:w-1/2 flex flex-col justify-center">
+                  <div className="mb-6">
+                    <h3 className="text-3xl font-syne font-bold text-slate-900 mb-2">{project.name}</h3>
+                    <p className="text-blue-600 font-bold text-sm uppercase tracking-widest italic">{project.location}</p>
+                  </div>
+                  
+                  <p className="text-slate-600 leading-relaxed mb-8 text-lg">
+                    {project.description}
+                  </p>
+                  
+                  <div className="mb-10">
+                    <h4 className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-4">Key Deliverables</h4>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {project.features.map(f => (
+                        <li key={f} className="flex items-center text-sm text-slate-700 font-medium">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-3 shrink-0"></span>
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <Link 
+                    href={project.url} 
+                    target="_blank"
+                    className="inline-flex items-center justify-center bg-blue-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-slate-900 transition-all shadow-lg shadow-blue-600/20 group-hover:translate-x-1"
+                  >
+                    Visit Website <span className="ml-2 group-hover:ml-4 transition-all">→</span>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* More Projects Section */}
+          <div className="mt-32">
+            <h3 className="text-3xl font-syne font-bold text-slate-900 text-center mb-12">More Successful Launches</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {otherPlatforms.map((platform) => (
+                <div key={platform.name} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+                  <h4 className="text-lg font-bold text-slate-900 mb-1">{platform.name}</h4>
+                  <p className="text-xs text-slate-500 font-medium mb-4">{platform.industry}</p>
+                  <Link 
+                    href={platform.url} 
+                    target="_blank"
+                    className="text-blue-600 font-bold text-xs uppercase tracking-widest flex items-center group-hover:text-slate-900"
+                  >
+                    Launch Site <span className="ml-2 transition-all group-hover:translate-x-1">→</span>
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
