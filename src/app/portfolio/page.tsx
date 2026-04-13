@@ -1,17 +1,74 @@
+"use client";
+
+import { useState } from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import { portfolioServices, clients } from "@/data/portfolio";
 
-export const metadata: Metadata = {
-  title: "Portfolio & Clients | Mohammad Fazil - Digital Consultant in Dubai",
-  description: "Browse the digital marketing, SEO, and AI automation work Mohammad Fazil has delivered for leading businesses in the UAE and Saudi Arabia.",
-};
-
 export default function PortfolioPage() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const behanceProjects = [
+    {
+      title: "MALABAR GOLDEN TRITH",
+      images: [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/1dc45e203130197.6691858f52b4e.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/df3aa8203130197.6691858f53248.jpg"
+      ]
+    },
+    {
+      title: "Package Designing",
+      images: [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400/eaf401225320887.681b2d0b883a3.jpeg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400/80434d225320887.681b2d0b877b6.jpeg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8ea13b225320887.681b2d0b87e6b.jpeg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400/179f34225320887.681b2d0b8722e.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400/85679f225320887.681b2d0b88efa.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400/d11afd225320887.681b2d0b8b29f.png"
+      ],
+      link: "https://www.behance.net/gallery/210712151/Branding"
+    },
+    {
+      title: "FILLI TEA",
+      images: [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4a97fc221758311.67d9fe4c99f15.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2d248b221758311.67d9fe4c99842.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0e1962221758311.67d9fe4c9acd6.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8464f0221758311.67d9fe4c9a6da.jpg"
+      ]
+    }
+  ];
+
   return (
     <div className="pt-24 pb-32 overflow-hidden">
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-sm p-4 cursor-zoom-out"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative w-full h-full max-w-6xl max-h-[90vh]">
+            <Image 
+              src={selectedImage} 
+              alt="Project Showcase" 
+              fill 
+              className="object-contain"
+              priority
+            />
+            <button 
+              className="absolute top-4 right-4 text-white hover:text-accent p-2 bg-white/10 rounded-full transition-colors"
+              onClick={() => setSelectedImage(null)}
+            >
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Hero Section */}
       <section className="relative px-4 sm:px-6 lg:px-8 mb-24">
         <div className="max-w-4xl mx-auto text-center">
@@ -178,6 +235,136 @@ export default function PortfolioPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Behance Portfolio Section */}
+      <section className="bg-white py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-syne font-bold text-gray-900 mb-4">
+              Latest Design Work
+            </h2>
+            <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+              Branding, packaging, and visual design projects from Zorx Media
+            </p>
+          </div>
+
+          {/* Project 1: MALABAR GOLDEN TRITH */}
+          <div className="mb-20">
+            <h3 className="text-2xl font-syne font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-2 inline-block">
+              MALABAR GOLDEN TRITH
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {[
+                "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/1dc45e203130197.6691858f52b4e.jpg",
+                "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/df3aa8203130197.6691858f53248.jpg"
+              ].map((src, i) => (
+                <div 
+                  key={i} 
+                  className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-2 cursor-zoom-in"
+                  onClick={() => setSelectedImage(src)}
+                >
+                  <Image 
+                    src={src} 
+                    alt={`MALABAR GOLDEN TRITH - Design ${i+1}`} 
+                    fill 
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Project 2: Package Designing */}
+          <div className="mb-20">
+            <h3 className="text-2xl font-syne font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-2 inline-block">
+              Package Designing
+            </h3>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/eaf401225320887.681b2d0b883a3.jpeg",
+                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/80434d225320887.681b2d0b877b6.jpeg",
+                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8ea13b225320887.681b2d0b87e6b.jpeg",
+                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/179f34225320887.681b2d0b8722e.jpg",
+                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/85679f225320887.681b2d0b88efa.jpg",
+                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/d11afd225320887.681b2d0b8b29f.png"
+              ].map((src, i) => (
+                <div 
+                  key={i} 
+                  className="group relative h-[400px] rounded-2xl overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-2 cursor-zoom-in"
+                  onClick={() => setSelectedImage(src)}
+                >
+                  <Image 
+                    src={src} 
+                    alt={`Package Design ${i+1}`} 
+                    fill 
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+            
+            <div className="text-center mt-12">
+              <Link
+                href="https://www.behance.net/gallery/210712151/Branding"
+                target="_blank"
+                className="inline-block bg-blue-600 text-white font-bold py-4 px-8 rounded-xl hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20"
+              >
+                View All 18 Package Designs on Behance →
+              </Link>
+            </div>
+          </div>
+
+          {/* Project 3: FILLI TEA */}
+          <div className="mb-20">
+            <h3 className="text-2xl font-syne font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-2 inline-block">
+              FILLI TEA
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {[
+                "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4a97fc221758311.67d9fe4c99f15.jpg",
+                "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2d248b221758311.67d9fe4c99842.jpg",
+                "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0e1962221758311.67d9fe4c9acd6.jpg",
+                "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8464f0221758311.67d9fe4c9a6da.jpg"
+              ].map((src, i) => (
+                <div 
+                  key={i} 
+                  className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-2 cursor-zoom-in"
+                  onClick={() => setSelectedImage(src)}
+                >
+                  <Image 
+                    src={src} 
+                    alt={`FILLI TEA - Design ${i+1}`} 
+                    fill 
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* View Full Portfolio CTA */}
+          <div className="bg-gray-50 rounded-[2.5rem] p-12 text-center border border-gray-100">
+            <h3 className="text-3xl font-syne font-bold text-gray-900 mb-4">
+              Want to See More Work?
+            </h3>
+            <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
+              Visit our Behance profile to explore complete case studies, process breakdowns, and additional projects.
+            </p>
+            
+            <Link
+              href="https://www.behance.net/16645c70"
+              target="_blank"
+              className="inline-block bg-blue-600 text-white font-bold py-5 px-10 rounded-xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/30 hover:-translate-y-1"
+            >
+              View Full Behance Portfolio →
+            </Link>
           </div>
         </div>
       </section>
