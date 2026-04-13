@@ -92,39 +92,66 @@ export default function PortfolioPage() {
             {clients.map((client) => (
               <div 
                 key={client.name}
-                className="relative flex flex-col bg-primary border border-white/10 rounded-3xl p-8 hover:border-accent/40 transition-colors shadow-2xl overflow-hidden group"
+                className="relative flex flex-col bg-white/[0.03] backdrop-blur-md border border-white/10 rounded-[2rem] p-6 hover:border-accent/40 transition-all duration-500 shadow-2xl overflow-hidden group"
               >
-                {/* Logo Area */}
-                <div className="relative h-24 mb-10 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
+                {/* Visual Header / Screenshot Area */}
+                <div className="relative aspect-[16/10] mb-8 rounded-2xl overflow-hidden bg-primary border border-white/5">
                   {client.logoUrl ? (
-                    <div className="relative w-full h-full">
+                    <div className="relative w-full h-full transform group-hover:scale-105 transition-transform duration-700">
                        <Image 
-                        src={`/images/portfolio/clients/logos_set_2.png`} 
-                        alt={client.name} 
+                        src={client.logoUrl} 
+                        alt={`${client.name} Website Screenshot`} 
                         fill 
-                        className="object-contain"
+                        className="object-cover"
                       />
+                      <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
                     </div>
                   ) : (
-                    <div className="text-3xl font-syne font-bold text-white/20 tracking-tighter uppercase opacity-50 group-hover:text-accent group-hover:opacity-100 transition-all">
-                      {client.name}
+                    <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-white/[0.05] to-transparent p-12">
+                      <div className="text-6xl font-syne font-bold text-white/5 tracking-tighter uppercase mb-2 select-none">
+                        {client.name.split(' ').map(w => w[0]).join('')}
+                      </div>
+                      <div className="text-xs font-syne font-bold text-accent tracking-[0.2em] uppercase opacity-40">
+                        Visualizing Growth
+                      </div>
                     </div>
                   )}
+                  
+                  {/* Floating Brand Tag */}
+                  <div className="absolute top-4 left-4 bg-primary/90 backdrop-blur-md border border-white/10 px-4 py-1.5 rounded-full text-[10px] font-bold text-accent uppercase tracking-widest shadow-xl">
+                    {client.industry.split(' • ')[0]}
+                  </div>
                 </div>
 
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-syne font-bold text-bg-base leading-none">
-                    {client.name}
-                  </h3>
-                  <p className="text-xs font-bold text-accent uppercase tracking-widest">
-                    {client.industry}
-                  </p>
+                <div className="px-2 space-y-4">
+                  <div className="flex items-end justify-between">
+                    <div>
+                      <h3 className="text-2xl font-syne font-bold text-bg-base leading-none mb-2">
+                        {client.name}
+                      </h3>
+                      <p className="text-[10px] font-bold text-text-muted uppercase tracking-widest">
+                        {client.industry}
+                      </p>
+                    </div>
+                    {client.websiteUrl && (
+                       <Link 
+                        href={client.websiteUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent transition-all group/btn"
+                      >
+                        <svg className="w-4 h-4 text-bg-base transition-transform group-hover/btn:-rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                      </Link>
+                    )}
+                  </div>
                   
                   <div className="flex flex-wrap gap-2 pt-2">
                     {client.services.map((service) => (
                       <span 
                         key={service} 
-                        className="text-[10px] bg-white/5 border border-white/10 px-3 py-1 rounded-full text-text-muted uppercase font-bold"
+                        className="text-[9px] bg-accent/10 border border-accent/20 px-3 py-1 rounded-full text-accent uppercase font-bold tracking-tighter"
                       >
                         {service}
                       </span>
@@ -132,27 +159,22 @@ export default function PortfolioPage() {
                   </div>
                 </div>
 
-                <div className="mt-8 pt-8 border-t border-white/5 flex gap-4">
-                  {client.websiteUrl && (
-                    <a 
-                      href={client.websiteUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-xs text-accent font-bold hover:underline"
-                    >
-                      Visit Website →
-                    </a>
-                  )}
-                  {client.instagramUrl && (
-                    <a 
-                      href={client.instagramUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-xs text-text-muted font-bold hover:text-bg-base"
-                    >
-                      Instagram
-                    </a>
-                  )}
+                <div className="mt-8 pt-6 border-t border-white/5 px-2 flex justify-between items-center opacity-60 group-hover:opacity-100 transition-opacity">
+                  <div className="flex gap-4">
+                    {client.instagramUrl && (
+                      <Link 
+                        href={client.instagramUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-[10px] text-text-muted font-bold hover:text-accent tracking-widest uppercase"
+                      >
+                        Instagram
+                      </Link>
+                    )}
+                  </div>
+                  <span className="text-[10px] text-accent/40 font-bold uppercase tracking-widest">
+                    Case Study Phase II
+                  </span>
                 </div>
               </div>
             ))}

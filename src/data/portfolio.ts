@@ -102,27 +102,30 @@ export const clients: Client[] = [
     industry: "E-commerce • Eco-friendly Products",
     services: ["SEO", "Google Ads", "Content Marketing"],
     websiteUrl: "https://greenbagsuae.com",
-    instagramUrl: "https://instagram.com/greenbagsuae"
+    instagramUrl: "https://instagram.com/greenbagsuae",
+    logoUrl: "/images/portfolio/clients/green_bags_web.png"
   },
   {
     name: "Golden Point",
     industry: "Retail • Fashion",
     services: ["Paid Ads", "Social Media", "Graphic Design"],
     websiteUrl: "https://goldenpoint.com",
-    instagramUrl: "https://instagram.com/goldenpoint"
+    instagramUrl: "https://instagram.com/goldenpoint",
+    logoUrl: "/images/portfolio/clients/golden_point_web.png"
   },
   {
     name: "Zap Mart",
     industry: "E-commerce • Retail",
     services: ["SEO", "Web Development", "Paid Ads"],
-    websiteUrl: "https://zap-mart.com"
+    websiteUrl: "https://zap-mart.com",
+    logoUrl: "/images/portfolio/clients/zap_mart_web.png"
   },
   {
     name: "BWMC",
     industry: "B2B Services • Abu Dhabi",
     services: ["Lead Generation", "LinkedIn Ads", "SEO"],
     websiteUrl: "https://bwmc.ae",
-    logoUrl: "/portfolio/bwmc_logo.png"
+    logoUrl: "/images/portfolio/clients/bwmc_web.png"
   },
   {
     name: "Bags Basket",
@@ -130,13 +133,13 @@ export const clients: Client[] = [
     services: ["SEO", "Content Strategy", "Social Media"],
     websiteUrl: "https://bagsbasket.com",
     instagramUrl: "https://instagram.com/bagsbasket",
-    logoUrl: "/portfolio/bagsbasket_logo.png"
+    logoUrl: "/images/portfolio/clients/bags_basket_web.png"
   },
   {
     name: "Budget Home Fix",
     industry: "Home Services • UAE",
     services: ["AI Automation", "Web Development", "Local SEO"],
     websiteUrl: "https://budgethomefix.com",
-    logoUrl: "/portfolio/budgethomefix_logo.png"
+    logoUrl: "/images/portfolio/clients/budget_home_fix_web.png"
   }
 ];
