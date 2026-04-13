@@ -37,6 +37,20 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: "/en-US",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/blog/seo-cost-dubai",
+        destination: "/blog/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

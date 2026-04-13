@@ -80,5 +80,43 @@ export const specializedContentMap: Record<string, SpecializedContent> = {
         answer: "Jeddah often sees slightly lower CPCs in lifestyle and retail sectors due to a broader consumer demographic, though B2B acquisition can be more competitive. We use regional Hijazi-inflected creative to improve CTR for Jeddah-based audiences."
       }
     ]
+  },
+  "sharjah-social-media-management": {
+    marketContext: `
+      <p>Sharjah's digital landscape is characterized by a deep respect for cultural heritage and a massive concentration of established, family-owned conglomerates. For Sharjah-based businesses, social media isn't just a broadcast channel—it is a 'Digital Majlis' where trust is established through authenticity and cultural alignment.</p>
+      
+      <p>Success in Sharjah requires a 'Local-First' approach. This means prioritizing modest, respectful imagery that aligns with Islamic values, particularly during Ramadan and Eid. Furthermore, while English is the language of commerce, high-quality, Hijazi or Emirati-inflected Arabic content is a massive differentiator for local trust. We focus on building 'Community Over Following'—using private WhatsApp groups and Snapchat stories to foster real relationships with the Sharjah and Northern Emirates audience.</p>
+      
+      <p>The rise of hyper-local micro-influencers (1k–50k followers) in Sharjah offers a unique opportunity for family businesses. These influencers command higher trust than global celebrities and allow for highly targeted, culturally resonant brand storytelling. Our Sharjah social strategy integrates these local voices to humanize your corporate brand and drive authentic local engagement.</p>
+    `,
+    additionalFAQs: [
+      {
+        question: "How do you handle social media during Ramadan in Sharjah?",
+        answer: "We pivot your content calendar to align with themes of community, charity, and gratitude. Ad scheduling is shifted to peak usage times (10 PM - 3 AM) and creative is adjusted to ensure maximum cultural sensitivity during the holy month."
+      },
+      {
+        question: "Why is Arabic-first content critical for Sharjah businesses?",
+        answer: "While Dubai is hyper-international, Sharjah maintains a stronger connection to regional heritage. Arabic content that avoids 'robotic' translation and uses local nuances significantly improves sentiment and conversion rates among the local Emirati and resident Arab population."
+      }
+    ]
+  },
+  "riyadh-saas-development": {
+    marketContext: `
+      <p>Riyadh is currently the engine room of the Saudi digital economy under Vision 2030. For firms building SaaS products in the capital, 'Direct Access' means more than just clean code—it means strict alignment with the Kingdom's regulatory framework and the cloud-first national strategy.</p>
+      
+      <p>The foundational requirement for any Riyadh SaaS product in 2026 is full compliance with the **Personal Data Protection Law (PDPL)**. This necessitates local data residency (using local hyperscaler regions like AWS Riyadh or Google Cloud Dammam) and a 'Security-First' architecture from day one. We specialize in building SaaS solutions that integrate with national digital identity systems (IAM) and ZATCA (Fatoora) requirements, ensuring your software is ready for enterprise and government adoption.</p>
+      
+      <p>Capitalizing on Riyadh's tech clusters, such as KAFD and the burgeoning 'Garage' ecosystem, requires a product that handles bilingual UX natively. We don't just translate interfaces; we re-engineer the user journey to respect Right-to-Left (RTL) logic and local Najdi business workflows, ensuring your SaaS feels like a 'Made in Saudi' solution.</p>
+    `,
+    additionalFAQs: [
+      {
+        question: "Does your SaaS development comply with Saudi PDPL?",
+        answer: "Yes. Every SaaS product we build in Riyadh includes Data Protection Impact Assessments (DPIAs) and uses local KSA data centers to ensure data residency and regulatory compliance with SDAIA mandates."
+      },
+      {
+        question: "Can you integrate my SaaS with Saudi government portals (ZATCA/IAM)?",
+        answer: "Absolutely. We build custom API connectors for ZATCA (electronic invoicing) and National Single Sign-On (IAM) to ensure your platform meets the high interoperability standards required by Saudi enterprise clients."
+      }
+    ]
   }
 };

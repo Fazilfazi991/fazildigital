@@ -90,20 +90,21 @@ export default async function MoneyPage({ params }: Props) {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "LocalBusiness",
-        "name": "Mohammad Fazil Digital Consulting",
+        "@type": ["LocalBusiness", "ProfessionalService"],
+        "name": "Fazil Digital Consulting",
         "url": `https://www.fazildigital.com/${locationSlug}/${serviceSlug}/`,
         "image": "https://www.fazildigital.com/og-image.jpg",
+        "description": `${service.name} expertise in ${location.city}. Helping mid-size businesses scale via direct-access strategic consulting.`,
         "address": {
           "@type": "PostalAddress",
           "addressLocality": location.city,
           "addressRegion": location.city,
           "addressCountry": location.country === "UAE" ? "AE" : "SA",
         },
-        "areaServed": [
-          { "@type": "City", "name": location.city },
-          { "@type": "Country", "name": location.country === "UAE" ? "United Arab Emirates" : "Saudi Arabia" }
-        ]
+        "areaServed": {
+          "@type": "City",
+          "name": location.city
+        }
       },
       {
         "@type": "Service",
@@ -115,10 +116,10 @@ export default async function MoneyPage({ params }: Props) {
           "url": "https://www.fazildigital.com/",
           "sameAs": "https://linkedin.com/in/fazilfazi",
         },
-        "areaServed": [
-          { "@type": "City", "name": location.city },
-          { "@type": "Country", "name": location.country === "UAE" ? "United Arab Emirates" : "Saudi Arabia" }
-        ],
+        "areaServed": {
+          "@type": "City",
+          "name": location.city
+        },
       },
       {
         "@type": "BreadcrumbList",

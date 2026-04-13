@@ -42,6 +42,8 @@ export default async function BlogPostPage({ params }: Props) {
     '@type': 'Article',
     headline: post.title,
     description: post.excerpt || post.content.substring(0, 155).replace(/<[^>]*>/g, ""),
+    image: 'https://www.fazildigital.com/og-image.jpg',
+    wordCount: post.content.split(/\s+/).length,
     datePublished: new Date(post.lastModified || post.date).toISOString(),
     dateModified: new Date(post.lastModified || post.date).toISOString(),
     author: {
