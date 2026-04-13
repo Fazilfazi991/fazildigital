@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/locations',
     '/case-studies',
     '/blog',
+    '/portfolio',
     '/methodology',
     '/markets',
     '/contact',

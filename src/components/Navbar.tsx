@@ -46,6 +46,9 @@ export function Navbar() {
                 </div>
               </div>
 
+              <Link href="/portfolio" className="text-bg-base/80 hover:text-accent px-3 py-2 text-sm font-medium transition-colors">
+                Portfolio
+              </Link>
               <Link href="/case-studies" className="text-bg-base/80 hover:text-accent px-3 py-2 text-sm font-medium transition-colors">
                 Case Studies
               </Link>
@@ -85,6 +88,7 @@ export function Navbar() {
         <div className="md:hidden bg-primary border-b border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link href="/services" className="text-bg-base/80 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Services</Link>
+            <Link href="/portfolio" className="text-bg-base/80 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Portfolio</Link>
             <Link href="/case-studies" className="text-bg-base/80 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Case Studies</Link>
             <Link href="/about" className="text-bg-base/80 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">About</Link>
             <Link href="/blog" className="text-bg-base/80 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Blog</Link>
