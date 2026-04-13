@@ -164,6 +164,41 @@ export default function PortfolioPage() {
         </div>
       </section>
 
+      {/* Services Grid Section (Core Expertise) */}
+      <section className="px-4 sm:px-6 lg:px-8 py-32 bg-primary">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-4 italic">Core Expertise</h2>
+            <p className="text-text-muted">End-to-end digital solutions tailored for the GCC market.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {portfolioServices.map((service) => (
+              <div 
+                key={service.slug}
+                className="group p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300"
+              >
+                <div className="text-4xl mb-6">{service.icon}</div>
+                <h3 className="text-xl font-syne font-bold text-bg-base mb-4 italic group-hover:text-accent transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-text-muted mb-8 text-sm leading-relaxed">
+                  {service.description}
+                </p>
+                <ul className="space-y-3">
+                  {service.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-center text-xs text-bg-base/80">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mr-3"></span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Web Development Projects Section */}
       <section className="bg-[#f8f9fa] py-24 px-4 sm:px-6 lg:px-8 text-gray-900 border-y border-gray-200">
         <div className="max-w-7xl mx-auto">
@@ -194,7 +229,7 @@ export default function PortfolioPage() {
                     src={project.image} 
                     alt={project.name} 
                     fill 
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="object-top object-cover transition-transform duration-700 group-hover:scale-105"
                     unoptimized
                   />
                   <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors"></div>
@@ -264,41 +299,6 @@ export default function PortfolioPage() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Grid Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-32 bg-primary">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-4 italic">Core Expertise</h2>
-            <p className="text-text-muted">End-to-end digital solutions tailored for the GCC market.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {portfolioServices.map((service) => (
-              <div 
-                key={service.slug}
-                className="group p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300"
-              >
-                <div className="text-4xl mb-6">{service.icon}</div>
-                <h3 className="text-xl font-syne font-bold text-bg-base mb-4 italic group-hover:text-accent transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-text-muted mb-8 text-sm leading-relaxed">
-                  {service.description}
-                </p>
-                <ul className="space-y-3">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-xs text-bg-base/80">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent mr-3"></span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
           </div>
         </div>
       </section>
