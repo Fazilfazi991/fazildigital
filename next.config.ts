@@ -3,10 +3,24 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "mir-s3-cdn-cf.behance.net",
-      },
+      { protocol: "https", hostname: "mir-s3-cdn-cf.behance.net" },
+      { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "zorxmedia.com" },
+      { protocol: "https", hostname: "synopslabs.com" },
+      { protocol: "https", hostname: "fmauditors.com" },
+      { protocol: "https", hostname: "ayishamuneer.com" },
+      { protocol: "https", hostname: "desertgp.com" },
+      { protocol: "https", hostname: "Stepvisionhotelsupplies.com" },
+      { protocol: "https", hostname: "nuniversalyoga.ae" },
+      { protocol: "https", hostname: "www.payyolimixture.co.in" },
+      { protocol: "https", hostname: "www.aurorasouq.com" },
+      { protocol: "https", hostname: "www.alrizq.sa" },
+      { protocol: "https", hostname: "jaypeedent.com" },
+      { protocol: "https", hostname: "pixelandpepper.com" },
+      { protocol: "https", hostname: "suntoolsengineering.com" },
+      { protocol: "https", hostname: "ahaliagroup.com" },
+      { protocol: "https", hostname: "bhnoe-hyundai.com" },
+      { protocol: "https", hostname: "duacollege.in" },
     ],
   },
   async rewrites() {

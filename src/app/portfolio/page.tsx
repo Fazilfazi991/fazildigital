@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/Button";
@@ -9,6 +8,76 @@ import { portfolioServices, clients } from "@/data/portfolio";
 
 export default function PortfolioPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const featuredWebProjects = [
+    {
+      name: "BWMC",
+      location: "B2B Services • Abu Dhabi, UAE",
+      description: "Corporate website with lead generation focus, optimized for B2B clients in Abu Dhabi. Features service pages, contact forms, and bilingual support.",
+      tech: ["WordPress", "Elementor", "SEO Optimized"],
+      url: "https://bwmc.ae",
+      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932&auto=format&fit=crop",
+      features: ["Responsive design optimized for mobile", "Fast loading speed (under 2s)", "SEO-optimized structure", "Contact form integration"]
+    },
+    {
+      name: "Ayisha Muneer",
+      location: "Personal Portfolio • UAE",
+      description: "Personal branding website showcasing professional portfolio, services, and contact information with clean, modern design.",
+      tech: ["WordPress", "Personal Brand"],
+      url: "https://ayishamuneer.com",
+      image: "https://ayishamuneer.com/assets/portfolio_bwmc_real-Dxd7uxXt.webp",
+      features: ["Clean, minimalist design", "Portfolio gallery", "Contact form", "Social media integration"]
+    },
+    {
+      name: "Desert GP",
+      location: "Corporate • UAE",
+      description: "Professional corporate website with modern design, service showcases, and optimized user experience for B2B engagement.",
+      tech: ["WordPress", "Corporate"],
+      url: "https://desertgp.com",
+      image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&q=80",
+      features: ["Service showcases", "B2B engagement", "Modern design"]
+    },
+    {
+      name: "Stepvision Hotel Supplies",
+      location: "E-commerce • Hospitality",
+      description: "E-commerce platform for hotel supplies with product catalog, inquiry system, and streamlined ordering process.",
+      tech: ["E-commerce", "Product Catalog"],
+      url: "https://stepvisionhotelsupplies.com",
+      image: "https://stepvisionhotelsupplies.com/images/hero-banner-main.png",
+      features: ["Product catalog", "Inquiry system", "Streamlined ordering"]
+    },
+    {
+      name: "N Universal Yoga",
+      location: "Wellness & Fitness • UAE",
+      description: "Yoga studio website with class schedules, instructor profiles, booking system, and serene design reflecting wellness values.",
+      tech: ["Booking System", "Wellness"],
+      url: "https://nuniversalyoga.ae",
+      image: "https://nuniversalyoga.ae/yoga-pose-1.png",
+      features: ["Class schedules", "Instructor profiles", "Booking system"]
+    },
+    {
+      name: "Payyoli Mixture",
+      location: "Food & Beverage • India",
+      description: "Food brand website showcasing traditional Kerala snacks with product catalog, brand story, and e-commerce integration.",
+      tech: ["E-commerce", "F&B"],
+      url: "https://www.payyolimixture.co.in",
+      image: "https://www.payyolimixture.co.in/wp-content/uploads/2023/03/payyoli-mixture-psd7.png",
+      features: ["Product catalog", "Brand story", "E-commerce integration"]
+    }
+  ];
+
+  const otherPlatforms = [
+    { name: "Al DuZ Trading", url: "https://www.alduztrading.com", industry: "Trading Company • UAE" },
+    { name: "Aurora Souq", url: "https://www.aurorasouq.com", industry: "E-commerce • Marketplace" },
+    { name: "Al Rizq", url: "https://www.alrizq.sa", industry: "Business • Saudi Arabia" },
+    { name: "Jaypee Dent", url: "https://jaypeedent.com", industry: "Dental Clinic • Healthcare" },
+    { name: "Pixel & Pepper", url: "https://pixelandpepper.com", industry: "Creative Agency" },
+    { name: "Larnix Education", url: "https://learnixeducation.com", industry: "EdTech • Online Learning" },
+    { name: "Suntools Engineering", url: "https://suntoolsengineering.com", industry: "Engineering • UAE" },
+    { name: "Ahalia Group", url: "https://ahaliagroup.com", industry: "Healthcare Healthcare • UAE" },
+    { name: "BHNOE Hyundai", url: "https://bhnoe-hyundai.com", industry: "Automotive • UAE" },
+    { name: "Dua College", url: "https://duacollege.in", industry: "Education • India" }
+  ];
 
   const behanceProjects = [
     {
@@ -42,11 +111,11 @@ export default function PortfolioPage() {
   ];
 
   return (
-    <div className="pt-24 pb-32 overflow-hidden">
+    <div className="pt-24 pb-32 overflow-hidden bg-primary text-white">
       {/* Lightbox Modal */}
       {selectedImage && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-sm p-4 cursor-zoom-out"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm p-4 cursor-zoom-out"
           onClick={() => setSelectedImage(null)}
         >
           <div className="relative w-full h-full max-w-6xl max-h-[90vh]">
@@ -55,15 +124,13 @@ export default function PortfolioPage() {
               alt="Project Showcase" 
               fill 
               className="object-contain"
-              priority
+              unoptimized
             />
             <button 
-              className="absolute top-4 right-4 text-white hover:text-accent p-2 bg-white/10 rounded-full transition-colors"
+              className="absolute -top-12 right-0 text-white hover:text-accent p-2 transition-colors flex items-center gap-2 font-bold"
               onClick={() => setSelectedImage(null)}
             >
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              CLOSE <span className="text-2xl">×</span>
             </button>
           </div>
         </div>
@@ -80,28 +147,132 @@ export default function PortfolioPage() {
             data-driven ads, and intelligent AI automation. From strategy to execution.
           </p>
 
-          <div className="grid grid-cols-3 gap-4 md:gap-8 border-t border-b border-white/10 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-b border-white/10 py-10">
             <div className="text-center">
-              <span className="block text-3xl font-syne font-bold text-bg-base">6+</span>
-              <span className="text-xs text-text-muted uppercase tracking-widest font-bold">Active Clients</span>
+              <span className="block text-4xl font-syne font-bold text-accent mb-1">9+</span>
+              <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Years Experience</span>
             </div>
-            <div className="text-center border-x border-white/10 px-4">
-              <span className="block text-3xl font-syne font-bold text-bg-base">15+</span>
-              <span className="text-xs text-text-muted uppercase tracking-widest font-bold">Projects</span>
+            <div className="text-center md:border-x border-white/10 px-4">
+              <span className="block text-4xl font-syne font-bold text-accent mb-1">100+</span>
+              <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Projects Complete</span>
             </div>
             <div className="text-center">
-              <span className="block text-3xl font-syne font-bold text-bg-base">5+</span>
-              <span className="text-xs text-text-muted uppercase tracking-widest font-bold">Industries</span>
+              <span className="block text-4xl font-syne font-bold text-accent mb-1">10+</span>
+              <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Industries Served</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Web Development Projects Section */}
+      <section className="bg-[#f8f9fa] py-24 px-4 sm:px-6 lg:px-8 text-gray-900 border-y border-gray-200">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-syne font-bold text-slate-900 mb-4">
+              Web Development Projects
+            </h2>
+            <p className="text-slate-600 text-lg max-w-2xl mx-auto font-medium">
+              Custom websites built for performance, conversion, and user experience.
+            </p>
+            <p className="text-slate-500 italic mt-2">
+              From e-commerce to corporate sites — fast, responsive, and SEO-optimized.
+            </p>
+          </div>
+
+          <div className="space-y-20">
+            {featuredWebProjects.map((project, idx) => (
+              <div 
+                key={project.name}
+                className="group bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 flex flex-col lg:flex-row hover:shadow-blue-900/10 transition-shadow duration-500"
+              >
+                {/* Visual Area */}
+                <div 
+                  className="relative w-full lg:w-1/2 min-h-[400px] cursor-zoom-in overflow-hidden"
+                  onClick={() => setSelectedImage(project.image)}
+                >
+                  <Image 
+                    src={project.image} 
+                    alt={project.name} 
+                    fill 
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors"></div>
+                  
+                  {/* Tech Stack Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <div className="flex flex-wrap gap-2">
+                      {project.tech.map(t => (
+                        <span key={t} className="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-[10px] uppercase font-bold text-white tracking-widest">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Info Area */}
+                <div className="p-8 lg:p-12 lg:w-1/2 flex flex-col justify-center">
+                  <div className="mb-6">
+                    <h3 className="text-3xl font-syne font-bold text-slate-900 mb-2">{project.name}</h3>
+                    <p className="text-blue-600 font-bold text-sm uppercase tracking-widest italic">{project.location}</p>
+                  </div>
+                  
+                  <p className="text-slate-600 leading-relaxed mb-8 text-lg">
+                    {project.description}
+                  </p>
+                  
+                  <div className="mb-10">
+                    <h4 className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-4">Key Deliverables</h4>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {project.features.map(f => (
+                        <li key={f} className="flex items-center text-sm text-slate-700 font-medium">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-3 shrink-0"></span>
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <Link 
+                    href={project.url} 
+                    target="_blank"
+                    className="inline-flex items-center justify-center bg-blue-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-slate-900 transition-all shadow-lg shadow-blue-600/20 group-hover:translate-x-1"
+                  >
+                    Visit Website <span className="ml-2 group-hover:ml-4 transition-all">→</span>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* More Projects Section */}
+          <div className="mt-32">
+            <h3 className="text-3xl font-syne font-bold text-slate-900 text-center mb-12">More Successful Launches</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {otherPlatforms.map((platform) => (
+                <div key={platform.name} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
+                  <h4 className="text-lg font-bold text-slate-900 mb-1">{platform.name}</h4>
+                  <p className="text-xs text-slate-500 font-medium mb-4">{platform.industry}</p>
+                  <Link 
+                    href={platform.url} 
+                    target="_blank"
+                    className="text-blue-600 font-bold text-xs uppercase tracking-widest flex items-center group-hover:text-slate-900"
+                  >
+                    Launch Site <span className="ml-2 transition-all group-hover:translate-x-1">→</span>
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Grid Section */}
-      <section className="px-4 sm:px-6 lg:px-8 mb-32">
+      <section className="px-4 sm:px-6 lg:px-8 py-32 bg-primary">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-4">Core Expertise</h2>
+            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-4 italic">Core Expertise</h2>
             <p className="text-text-muted">End-to-end digital solutions tailored for the GCC market.</p>
           </div>
 
@@ -240,7 +411,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Behance Portfolio Section */}
-      <section className="bg-white py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-24 px-4 sm:px-6 lg:px-8 border-b border-gray-100">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -259,10 +430,7 @@ export default function PortfolioPage() {
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/1dc45e203130197.6691858f52b4e.jpg",
-                "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/df3aa8203130197.6691858f53248.jpg"
-              ].map((src, i) => (
+              {behanceProjects[0].images.map((src, i) => (
                 <div 
                   key={i} 
                   className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-2 cursor-zoom-in"
@@ -273,6 +441,7 @@ export default function PortfolioPage() {
                     alt={`MALABAR GOLDEN TRITH - Design ${i+1}`} 
                     fill 
                     className="object-cover"
+                    unoptimized
                   />
                 </div>
               ))}
@@ -286,14 +455,7 @@ export default function PortfolioPage() {
             </h3>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/eaf401225320887.681b2d0b883a3.jpeg",
-                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/80434d225320887.681b2d0b877b6.jpeg",
-                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8ea13b225320887.681b2d0b87e6b.jpeg",
-                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/179f34225320887.681b2d0b8722e.jpg",
-                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/85679f225320887.681b2d0b88efa.jpg",
-                "https://mir-s3-cdn-cf.behance.net/project_modules/1400/d11afd225320887.681b2d0b8b29f.png"
-              ].map((src, i) => (
+              {behanceProjects[1].images.map((src, i) => (
                 <div 
                   key={i} 
                   className="group relative h-[400px] rounded-2xl overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-2 cursor-zoom-in"
@@ -304,6 +466,7 @@ export default function PortfolioPage() {
                     alt={`Package Design ${i+1}`} 
                     fill 
                     className="object-cover"
+                    unoptimized
                   />
                 </div>
               ))}
@@ -311,7 +474,7 @@ export default function PortfolioPage() {
             
             <div className="text-center mt-12">
               <Link
-                href="https://www.behance.net/gallery/210712151/Branding"
+                href={behanceProjects[1].link || "#"}
                 target="_blank"
                 className="inline-block bg-blue-600 text-white font-bold py-4 px-8 rounded-xl hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20"
               >
@@ -327,12 +490,7 @@ export default function PortfolioPage() {
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4a97fc221758311.67d9fe4c99f15.jpg",
-                "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2d248b221758311.67d9fe4c99842.jpg",
-                "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0e1962221758311.67d9fe4c9acd6.jpg",
-                "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8464f0221758311.67d9fe4c9a6da.jpg"
-              ].map((src, i) => (
+              {behanceProjects[2].images.map((src, i) => (
                 <div 
                   key={i} 
                   className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-2 cursor-zoom-in"
@@ -343,6 +501,7 @@ export default function PortfolioPage() {
                     alt={`FILLI TEA - Design ${i+1}`} 
                     fill 
                     className="object-cover"
+                    unoptimized
                   />
                 </div>
               ))}
