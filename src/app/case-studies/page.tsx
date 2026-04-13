@@ -4,7 +4,7 @@ import { Button } from "@/components/Button";
 export const metadata: Metadata = {
   title: "Case Studies & Results | Digital Consulting in UAE & Saudi Arabia | Mohammad Fazil",
   description: "Real results for mid-size businesses in Dubai, Riyadh, and across the GCC — SEO rankings, ROAS improvements, and lead generation outcomes delivered by Mohammad Fazil.",
-  alternates: { canonical: "https://fazildigital.com/case-studies" },
+  alternates: { canonical: "https://www.fazildigital.com/case-studies/" },
 };
 
 const caseStudies = [

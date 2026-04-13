@@ -6,7 +6,7 @@ import { blogPosts } from "@/data/blog";
 export const metadata: Metadata = {
   title: "Digital Marketing Blog — SEO, AI & Growth for UAE & Saudi Arabia | Mohammad Fazil",
   description: "Insights on SEO, digital marketing, AI automation, and business growth for mid-size companies in Dubai, Riyadh, and across the GCC — by Mohammad Fazil.",
-  alternates: { canonical: "https://fazildigital.com/blog" },
+  alternates: { canonical: "https://www.fazildigital.com/blog/" },
 };
 
 

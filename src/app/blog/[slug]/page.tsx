@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${post.title} | Mohammad Fazil`,
     description: post.content.substring(0, 155).replace(/<[^>]*>/g, ""),
+    alternates: {
+      canonical: `https://www.fazildigital.com/blog/${slug}/`,
+    },
   };
 }
 
@@ -44,14 +47,14 @@ export default async function BlogPostPage({ params }: Props) {
     author: {
       '@type': 'Person',
       name: 'Mohammad Fazil',
-      url: 'https://fazildigital.com/about'
+      url: 'https://www.fazildigital.com/about/'
     },
     publisher: {
       '@type': 'Organization',
       name: 'Fazil Digital',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://fazildigital.com/favicon.ico'
+        url: 'https://www.fazildigital.com/favicon.ico'
       }
     }
   };

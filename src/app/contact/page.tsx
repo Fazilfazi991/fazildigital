@@ -4,6 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Mohammad Fazil | Get Your Free 30-Min Digital Audit",
   description: "Get in touch with Mohammad Fazil for digital consulting in Dubai, UAE, and Saudi Arabia. Get your free 30-minute digital audit.",
+  alternates: { canonical: "https://www.fazildigital.com/contact/" },
 };
 
 export default function ContactPage() {

@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const isUAE = ["dubai", "abu-dhabi", "sharjah", "ajman"].includes(locationSlug);
   const isSA = ["riyadh", "jeddah", "dammam"].includes(locationSlug);
-  const canonical = `https://fazildigital.com/${locationSlug}/${serviceSlug}`;
+  const canonical = `https://www.fazildigital.com/${locationSlug}/${serviceSlug}/`;
 
   return {
     title,
@@ -92,8 +92,8 @@ export default async function MoneyPage({ params }: Props) {
       {
         "@type": "LocalBusiness",
         "name": "Mohammad Fazil Digital Consulting",
-        "url": `https://fazildigital.com/${locationSlug}/${serviceSlug}`,
-        "image": "https://fazildigital.com/og-image.jpg",
+        "url": `https://www.fazildigital.com/${locationSlug}/${serviceSlug}/`,
+        "image": "https://www.fazildigital.com/og-image.jpg",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": location.city,
@@ -112,7 +112,7 @@ export default async function MoneyPage({ params }: Props) {
         "provider": {
           "@type": "Person",
           "name": "Mohammad Fazil",
-          "url": "https://fazildigital.com",
+          "url": "https://www.fazildigital.com/",
           "sameAs": "https://linkedin.com/in/fazilfazi",
         },
         "areaServed": [
@@ -123,9 +123,9 @@ export default async function MoneyPage({ params }: Props) {
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fazildigital.com" },
-          { "@type": "ListItem", "position": 2, "name": location.city, "item": `https://fazildigital.com/locations/${locationSlug}` },
-          { "@type": "ListItem", "position": 3, "name": service.name, "item": `https://fazildigital.com/${locationSlug}/${serviceSlug}` },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.fazildigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": location.city, "item": `https://www.fazildigital.com/locations/${locationSlug}/` },
+          { "@type": "ListItem", "position": 3, "name": service.name, "item": `https://www.fazildigital.com/${locationSlug}/${serviceSlug}/` },
         ],
       },
       {

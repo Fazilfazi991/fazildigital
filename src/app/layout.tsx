@@ -19,7 +19,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fazildigital.com"),
+  metadataBase: new URL("https://www.fazildigital.com"),
   title: {
     default: "Mohammad Fazil | Digital Consultant in Dubai",
     template: "%s | Mohammad Fazil",
@@ -37,13 +37,12 @@ export const metadata: Metadata = {
   },
   // llms.txt — machine-readable site overview for AI crawlers
   alternates: {
-    canonical: "https://fazildigital.com",
     languages: {
-      "en-ae": "https://fazildigital.com/locations/dubai",
-      "en-sa": "https://fazildigital.com/locations/riyadh",
+      "en-ae": "https://www.fazildigital.com/locations/dubai/",
+      "en-sa": "https://www.fazildigital.com/locations/riyadh/",
     },
     types: {
-      "text/plain": "https://fazildigital.com/llms.txt",
+      "text/plain": "https://www.fazildigital.com/llms.txt",
     },
   },
 };

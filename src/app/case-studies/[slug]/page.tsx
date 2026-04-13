@@ -86,6 +86,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${cs.metricLabel} for ${cs.client} | Case Study | Mohammad Fazil`,
     description: `Case study: How Mohammad Fazil delivered ${cs.metricLabel} for a ${cs.client} in ${cs.location} through ${cs.service}.`,
+    alternates: {
+      canonical: `https://www.fazildigital.com/case-studies/${slug}/`,
+    },
   };
 }
 

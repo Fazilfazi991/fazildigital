@@ -6,7 +6,7 @@ import { Button } from "@/components/Button";
 export const metadata: Metadata = {
   title: "Digital Services | SEO, Marketing, Web Dev & More | Mohammad Fazil",
   description: "Explore Mohammad Fazil's 7 core digital services for mid-size businesses in Dubai, UAE and Saudi Arabia — SEO, digital marketing, paid ads, web development, AI automation, and SaaS.",
-  alternates: { canonical: "https://fazildigital.com/services" },
+  alternates: { canonical: "https://www.fazildigital.com/services/" },
 };
 
 export default function ServicesPage() {

@@ -27,11 +27,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: { canonical: `https://fazildigital.com/services/${slug}` },
+    alternates: { canonical: `https://www.fazildigital.com/services/${slug}/` },
     openGraph: {
       title,
       description,
-      url: `https://fazildigital.com/services/${slug}`,
+      url: `https://www.fazildigital.com/services/${slug}/`,
       siteName: "Mohammad Fazil",
     },
     twitter: {
@@ -57,7 +57,7 @@ export default async function ServicePage({ params }: Props) {
     "provider": {
       "@type": "Person",
       "name": "Mohammad Fazil",
-      "url": "https://fazildigital.com",
+      "url": "https://www.fazildigital.com/",
       "sameAs": "https://linkedin.com/in/fazilfazi"
     },
     "areaServed": ["Dubai", "Riyadh", "Jeddah", "Abu Dhabi", "UAE", "Saudi Arabia"],

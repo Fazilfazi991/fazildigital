@@ -10,7 +10,8 @@ import AgencyComparison from "@/components/visuals/AgencyComparison";
 
 export const metadata: Metadata = {
   title: "Digital Marketing Expert Dubai | SEO, Ads & AI | Free Audit",
-  description: "Mohammad Fazil helps mid-size UAE & KSA businesses grow through SEO, paid ads & AI automation. 50+ clients served. Book your free 30-min growth audit. No pitch, just results."
+  description: "Mohammad Fazil helps mid-size UAE & KSA businesses grow through SEO, paid ads & AI automation. 50+ clients served. Book your free 30-min growth audit. No pitch, just results.",
+  alternates: { canonical: "https://www.fazildigital.com/" },
 };
 
 export default function Home() {

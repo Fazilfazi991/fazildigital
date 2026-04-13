@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Digital Marketing Expert in Dubai | Mohammad Fazil",
   description: "Mohammad Fazil helps mid-size businesses in the UAE and Saudi Arabia grow through SEO, paid advertising, and AI automation. Practical strategies. Measurable results.",
   alternates: {
-    canonical: "https://fazildigital.com/digital-marketing-expert-dubai",
+    canonical: "https://www.fazildigital.com/digital-marketing-expert-dubai/",
   }
 };
 
@@ -20,9 +20,9 @@ export default function DigitalMarketingExpertDubai() {
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://fazildigital.com/#person",
+        "@id": "https://www.fazildigital.com/#person",
         "name": "Mohammad Fazil",
-        "url": "https://fazildigital.com",
+        "url": "https://www.fazildigital.com/",
         "jobTitle": "Digital Marketing Expert",
         "address": {
           "@type": "PostalAddress",
@@ -33,7 +33,7 @@ export default function DigitalMarketingExpertDubai() {
       {
         "@type": "ProfessionalService",
         "name": "Fazil Digital Consulting",
-        "url": "https://fazildigital.com/digital-marketing-expert-dubai",
+        "url": "https://www.fazildigital.com/digital-marketing-expert-dubai/",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Dubai",

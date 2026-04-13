@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const isUAE = ["dubai", "abu-dhabi", "sharjah", "ajman"].includes(city);
   const isSA = ["riyadh", "jeddah", "dammam"].includes(city);
-  const canonical = `https://fazildigital.com/locations/${city}`;
+  const canonical = `https://www.fazildigital.com/locations/${city}/`;
 
   return {
     title,
@@ -59,7 +59,7 @@ export default async function LocationHubPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Mohammad Fazil Digital Consulting",
-    "url": `https://fazildigital.com/locations/${city}`,
+    "url": `https://www.fazildigital.com/locations/${city}/`,
     "areaServed": {
       "@type": "City",
       "name": location.city,

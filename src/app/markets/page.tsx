@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 export const metadata: Metadata = {
   title: "Markets We Serve — UAE & Saudi Arabia Digital Consulting | Mohammad Fazil",
   description: "Senior-level digital consulting across the GCC. Specializing in growth strategies for mid-size businesses in Dubai, Riyadh, Abu Dhabi, Jeddah, and more.",
-  alternates: { canonical: "https://fazildigital.com/markets" },
+  alternates: { canonical: "https://www.fazildigital.com/markets/" },
 };
 
 export default function MarketsPage() {

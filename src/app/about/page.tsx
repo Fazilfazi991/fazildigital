@@ -5,6 +5,7 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "About Mohammad Fazil | Dubai Digital Consultant | UAE & KSA",
   description: "Learn about Mohammad Fazil's hands-on approach to digital consulting for mid-size businesses in Dubai, Riyadh, and the GCC. No agencies. One expert.",
+  alternates: { canonical: "https://www.fazildigital.com/about/" },
 };
 
 export default function AboutPage() {
@@ -15,7 +16,7 @@ export default function AboutPage() {
         "@type": "Person",
         "name": "Mohammad Fazil",
         "jobTitle": "Digital Consultant",
-        "url": "https://fazildigital.com",
+        "url": "https://www.fazildigital.com/",
         "sameAs": ["https://linkedin.com/in/fazilfazi"],
         "description": "Dubai-based digital consultant helping mid-size businesses across the UAE and Saudi Arabia scale through SEO, digital marketing, and AI automation.",
         "worksFor": {
@@ -34,7 +35,7 @@ export default function AboutPage() {
       {
         "@type": "LocalBusiness",
         "name": "Mohammad Fazil Digital Consulting",
-        "url": "https://fazildigital.com",
+        "url": "https://www.fazildigital.com/",
         "areaServed": [
           { "@type": "City", "name": "Dubai", "sameAs": "https://en.wikipedia.org/wiki/Dubai" },
           { "@type": "City", "name": "Abu Dhabi", "sameAs": "https://en.wikipedia.org/wiki/Abu_Dhabi" },
@@ -48,8 +49,8 @@ export default function AboutPage() {
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fazildigital.com" },
-          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://fazildigital.com/about" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.fazildigital.com/" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://www.fazildigital.com/about/" }
         ]
       }
     ]

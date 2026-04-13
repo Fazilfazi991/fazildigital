@@ -6,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "The Fazil Approach | Senior Digital Strategy in Dubai & KSA",
   description: "How Mohammad Fazil executes senior-level digital strategy for mid-size businesses in the GCC. The direct-access methodology that solves the agency problem.",
-  alternates: { canonical: "https://fazildigital.com/methodology" },
+  alternates: { canonical: "https://www.fazildigital.com/methodology/" },
 };
 
 export default function MethodologyPage() {

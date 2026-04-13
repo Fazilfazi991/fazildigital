@@ -6,7 +6,7 @@ import { Button } from "@/components/Button";
 export const metadata: Metadata = {
   title: "Locations | Digital Consulting Across UAE & Saudi Arabia | Mohammad Fazil",
   description: "Mohammad Fazil provides digital consulting services across Dubai, Riyadh, Jeddah, Abu Dhabi, Dammam, and Sharjah. Senior-level expertise for GCC mid-size businesses.",
-  alternates: { canonical: "https://fazildigital.com/locations" },
+  alternates: { canonical: "https://www.fazildigital.com/locations/" },
 };
 
 const tierLabels: Record<number, string> = {
