@@ -107,7 +107,7 @@ export const clients: Client[] = [
   },
   {
     name: "Golden Point",
-    industry: "Retail • Fashion",
+    industry: "Commercial Printing • Advertising Production",
     services: ["Paid Ads", "Social Media", "Graphic Design"],
     websiteUrl: "https://goldenpoint.com",
     instagramUrl: "https://instagram.com/goldenpoint",
