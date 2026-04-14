@@ -1,12 +1,15 @@
 import React from "react";
 import { Metadata } from "next";
 import Script from "next/script";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/Button";
+import { clients } from "@/data/portfolio";
+import { Accordion } from "@/components/Accordion";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Sharjah | Top Results for SMEs & Family Fleets",
-  description: "Scale your Sharjah business with expert SEO, Ads, and AI automation. Localized strategies for Shams, SAIF Zone, and Al Majaz. Rank Top 3 in the Northern Emirates.",
+  title: "Sharjah Digital Marketing | Top 3 Rankings & AI-First Strategy",
+  description: "Scale your Sharjah business with expert SEO, Snapchat ads, and Agentic AI automation. Specialized hubs for Shams, SAIF Zone, and Northern Emirates growth. Rank Top 3 guaranteed.",
   alternates: {
     canonical: "https://www.fazildigital.com/sharjah/digital-marketing",
   },
@@ -18,39 +21,42 @@ export default function SharjahDigitalMarketing() {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "name": "Fazil Digital Consulting - Sharjah Office",
-        "description": "Premium digital marketing consultancy serving Sharjah and the Northern Emirates.",
+        "name": "Fazil Digital Consulting - Sharjah SEO Hub",
+        "description": "High-performance digital consultancy specialized in Northern Emirates market dominance.",
         "url": "https://www.fazildigital.com/sharjah/digital-marketing",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Sharjah",
           "addressCountry": "AE"
         },
-        "areaServed": ["Sharjah", "Ajman", "Umm Al Quwain"]
+        "areaServed": ["Sharjah", "Ajman", "Umm Al Quwain", "Ras Al Khaimah"]
       },
       {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Why is Sharjah digital marketing different from Dubai?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sharjah marketing requires a focus on Northern Emirates logistics, free zone-specific targeting (Shams, SAIF), and a business culture that prioritizes long-term trust and family-owned legacy scaling."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take to rank #1 in Sharjah?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "For localized Sharjah keywords, we typically see Page 1 results within 60-90 days due to lower competition compared to Dubai, provided we use high-authority Northern Emirates content clusters."
-            }
-          }
-        ]
+        "@type": "Service",
+        "name": "Sharjah SEO & Performance Lead Gen",
+        "provider": {
+          "@type": "Person",
+          "name": "Mohammad Fazil"
+        },
+        "areaServed": "Sharjah"
       }
     ]
   };
+
+  const sharjahFaqs = [
+    {
+      question: "How does Sharjah SEO differ from Dubai's algorithmic landscape?",
+      answer: "Sharjah search intent is heavily driven by industrial procurement (Industrial Area 1-17), free-zone logistics (Shams, SAIF), and a business culture that rewards bilingual authoritative content. While Dubai is highly competitive for generic tech terms, Sharjah allows for 'Top 3' dominance through hyper-localized entity mapping and Northern Emirates citation clusters."
+    },
+    {
+      question: "Can Agentic AI improve lead quality for Sharjah SMEs?",
+      answer: "Absolutely. By deploying 'Agentic Workflows'—AI systems that don't just chat but act—we automate lead triage from WhatsApp and social ads. This ensures 24/7 responsiveness for Sharjah consumers who expect instant feedback during non-traditional hours, particularly in the Muwaileh and Al Majaz sectors."
+    },
+    {
+      question: "What is the fastest way to rank for Sharjah-specific keywords?",
+      answer: "The 'Direct Access' methodology. Instead of generic backlinking, we focus on building topical authority through long-form Arabic/English guides tailored to Sharjah's economic sectors (Logistics, Education, and Manufacturing). This typically yields Page 1 movement within 45-60 days."
+    }
+  ];
 
   return (
     <>
@@ -60,184 +66,180 @@ export default function SharjahDigitalMarketing() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <main className="bg-primary pt-24 min-h-screen">
-        {/* SECTION 1: HERO */}
-        <section className="relative py-20 px-4 overflow-hidden bg-gradient-to-br from-[#1e3a8a] to-[#3b82f6]">
-          <div className="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
-            <svg viewBox="0 0 100 100" className="w-full h-full text-white">
-              <path d="M0 100 L50 0 L100 100 Z" fill="currentColor" />
-            </svg>
-          </div>
-          <div className="max-w-7xl mx-auto relative z-10 text-center md:text-left">
-            <div className="inline-block border border-white/30 bg-white/10 px-4 py-1.5 rounded-full mb-6">
-              <span className="text-xs font-bold text-white tracking-widest uppercase">Northern Emirates Hub</span>
+      <main className="bg-[#050505] pt-24 min-h-screen text-bg-base font-dm-sans selection:bg-accent selection:text-primary overflow-hidden">
+        
+        {/* BACKGROUND GLOWS - AI AESTHETIC */}
+        <div className="fixed inset-0 pointer-events-none z-0">
+          <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-accent/10 blur-[150px] rounded-full"></div>
+          <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500/10 blur-[150px] rounded-full"></div>
+        </div>
+
+        {/* SECTION 1: HERO - AGENTIC DESIGN */}
+        <section className="relative py-24 px-4 border-b border-white/5 overflow-hidden">
+          <div className="max-w-7xl mx-auto relative z-10 text-center">
+            <div className="inline-flex items-center gap-2 group border border-accent/30 bg-accent/5 px-4 py-1.5 rounded-full mb-8 hover:bg-accent/10 transition-all duration-300">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+              </span>
+              <span className="text-[10px] font-bold text-accent tracking-[0.2em] uppercase">Sovereign AI &amp; SEO Domination</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-syne font-bold text-white mb-6 leading-tight">
-              Dominating the Sharjah Market <br />
-              <span className="text-accent underline decoration-white/30 underline-offset-8">Through Data-First Marketing.</span>
+            
+            <h1 className="text-5xl md:text-8xl font-syne font-bold leading-[0.9] tracking-tighter mb-10">
+              SHARJAH <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-[#D9B66F] to-accent italic">MARKET</span> <br />
+              DOMINANCE
             </h1>
-            <p className="text-xl text-white/90 max-w-2xl mb-10 leading-relaxed font-dm-sans">
-              Stop competing for Dubai leftovers. Sharjah is the growth engine of the Northern Emirates. Scale your presence in <span className="font-bold text-white">Al Majaz, University City, and SAIF Zone</span> with a strategy built for Sharjah business culture.
+
+            <p className="text-xl md:text-2xl text-text-muted max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+              We don't build websites. We deploy <span className="text-bg-base font-bold">Revenue Engines</span> customized for Sharjah’s unique economic architecture. From <span className="text-accent italic">Shams</span> innovation to <span className="text-accent italic">SAIF Zone</span> logistics.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6">
-              <Button href="/contact" variant="primary" className="bg-white text-primary border-transparent">
-                Claim Your Sharjah Audit
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Button href="/contact" variant="primary" className="px-12 py-5 text-lg">
+                Initiate Performance Audit
               </Button>
-              <div className="flex items-center gap-2 text-white/80">
-                <span className="w-10 h-0.5 bg-accent"></span>
-                <span className="text-sm font-bold uppercase tracking-wider">Rank #1 in 90 Days</span>
-              </div>
+              <Link href="#methodology" className="text-sm font-bold uppercase tracking-widest text-[#666] hover:text-accent transition-colors">
+                View Methodology &darr;
+              </Link>
             </div>
           </div>
+          
+          {/* Futuristic Grid Line */}
+          <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
         </section>
 
-        {/* SECTION 2: STATS STRIP */}
-        <section className="bg-[#f9fafb] border-b border-gray-200 py-8 px-4">
+        {/* SECTION 2: THE PORTFOLIO - "KEEPING IT REAL" */}
+        <section className="py-32 px-4 relative">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { label: "SHARJAH CLIENTS", val: "12+" },
-                { label: "AVG. ROI IN Q1", val: "310%" },
-                { label: "LOCAL CITATIONS", val: "100%" },
-                { label: "SENIOR ACCESS", val: "DIRECT" },
-              ].map((stat) => (
-                <div key={stat.label} className="text-center md:text-left">
-                  <p className="text-2xl font-bold text-primary font-syne">{stat.val}</p>
-                  <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">{stat.label}</p>
+            <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+              <div className="max-w-xl">
+                <h2 className="text-4xl md:text-6xl font-syne font-bold mb-6 tracking-tighter leading-none">
+                  CLIENTS I <br />
+                  <span className="text-accent uppercase italic">WORKED WITH</span>
+                </h2>
+                <p className="text-text-muted text-lg border-l-2 border-accent pl-6">
+                  Verified growth metrics across GCC E-commerce, B2B, and Industrial sectors. Real data. Real authority.
+                </p>
+              </div>
+              <div className="hidden md:block">
+                <span className="text-[100px] font-syne font-black text-white/5 select-none leading-none">TRUST</span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {clients.map((client, idx) => (
+                <div key={idx} className="group relative p-8 backdrop-blur-xl bg-white/[0.02] border border-white/5 rounded-3xl hover:border-accent/40 transition-all duration-500 overflow-hidden">
+                  <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 scale-150 transition-all duration-500">
+                    <span className="text-6xl font-syne font-black opacity-10">{idx + 1}</span>
+                  </div>
+                  
+                  <div className="relative z-10">
+                    <div className="mb-6 opacity-60 grayscale group-hover:grayscale-0 transition-all duration-500">
+                      <span className="text-xs font-bold uppercase tracking-widest text-accent mb-2 block">{client.industry}</span>
+                      <h3 className="text-2xl font-syne font-bold text-bg-base">{client.name}</h3>
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-2 mb-8">
+                      {client.services.map(s => (
+                        <span key={s} className="text-[10px] font-bold border border-white/10 bg-white/5 px-3 py-1 rounded-full text-[#999]">
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+
+                    <Link href={client.websiteUrl || "#"} className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#666] group-hover:text-accent transition-colors">
+                      Live Project <span className="group-hover:translate-x-1 transition-transform">→</span>
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* SECTION 3: LOCAL CONTEXT */}
-        <section className="py-24 px-4 bg-primary text-bg-base">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <h2 className="text-3xl md:text-5xl font-syne font-bold leading-tight">
-                Why Sharjah is the <br />
-                <span className="text-accent">Missing Link</span> In Your Growth.
-              </h2>
-              <div className="w-24 h-1 bg-accent"></div>
-              <p className="text-lg text-text-muted leading-relaxed font-dm-sans">
-                Most agencies treat Sharjah as a suburb of Dubai. Huge mistake. Sharjah has a distinct economic identity—from the heavy industry of <span className="text-bg-base font-semibold">Industrial Area 13</span> to the innovation hub of <span className="text-bg-base font-semibold">Sharjah Media City (Shams)</span>.
-              </p>
-              <ul className="space-y-4">
-                {[
-                  "Optimized for Shams & SAIF Zone Free Zone Licensing",
-                  "Cultural alignment with Al Majaz and University City demographics",
-                  "Northern Emirates logistics and supply chain SEO targeting",
-                  "Direct capture of the 800,000+ mobile-first Sharjah consumers",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="text-accent mt-1">✓</span>
-                    <span className="text-text-muted">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="relative">
-              <div className="aspect-square bg-white/[0.03] border border-white/10 rounded-3xl overflow-hidden flex items-center justify-center">
-                <div className="text-center p-8">
-                  <span className="text-6xl mb-6 block">📍</span>
-                  <p className="text-2xl font-bold font-syne mb-2">Sharjah Targeted</p>
-                  <p className="text-text-muted text-sm uppercase tracking-widest">Al Majaz | Shams | SAIF | Muwaileh</p>
+        {/* SECTION 3: INDUSTRY DEEP DIVE - "TOP 3 RANKING SEO CONTENT" */}
+        <section className="py-32 px-4 bg-[#080808]">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+              <div className="space-y-12">
+                <h2 className="text-4xl md:text-6xl font-syne font-bold leading-[1.1] tracking-tighter">
+                  SHARJAH: THE <br />
+                  <span className="text-accent underline decoration-white/10 underline-offset-8">BILINGUAL</span> BRIDGE.
+                </h2>
+                <p className="text-xl text-text-muted leading-relaxed font-light">
+                  Ranking for "Digital Marketing Sharjah" requires more than just content—it requires <span className="text-bg-base font-bold italic">Entity Authority</span>. Sharjah's economy is distinctively split between established family-owned industrial fleets and high-velocity digital free zones. 
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="p-6 border-l-2 border-white/10 hover:border-accent transition-colors">
+                    <h4 className="text-lg font-bold mb-3">Shams & SAIF Acquisition</h4>
+                    <p className="text-sm text-text-muted leading-relaxed">We target the high-intent keywords used by expat entrepreneurs and industrial procurers within Sharjah’s primary free zones.</p>
+                  </div>
+                  <div className="p-6 border-l-2 border-white/10 hover:border-accent transition-colors">
+                    <h4 className="text-lg font-bold mb-3">Northern Emirates Logistics</h4>
+                    <p className="text-sm text-text-muted leading-relaxed">Dominating search results for logistics, supply chain, and B2B industrial queries across Ajman, RAK, and Fujairah.</p>
+                  </div>
                 </div>
               </div>
-              <div className="absolute -bottom-8 -left-8 bg-accent p-8 rounded-2xl shadow-2xl hidden md:block">
-                <p className="text-primary font-bold text-4xl font-syne">+140%</p>
-                <p className="text-primary/70 text-xs font-bold uppercase tracking-widest">Lead Volume Spike</p>
+
+              <div className="relative">
+                <div className="aspect-square bg-white/[0.02] border border-white/5 rounded-[60px] p-12 flex items-center justify-center overflow-hidden">
+                  <div className="text-center">
+                    <div className="text-7xl font-syne font-bold text-accent mb-4 animate-pulse">ROI</div>
+                    <div className="text-sm font-bold uppercase tracking-[0.3em] text-[#666]">Data Calibrated</div>
+                  </div>
+                  
+                  {/* Decorative Elements */}
+                  <div className="absolute top-10 left-10 w-20 h-20 border border-accent/20 rounded-full"></div>
+                  <div className="absolute bottom-20 right-10 w-40 h-40 border border-white/5 rounded-full"></div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* SECTION 4: COMPARISON */}
-        <section className="py-24 bg-[#050505] border-y border-white/5 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-syne font-bold text-bg-base mb-12 italic">Dubai Strategy &ne; Sharjah Results</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-              <div className="p-8 border border-white/10 rounded-2xl bg-white/[0.01]">
-                <h3 className="text-xl font-bold mb-4 text-red-400">The "Dubai Mirror" (Fail)</h3>
-                <p className="text-sm text-text-muted leading-relaxed">Most agencies just copy-paste your Dubai ads and change the label. Result? High CPAs and zero resonance with the local Sharjah family business culture.</p>
-              </div>
-              <div className="p-8 border border-accent/40 rounded-2xl bg-accent/5">
-                <h3 className="text-xl font-bold mb-4 text-accent">The Sharjah Specialist (Win)</h3>
-                <p className="text-sm text-text-muted leading-relaxed">We build separate Northern Emirates funnels that respect the logistics, pricing sensitivity, and loyalty-first buying patterns of Sharjah consumers.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* SECTION 5: PRICING TIERS */}
-        <section className="py-24 px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-4 tracking-tight">Sharjah Market Entry Tiers</h2>
-              <p className="text-text-muted">Direct expertise. No hidden fees. Billed in AED for local Sharjah entities.</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* SECTION 4: AGENTIC METHODOLOGY */}
+        <section id="methodology" className="py-32 px-4 relative overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl aspect-square bg-accent/5 blur-[150px] rounded-full pointer-events-none"></div>
+          
+          <div className="max-w-4xl mx-auto relative z-10 text-center">
+            <h2 className="text-4xl md:text-7xl font-syne font-bold mb-20 tracking-tighter">THE EXECUTION <span className="text-accent underline underline-offset-8 decoration-white/20">LOOP</span></h2>
+            
+            <div className="space-y-12 text-left">
               {[
-                {
-                  tier: "SME Hub",
-                  price: "AED 4,500",
-                  desc: "Ideal for Al Majaz retail & Muwaileh startups.",
-                  items: ["Local SEO Foundation", "Shams/SAIF Lead Gen", "WhatsApp Automation Prep"],
-                },
-                {
-                  tier: "Growth Pilot",
-                  price: "AED 8,500",
-                  desc: "Dominate Sharjah search and Northern Emirates delivery.",
-                  items: ["Comprehensive Digital Funnel", "Aggressive Competitor Gap Audit", "Bi-Weekly Strategy Calls"],
-                  highlight: true,
-                },
-                {
-                  tier: "Enterprise",
-                  price: "Custom",
-                  desc: "For family fleets and industrial conglomerates.",
-                  items: ["Multi-Market Domination (GCC)", "Full Stack AI Implementation", "Quarterly Market Research"],
-                },
-              ].map((p) => (
-                <div key={p.tier} className={`p-10 rounded-3xl border transition-all duration-500 ${p.highlight ? "border-accent bg-accent/5 -translate-y-2 shadow-2xl" : "border-white/5 bg-white/[0.02] hover:border-white/20"}`}>
-                  <h3 className="text-2xl font-syne font-bold text-bg-base mb-2">{p.tier}</h3>
-                  <p className="text-text-muted text-sm mb-6">{p.desc}</p>
-                  <div className="text-3xl font-bold font-syne text-accent mb-8">{p.price}<span className="text-sm text-text-muted font-normal">/mo</span></div>
-                  <ul className="space-y-4 mb-10">
-                    {p.items.map(i => (
-                      <li key={i} className="flex items-center gap-3 text-sm text-bg-base/80">
-                        <span className="text-accent font-bold">✓</span> {i}
-                      </li>
-                    ))}
-                  </ul>
-                  <Button href="/contact" variant={p.highlight ? "primary" : "secondary"} className="w-full">
-                    Start My Sharjah Audit
-                  </Button>
+                { step: "01", title: "Topical Authority Audit", desc: "We map your current domain footprint against Sharjah's specific industry search volume. We identify the 'Content Gaps' where your competitors are weak." },
+                { step: "02", title: "Agentic Workflow Deployment", desc: "Deployment of AI triage systems across your digital touchpoints. We turn cold traffic into warm leads via automated multi-lingual engagement." },
+                { step: "03", title: "Blended ROI Calibration", desc: "Monthly performance recalibration. We don't just report clicks; we report revenue pipeline contribution and CAC optimization." }
+              ].map((m, idx) => (
+                <div key={idx} className="flex gap-8 items-start group">
+                  <span className="text-3xl font-syne font-black text-accent/30 group-hover:text-accent transition-colors duration-500">{m.step}</span>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4">{m.title}</h3>
+                    <p className="text-text-muted leading-relaxed max-w-2xl">{m.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* SECTION 6: FAQ (Schema-Ready) */}
-        <section className="py-24 px-4 bg-[#080808] border-t border-white/5">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-syne font-bold text-bg-base mb-12">Sharjah Marketing Insights (FAQ)</h2>
-            <div className="space-y-12">
-              <div>
-                <h4 className="text-xl font-bold text-bg-base mb-3 italic">Why is Sharjah digital marketing different from Dubai?</h4>
-                <p className="text-text-muted leading-relaxed">Sharjah marketing requires a focus on Northern Emirates logistics, free zone-specific targeting (Shams, SAIF), and a business culture that prioritizes long-term trust and family-owned legacy scaling. It's not just about "showing an ad"—it's about building authority in the local community hubs.</p>
-              </div>
-              <div>
-                <h4 className="text-xl font-bold text-bg-base mb-3 italic">How long does it take to rank #1 in Sharjah?</h4>
-                <p className="text-text-muted leading-relaxed">For localized Sharjah keywords, we typically see Page 1 results within 60-90 days due to lower competition compared to Dubai, provided we use high-authority Northern Emirates content clusters. This creates a high-ROI "Inbound Engine" that captures leads while your competitors are still focused on the expensive Dubai market.</p>
-              </div>
+        {/* SECTION 5: FAQ - EXPERT MODE */}
+        <section className="py-32 px-4 border-t border-white/5">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl font-syne font-bold mb-20 uppercase tracking-tighter">Strategic <span className="text-accent italic">Intelligence</span></h2>
+            <div className="text-left">
+              <Accordion items={sharjahFaqs} />
             </div>
-            <div className="mt-16 p-8 border border-white/10 rounded-2xl bg-white/[0.02] text-center">
-              <p className="text-text-muted text-lg mb-6">Need a custom strategy for your Sharjah business?</p>
-              <Button href="/contact">Book a Free 30-Min Audit</Button>
+            
+            <div className="mt-24 p-12 backdrop-blur-3xl bg-white/[0.01] border border-white/5 rounded-[40px] relative overflow-hidden group">
+              <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <p className="text-2xl font-syne font-medium mb-10 text-bg-base/80">Ready to initiate the Top 3 ranking sequence for your Sharjah business?</p>
+              <Button href="/contact" className="px-10 py-5">Request Professional Consultation</Button>
             </div>
           </div>
         </section>
+
       </main>
     </>
   );
