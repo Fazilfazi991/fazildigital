@@ -28,6 +28,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "bhnoe-hyundai.com" },
       { protocol: "https", hostname: "duacollege.in" },
     ],
+    formats: ["image/avif", "image/webp"],
   },
   async rewrites() {
     return [

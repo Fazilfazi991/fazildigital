@@ -124,7 +124,7 @@ export default function PortfolioPage() {
               alt="Project Showcase" 
               fill 
               className="object-contain"
-              unoptimized
+              sizes="(max-width: 768px) 100vw, 80vw"
             />
             <button 
               className="absolute -top-12 right-0 text-white hover:text-accent p-2 transition-colors flex items-center gap-2 font-bold"
@@ -337,7 +337,8 @@ export default function PortfolioPage() {
                     alt={project.name} 
                     fill 
                     className="object-top object-cover transition-transform duration-700 group-hover:scale-105"
-                    unoptimized
+                    priority={idx < 2}
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors"></div>
                   
@@ -441,7 +442,7 @@ export default function PortfolioPage() {
                     alt={`MALABAR GOLDEN TRITH - Design ${i+1}`} 
                     fill 
                     className="object-cover"
-                    unoptimized
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               ))}
@@ -466,7 +467,7 @@ export default function PortfolioPage() {
                     alt={`Package Design ${i+1}`} 
                     fill 
                     className="object-cover"
-                    unoptimized
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
               ))}
@@ -501,7 +502,7 @@ export default function PortfolioPage() {
                     alt={`FILLI TEA - Design ${i+1}`} 
                     fill 
                     className="object-cover"
-                    unoptimized
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               ))}
