@@ -132,7 +132,7 @@ export const blogPosts: BlogPost[] = [
             <span class="text-accent text-xl">02.</span> 
             <div>
               <strong class="text-bg-base block mb-1">Key Context Pointers</strong>
-              <p class="text-sm">Direct links to your /services, /locations, and /methodology pages with plain-text descriptions of each.</p>
+              <p class="text-sm">Direct links to your /services, /locations, and /methodology pages with plain-text descriptions of each. For regional authority, explicitly link to high-priority assets like your <a href="/sharjah/digital-marketing" class="text-accent hover:underline">Sharjah digital marketing</a> hub.</p>
             </div>
           </li>
           <li class="flex items-start gap-4">

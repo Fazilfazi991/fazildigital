@@ -436,6 +436,9 @@ export default function Home() {
                <Link href="/riyadh/seo" className="text-text-muted hover:text-accent transition-colors flex items-center gap-2">
                  <span className="text-accent">→</span> SEO in Riyadh
                </Link>
+               <Link href="/sharjah/digital-marketing" className="text-text-muted hover:text-accent transition-colors flex items-center gap-2 font-bold ring-1 ring-accent/20 px-3 py-1 rounded-full bg-accent/5">
+                 <span className="text-accent">→</span> Digital Marketing in Sharjah
+               </Link>
                <Link href="/digital-marketing-expert-dubai" className="text-text-muted hover:text-accent transition-colors flex items-center gap-2 font-bold">
                  <span className="text-accent">→</span> Digital Marketing Expert Dubai
                </Link>
