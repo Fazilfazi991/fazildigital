@@ -1,5 +1,6 @@
 import { cluster1Blogs } from "./blogs-cluster-1";
 import { cluster2Blogs } from "./blogs-cluster-2";
+import { cluster3Blogs } from "./blogs-cluster-3";
 
 export interface BlogPost {
   slug: string;
@@ -18,6 +19,7 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   ...cluster2Blogs,
+  ...cluster3Blogs,
   {
     slug: "ai-search-optimization-2026-playbook",
     title: "AI Search Optimization in 2026: Complete Playbook for GEO",
