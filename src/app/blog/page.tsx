@@ -13,9 +13,24 @@ export const metadata: Metadata = {
 
 const categoryColors: Record<string, string> = {
   SEO: "text-emerald-400",
+  "SEO Technical": "text-emerald-300",
+  "Local SEO": "text-emerald-200",
+  "Regional SEO": "text-emerald-500",
   "Digital Marketing": "text-blue-400",
+  "B2B Marketing": "text-blue-300",
+  "Content Strategy": "text-blue-500",
+  "Paid Advertising": "text-purple-400",
   "Paid Ads": "text-purple-400",
   "AI Automation": "text-accent",
+  "AI & Automation": "text-accent",
+  "ROI & Measurement": "text-rose-400",
+  Analytics: "text-rose-300",
+  "Web Development": "text-orange-400",
+  "Software Development": "text-orange-500",
+  "E-commerce": "text-amber-400",
+  "Regional Strategy": "text-cyan-400",
+  "Business Strategy": "text-indigo-400",
+  "Vendor Selection": "text-slate-400",
 };
 
 export default function BlogPage() {

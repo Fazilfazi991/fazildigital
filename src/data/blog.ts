@@ -5,7 +5,7 @@ import { cluster3Blogs } from "./blogs-cluster-3";
 export interface BlogPost {
   slug: string;
   title: string;
-  category: "SEO" | "Digital Marketing" | "Paid Advertising" | "AI Automation" | "ROI & Measurement" | "Vendor Selection";
+  category: "SEO" | "Digital Marketing" | "Paid Advertising" | "Paid Ads" | "AI Automation" | "ROI & Measurement" | "Vendor Selection" | "Social Media" | "Web Development" | "Software Development" | "Regional Strategy" | "B2B Marketing" | "E-commerce" | "Content Strategy" | "Business Strategy" | "SEO Technical" | "Local SEO" | "Regional SEO" | "Analytics" | "AI & Automation" | "Regional Growth";
   date: string;
   lastModified: string;
   excerpt: string;
