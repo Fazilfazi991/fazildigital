@@ -224,7 +224,7 @@ export const cluster4Blogs: BlogPost[] = [
       <strong>Author</strong>: Mohammad Fazil, Digital Marketing & AI Automation Consultant, Dubai</p>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Related Resources</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Related Resources</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/ai-search-optimization-2026-playbook/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">

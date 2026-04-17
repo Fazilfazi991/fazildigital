@@ -76,7 +76,7 @@ export default function CaseStudiesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-6">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-6">
             Results That Speak
           </h1>
           <p className="text-xl text-text-muted max-w-2xl mx-auto">
@@ -91,10 +91,10 @@ export default function CaseStudiesPage() {
                 <div className="flex items-start justify-between mb-8 gap-4">
                   <div>
                     <p className="text-xs font-semibold tracking-widest text-text-muted uppercase mb-1">{cs.location}</p>
-                    <h2 className="text-2xl font-syne font-bold text-bg-base">{cs.client}</h2>
+                    <h2 className="text-2xl font-heading font-bold text-bg-base">{cs.client}</h2>
                   </div>
                   <div className="text-right flex-shrink-0">
-                    <p className="text-4xl font-syne font-bold text-accent leading-none">{cs.metric}</p>
+                    <p className="text-4xl font-heading font-bold text-accent leading-none">{cs.metric}</p>
                     <p className="text-xs text-text-muted mt-1 max-w-[140px] text-right">{cs.metricLabel}</p>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ export default function CaseStudiesPage() {
         </div>
 
         <div className="mt-24 border border-white/10 bg-[#050505] p-12 text-center">
-          <h2 className="text-3xl font-syne font-bold text-bg-base mb-4">Want results like these for your business?</h2>
+          <h2 className="text-3xl font-heading font-bold text-bg-base mb-4">Want results like these for your business?</h2>
           <p className="text-text-muted mb-8 max-w-lg mx-auto">
             Book a free 30-minute discovery call. Mohammad will audit your digital presence and tell you exactly where the opportunities are.
           </p>

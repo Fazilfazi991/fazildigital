@@ -77,9 +77,9 @@ export const cluster1Blogs: BlogPost[] = [
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-[0_0_40px_rgba(200,151,58,0.2)] border border-white/20 relative overflow-hidden group">
         <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Is your bilingual setup actively bleeding enterprise revenue?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Is your bilingual setup actively bleeding enterprise revenue?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">Claim your comprehensive Technical SEO Architecture Audit. 30 minutes. No junior reps. Just a prioritized fix roadmap assessing your hreflang health, crawl budget, and localized indexing logic.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
           Request Technical SEO Audit <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>
@@ -229,9 +229,9 @@ export const cluster1Blogs: BlogPost[] = [
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-[0_0_40px_rgba(200,151,58,0.2)] border border-white/20 relative overflow-hidden group">
         <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Still guessing which exact platform fits your funnel stage?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Still guessing which exact platform fits your funnel stage?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">Stop burning budget on vanity metrics. Claim your free KSA Ad Channel Assessment. 30 minutes. No pitch. Just a clear, data-backed go/no-go recommendation based on your specific industry economics.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
           Claim Advertising Assessment <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>
@@ -265,7 +265,7 @@ export const cluster1Blogs: BlogPost[] = [
       <p>In the United Arab Emirates, scaling a business via raw human headcount is disproportionately expensive. When you factor in base salaries, visa processing, insurance premiums, End of Service (EOS) accruals, and office space in <a href="/locations/dubai">Dubai</a> or <a href="/locations/abu-dhabi">Abu Dhabi</a>, the true cost of a junior hire often exceeds AED 140,000 annually. Conversely, an intelligent API automation string via Make.com or Zapier, layered with OpenAI's GPT-5 or Claude 3.5, runs 24/7/365, never takes sick leave, and requires zero visa allocation. This is the exact <a href="/services/ai-automation" class="text-accent hover:underline">AI automation</a> infrastructure I implement for GCC businesses transitioning from "hustle" to "scale."</p>
 
       <div class="blog-trust-badge my-12 bg-white/5 border border-accent/20 p-8 rounded-2xl">
-        <h4 class="text-2xl font-syne font-bold text-bg-base mb-6">The UAE Headcount vs. AI Automation ROI</h4>
+        <h4 class="text-2xl font-heading font-bold text-bg-base mb-6">The UAE Headcount vs. AI Automation ROI</h4>
         <table>
           <thead>
             <tr>
@@ -366,16 +366,16 @@ export const cluster1Blogs: BlogPost[] = [
       </ul>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-2xl">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Tired of paying premium GCC salaries for robotic data entry?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Tired of paying premium GCC salaries for robotic data entry?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">Claim your comprehensive AI Workflow Audit. 30 minutes. No pitch. Just a clear roadmap highlighting the exact 3 processes actively bleeding your margins, and the specific APIs required to eliminate them.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
           Request AI Workflow Audit <span class="text-accent">→</span>
         </a>
         <p class="mt-8 text-bg-base/60 text-sm">Certified in PDPL Compliance & UAE Data Sovereignty.</p>
       </div>
 
       <div class="faq-section mt-16">
-        <h2 class="text-3xl font-syne font-bold text-bg-base mb-8">AI Automation FAQ</h2>
+        <h2 class="text-3xl font-heading font-bold text-bg-base mb-8">AI Automation FAQ</h2>
         <div class="space-y-8">
           <div>
             <h4 class="text-xl font-bold text-bg-base mb-2 italic">"Can we automate WhatsApp without getting banned by Meta?"</h4>
@@ -394,9 +394,9 @@ export const cluster1Blogs: BlogPost[] = [
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-[0_0_40px_rgba(200,151,58,0.2)] border border-white/20 relative overflow-hidden group">
         <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Tired of paying premium GCC salaries for robotic data entry?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Tired of paying premium GCC salaries for robotic data entry?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">Claim your comprehensive AI Workflow Audit. 30 minutes. No pitch. Just a clear roadmap highlighting the exact 3 processes actively bleeding your margins, and the specific APIs required to eliminate them.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
           Request AI Workflow Audit <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>
@@ -500,9 +500,9 @@ export const cluster1Blogs: BlogPost[] = [
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-[0_0_40px_rgba(200,151,58,0.2)] border border-white/20 relative overflow-hidden group">
         <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Is your checkout funnel aggressively burning your ad budget?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Is your checkout funnel aggressively burning your ad budget?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">Stop paying for traffic that cannot transact. Claim your free E-commerce Conversion Audit. 30 minutes. No pitch. Just a clear, prioritized fix list detailing exactly where your UX is broken, along with localized SAR cost estimates for the repair.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
           Claim Conversion Audit <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>
@@ -536,7 +536,7 @@ export const cluster1Blogs: BlogPost[] = [
       <p>The core of the <a href="/services/digital-marketing" class="text-accent hover:underline">digital marketing</a> challenge for Dubai consultancies, law firms, and logistics providers is bridging the gap between "Corporate Authority" and "Human Connection." Below is the strategic blueprint for balancing the two dominant platforms in the UAE attention landscape.</p>
 
       <div class="blog-trust-badge my-12 bg-white/5 border border-accent/20 p-8 rounded-2xl">
-        <h4 class="text-2xl font-syne font-bold text-bg-base mb-6">Dubai B2B Platform Battle-Card: 2026</h4>
+        <h4 class="text-2xl font-heading font-bold text-bg-base mb-6">Dubai B2B Platform Battle-Card: 2026</h4>
         <table>
           <thead>
             <tr>
@@ -628,15 +628,15 @@ export const cluster1Blogs: BlogPost[] = [
       </ol>
 
       <div class="blog-cta-block mt-16 mb-12 p-12 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-2xl">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Is your B2B brand invisible on the platforms that matter?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Is your B2B brand invisible on the platforms that matter?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">Stop posting boring corporate updates. Claim your "Social Authority Audit." 30 minutes. No pitch. I will review your current LinkedIn and TikTok presence and provide a specific content calendar adapted for the 2026 Dubai market.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
           Request Social Authority Audit <span class="text-accent">→</span>
         </a>
       </div>
 
       <div class="faq-section mt-16">
-        <h2 class="text-3xl font-syne font-bold text-bg-base mb-8">B2B Social FAQ</h2>
+        <h2 class="text-3xl font-heading font-bold text-bg-base mb-8">B2B Social FAQ</h2>
         <div class="space-y-8">
           <div>
             <h4 class="text-xl font-bold text-bg-base mb-2 italic">"Do I need to dance on TikTok for B2B?"</h4>
@@ -671,9 +671,9 @@ export const cluster1Blogs: BlogPost[] = [
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-[0_0_40px_rgba(200,151,58,0.2)] border border-white/20 relative overflow-hidden group">
         <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Unsure where your Ideal Client Profile (ICP) is actually hiding?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Unsure where your Ideal Client Profile (ICP) is actually hiding?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">Stop posting blindly and praying for algorithmic luck. Claim your localized B2B Channel Fit Assessment. 30 minutes. No pitch. Just a data-backed blueprint on exactly where your competitors are stealing your pipeline.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
           Claim Platform Fit Assessment <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>
@@ -707,7 +707,7 @@ export const cluster1Blogs: BlogPost[] = [
       <p>Historically, Jeddah-based companies have failed at marketing forecasting because they allocate capital based on <em>channel preference</em> (e.g., "let's put 50k SAR into Snapchat this month") rather than <em>funnel stage requirements</em>. Below is the mathematically sound, defensively structured budget model for a B2B or High-Ticket B2C brand operating in Jeddah in 2026. Jeddah consumers exhibit a significantly higher 'Impulse-Discovery' pattern on social platforms compared to the more 'Intent-Research' behavior seen in Riyadh.</p>
 
       <div class="blog-trust-badge my-12 bg-white/5 border border-accent/20 p-8 rounded-2xl">
-        <h4 class="text-2xl font-syne font-bold text-bg-base mb-6">Jeddah Market Context: 2026 Social Penetration</h4>
+        <h4 class="text-2xl font-heading font-bold text-bg-base mb-6">Jeddah Market Context: 2026 Social Penetration</h4>
         <table>
           <thead>
             <tr>
@@ -949,9 +949,9 @@ export const cluster1Blogs: BlogPost[] = [
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-[0_0_40px_rgba(200,151,58,0.2)] border border-white/20 relative overflow-hidden group">
         <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Tired of paying premium retainer fees for junior execution?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Tired of paying premium retainer fees for junior execution?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">Stop bleeding pipeline to generic "full-service" strategies. Claim your direct Vendor Fit Assessment. 30 minutes. No agency pitch. Just an unfiltered, data-backed evaluation of whether your current marketing infrastructure is actually built to scale.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
           Claim Vendor Fit Assessment <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>
@@ -1067,15 +1067,15 @@ export const cluster1Blogs: BlogPost[] = [
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-[0_0_40px_rgba(200,151,58,0.2)] border border-white/20 relative overflow-hidden group">
         <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Need Help Recovering from the Google Update?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Need Help Recovering from the Google Update?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">If your Dubai or Riyadh business website dropped in rankings, I can help you audit for E-E-A-T weaknesses, improve content quality with local GCC insights, and create a custom recovery strategy. Book your free 30-minute growth audit today.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
           Claim Your Free Audit <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>
 
       <div class="faq-section mt-16">
-        <h2 class="text-3xl font-syne font-bold text-bg-base mb-8">FAQ: Google March 2026 Core Update</h2>
+        <h2 class="text-3xl font-heading font-bold text-bg-base mb-8">FAQ: Google March 2026 Core Update</h2>
         <div class="space-y-8">
           <div>
             <h4 class="text-xl font-bold text-bg-base mb-2 italic">How long does it take to recover from a Google core update?</h4>
@@ -1133,9 +1133,9 @@ export const cluster1Blogs: BlogPost[] = [
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-[0_0_40px_rgba(200,151,58,0.2)] border border-white/20 relative overflow-hidden group">
         <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Is your Snapchat strategy optimized for the GCC market?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Is your Snapchat strategy optimized for the GCC market?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">Stop wasting budget on high-CPA Meta ads. Claim your Free Snapchat Ads Audit. 30 minutes. We'll review your targeting, creative, and pixel setup to ensure you're capturing the 2026 Snapchat opportunity in UAE and KSA.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
           Request Snapchat Audit <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>
@@ -1144,7 +1144,7 @@ export const cluster1Blogs: BlogPost[] = [
       <p>Ramadan is over, but Q2 is actually the BEST time to launch Snapchat campaigns in the GCC. Competition is lower as many brands pause after Eid, resulting in cheaper CPMs. Additionally, users are now research-heavy for summer planning, vacations, and fashion.</p>
 
       <table class="w-full mt-8 mb-12 border-collapse border border-white/10 rounded-xl overflow-hidden shadow-2xl">
-        <thead class="bg-white/5 text-accent font-syne uppercase text-xs tracking-widest">
+        <thead class="bg-white/5 text-accent font-heading uppercase text-xs tracking-widest">
           <tr>
             <th class="p-5 text-left border-b border-white/10">Metric Type</th>
             <th class="p-5 text-left border-b border-white/10">UAE Benchmark (AED)</th>
@@ -1227,9 +1227,9 @@ export const cluster1Blogs: BlogPost[] = [
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-[0_0_40px_rgba(200,151,58,0.2)] border border-white/20 relative overflow-hidden group">
         <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to automate your business and reclaim 15+ hours/week?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to automate your business and reclaim 15+ hours/week?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">Stop wasting your team's potential on repetitive data entry. Claim your Free AI Automation Audit. In 30 minutes, we'll identify your top 3 opportunities and create a 30-day implementation roadmap.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative z-10">
           Request AI Automation Audit <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>

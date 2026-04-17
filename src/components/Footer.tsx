@@ -10,7 +10,7 @@ export function Footer() {
           
           {/* Services Col */}
           <div>
-            <h4 className="font-syne font-bold text-bg-base mb-6">Services</h4>
+            <h4 className="font-heading font-bold text-bg-base mb-6">Services</h4>
             <ul className="space-y-3">
               {services.map((s) => (
                 <li key={s.slug}>
@@ -24,7 +24,7 @@ export function Footer() {
 
           {/* Quick Links Col */}
           <div>
-             <h4 className="font-syne font-bold text-bg-base mb-6">Quick Links</h4>
+             <h4 className="font-heading font-bold text-bg-base mb-6">Quick Links</h4>
              <ul className="space-y-3">
                <li>
                  <Link href="/digital-marketing-expert-dubai" className="text-sm text-text-muted hover:text-accent transition-colors font-bold">
@@ -51,7 +51,7 @@ export function Footer() {
 
           {/* Markets Col (Preserving SEO with Smart Links) */}
           <div>
-            <h4 className="font-syne font-bold text-bg-base mb-6">Markets</h4>
+            <h4 className="font-heading font-bold text-bg-base mb-6">Markets</h4>
             <ul className="space-y-3">
               <li>
                 <Link href="/markets" className="text-sm text-text-muted hover:text-accent transition-colors font-bold">
@@ -78,7 +78,7 @@ export function Footer() {
 
           {/* Connect Col */}
           <div>
-            <h4 className="font-syne font-bold text-bg-base mb-6">Connect</h4>
+            <h4 className="font-heading font-bold text-bg-base mb-6">Connect</h4>
             <ul className="space-y-3">
               <li>
                 <a href="mailto:hello@fazildigital.com" className="text-sm text-text-muted hover:text-accent transition-colors">

@@ -125,7 +125,7 @@ export const blogPosts: BlogPost[] = [
       <p>Modern AI agents use highly specialized crawlers like <code>GPTBot</code> and <code>ClaudeBot</code>. If your site has excessive JavaScript bloat or requires complex rendering for the primary text, these bots will often time out before they contextually "understand" your value. Your <a href="/services/web-development">web development</a> stack must prioritize server-side rendering (SSR) for all editorial content.</p>
 
       <div class="bg-white/5 p-10 rounded-2xl border border-white/10 my-16">
-        <h4 class="text-2xl font-syne font-bold text-bg-base mb-6">The 'llms.txt' Implementation Guide</h4>
+        <h4 class="text-2xl font-heading font-bold text-bg-base mb-6">The 'llms.txt' Implementation Guide</h4>
         <p class="text-text-main/80 mb-8">A new standard is emerging for AI agents. By adding a <code>/llms.txt</code> file to your root directory, you can give AI agents a "cheat sheet" of your site's most important information.</p>
         <ul class="space-y-6">
           <li class="flex items-start gap-4">
@@ -163,7 +163,7 @@ export const blogPosts: BlogPost[] = [
       <p>Use GA4 to track referral traffic from <code>chatgpt.com</code> and <code>perplexity.ai</code>, but also use qualitative audits. Ask ChatGPT: <em>"Who is the leading digital marketing expert in Dubai for mid-size businesses?"</em> If your name isn't in the response, you have a GEO gap. My <a href="/methodology">consultancy framework</a> includes monthly AI Visibility reports to track these precise mentions.</p>
 
       <div class="blog-cta-block">
-        <h3 class="text-3xl font-syne font-bold text-primary mb-4">Ready to optimize for the Generative Future?</h3>
+        <h3 class="text-3xl font-heading font-bold text-primary mb-4">Ready to optimize for the Generative Future?</h3>
         <p class="text-xl text-primary/80 mb-10 max-w-2xl mx-auto leading-relaxed">
           Don&apos;t wait for your traffic to vanish. Transition your SEO strategy to an **AI-first visibility framework** designed for the UAE and Saudi markets.
         </p>
@@ -179,7 +179,7 @@ export const blogPosts: BlogPost[] = [
       </div>
 
       <div class="faq-section mt-24">
-        <h2 class="text-4xl font-syne font-bold text-bg-base mb-12">GEO & AEO FAQ</h2>
+        <h2 class="text-4xl font-heading font-bold text-bg-base mb-12">GEO & AEO FAQ</h2>
         <div class="space-y-12">
           <div>
             <h4 class="text-2xl font-bold text-bg-base mb-4 italic">"Does GEO replace traditional SEO?"</h4>
@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
       </div>
 
       <div class="faq-section mt-12">
-        <h2 class="text-2xl font-syne font-bold mb-6">Frequently Asked Questions</h2>
+        <h2 class="text-2xl font-heading font-bold mb-6">Frequently Asked Questions</h2>
         <div class="blog-faq-item mb-4 pb-4 border-b border-white/10">
           <div class="blog-faq-question font-bold mb-2">Q: Is Snapchat worth it for B2B companies in Saudi Arabia?</div>
           <div class="blog-faq-answer text-text-muted">Yes—if you target decision-makers correctly. Snapchat consistently reaches younger executives (30-45) across Saudi Arabia at approximately 1/3 the CPA of LinkedIn, making it a highly viable channel for B2B.</div>
@@ -364,7 +364,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
 
       <div class="blog-cta-block mt-16 bg-white/5 border border-accent/20 p-12 rounded-lg text-center shadow-2xl">
-        <h3 class="text-3xl font-syne font-bold text-bg-base mb-4 italic">Looking to hire a digital expert in the UAE?</h3>
+        <h3 class="text-3xl font-heading font-bold text-bg-base mb-4 italic">Looking to hire a digital expert in the UAE?</h3>
         <p class="text-xl text-text-main/80 mb-10 max-w-2xl mx-auto leading-relaxed">
           Ensure your budget produces pipeline, not just PowerPoint decks. Discuss your growth goals directly with **Mohammad Fazil**, a practitioner who actually logs into the accounts.
         </p>
@@ -380,7 +380,7 @@ export const blogPosts: BlogPost[] = [
       </div>
 
       <div class="faq-section mt-24">
-        <h2 class="text-4xl font-syne font-bold text-bg-base mb-12">Consultant Vetting FAQ</h2>
+        <h2 class="text-4xl font-heading font-bold text-bg-base mb-12">Consultant Vetting FAQ</h2>
         <div class="space-y-12">
           <div>
             <h4 class="text-2xl font-bold text-bg-base mb-4 italic">"What is a fair monthly retainer for a Dubai consultant?"</h4>
@@ -581,7 +581,7 @@ export const blogPosts: BlogPost[] = [
       <p>By automating the WhatsApp lead flow (see my <a href="/services/ai-automation">AI Automation guide</a>), you can qualify leads in real-time while they are still in the Snapchat app environment.</p>
 
       <div class="blog-cta-block bg-accent/10 border-accent/20">
-        <h3 class="text-3xl font-syne font-bold text-bg-base mb-4">Are your CPAs too high for KSA?</h3>
+        <h3 class="text-3xl font-heading font-bold text-bg-base mb-4">Are your CPAs too high for KSA?</h3>
         <p class="text-xl text-text-muted mb-10 max-w-2xl mx-auto leading-relaxed">
           I provide data-driven ad audits for mid-size Saudi businesses. No generic advice—just raw performance gaps identified in 30 minutes.
         </p>
@@ -593,7 +593,7 @@ export const blogPosts: BlogPost[] = [
       </div>
 
       <div class="faq-section mt-16">
-        <h2 class="text-3xl font-syne font-bold text-bg-base mb-8">Snapchat KSA Benchmarks FAQ</h2>
+        <h2 class="text-3xl font-heading font-bold text-bg-base mb-8">Snapchat KSA Benchmarks FAQ</h2>
         <div class="space-y-8">
           <div>
             <h4 class="text-xl font-bold text-bg-base mb-2 italic">"What is a 'good' CPC on Snapchat in Saudi Arabia?"</h4>

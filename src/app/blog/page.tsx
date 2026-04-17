@@ -39,7 +39,7 @@ export default function BlogPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-6">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-6">
             Insights & Guides
           </h1>
           <p className="text-xl text-text-muted max-w-2xl mx-auto">
@@ -59,7 +59,7 @@ export default function BlogPage() {
                   </span>
                   <span className="text-xs text-text-muted">{post.date}</span>
                 </div>
-                <h2 className="text-xl font-syne font-bold text-bg-base mb-4 group-hover:text-accent transition-colors leading-snug">
+                <h2 className="text-xl font-heading font-bold text-bg-base mb-4 group-hover:text-accent transition-colors leading-snug">
                   {post.title}
                 </h2>
                 <p className="text-text-muted text-sm leading-relaxed mb-8">{post.excerpt}</p>
@@ -73,7 +73,7 @@ export default function BlogPage() {
 
         <div className="mt-24 border border-white/10 bg-[#050505] p-12 text-center">
           <p className="text-text-muted mb-2 text-sm tracking-widest uppercase font-semibold">New articles added regularly</p>
-          <h2 className="text-3xl font-syne font-bold text-bg-base mb-4">Want Mohammad&apos;s analysis on your market?</h2>
+          <h2 className="text-3xl font-heading font-bold text-bg-base mb-4">Want Mohammad&apos;s analysis on your market?</h2>
           <p className="text-text-muted mb-8 max-w-lg mx-auto">Get a free 30-minute digital audit and direct analysis of where your business stands in the GCC digital landscape.</p>
           <Button href="/contact" className="text-lg px-8 py-4">Get Your Free 30-Min Digital Audit</Button>
         </div>

@@ -27,7 +27,7 @@ export function HeroA({ locationCity, locationCountry, locationSlug, serviceName
         <div className="inline-block border border-accent/30 bg-accent/10 px-4 py-1.5 rounded-full mb-6">
           <span className="text-xs font-semibold text-accent tracking-wider uppercase">{locationCity} · {locationCountry}</span>
         </div>
-        <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-6 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-6 leading-tight">
           {headingText || `${serviceName} Expert in ${locationCity} — Direct Senior Access`}
         </h1>
         <p className="text-lg md:text-xl text-text-muted mb-10 max-w-3xl mx-auto leading-relaxed">
@@ -52,7 +52,7 @@ export function HeroB({ locationCity, locationCountry, locationSlug, serviceName
             <span>/</span>
             <span className="text-accent">{serviceName}</span>
           </nav>
-          <h1 className="text-5xl md:text-6xl font-syne font-bold text-bg-base mb-6 leading-tight border-l-4 border-accent pl-6">
+          <h1 className="text-5xl md:text-6xl font-heading font-bold text-bg-base mb-6 leading-tight border-l-4 border-accent pl-6">
             {headingText || `Leading ${serviceName} Services for ${locationCity} Brands`}
           </h1>
           <p className="text-xl text-text-muted mb-10 leading-relaxed">
@@ -73,7 +73,7 @@ export function HeroC({ locationCity, locationCountry, locationSlug, serviceName
     <section className="pt-24 pb-20 border-b border-white/5 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-left">
-          <h1 className="text-4xl md:text-7xl font-syne font-bold text-bg-base mb-6 leading-[1.1]">
+          <h1 className="text-4xl md:text-7xl font-heading font-bold text-bg-base mb-6 leading-[1.1]">
             <span className="text-accent block text-2xl font-semibold mb-4 tracking-wider uppercase">{locationCity} {serviceName}</span>
             {headingText || `Scale Your Revenue in ${locationCity}`}
           </h1>

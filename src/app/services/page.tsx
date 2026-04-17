@@ -15,7 +15,7 @@ export default function ServicesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-6">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-6">
             7 Core Digital Services
           </h1>
           <p className="text-xl text-text-muted max-w-2xl mx-auto">
@@ -27,10 +27,10 @@ export default function ServicesPage() {
           {services.map((s, i) => (
             <div key={s.slug} className="group border border-white/10 bg-[#0A0A0A] p-10 hover:border-accent/40 hover:-translate-y-0.5 transition-all duration-300">
               <div className="flex items-start justify-between mb-6">
-                <span className="text-5xl font-syne font-bold text-accent/20">0{i + 1}</span>
+                <span className="text-5xl font-heading font-bold text-accent/20">0{i + 1}</span>
                 <span className="text-xs font-semibold tracking-widest text-text-muted uppercase">{s.name}</span>
               </div>
-              <h2 className="text-2xl md:text-3xl font-syne font-bold text-bg-base mb-4">{s.name}</h2>
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-bg-base mb-4">{s.name}</h2>
               <p className="text-text-muted mb-8 leading-relaxed">{s.fullDescription}</p>
               <div className="flex gap-4">
                 <Button href={`/services/${s.slug}`} variant="primary">Learn More →</Button>
@@ -40,7 +40,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="mt-24 border border-white/10 bg-[#050505] p-12 text-center">
-          <h2 className="text-3xl font-syne font-bold text-bg-base mb-4">Not sure which service you need?</h2>
+          <h2 className="text-3xl font-heading font-bold text-bg-base mb-4">Not sure which service you need?</h2>
           <p className="text-text-muted mb-8 max-w-xl mx-auto">Get your free 30-minute digital audit. Mohammad will review your digital presence and give you a clear, prioritized roadmap — no commitment required.</p>
           <Button href="/contact" className="text-lg px-8 py-4">Get Your Free 30-Min Digital Audit</Button>
         </div>

@@ -63,9 +63,9 @@ export const cluster2Blogs: BlogPost[] = [
       <p>Hyper-local citations like the Al Majaz Business Council help rank for neighborhood searches. Even a simple listing with NAP on a district association website can boost neighborhood rankings.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-2xl">
-        <h3 class="text-3xl font-syne font-bold mb-4 text-bg-base">Ready to dominate Sharjah local search?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 text-bg-base">Ready to dominate Sharjah local search?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto text-bg-base/80">I've helped 12+ Sharjah businesses improve their local SEO rankings. Let's create a 30-day action plan to dominate your district.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
           Claim Your Free Sharjah Audit <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>
@@ -118,7 +118,7 @@ export const cluster2Blogs: BlogPost[] = [
 
       <div class="blog-trust-badge my-12 bg-white/5 border border-accent/20 p-8 rounded-2xl relative overflow-hidden">
         <div class="absolute top-0 left-0 w-1 h-full bg-accent"></div>
-        <h4 class="text-2xl font-syne font-bold text-bg-base mb-4 italic">The 'Direct Access' Ranking Advantage</h4>
+        <h4 class="text-2xl font-heading font-bold text-bg-base mb-4 italic">The 'Direct Access' Ranking Advantage</h4>
         <p class="text-text-muted italic">"In 2026, the local pack isn't a billboard; it's a funnel. If your profile doesn't have messaging enabled and instant WhatsApp routing, you're leaking 40% of your mobile traffic to faster competitors." — Mohammad Fazil</p>
       </div>
 
@@ -130,9 +130,9 @@ export const cluster2Blogs: BlogPost[] = [
       </ul>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-2xl">
-        <h3 class="text-3xl font-syne font-bold mb-4 text-bg-base">Is your Google Maps profile invisible?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 text-bg-base">Is your Google Maps profile invisible?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto text-bg-base/80">I provide specialized Google Maps SEO audits for UAE and KSA businesses. Let's get you in the Top 3 Local Pack.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
           Request Google Maps Audit <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>
@@ -197,9 +197,9 @@ export const cluster2Blogs: BlogPost[] = [
       <p>Before publishing, ask: Are there specific cultural or regulatory nuances here? Does this mention UAE-specific hubs or KSA-native platforms like Snapchat? If it reads like it could apply to London or New York, it will not rank in the GCC.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-2xl">
-        <h3 class="text-3xl font-syne font-bold mb-4 text-bg-base">Struggling with the March 2026 Update?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 text-bg-base">Struggling with the March 2026 Update?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto text-bg-base/80">Claim your comprehensive Content Strategy Audit. We'll identify exactly where your content is losing authority and how to inject E-E-A-T signals.</p>
-        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+        <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
           Request Content Audit <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
       </div>

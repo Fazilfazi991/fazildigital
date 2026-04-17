@@ -14,7 +14,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <Link href="/" className="font-syne font-bold text-2xl tracking-tighter text-bg-base block leading-none">
+            <Link href="/" className="font-heading font-bold text-2xl tracking-tighter text-bg-base block leading-none">
               Mohammad Fazil
             </Link>
             <span className="text-[10px] text-text-muted font-medium uppercase tracking-wider mt-1 block">

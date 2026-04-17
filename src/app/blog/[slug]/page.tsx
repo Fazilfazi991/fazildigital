@@ -92,7 +92,7 @@ export default async function BlogPostPage({ params }: Props) {
               </>
             )}
           </div>
-          <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base leading-tight mb-6">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base leading-tight mb-6">
             {post.title}
           </h1>
           <div className="flex items-center gap-3 pt-6 border-t border-white/5">
@@ -110,7 +110,7 @@ export default async function BlogPostPage({ params }: Props) {
         />
 
         <div className="mt-20 pt-12 border-t border-white/10 text-center">
-          <h2 className="text-2xl font-syne font-bold text-bg-base mb-6">
+          <h2 className="text-2xl font-heading font-bold text-bg-base mb-6">
             Ready to implement these insights in your business?
           </h2>
           <Button href="/contact">Get Your Free 30-Min Digital Audit</Button>

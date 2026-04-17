@@ -8,7 +8,7 @@ export default function GrowthFlywheel() {
 
   return (
     <div className="max-w-lg mx-auto text-center">
-      <h3 className="text-2xl font-syne font-bold text-bg-base mb-3">The Compounding Growth Flywheel</h3>
+      <h3 className="text-2xl font-heading font-bold text-bg-base mb-3">The Compounding Growth Flywheel</h3>
       <p className="text-sm text-text-muted mb-12 max-w-sm mx-auto">
         Each channel feeds the next. SEO lowers CPA. Paid ads fund content.
         Automation scales output. Results compound over time.

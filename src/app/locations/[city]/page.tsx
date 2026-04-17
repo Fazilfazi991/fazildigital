@@ -86,7 +86,7 @@ export default async function LocationHubPage({ params }: Props) {
             <span>/</span>
             <span className="text-accent">{location.city}</span>
           </nav>
-          <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-6 leading-tight">
             Digital Consultant in {location.city} — Services for Mid-Size Businesses
           </h1>
           <p className="text-xl text-text-muted mb-10 max-w-3xl leading-relaxed">
@@ -99,7 +99,7 @@ export default async function LocationHubPage({ params }: Props) {
       {/* Services in This City */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-12">
             Services in {location.city}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -109,7 +109,7 @@ export default async function LocationHubPage({ params }: Props) {
                 href={`/${location.slug}/${s.slug}`}
                 className="group border border-white/10 bg-[#0A0A0A] p-8 hover:border-accent/40 hover:-translate-y-0.5 transition-all duration-300 block"
               >
-                <h3 className="text-xl font-syne font-bold text-bg-base mb-3 group-hover:text-accent transition-colors">{s.name}</h3>
+                <h3 className="text-xl font-heading font-bold text-bg-base mb-3 group-hover:text-accent transition-colors">{s.name}</h3>
                 <p className="text-text-muted mb-6 text-sm leading-relaxed">{s.shortDescription}</p>
                 <span className="text-accent text-sm font-medium inline-flex items-center">
                   {s.name} in {location.city} <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -123,7 +123,7 @@ export default async function LocationHubPage({ params }: Props) {
       {/* About City Market */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#050505] border-b border-white/5">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-8">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-8">
             The {location.city} Digital Market
           </h2>
           <div className="space-y-6 text-text-muted text-lg leading-relaxed">
@@ -140,7 +140,7 @@ export default async function LocationHubPage({ params }: Props) {
       {/* Why Businesses Choose Fazil */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-12">
             Why {location.city} Businesses Choose Fazil
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -152,7 +152,7 @@ export default async function LocationHubPage({ params }: Props) {
             ].map((item) => (
               <div key={item.title} className="border border-white/10 bg-[#0A0A0A] p-8">
                 <span className="text-accent font-bold text-xl mb-4 block">✓</span>
-                <h3 className="font-syne font-bold text-bg-base text-xl mb-3">{item.title}</h3>
+                <h3 className="font-heading font-bold text-bg-base text-xl mb-3">{item.title}</h3>
                 <p className="text-text-muted leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -163,7 +163,7 @@ export default async function LocationHubPage({ params }: Props) {
       {/* CTA */}
       <section className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-6">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-6">
             Ready to grow your business in {location.city}?
           </h2>
           <p className="text-xl text-text-muted mb-10">

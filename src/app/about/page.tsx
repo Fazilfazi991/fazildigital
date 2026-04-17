@@ -62,18 +62,18 @@ export default function AboutPage() {
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-12">
+        <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-12">
           Direct Senior Expertise. <br className="hidden md:block" /> No Middlemen.
         </h1>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
-          <div className="lg:col-span-2 prose prose-invert prose-lg max-w-none font-dm-sans text-text-muted space-y-8">
+          <div className="lg:col-span-2 prose prose-invert prose-lg max-w-none font-body text-text-muted space-y-8">
             <p className="text-xl text-bg-base leading-relaxed">
               Mohammad Fazil is a Dubai-based digital consultant. He doesn&apos;t run an agency, and he doesn&apos;t use junior account managers. He works directly with a select group of mid-size businesses across the UAE, Saudi Arabia, and the GCC.
             </p>
             
             <section>
-              <h2 className="text-2xl font-syne font-bold text-bg-base mt-12 mb-6 uppercase tracking-widest text-sm">The Story</h2>
+              <h2 className="text-2xl font-heading font-bold text-bg-base mt-12 mb-6 uppercase tracking-widest text-sm">The Story</h2>
               <p>
                 I used to work inside the agency model. I saw the pitch: You&apos;ll work with our senior team. I saw the handoff: Your account manager will coordinate delivery. And I watched good businesses in Dubai and Riyadh pay premium fees for junior execution.
               </p>
@@ -83,7 +83,7 @@ export default function AboutPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-syne font-bold text-bg-base mt-12 mb-6 uppercase tracking-widest text-sm">The GCC Advantage</h2>
+              <h2 className="text-2xl font-heading font-bold text-bg-base mt-12 mb-6 uppercase tracking-widest text-sm">The GCC Advantage</h2>
               <p>
                 Navigating the digital shift in Riyadh or competing for search visibility in Dubai requires more than just generic marketing knowledge. It requires an understanding of local consumer behavior, platform dominance (like Snapchat in KSA), and the economic context of Vision 2030.
               </p>
@@ -93,7 +93,7 @@ export default function AboutPage() {
             </section>
 
             <div className="bg-[#0f0f0f] border border-white/10 p-10 my-16 rounded shadow-lg">
-              <h3 className="font-syne font-bold text-accent text-xl mb-6">Strategic Principles</h3>
+              <h3 className="font-heading font-bold text-accent text-xl mb-6">Strategic Principles</h3>
               <ul className="space-y-6 list-none p-0 m-0 text-base">
                 <li className="flex items-start">
                   <span className="text-accent mr-4 mt-1 font-bold">01</span>
@@ -111,7 +111,7 @@ export default function AboutPage() {
             </div>
             
             <section className="pt-8">
-              <h2 className="text-2xl font-syne font-bold text-bg-base mb-6">Let&apos;s build your GCC digital roadmap.</h2>
+              <h2 className="text-2xl font-heading font-bold text-bg-base mb-6">Let&apos;s build your GCC digital roadmap.</h2>
               <p className="mb-10 text-lg">
                 If you are a mid-size business in Dubai or Saudi Arabia looking for a reliable, senior digital partner, let&apos;s talk.
               </p>
@@ -126,13 +126,13 @@ export default function AboutPage() {
             <div className="aspect-[3/4] bg-[#0A0A0A] border border-white/10 relative overflow-hidden flex items-center justify-center p-8 text-center group">
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
               <div className="relative z-10">
-                 <h3 className="font-syne font-bold text-bg-base text-2xl mb-1">Mohammad Fazil</h3>
+                 <h3 className="font-heading font-bold text-bg-base text-2xl mb-1">Mohammad Fazil</h3>
                  <p className="text-accent text-xs font-bold tracking-widest uppercase mb-4">Principal Consultant</p>
               </div>
             </div>
 
             <div className="border border-white/10 p-8 space-y-6">
-              <h4 className="font-syne font-bold text-bg-base text-lg">Trust Signals</h4>
+              <h4 className="font-heading font-bold text-bg-base text-lg">Trust Signals</h4>
               <div className="space-y-4">
                  <div className="flex items-center gap-3">
                     <span className="text-accent">✓</span>

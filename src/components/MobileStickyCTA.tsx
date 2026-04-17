@@ -26,7 +26,7 @@ export function MobileStickyCTA() {
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 md:hidden animate-in slide-in-from-bottom duration-300">
       <Link
         href="/contact"
-        className="flex items-center justify-center w-full py-4 bg-accent text-primary font-syne font-bold rounded-lg shadow-2xl hover:bg-accent/90 transition-all active:scale-[0.98]"
+        className="flex items-center justify-center w-full py-4 bg-accent text-primary font-heading font-bold rounded-lg shadow-2xl hover:bg-accent/90 transition-all active:scale-[0.98]"
       >
         Get Your Free Audit →
       </Link>

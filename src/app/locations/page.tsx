@@ -23,7 +23,7 @@ export default function LocationsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-6">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-6">
             Serving Businesses Across the GCC
           </h1>
           <p className="text-xl text-text-muted max-w-2xl mx-auto">
@@ -41,7 +41,7 @@ export default function LocationsPage() {
               {list.map((l) => (
                 <Link key={l.slug} href={`/locations/${l.slug}`} className="group border border-white/10 bg-[#0A0A0A] p-8 hover:border-accent/40 hover:-translate-y-0.5 transition-all duration-300 block">
                   <div className="flex items-start justify-between mb-6">
-                    <h2 className="text-2xl font-syne font-bold text-bg-base group-hover:text-accent transition-colors">{l.city}</h2>
+                    <h2 className="text-2xl font-heading font-bold text-bg-base group-hover:text-accent transition-colors">{l.city}</h2>
                     <span className="text-xs font-medium bg-white/5 border border-white/10 px-2 py-1 rounded text-text-muted">{l.country}</span>
                   </div>
                   <p className="text-text-muted mb-6 text-sm leading-relaxed">{l.localContext}</p>
@@ -55,7 +55,7 @@ export default function LocationsPage() {
         ))}
 
         <div className="border border-white/10 bg-[#050505] p-12 text-center mt-8">
-          <h2 className="text-3xl font-syne font-bold text-bg-base mb-4">Don't see your city?</h2>
+          <h2 className="text-3xl font-heading font-bold text-bg-base mb-4">Don't see your city?</h2>
           <p className="text-text-muted mb-8 max-w-xl mx-auto">Mohammad works with clients across the full GCC region — Bahrain, Kuwait, Qatar and beyond. Get in touch to discuss your location.</p>
           <Button href="/contact" className="text-lg px-8 py-4">Get in Touch</Button>
         </div>

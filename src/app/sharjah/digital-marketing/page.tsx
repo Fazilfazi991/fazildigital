@@ -66,7 +66,7 @@ export default function SharjahDigitalMarketing() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <main className="bg-[#050505] pt-24 min-h-screen text-bg-base font-dm-sans selection:bg-accent selection:text-primary overflow-hidden">
+      <main className="bg-[#050505] pt-24 min-h-screen text-bg-base font-body selection:bg-accent selection:text-primary overflow-hidden">
         
         {/* BACKGROUND GLOWS - AI AESTHETIC */}
         <div className="fixed inset-0 pointer-events-none z-0">
@@ -85,7 +85,7 @@ export default function SharjahDigitalMarketing() {
               <span className="text-[10px] font-bold text-accent tracking-[0.2em] uppercase">Sovereign AI &amp; SEO Domination</span>
             </div>
             
-            <h1 className="text-5xl md:text-8xl font-syne font-bold leading-[0.9] tracking-tighter mb-10">
+            <h1 className="text-5xl md:text-8xl font-heading font-bold leading-[0.9] tracking-tighter mb-10">
               SHARJAH <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-[#D9B66F] to-accent italic">MARKET</span> <br />
               DOMINANCE
@@ -114,7 +114,7 @@ export default function SharjahDigitalMarketing() {
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
               <div className="max-w-xl">
-                <h2 className="text-4xl md:text-6xl font-syne font-bold mb-6 tracking-tighter leading-none">
+                <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6 tracking-tighter leading-none">
                   CLIENTS I <br />
                   <span className="text-accent uppercase italic">WORKED WITH</span>
                 </h2>
@@ -123,7 +123,7 @@ export default function SharjahDigitalMarketing() {
                 </p>
               </div>
               <div className="hidden md:block">
-                <span className="text-[100px] font-syne font-black text-white/5 select-none leading-none">TRUST</span>
+                <span className="text-[100px] font-heading font-black text-white/5 select-none leading-none">TRUST</span>
               </div>
             </div>
 
@@ -131,13 +131,13 @@ export default function SharjahDigitalMarketing() {
               {clients.map((client, idx) => (
                 <div key={idx} className="group relative p-8 backdrop-blur-xl bg-white/[0.02] border border-white/5 rounded-3xl hover:border-accent/40 transition-all duration-500 overflow-hidden">
                   <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 scale-150 transition-all duration-500">
-                    <span className="text-6xl font-syne font-black opacity-10">{idx + 1}</span>
+                    <span className="text-6xl font-heading font-black opacity-10">{idx + 1}</span>
                   </div>
                   
                   <div className="relative z-10">
                     <div className="mb-6 opacity-60 grayscale group-hover:grayscale-0 transition-all duration-500">
                       <span className="text-xs font-bold uppercase tracking-widest text-accent mb-2 block">{client.industry}</span>
-                      <h3 className="text-2xl font-syne font-bold text-bg-base">{client.name}</h3>
+                      <h3 className="text-2xl font-heading font-bold text-bg-base">{client.name}</h3>
                     </div>
                     
                     <div className="flex flex-wrap gap-2 mb-8">
@@ -163,7 +163,7 @@ export default function SharjahDigitalMarketing() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
               <div className="space-y-12">
-                <h2 className="text-4xl md:text-6xl font-syne font-bold leading-[1.1] tracking-tighter">
+                <h2 className="text-4xl md:text-6xl font-heading font-bold leading-[1.1] tracking-tighter">
                   SHARJAH: THE <br />
                   <span className="text-accent underline decoration-white/10 underline-offset-8">BILINGUAL</span> BRIDGE.
                 </h2>
@@ -186,7 +186,7 @@ export default function SharjahDigitalMarketing() {
               <div className="relative">
                 <div className="aspect-square bg-white/[0.02] border border-white/5 rounded-[60px] p-12 flex items-center justify-center overflow-hidden">
                   <div className="text-center">
-                    <div className="text-7xl font-syne font-bold text-accent mb-4 animate-pulse">ROI</div>
+                    <div className="text-7xl font-heading font-bold text-accent mb-4 animate-pulse">ROI</div>
                     <div className="text-sm font-bold uppercase tracking-[0.3em] text-[#666]">Data Calibrated</div>
                   </div>
                   
@@ -204,7 +204,7 @@ export default function SharjahDigitalMarketing() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl aspect-square bg-accent/5 blur-[150px] rounded-full pointer-events-none"></div>
           
           <div className="max-w-4xl mx-auto relative z-10 text-center">
-            <h2 className="text-4xl md:text-7xl font-syne font-bold mb-20 tracking-tighter">THE EXECUTION <span className="text-accent underline underline-offset-8 decoration-white/20">LOOP</span></h2>
+            <h2 className="text-4xl md:text-7xl font-heading font-bold mb-20 tracking-tighter">THE EXECUTION <span className="text-accent underline underline-offset-8 decoration-white/20">LOOP</span></h2>
             
             <div className="space-y-12 text-left">
               {[
@@ -213,7 +213,7 @@ export default function SharjahDigitalMarketing() {
                 { step: "03", title: "Blended ROI Calibration", desc: "Monthly performance recalibration. We don't just report clicks; we report revenue pipeline contribution and CAC optimization." }
               ].map((m, idx) => (
                 <div key={idx} className="flex gap-8 items-start group">
-                  <span className="text-3xl font-syne font-black text-accent/30 group-hover:text-accent transition-colors duration-500">{m.step}</span>
+                  <span className="text-3xl font-heading font-black text-accent/30 group-hover:text-accent transition-colors duration-500">{m.step}</span>
                   <div>
                     <h3 className="text-2xl font-bold mb-4">{m.title}</h3>
                     <p className="text-text-muted leading-relaxed max-w-2xl">{m.desc}</p>
@@ -227,14 +227,14 @@ export default function SharjahDigitalMarketing() {
         {/* SECTION 5: FAQ - EXPERT MODE */}
         <section className="py-32 px-4 border-t border-white/5">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-syne font-bold mb-20 uppercase tracking-tighter">Strategic <span className="text-accent italic">Intelligence</span></h2>
+            <h2 className="text-4xl font-heading font-bold mb-20 uppercase tracking-tighter">Strategic <span className="text-accent italic">Intelligence</span></h2>
             <div className="text-left">
               <Accordion items={sharjahFaqs} />
             </div>
             
             <div className="mt-24 p-12 backdrop-blur-3xl bg-white/[0.01] border border-white/5 rounded-[40px] relative overflow-hidden group">
               <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-              <p className="text-2xl font-syne font-medium mb-10 text-bg-base/80">Ready to initiate the Top 3 ranking sequence for your Sharjah business?</p>
+              <p className="text-2xl font-heading font-medium mb-10 text-bg-base/80">Ready to initiate the Top 3 ranking sequence for your Sharjah business?</p>
               <Button href="/contact" className="px-10 py-5">Request Professional Consultation</Button>
             </div>
           </div>

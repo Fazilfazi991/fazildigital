@@ -148,7 +148,7 @@ export default function DigitalMarketingExpertDubai() {
             Dubai-Based · Serving UAE &amp; Saudi Arabia
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-syne font-bold text-bg-base leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-bg-base leading-tight mb-6">
             Digital Marketing Expert in Dubai
           </h1>
 
@@ -177,7 +177,7 @@ export default function DigitalMarketingExpertDubai() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-3">How I Can Help</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-3">How I Can Help</h2>
             <p className="text-text-muted max-w-xl mx-auto">
               Practical digital marketing strategies built for the UAE and Saudi Arabian markets.
             </p>
@@ -186,7 +186,7 @@ export default function DigitalMarketingExpertDubai() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {services.map((s, i) => (
               <div key={i} className="p-8 rounded-2xl border border-white/10 bg-white/[0.02] hover:border-accent/30 transition-all duration-300 flex flex-col">
-                <h3 className="text-xl font-syne font-bold text-bg-base mb-3">{s.title}</h3>
+                <h3 className="text-xl font-heading font-bold text-bg-base mb-3">{s.title}</h3>
                 <p className="text-text-muted text-sm leading-relaxed mb-5">{s.desc}</p>
                 <ul className="space-y-2 mb-6 flex-1">
                   {s.bullets.map((b, j) => (
@@ -223,7 +223,7 @@ export default function DigitalMarketingExpertDubai() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-black/20 border-b border-white/5">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-6">
-            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-3">Agency vs Direct Access</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-3">Agency vs Direct Access</h2>
             <p className="text-text-muted max-w-xl mx-auto italic text-sm">Why mid-size businesses are moving away from traditional agency models.</p>
           </div>
           <AgencyComparison />
@@ -234,7 +234,7 @@ export default function DigitalMarketingExpertDubai() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5 bg-[#050505]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-3">How It Works</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-3">How It Works</h2>
             <p className="text-text-muted max-w-xl mx-auto">A clear four-step process from first conversation to measurable results.</p>
           </div>
           <ProcessTimeline />
@@ -244,7 +244,7 @@ export default function DigitalMarketingExpertDubai() {
       {/* ── ABOUT ── */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white/[0.01] border-b border-white/5">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-syne font-bold text-bg-base mb-8">About Mohammad</h2>
+          <h2 className="text-3xl font-heading font-bold text-bg-base mb-8">About Mohammad</h2>
 
           <div className="space-y-5 text-text-muted leading-relaxed">
             <p>
@@ -272,7 +272,7 @@ export default function DigitalMarketingExpertDubai() {
               { stat: "Direct", label: "Access always" },
             ].map((f, i) => (
               <div key={i} className="p-5 rounded-xl border border-white/10 bg-white/[0.02] text-center">
-                <div className="text-2xl font-syne font-bold text-accent mb-1">{f.stat}</div>
+                <div className="text-2xl font-heading font-bold text-accent mb-1">{f.stat}</div>
                 <div className="text-xs text-text-muted">{f.label}</div>
               </div>
             ))}
@@ -284,7 +284,7 @@ export default function DigitalMarketingExpertDubai() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
         <div className="max-w-3xl mx-auto">
           <div className="mb-14">
-            <h2 className="text-3xl font-syne font-bold text-bg-base mb-3">Recent Results</h2>
+            <h2 className="text-3xl font-heading font-bold text-bg-base mb-3">Recent Results</h2>
             <p className="text-text-muted">Real outcomes for businesses in the UAE and Saudi Arabia.</p>
           </div>
 
@@ -305,13 +305,13 @@ export default function DigitalMarketingExpertDubai() {
             ].map((cs, i) => (
               <div key={i} className="p-8 rounded-2xl border border-white/10 bg-white/[0.02] border-l-2 border-l-accent">
                 <div className="mb-4">
-                  <h3 className="font-syne font-bold text-bg-base">{cs.client}</h3>
+                  <h3 className="font-heading font-bold text-bg-base">{cs.client}</h3>
                   <p className="text-xs text-text-muted mt-1">{cs.service}</p>
                 </div>
                 <div className="flex gap-8 mb-6">
                   {cs.metrics.map((m, j) => (
                     <div key={j}>
-                      <div className="text-3xl font-syne font-bold text-accent">{m.val}</div>
+                      <div className="text-3xl font-heading font-bold text-accent">{m.val}</div>
                       <div className="text-xs text-text-muted mt-1">{m.label}</div>
                     </div>
                   ))}
@@ -332,7 +332,7 @@ export default function DigitalMarketingExpertDubai() {
       {/* ── FAQ ── */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white/[0.01] border-b border-white/5">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-syne font-bold text-bg-base mb-12 text-center">Common Questions</h2>
+          <h2 className="text-3xl font-heading font-bold text-bg-base mb-12 text-center">Common Questions</h2>
           <Accordion items={faqs} />
         </div>
       </section>
@@ -340,7 +340,7 @@ export default function DigitalMarketingExpertDubai() {
       {/* ── CTA ── */}
       <section className="py-28 px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-4">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-4">
             Ready to Grow Your Business?
           </h2>
           <p className="text-text-muted mb-10 leading-relaxed">

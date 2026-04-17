@@ -15,7 +15,7 @@ export default function MarketsPage() {
         
         {/* Header */}
         <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-6">GCC Markets We Serve</h1>
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-6">GCC Markets We Serve</h1>
           <p className="text-xl text-text-muted max-w-3xl mx-auto leading-relaxed">
             We partner with mid-size businesses across the GCC. Each market has unique consumer behavior, platform preferences, and commercial realities. We build strategies that respect those differences.
           </p>
@@ -26,7 +26,7 @@ export default function MarketsPage() {
           {/* UAE Section */}
           <div className="space-y-8">
             <div className="p-8 border border-white/10 bg-[#0A0A0A]">
-              <h2 className="text-3xl font-syne font-bold text-bg-base mb-6 flex items-center gap-4">
+              <h2 className="text-3xl font-heading font-bold text-bg-base mb-6 flex items-center gap-4">
                 <span className="text-4xl text-accent">🇦🇪</span> United Arab Emirates
               </h2>
               <p className="text-text-muted mb-8 text-lg leading-relaxed">
@@ -53,7 +53,7 @@ export default function MarketsPage() {
             </div>
             
             <div className="p-8 border border-dashed border-white/10">
-              <h3 className="font-syne font-bold text-bg-base mb-4">UAE Market Focus</h3>
+              <h3 className="font-heading font-bold text-bg-base mb-4">UAE Market Focus</h3>
               <ul className="space-y-2 text-sm text-text-muted">
                 <li>• Bifocal Search strategies (English & Arabic)</li>
                 <li>• High-intent DIFC & Business Bay targeting</li>
@@ -65,7 +65,7 @@ export default function MarketsPage() {
           {/* Saudi Arabia Section */}
           <div className="space-y-8">
             <div className="p-8 border border-white/10 bg-[#0A0A0A]">
-              <h2 className="text-3xl font-syne font-bold text-bg-base mb-6 flex items-center gap-4">
+              <h2 className="text-3xl font-heading font-bold text-bg-base mb-6 flex items-center gap-4">
                 <span className="text-4xl text-accent">🇸🇦</span> Saudi Arabia
               </h2>
               <p className="text-text-muted mb-8 text-lg leading-relaxed">
@@ -91,7 +91,7 @@ export default function MarketsPage() {
             </div>
 
             <div className="p-8 border border-dashed border-white/10">
-              <h3 className="font-syne font-bold text-bg-base mb-4">KSA Market Focus</h3>
+              <h3 className="font-heading font-bold text-bg-base mb-4">KSA Market Focus</h3>
               <ul className="space-y-2 text-sm text-text-muted">
                 <li>• Snapchat-first conversion funnels</li>
                 <li>• Arabic dialect-native content strategy</li>
@@ -104,7 +104,7 @@ export default function MarketsPage() {
 
         {/* Pan-GCC Section */}
         <div className="mt-20 p-12 bg-[#050505] border border-white/5 text-center">
-            <h2 className="text-3xl font-syne font-bold text-bg-base mb-6">Wider GCC Coverage</h2>
+            <h2 className="text-3xl font-heading font-bold text-bg-base mb-6">Wider GCC Coverage</h2>
             <p className="text-text-muted max-w-2xl mx-auto mb-10">
               We also support mid-size businesses in <strong>Bahrain, Kuwait, and Oman</strong>. Our strategies scale across borders while maintaining local relevance.
             </p>

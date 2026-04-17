@@ -139,7 +139,7 @@ export default function PortfolioPage() {
       {/* Hero Section */}
       <section className="relative px-4 sm:px-6 lg:px-8 mb-24">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-syne font-bold text-bg-base mb-8 tracking-tighter">
+          <h1 className="text-5xl md:text-7xl font-heading font-bold text-bg-base mb-8 tracking-tighter">
             Portfolio & <span className="text-accent">Recent Work</span>
           </h1>
           <p className="text-xl text-text-muted leading-relaxed max-w-2xl mx-auto mb-12">
@@ -149,15 +149,15 @@ export default function PortfolioPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-b border-white/10 py-10">
             <div className="text-center">
-              <span className="block text-4xl font-syne font-bold text-accent mb-1">9+</span>
+              <span className="block text-4xl font-heading font-bold text-accent mb-1">9+</span>
               <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Years Experience</span>
             </div>
             <div className="text-center md:border-x border-white/10 px-4">
-              <span className="block text-4xl font-syne font-bold text-accent mb-1">100+</span>
+              <span className="block text-4xl font-heading font-bold text-accent mb-1">100+</span>
               <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Projects Complete</span>
             </div>
             <div className="text-center">
-              <span className="block text-4xl font-syne font-bold text-accent mb-1">10+</span>
+              <span className="block text-4xl font-heading font-bold text-accent mb-1">10+</span>
               <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Industries Served</span>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function PortfolioPage() {
       <section className="px-4 sm:px-6 lg:px-8 py-32 bg-primary">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-4 italic">Core Expertise</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-4 italic">Core Expertise</h2>
             <p className="text-text-muted">End-to-end digital solutions tailored for the GCC market.</p>
           </div>
 
@@ -179,7 +179,7 @@ export default function PortfolioPage() {
                 className="group p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300"
               >
                 <div className="text-4xl mb-6">{service.icon}</div>
-                <h3 className="text-xl font-syne font-bold text-bg-base mb-4 italic group-hover:text-accent transition-colors">
+                <h3 className="text-xl font-heading font-bold text-bg-base mb-4 italic group-hover:text-accent transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-text-muted mb-8 text-sm leading-relaxed">
@@ -203,7 +203,7 @@ export default function PortfolioPage() {
       <section className="bg-[#050505] py-32 border-y border-white/5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-6 italic tracking-tighter">
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-6 italic tracking-tighter">
               Trusted by Leading <span className="text-accent">GCC Brands</span>
             </h2>
             <p className="text-text-muted max-w-xl mx-auto">
@@ -232,10 +232,10 @@ export default function PortfolioPage() {
                     </div>
                   ) : (
                     <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-white/[0.05] to-transparent p-12">
-                      <div className="text-6xl font-syne font-bold text-white/5 tracking-tighter uppercase mb-2 select-none">
+                      <div className="text-6xl font-heading font-bold text-white/5 tracking-tighter uppercase mb-2 select-none">
                         {client.name.split(' ').map(w => w[0]).join('')}
                       </div>
-                      <div className="text-xs font-syne font-bold text-accent tracking-[0.2em] uppercase opacity-40">
+                      <div className="text-xs font-heading font-bold text-accent tracking-[0.2em] uppercase opacity-40">
                         Visualizing Growth
                       </div>
                     </div>
@@ -250,7 +250,7 @@ export default function PortfolioPage() {
                 <div className="px-2 space-y-4">
                   <div className="flex items-end justify-between">
                     <div>
-                      <h3 className="text-2xl font-syne font-bold text-bg-base leading-none mb-2">
+                      <h3 className="text-2xl font-heading font-bold text-bg-base leading-none mb-2">
                         {client.name}
                       </h3>
                       <p className="text-[10px] font-bold text-text-muted uppercase tracking-widest">
@@ -310,7 +310,7 @@ export default function PortfolioPage() {
       <section className="bg-[#f8f9fa] py-24 px-4 sm:px-6 lg:px-8 text-gray-900 border-y border-gray-200">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-syne font-bold text-slate-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-slate-900 mb-4">
               Web Development Projects
             </h2>
             <p className="text-slate-600 text-lg max-w-2xl mx-auto font-medium">
@@ -357,7 +357,7 @@ export default function PortfolioPage() {
                 {/* Info Area */}
                 <div className="p-8 lg:p-12 lg:w-1/2 flex flex-col justify-center">
                   <div className="mb-6">
-                    <h3 className="text-3xl font-syne font-bold text-slate-900 mb-2">{project.name}</h3>
+                    <h3 className="text-3xl font-heading font-bold text-slate-900 mb-2">{project.name}</h3>
                     <p className="text-blue-600 font-bold text-sm uppercase tracking-widest italic">{project.location}</p>
                   </div>
                   
@@ -391,7 +391,7 @@ export default function PortfolioPage() {
 
           {/* More Projects Section */}
           <div className="mt-32">
-            <h3 className="text-3xl font-syne font-bold text-slate-900 text-center mb-12">More Successful Launches</h3>
+            <h3 className="text-3xl font-heading font-bold text-slate-900 text-center mb-12">More Successful Launches</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {otherPlatforms.map((platform) => (
                 <div key={platform.name} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
@@ -416,7 +416,7 @@ export default function PortfolioPage() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-syne font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4">
               Latest Design Work
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
@@ -426,7 +426,7 @@ export default function PortfolioPage() {
 
           {/* Project 1: MALABAR GOLDEN TRITH */}
           <div className="mb-20">
-            <h3 className="text-2xl font-syne font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-2 inline-block">
+            <h3 className="text-2xl font-heading font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-2 inline-block">
               MALABAR GOLDEN TRITH
             </h3>
             
@@ -451,7 +451,7 @@ export default function PortfolioPage() {
 
           {/* Project 2: Package Designing */}
           <div className="mb-20">
-            <h3 className="text-2xl font-syne font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-2 inline-block">
+            <h3 className="text-2xl font-heading font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-2 inline-block">
               Package Designing
             </h3>
             
@@ -486,7 +486,7 @@ export default function PortfolioPage() {
 
           {/* Project 3: FILLI TEA */}
           <div className="mb-20">
-            <h3 className="text-2xl font-syne font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-2 inline-block">
+            <h3 className="text-2xl font-heading font-bold text-gray-800 mb-8 border-b-4 border-blue-600 pb-2 inline-block">
               FILLI TEA
             </h3>
             
@@ -511,7 +511,7 @@ export default function PortfolioPage() {
 
           {/* View Full Portfolio CTA */}
           <div className="bg-gray-50 rounded-[2.5rem] p-12 text-center border border-gray-100">
-            <h3 className="text-3xl font-syne font-bold text-gray-900 mb-4">
+            <h3 className="text-3xl font-heading font-bold text-gray-900 mb-4">
               Want to See More Work?
             </h3>
             <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
@@ -532,10 +532,10 @@ export default function PortfolioPage() {
       {/* Final CTA */}
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto bg-gradient-to-br from-accent/20 to-transparent border border-accent/20 rounded-[2rem] p-12 text-center">
-          <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-6">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-6">
             Ready to become my next <span className="text-accent underline underline-offset-8">Success Story?</span>
           </h2>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto mb-10 leading-relaxed font-dm-sans">
+          <p className="text-lg text-text-muted max-w-2xl mx-auto mb-10 leading-relaxed font-body">
             Whether you are looking to dominate Google search or automate your lead generation, 
             let&apos;s build the roadmap for your growth.
           </p>

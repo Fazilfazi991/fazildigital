@@ -3,7 +3,7 @@ export default function AgencyComparison() {
     <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto my-12">
       {/* Typical Agency */}
       <div className="bg-white/[0.02] p-8 rounded-2xl border border-white/10 opacity-60">
-        <h3 className="text-xl font-syne font-bold text-text-muted mb-6 flex items-center gap-3">
+        <h3 className="text-xl font-heading font-bold text-text-muted mb-6 flex items-center gap-3">
           <span className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-sm font-bold">✕</span>
           Typical Agency Model
         </h3>
@@ -24,7 +24,7 @@ export default function AgencyComparison() {
       {/* Mohammad Fazil */}
       <div className="bg-[#0A0A0A] p-8 rounded-2xl border-2 border-accent shadow-[0_0_50px_rgba(200,151,58,0.15)] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 blur-3xl -mr-16 -mt-16"></div>
-        <h3 className="text-xl font-syne font-bold text-bg-base mb-6 flex items-center gap-3">
+        <h3 className="text-xl font-heading font-bold text-bg-base mb-6 flex items-center gap-3">
           <span className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-primary text-sm font-bold">✓</span>
           The Direct Access Model
         </h3>

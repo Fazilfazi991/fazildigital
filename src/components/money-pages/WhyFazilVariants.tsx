@@ -6,7 +6,7 @@ export function WhyFazilA({ locationCity }: WhyFazilProps) {
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#050505] border-b border-white/5">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-8">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-8">
           The Fazil Difference in {locationCity}
         </h2>
         <div className="space-y-6 text-text-muted text-lg leading-relaxed">
@@ -21,7 +21,7 @@ export function WhyFazilA({ locationCity }: WhyFazilProps) {
           {["Zero Middlemen", "Direct Senior Access", "Full Accountability"].map((p) => (
             <div key={p} className="border border-white/10 p-6 bg-[#0A0A0A]">
               <span className="text-accent font-bold text-2xl">✓</span>
-              <p className="text-bg-base font-syne font-bold mt-3">{p}</p>
+              <p className="text-bg-base font-heading font-bold mt-3">{p}</p>
             </div>
           ))}
         </div>
@@ -35,7 +35,7 @@ export function WhyFazilB({ locationCity }: WhyFazilProps) {
     <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
         <div className="flex-1">
-          <h2 className="text-4xl font-syne font-bold text-bg-base mb-6">
+          <h2 className="text-4xl font-heading font-bold text-bg-base mb-6">
             Why {locationCity} Businesses Choose Fazil
           </h2>
           <div className="w-16 h-1 bg-accent mb-8"></div>
@@ -52,7 +52,7 @@ export function WhyFazilB({ locationCity }: WhyFazilProps) {
           <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
           <div>
              <span className="block text-6xl mb-4">🏆</span>
-             <h3 className="text-2xl font-bold font-syne text-bg-base mb-2">Unmatched Agility</h3>
+             <h3 className="text-2xl font-bold font-heading text-bg-base mb-2">Unmatched Agility</h3>
              <p className="text-text-muted">Built for ambitious mid-size companies in {locationCity}.</p>
           </div>
         </div>

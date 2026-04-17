@@ -21,7 +21,7 @@ export function MarketInsightBlock({ locationCity, serviceName, marketContext, l
           <span className="text-xs font-semibold tracking-widest text-accent uppercase">Local Market Intelligence</span>
           <div className="flex-1 h-px bg-white/10"></div>
         </div>
-        <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-8">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-8">
           {serviceName} in {locationCity} — What You Need to Know
         </h2>
 
@@ -31,7 +31,7 @@ export function MarketInsightBlock({ locationCity, serviceName, marketContext, l
 
         {localDistricts && localDistricts.length > 0 && (
           <div className="mb-12">
-            <h3 className="font-syne font-bold text-bg-base text-xl mb-5">Key Business Districts</h3>
+            <h3 className="font-heading font-bold text-bg-base text-xl mb-5">Key Business Districts</h3>
             <div className="flex flex-wrap gap-3">
               {localDistricts.map((district) => (
                 <span key={district} className="inline-flex items-center px-4 py-2 border border-white/10 bg-[#0A0A0A] text-sm text-text-muted rounded cursor-default hover:border-accent/40 transition-colors">
@@ -47,7 +47,7 @@ export function MarketInsightBlock({ locationCity, serviceName, marketContext, l
           <div className="border border-white/10 bg-[#0A0A0A] p-8 mb-10">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-2xl text-accent">📱</span>
-              <h3 className="font-syne font-bold text-bg-base text-lg">Platform & Channel Intelligence</h3>
+              <h3 className="font-heading font-bold text-bg-base text-lg">Platform & Channel Intelligence</h3>
             </div>
             <p className="text-text-muted leading-relaxed">{platformNotes}</p>
           </div>
@@ -71,7 +71,7 @@ export function FAQBlock({ locationCity, serviceName, faqs }: ActionBlockProps) 
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5 bg-[#050505]">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-12">
           FAQ — {serviceName} in {locationCity}
         </h2>
         <Accordion items={faqs} />
@@ -87,7 +87,7 @@ export function FinalCTABlock({ locationCity, serviceName }: ActionBlockProps) {
         <div className="w-[600px] h-[600px] rounded-full bg-accent blur-3xl"></div>
       </div>
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        <h2 className="text-4xl md:text-5xl font-syne font-bold text-bg-base mb-6 leading-tight">
+        <h2 className="text-4xl md:text-5xl font-heading font-bold text-bg-base mb-6 leading-tight">
           Ready for {serviceName} in {locationCity}?
         </h2>
         <p className="text-xl text-text-muted mb-10 max-w-2xl mx-auto">

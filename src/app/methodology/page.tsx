@@ -41,17 +41,17 @@ export default function MethodologyPage() {
           <div className="inline-block border border-accent/30 bg-accent/10 px-4 py-1.5 rounded mb-6">
             <span className="text-xs font-semibold text-accent tracking-wider uppercase">Strategic Framework</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-8 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-8 leading-tight">
             The Fazil Approach: How Senior Strategy Gets Executed.
           </h1>
-          <p className="text-xl text-text-muted leading-relaxed font-dm-sans">
+          <p className="text-xl text-text-muted leading-relaxed font-body">
             The biggest problem in digital marketing today isn&apos;t a lack of tools — it&apos;s a lack of accountability. Mid-size businesses in Dubai and Riyadh are tired of paying for &quot;Senior Strategy&quot; and receiving &quot;Junior Execution.&quot;
           </p>
         </div>
 
         <section className="space-y-16">
           <div className="bg-[#0A0A0A] border border-white/10 p-10 md:p-16">
-            <h2 className="text-2xl md:text-3xl font-syne font-bold text-bg-base mb-8">The Handoff Problem</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-bg-base mb-8">The Handoff Problem</h2>
             <div className="prose prose-invert prose-lg text-text-muted space-y-6">
               <p>
                 In the traditional agency model, the person you meet in the pitch is rarely the person who does the work. Once the contract is signed, the &quot;senior experts&quot; move to the next pitch, and your business is handed to a junior account manager.
@@ -63,12 +63,12 @@ export default function MethodologyPage() {
           </div>
 
           <div className="py-8">
-            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12 text-center text-balance">Our 4-Step Implementation Roadmap</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-12 text-center text-balance">Our 4-Step Implementation Roadmap</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {steps.map((s) => (
                 <div key={s.step} className="p-8 border border-white/10 bg-[#050505] relative hover:border-accent/40 transition-colors h-full flex flex-col">
-                  <span className="text-5xl font-syne font-bold text-accent/10 absolute top-4 right-6 leading-none">{s.step}</span>
-                  <h3 className="text-xl font-syne font-bold text-bg-base mt-4 mb-6 pr-12">{s.name}</h3>
+                  <span className="text-5xl font-heading font-bold text-accent/10 absolute top-4 right-6 leading-none">{s.step}</span>
+                  <h3 className="text-xl font-heading font-bold text-bg-base mt-4 mb-6 pr-12">{s.name}</h3>
                   <p className="text-text-muted leading-relaxed flex-grow">{s.desc}</p>
                 </div>
               ))}
@@ -76,7 +76,7 @@ export default function MethodologyPage() {
           </div>
 
           <div className="bg-accent/5 border border-accent/20 p-10 text-center">
-            <h2 className="text-2xl md:text-3xl font-syne font-bold text-bg-base mb-6">Execution Across All Pillars</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-bg-base mb-6">Execution Across All Pillars</h2>
             <p className="text-text-muted mb-10 max-w-2xl mx-auto">
               This methodology is applied consistently across every service Mohammad offers, ensuring a unified strategy for your GCC growth.
             </p>
@@ -91,7 +91,7 @@ export default function MethodologyPage() {
         </section>
 
         <section className="mt-32 text-center">
-          <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-8">Ready for a different kind of partner?</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-8">Ready for a different kind of partner?</h2>
           <p className="text-xl text-text-muted mb-12 max-w-2xl mx-auto">
             Book your free growth audit. No pitch. No junior staff. Just Mohammad and a clear look at your digital potential.
           </p>

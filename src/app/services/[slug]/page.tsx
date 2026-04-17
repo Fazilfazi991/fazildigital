@@ -77,7 +77,7 @@ export default async function ServicePage({ params }: Props) {
             <span>/</span>
             <span className="text-accent">{service.name}</span>
           </nav>
-          <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-6 leading-tight">
             {service.name} for Mid-Size Businesses in Dubai & Saudi Arabia
           </h1>
           <div className="text-xl text-text-muted mb-10 max-w-3xl leading-relaxed">
@@ -103,7 +103,7 @@ export default async function ServicePage({ params }: Props) {
       {/* What's Included */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12">What&apos;s Included</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-12">What&apos;s Included</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {service.deliverables.map((item, i) => (
               <div key={i} className="flex items-start gap-4 border border-white/10 bg-[#0A0A0A] px-6 py-5">
@@ -118,7 +118,7 @@ export default async function ServicePage({ params }: Props) {
       {/* Who It's For */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-8">Who This Is For</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-8">Who This Is For</h2>
           <div className="border-l-2 border-accent pl-8 py-2">
             <p className="text-text-muted text-xl leading-relaxed">{service.whoItsFor}</p>
           </div>
@@ -128,7 +128,7 @@ export default async function ServicePage({ params }: Props) {
       {/* Why Fazil */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#050505] border-b border-white/5">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-8">Why Fazil</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-8">Why Fazil</h2>
           <div className="space-y-6 text-text-muted text-lg leading-relaxed">
             <p>
               Most agencies assign your account to a junior team member after the pitch. With Mohammad, you get the expert throughout — from the first strategy call to final delivery.
@@ -141,7 +141,7 @@ export default async function ServicePage({ params }: Props) {
             {["Senior-Level Access", "Direct Communication", "Measurable Results"].map((p) => (
               <div key={p} className="border border-white/10 p-6 bg-[#0A0A0A]">
                 <span className="text-accent font-bold text-2xl">✓</span>
-                <p className="text-bg-base font-syne font-bold mt-3">{p}</p>
+                <p className="text-bg-base font-heading font-bold mt-3">{p}</p>
               </div>
             ))}
           </div>
@@ -151,7 +151,7 @@ export default async function ServicePage({ params }: Props) {
       {/* Process */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12">The Process</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-12">The Process</h2>
           <ProcessTimeline />
         </div>
       </section>
@@ -160,7 +160,7 @@ export default async function ServicePage({ params }: Props) {
       {(slug === "paid-ads" || slug === "social-media-management") && (
         <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#050505] border-b border-white/5">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-syne font-bold text-bg-base mb-4">GCC Platform Strategy</h2>
+            <h2 className="text-3xl font-heading font-bold text-bg-base mb-4">GCC Platform Strategy</h2>
             <p className="text-text-muted mb-10">Not every platform performs equally in every market. Here's how each channel stacks up for UAE vs Saudi Arabia audiences.</p>
             <PlatformMap />
           </div>
@@ -171,7 +171,7 @@ export default async function ServicePage({ params }: Props) {
       {/* Where I Work (Strategic Internal Linking) */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#050505] border-b border-white/5">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-4">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-4">
             Where I Work
           </h2>
           <p className="text-text-muted mb-10 text-lg">
@@ -209,7 +209,7 @@ export default async function ServicePage({ params }: Props) {
       {/* FAQ */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-12">
             Frequently Asked Questions
           </h2>
           <Accordion items={service.faqs} />
@@ -219,7 +219,7 @@ export default async function ServicePage({ params }: Props) {
       {/* Final CTA */}
       <section className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-6">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-6">
             Ready to start with {service.name}?
           </h2>
           <p className="text-xl text-text-muted mb-10">

@@ -8,7 +8,7 @@ export function ValuePropGrid({ locationCity, serviceName, deliverables }: Value
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#050505] border-b border-white/5">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-12">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-12">
           What Fazil Delivers in {locationCity}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -28,7 +28,7 @@ export function ValuePropList({ locationCity, serviceName, deliverables }: Value
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5 relative">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-4xl font-syne font-bold text-bg-base mb-8 text-center">
+        <h2 className="text-4xl font-heading font-bold text-bg-base mb-8 text-center">
           {serviceName} Execution
         </h2>
         <p className="text-text-muted text-center mb-12 text-lg">

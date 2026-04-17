@@ -17,7 +17,7 @@ export default function PlatformMap() {
   return (
     <div className="max-w-2xl mx-auto border border-white/10 rounded-2xl overflow-hidden">
       <div className="px-6 py-5 border-b border-white/10 bg-white/[0.02]">
-        <h3 className="font-syne font-bold text-bg-base">GCC Platform Effectiveness</h3>
+        <h3 className="font-heading font-bold text-bg-base">GCC Platform Effectiveness</h3>
         <p className="text-xs text-text-muted mt-1">Based on campaign performance data across 40+ mid-size GCC brands (2024–2026)</p>
       </div>
 

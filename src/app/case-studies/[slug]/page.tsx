@@ -107,14 +107,14 @@ export default async function CaseStudyPage({ params }: Props) {
         
         <header className="mb-16">
           <p className="text-xs font-semibold tracking-widest text-accent uppercase mb-4">{cs.location} · {cs.service}</p>
-          <h1 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-8 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-8 leading-tight">
             {cs.metricLabel} for {cs.client}
           </h1>
           
           <div className="bg-[#0f0f0f] border border-white/10 p-10 flex flex-col md:flex-row items-center gap-10">
             <div className="text-center md:text-left">
               <p className="text-sm text-text-muted uppercase tracking-widest font-semibold mb-2">Outcome</p>
-              <p className="text-6xl font-syne font-bold text-accent">{cs.metric}</p>
+              <p className="text-6xl font-heading font-bold text-accent">{cs.metric}</p>
             </div>
             <div className="flex-1 border-white/10 border-t md:border-t-0 md:border-l pt-6 md:pt-0 md:pl-10">
               <p className="text-lg text-text-muted leading-relaxed">
@@ -125,15 +125,15 @@ export default async function CaseStudyPage({ params }: Props) {
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
-          <div className="lg:col-span-2 prose prose-invert prose-lg max-w-none text-text-muted font-dm-sans leading-relaxed
-                         prose-headings:font-syne prose-headings:text-bg-base prose-headings:font-bold
+          <div className="lg:col-span-2 prose prose-invert prose-lg max-w-none text-text-muted font-body leading-relaxed
+                         prose-headings:font-heading prose-headings:text-bg-base prose-headings:font-bold
                          prose-a:text-accent prose-strong:text-bg-base"
                dangerouslySetInnerHTML={{ __html: cs.fullStory }}
           />
           
           <aside className="space-y-8">
              <div className="border border-white/10 p-6 bg-[#080808]">
-               <h3 className="font-syne font-bold text-bg-base mb-4">Project Details</h3>
+               <h3 className="font-heading font-bold text-bg-base mb-4">Project Details</h3>
                <dl className="space-y-4 text-sm">
                  <div>
                    <dt className="text-text-muted uppercase tracking-widest text-xs font-bold mb-1">Client</dt>
@@ -151,7 +151,7 @@ export default async function CaseStudyPage({ params }: Props) {
              </div>
              
              <div className="bg-accent/5 border border-accent/20 p-6">
-               <h3 className="font-syne font-bold text-bg-base mb-3 text-lg">Want similar results?</h3>
+               <h3 className="font-heading font-bold text-bg-base mb-3 text-lg">Want similar results?</h3>
                <p className="text-text-muted text-sm mb-6 leading-relaxed">Let&apos;s discuss how to replicate this success for your business.</p>
                <Button href="/contact" className="w-full">Book Your Call</Button>
              </div>

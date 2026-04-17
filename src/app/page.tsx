@@ -119,10 +119,10 @@ export default function Home() {
           <div className="inline-block border border-accent/30 bg-accent/10 px-4 py-1.5 rounded-full">
             <span className="text-xs font-semibold text-accent tracking-wider uppercase">Dubai-Based · UAE & Saudi Arabia · GCC</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-syne font-bold text-bg-base tracking-tight leading-tight">
+          <h1 className="text-5xl md:text-6xl font-heading font-bold text-bg-base tracking-tight leading-tight">
             The Digital Expert Mid-Size Businesses in Dubai Call First.
           </h1>
-          <p className="text-lg md:text-xl text-text-muted max-w-3xl mx-auto leading-relaxed font-dm-sans">
+          <p className="text-lg md:text-xl text-text-muted max-w-3xl mx-auto leading-relaxed font-body">
             You&apos;ve been burned before. You paid for a senior strategist — and got a junior executor.<br className="hidden md:block" />
             Mohammad Fazil is different. When you hire him, you get him. On every call. Every strategy. Every result.<br className="hidden md:block" />
             <span className="text-bg-base font-semibold">Direct access. Zero middlemen. Just growth that actually moves the needle.</span>
@@ -175,19 +175,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-60 hover:opacity-100 transition-all duration-500">
              <div className="flex items-center gap-2">
-               <span className="text-2xl font-bold font-syne text-bg-base">50+</span>
+               <span className="text-2xl font-bold font-heading text-bg-base">50+</span>
                <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Businesses<br/>Served</span>
              </div>
              <div className="flex items-center gap-2">
-               <span className="text-2xl font-bold font-syne text-bg-base">4.9/5</span>
+               <span className="text-2xl font-bold font-heading text-bg-base">4.9/5</span>
                <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Average<br/>Rating</span>
              </div>
              <div className="flex items-center gap-2">
-               <span className="text-2xl font-bold font-syne text-bg-base">100%</span>
+               <span className="text-2xl font-bold font-heading text-bg-base">100%</span>
                <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Direct Senior<br/>Access</span>
              </div>
              <div className="flex items-center gap-2">
-               <span className="text-2xl font-bold font-syne text-bg-base">7+</span>
+               <span className="text-2xl font-bold font-heading text-bg-base">7+</span>
                <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Years in<br/>GCC Market</span>
              </div>
           </div>
@@ -197,7 +197,7 @@ export default function Home() {
       {/* Agency vs Independent Expert (Conversion Anchor) */}
       <section className="py-24 bg-primary px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-4">Direct Senior Access &gt; Agency Layers</h2>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-4">Direct Senior Access &gt; Agency Layers</h2>
             <p className="text-text-muted max-w-2xl mx-auto">Experience the difference of working directly with an expert who understands the GCC market, not an account manager.</p>
           <AgencyComparison />
         </div>
@@ -207,7 +207,7 @@ export default function Home() {
       <section className="py-24 bg-primary px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-4">What I Do</h2>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-4">What I Do</h2>
             <p className="text-lg text-text-muted max-w-2xl mx-auto">
               As a senior <Link href="/digital-marketing-expert-dubai" className="text-bg-base border-b border-accent/40 hover:text-accent transition-colors">digital marketing expert in Dubai</Link>, Mohammad delivers end-to-end services for mid-size businesses across the UAE and Saudi Arabia.
             </p>
@@ -223,7 +223,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-syne font-bold text-bg-base mb-3">{s.name}</h3>
+                <h3 className="text-xl font-heading font-bold text-bg-base mb-3">{s.name}</h3>
                 <p className="text-text-muted mb-6 line-clamp-2">{s.shortDescription}</p>
                 <Link href={`/services/${s.slug}`} className="text-accent font-medium inline-flex items-center group-hover:underline underline-offset-4">
                   Learn More <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -232,7 +232,7 @@ export default function Home() {
               </div>
             ))}
             <div className="rounded-2xl border border-dashed border-white/20 bg-white/[0.02] backdrop-blur-sm flex flex-col items-center justify-center p-8 text-center min-h-[300px] hover:border-accent/40 transition-colors">
-              <h3 className="text-xl font-syne font-bold text-bg-base mb-4">Not Sure What You Need?</h3>
+              <h3 className="text-xl font-heading font-bold text-bg-base mb-4">Not Sure What You Need?</h3>
               <p className="text-text-muted mb-6">Let&apos;s audit your current digital presence and find the biggest growth levers.</p>
               <div className="flex flex-col items-center gap-3">
                 <Button href="/contact" variant="secondary">Claim Your Free Growth Audit</Button>
@@ -247,7 +247,7 @@ export default function Home() {
       <section className="py-24 bg-[#050505] border-y border-white/5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-3">How It Works</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-3">How It Works</h2>
             <p className="text-text-muted max-w-xl mx-auto">A straightforward four-step process from first conversation to measurable results.</p>
           </div>
           <ProcessTimeline />
@@ -261,7 +261,7 @@ export default function Home() {
 
       <section className="py-24 bg-[#050505] border-y border-white/5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-syne font-bold text-bg-base mb-6">Serving Businesses Across the UAE & Saudi Arabia</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-6">Serving Businesses Across the UAE & Saudi Arabia</h2>
           <p className="text-lg text-text-muted mb-12">
             Based in Dubai, Mohammad works with mid-size companies across the UAE, Saudi Arabia, and the wider GCC — from strategy through to execution.
           </p>
@@ -285,7 +285,7 @@ export default function Home() {
       <section className="py-24 bg-[#080808] px-4 sm:px-6 lg:px-8 border-y border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-4">How We Work</h2>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-4">How We Work</h2>
             <p className="text-lg text-text-muted max-w-2xl mx-auto">A structured approach to senior-level digital consulting in the GCC.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -312,8 +312,8 @@ export default function Home() {
               }
             ].map((s) => (
               <div key={s.step} className="group relative p-8 rounded-2xl border border-white/5 bg-white/[0.01] backdrop-blur-sm hover:bg-white/[0.03] transition-colors h-full overflow-hidden">
-                <span className="text-4xl font-syne font-bold text-accent/20 absolute top-4 right-6 group-hover:text-accent/40 transition-colors">{s.step}</span>
-                <h3 className="text-xl font-syne font-bold text-bg-base mt-4 mb-4 pr-12">{s.name}</h3>
+                <span className="text-4xl font-heading font-bold text-accent/20 absolute top-4 right-6 group-hover:text-accent/40 transition-colors">{s.step}</span>
+                <h3 className="text-xl font-heading font-bold text-bg-base mt-4 mb-4 pr-12">{s.name}</h3>
                 <p className="text-text-muted text-sm leading-relaxed">{s.desc}</p>
               </div>
             ))}
@@ -332,7 +332,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto rounded-3xl border border-white/10 bg-white/[0.02] p-8 md:p-16 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-6">
+              <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-6">
                 Not Sure What You Need?
               </h2>
               <p className="text-xl text-text-muted mb-8 leading-relaxed">
@@ -361,7 +361,7 @@ export default function Home() {
       <section className="py-24 bg-primary px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base">Why Work With Fazil Directly?</h2>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base">Why Work With Fazil Directly?</h2>
             <div className="w-20 h-1 bg-accent"></div>
             <p className="text-xl text-bg-base leading-relaxed font-medium">
               Imagine this: You book a strategy call. The person who answers is the same person who built your roadmap, executes your campaigns, and reviews your results.
@@ -380,7 +380,7 @@ export default function Home() {
              <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 to-transparent"></div>
              {/* Placeholder for Headshot */}
              <div className="text-center p-8 z-10">
-               <h3 className="font-syne font-bold text-3xl text-bg-base mb-2">MOHAMMAD FAZIL</h3>
+               <h3 className="font-heading font-bold text-3xl text-bg-base mb-2">MOHAMMAD FAZIL</h3>
                <p className="text-accent tracking-widest uppercase text-sm font-semibold">Digital Consultant</p>
              </div>
           </div>
@@ -392,7 +392,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
-              <h2 className="text-3xl md:text-5xl font-syne font-bold text-bg-base mb-4">Results That Speak</h2>
+              <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-4">Results That Speak</h2>
               <p className="text-lg text-text-muted">Measurable outcomes for mid-size businesses in the GCC.</p>
             </div>
             <Link href="/case-studies" className="text-accent font-medium hover:underline underline-offset-4">
@@ -402,19 +402,19 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="group relative rounded-2xl border border-white/5 bg-white/[0.01] backdrop-blur-sm p-8 hover:bg-white/[0.02] hover:shadow-[0_0_30px_rgba(200,151,58,0.1)] transition-all duration-300">
               <span className="text-sm text-text-muted block mb-4">E-commerce Brand, Dubai</span>
-              <h3 className="text-2xl font-syne font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">+180% Organic Traffic in 6 Months</h3>
+              <h3 className="text-2xl font-heading font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">+180% Organic Traffic in 6 Months</h3>
               <p className="text-accent text-sm font-semibold mb-6">SEO + Content Strategy</p>
               <Link href="/case-studies/dubai-seo" className="text-bg-base/80 hover:text-accent border-b border-bg-base/30 hover:border-accent pb-1 inline-block">Read Case Study <span className="inline-block transition-transform group-hover:translate-x-1">→</span></Link>
             </div>
             <div className="group relative rounded-2xl border border-white/5 bg-white/[0.01] backdrop-blur-sm p-8 hover:bg-white/[0.02] hover:shadow-[0_0_30px_rgba(200,151,58,0.1)] transition-all duration-300">
               <span className="text-sm text-text-muted block mb-4">Fintech Startup, Riyadh</span>
-              <h3 className="text-2xl font-syne font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">3.2x ROAS in 90 Days</h3>
+              <h3 className="text-2xl font-heading font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">3.2x ROAS in 90 Days</h3>
               <p className="text-accent text-sm font-semibold mb-6">Paid Ads + Landing Pages</p>
               <Link href="/case-studies/riyadh-paid-ads" className="text-bg-base/80 hover:text-accent border-b border-bg-base/30 hover:border-accent pb-1 inline-block">Read Case Study <span className="inline-block transition-transform group-hover:translate-x-1">→</span></Link>
             </div>
             <div className="group relative rounded-2xl border border-white/5 bg-white/[0.01] backdrop-blur-sm p-8 hover:bg-white/[0.02] hover:shadow-[0_0_30px_rgba(200,151,58,0.1)] transition-all duration-300 hidden lg:block">
               <span className="text-sm text-text-muted block mb-4">Manufacturing, Dammam</span>
-              <h3 className="text-2xl font-syne font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">40% Decrease in CPL</h3>
+              <h3 className="text-2xl font-heading font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">40% Decrease in CPL</h3>
               <p className="text-accent text-sm font-semibold mb-6">B2B Digital Marketing</p>
               <Link href="/case-studies/dammam-marketing" className="text-bg-base/80 hover:text-accent border-b border-bg-base/30 hover:border-accent pb-1 inline-block">Read Case Study <span className="inline-block transition-transform group-hover:translate-x-1">→</span></Link>
             </div>
@@ -426,7 +426,7 @@ export default function Home() {
       <section className="py-20 bg-primary/30 border-t border-white/5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white/[0.02] border border-white/10 rounded-3xl p-8 md:p-12 text-center">
-            <h3 className="text-xl md:text-2xl font-syne font-bold text-bg-base mb-8 italic opacity-80">
+            <h3 className="text-xl md:text-2xl font-heading font-bold text-bg-base mb-8 italic opacity-80">
               Popular Services in UAE & KSA
             </h3>
             <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
@@ -459,7 +459,7 @@ export default function Home() {
           <div className="w-[800px] h-[800px] rounded-full bg-accent blur-3xl"></div>
         </div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-syne font-bold text-bg-base mb-6 leading-tight">
+          <h2 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-6 leading-tight">
             Ready to Grow Your Business in Dubai or Saudi Arabia?
           </h2>
           <p className="text-xl text-text-muted mb-10 max-w-2xl mx-auto">

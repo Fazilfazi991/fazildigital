@@ -121,17 +121,17 @@ export const cluster3Blogs: BlogPost[] = [
       <p>Choosing an agency is a defining decision for your company's fiscal year. Don't rush it. Use this checklist, ask the hard questions, and prioritize partners who speak the language of "Profit" rather than "Presence." The right partner won't just increase your traffic; they'll transform your unit economics.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to build a growth strategy that actually works in Dubai?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to build a growth strategy that actually works in Dubai?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           Fazil Digital is a performance-focused digital marketing consultancy serving mid-size businesses across the UAE and Saudi Arabia. <a href="/contact/" class="font-bold underline">Get in touch today</a> for a zero-fluff consultation where we'll audit your current setup and build a roadmap to your specific goals.
         </p>
-        <a href="/locations/dubai/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+        <a href="/locations/dubai/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
           Meet Our Dubai Team & Office <span class="text-accent">→</span>
         </a>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Related Articles You Might Find Useful</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Related Articles You Might Find Useful</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/agency-vs-consultant-vs-freelancer-uae/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -245,22 +245,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>The landscape will keep changing. Algorithms will shift. But the demand for high-quality, regionally-relevant information will never fade. If you provide that, the traffic (and the revenue) will follow.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-         <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to dominate search in the Emirates?</h3>
+         <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to dominate search in the Emirates?</h3>
          <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
            Take the first step toward true topical authority. We help UAE brands scale their organic revenue through data-backed strategies that work in the real world.
          </p>
          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-           <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+           <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
              Book a Strategy Session <span class="text-accent">→</span>
            </a>
-           <a href="/services/seo/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+           <a href="/services/seo/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
              Explore SEO Services
            </a>
          </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Master the UAE Market</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Master the UAE Market</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/rank-on-google-dubai-2025/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -363,22 +363,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>At the end of the day, your ad budget is an investment in your company's future equity. Treat it with the respect it deserves by hiring practitioners who live in the data every single day.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Tired of high CPAs and low-quality leads?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Tired of high CPAs and low-quality leads?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           Scale your business across the GCC with high-performance paid ads. We don't just manage budgets; we manage ROI.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Let's Scale Your Revenue <span class="text-accent">→</span>
           </a>
-          <a href="/services/paid-ads/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/services/paid-ads/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             View Paid Ad Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Performance Reading</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Performance Reading</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/snapchat-ads-saudi-arabia-benchmarks/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -477,22 +477,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>By focusing on authentic storytelling, platform-native content, and genuine community engagement, you transform your social profiles from a cost-center into a revenue-generator. It’s time to stop posting and start connecting.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to make your brand the talk of the town?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to make your brand the talk of the town?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           Build a social media engine that drives trust and revenue. We help Dubai and Sharjah brands master the new rules of digital attention.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Start Your Brand Transformation <span class="text-accent">→</span>
           </a>
-          <a href="/services/social-media-management/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/services/social-media-management/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             View Social Media Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Related Growth Guides</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Related Growth Guides</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/paid-ads-guide-uae-saudi-arabia-2026/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -585,22 +585,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>At <a href="/locations/abu-dhabi/">Fazil Digital</a>, we don't just write code; we build machines that produce profit. Let's start building yours.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Tired of a website that doesn't work?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Tired of a website that doesn't work?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help Dubai and Abu Dhabi brands build high-performance, bilingual sites that turn traffic into revenue. No fluff, just performance.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Start Your Web Project <span class="text-accent">→</span>
           </a>
-          <a href="/services/web-development/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/services/web-development/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             Explore Web Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Related Strategy Guides</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Related Strategy Guides</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/seo-for-uae-businesses-complete-guide-2026/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -691,22 +691,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>By investing in your automation infrastructure today, you are giving your future self the gift of scale. You are building a business that can grow infinitely without losing the personal touch that made you successful in the first place.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Tired of being the bottleneck in your business?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Tired of being the bottleneck in your business?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           Scaling a UAE small business requires more than just hard work; it requires smart systems. Let's build your autonomous growth engine.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Automate My Growth <span class="text-accent">→</span>
           </a>
-          <a href="/services/ai-automation/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/services/ai-automation/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             Explore AI Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Systemized Success</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Systemized Success</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/ai-search-optimization-2026-playbook/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -794,22 +794,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>At <a href="/about/">Fazil Digital</a>, we are deeply committed to the Saudi market. We don't just "run ads" in Riyadh; we help build the brands that Riyadh's future depends on. Let's start building yours.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Tired of digital marketing that doesn't respect the Saudi context?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Tired of digital marketing that doesn't respect the Saudi context?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           Scale your Riyadh business with high-performance, localized marketing that drives trust and revenue. We know the capital because we live the data.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Let's Win the Riyadh Market <span class="text-accent">→</span>
           </a>
-          <a href="/riyadh/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/riyadh/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             View KSA Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Related KSA Insights</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Related KSA Insights</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/paid-ads-guide-uae-saudi-arabia-2026/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -893,22 +893,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>The wait is over. The tools are here. The talent is here. The capital is here. Now, it's just about the execution. Let's build your legacy.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to build the next big thing?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to build the next big thing?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help UAE founders turn visions into scalable, high-performance SaaS products. From MVP to global scale, we are your technical partner.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Start My Build <span class="text-accent">→</span>
           </a>
-          <a href="/services/saas-development/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/services/saas-development/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             Explore SaaS Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Engineering for Growth</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Engineering for Growth</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/web-development-dubai-business-site-2026/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -991,22 +991,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>Don't just be part of the gateway; be the destination. Let's start building your Jeddah search dominance today.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to dominate search in Jeddah?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to dominate search in Jeddah?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help Jeddah and Red Sea brands build high-authority SEO engines that drive real leads. No fluff, just results.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Start My Jeddah Strategy <span class="text-accent">→</span>
           </a>
-          <a href="/jeddah/seo/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/jeddah/seo/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             View Jeddah SEO Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Red Sea Insights</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Red Sea Insights</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/jeddah/digital-marketing/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -1095,22 +1095,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>Performance isn't about luck; it's about logic. It's time to turn your lights on. Let's build your dashboard.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to stop guessing and start growing?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to stop guessing and start growing?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help GCC brands build world-class analytics engines that drive predictable ROI. No more "Dark Data," just clear performance.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Get My Custom Dashboard <span class="text-accent">→</span>
           </a>
-          <a href="/services/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/services/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             Explore All Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Data-Driven Guides</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Data-Driven Guides</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/paid-ads-guide-uae-saudi-arabia-2026/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -1197,22 +1197,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>The capital is waiting for brands that lead. Let's start leads the way. It’s time to build your Abu Dhabi legacy.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to win the heart of the UAE capital?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to win the heart of the UAE capital?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           Scale your Abu Dhabi presence with high-authority, strategic marketing that drives trust and institutional success. No hype, just authority.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Start My Capital Strategy <span class="text-accent">→</span>
           </a>
-          <a href="/abu-dhabi/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/abu-dhabi/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             View Abu Dhabi Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Capital Insights</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Capital Insights</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/abu-dhabi/seo/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -1301,22 +1301,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>The cultural capital is ready for your brand. Let's start building your legacy. It’s time to grow in Sharjah.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to scale your Sharjah business?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to scale your Sharjah business?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help Sharjah SMEs build high-authority, culturally-aware marketing that drives real revenue and community trust. Let's win together.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Start My Sharjah Strategy <span class="text-accent">→</span>
           </a>
-          <a href="/sharjah/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/sharjah/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             Explore Sharjah Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Sharjah Success Stories</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Sharjah Success Stories</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/sharjah/seo/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -1405,22 +1405,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>The Eastern Province is the engine of the Kingdom. Let's make sure your brand is the one driving it. It's time to win in Dammam.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to dominate the Eastern Province market?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to dominate the Eastern Province market?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help Dammam industrial and B2B brands build high-performance marketing systems that drive real growth and institutional trust.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Start My Dammam Strategy <span class="text-accent">→</span>
           </a>
-          <a href="/dammam/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/dammam/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             Explore Dammam Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Industrial Insights</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Industrial Insights</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/dammam/seo/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -1514,22 +1514,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>The map is yours to conquer. Let's start pinning your success. It’s time to rank.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Tired of being invisible in your own neighborhood?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Tired of being invisible in your own neighborhood?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help UAE businesses dominate Google Maps and drive real-world foot traffic. If you have a physical location, you need this.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Let's Rank My Business <span class="text-accent">→</span>
           </a>
-          <a href="/dubai/seo/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/dubai/seo/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             Explore Dubai SEO
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Local SEO Resources</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Local SEO Resources</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/abu-dhabi/seo/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -1623,22 +1623,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>Don't guess your way to growth. Invest your way to the top. Let's build your budget for success.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Tired of marketing that feels like a lottery?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Tired of marketing that feels like a lottery?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help UAE SMEs build data-backed marketing budgets that drive real, predictable growth. Let's stop the guesswork today.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Audit My Spend <span class="text-accent">→</span>
           </a>
-          <a href="/services/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/services/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             View All Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Growth Resources</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Growth Resources</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/marketing-roi-tracking-gcc-businesses/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -1734,22 +1734,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>The Virtual Majlis is open. Let's make sure yours is the voice they listen to. It’s time to lead on LinkedIn.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to win the GCC's biggest enterprise contracts?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to win the GCC's biggest enterprise contracts?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help B2B brands build high-authority LinkedIn engines that drive predictable enterprise growth. No spam, just strategic leadership.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Start My B2B Strategy <span class="text-accent">→</span>
           </a>
-          <a href="/services/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/services/digital-marketing/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             View B2B Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">B2B Growth Insights</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">B2B Growth Insights</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/marketing-roi-tracking-gcc-businesses/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -1833,22 +1833,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>Are you ready to scale? Let’s start the journey to 7-figures today. It’s time to sell.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to build a 7-figure e-commerce empire?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to build a 7-figure e-commerce empire?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help GCC retailers build high-conversion storefronts and performance-marketing engines that drive real, scalable revenue.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Scale My Store <span class="text-accent">→</span>
           </a>
-          <a href="/services/web-development/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/services/web-development/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             Explore Web Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">E-commerce Insights</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">E-commerce Insights</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/digital-marketing-budget-uae-sme-2026/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -1938,22 +1938,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>The Emirates are ready for your expertise. Let's start leads the way. It’s time to speak.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to become the authority in your industry?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to become the authority in your industry?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help UAE brands build high-performance content engines that drive trust, authority, and real revenue. Let's build your voice.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Start My Content Strategy <span class="text-accent">→</span>
           </a>
-          <a href="/locations/dubai/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/locations/dubai/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             Explore Dubai Markets
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Authority Resources</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Authority Resources</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/ai-search-optimization-2026-playbook/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -2048,22 +2048,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>The future of the Emirates is digital. Let's make sure your business is part of it. It’s time to transform.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Ready to build a future-proof business?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Ready to build a future-proof business?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help UAE SMEs navigate the complexities of digital transformation to drive real efficiency and growth. Let's start the leap.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Start My Transformation <span class="text-accent">→</span>
           </a>
-          <a href="/services/saas-development/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/services/saas-development/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             Explore SaaS Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">Related Insights</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">Related Insights</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/ai-automation-for-small-business-uae/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
@@ -2157,22 +2157,22 @@ export const cluster3Blogs: BlogPost[] = [
       <p>The first page is waiting. Let's reclaim your rank. It’s time to be seen.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center">
-        <h3 class="text-3xl font-syne font-bold mb-4 relative z-10 text-bg-base">Tired of being invisible to your customers?</h3>
+        <h3 class="text-3xl font-heading font-bold mb-4 relative z-10 text-bg-base">Tired of being invisible to your customers?</h3>
         <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10 text-bg-base/80">
           We help UAE businesses identify and fix technical SEO issues to drive real, sustainable search growth. Let's get you back on page 1.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-syne font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <a href="/contact/" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
             Fix My SEO <span class="text-accent">→</span>
           </a>
-          <a href="/services/seo/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-syne font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
+          <a href="/services/seo/" class="inline-flex items-center gap-2 bg-white/10 text-bg-base border border-white/20 font-heading font-bold py-4 px-10 rounded hover:bg-white/20 transition-all duration-300">
             Explore SEO Services
           </a>
         </div>
       </div>
 
       <div class="related-posts mt-16">
-        <h3 class="text-2xl font-syne font-bold mb-8">SEO Mastery Resources</h3>
+        <h3 class="text-2xl font-heading font-bold mb-8">SEO Mastery Resources</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
             <a href="/blog/seo-for-uae-businesses-complete-guide-2026/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
