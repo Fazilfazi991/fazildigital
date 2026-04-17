@@ -60,7 +60,7 @@ export function HeroB({ locationCity, locationCountry, locationSlug, serviceName
           </p>
           <div className="flex flex-wrap gap-4">
             <Button href="/contact" className="text-lg px-8 py-4">Book a Strategy Call</Button>
-            <span className="text-sm text-text-muted flex items-center">✓ Results-driven across {locationCountry}</span>
+            <span className="text-sm text-text-muted flex items-center"> Results-driven across {locationCountry}</span>
           </div>
         </div>
       </div>

@@ -151,7 +151,7 @@ export default async function LocationHubPage({ params }: Props) {
               { title: "Measurable Outcomes", desc: "Every engagement is tied to real business metrics: leads, revenue, ROI — not vanity numbers." },
             ].map((item) => (
               <div key={item.title} className="border border-white/10 bg-[#0A0A0A] p-8">
-                <span className="text-accent font-bold text-xl mb-4 block">✓</span>
+                <span className="text-accent font-bold text-xl mb-4 block"></span>
                 <h3 className="font-heading font-bold text-bg-base text-xl mb-3">{item.title}</h3>
                 <p className="text-text-muted leading-relaxed">{item.desc}</p>
               </div>

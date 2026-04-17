@@ -137,10 +137,10 @@ export default function Home() {
             
             {/* New Trust Strip */}
             <div className="pt-2 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[11px] md:text-xs font-bold uppercase tracking-widest text-accent/80">
-              <span className="flex items-center">✓ Based in Dubai</span>
-              <span className="flex items-center">✓ 50+ GCC Businesses Served</span>
-              <span className="flex items-center">✓ UAE & Saudi Arabia</span>
-              <span className="flex items-center">✓ Direct Senior Access</span>
+              <span className="flex items-center"> Based in Dubai</span>
+              <span className="flex items-center"> 50+ GCC Businesses Served</span>
+              <span className="flex items-center"> UAE & Saudi Arabia</span>
+              <span className="flex items-center"> Direct Senior Access</span>
             </div>
 
             <p className="text-xs text-text-muted italic">30 minutes. No pitch. Just clarity on your biggest opportunity.</p>
@@ -152,7 +152,7 @@ export default function Home() {
       <div className="max-w-4xl mx-auto px-4 mt-8">
         <div style={{ textAlign: "center", padding: "1.5rem", background: "#f0fdf4", borderRadius: "12px", border: "1px solid #dcfce7" }}>
           <p style={{ color: "#166534", fontWeight: "600", margin: "0", fontSize: "1.1rem" }}>
-            🎯 Now serving: Dubai, Abu Dhabi, Riyadh, Dammam & Jeddah<br />
+             Now serving: Dubai, Abu Dhabi, Riyadh, Dammam & Jeddah<br />
             <span style={{ fontWeight: "400", fontSize: "0.9rem", opacity: "0.9" }}>AI Automation • SEO • Paid Ads • Web Development</span>
           </p>
         </div>
@@ -348,7 +348,7 @@ export default function Home() {
                  "90-Day Priority Roadmap"
                ].map(benefit => (
                  <div key={benefit} className="flex items-center gap-3 bg-white/5 p-4 rounded-xl border border-white/5">
-                   <span className="text-accent font-bold">✓</span>
+                   <span className="text-accent font-bold"></span>
                    <span className="text-sm font-medium text-bg-base">{benefit}</span>
                  </div>
                ))}

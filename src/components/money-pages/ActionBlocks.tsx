@@ -46,7 +46,7 @@ export function MarketInsightBlock({ locationCity, serviceName, marketContext, l
         {platformNotes && (
           <div className="border border-white/10 bg-[#0A0A0A] p-8 mb-10">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-2xl text-accent">📱</span>
+              <span className="text-2xl text-accent"></span>
               <h3 className="font-heading font-bold text-bg-base text-lg">Platform & Channel Intelligence</h3>
             </div>
             <p className="text-text-muted leading-relaxed">{platformNotes}</p>

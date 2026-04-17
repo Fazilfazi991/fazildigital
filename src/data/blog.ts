@@ -41,9 +41,9 @@ export const blogPosts: BlogPost[] = [
 
       <div class="blog-trust-badge">
         <div class="flex flex-wrap gap-4 text-sm bg-primary/20 border border-accent/20 p-6 rounded-lg items-center justify-center text-center">
-          <span style="color: #C8973A; font-weight: 600;">✓ 3,000+ Word Authority Masterclass</span>
-          <span style="color: #C8973A; font-weight: 600;">✓ Optimized for GPT-5, Gemini 2.0 & Claude 3.5</span>
-          <span style="color: #C8973A; font-weight: 600;">✓ Sovereign AI Benchmarking (Jais 2.0)</span>
+          <span style="color: #C8973A; font-weight: 600;"> 3,000+ Word Authority Masterclass</span>
+          <span style="color: #C8973A; font-weight: 600;"> Optimized for GPT-5, Gemini 2.0 & Claude 3.5</span>
+          <span style="color: #C8973A; font-weight: 600;"> Sovereign AI Benchmarking (Jais 2.0)</span>
         </div>
       </div>
 
@@ -215,9 +215,9 @@ export const blogPosts: BlogPost[] = [
 
       <div class="blog-trust-badge my-8">
         <div class="flex flex-wrap gap-4 text-sm bg-primary/20 border border-accent/20 p-4 rounded-lg items-center justify-center">
-          <span style="color: #C8973A; font-weight: 600;">✓ 37+ KSA campaigns analyzed</span>
-          <span style="color: #C8973A; font-weight: 600;">✓ Avg. ROAS 3.2x</span>
-          <span style="color: #C8973A; font-weight: 600;">✓ 100% direct access guarantee</span>
+          <span style="color: #C8973A; font-weight: 600;"> 37+ KSA campaigns analyzed</span>
+          <span style="color: #C8973A; font-weight: 600;"> Avg. ROAS 3.2x</span>
+          <span style="color: #C8973A; font-weight: 600;"> 100% direct access guarantee</span>
         </div>
       </div>
 
@@ -290,9 +290,9 @@ export const blogPosts: BlogPost[] = [
 
       <div class="blog-trust-badge my-12">
         <div class="flex flex-wrap gap-8 text-sm bg-primary/20 border border-accent/20 p-8 rounded-lg items-center justify-center text-center">
-          <span style="color: #C8973A; font-weight: 600;">✓ 50+ GCC businesses served</span>
-          <span style="color: #C8973A; font-weight: 600;">✓ Verification for DED licensed entities</span>
-          <span style="color: #C8973A; font-weight: 600;">✓ 100% Direct Access Guarantee</span>
+          <span style="color: #C8973A; font-weight: 600;"> 50+ GCC businesses served</span>
+          <span style="color: #C8973A; font-weight: 600;"> Verification for DED licensed entities</span>
+          <span style="color: #C8973A; font-weight: 600;"> 100% Direct Access Guarantee</span>
         </div>
       </div>
 
@@ -414,9 +414,9 @@ export const blogPosts: BlogPost[] = [
 
       <div class="blog-trust-badge my-8">
         <div class="flex flex-wrap gap-4 text-sm bg-primary/20 border border-accent/20 p-4 rounded-lg items-center justify-center">
-          <span style="color: #C8973A; font-weight: 600;">✓ Avg. 3.2x ROI delivered</span>
-          <span style="color: #C8973A; font-weight: 600;">✓ Full CRM integration expertise</span>
-          <span style="color: #C8973A; font-weight: 600;">✓ WhatsApp closed-loop tracking</span>
+          <span style="color: #C8973A; font-weight: 600;"> Avg. 3.2x ROI delivered</span>
+          <span style="color: #C8973A; font-weight: 600;"> Full CRM integration expertise</span>
+          <span style="color: #C8973A; font-weight: 600;"> WhatsApp closed-loop tracking</span>
         </div>
       </div>
 
@@ -474,9 +474,9 @@ export const blogPosts: BlogPost[] = [
 
       <div class="blog-trust-badge my-8">
         <div class="flex flex-wrap gap-4 text-sm bg-primary/20 border border-accent/20 p-4 rounded-lg items-center justify-center">
-          <span style="color: #C8973A; font-weight: 600;">✓ Local SEO Mastery for GCC</span>
-          <span style="color: #C8973A; font-weight: 600;">✓ Advanced Technical Foundations</span>
-          <span style="color: #C8973A; font-weight: 600;">✓ GEO & Content Strategy</span>
+          <span style="color: #C8973A; font-weight: 600;"> Local SEO Mastery for GCC</span>
+          <span style="color: #C8973A; font-weight: 600;"> Advanced Technical Foundations</span>
+          <span style="color: #C8973A; font-weight: 600;"> GEO & Content Strategy</span>
         </div>
       </div>
 

@@ -14,7 +14,7 @@ export function ValuePropGrid({ locationCity, serviceName, deliverables }: Value
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {deliverables.map((item, i) => (
             <div key={i} className="flex items-start gap-4 border border-white/10 bg-[#0A0A0A] px-6 py-5">
-              <span className="text-accent font-bold text-lg mt-0.5">✓</span>
+              <span className="text-accent font-bold text-lg mt-0.5"></span>
               <span className="text-bg-base font-medium">{item}</span>
             </div>
           ))}

@@ -107,7 +107,7 @@ export default async function ServicePage({ params }: Props) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {service.deliverables.map((item, i) => (
               <div key={i} className="flex items-start gap-4 border border-white/10 bg-[#0A0A0A] px-6 py-5">
-                <span className="text-accent font-bold text-lg mt-0.5">✓</span>
+                <span className="text-accent font-bold text-lg mt-0.5"></span>
                 <span className="text-bg-base font-medium">{item}</span>
               </div>
             ))}
@@ -140,7 +140,7 @@ export default async function ServicePage({ params }: Props) {
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
             {["Senior-Level Access", "Direct Communication", "Measurable Results"].map((p) => (
               <div key={p} className="border border-white/10 p-6 bg-[#0A0A0A]">
-                <span className="text-accent font-bold text-2xl">✓</span>
+                <span className="text-accent font-bold text-2xl"></span>
                 <p className="text-bg-base font-heading font-bold mt-3">{p}</p>
               </div>
             ))}

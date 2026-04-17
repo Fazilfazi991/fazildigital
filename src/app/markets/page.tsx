@@ -27,7 +27,7 @@ export default function MarketsPage() {
           <div className="space-y-8">
             <div className="p-8 border border-white/10 bg-[#0A0A0A]">
               <h2 className="text-3xl font-heading font-bold text-bg-base mb-6 flex items-center gap-4">
-                <span className="text-4xl text-accent">🇦🇪</span> United Arab Emirates
+                <span className="text-4xl text-accent"></span> United Arab Emirates
               </h2>
               <p className="text-text-muted mb-8 text-lg leading-relaxed">
                 The UAE is one of the world&apos;s most mature digital markets. With high mobile penetration and a diverse expatriate population, businesses here require sophisticated, multilingual search strategies and platform-specific social funnels.
@@ -66,7 +66,7 @@ export default function MarketsPage() {
           <div className="space-y-8">
             <div className="p-8 border border-white/10 bg-[#0A0A0A]">
               <h2 className="text-3xl font-heading font-bold text-bg-base mb-6 flex items-center gap-4">
-                <span className="text-4xl text-accent">🇸🇦</span> Saudi Arabia
+                <span className="text-4xl text-accent"></span> Saudi Arabia
               </h2>
               <p className="text-text-muted mb-8 text-lg leading-relaxed">
                 Under Vision 2030, the Kingdom is transforming at light speed. Digital behavior in KSA is distinct — with Snapchat, TikTok, and X dominating consumer engagement. We help brands build the right local resonance for Riyadh, Jeddah, and beyond.

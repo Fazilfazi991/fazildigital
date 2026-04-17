@@ -41,25 +41,25 @@ export const cluster2Blogs: BlogPost[] = [
 
       <h2 class="text-3xl mt-12 mb-6">The 7 Essential Sharjah Business Directories (2026)</h2>
 
-      <h3 class="text-2xl mt-8 mb-4">1. Sharjah Chamber of Commerce & Industry 🏛️</h3>
+      <h3 class="text-2xl mt-8 mb-4">1. Sharjah Chamber of Commerce & Industry ️</h3>
       <p>Official government-backed directory. Highest authority signal for Sharjah businesses. Register as a member, complete your profile with Arabic details, and ensure you link to your <a href="/sharjah/digital-marketing" class="text-accent hover:underline">Sharjah digital marketing</a> hub for maximum conversion.</p>
 
-      <h3 class="text-2xl mt-8 mb-4">2. Yellow Pages UAE (Sharjah Filter) 📞</h3>
+      <h3 class="text-2xl mt-8 mb-4">2. Yellow Pages UAE (Sharjah Filter) </h3>
       <p>One of the most crawled directories by Google in the UAE. Claim your free listing, verify via phone, and use location-specific keywords in your description: "Digital marketing expert in Sharjah specializing in SEO for Al Majaz businesses."</p>
 
-      <h3 class="text-2xl mt-8 mb-4">3. Etisalat Business Directory 📱</h3>
+      <h3 class="text-2xl mt-8 mb-4">3. Etisalat Business Directory </h3>
       <p>Etisalat is UAE's largest telecom. Their directory has high domain authority. Etisalat users often search by service + location ("SEO services Sharjah"). Include these phrases naturally.</p>
 
-      <h3 class="text-2xl mt-8 mb-4">4. Dubizzle Business (Sharjah Category) 🛍️</h3>
+      <h3 class="text-2xl mt-8 mb-4">4. Dubizzle Business (Sharjah Category) ️</h3>
       <p>Dubizzle is UAE's most visited classifieds site. High traffic + local intent. Add high-quality photos of your team and workspace to stand out.</p>
 
-      <h3 class="text-2xl mt-8 mb-4">5. Sharjah Government Business Portal 🏢</h3>
+      <h3 class="text-2xl mt-8 mb-4">5. Sharjah Government Business Portal </h3>
       <p>Official government portal. Strong trust signal for Google. Mention your Sharjah trade license number—this adds credibility and helps Google verify legitimacy.</p>
 
-      <h3 class="text-2xl mt-8 mb-4">6. Google Business Profile (Critical!) 🗺️</h3>
+      <h3 class="text-2xl mt-8 mb-4">6. Google Business Profile (Critical!) ️</h3>
       <p>Directly controls your Google Maps ranking. Set service areas for specific districts like Al Majaz, Al Nahda, Muwaileh, and University City. Post weekly updates and encourage reviews that mention your district.</p>
 
-      <h3 class="text-2xl mt-8 mb-4">7. Local District Associations 🏘️</h3>
+      <h3 class="text-2xl mt-8 mb-4">7. Local District Associations ️</h3>
       <p>Hyper-local citations like the Al Majaz Business Council help rank for neighborhood searches. Even a simple listing with NAP on a district association website can boost neighborhood rankings.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-2xl">
@@ -105,7 +105,7 @@ export const cluster2Blogs: BlogPost[] = [
         </div>
       </div>
 
-      <h2 class="text-3xl mt-12 mb-6">🎯 Step-by-Step Google Business Profile Optimization</h2>
+      <h2 class="text-3xl mt-12 mb-6"> Step-by-Step Google Business Profile Optimization</h2>
       
       <h3 class="text-2xl mt-8 mb-4">Step 1: Precise Service Areas</h3>
       <p>Instead of setting "United Arab Emirates" as your area, be surgical: Dubai Marina, DIFC, Al Majaz, Olaya. Precision in service areas tells Google you are hyper-relevant to neighborhood searches.</p>

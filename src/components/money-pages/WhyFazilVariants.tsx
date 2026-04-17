@@ -20,7 +20,7 @@ export function WhyFazilA({ locationCity }: WhyFazilProps) {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           {["Zero Middlemen", "Direct Senior Access", "Full Accountability"].map((p) => (
             <div key={p} className="border border-white/10 p-6 bg-[#0A0A0A]">
-              <span className="text-accent font-bold text-2xl">✓</span>
+              <span className="text-accent font-bold text-2xl"></span>
               <p className="text-bg-base font-heading font-bold mt-3">{p}</p>
             </div>
           ))}
@@ -51,7 +51,7 @@ export function WhyFazilB({ locationCity }: WhyFazilProps) {
         <div className="flex-1 relative aspect-square bg-gradient-to-br from-[#111] to-[#050505] border border-white/10 rounded-2xl flex items-center justify-center p-8 text-center group transition-all shrink-0">
           <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
           <div>
-             <span className="block text-6xl mb-4">🏆</span>
+             <span className="block text-6xl mb-4"></span>
              <h3 className="text-2xl font-bold font-heading text-bg-base mb-2">Unmatched Agility</h3>
              <p className="text-text-muted">Built for ambitious mid-size companies in {locationCity}.</p>
           </div>

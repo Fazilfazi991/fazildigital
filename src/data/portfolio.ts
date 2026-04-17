@@ -18,7 +18,7 @@ export interface Client {
 export const portfolioServices: PortfolioService[] = [
   {
     title: "SEO & Content Marketing",
-    icon: "📈",
+    icon: "",
     description: "Rank higher on Google and attract qualified organic traffic through technical optimization and strategic content.",
     features: [
       "Technical SEO audits",
@@ -31,7 +31,7 @@ export const portfolioServices: PortfolioService[] = [
   },
   {
     title: "Paid Advertising",
-    icon: "🎯",
+    icon: "",
     description: "Data-driven campaigns on Google, Meta, Snapchat, and TikTok that convert clicks into customers.",
     features: [
       "Google Ads (Search + Shopping)",
@@ -44,7 +44,7 @@ export const portfolioServices: PortfolioService[] = [
   },
   {
     title: "AI Automation",
-    icon: "⚡",
+    icon: "",
     description: "Automate repetitive tasks and streamline workflows using AI tools and smart integrations.",
     features: [
       "Workflow automation",
@@ -57,7 +57,7 @@ export const portfolioServices: PortfolioService[] = [
   },
   {
     title: "Web Development",
-    icon: "💻",
+    icon: "",
     description: "Fast, responsive, conversion-optimized websites built for the UAE and Saudi Arabian markets.",
     features: [
       "WordPress development",
@@ -70,7 +70,7 @@ export const portfolioServices: PortfolioService[] = [
   },
   {
     title: "Graphic Design",
-    icon: "🎨",
+    icon: "",
     description: "Eye-catching visuals that communicate your brand message and drive engagement.",
     features: [
       "Social media graphics",
@@ -83,7 +83,7 @@ export const portfolioServices: PortfolioService[] = [
   },
   {
     title: "Video Production",
-    icon: "🎬",
+    icon: "",
     description: "Engaging video content and AI-powered video generation for social media and ads.",
     features: [
       "AI video generation",

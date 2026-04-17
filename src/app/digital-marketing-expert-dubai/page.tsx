@@ -160,9 +160,9 @@ export default function DigitalMarketingExpertDubai() {
 
           {/* Subtle trust strip */}
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-text-muted mb-10 py-5 border-y border-white/5">
-            <span>✓ 50+ businesses served</span>
-            <span>✓ UAE &amp; KSA market expertise</span>
-            <span>✓ Transparent reporting</span>
+            <span> 50+ businesses served</span>
+            <span> UAE &amp; KSA market expertise</span>
+            <span> Transparent reporting</span>
           </div>
 
           <Button href="/contact" className="text-base px-8 py-4">

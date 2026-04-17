@@ -1,9 +1,9 @@
 export default function GrowthFlywheel() {
   const nodes = [
-    { label: "SEO & Content",    icon: "📈", pos: "top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" },
-    { label: "Paid Acquisition", icon: "🎯", pos: "top-1/2 right-0 translate-x-1/2 -translate-y-1/2" },
-    { label: "AI Automation",    icon: "⚡", pos: "bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2" },
-    { label: "Conversion Opt.",  icon: "🔄", pos: "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2" },
+    { label: "SEO & Content",    icon: "", pos: "top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" },
+    { label: "Paid Acquisition", icon: "", pos: "top-1/2 right-0 translate-x-1/2 -translate-y-1/2" },
+    { label: "AI Automation",    icon: "", pos: "bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2" },
+    { label: "Conversion Opt.",  icon: "", pos: "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2" },
   ];
 
   return (
@@ -27,7 +27,7 @@ export default function GrowthFlywheel() {
         {/* Centre hub */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-24 h-24 rounded-full bg-accent flex flex-col items-center justify-center shadow-[0_0_40px_rgba(200,151,58,0.3)]">
-            <span className="text-2xl">🚀</span>
+            <span className="text-2xl"></span>
             <span className="text-[10px] font-bold text-primary mt-1 uppercase tracking-wide">Revenue</span>
           </div>
         </div>

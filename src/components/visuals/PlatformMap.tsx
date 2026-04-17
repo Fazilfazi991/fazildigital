@@ -25,8 +25,8 @@ export default function PlatformMap() {
         {/* Header */}
         <div className="grid grid-cols-3 px-6 py-3 text-xs font-bold text-text-muted uppercase tracking-widest bg-white/[0.01]">
           <span>Platform</span>
-          <span className="text-center">🇦🇪 UAE</span>
-          <span className="text-center">🇸🇦 KSA</span>
+          <span className="text-center"> UAE</span>
+          <span className="text-center"> KSA</span>
         </div>
 
         {platforms.map((p) => (

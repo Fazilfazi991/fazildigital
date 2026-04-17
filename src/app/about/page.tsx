@@ -135,15 +135,15 @@ export default function AboutPage() {
               <h4 className="font-heading font-bold text-bg-base text-lg">Trust Signals</h4>
               <div className="space-y-4">
                  <div className="flex items-center gap-3">
-                    <span className="text-accent">✓</span>
+                    <span className="text-accent"></span>
                     <span className="text-sm">Based in Dubai</span>
                  </div>
                  <div className="flex items-center gap-3">
-                    <span className="text-accent">✓</span>
+                    <span className="text-accent"></span>
                     <span className="text-sm">50+ Projects Delivered</span>
                  </div>
                  <div className="flex items-center gap-3">
-                    <span className="text-accent">✓</span>
+                    <span className="text-accent"></span>
                     <span className="text-sm">UAE & KSA Market Expert</span>
                  </div>
               </div>
