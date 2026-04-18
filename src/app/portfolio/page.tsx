@@ -19,15 +19,7 @@ export default function PortfolioPage() {
       image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932&auto=format&fit=crop",
       features: ["Responsive design optimized for mobile", "Fast loading speed (under 2s)", "SEO-optimized structure", "Contact form integration"]
     },
-    {
-      name: "Ayisha Muneer",
-      location: "Personal Portfolio • UAE",
-      description: "Personal branding website showcasing professional portfolio, services, and contact information with clean, modern design.",
-      tech: ["WordPress", "Personal Brand"],
-      url: "https://ayishamuneer.com",
-      image: "https://ayishamuneer.com/assets/portfolio_bwmc_real-Dxd7uxXt.webp",
-      features: ["Clean, minimalist design", "Portfolio gallery", "Contact form", "Social media integration"]
-    },
+
     {
       name: "Desert GP",
       location: "Corporate • UAE",
