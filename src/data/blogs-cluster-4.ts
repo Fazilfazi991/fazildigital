@@ -246,8 +246,8 @@ export const cluster4Blogs: BlogPost[] = [
     slug: "claude-design-launch-uae-businesses-2026",
     title: "Claude Design Just Launched: How UAE Businesses Can Automate UI/UX, Design Systems & Rapid Prototyping",
     category: "AI Automation",
-    date: "April 12, 2026",
-    lastModified: "2026-04-12",
+    date: "April 18, 2026",
+    lastModified: "2026-04-18",
     excerpt: "Claude Design is Anthropic's new AI-native design engine. Learn how UAE & KSA businesses can automate UI/UX workflows, build compliant design systems, and cut development time by 60% without full design teams.",
     llmSummary: "Claude Design launched as Anthropic's AI-native design engine, enabling businesses to generate UI/UX wireframes, build scalable design systems, ensure WCAG accessibility compliance, and export to Figma/React. UAE/KSA businesses can reduce design-to-dev handoff time by 60%, cut agency costs, and accelerate product launches while maintaining brand consistency and bilingual (EN/AR) support.",
     primaryKeyword: "Claude Design UAE",
@@ -509,7 +509,7 @@ export const cluster4Blogs: BlogPost[] = [
         <li><strong>Human-in-the-loop review remains critical</strong> for brand consistency and compliance</li>
       </ul>
 
-      <p><strong>Last Updated</strong>: April 12, 2026<br/>
+      <p><strong>Last Updated</strong>: April 18, 2026<br/>
       <strong>Author</strong>: Mohammad Fazil, Digital Marketing & AI Automation Consultant, Dubai</p>
 
       <div class="related-posts mt-16">
