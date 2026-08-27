@@ -23,8 +23,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
 
   return {
-    title: `${post.title} | Mohammad Fazil`,
-    description: post.content.substring(0, 155).replace(/<[^>]*>/g, ""),
+    // The root layout applies the brand title template.
+    title: post.title,
+    description: post.excerpt || post.content.replace(/<[^>]*>/g, "").substring(0, 155),
     alternates: {
       canonical: `https://www.fazildigital.com/blog/${slug}/`,
     },

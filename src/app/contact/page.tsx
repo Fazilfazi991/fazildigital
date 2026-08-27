@@ -1,5 +1,5 @@
-import { Button } from "@/components/Button";
 import { Metadata } from "next";
+import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Mohammad Fazil | Get Your Free 30-Min Digital Audit",
@@ -46,34 +46,7 @@ export default function ContactPage() {
         {/* Contact Form / Calendly Placeholder */}
         <div className="bg-[#0f0f0f] border border-white/10 p-8 rounded-xl shadow-2xl">
           <h2 className="font-heading font-bold text-2xl text-bg-base mb-6">Send a Message</h2>
-          <form className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-bg-base/80 mb-2">Name</label>
-              <input type="text" id="name" className="w-full bg-[#1a1a1a] border border-white/10 rounded-md px-4 py-3 text-bg-base focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors" placeholder="John Doe" />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-bg-base/80 mb-2">Work Email</label>
-              <input type="email" id="email" className="w-full bg-[#1a1a1a] border border-white/10 rounded-md px-4 py-3 text-bg-base focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors" placeholder="john@company.com" />
-            </div>
-            <div>
-              <label htmlFor="method" className="block text-sm font-medium text-bg-base/80 mb-2">Preferred Contact Method</label>
-              <select id="method" className="w-full bg-[#1a1a1a] border border-white/10 rounded-md px-4 py-3 text-bg-base focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors appearance-none">
-                <option value="email">Email</option>
-                <option value="whatsapp">WhatsApp</option>
-                <option value="phone">Phone Call</option>
-              </select>
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-bg-base/80 mb-2">How can I help? (Optional)</label>
-              <textarea id="message" rows={5} className="w-full bg-[#1a1a1a] border border-white/10 rounded-md px-4 py-3 text-bg-base focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors" placeholder="Tell me about your business goals..."></textarea>
-            </div>
-            <Button type="button" className="w-full text-lg py-4 border-none">
-              Get Your Free Audit
-            </Button>
-            <p className="text-xs text-text-muted text-center mt-4">
-              Alternatively, I will embed my Calendly here for direct scheduling.
-            </p>
-          </form>
+          <ContactForm />
         </div>
 
       </div>

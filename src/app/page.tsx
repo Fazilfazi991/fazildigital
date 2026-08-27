@@ -161,11 +161,8 @@ export default function Home() {
       {/* Loss Aversion Hook */}
       <section className="bg-accent/5 border-b border-white/5 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-bg-base/80 text-lg md:text-xl font-medium italic">
-            &ldquo;Every month without a clear digital strategy in Dubai or Riyadh = <span className="text-accent font-bold">~AED 47,000 in missed organic leads*</span>&rdquo;
-          </p>
-          <p className="text-[10px] text-text-muted mt-2 uppercase tracking-widest">
-            *Based on average mid-size B2B client data, UAE market, 2025
+          <p className="text-bg-base/80 text-lg md:text-xl font-medium">
+            A clear digital strategy helps your team focus investment on the channels most likely to generate qualified opportunities.
           </p>
         </div>
       </section>
@@ -472,10 +469,10 @@ export default function Home() {
             <p className="text-sm text-text-muted italic">30 minutes. No pitch. Just clarity on your biggest opportunity.</p>
           </div>
           <div className="mt-8 pt-8 border-t border-white/5">
-            <p className="text-accent font-bold tracking-widest uppercase text-xs mb-2">Dynamic Availability</p>
+            <p className="text-accent font-bold tracking-widest uppercase text-xs mb-2">Limited Availability</p>
             <p className="text-bg-base/60 text-sm">
               Fazil accepts 3 new clients per quarter to maintain direct access quality.<br/>
-              <span className="text-accent font-bold animate-pulse">Current availability: 1 spot remaining for Q2 2026.</span>
+              <span className="text-accent font-bold">Ask about current project availability.</span>
             </p>
           </div>
         </div>

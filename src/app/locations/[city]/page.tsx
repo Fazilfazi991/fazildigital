@@ -102,6 +102,13 @@ export default async function LocationHubPage({ params }: Props) {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-bg-base mb-12">
             Services in {location.city}
           </h2>
+          <p className="text-text-muted -mt-8 mb-10 max-w-3xl">
+            Looking specifically for organic search support? Review the dedicated{" "}
+            <Link href={`/${location.slug}/seo/`} className="text-accent hover:underline underline-offset-4">
+              SEO services in {location.city}
+            </Link>{" "}
+            page for deliverables, process, and local search considerations.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
               <Link

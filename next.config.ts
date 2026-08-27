@@ -50,6 +50,10 @@ const nextConfig: NextConfig = {
         destination: "/blog/",
         permanent: true,
       },
+      { source: "/snapchat-ads-saudi-arabia-benchmarks", destination: "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/", permanent: true },
+      { source: "/dubai/social-media", destination: "/dubai/social-media-management/", permanent: true },
+      { source: "/case-studies/dammam-logistics-seo", destination: "/case-studies/dammam-marketing/", permanent: true },
+      { source: "/case-studies/dental-seo-dubai", destination: "/case-studies/dubai-seo/", permanent: true },
     ];
   },
 };

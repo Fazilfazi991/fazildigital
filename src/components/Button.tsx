@@ -17,7 +17,7 @@ export function Button({ href, variant = "primary", children, className = "", ..
 
   const classes = `${baseStyles} ${variants[variant]} ${className}`;
 
-  const InnerContent = () => (
+  const innerContent = (
     <>
       <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] skew-x-[-15deg] group-hover:animate-sweep"></span>
       <span className="relative z-10 flex items-center justify-center gap-2">{children}</span>
@@ -27,14 +27,14 @@ export function Button({ href, variant = "primary", children, className = "", ..
   if (href) {
     return (
       <Link href={href} className={classes}>
-        <InnerContent />
+        {innerContent}
       </Link>
     );
   }
 
   return (
     <button className={classes} {...props}>
-      <InnerContent />
+      {innerContent}
     </button>
   );
 }

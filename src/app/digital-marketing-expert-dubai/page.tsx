@@ -169,7 +169,7 @@ export default function DigitalMarketingExpertDubai() {
             Book a Free Consultation
           </Button>
           <p className="text-sm text-text-muted mt-4">30 minutes · No obligation · Actionable insights</p>
-          <p className="text-xs text-text-muted/50 mt-2">Currently accepting new clients for Q2 2026</p>
+          <p className="text-xs text-text-muted/50 mt-2">Ask about current project availability</p>
         </div>
       </section>
 

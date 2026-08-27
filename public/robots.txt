@@ -1,6 +1,6 @@
 # ============================================================
-# robots.txt — mohammadfazil.com
-# Last updated: April 2026
+# robots.txt — fazildigital.com
+# Last updated: August 2026
 #
 # Strategy: Allow AI SEARCH/RETRIEVAL bots (they surface your
 # content in AI answers). Block AI TRAINING bots (they consume
@@ -82,4 +82,4 @@ Disallow: /api/
 Disallow: /_next/
 
 # ── Sitemap ─────────────────────────────────────────────────
-Sitemap: https://fazildigital.com/sitemap.xml
+Sitemap: https://www.fazildigital.com/sitemap.xml

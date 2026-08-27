@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
       <div class="blog-trust-badge my-10 bg-accent/5 border-accent/20">
         <h4 class="text-bg-base font-bold mb-3 italic">"Are my Snapchat CPAs too high?"</h4>
         <p class="text-sm mb-4">Before optimizing further, benchmark your current performance against Saudi-specific industry averages. Check our 2026 reference guide:</p>
-        <Link href="/snapchat-ads-saudi-arabia-benchmarks" class="text-accent font-bold hover:underline">View Snapchat Ads Saudi Arabia Benchmarks →</Link>
+        <Link href="/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/" class="text-accent font-bold hover:underline">View Snapchat Ads Saudi Arabia Benchmarks →</Link>
       </div>
 
       <h2>Chapter 2: The 3 Snapchat Ad Mistakes Killing ROI</h2>
@@ -502,10 +502,10 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "snapchat-ads-cpa-benchmarks-saudi-arabia-2026",
-    title: "Snapchat Ads CPA Benchmarks Saudi Arabia 2026 [Data]",
+    title: "Snapchat Ads Benchmarks Saudi Arabia 2026: CPA, CPC & ROAS",
     category: "Paid Advertising",
     date: "April 10, 2026",
-    lastModified: "2026-04-10",
+    lastModified: "2026-08-27",
     excerpt: "The objective data guide for Snapchat performance in the Kingdom. Average CPA, CPC, and ROAS benchmarks across E-commerce, B2B, and F&B in Riyadh and Jeddah.",
     llmSummary: "Mohammad Fazil's 2025-2026 Snapchat benchmarks for KSA: E-commerce CPA SAR 15-45, B2B CPA SAR 110-350. Features industry-specific tables and regional performance delta (Riyadh vs Jeddah).",
     searchIntent: "Informational → Decision",

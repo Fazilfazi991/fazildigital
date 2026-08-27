@@ -317,7 +317,7 @@ export const cluster3Blogs: BlogPost[] = [
       <h3>Snapchat: The Saudi Super-Power</h3>
       <p>You cannot win in the Saudi market without a dedicated Snapchat strategy. Period. With over 20 million active users in the Kingdom, it is the primary communication tool for Saudi nationals of all ages. If you are running <a href="/riyadh/paid-ads/">paid advertising in Riyadh</a> or looking to capture the attention of the Gen-Z demographic in Jeddah, Snapchat must be at least 40% of your total media budget.</p>
       
-      <p>The creative requirement here is "Lo-Fi High-Impact." Native-feeling vertical video that looks like it was recorded by a friend always outperforms a high-production TV commercial. We have analyzed this in depth in our <a href="/blog/snapchat-ads-saudi-arabia-benchmarks/">Saudi Snapchat Ads Performance Guide</a>—where we show that authentic, creator-led content can reduce CPA by as much as 65% compared to polished brand assets.</p>
+      <p>The creative requirement here is "Lo-Fi High-Impact." Native-feeling vertical video that looks like it was recorded by a friend often outperforms a high-production TV commercial. See the current <a href="/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/">Saudi Snapchat Ads Performance Guide</a> for CPA, CPC, and ROAS benchmarks by industry.</p>
 
       <h3>TikTok: The Scale Accelerator and Discovery Engine</h3>
       <p>TikTok is no longer a "dance app"; it has become a primary search and discovery engine for the UAE and Saudi Arabia. In 2026, many users under 30 are searching TikTok for reviews and recommendations before they even open Google. <a href="/dubai/paid-ads/">Paid ads on TikTok</a> require a "Content First, Ad Second" mentality. Your content must provide immediate entertainment or educational value before the "Sell."</p>
@@ -381,7 +381,7 @@ export const cluster3Blogs: BlogPost[] = [
         <h3 class="text-2xl font-heading font-bold mb-8">Performance Reading</h3>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           <li>
-            <a href="/blog/snapchat-ads-saudi-arabia-benchmarks/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
+            <a href="/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
               <span class="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">KSA Focus</span>
               <h4 class="text-lg font-bold text-bg-base">Snapchat Ads Saudi Arabia: 2026 Performance Benchmarks</h4>
             </a>
@@ -410,7 +410,7 @@ export const cluster3Blogs: BlogPost[] = [
     content: `
       <p><strong>The Post-Influencer Panic</strong>: It’s 2026, and the "Influencer Bubble" in Dubai hasn't burst, but it has certainly evolved. Users in the UAE are savvier than ever. They can spot a paid "collab" from a thousand yards away. If your social media strategy is still just "Post a pretty picture and tag a celebrity," you are likely screaming into a void that no longer listens.</p>
 
-      <p>The role of <a href="/dubai/social-media/">social media in Dubai</a> has shifted from being a billboard to being a community hub. In a city where every resident is a content creator, your brand must offer more than just aesthetics; it must offer a genuine narrative. This guide is for the brands that are tired of vanity metrics and want a social presence that actually impacts their balance sheet.</p>
+      <p>The role of <a href="/dubai/social-media-management/">social media in Dubai</a> has shifted from being a billboard to being a community hub. In a city where every resident is a content creator, your brand must offer more than just aesthetics; it must offer a genuine narrative. This guide is for the brands that are tired of vanity metrics and want a social presence that actually impacts their balance sheet.</p>
 
       <p>We will explore the shift toward "Community over Followers," the new rules of UAE influencer marketing, and why your video strategy is currently the single point of failure in your marketing funnel.</p>
 
@@ -1362,7 +1362,7 @@ export const cluster3Blogs: BlogPost[] = [
       
       <p><strong>Khobar Strategy:</strong> Focus on professional brand authority, high-end LinkedIn social proof, and lifestyle-integrated marketing.
       <p><strong>Dammam Strategy:</strong> Focus on technical specifications, logistics efficiency, and Google search dominance for industrial keywords.
-      <p>By tailoring your <a href="/dammam/seo/">Dammam SEO strategy</a> to these specific zones, you ensure that you are reaching the right decision-maker at the right moment. Our <a href="/case-studies/dammam-logistics-seo/">Dammam Logistics Case Study</a> shows how a regional shipping firm tripled their inquiries by simply separating their "Industrial" and "Corporate" search strategies.</p>
+      <p>By tailoring your <a href="/dammam/seo/">Dammam SEO strategy</a> to these specific zones, you ensure that you are reaching the right decision-maker at the right moment. Review the <a href="/case-studies/dammam-marketing/">Dammam digital marketing case study</a> for the approach used to clarify channel performance and qualified-lead reporting.</p>
 
       <h2>3. Logistics and Cross-Border Trade SEO</h2>
       <p>Dammam is the gateway to the GCC markets. With the King Abdulaziz Port and the King Fahd Causeway to Bahrain, the city is a hub for trade. In 2026, "Logistics SEO" is about more than just ranking for keywords; it's about ranking for <em>certainty</em>.</p>
@@ -1429,7 +1429,7 @@ export const cluster3Blogs: BlogPost[] = [
             </a>
           </li>
           <li>
-            <a href="/case-studies/dammam-logistics-seo/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
+            <a href="/case-studies/dammam-marketing/" class="block p-8 border border-white/10 hover:border-accent/40 bg-[#0A0A0A] transition-all duration-300">
               <span class="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Case Study</span>
               <h4 class="text-lg font-bold text-bg-base">Logistics Mastery: A Dammam SEO Case Study</h4>
             </a>
@@ -1887,7 +1887,7 @@ export const cluster3Blogs: BlogPost[] = [
       <h2>1. The Post-AI Content Landscape: Quality is the Only differentiator</h2>
       <p>Google’s 2026 algorithms are hyper-focused on **Originality.** If your content looks like it was generated by a generic LLM without human oversight, it will be buried. In the UAE, where many businesses are rushing to automate their blogs, the "Human-in-the-Loop" strategy is your biggest competitive advantage.</p>
 
-      <p>At <a href="/about/">Fazil Digital</a>, we use AI to research and structure, but we use human expertise to "narrate." We inject local case studies, regional data, and GCC business cultural nuances that an AI simply doesn't know. We saw the impact of this in our <a href="/case-studies/dental-seo-dubai/">Dubai Medical SEO Case Study</a>, where high-complexity human-led articles outranked AI-competitors by 400% in terms of conversion intent.</p>
+      <p>At <a href="/about/">Fazil Digital</a>, we use AI to research and structure, but human expertise shapes the final narrative. Local context, first-hand project knowledge, and GCC business culture make the content useful instead of generic. See the <a href="/case-studies/dubai-seo/">Dubai SEO case study</a> for a practical example of that approach.</p>
 
       <h2>2. E-E-A-T in the Emirates: Proving Your Expertise</h2>
       <p>Google’s **E-E-A-T** framework (Experience, Expertise, Authoritativeness, Trustworthiness) is the gold standard for 2026. In the UAE, proving your "Experience" is critical.

@@ -72,7 +72,7 @@ export const specializedContentMap: Record<string, SpecializedContent> = {
   "jeddah-paid-ads": {
     marketContext: `
       <p>Jeddah's commercial landscape is defined by its role as the Gateway to the Hijaz and a primary hub for lifestyle, tourism, and retail commerce. Reaching the Jeddah audience requires a blend of high-production vertical video and deep data sensitivity. As consumer buying habits in the Western Province continue to evolve, staying updated on platform benchmarks is the first step toward ad profitability.</p>
-      <p>If you are managing high-spend accounts from Jeddah, ensure your targeting is aligned with current market rates. Our <a href="/snapchat-ads-saudi-arabia-benchmarks" class="text-accent font-bold hover:underline">Snapchat Ads Saudi Arabia Benchmarks</a> guide provides the baseline data needed to audit your Western Province campaigns for CPC and conversion efficiency. Achieving 'Direct Access' results in Jeddah requires moving beyond vanity metrics to real-time performance tracking.</p>
+      <p>If you are managing high-spend accounts from Jeddah, ensure your targeting is aligned with current market rates. Our <a href="/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/" class="text-accent font-bold hover:underline">Snapchat Ads Saudi Arabia Benchmarks</a> guide provides the baseline data needed to audit your Western Province campaigns for CPC and conversion efficiency. Achieving 'Direct Access' results in Jeddah requires moving beyond vanity metrics to real-time performance tracking.</p>
     `,
     additionalFAQs: [
       {

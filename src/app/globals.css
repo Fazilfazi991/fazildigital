@@ -220,7 +220,7 @@ h6 { font-size: var(--text-lg); font-weight: var(--weight-medium); letter-spacin
 .blog-content-premium a {
   color: var(--color-accent);
   text-decoration: none;
-  border-bottom: 1px aria-hidden="true" solid transparent;
+  border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease;
 }
 
@@ -257,13 +257,16 @@ h6 { font-size: var(--text-lg); font-weight: var(--weight-medium); letter-spacin
 }
 
 .blog-content-premium table {
+  display: block;
   width: 100%;
+  max-width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   margin: 3rem 0;
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 12px;
-  overflow: hidden;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 
 .blog-content-premium th {

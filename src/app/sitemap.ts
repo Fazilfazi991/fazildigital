@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/methodology',
     '/markets',
     '/contact',
+    '/privacy-policy',
     '/digital-marketing-expert-dubai'
   ].map((route) => ({
     url: `${SITE_URL}${route}${route === '' ? '/' : '/'}`,
