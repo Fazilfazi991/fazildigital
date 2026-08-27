@@ -1,13 +1,24 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { Button } from "@/components/Button";
 
 export const metadata: Metadata = {
-  title: "Case Studies & Results | Digital Consulting in UAE & Saudi Arabia | Mohammad Fazil",
-  description: "Real results for mid-size businesses in Dubai, Riyadh, and across the GCC — SEO rankings, ROAS improvements, and lead generation outcomes delivered by Mohammad Fazil.",
+  title: "Digital Project Case Studies | UAE & Saudi Arabia | Mohammad Fazil",
+  description: "Selected UAE and Saudi digital projects covering SEO, paid media, websites and automation, with named project evidence where publication is approved.",
   alternates: { canonical: "https://www.fazildigital.com/case-studies/" },
 };
 
 const caseStudies = [
+  {
+    slug: "green-bags-uae",
+    client: "Green Bags UAE",
+    location: "Dubai, UAE",
+    service: "SEO + Google Ads + Content Marketing",
+    metric: "Named",
+    metricLabel: "Public Portfolio Project",
+    description:
+      "A documented UAE portfolio engagement for an eco-friendly bags supplier. The available public evidence supports the client identity, live website and recorded service scope; no unsupported traffic, revenue or ROAS figure is claimed.",
+  },
   {
     slug: "dubai-seo",
     client: "E-commerce Brand",
@@ -80,7 +91,7 @@ export default function CaseStudiesPage() {
             Results That Speak
           </h1>
           <p className="text-xl text-text-muted max-w-2xl mx-auto">
-            These are not vanity metrics. These are the moments when a Dubai e-commerce founder saw organic traffic double and finally stopped worrying about customer acquisition cost. When a Riyadh business watched ROAS climb and knew their budget was finally working. Real results, real GCC markets. No fluff. Just what worked.
+            Selected GCC engagements and project notes. Named work is supported by public project references; numerical outcomes are only treated as verified when the underlying report is available.
           </p>
         </div>
 
@@ -104,6 +115,12 @@ export default function CaseStudiesPage() {
                 </div>
 
                 <p className="text-text-muted leading-relaxed">{cs.description}</p>
+                <Link
+                  href={`/case-studies/${cs.slug}`}
+                  className="inline-block mt-7 text-accent font-semibold hover:underline"
+                >
+                  Read project details →
+                </Link>
               </div>
             </article>
           ))}

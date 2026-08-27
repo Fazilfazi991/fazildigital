@@ -93,3 +93,11 @@
 - **Analytics:** Confirmed Production environment configuration for `NEXT_PUBLIC_GA_MEASUREMENT_ID=G-BEGJF6PL8R` in the existing Vercel project. No duplicate tag implementation was added.
 - **Authorship:** Corrected blog structured data so `datePublished` uses the original publication date, `dateModified` uses the updated date, and the factual Mohammad Fazil Person/LinkedIn relationship is consistent.
 - **Governance:** Added `SEO-CTR-OPPORTUNITIES.md` to control future metadata experiments.
+
+## 2026-08-27 — Proof and case-study evidence pass
+
+- Audited every published case study and added `CASE-STUDY-EVIDENCE-REGISTER.md`. No quantitative case-study result was classified as verified because the repository contains no supporting analytics, advertising, CRM, ranking, time-study or approval files.
+- Published a conservative named Green Bags UAE project note using only the approved portfolio relationship, recorded service scope, repository visual and reachable public website. No traffic, lead, revenue, ranking or ROAS result was added.
+- Added a direct portfolio-to-project discovery path and project-to-service links for SEO, paid advertising and digital marketing.
+- Rechecked Search Console. The data window and totals remain unchanged, so all protected-page movement is still too early to judge. Added the `seo case studies dubai` evidence gap to the CTR register without changing metadata.
+- Rechecked GA4 Admin. `generate_lead` remains visible in Realtime but has not populated the Admin recent-events table, so key-event configuration remains deferred.

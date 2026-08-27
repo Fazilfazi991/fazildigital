@@ -13,6 +13,7 @@ export interface Client {
   services: string[];
   websiteUrl?: string;
   instagramUrl?: string;
+  caseStudySlug?: string;
 }
 
 export const portfolioServices: PortfolioService[] = [
@@ -103,7 +104,8 @@ export const clients: Client[] = [
     services: ["SEO", "Google Ads", "Content Marketing"],
     websiteUrl: "https://greenbagsuae.com",
     instagramUrl: "https://instagram.com/greenbagsuae",
-    logoUrl: "/images/portfolio/clients/green_bags_web.png"
+    logoUrl: "/images/portfolio/clients/green_bags_web.png",
+    caseStudySlug: "green-bags-uae"
   },
   {
     name: "Golden Point",

@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { services } from "@/data/services";
-import { locations } from "@/data/locations";
 import { Button } from "@/components/Button";
 import ProcessTimeline from "@/components/visuals/ProcessTimeline";
 import PlatformMap from "@/components/visuals/PlatformMap";
@@ -46,8 +45,6 @@ export default async function ServicePage({ params }: Props) {
   const { slug } = await params;
   const service = services.find((s) => s.slug === slug);
   if (!service) notFound();
-
-  const tier1Locations = locations.filter((l) => l.tier === 1);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -161,8 +158,23 @@ export default async function ServicePage({ params }: Props) {
         <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#050505] border-b border-white/5">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-heading font-bold text-bg-base mb-4">GCC Platform Strategy</h2>
-            <p className="text-text-muted mb-10">Not every platform performs equally in every market. Here's how each channel stacks up for UAE vs Saudi Arabia audiences.</p>
+            <p className="text-text-muted mb-10">Not every platform performs equally in every market. Here&apos;s how each channel stacks up for UAE vs Saudi Arabia audiences.</p>
             <PlatformMap />
+          </div>
+        </section>
+      )}
+
+      {(slug === "seo" || slug === "paid-ads" || slug === "digital-marketing") && (
+        <section className="py-20 px-4 sm:px-6 lg:px-8 border-b border-white/5">
+          <div className="max-w-4xl mx-auto border border-white/10 bg-[#0A0A0A] p-8 md:p-10">
+            <p className="text-xs font-semibold tracking-widest text-accent uppercase mb-3">Named portfolio work</p>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-bg-base mb-4">Green Bags UAE</h2>
+            <p className="text-text-muted leading-relaxed mb-6">
+              Review the documented UAE project scope across SEO, Google Ads and content marketing. The project note distinguishes public evidence from results that still require source reports.
+            </p>
+            <Link href="/case-studies/green-bags-uae/" className="text-accent font-semibold hover:underline">
+              View the Green Bags UAE project note →
+            </Link>
           </div>
         </section>
       )}

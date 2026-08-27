@@ -289,7 +289,11 @@ export default function PortfolioPage() {
                     )}
                   </div>
                   <span className="text-[10px] text-accent/40 font-bold uppercase tracking-widest">
-                    Case Study Phase II
+                    {client.caseStudySlug ? (
+                      <Link href={`/case-studies/${client.caseStudySlug}`} className="text-accent hover:underline">
+                        Read project note →
+                      </Link>
+                    ) : "Project details available on request"}
                   </span>
                 </div>
               </div>

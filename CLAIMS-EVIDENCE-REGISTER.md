@@ -14,6 +14,9 @@ This register controls public quantitative, credential, testimonial, and perform
 | SAR 5M managed ad spend | Snapchat benchmark article | Experience / spend | No account-level spend export supplied | NEEDS EVIDENCE | Mohammad Fazil | 2026-08-27 | Retain only if a redacted platform export supports the total. |
 | AED 47,000 missed organic leads/revenue | Former homepage copy | Forecast | Calculation was not supplied | UNSUPPORTED | Mohammad Fazil | 2026-08-27 | Removed on 2026-08-27; do not restore without documented inputs and method. |
 | AED 10,000+ monthly savings from transformation | UAE SME article | Forecast | No calculation or case evidence supplied | UNSUPPORTED | Mohammad Fazil | 2026-08-27 | Removed on 2026-08-27 and replaced with a process-review offer. |
+| 9+ years / 100+ projects / 10+ industries | Portfolio | Experience and volume | No CV, project ledger or industry list supplied | NEEDS EVIDENCE | Mohammad Fazil | 2026-08-27 | Archive a dated career history and deduplicated project register before treating these as verified. |
+| Six published case-study performance outcomes | Case-study index, detail pages, homepage and supporting articles | Performance results | No analytics, advertising, CRM, ranking, time-study or client-approval files supplied | NEEDS EVIDENCE | Mohammad Fazil | 2026-08-27 | See `CASE-STUDY-EVIDENCE-REGISTER.md`; do not strengthen or reuse the numbers. |
+| Named Green Bags UAE service scope | Portfolio and `/case-studies/green-bags-uae/` | Project relationship / scope | Existing approved portfolio record plus reachable public website; no delivery contract supplied | FIRST-PARTY DATA | Mohammad Fazil | 2026-08-27 | Safe to describe as a documented portfolio project without numerical results; archive client approval and scope evidence. |
 
 ## Evidence standard
 

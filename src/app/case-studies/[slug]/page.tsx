@@ -1,13 +1,54 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/Button";
 
 interface Props {
   params: Promise<{ slug: string }>;
 }
 
-const caseStudies = [
+interface CaseStudy {
+  slug: string;
+  client: string;
+  location: string;
+  service: string;
+  metric: string;
+  metricLabel: string;
+  fullStory: string;
+  image?: string;
+  website?: string;
+  evidenceNote?: string;
+  relatedServices?: { label: string; href: string }[];
+}
+
+const caseStudies: CaseStudy[] = [
+  {
+    slug: "green-bags-uae",
+    client: "Green Bags UAE",
+    location: "Dubai, UAE",
+    service: "SEO + Google Ads + Content Marketing",
+    metric: "Named",
+    metricLabel: "Public Portfolio Project",
+    image: "/images/portfolio/clients/green_bags_web.png",
+    website: "https://greenbagsuae.com/",
+    evidenceNote: "Evidence available: an approved named portfolio listing, a repository portfolio visual, and a live public client website. Analytics exports, advertising reports, testimonial approval and before/after measurements are not available in the repository, so this page makes no numerical performance claim.",
+    relatedServices: [
+      { label: "SEO services", href: "/services/seo/" },
+      { label: "Paid advertising", href: "/services/paid-ads/" },
+      { label: "Digital marketing", href: "/services/digital-marketing/" },
+    ],
+    fullStory: `
+      <h2>Business context</h2>
+      <p>Green Bags UAE is a Dubai supplier of reusable cotton, canvas and jute bags, with a public website serving product discovery and business enquiries.</p>
+      <h2>Documented objective</h2>
+      <p>The approved portfolio record identifies the engagement as e-commerce and eco-friendly products work across SEO, Google Ads and content marketing.</p>
+      <h2>Documented scope</h2>
+      <p>The available project material supports three workstreams: organic search, paid search and content marketing. More granular implementation records were not supplied, so this project note does not attribute unverified technical changes or campaign tactics.</p>
+      <h2>Published outcome</h2>
+      <p>The named business and its live digital presence can be independently reviewed. No traffic increase, lead volume, advertising return or revenue result is published without the corresponding analytics or advertising report.</p>
+    `,
+  },
   {
     slug: "dubai-seo",
     client: "E-commerce Brand",
@@ -84,8 +125,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!cs) return {};
 
   return {
-    title: `${cs.metricLabel} for ${cs.client} | Case Study | Mohammad Fazil`,
-    description: `Case study: How Mohammad Fazil delivered ${cs.metricLabel} for a ${cs.client} in ${cs.location} through ${cs.service}.`,
+    title: `${cs.client}: ${cs.service} Project`,
+    description: `Project note for ${cs.client} in ${cs.location}, covering the documented ${cs.service} scope and available evidence.`,
     alternates: {
       canonical: `https://www.fazildigital.com/case-studies/${slug}/`,
     },
@@ -98,8 +139,22 @@ export default async function CaseStudyPage({ params }: Props) {
 
   if (!cs) notFound();
 
+  const jsonLd = cs.slug === "green-bags-uae" ? {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: "Green Bags UAE digital marketing project note",
+    url: "https://www.fazildigital.com/case-studies/green-bags-uae/",
+    about: ["Search engine optimization", "Google Ads", "Content marketing"],
+    creator: {
+      "@type": "Person",
+      "@id": "https://www.fazildigital.com/#person",
+      name: "Mohammad Fazil",
+    },
+  } : null;
+
   return (
     <div className="pt-24 pb-32">
+      {jsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link href="/case-studies" className="text-accent hover:underline mb-8 inline-block font-medium">
           ← Back to All Work
@@ -118,11 +173,22 @@ export default async function CaseStudyPage({ params }: Props) {
             </div>
             <div className="flex-1 border-white/10 border-t md:border-t-0 md:border-l pt-6 md:pt-0 md:pl-10">
               <p className="text-lg text-text-muted leading-relaxed">
-                {cs.metricLabel} achieved through concentrated {cs.service.toLowerCase()} effort over a specific engagement period.
+                {cs.evidenceNote ?? `${cs.metricLabel} reported for this ${cs.service.toLowerCase()} engagement.`}
               </p>
             </div>
           </div>
         </header>
+
+        {cs.image && (
+          <figure className="mb-16">
+            <div className="relative aspect-square overflow-hidden border border-white/10 bg-[#080808]">
+              <Image src={cs.image} alt={`${cs.client} portfolio visual`} fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" priority />
+            </div>
+            <figcaption className="mt-3 text-sm text-text-muted">
+              Repository portfolio visual. This is project evidence, not an analytics or before/after report.
+            </figcaption>
+          </figure>
+        )}
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           <div className="lg:col-span-2 prose prose-invert prose-lg max-w-none text-text-muted font-body leading-relaxed
@@ -148,11 +214,29 @@ export default async function CaseStudyPage({ params }: Props) {
                    <dd className="text-bg-base font-medium">{cs.location}</dd>
                  </div>
                </dl>
+               {cs.website && (
+                 <a href={cs.website} target="_blank" rel="noopener noreferrer" className="inline-block mt-6 text-accent hover:underline">
+                   Visit the public website →
+                 </a>
+               )}
              </div>
+
+             {cs.relatedServices && (
+               <div className="border border-white/10 p-6 bg-[#080808]">
+                 <h3 className="font-heading font-bold text-bg-base mb-4">Related services</h3>
+                 <ul className="space-y-3 text-sm">
+                   {cs.relatedServices.map((service) => (
+                     <li key={service.href}>
+                       <Link href={service.href} className="text-accent hover:underline">{service.label}</Link>
+                     </li>
+                   ))}
+                 </ul>
+               </div>
+             )}
              
              <div className="bg-accent/5 border border-accent/20 p-6">
-               <h3 className="font-heading font-bold text-bg-base mb-3 text-lg">Want similar results?</h3>
-               <p className="text-text-muted text-sm mb-6 leading-relaxed">Let&apos;s discuss how to replicate this success for your business.</p>
+               <h3 className="font-heading font-bold text-bg-base mb-3 text-lg">Need a similar project?</h3>
+               <p className="text-text-muted text-sm mb-6 leading-relaxed">Let&apos;s discuss the right scope and measurement plan for your business.</p>
                <Button href="/contact" className="w-full">Book Your Call</Button>
              </div>
           </aside>
