@@ -40,21 +40,25 @@ export default async function BlogPostPage({ params }: Props) {
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt || post.content.substring(0, 155).replace(/<[^>]*>/g, ""),
     image: 'https://www.fazildigital.com/og-image.jpg',
     wordCount: post.content.split(/\s+/).length,
-    datePublished: new Date(post.lastModified || post.date).toISOString(),
+    datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.lastModified || post.date).toISOString(),
     author: {
       '@type': 'Person',
+      '@id': 'https://www.fazildigital.com/#person',
       name: 'Mohammad Fazil',
-      url: 'https://www.fazildigital.com/about/'
+      url: 'https://www.fazildigital.com/about/',
+      sameAs: ['https://linkedin.com/in/fazilfazi']
     },
     publisher: {
       '@type': 'Organization',
+      '@id': 'https://www.fazildigital.com/#organization',
       name: 'Fazil Digital',
+      url: 'https://www.fazildigital.com/',
       logo: {
         '@type': 'ImageObject',
         url: 'https://www.fazildigital.com/icon.png'

@@ -36,12 +36,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (serviceSlug === "paid-ads") hook = "Stop Wasting Ad Spend";
 
   const isDammamSeo = locationSlug === "dammam" && serviceSlug === "seo";
+  const isRiyadhSeo = locationSlug === "riyadh" && serviceSlug === "seo";
   const title = isDammamSeo
     ? "SEO Services in Dammam | Local & B2B SEO Consultant"
-    : `${service.name} ${location.city}: ${hook} | Fazil Digital`;
+    : isRiyadhSeo
+      ? "SEO Services in Riyadh | Arabic & English SEO Consultant"
+      : `${service.name} ${location.city}: ${hook} | Fazil Digital`;
   const description = isDammamSeo
     ? "SEO services for Dammam businesses: technical SEO, local search, Google Business Profile, and Arabic-English content strategy for qualified leads."
-    : `${location.city} ${service.name} expert helping businesses ${hook.toLowerCase()}. Book your free 30-min growth consultation today.`;
+    : isRiyadhSeo
+      ? "SEO services in Riyadh for technical, local, B2B, Arabic and English search. Build qualified visibility with direct senior strategy and clear measurement."
+      : `${location.city} ${service.name} expert helping businesses ${hook.toLowerCase()}. Book your free 30-min growth consultation today.`;
 
   const isUAE = ["dubai", "abu-dhabi", "sharjah", "ajman"].includes(locationSlug);
   const isSA = ["riyadh", "jeddah", "dammam"].includes(locationSlug);

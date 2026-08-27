@@ -80,3 +80,16 @@
 
 - **Sitewide:** Added an environment-controlled GA4 loader and non-PII events for form continuation, lead generation, WhatsApp, email and phone clicks. No measurement ID is committed or invented.
 - **Governance:** Added `CLAIMS-EVIDENCE-REGISTER.md` and `SNAPCHAT-CONTENT-MAP.md`.
+
+## 2026-08-27 — Riyadh SEO relevance and GA4 activation
+
+- **URL:** `/riyadh/seo/`
+- **Change:** Added Riyadh-specific metadata, H1, introduction, deliverables, Arabic/English search guidance, local SEO, B2B and sector strategy, measurement content and four focused FAQs.
+- **Reason:** The page owns a clean query cluster but recorded 206 impressions, zero clicks, 0% CTR and average position 58.3. The two leading queries were `riyadh seo` (88 impressions) and `seo riyadh` (69).
+- **SERP evidence:** Ranking pages consistently use dedicated Riyadh SEO-service positioning, local SEO, technical coverage, proof/case-study pathways, and Saudi-market relevance.
+- **Internal links:** Added direct paths to the Riyadh city hub, Riyadh market guide and contact journey. Existing homepage, service overview, expert-page and article links were preserved.
+- **Expected effect:** Stronger relevance and query alignment after recrawl; rankings are not yet measurable.
+
+- **Analytics:** Confirmed Production environment configuration for `NEXT_PUBLIC_GA_MEASUREMENT_ID=G-BEGJF6PL8R` in the existing Vercel project. No duplicate tag implementation was added.
+- **Authorship:** Corrected blog structured data so `datePublished` uses the original publication date, `dateModified` uses the updated date, and the factual Mohammad Fazil Person/LinkedIn relationship is consistent.
+- **Governance:** Added `SEO-CTR-OPPORTUNITIES.md` to control future metadata experiments.

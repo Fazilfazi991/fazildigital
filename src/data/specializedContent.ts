@@ -7,6 +7,37 @@ export interface SpecializedContent {
 }
 
 export const specializedContentMap: Record<string, SpecializedContent> = {
+  "riyadh-seo": {
+    heroHeading: "SEO Services in Riyadh for Arabic and English Search",
+    heroIntro: "Build qualified organic visibility in Saudi Arabia's most competitive business market through technical SEO, bilingual keyword planning, local search, and content designed for Riyadh buyers.",
+    deliverables: [
+      "Technical SEO and indexation audit",
+      "Arabic and English keyword mapping",
+      "Riyadh competitor and search-intent analysis",
+      "Google Business Profile and local SEO review",
+      "B2B service and industry content strategy",
+      "Internal linking and authority development",
+      "Conversion and lead-quality measurement",
+      "Search Console reporting and priority roadmap",
+    ],
+    marketContext: `
+      <p>Riyadh combines intense local competition with national and regional buying intent. Searchers may be comparing a nearby provider, evaluating a specialist for a Saudi headquarters, or researching a supplier for a longer B2B buying process. A Riyadh SEO programme needs to separate those journeys rather than treating every keyword as the same opportunity.</p>
+      <h3>Arabic and English search strategy</h3>
+      <p>Arabic and English searches do not always use direct equivalents. We research each language independently, map one primary intent to each page, and decide where bilingual pages are useful. This prevents translated pages from competing with each other and keeps titles, headings, internal links, and calls to action aligned.</p>
+      <h3>Local SEO and Google Business Profile</h3>
+      <p>For businesses serving customers from a real Riyadh location, local SEO includes Google Business Profile completeness, consistent business information, relevant categories, review workflows, service-area accuracy, and location pages that reflect genuine operations. We do not create false offices or location signals.</p>
+      <h3>B2B and sector search visibility</h3>
+      <p>Professional services, technology and SaaS companies, real estate, hospitality, retail, and e-commerce businesses require different content paths. B2B programmes prioritize service detail, use cases, procurement questions, comparison content, and lead quality. Consumer programmes place more weight on local discovery, category pages, product demand, and mobile conversion.</p>
+      <h3>How Riyadh SEO is measured</h3>
+      <p>Reporting connects Search Console visibility to qualified landing-page visits and enquiries. We track query groups, page ownership, organic conversions, and the pages that assist a lead—not rankings in isolation. Explore the broader <a href="/locations/riyadh/" class="text-accent hover:underline">Riyadh digital-services hub</a>, read the <a href="/blog/digital-marketing-riyadh-saudi-businesses-2026/" class="text-accent hover:underline">Riyadh market guide</a>, or <a href="/contact/" class="text-accent hover:underline">request a focused SEO review</a>.</p>
+    `,
+    additionalFAQs: [
+      { question: "What is included in SEO services for a Riyadh business?", answer: "A typical scope includes technical SEO, Arabic and English keyword research, on-page improvements, local SEO, content planning, internal linking, authority development, and Search Console reporting. The exact mix depends on the business model and target buyer." },
+      { question: "Can you support both Arabic and English SEO in Riyadh?", answer: "Yes. Each language is researched separately and mapped to the intent it serves. The work can include bilingual keyword planning and page recommendations, but it does not assume every English page needs a direct Arabic duplicate." },
+      { question: "Do I need local SEO if I already rank nationally in Saudi Arabia?", answer: "Local SEO is useful when customers visit or contact a genuine Riyadh location. National organic rankings and map visibility use overlapping but different signals, so the strategy should reflect how customers actually buy from the business." },
+      { question: "How do you measure SEO lead quality?", answer: "Measurement combines Search Console query and landing-page data with non-PII conversion events and the business's own qualified-lead review. Traffic growth alone is not treated as success if the visits do not match the intended buyer." },
+    ],
+  },
   "dammam-seo": {
     heroHeading: "SEO Services in Dammam for B2B and Local Growth",
     heroIntro: "Build search visibility across Dammam and the Eastern Province with technical SEO, Arabic and English keyword planning, local search optimization, and content designed around how buyers evaluate suppliers.",

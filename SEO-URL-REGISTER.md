@@ -39,6 +39,7 @@ The following Search Console 404s were not redirected because intent, backlinks,
 | `/locations/dammam` | Generic city page that also accumulated SEO-service query impressions | Broad digital-services city hub with an explicit route to the specialist SEO page | Declining share of `seo services in dammam` impressions while retaining broader Dammam discovery |
 | `/dammam/seo` | Generated city/service template with generic SEO copy | Dedicated local and B2B SEO page with Dammam-specific metadata, content, FAQs and internal authority | Increasing share of Dammam SEO-query impressions, then position, clicks and CTR |
 | `/blog/digital-transformation-uae-sme-guide` | High-level transformation narrative | Practical SME guide covering priorities, costs, workflows, build-vs-buy and 30/60/90-day implementation | Movement of relevant queries from positions 30–50 toward 10–30 |
+| `/riyadh/seo` | Generic generated SEO page; 206 impressions, 0 clicks, 0% CTR, position 58.3 | Dedicated Riyadh SEO page for Arabic/English, local, technical and B2B search intent | Query ownership is already clean; monitor position, clicks and CTR after recrawl |
 
 ## Crawled, currently not indexed — Search Console update 2026-08-21
 
