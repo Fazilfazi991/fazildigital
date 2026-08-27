@@ -57,7 +57,7 @@ export default async function BlogPostPage({ params }: Props) {
       name: 'Fazil Digital',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.fazildigital.com/favicon.ico'
+        url: 'https://www.fazildigital.com/icon.png'
       }
     }
   };

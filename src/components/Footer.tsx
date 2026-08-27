@@ -1,11 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 import { services } from "@/data/services";
-import { locations } from "@/data/locations";
 
 export function Footer() {
   return (
     <footer className="bg-[#050505] border-t border-white/10 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Link href="/" className="inline-block mb-12" aria-label="Fazil Digital home">
+          <Image
+            src="/images/brand/fazil-digital-logo.png"
+            alt="Fazil Digital"
+            width={400}
+            height={190}
+            className="h-20 w-auto sm:h-24"
+          />
+        </Link>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           
           {/* Services Col */}

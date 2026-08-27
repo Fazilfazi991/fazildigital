@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Button } from "./Button";
 import { services } from "@/data/services";
-import { locations } from "@/data/locations";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,12 +14,16 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <Link href="/" className="font-heading font-bold text-2xl tracking-tighter text-bg-base block leading-none">
-              Mohammad Fazil
+            <Link href="/" className="block" aria-label="Fazil Digital home">
+              <Image
+                src="/images/brand/fazil-digital-logo.png"
+                alt="Fazil Digital"
+                width={400}
+                height={190}
+                priority
+                className="h-12 w-auto sm:h-14"
+              />
             </Link>
-            <span className="text-[10px] text-text-muted font-medium uppercase tracking-wider mt-1 block">
-              Based in Dubai · Serving UAE, Saudi Arabia & GCC
-            </span>
           </div>
           
           <div className="hidden md:block">

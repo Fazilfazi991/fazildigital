@@ -7,5 +7,5 @@ module.exports = {
   generateIndexSitemap: false,
   // The markdown route exists for AI/LLM retrieval, but it is an alternate
   // representation of each canonical HTML article and must not be indexed.
-  exclude: ['/blog/raw/*'],
+  exclude: ['/blog/raw/*', '/icon.png', '/apple-icon.png'],
 }
