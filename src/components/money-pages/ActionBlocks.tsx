@@ -25,9 +25,14 @@ export function MarketInsightBlock({ locationCity, serviceName, marketContext, l
           {serviceName} in {locationCity} — What You Need to Know
         </h2>
 
-        <p className="text-text-muted text-lg leading-relaxed mb-12">
-          {marketContext}
-        </p>
+        {marketContext.includes("<") ? (
+          <div
+            className="text-text-muted text-lg leading-relaxed mb-12 space-y-5 [&_h3]:font-heading [&_h3]:font-bold [&_h3]:text-bg-base [&_h3]:text-2xl [&_h3]:mt-9 [&_a]:text-accent"
+            dangerouslySetInnerHTML={{ __html: marketContext }}
+          />
+        ) : (
+          <p className="text-text-muted text-lg leading-relaxed mb-12">{marketContext}</p>
+        )}
 
         {localDistricts && localDistricts.length > 0 && (
           <div className="mb-12">

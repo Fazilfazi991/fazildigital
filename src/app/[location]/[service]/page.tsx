@@ -35,8 +35,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (serviceSlug === "seo") hook = "Rank Higher on Google";
   if (serviceSlug === "paid-ads") hook = "Stop Wasting Ad Spend";
 
-  const title = `${service.name} ${location.city}: ${hook} | Fazil Digital`;
-  const description = `${location.city} ${service.name} expert helping businesses ${hook.toLowerCase()}. 50+ clients served in ${location.country}. Book your free 30-min growth consultation today.`;
+  const isDammamSeo = locationSlug === "dammam" && serviceSlug === "seo";
+  const title = isDammamSeo
+    ? "SEO Services in Dammam | Local & B2B SEO Consultant"
+    : `${service.name} ${location.city}: ${hook} | Fazil Digital`;
+  const description = isDammamSeo
+    ? "SEO services for Dammam businesses: technical SEO, local search, Google Business Profile, and Arabic-English content strategy for qualified leads."
+    : `${location.city} ${service.name} expert helping businesses ${hook.toLowerCase()}. Book your free 30-min growth consultation today.`;
 
   const isUAE = ["dubai", "abu-dhabi", "sharjah", "ajman"].includes(locationSlug);
   const isSA = ["riyadh", "jeddah", "dammam"].includes(locationSlug);
@@ -150,8 +155,9 @@ export default async function MoneyPage({ params }: Props) {
     locationSlug: location.slug,
     serviceName: service.name,
     serviceSlug: service.slug,
-    longOpening: service.longOpening,
-    deliverables: service.deliverables,
+    longOpening: specialized?.heroIntro || service.longOpening,
+    headingText: specialized?.heroHeading,
+    deliverables: specialized?.deliverables || service.deliverables,
     faqs: mergedFaqs,
     marketContext: specialized?.marketContext 
       ? `${specialized.marketContext}\n<hr class="border-white/10 my-8"/>\n${location.marketContext}`

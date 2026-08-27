@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { MobileStickyCTA } from "@/components/MobileStickyCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { Analytics } from "@/components/Analytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.fazildigital.com"),
@@ -49,6 +50,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&amp;f[]=satoshi@400,500,600,700&amp;display=swap" />
       </head>
       <body className="min-h-full flex flex-col font-body bg-primary text-bg-base">
+        <Analytics />
         <Navbar />
         <main className="flex-grow">
           {children}

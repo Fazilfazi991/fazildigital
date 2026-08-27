@@ -20,7 +20,7 @@ Search Console period below: 2026-05-25 to 2026-08-24 (3 months). Metrics are sn
 
 ## URLs awaiting evidence
 
-The following Search Console 404s were not redirected because intent, backlinks, or historical performance are not yet sufficiently established: `/ajman/web-development`, `/ajman/social-media-management`, `/ajman/digital-marketing`, and `/privacy-policy`.
+The following Search Console 404s were not redirected because intent, backlinks, or historical performance are not yet sufficiently established: `/ajman/web-development`, `/ajman/social-media-management`, and `/ajman/digital-marketing`. `/privacy-policy` was restored as a valid page on 2026-08-27.
 
 ## Query to URL mapping — 2026-08-27
 
@@ -31,6 +31,14 @@ The following Search Console 404s were not redirected because intent, backlinks,
 | `digital transformation for smes uae` | `/blog/digital-transformation-uae-sme-guide` | Same article | Healthy mapping, weak depth | Expand in a later focused pass. |
 | Saudi Snapchat CPA/CPC queries | Snapchat benchmark article | Same article | Healthy mapping, weak CTR | Protect URL/title; improve credibility before further snippet changes. |
 | `Mohammad Fazil` | Homepage and `/about` | Homepage plus supporting About page | Healthy brand cluster | Keep entity facts consistent; protect `/about`. |
+
+## Query ownership implementation — 2026-08-27
+
+| URL | Before | After | Monitoring target |
+| --- | --- | --- | --- |
+| `/locations/dammam` | Generic city page that also accumulated SEO-service query impressions | Broad digital-services city hub with an explicit route to the specialist SEO page | Declining share of `seo services in dammam` impressions while retaining broader Dammam discovery |
+| `/dammam/seo` | Generated city/service template with generic SEO copy | Dedicated local and B2B SEO page with Dammam-specific metadata, content, FAQs and internal authority | Increasing share of Dammam SEO-query impressions, then position, clicks and CTR |
+| `/blog/digital-transformation-uae-sme-guide` | High-level transformation narrative | Practical SME guide covering priorities, costs, workflows, build-vs-buy and 30/60/90-day implementation | Movement of relevant queries from positions 30–50 toward 10–30 |
 
 ## Crawled, currently not indexed — Search Console update 2026-08-21
 

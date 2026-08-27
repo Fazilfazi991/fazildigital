@@ -60,4 +60,23 @@
 - Added contextual location-hub links to dedicated city SEO pages after Search Console confirmed Dammam cannibalization.
 - Replaced the unsupported AED 47,000 missed-lead claim with factual qualitative copy.
 - Documented all 16 crawled-not-indexed examples and priority query mappings.
-- Deployment commit/SHA: pending.
+- Deployment commit/SHA: `129d3ba6ffbe025b6453a5d73e973b9923b787c7`.
+
+## 2026-08-27 — Query ownership, SME usefulness and measurement foundation
+
+- **URL:** `/dammam/seo/`
+- **Change:** Added Dammam-specific title, description, H1, introduction, deliverables, market content and FAQs for local and B2B SEO. Added links to the Dammam hub, case study and contact journey.
+- **Reason:** `seo services in dammam` had 87 impressions and zero clicks; most impressions were attributed to the broader `/locations/dammam` hub instead of this service page.
+- **Target queries:** SEO services in Dammam; SEO company Dammam; Dammam SEO; local SEO Dammam.
+- **Expected effect:** Clearer service-page ownership after Google recrawls both URLs. Rankings are not yet measurable.
+
+- **URL:** `/locations/dammam/`
+- **Change:** Repositioned the introduction and market section as a multi-service city hub and explicitly routed search-specific visitors to `/dammam/seo/`.
+- **Reason:** Reduce intent duplication without removing a location page that already has visibility.
+
+- **URL:** `/blog/digital-transformation-uae-sme-guide/`
+- **Change:** Added practical definition, starting sequence, cost categories, workflows, build-vs-buy guidance, what not to automate and a 30/60/90-day roadmap. Removed the unsupported AED 10,000+ savings promise.
+- **Reason:** Query `digital transformation for smes uae` has 101 impressions, zero clicks and average position around 41; current SERPs reward practical starting and cost guidance.
+
+- **Sitewide:** Added an environment-controlled GA4 loader and non-PII events for form continuation, lead generation, WhatsApp, email and phone clicks. No measurement ID is committed or invented.
+- **Governance:** Added `CLAIMS-EVIDENCE-REGISTER.md` and `SNAPCHAT-CONTENT-MAP.md`.

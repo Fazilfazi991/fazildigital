@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
           </section>
           <section>
             <h2 className="text-2xl font-heading font-bold text-bg-base mb-3">Analytics and advertising</h2>
-            <p>No website analytics or advertising tracker is currently implemented in this codebase. If measurement tools are introduced later, this notice should be updated to identify them and explain the choices available to visitors.</p>
+            <p>Google Analytics support is built into the site but only activates when a valid measurement ID is configured. When active, it records page views and interaction events such as contact-form continuation, WhatsApp clicks and email clicks. These events do not include the name, email address, phone number or message entered into the contact form.</p>
           </section>
           <section>
             <h2 className="text-2xl font-heading font-bold text-bg-base mb-3">Questions or requests</h2>

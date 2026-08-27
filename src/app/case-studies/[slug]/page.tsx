@@ -41,7 +41,7 @@ const caseStudies = [
     service: "B2B Digital Marketing",
     metric: "−40%",
     metricLabel: "Cost Per Lead in 4 Months",
-    fullStory: "<p>Streamlining a B2B lead generation engine for an industrial client in the Eastern Province...</p>"
+    fullStory: "<p>Streamlining a B2B lead generation engine for an industrial client in the Eastern Province. The search component is now documented through the dedicated <a href=\"/dammam/seo/\">Dammam SEO services</a> pathway, covering technical visibility, B2B service content, and qualified organic enquiries.</p>"
   },
   {
     slug: "jeddah-web-development",

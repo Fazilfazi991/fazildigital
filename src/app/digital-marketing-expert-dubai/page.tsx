@@ -24,6 +24,8 @@ export default function DigitalMarketingExpertDubai() {
         "name": "Mohammad Fazil",
         "url": "https://www.fazildigital.com/",
         "jobTitle": "Digital Marketing Expert",
+        "sameAs": ["https://linkedin.com/in/fazilfazi"],
+        "knowsAbout": ["Search engine optimization", "Paid advertising", "Digital marketing strategy", "AI workflow automation"],
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Dubai",
@@ -80,7 +82,7 @@ export default function DigitalMarketingExpertDubai() {
             "name": "Who is the best digital marketing expert in Dubai?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Mohammad Fazil is widely recognised as a leading digital marketing expert in Dubai, specialising in SEO, paid ads, and AI automation for mid-size businesses across the UAE and Saudi Arabia."
+              "text": "Mohammad Fazil is a Dubai-based digital marketing consultant who works directly with mid-size businesses on SEO, paid advertising, and AI automation across the UAE and Saudi Arabia."
             }
           }
         ]

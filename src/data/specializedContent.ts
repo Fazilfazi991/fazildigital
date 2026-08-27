@@ -1,9 +1,40 @@
 export interface SpecializedContent {
+  heroHeading?: string;
+  heroIntro?: string;
+  deliverables?: string[];
   marketContext?: string;
   additionalFAQs?: { question: string; answer: string }[];
 }
 
 export const specializedContentMap: Record<string, SpecializedContent> = {
+  "dammam-seo": {
+    heroHeading: "SEO Services in Dammam for B2B and Local Growth",
+    heroIntro: "Build search visibility across Dammam and the Eastern Province with technical SEO, Arabic and English keyword planning, local search optimization, and content designed around how buyers evaluate suppliers.",
+    deliverables: [
+      "Technical SEO and indexation audit",
+      "Arabic and English keyword mapping",
+      "Google Business Profile and local SEO review",
+      "B2B service and industry content strategy",
+      "Dammam landing-page and conversion improvements",
+      "Internal linking and authority development",
+      "Search Console query and lead-quality reporting",
+      "Monthly priority roadmap with accountable actions",
+    ],
+    marketContext: `
+      <p>Dammam search demand spans two distinct jobs: local discovery for nearby commercial services and detailed supplier research for B2B purchases. A useful Dammam SEO strategy therefore has to cover both Google Maps visibility and the longer research journey that happens before a buyer requests a quotation.</p>
+      <p>For local businesses, the foundation is a complete Google Business Profile, consistent business information, useful service pages, review acquisition, and location signals that match the areas actually served. For industrial, logistics, construction, manufacturing, and professional-service companies, the work shifts toward technical service terminology, sector-specific landing pages, case evidence, and content that helps procurement and operations teams assess capability.</p>
+      <h3>Arabic and English search planning</h3>
+      <p>Translating an English keyword list is not a bilingual strategy. We map English and Arabic queries separately, decide which pages genuinely need an Arabic equivalent, and keep headings, metadata, internal links, and calls to action aligned with the same commercial intent.</p>
+      <h3>How the work is measured</h3>
+      <p>Reporting separates visibility from business outcomes: target-query impressions, qualified organic visits, map interactions where available, enquiries, and the landing pages that assisted them. Start with the broader <a href="/locations/dammam/" class="text-accent hover:underline">Dammam digital services hub</a>, review the <a href="/case-studies/dammam-marketing/" class="text-accent hover:underline">Dammam marketing case study</a>, or <a href="/contact/" class="text-accent hover:underline">request an SEO review</a>.</p>
+    `,
+    additionalFAQs: [
+      { question: "What is included in SEO services for a Dammam business?", answer: "The scope can include technical SEO, keyword and competitor research, on-page improvements, local SEO and Google Business Profile work, content planning, internal linking, authority development, and Search Console reporting. The mix depends on whether the priority is local enquiries, B2B supplier discovery, or both." },
+      { question: "Can you support Arabic and English SEO in Dammam?", answer: "Yes. Arabic and English queries are researched separately rather than translated word for word. Page structure, metadata, content and calls to action are then aligned to the intent of each audience." },
+      { question: "How is local SEO different from standard SEO?", answer: "Local SEO focuses on location-based discovery, Google Business Profile visibility, consistent business details, reviews and locally relevant landing pages. Standard organic SEO also covers technical health, non-map rankings, content and site authority." },
+      { question: "Does Dammam SEO work for industrial and B2B companies?", answer: "Yes. B2B SEO is built around technical services, applications, sectors, specifications and the questions procurement or operations teams ask before contacting a supplier. Lead quality matters more than raw traffic volume." },
+    ],
+  },
   "abu-dhabi-ai-automation": {
     marketContext: `
       <p>Abu Dhabi is aggressively positioning itself as a global leader in AI and digital governance. For businesses operating in the capital, AI automation is no longer a luxury—it is a core component of the Abu Dhabi Digital Transformation agenda (ADDA). From the booming fintech ecosystem within Abu Dhabi Global Market (ADGM) to the massive smart city projects like Masdar City, the demand for intelligent, automated workflows is at an all-time high.</p>

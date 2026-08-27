@@ -54,6 +54,7 @@ export default async function LocationHubPage({ params }: Props) {
   const { city } = await params;
   const location = locations.find((l) => l.slug === city);
   if (!location) notFound();
+  const isDammam = city === "dammam";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -90,7 +91,9 @@ export default async function LocationHubPage({ params }: Props) {
             Digital Consultant in {location.city} — Services for Mid-Size Businesses
           </h1>
           <p className="text-xl text-text-muted mb-10 max-w-3xl leading-relaxed">
-            Mohammad Fazil delivers senior-level digital strategy and execution for companies in {location.city}, {location.country}. {location.localContext}
+            {isDammam
+              ? "Explore digital marketing, SEO, paid advertising, web development, AI automation, and software services for businesses across Dammam and the Eastern Province. Use this city hub to choose the specialist service that matches your growth priority."
+              : `Mohammad Fazil delivers senior-level digital strategy and execution for companies in ${location.city}, ${location.country}. ${location.localContext}`}
           </p>
           <Button href="/contact" className="text-lg px-8 py-4">Book a Call in {location.city}</Button>
         </div>
@@ -134,12 +137,17 @@ export default async function LocationHubPage({ params }: Props) {
             The {location.city} Digital Market
           </h2>
           <div className="space-y-6 text-text-muted text-lg leading-relaxed">
-            <p>
-              {location.city} is one of the most competitive and digitally advanced markets in the {location.country === "UAE" ? "UAE" : "Kingdom of Saudi Arabia"}. Businesses here are increasingly investing in digital channels to capture a growing, tech-savvy audience.
-            </p>
-            <p>
-              {location.localContext} With deep knowledge of how local consumers and B2B buyers behave in {location.city}, Mohammad crafts strategies that actually convert — not just strategies that look good in a report.
-            </p>
+            {isDammam ? (
+              <>
+                <p>Dammam businesses serve a mix of local consumers, professional buyers, and organizations across the wider Eastern Province. That creates different digital needs: a local commercial company may depend on map visibility and fast enquiries, while an industrial or B2B supplier may need detailed service content that supports a longer evaluation process.</p>
+                <p>This hub covers the complete service range. For search-specific work—including technical SEO, Google Business Profile optimization, bilingual keyword planning, and organic lead generation—use the dedicated <Link href="/dammam/seo/" className="text-accent hover:underline">Dammam SEO services page</Link>.</p>
+              </>
+            ) : (
+              <>
+                <p>{location.city} is one of the most competitive and digitally advanced markets in the {location.country === "UAE" ? "UAE" : "Kingdom of Saudi Arabia"}. Businesses here are increasingly investing in digital channels to capture a growing, tech-savvy audience.</p>
+                <p>{location.localContext} With deep knowledge of how local consumers and B2B buyers behave in {location.city}, Mohammad crafts strategies that actually convert — not just strategies that look good in a report.</p>
+              </>
+            )}
           </div>
         </div>
       </section>
