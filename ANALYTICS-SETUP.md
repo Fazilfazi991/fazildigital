@@ -23,10 +23,12 @@ Production activation and event verification are recorded below.
 | Check | Status |
 | --- | --- |
 | Production environment variable | Configured for Production in Vercel |
-| Production deployment containing the variable | Pending current release verification |
-| `gtag.js` loaded on production | Pending current release verification |
-| GA4 collection requests | Pending current release verification |
-| Events visible in GA4 Realtime | Pending current release verification |
-| `generate_lead` key event | Pending successful GA4 receipt |
+| Production deployment containing the variable | Verified on release `9f2ab8d` |
+| `gtag.js` loaded on production | Verified once with measurement ID `G-BEGJF6PL8R` |
+| GA4 collection requests | Verified for production page views and `whatsapp_click` |
+| Events visible in GA4 Realtime | Verified in the `Fazildigital` property (ID `551832601`): `contact_form_submit`, `generate_lead`, `whatsapp_click`, and `email_click` |
+| `generate_lead` key event | Deferred: visible in Realtime, but the Admin recent-events table has not processed the new events yet (GA4 notes this can take up to 24 hours) |
 
-Do not add a second Google tag or commit a measurement ID in a separate script. After deployment, verify events in GA4 Realtime or DebugView and mark only `generate_lead` as the primary key event.
+Verification used synthetic contact details and stopped at the WhatsApp review screen; no message was sent. The observed custom event parameters contained only `method: whatsapp` where applicable and no personally identifiable information.
+
+Do not add a second Google tag or commit a measurement ID in a separate script. Once `generate_lead` appears under Admin → Data display → Events → Recent events, mark only that event as the primary key event.
