@@ -140,7 +140,7 @@ export default function AboutPage() {
                  </div>
                  <div className="flex items-center gap-3">
                     <span className="text-accent"></span>
-                    <span className="text-sm">50+ Projects Delivered</span>
+                    <span className="text-sm">Named Portfolio Work</span>
                  </div>
                  <div className="flex items-center gap-3">
                     <span className="text-accent"></span>

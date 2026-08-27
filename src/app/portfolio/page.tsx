@@ -17,7 +17,7 @@ export default function PortfolioPage() {
       tech: ["WordPress", "Elementor", "SEO Optimized"],
       url: "https://bwmc.ae",
       image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932&auto=format&fit=crop",
-      features: ["Responsive design optimized for mobile", "Fast loading speed (under 2s)", "SEO-optimized structure", "Contact form integration"]
+      features: ["Responsive design optimized for mobile", "Performance-focused build", "SEO-oriented structure", "Contact form integration"]
     },
 
     {
@@ -141,16 +141,16 @@ export default function PortfolioPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-b border-white/10 py-10">
             <div className="text-center">
-              <span className="block text-4xl font-heading font-bold text-accent mb-1">9+</span>
-              <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Years Experience</span>
+              <span className="block text-4xl font-heading font-bold text-accent mb-1">UAE</span>
+              <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Named Project Work</span>
             </div>
             <div className="text-center md:border-x border-white/10 px-4">
-              <span className="block text-4xl font-heading font-bold text-accent mb-1">100+</span>
-              <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Projects Complete</span>
+              <span className="block text-4xl font-heading font-bold text-accent mb-1">Public</span>
+              <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Website References</span>
             </div>
             <div className="text-center">
-              <span className="block text-4xl font-heading font-bold text-accent mb-1">10+</span>
-              <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Industries Served</span>
+              <span className="block text-4xl font-heading font-bold text-accent mb-1">Multi</span>
+              <span className="text-sm text-text-muted uppercase tracking-widest font-bold">Sector Portfolio</span>
             </div>
           </div>
         </div>

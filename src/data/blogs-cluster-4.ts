@@ -189,10 +189,10 @@ export const cluster4Blogs: BlogPost[] = [
       <p><strong>[Learn more about AI automation for UAE businesses →](/services/ai-automation/)</strong></p>
 
       <h3>Use Case 2: AI-Powered Code Review for Riyadh Startups</h3>
-      <p>Saudi tech startups can use the <code>xhigh</code> effort level for deep code analysis. Opus 4.7 resolves 3x more production-level issues and self-verifies suggestions before recommending changes, speeding up code review cycles by 40%.</p>
+      <p>Saudi tech startups can evaluate higher reasoning settings for complex code analysis, but productivity and defect-resolution improvements should be measured against their own review workflow rather than assumed from an unsupported percentage.</p>
 
       <h3>Use Case 3: Automated Document Processing for Abu Dhabi Enterprises</h3>
-      <p>Abu Dhabi consulting firms often process hundreds of client documents monthly. Opus 4.7 can extract data from complex tables and charts with pixel-level accuracy from high-resolution scans, saving 80% in manual data entry time.</p>
+      <p>Abu Dhabi consulting firms can test document extraction on representative tables and charts. Measure accuracy, exception handling and manual review time before publishing an efficiency result.</p>
 
       <p><strong>[Explore AI workflow automation services →](/services/ai-automation/)</strong></p>
 
@@ -351,12 +351,12 @@ export const cluster4Blogs: BlogPost[] = [
       <h2>4 High-ROI Use Cases for UAE/KSA Businesses</h2>
 
       <h3>Use Case 1: E-Commerce Checkout Optimization (Dubai/Sharjah Retailers)</h3>
-      <p><strong>Problem</strong>: Cart abandonment rates hover at 68-74% in UAE e-commerce. Minor UX friction kills conversions.</p>
+      <p><strong>Problem</strong>: Cart abandonment can be material in UAE e-commerce, but the baseline varies by store, device mix, category, and measurement setup. Minor UX friction can still suppress conversions.</p>
       <p><strong>Claude Design workflow</strong>:</p>
       <blockquote>
         Prompt: "Generate a 3-step checkout flow optimized for UAE mobile users. Include Apple Pay, Tabby BNPL, and Arabic/English toggle. Ensure WCAG AA compliance and export to React."
       </blockquote>
-      <p><strong>Result</strong>: 22-35% reduction in checkout drop-off within 30 days.</p>
+      <p><strong>Measurement</strong>: Compare checkout completion and drop-off by device before and after the UX change.</p>
       <p><strong><a href="/services/web-development/">See how we implement AI-driven UX optimization for UAE e-commerce →</a></strong></p>
 
       <h3>Use Case 2: B2B SaaS Dashboard Prototyping (Riyadh Tech Startups)</h3>
@@ -365,7 +365,7 @@ export const cluster4Blogs: BlogPost[] = [
       <blockquote>
         Prompt: "Create a analytics dashboard for Saudi B2B SaaS. Include KPI cards, AR/EN toggle, export to CSV, and role-based views. Output to Figma + React with Tailwind tokens."
       </blockquote>
-      <p><strong>Result</strong>: 3x faster MVP iteration, 40% lower design budget, faster enterprise sales cycles.</p>
+      <p><strong>Measurement plan</strong>: compare iteration time, design cost and sales-cycle feedback against the team's pre-tool baseline.</p>
 
       <h3>Use Case 3: Government & Enterprise Compliance UI (Abu Dhabi/Dubai)</h3>
       <p><strong>Problem</strong>: Public sector and regulated industries require strict accessibility, audit trails, and bilingual support. Traditional design agencies struggle with compliance documentation.</p>
@@ -381,7 +381,7 @@ export const cluster4Blogs: BlogPost[] = [
       <blockquote>
         Prompt: "Adapt our iOS app UI for Saudi market. Apply Najdi dialect microcopy, adjust date/currency formats, optimize for 6.7 inch screens. Export to SwiftUI + Flutter."
       </blockquote>
-      <p><strong>Result</strong>: 50% faster market expansion, consistent brand experience across GCC.</p>
+      <p><strong>Measurement</strong>: Track localization cycle time, consistency issues, and launch readiness across GCC markets.</p>
       <p><strong><a href="/services/ai-automation/">Explore AI automation for multi-market product launches →</a></strong></p>
 
       <h2>How to Implement Claude Design in 30 Days</h2>

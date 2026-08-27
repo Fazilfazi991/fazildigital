@@ -80,11 +80,11 @@ export default async function ServicePage({ params }: Props) {
           <div className="text-xl text-text-muted mb-10 max-w-3xl leading-relaxed">
             {slug === "seo" ? (
               <p>
-                If you are a mid-size business in Dubai or Riyadh and you are not on page 1 of Google for your core service and location keywords, you are invisible to 74% of potential customers. Mohammad does not do generic SEO. He builds search strategies for the GCC reality: bilingual search behavior, mobile-first users, Snapchat-driven discovery in KSA, and the unique commercial intent patterns of UAE consumers. This is not about rankings. It is about being found by the right people at the moment they are ready to buy.
+                If your business is not visible for its core service and location searches, qualified buyers may find competitors first. Mohammad builds search strategies for the GCC reality: bilingual search behavior, mobile-first users, Saudi discovery patterns, and the commercial intent of UAE consumers. This is not about rankings alone. It is about being found by the right people at the moment they are ready to buy.
               </p>
             ) : slug === "paid-ads" ? (
               <p>
-                In Saudi Arabia, ignoring Snapchat means ignoring the majority of users under 35. In Dubai, platform mix matters — LinkedIn and Google for B2B, TikTok and Meta for consumer brands. Mohammad does not run generic ad campaigns. He builds platform-specific strategies for the GCC: Snapchat-first funnels for KSA consumer brands, LinkedIn and Google combinations for B2B in Dubai, and TikTok creative that actually resonates in Abu Dhabi. You will see ROAS, not just reports.
+                In Saudi Arabia and the UAE, platform mix depends on the audience and buying journey. Mohammad builds channel-specific strategies across Snapchat, LinkedIn, Google, TikTok and Meta, with success definitions agreed before campaigns are scaled.
               </p>
             ) : (
               <p>{service.fullDescription}</p>
@@ -195,7 +195,6 @@ export default async function ServicePage({ params }: Props) {
               { name: "Dubai", slug: "dubai" },
               { name: "Abu Dhabi", slug: "abu-dhabi" },
               { name: "Sharjah", slug: "sharjah" },
-              { name: "Ajman", slug: "ajman" },
               { name: "Riyadh", slug: "riyadh" },
               { name: "Jeddah", slug: "jeddah" },
               { name: "Dammam", slug: "dammam" }

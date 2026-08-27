@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!location || !service) return {};
 
   let hook = "Free Audit";
-  if (serviceSlug === "ai-automation") hook = "Save 10+ Hours/Week";
+  if (serviceSlug === "ai-automation") hook = "Reduce Repetitive Manual Work";
   if (serviceSlug === "seo") hook = "Rank Higher on Google";
   if (serviceSlug === "paid-ads") hook = "Stop Wasting Ad Spend";
 

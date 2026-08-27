@@ -103,7 +103,7 @@ export const specializedContentMap: Record<string, SpecializedContent> = {
     additionalFAQs: [
       {
         question: "How much does AI automation cost in Dammam?",
-        answer: "AI automation projects for Dammam businesses typically range from SAR 6,000-20,000 for initial setup, with monthly optimization retainers of SAR 3,000-8,000. ROI is typically achieved within 30-60 days through time savings and efficiency gains."
+        answer: "AI automation scope and pricing depend on workflow complexity, integrations, data handling, and support requirements. A discovery review should define the baseline and measurement plan before any payback claim is made."
       },
       {
         question: "How does AI automation support Saudi Vision 2030 for Dammam industries?",
@@ -123,11 +123,11 @@ export const specializedContentMap: Record<string, SpecializedContent> = {
     additionalFAQs: [
       {
         question: "What is the average CPA for Snapchat ads in Saudi Arabia?",
-        answer: "Based on 28 KSA campaigns in 2025, average CPA ranges from SAR 45-95 for e-commerce, SAR 110-240 for B2B services, and SAR 35-70 for local services. Riyadh campaigns typically see 15-20% lower CPA than other regions."
+        answer: "CPA varies by sector, conversion definition, creative, landing page, season, and attribution setup. Establish a Riyadh account baseline from the advertiser's own platform and CRM data before setting targets."
       },
       {
         question: "What is a sustainable ROAS for retail brands in Riyadh?",
-        answer: "For most Riyadh-based retail brands on Snapchat or Google, a sustainable ROAS ranges between 2.5x and 4.0x. However, factors like local Najdi creative and seasonal Ramadan trends can push these numbers significantly higher."
+        answer: "A sustainable ROAS target depends on margin, repeat purchase behavior, attribution, and fulfillment costs. Set the threshold from the business's unit economics rather than a generic regional benchmark."
       }
     ]
   },

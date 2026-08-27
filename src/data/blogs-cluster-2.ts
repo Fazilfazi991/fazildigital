@@ -21,7 +21,7 @@ export const cluster2Blogs: BlogPost[] = [
       <ul class="list-disc list-inside space-y-2 mb-8 text-white/90">
         <li><strong>67% of Sharjah consumers</strong> use Google Maps to find local businesses before visiting.</li>
         <li><strong>89% of "near me" searches</strong> end in a store visit or call within 24 hours.</li>
-        <li><strong>Businesses with 5+ directory citations</strong> rank 3.2x higher in local search results.</li>
+        <li><strong>Consistent, relevant directory citations</strong> can support local search prominence; measure the effect in Search Console and local visibility reporting.</li>
       </ul>
 
       <p>But most Sharjah business owners make the same mistakes: Listing in random directories with inconsistent NAP, ignoring Arabic-language directories, and forgetting district-specific citations (Al Majaz, Al Nahda, Muwaileh).</p>
@@ -119,7 +119,7 @@ export const cluster2Blogs: BlogPost[] = [
       <div class="blog-trust-badge my-12 bg-white/5 border border-accent/20 p-8 rounded-2xl relative overflow-hidden">
         <div class="absolute top-0 left-0 w-1 h-full bg-accent"></div>
         <h4 class="text-2xl font-heading font-bold text-bg-base mb-4 italic">The 'Direct Access' Ranking Advantage</h4>
-        <p class="text-text-muted italic">"In 2026, the local pack isn't a billboard; it's a funnel. If your profile doesn't have messaging enabled and instant WhatsApp routing, you're leaking 40% of your mobile traffic to faster competitors." — Mohammad Fazil</p>
+        <p class="text-text-muted italic">"The local pack is part of the conversion journey. Clear contact options and prompt follow-up help reduce avoidable mobile enquiry loss." — Mohammad Fazil</p>
       </div>
 
       <h2 class="text-3xl mt-16 mb-6">UAE Local SEO Technical Stack</h2>
@@ -162,7 +162,7 @@ export const cluster2Blogs: BlogPost[] = [
       </ul>
 
       <h2 class="text-3xl mt-12 mb-6">The Winning Mix: The 70/20/10 Rule</h2>
-      <p>Through managing 30+ UAE content pipelines, I recommend this balance for 2026:</p>
+      <p>For UAE content pipelines, use this as a starting framework for 2026 and adjust the balance using your own publishing and conversion data:</p>
       
       <div class="overflow-x-auto my-8 border border-white/10 rounded-xl">
         <table class="w-full text-left border-collapse bg-black/20">

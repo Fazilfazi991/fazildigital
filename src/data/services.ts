@@ -17,7 +17,7 @@ export const services: Service[] = [
     fullDescription:
       "Search engine optimization for mid-size businesses targeting Google rankings in the UAE and Saudi Arabia. Includes technical SEO, on-page optimization, content strategy, and local SEO for Dubai, Riyadh, Jeddah and wider GCC cities.",
     longOpening:
-      "If you're a mid-size business in Dubai or Riyadh and you're not on page 1 of Google for your core service + location keywords, you're invisible to 74% of potential customers. Mohammad doesn't do generic 'SEO'. He builds search strategies for the GCC reality: bilingual search behavior, mobile-first users, Snapchat-driven discovery in KSA, and the unique commercial intent patterns of UAE consumers. This isn't about rankings. It's about being found by the right people, at the moment they're ready to buy.",
+      "If your business is not visible for its core service and location searches, qualified buyers may find competitors first. Mohammad builds search strategies for the GCC reality: bilingual search behavior, mobile-first users, Saudi discovery patterns, and the commercial intent of UAE consumers. This is not about rankings alone. It is about being found by the right people at the moment they are ready to buy.",
     whoItsFor:
       "Mid-size businesses in the UAE and Saudi Arabia that rely on Google to generate inbound leads — and currently aren't ranking on page 1 for their most valuable service + location keyword combinations.",
     deliverables: [
@@ -34,7 +34,7 @@ export const services: Service[] = [
       {
         question: "How long does SEO take to show results in Dubai or Saudi Arabia?",
         answer:
-          "For competitive service + location keywords in the UAE and KSA, you should expect meaningful ranking improvements within 3–6 months and significant lead impact within 6–12 months. Shorter timelines are possible for lower-competition niches or locations. SEO is a compounding investment — the results accelerate over time rather than plateauing.",
+          "Timelines depend on the site's starting condition, competition, authority and implementation pace. Progress is assessed against an agreed Search Console and analytics baseline rather than a universal ranking deadline.",
       },
       {
         question: "Do you focus on Arabic SEO as well as English?",
@@ -102,7 +102,7 @@ export const services: Service[] = [
       {
         question: "Do you take over existing campaigns or start fresh?",
         answer:
-          "Either. If you have existing campaigns, Mohammad audits them first and preserves what is working. If starting fresh, the first 30 days focus on strategy and foundation before any spend is committed.",
+          "Either. If you have existing campaigns, Mohammad audits them first and preserves what is working. If starting fresh, the initial phase focuses on strategy, tracking and campaign foundations before spend is scaled.",
       },
       {
         question: "Can you work alongside our internal marketing team?",
@@ -140,12 +140,12 @@ export const services: Service[] = [
       {
         question: "What is a realistic ROAS for paid ads in Dubai or Riyadh?",
         answer:
-          "This depends entirely on your industry, product margin, and funnel quality. E-commerce clients typically target 3x–6x ROAS in the GCC market. Lead generation clients track cost per lead (CPL) which varies by sector. The first 60 days are used to establish baselines — aggressive optimization follows once data is collected.",
+          "This depends on your industry, product margin, funnel quality and attribution setup. E-commerce and lead-generation campaigns require different success definitions, so targets are agreed after baseline data is reviewed.",
       },
       {
         question: "How much ad spend do you typically manage?",
         answer:
-          "Mohammad works with budgets ranging from AED 10,000/month to over AED 200,000/month depending on the client. Budget level doesn't affect the quality of strategy — it affects scope and scale of campaigns.",
+          "Campaign scope is shaped by the available media budget, channel mix, creative requirements, and measurement maturity. Budget level changes scale and testing capacity, not the need for clear strategy.",
       },
       {
         question: "Do you manage creative or just the media buying?",
@@ -155,7 +155,7 @@ export const services: Service[] = [
       {
         question: "Why is Snapchat important for Saudi Arabia specifically?",
         answer:
-          "Saudi Arabia has one of the highest Snapchat penetration rates in the world. A significant portion of the Saudi consumer market — particularly under 35 — consumes content primarily on Snap. Any paid media strategy targeting Saudi Arabia that ignores Snapchat is leaving a substantial audience untouched.",
+          "Snapchat is an important consumer channel in Saudi Arabia, especially for younger audiences. Whether it belongs in the media plan depends on the buyer, creative format, offer and measurement setup.",
       },
       {
         question: "How do you handle underperforming campaigns?",

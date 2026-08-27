@@ -1,7 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
 import Script from "next/script";
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import { clients } from "@/data/portfolio";
@@ -54,7 +53,7 @@ export default function SharjahDigitalMarketing() {
     },
     {
       question: "What is the fastest way to rank for Sharjah-specific keywords?",
-      answer: "The 'Direct Access' methodology. Instead of generic backlinking, we focus on building topical authority through long-form Arabic/English guides tailored to Sharjah's economic sectors (Logistics, Education, and Manufacturing). This typically yields Page 1 movement within 45-60 days."
+      answer: "The 'Direct Access' methodology. Instead of generic backlinking, we focus on building topical authority through Arabic and English guides tailored to Sharjah's economic sectors, including logistics, education and manufacturing. Ranking movement depends on the site's starting authority and competition."
     }
   ];
 
@@ -92,7 +91,7 @@ export default function SharjahDigitalMarketing() {
             </h1>
 
             <p className="text-xl md:text-2xl text-text-muted max-w-3xl mx-auto mb-12 leading-relaxed font-light">
-              We don't build websites. We deploy <span className="text-bg-base font-bold">Revenue Engines</span> customized for Sharjah’s unique economic architecture. From <span className="text-accent italic">Shams</span> innovation to <span className="text-accent italic">SAIF Zone</span> logistics.
+              We don&apos;t build websites. We deploy <span className="text-bg-base font-bold">Revenue Engines</span> customized for Sharjah’s unique economic architecture. From <span className="text-accent italic">Shams</span> innovation to <span className="text-accent italic">SAIF Zone</span> logistics.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -168,7 +167,7 @@ export default function SharjahDigitalMarketing() {
                   <span className="text-accent underline decoration-white/10 underline-offset-8">BILINGUAL</span> BRIDGE.
                 </h2>
                 <p className="text-xl text-text-muted leading-relaxed font-light">
-                  Ranking for "Digital Marketing Sharjah" requires more than just content—it requires <span className="text-bg-base font-bold italic">Entity Authority</span>. Sharjah's economy is distinctively split between established family-owned industrial fleets and high-velocity digital free zones. 
+                  Ranking for &quot;Digital Marketing Sharjah&quot; requires more than just content—it requires <span className="text-bg-base font-bold italic">Entity Authority</span>. Sharjah&apos;s economy is distinctively split between established family-owned industrial fleets and high-velocity digital free zones.
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

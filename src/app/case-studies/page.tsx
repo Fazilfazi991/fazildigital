@@ -24,60 +24,60 @@ const caseStudies = [
     client: "E-commerce Brand",
     location: "Dubai, UAE",
     service: "SEO + Content Strategy",
-    metric: "+180%",
-    metricLabel: "Organic Traffic in 6 Months",
+    metric: "SEO",
+    metricLabel: "Technical + Content Scope",
     description:
-      "A mid-size UAE e-commerce brand with strong product lines but virtually no organic search presence. Built a complete SEO foundation from scratch — technical audit, on-page optimization, and a content strategy targeting high-intent commercial keywords across Dubai and the UAE.",
+      "An anonymized UAE e-commerce engagement focused on technical SEO, on-page optimization and a content roadmap for qualified organic visibility. Performance reporting has not been supplied for publication.",
   },
   {
     slug: "riyadh-paid-ads",
     client: "Fintech Startup",
     location: "Riyadh, Saudi Arabia",
     service: "Paid Ads — Google + Snapchat",
-    metric: "3.2×",
-    metricLabel: "ROAS in 90 Days",
+    metric: "Paid Media",
+    metricLabel: "Google + Snapchat Scope",
     description:
-      "A Series A fintech startup entering the Saudi consumer market needed rapid customer acquisition with tight unit economics. Rebuilt their entire paid media infrastructure, introduced Snapchat as a primary channel (previously ignored), and restructured the Google Ads account around intent-based targeting.",
+      "An anonymized Saudi paid-media engagement covering Google and Snapchat campaign planning. No ROAS or acquisition result is published without the source advertising report.",
   },
   {
     slug: "dammam-marketing",
     client: "Manufacturing Company",
     location: "Dammam, Eastern Province",
     service: "B2B Digital Marketing",
-    metric: "−40%",
-    metricLabel: "Cost Per Lead in 4 Months",
+    metric: "B2B",
+    metricLabel: "Demand Generation Scope",
     description:
-      "A B2B manufacturer in the Eastern Province was spending significantly on digital marketing with unclear returns. Consolidated fragmented campaigns, implemented proper conversion tracking, and shifted budget to the channels actually generating qualified leads — primarily LinkedIn and Google Search.",
+      "An anonymized Eastern Province engagement covering B2B demand generation and measurement planning. A CPL result is not published because the source platform and CRM reports are unavailable.",
   },
   {
     slug: "jeddah-web-development",
     client: "Professional Services Firm",
     location: "Jeddah, Saudi Arabia",
     service: "Web Development + SEO",
-    metric: "Page 1",
-    metricLabel: "Google Rankings for 12 Target Keywords",
+    metric: "Web + SEO",
+    metricLabel: "Site Architecture Scope",
     description:
-      "A Jeddah-based professional services firm with an outdated, unindexed website rebuilt entirely on Next.js with full SEO architecture from day one. Within 5 months of launch, the site ranked on page 1 for all 12 primary service + location keyword combinations.",
+      "An anonymized Jeddah professional-services engagement describing website and SEO architecture objectives. Ranking outcomes remain unpublished until a dated Search Console export is available.",
   },
   {
     slug: "abu-dhabi-social-media",
     client: "Real Estate Developer",
     location: "Abu Dhabi, UAE",
     service: "Social Media Management",
-    metric: "+320%",
-    metricLabel: "LinkedIn Engagement & Qualified DM Leads",
+    metric: "LinkedIn",
+    metricLabel: "Authority Content Scope",
     description:
-      "A real estate development company in Abu Dhabi with a dormant LinkedIn presence and no social strategy. Built a 12-month content programme positioning the founder as a thought leader in UAE real estate — resulting in a pipeline of inbound qualified investor inquiries via LinkedIn DMs.",
+      "An anonymized Abu Dhabi social-media engagement focused on LinkedIn content and authority positioning. No engagement or lead increase is claimed without the platform report and lead record.",
   },
   {
     slug: "sharjah-ai-automation",
     client: "Logistics Company",
     location: "Sharjah, UAE",
     service: "AI Automation",
-    metric: "15 hrs/week",
-    metricLabel: "Manual Work Eliminated Per Employee",
+    metric: "Automation",
+    metricLabel: "Workflow Design Scope",
     description:
-      "A Sharjah logistics company with a heavily manual lead intake and reporting process. Automated the entire inbound lead flow using Make and OpenAI — automatic qualification, CRM logging, and weekly report generation. Eliminated approximately 15 hours per week of manual work across the operations team.",
+      "An anonymized Sharjah workflow-automation engagement covering lead intake, CRM logging and reporting objectives. Time savings are not published without a documented before-and-after time study.",
   },
 ];
 
@@ -88,7 +88,7 @@ export default function CaseStudiesPage() {
 
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-6">
-            Results That Speak
+            Selected Project Notes
           </h1>
           <p className="text-xl text-text-muted max-w-2xl mx-auto">
             Selected GCC engagements and project notes. Named work is supported by public project references; numerical outcomes are only treated as verified when the underlying report is available.

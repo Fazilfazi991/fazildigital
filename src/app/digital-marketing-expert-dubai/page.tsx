@@ -162,7 +162,7 @@ export default function DigitalMarketingExpertDubai() {
 
           {/* Subtle trust strip */}
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-text-muted mb-10 py-5 border-y border-white/5">
-            <span> 50+ businesses served</span>
+            <span> Named UAE portfolio work</span>
             <span> UAE &amp; KSA market expertise</span>
             <span> Transparent reporting</span>
           </div>
@@ -250,8 +250,8 @@ export default function DigitalMarketingExpertDubai() {
 
           <div className="space-y-5 text-text-muted leading-relaxed">
             <p>
-              I&apos;ve been working in digital marketing across the UAE and Saudi Arabia for over 7 years.
-              Along the way, I noticed a pattern: businesses often struggled to find marketing help
+              I work in digital marketing across the UAE and Saudi Arabia.
+              Across that work, I noticed a pattern: businesses often struggled to find marketing help
               that truly understood the local market — the bilingual search behaviour, the Snapchat-first
               audiences in KSA, the unique buying patterns in the GCC.
             </p>
@@ -268,8 +268,8 @@ export default function DigitalMarketingExpertDubai() {
           {/* Quick facts */}
           <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
-              { stat: "7+", label: "Years in GCC markets" },
-              { stat: "50+", label: "Businesses served" },
+              { stat: "Direct", label: "Senior access" },
+              { stat: "Named", label: "Portfolio work" },
               { stat: "UAE & KSA", label: "Primary markets" },
               { stat: "Direct", label: "Access always" },
             ].map((f, i) => (
@@ -286,23 +286,23 @@ export default function DigitalMarketingExpertDubai() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 border-b border-white/5">
         <div className="max-w-3xl mx-auto">
           <div className="mb-14">
-            <h2 className="text-3xl font-heading font-bold text-bg-base mb-3">Recent Results</h2>
-            <p className="text-text-muted">Real outcomes for businesses in the UAE and Saudi Arabia.</p>
+            <h2 className="text-3xl font-heading font-bold text-bg-base mb-3">Selected Engagements</h2>
+            <p className="text-text-muted">Project scopes are shown without numerical outcomes where source reports are unavailable.</p>
           </div>
 
           <div className="space-y-6">
             {[
               {
-                client: "Dubai B2B Company",
+                client: "Anonymized Dubai Engagement",
                 service: "SEO & Content Strategy",
-                metrics: [{ val: "+180%", label: "Organic traffic" }, { val: "6 months", label: "Time to results" }],
-                quote: "Mohammad's approach was practical and focused on what actually matters for our business."
+                metrics: [{ val: "SEO", label: "Technical review" }, { val: "Content", label: "Search roadmap" }],
+                note: "Performance outcome withheld until a dated analytics comparison and publication approval are available."
               },
               {
-                client: "Riyadh E-commerce Brand",
+                client: "Anonymized Riyadh Engagement",
                 service: "Paid Ads — Google & Snapchat",
-                metrics: [{ val: "3.2x", label: "Return on ad spend" }, { val: "−35%", label: "Cost per acquisition" }],
-                quote: "Finally, someone who understands the Saudi market and how to reach our customers."
+                metrics: [{ val: "Google", label: "Intent capture" }, { val: "Snapchat", label: "Audience strategy" }],
+                note: "ROAS and CPA outcomes are withheld until the source advertising report and attribution settings are available."
               }
             ].map((cs, i) => (
               <div key={i} className="p-8 rounded-2xl border border-white/10 bg-white/[0.02] border-l-2 border-l-accent">
@@ -318,7 +318,7 @@ export default function DigitalMarketingExpertDubai() {
                     </div>
                   ))}
                 </div>
-                <p className="text-sm text-text-muted italic border-t border-white/5 pt-4">&ldquo;{cs.quote}&rdquo;</p>
+                <p className="text-sm text-text-muted border-t border-white/5 pt-4">{cs.note}</p>
               </div>
             ))}
           </div>

@@ -54,16 +54,16 @@ const caseStudies: CaseStudy[] = [
     client: "E-commerce Brand",
     location: "Dubai, UAE",
     service: "SEO + Content Strategy",
-    metric: "+180%",
-    metricLabel: "Organic Traffic in 6 Months",
+    metric: "SEO",
+    metricLabel: "Technical + Content Scope",
     fullStory: `
-      <p>This mid-size UAE e-commerce brand faced a plateau in growth, relying heavily on expensive paid search traffic. We implemented a complete SEO overhaul to build a sustainable, long-term traffic channel.</p>
-      <h2>The Challenge</h2>
-      <p>The client had a wide product range but poor technical SEO health. Their site structure prevented Google from indexing key product categories effectively, and they lacked local content for the Dubai market.</p>
-      <h2>The Strategy</h2>
-      <p>We executed a multi-phased approach: a deep technical audit, page speed optimization, and a content roadmap targeting high-intent commercial keywords. We also optimized their Google Business Profile for local visibility across Dubai Marina and Downtown.</p>
-      <h2>The Result</h2>
-      <p>In just six months, organic sessions increased by 180%, and conversion rate from organic search surpassed direct traffic for the first time.</p>
+      <p>This anonymized UAE e-commerce project note records an SEO and content engagement. The source analytics and client approval needed to publish a performance outcome are not available.</p>
+      <h2>Objective</h2>
+      <p>The documented objective was to improve qualified organic visibility and reduce dependence on paid acquisition.</p>
+      <h2>Recorded scope</h2>
+      <p>The existing project summary lists technical review, on-page optimization and content planning. More granular delivery evidence has not been supplied.</p>
+      <h2>Evidence boundary</h2>
+      <p>No traffic increase, conversion-rate change or ranking result is claimed until a dated GA4 or Search Console comparison and publication approval are archived.</p>
     `
   },
   {
@@ -71,17 +71,17 @@ const caseStudies: CaseStudy[] = [
     client: "Fintech Startup",
     location: "Riyadh, Saudi Arabia",
     service: "Paid Ads — Google + Snapchat",
-    metric: "3.2×",
-    metricLabel: "ROAS in 90 Days",
-    fullStory: "<p>How we scaled a Saudi fintech's acquisition funnel using hyper-local targeting and Snapchat performance ads...</p>"
+    metric: "Paid Media",
+    metricLabel: "Google + Snapchat Scope",
+    fullStory: "<p>This anonymized Saudi engagement records Google and Snapchat paid-media planning. No ROAS, CPA or acquisition result is claimed because the advertising report, spend period and attribution settings are unavailable.</p>"
   },
   {
     slug: "dammam-marketing",
     client: "Manufacturing Company",
     location: "Dammam, Eastern Province",
     service: "B2B Digital Marketing",
-    metric: "−40%",
-    metricLabel: "Cost Per Lead in 4 Months",
+    metric: "B2B",
+    metricLabel: "Demand Generation Scope",
     fullStory: "<p>Streamlining a B2B lead generation engine for an industrial client in the Eastern Province. The search component is now documented through the dedicated <a href=\"/dammam/seo/\">Dammam SEO services</a> pathway, covering technical visibility, B2B service content, and qualified organic enquiries.</p>"
   },
   {
@@ -89,27 +89,27 @@ const caseStudies: CaseStudy[] = [
     client: "Professional Services Firm",
     location: "Jeddah, Saudi Arabia",
     service: "Web Development + SEO",
-    metric: "Page 1",
-    metricLabel: "Google Rankings for 12 Target Keywords",
-    fullStory: "<p>Building a high-performance Next.js site for a Jeddah-based legal consultancy...</p>"
+    metric: "Web + SEO",
+    metricLabel: "Site Architecture Scope",
+    fullStory: "<p>This anonymized Jeddah project note covers web-development and SEO architecture objectives. No keyword-count or page-one ranking result is claimed without a dated Search Console export and delivery record.</p>"
   },
   {
     slug: "abu-dhabi-social-media",
     client: "Real Estate Developer",
     location: "Abu Dhabi, UAE",
     service: "Social Media Management",
-    metric: "+320%",
-    metricLabel: "LinkedIn Engagement & Qualified DM Leads",
-    fullStory: "<p>Developing a thought-leadership pipeline for an Abu Dhabi property developer...</p>"
+    metric: "LinkedIn",
+    metricLabel: "Authority Content Scope",
+    fullStory: "<p>This anonymized Abu Dhabi project note covers LinkedIn content and authority positioning. No engagement or lead result is claimed without platform reporting and a documented lead definition.</p>"
   },
   {
     slug: "sharjah-ai-automation",
     client: "Logistics Company",
     location: "Sharjah, UAE",
     service: "AI Automation",
-    metric: "15 hrs/week",
-    metricLabel: "Manual Work Eliminated Per Employee",
-    fullStory: "<p>Automating complex logistics workflows to drive operational efficiency in Sharjah...</p>"
+    metric: "Automation",
+    metricLabel: "Workflow Design Scope",
+    fullStory: "<p>This anonymized Sharjah project note covers workflow-automation objectives. No time-saving result is claimed without a before-and-after time study and implementation evidence.</p>"
   }
 ];
 

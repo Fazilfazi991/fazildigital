@@ -10,7 +10,7 @@ import AgencyComparison from "@/components/visuals/AgencyComparison";
 
 export const metadata: Metadata = {
   title: "Digital Marketing Expert Dubai | SEO, Ads & AI | Free Audit",
-  description: "Mohammad Fazil helps mid-size UAE & KSA businesses grow through SEO, paid ads & AI automation. 50+ clients served. Book your free 30-min growth audit. No pitch, just results.",
+  description: "Mohammad Fazil helps mid-size UAE and Saudi businesses with SEO, paid ads and AI automation through direct senior consulting.",
   alternates: { canonical: "https://www.fazildigital.com/" },
 };
 
@@ -57,7 +57,7 @@ export default function Home() {
             "name": "Why hire a digital consultant vs. a marketing agency in Dubai?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Unlike agencies that outsource your account to junior staff, a consultant provides direct-access expertise. You get senior-level strategy and execution from the same person, ensuring no knowledge loss and 100% accountability for your ROI."
+              "text": "A direct consultant keeps strategy and execution with the same person, reducing briefing loss and making responsibility for the work clear."
             }
           },
           {
@@ -65,7 +65,7 @@ export default function Home() {
             "name": "How long does it take to see ROI from SEO or AI automation in the GCC?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Paid ads typically show initial results within 48-72 hours. SEO focuses on long-term authority, often taking 3-6 months for significant movement. AI automation projects usually pay for themselves within 30-60 days through reclaimed time and operational efficiency."
+              "text": "Timelines depend on the starting point, market, budget and measurement quality. Paid media can produce data quickly, while SEO and automation should be evaluated against agreed baselines over an appropriate observation period."
             }
           }
         ]
@@ -138,7 +138,7 @@ export default function Home() {
             {/* New Trust Strip */}
             <div className="pt-2 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[11px] md:text-xs font-bold uppercase tracking-widest text-accent/80">
               <span className="flex items-center"> Based in Dubai</span>
-              <span className="flex items-center"> 50+ GCC Businesses Served</span>
+              <span className="flex items-center"> Named GCC Portfolio Work</span>
               <span className="flex items-center"> UAE & Saudi Arabia</span>
               <span className="flex items-center"> Direct Senior Access</span>
             </div>
@@ -172,20 +172,20 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-60 hover:opacity-100 transition-all duration-500">
              <div className="flex items-center gap-2">
-               <span className="text-2xl font-bold font-heading text-bg-base">50+</span>
-               <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Businesses<br/>Served</span>
+               <span className="text-2xl font-bold font-heading text-bg-base">UAE</span>
+               <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Named Portfolio<br/>Work</span>
              </div>
              <div className="flex items-center gap-2">
-               <span className="text-2xl font-bold font-heading text-bg-base">4.9/5</span>
-               <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Average<br/>Rating</span>
+               <span className="text-2xl font-bold font-heading text-bg-base">7</span>
+               <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Core Digital<br/>Services</span>
              </div>
              <div className="flex items-center gap-2">
-               <span className="text-2xl font-bold font-heading text-bg-base">100%</span>
+               <span className="text-2xl font-bold font-heading text-bg-base">Direct</span>
                <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Direct Senior<br/>Access</span>
              </div>
              <div className="flex items-center gap-2">
-               <span className="text-2xl font-bold font-heading text-bg-base">7+</span>
-               <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Years in<br/>GCC Market</span>
+               <span className="text-2xl font-bold font-heading text-bg-base">UAE + KSA</span>
+               <span className="text-[10px] leading-tight text-text-muted uppercase font-bold tracking-tighter">Primary<br/>Markets</span>
              </div>
           </div>
         </div>
@@ -268,7 +268,7 @@ export default function Home() {
                 {l.city}
               </Link>
             ))}
-            <Link href="/locations/gcc" className="px-5 py-2.5 rounded-full border border-white/10 hover:border-accent hover:bg-white/5 text-bg-base transition-colors bg-primary font-medium text-sm">
+            <Link href="/markets" className="px-5 py-2.5 rounded-full border border-white/10 hover:border-accent hover:bg-white/5 text-bg-base transition-colors bg-primary font-medium text-sm">
               GCC
             </Link>
           </div>
@@ -389,8 +389,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
-              <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-4">Results That Speak</h2>
-              <p className="text-lg text-text-muted">Measurable outcomes for mid-size businesses in the GCC.</p>
+              <h2 className="text-3xl md:text-5xl font-heading font-bold text-bg-base mb-4">Selected Project Work</h2>
+              <p className="text-lg text-text-muted">Documented scopes and evidence boundaries for GCC digital engagements.</p>
             </div>
             <Link href="/case-studies" className="text-accent font-medium hover:underline underline-offset-4">
               View All Work &rarr;
@@ -398,22 +398,22 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="group relative rounded-2xl border border-white/5 bg-white/[0.01] backdrop-blur-sm p-8 hover:bg-white/[0.02] hover:shadow-[0_0_30px_rgba(200,151,58,0.1)] transition-all duration-300">
-              <span className="text-sm text-text-muted block mb-4">E-commerce Brand, Dubai</span>
-              <h3 className="text-2xl font-heading font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">+180% Organic Traffic in 6 Months</h3>
-              <p className="text-accent text-sm font-semibold mb-6">SEO + Content Strategy</p>
-              <Link href="/case-studies/dubai-seo" className="text-bg-base/80 hover:text-accent border-b border-bg-base/30 hover:border-accent pb-1 inline-block">Read Case Study <span className="inline-block transition-transform group-hover:translate-x-1">→</span></Link>
+              <span className="text-sm text-text-muted block mb-4">Green Bags UAE, Dubai</span>
+              <h3 className="text-2xl font-heading font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">Named Public Portfolio Project</h3>
+              <p className="text-accent text-sm font-semibold mb-6">SEO + Google Ads + Content Marketing</p>
+              <Link href="/case-studies/green-bags-uae" className="text-bg-base/80 hover:text-accent border-b border-bg-base/30 hover:border-accent pb-1 inline-block">Read Project Note <span className="inline-block transition-transform group-hover:translate-x-1">→</span></Link>
             </div>
             <div className="group relative rounded-2xl border border-white/5 bg-white/[0.01] backdrop-blur-sm p-8 hover:bg-white/[0.02] hover:shadow-[0_0_30px_rgba(200,151,58,0.1)] transition-all duration-300">
               <span className="text-sm text-text-muted block mb-4">Fintech Startup, Riyadh</span>
-              <h3 className="text-2xl font-heading font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">3.2x ROAS in 90 Days</h3>
+              <h3 className="text-2xl font-heading font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">Google + Snapchat Campaign Scope</h3>
               <p className="text-accent text-sm font-semibold mb-6">Paid Ads + Landing Pages</p>
-              <Link href="/case-studies/riyadh-paid-ads" className="text-bg-base/80 hover:text-accent border-b border-bg-base/30 hover:border-accent pb-1 inline-block">Read Case Study <span className="inline-block transition-transform group-hover:translate-x-1">→</span></Link>
+              <Link href="/case-studies/riyadh-paid-ads" className="text-bg-base/80 hover:text-accent border-b border-bg-base/30 hover:border-accent pb-1 inline-block">Read Project Note <span className="inline-block transition-transform group-hover:translate-x-1">→</span></Link>
             </div>
             <div className="group relative rounded-2xl border border-white/5 bg-white/[0.01] backdrop-blur-sm p-8 hover:bg-white/[0.02] hover:shadow-[0_0_30px_rgba(200,151,58,0.1)] transition-all duration-300 hidden lg:block">
               <span className="text-sm text-text-muted block mb-4">Manufacturing, Dammam</span>
-              <h3 className="text-2xl font-heading font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">40% Decrease in CPL</h3>
+              <h3 className="text-2xl font-heading font-bold text-bg-base mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-bg-base group-hover:to-accent transition-all duration-300">B2B Demand Generation Scope</h3>
               <p className="text-accent text-sm font-semibold mb-6">B2B Digital Marketing</p>
-              <Link href="/case-studies/dammam-marketing" className="text-bg-base/80 hover:text-accent border-b border-bg-base/30 hover:border-accent pb-1 inline-block">Read Case Study <span className="inline-block transition-transform group-hover:translate-x-1">→</span></Link>
+              <Link href="/case-studies/dammam-marketing" className="text-bg-base/80 hover:text-accent border-b border-bg-base/30 hover:border-accent pb-1 inline-block">Read Project Note <span className="inline-block transition-transform group-hover:translate-x-1">→</span></Link>
             </div>
           </div>
         </div>
@@ -471,7 +471,7 @@ export default function Home() {
           <div className="mt-8 pt-8 border-t border-white/5">
             <p className="text-accent font-bold tracking-widest uppercase text-xs mb-2">Limited Availability</p>
             <p className="text-bg-base/60 text-sm">
-              Fazil accepts 3 new clients per quarter to maintain direct access quality.<br/>
+              Project capacity is intentionally limited to preserve direct access.<br/>
               <span className="text-accent font-bold">Ask about current project availability.</span>
             </p>
           </div>

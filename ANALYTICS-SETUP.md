@@ -27,7 +27,7 @@ Production activation and event verification are recorded below.
 | `gtag.js` loaded on production | Verified once with measurement ID `G-BEGJF6PL8R` |
 | GA4 collection requests | Verified for production page views and `whatsapp_click` |
 | Events visible in GA4 Realtime | Verified in the `Fazildigital` property (ID `551832601`): `contact_form_submit`, `generate_lead`, `whatsapp_click`, and `email_click` |
-| `generate_lead` key event | Rechecked 2026-08-27: still visible in Realtime, but Admin → Events → Recent events remains empty. Deferred without waiting; GA4 notes processing can take up to 24 hours. |
+| `generate_lead` key event | Rechecked again in Chrome on 2026-08-27: Admin → Data display → Events → Recent events still shows `0 of 0`, so `generate_lead` cannot yet be marked as a Key Event. Deferred immediately without waiting. Existing key events were left unchanged. |
 
 Verification used synthetic contact details and stopped at the WhatsApp review screen; no message was sent. The observed custom event parameters contained only `method: whatsapp` where applicable and no personally identifiable information.
 

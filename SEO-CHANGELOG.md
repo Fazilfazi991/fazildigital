@@ -1,5 +1,17 @@
 # Fazil Digital SEO Changelog
 
+## 2026-08-27 — Evidence-led credibility cleanup
+
+- Audited the repository and production claim surfaces for performance, scale, rating, experience, spend, and project-count assertions.
+- Found no analytics, ad-platform, CRM, signed testimonial, dated before/after, or publication-approval evidence for the numerical case-study outcomes. The internal PRD contains placeholder marketing examples and was not accepted as evidence.
+- Removed or softened 41 unsubstantiated claim families across the homepage, case-study index/details, portfolio, major service templates, Dubai expert page, Sharjah digital-marketing page, metadata/schema-adjacent copy, and supporting articles.
+- Replaced case-study result numbers with documented scope or objective wording while preserving the pages, project context, services, links, and design.
+- Kept Green Bags UAE evidence-bounded: named project, live website, documented service scope, repository visual disclaimer, related services, and non-performance `CreativeWork` structured data.
+- Protected monitored SEO pages from substantive rewrites; only narrow credibility corrections were made where unsupported claims were directly present.
+- Fresh Search Console snapshot: 20 clicks, 4,891 impressions, 0.4% CTR, average position 38.5. Protected-page movement remains `TOO EARLY`.
+- GA4 Admin recheck: Recent events remains `0 of 0`; `generate_lead` could not yet be marked as a Key Event and existing key events were unchanged.
+- **Deployment commit/SHA:** Recorded in the daily report and Git history for this release.
+
 ## 2026-08-27 — Baseline technical SEO and freshness pass
 
 - **URLs:** all blog articles
