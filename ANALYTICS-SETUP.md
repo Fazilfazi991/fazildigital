@@ -4,7 +4,7 @@ The site has one GA4 integration through `src/components/Analytics.tsx`. The mea
 
 ## Current development implementation — 6 November 2026
 
-The current Saudi review form prepares a draft, then offers an outbound WhatsApp action. These events describe separate intent stages; none verifies message delivery, a qualified lead or a sale.
+The Saudi review form prepares a message in the browser. The visitor copies it and opens a clean WhatsApp destination, then pastes and sends it there. A selectable manual copy fallback appears if clipboard access fails. The message is never placed in an outbound URL. These events describe separate intent stages; none verifies message delivery, a qualified lead or a sale.
 
 | Event | Trigger | Data sent |
 | --- | --- | --- |
@@ -14,7 +14,7 @@ The current Saudi review form prepares a draft, then offers an outbound WhatsApp
 | `email_click` | Click on a `mailto:` link | Event name only |
 | `phone_click` | Click on a `tel:` link | Event name only |
 
-Names, email addresses, phone numbers, form messages, website field contents and WhatsApp message text are not passed as custom event parameters. The approved outbound destination is `https://wa.me/971542763828`. A prepared message remains a draft until the visitor chooses to send it in WhatsApp.
+Names, email addresses, phone numbers, form messages, website field contents and WhatsApp message text are not passed as custom event parameters. The approved outbound destination is `https://wa.me/971542763828`, without a message query string. Synthetic intercepted testing covers both review forms and simulated enhanced outbound `link_url` collection; see `reports/release-privacy-test.json`. It does not inspect the real GA4 stream or guarantee the behavior of arbitrary third-party scripts. A prepared message remains a draft until the visitor chooses to paste and send it in WhatsApp.
 
 The current bridge does **not** emit `generate_lead`. Do not carry the old instruction to mark that event as a primary key event into this release. If the owner later defines an intent event as a key event, its reporting label must still distinguish intent from qualified enquiries. Qualification requires a separate, evidence-backed business process; the website does not claim a CRM or a confirmed delivery callback.
 

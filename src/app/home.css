@@ -173,6 +173,9 @@
 .fd-draft { margin-top: 22px; padding: 20px; border: 1px solid #81917c; font-size: 12px; }
 .fd-draft strong { display: block; font-weight: 500; }
 .fd-draft a { display: inline-block; text-decoration: underline; margin-top: 12px; }
+.fd-draft button { display: block; width: auto; margin: 14px 0 0; padding: 10px 15px; border: 1px solid #d2dacb; border-radius: 3px; cursor: pointer; color: inherit; }
+.fd-draft p { margin-top: 10px; }
+.fd-draft label { margin-top: 16px; }
 .fd-footer { padding-block: 52px 23px; }
 .fd-footer-top { display: flex; justify-content: space-between; align-items: start; gap: 50px; padding-bottom: 45px; }
 .fd-footer-top > p { color: var(--fd-muted); font-size: 12px; }

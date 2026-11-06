@@ -40,7 +40,7 @@ const sources = {
 export const saudiServices: Record<ServiceSlug, SaudiPageContent> = {
   seo: {
     slug: "seo", path: "/services/seo/", label: "SEO services", eyebrow: "SEO services · Saudi Arabia",
-    title: "An SEO strategy connected to your business.",
+    title: "SEO services for Saudi businesses.",
     intro: "Technical foundations, local visibility and original content, brought together in a practical SEO programme for Saudi businesses. Work directly with Mohammad Fazil on the priorities that deserve your attention.",
     metaTitle: "SEO Services in Saudi Arabia | Fazil Digital",
     metaDescription: "SEO services for Saudi businesses: technical audits, local search, Arabic and English keyword planning, content strategy and clear reporting with Mohammad Fazil.",
@@ -66,7 +66,7 @@ export const saudiServices: Record<ServiceSlug, SaudiPageContent> = {
   },
   "technical-seo": {
     slug: "technical-seo", path: "/services/technical-seo/", label: "Technical SEO", eyebrow: "Technical SEO · Saudi Arabia",
-    title: "Make your website easier to find, understand and use.",
+    title: "Technical SEO for Saudi websites.",
     intro: "A practical technical SEO review for Saudi websites. Identify the barriers affecting important pages, give developers clear priorities and validate the changes after implementation.",
     metaTitle: "Technical SEO Services & Audits Saudi Arabia | Fazil Digital",
     metaDescription: "Technical SEO audits for Saudi websites: crawlability, indexing, canonicals, site structure, multilingual requirements and performance priorities with clear validation.",
@@ -92,7 +92,7 @@ export const saudiServices: Record<ServiceSlug, SaudiPageContent> = {
   },
   "local-seo": {
     slug: "local-seo", path: "/services/local-seo/", label: "Local SEO", eyebrow: "Local SEO · Saudi Arabia",
-    title: "Be clearer to the customers looking nearby.",
+    title: "Local SEO for Saudi businesses.",
     intro: "Local SEO for Saudi businesses with genuine local operations. Bring your website, business information and customer journey into a consistent, useful experience.",
     metaTitle: "Local SEO Services for Saudi Businesses | Fazil Digital",
     metaDescription: "Local SEO for Saudi businesses: accurate business information, eligible Google Business Profiles, useful location content and meaningful enquiry measurement.",
@@ -118,7 +118,7 @@ export const saudiServices: Record<ServiceSlug, SaudiPageContent> = {
   },
   "content-marketing": {
     slug: "content-marketing", path: "/services/content-marketing/", label: "SEO content strategy", eyebrow: "Content-led organic marketing",
-    title: "Create content with a clear job to do.",
+    title: "SEO content strategy for Saudi businesses.",
     intro: "An original content strategy for Saudi businesses, built around customer questions, search intent and the evidence your team can contribute. Fewer disconnected topics. More useful paths to your offer.",
     metaTitle: "SEO Content Strategy Saudi Arabia | Fazil Digital",
     metaDescription: "Original SEO content strategy for Saudi businesses: intent research, editorial briefs, subject-expert input, Arabic localization planning and content measurement.",
@@ -147,7 +147,7 @@ export const saudiServices: Record<ServiceSlug, SaudiPageContent> = {
 export const saudiCities: Record<SaudiCitySlug, SaudiPageContent> = {
   riyadh: {
     slug: "riyadh", path: "/riyadh/seo/", label: "SEO in Riyadh", eyebrow: "Primary Saudi market · Riyadh",
-    title: "SEO for the decisions Riyadh customers are making.",
+    title: "SEO services for businesses in Riyadh.",
     intro: "Build a clearer route from relevant search to a useful business enquiry. Technical SEO, local discovery and Arabic-English content planning for businesses serving Riyadh, with direct involvement from Mohammad Fazil.",
     metaTitle: "SEO Services in Riyadh | Arabic & English SEO Consultant",
     metaDescription: "SEO services for Riyadh businesses: technical and local SEO, Arabic-English keyword planning, useful content, practical implementation and clear measurement.",
@@ -176,7 +176,7 @@ export const saudiCities: Record<SaudiCitySlug, SaudiPageContent> = {
   },
   jeddah: {
     slug: "jeddah", path: "/jeddah/seo/", label: "SEO in Jeddah", eyebrow: "Saudi market · Jeddah",
-    title: "Help Jeddah customers take the next step.",
+    title: "SEO services for businesses in Jeddah.",
     intro: "An SEO approach built around how people discover, compare and contact your business in Jeddah. Useful local information, clear service pages and content that earns its place in the customer journey.",
     metaTitle: "SEO Services in Jeddah | Local & Organic Search Strategy",
     metaDescription: "SEO for Jeddah businesses: clear local information, technical foundations, Arabic-English intent planning and useful content for customer discovery and enquiries.",
@@ -202,7 +202,7 @@ export const saudiCities: Record<SaudiCitySlug, SaudiPageContent> = {
   },
   dammam: {
     slug: "dammam", path: "/dammam/seo/", label: "SEO in Dammam", eyebrow: "Saudi market · Dammam",
-    title: "Search visibility for a more considered enquiry.",
+    title: "SEO services for businesses in Dammam.",
     intro: "SEO for businesses serving Dammam and the Eastern Province, from local service discovery to detailed supplier research. Connect useful technical information with a clear route to contact.",
     metaTitle: "SEO Services in Dammam | Local & B2B SEO Consultant",
     metaDescription: "SEO services for Dammam businesses: technical foundations, local search, supplier-focused content, Arabic-English planning and relevant enquiry measurement.",
