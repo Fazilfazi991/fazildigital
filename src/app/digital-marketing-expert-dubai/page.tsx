@@ -25,22 +25,14 @@ export default function DigitalMarketingExpertDubai() {
         "url": "https://www.fazildigital.com/",
         "jobTitle": "Digital Marketing Expert",
         "sameAs": ["https://linkedin.com/in/fazilfazi"],
-        "knowsAbout": ["Search engine optimization", "Paid advertising", "Digital marketing strategy", "AI workflow automation"],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Dubai",
-          "addressCountry": "AE"
-        }
+        "knowsAbout": ["Search engine optimization", "Paid advertising", "Digital marketing strategy", "AI workflow automation"]
       },
       {
-        "@type": "ProfessionalService",
+        "@type": "Service",
         "name": "Fazil Digital Consulting",
         "url": "https://www.fazildigital.com/digital-marketing-expert-dubai/",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Dubai",
-          "addressCountry": "AE"
-        }
+        "provider": { "@id": "https://www.fazildigital.com/#person" },
+        "areaServed": { "@type": "City", "name": "Dubai" }
       },
       {
         "@type": "FAQPage",
@@ -58,7 +50,7 @@ export default function DigitalMarketingExpertDubai() {
             "name": "How long does it take to see results from digital marketing in Dubai?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "It depends on the service. SEO typically shows meaningful results in 3-6 months. Paid advertising can generate leads within the first few weeks. I'll give you realistic timelines during our consultation."
+              "text": "Timelines depend on the starting point, competition, scope and implementation. We agree priorities and a measurement baseline before assessing progress; no fixed ranking or lead timeline is guaranteed."
             }
           },
           {
@@ -66,7 +58,7 @@ export default function DigitalMarketingExpertDubai() {
             "name": "What is your pricing for digital marketing in Dubai?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Projects typically range from AED 8,000–25,000 depending on scope. I offer both project-based and monthly retainer options. During our consultation, I'll provide a clear proposal with no hidden fees."
+              "text": "Pricing depends on the agreed scope, website conditions, content requirements and implementation responsibilities. A clear proposal is provided before work begins."
             }
           },
           {
@@ -121,11 +113,11 @@ export default function DigitalMarketingExpertDubai() {
     },
     {
       q: "How long does it take to see results?",
-      a: "It depends on the service. SEO typically shows meaningful results in 3–6 months. Paid advertising can generate leads within the first few weeks. I'll give you realistic timelines during our consultation."
+      a: "Timelines depend on the starting point, competition, scope and implementation. We agree priorities and a measurement baseline before assessing progress; no fixed ranking or lead timeline is guaranteed."
     },
     {
       q: "What's your pricing?",
-      a: "Projects typically range from AED 8,000–25,000 depending on scope. I offer both project-based and monthly retainer options. During our consultation, I'll provide a clear proposal with no hidden fees."
+      a: "Pricing depends on the agreed scope, website conditions, content requirements and implementation responsibilities. A clear proposal is provided before work begins."
     },
     {
       q: "Do you work with businesses outside Dubai?",

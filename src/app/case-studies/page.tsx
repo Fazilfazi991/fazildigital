@@ -1,143 +1,28 @@
-import { Metadata } from "next";
 import Link from "next/link";
-import { Button } from "@/components/Button";
+import { JsonLd, PageCTA, PageFAQ, PageHero, pageMetadata } from "@/components/site/PageElements";
+import "../editorial-pages.css";
 
-export const metadata: Metadata = {
-  title: "Digital Project Case Studies | UAE & Saudi Arabia | Mohammad Fazil",
-  description: "Selected UAE and Saudi digital projects covering SEO, paid media, websites and automation, with named project evidence where publication is approved.",
-  alternates: { canonical: "https://www.fazildigital.com/case-studies/" },
-};
-
-const caseStudies = [
-  {
-    slug: "green-bags-uae",
-    client: "Green Bags UAE",
-    location: "Dubai, UAE",
-    service: "SEO + Google Ads + Content Marketing",
-    metric: "Named",
-    metricLabel: "Public Portfolio Project",
-    description:
-      "A documented UAE portfolio engagement for an eco-friendly bags supplier. The available public evidence supports the client identity, live website and recorded service scope; no unsupported traffic, revenue or ROAS figure is claimed.",
-  },
-  {
-    slug: "dubai-seo",
-    client: "E-commerce Brand",
-    location: "Dubai, UAE",
-    service: "SEO + Content Strategy",
-    metric: "SEO",
-    metricLabel: "Technical + Content Scope",
-    description:
-      "An anonymized UAE e-commerce engagement focused on technical SEO, on-page optimization and a content roadmap for qualified organic visibility. Performance reporting has not been supplied for publication.",
-  },
-  {
-    slug: "riyadh-paid-ads",
-    client: "Fintech Startup",
-    location: "Riyadh, Saudi Arabia",
-    service: "Paid Ads — Google + Snapchat",
-    metric: "Paid Media",
-    metricLabel: "Google + Snapchat Scope",
-    description:
-      "An anonymized Saudi paid-media engagement covering Google and Snapchat campaign planning. No ROAS or acquisition result is published without the source advertising report.",
-  },
-  {
-    slug: "dammam-marketing",
-    client: "Manufacturing Company",
-    location: "Dammam, Eastern Province",
-    service: "B2B Digital Marketing",
-    metric: "B2B",
-    metricLabel: "Demand Generation Scope",
-    description:
-      "An anonymized Eastern Province engagement covering B2B demand generation and measurement planning. A CPL result is not published because the source platform and CRM reports are unavailable.",
-  },
-  {
-    slug: "jeddah-web-development",
-    client: "Professional Services Firm",
-    location: "Jeddah, Saudi Arabia",
-    service: "Web Development + SEO",
-    metric: "Web + SEO",
-    metricLabel: "Site Architecture Scope",
-    description:
-      "An anonymized Jeddah professional-services engagement describing website and SEO architecture objectives. Ranking outcomes remain unpublished until a dated Search Console export is available.",
-  },
-  {
-    slug: "abu-dhabi-social-media",
-    client: "Real Estate Developer",
-    location: "Abu Dhabi, UAE",
-    service: "Social Media Management",
-    metric: "LinkedIn",
-    metricLabel: "Authority Content Scope",
-    description:
-      "An anonymized Abu Dhabi social-media engagement focused on LinkedIn content and authority positioning. No engagement or lead increase is claimed without the platform report and lead record.",
-  },
-  {
-    slug: "sharjah-ai-automation",
-    client: "Logistics Company",
-    location: "Sharjah, UAE",
-    service: "AI Automation",
-    metric: "Automation",
-    metricLabel: "Workflow Design Scope",
-    description:
-      "An anonymized Sharjah workflow-automation engagement covering lead intake, CRM logging and reporting objectives. Time savings are not published without a documented before-and-after time study.",
-  },
+export const metadata = pageMetadata({ title: "Project Notes & Evidence", description: "Review documented Fazil Digital project scope and clear evidence boundaries. Numerical outcomes are published only when source reporting and permission are available.", path: "/case-studies/" });
+const notes = [
+  { slug: "dubai-seo", title: "E-commerce SEO", location: "Dubai, UAE", scope: "Technical SEO and content planning", note: "An existing anonymous scope note. Dated analytics, detailed delivery evidence and publication approval are needed before reporting an outcome." },
+  { slug: "riyadh-paid-ads", title: "Paid-media planning", location: "Riyadh, Saudi Arabia", scope: "Google and Snapchat campaign scope", note: "A retained historical note. Source advertising reports and attribution context are unavailable; no acquisition or ROAS result is claimed." },
+  { slug: "dammam-marketing", title: "B2B demand generation", location: "Dammam, Eastern Province", scope: "Demand-generation objectives", note: "A retained anonymous project note. Source platform and CRM reports are required to assess delivery and any qualified-lead outcome." },
+  { slug: "jeddah-web-development", title: "Website and SEO architecture", location: "Jeddah, Saudi Arabia", scope: "Site architecture objectives", note: "A retained anonymous scope note. Ranking and keyword outcomes remain unpublished without a dated source report." },
+  { slug: "abu-dhabi-social-media", title: "Authority-content planning", location: "Abu Dhabi, UAE", scope: "LinkedIn content objectives", note: "A historical content note, preserved at its existing URL. No engagement increase or lead outcome is asserted." },
+  { slug: "sharjah-ai-automation", title: "Workflow-design objectives", location: "Sharjah, UAE", scope: "Automation planning", note: "A retained historical note. Implementation evidence and a before-and-after time study are needed before reporting savings." },
+];
+const faqs = [
+  { question: "Are these verified performance case studies?", answer: "The named Green Bags UAE note has first-party support for the recorded relationship and scope. The repository does not contain the analytics reports, measurement context and approvals needed to publish numerical outcomes. Other retained notes are anonymous and explicitly marked as pending evidence review." },
+  { question: "What is required before a result is published?", answer: "A result needs a documented scope, source reporting, a comparison period, baseline and final values, clear metric definitions and permission to publish. Search results also need query and page context so that a change is not presented without its limitations." },
 ];
 
 export default function CaseStudiesPage() {
-  return (
-    <div className="pt-24 pb-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base mb-6">
-            Selected Project Notes
-          </h1>
-          <p className="text-xl text-text-muted max-w-2xl mx-auto">
-            Selected GCC engagements and project notes. Named work is supported by public project references; numerical outcomes are only treated as verified when the underlying report is available.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {caseStudies.map((cs) => (
-            <article key={cs.slug} className="group border border-white/10 bg-[#0A0A0A] hover:border-accent/40 hover:-translate-y-0.5 transition-all duration-300">
-              <div className="p-10">
-                <div className="flex items-start justify-between mb-8 gap-4">
-                  <div>
-                    <p className="text-xs font-semibold tracking-widest text-text-muted uppercase mb-1">{cs.location}</p>
-                    <h2 className="text-2xl font-heading font-bold text-bg-base">{cs.client}</h2>
-                  </div>
-                  <div className="text-right flex-shrink-0">
-                    <p className="text-4xl font-heading font-bold text-accent leading-none">{cs.metric}</p>
-                    <p className="text-xs text-text-muted mt-1 max-w-[140px] text-right">{cs.metricLabel}</p>
-                  </div>
-                </div>
-
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-accent/30 bg-accent/10 rounded mb-6">
-                  <span className="text-xs font-semibold text-accent">{cs.service}</span>
-                </div>
-
-                <p className="text-text-muted leading-relaxed">{cs.description}</p>
-                <Link
-                  href={`/case-studies/${cs.slug}`}
-                  className="inline-block mt-7 text-accent font-semibold hover:underline"
-                >
-                  Read project details →
-                </Link>
-              </div>
-            </article>
-          ))}
-        </div>
-
-        <div className="mt-24 border border-white/10 bg-[#050505] p-12 text-center">
-          <h2 className="text-3xl font-heading font-bold text-bg-base mb-4">Want results like these for your business?</h2>
-          <p className="text-text-muted mb-8 max-w-lg mx-auto">
-            Book a free 30-minute discovery call. Mohammad will audit your digital presence and tell you exactly where the opportunities are.
-          </p>
-          <div className="flex flex-col items-center gap-4">
-            <Button href="/contact" className="text-lg px-8 py-4">Claim Your Free Growth Audit</Button>
-            <p className="text-sm text-text-muted italic">30 minutes. No pitch. Just clarity on your biggest opportunity.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  );
+  return <>
+    <JsonLd data={{ "@context": "https://schema.org", "@type": "CollectionPage", url: "https://www.fazildigital.com/case-studies/", name: "Fazil Digital project notes", description: "Documented project scope and evidence boundaries; no verified numerical performance outcomes are asserted." }} />
+    <PageHero eyebrow="Work, with context" title="Evidence deserves a clear view." intro="Project scope and measurable results are different kinds of information. These notes make the distinction visible, so you can assess what is documented and what still needs supporting evidence." breadcrumbs={[{ label: "Project notes" }]} />
+    <section className="fd-container fd-section" aria-labelledby="named-work"><div className="fd-support-featured-work"><div className="fd-support-work-mark" aria-hidden="true"><span>Project<br />note.</span><small>Green Bags UAE · documented scope</small></div><div><p className="fd-support-caption">Named, first-party supported scope</p><h2 id="named-work">Green Bags UAE</h2><p>A Dubai supplier of reusable bags appears in the existing portfolio and project record. The documented scope covers SEO, Google Ads and content marketing.</p><p>The available material supports a named project note. It does not establish a traffic increase, ranking gain, advertising return or revenue result.</p><Link href="/case-studies/green-bags-uae/" className="fd-text-link">Read the evidence-bounded project note <span aria-hidden="true">↗</span></Link></div></div></section>
+    <section className="fd-support-band fd-section"><div className="fd-container"><div className="fd-section-heading"><h2>Saudi SEO case studies.<br />A deliberate publication standard.</h2><p>Case studies will be added when genuine project evidence and permission are available.</p></div><div className="fd-support-evidence"><div><h3>Recorded scope</h3><p>What the engagement covered and which responsibilities were agreed.</p></div><div><h3>Source measurements</h3><p>Dated reporting with definitions, comparison periods and relevant context.</p></div><div><h3>Permission to publish</h3><p>Client approval and an appropriate level of identification or anonymization.</p></div></div></div></section>
+    <section className="fd-container fd-section" aria-labelledby="historical-notes"><div className="fd-section-heading"><h2 id="historical-notes">Retained project notes.</h2><p>Existing URLs remain available. These anonymous records are pending evidence review and are not presented as verified results.</p></div><div className="fd-support-notes">{notes.map(note => <article key={note.slug}><div><p className="fd-support-caption">{note.location}</p><h3><Link href={`/case-studies/${note.slug}/`}>{note.title}</Link></h3><p className="fd-support-note-scope">{note.scope}</p></div><div><p>{note.note}</p><Link href={`/case-studies/${note.slug}/`} className="fd-text-link">Read the retained note <span aria-hidden="true">↗</span></Link></div></article>)}</div></section>
+    <PageFAQ items={faqs} /><PageCTA />
+  </>;
 }

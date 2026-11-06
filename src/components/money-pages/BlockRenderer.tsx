@@ -1,5 +1,5 @@
 import React from "react";
-import { BlockConfig } from "@/data/moneyPageLayouts";
+import type { BlockConfig, MoneyBlockType, MoneyPageData } from "@/data/moneyPageLayouts";
 
 // Hero
 import { HeroA, HeroB, HeroC } from "./HeroVariants";
@@ -12,7 +12,7 @@ import { StepsTimeline, StepsGrid } from "./ProcessVariants";
 // Action
 import { MarketInsightBlock, FAQBlock, FinalCTABlock } from "./ActionBlocks";
 
-const ComponentsMap: Record<string, React.FC<any>> = {
+const ComponentsMap: Record<MoneyBlockType, React.ComponentType<MoneyPageData>> = {
   HeroA,
   HeroB,
   HeroC,
@@ -32,7 +32,7 @@ export function BlockRenderer({
   commonData,
 }: {
   layout: BlockConfig[];
-  commonData: any;
+  commonData: MoneyPageData;
 }) {
   return (
     <>

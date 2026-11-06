@@ -53,6 +53,7 @@ export function ReviewForm() {
     const goal = String(data.get("goal") || "").trim();
     const message = `Hello Mohammad, I'd like to request an SEO review for my Saudi business.\nName: ${name}\nWebsite: ${website}${goal ? `\nPriority: ${goal}` : ""}`;
     setDraft(`https://wa.me/971542763828?text=${encodeURIComponent(message)}`);
+    window.dispatchEvent(new CustomEvent("fazil:conversion", { detail: { event: "review_intent" } }));
   }
   return <form className="fd-review-form" onSubmit={prepareMessage} onChange={() => setDraft(null)} aria-describedby="review-form-help">
     <fieldset disabled={!ready}>

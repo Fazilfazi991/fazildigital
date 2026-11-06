@@ -1,16 +1,11 @@
 "use client";
-
 import { usePathname } from "next/navigation";
-import dynamic from "next/dynamic";
-
-const Navbar = dynamic(() => import("./Navbar").then(module => module.Navbar));
-const Footer = dynamic(() => import("./Footer").then(module => module.Footer));
-const MobileStickyCTA = dynamic(() => import("./MobileStickyCTA").then(module => module.MobileStickyCTA));
-const FloatingWhatsApp = dynamic(() => import("./FloatingWhatsApp").then(module => module.FloatingWhatsApp));
-
-/** The new homepage owns its chrome; internal pages retain their existing UI. */
-export function SiteChrome({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
-  if (pathname === "/") return children;
-  return <><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,600,700&display=swap" precedence="legacy-fonts" /><Navbar /><main className="flex-grow">{children}</main><Footer /><MobileStickyCTA /><FloatingWhatsApp /></>;
+import Link from "next/link";
+import { useEffect, useRef } from "react";
+export function SiteChrome({children}:{children:React.ReactNode}) {
+ const pathname=usePathname(); const menu=useRef<HTMLDetailsElement>(null);
+ useEffect(()=>{const close=(e:KeyboardEvent)=>{if(e.key==="Escape"&&menu.current?.open){menu.current.open=false;menu.current.querySelector("summary")?.focus();}};document.addEventListener("keydown",close);return()=>document.removeEventListener("keydown",close)},[]);
+ if(pathname==="/") return children;
+ const modern = ["/about","/contact","/case-studies","/blog","/services/seo","/services/local-seo","/services/technical-seo","/services/content-marketing","/riyadh/seo","/jeddah/seo","/dammam/seo"].some(p=>pathname===p||pathname===p+"/"|| (p==="/blog"&&pathname.startsWith("/blog/")));
+ return <div className="fd-home" id="top"><a className="fd-skip" href="#main-content">Skip to content</a><header className="fd-header fd-container"><Link href="/" aria-label="Fazil Digital home" className="fd-wordmark">fazil<span className="fd-wordmark-dot">.</span><span className="fd-wordmark-digital">digital</span></Link><nav className="fd-desktop-nav" aria-label="Main navigation"><Link href="/">Home</Link><Link href="/services/seo/">SEO Services</Link><Link href="/riyadh/seo/">Locations</Link><Link href="/blog/">Insights</Link><Link href="/about/">About</Link><Link href="/contact/">Contact</Link></nav><Link href="/contact/" className="fd-button fd-header-cta">Request an SEO Review ↗</Link><details className="fd-mobile-menu" ref={menu}><summary><span>Menu</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 8h16M4 16h16" /></svg></summary><nav aria-label="Mobile navigation" onClick={e=>{if((e.target as Element).closest("a")&&menu.current)menu.current.open=false}}><Link href="/">Home</Link><Link href="/services/seo/">SEO Services</Link><Link href="/riyadh/seo/">Locations</Link><Link href="/blog/">Insights</Link><Link href="/about/">About</Link><Link href="/contact/">Contact</Link><Link href="/contact/" className="fd-button">Request an SEO Review</Link></nav></details></header><main id="main-content" className={modern?"":"fd-legacy"}>{children}</main><footer className="fd-footer fd-container"><div className="fd-footer-top"><Link href="/" className="fd-wordmark">fazil<span className="fd-wordmark-dot">.</span><span className="fd-wordmark-digital">digital</span></Link><p>SEO &amp; organic growth<br/>for Saudi businesses.</p><nav aria-label="Footer navigation"><Link href="/services/seo/">SEO Services</Link><Link href="/services/technical-seo/">Technical SEO</Link><Link href="/services/local-seo/">Local SEO</Link><Link href="/services/content-marketing/">Content Strategy</Link><Link href="/riyadh/seo/">Riyadh SEO</Link><Link href="/jeddah/seo/">Jeddah SEO</Link><Link href="/dammam/seo/">Dammam SEO</Link><Link href="/about/">About</Link><Link href="/case-studies/">Project notes</Link><Link href="/blog/">Insights</Link><Link href="/contact/">Contact</Link></nav><a className="fd-back-top" href="#top">Back to top ↑</a></div><div className="fd-footer-bottom"><span>© {new Date().getFullYear()} Fazil Digital</span><span>Riyadh · Jeddah · Dammam</span><Link href="/privacy-policy/">Privacy policy</Link></div></footer></div>;
 }

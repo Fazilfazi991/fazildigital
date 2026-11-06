@@ -1,38 +1,33 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./home.css";
+import "./site.css";
+import localFont from "next/font/local";
 import { SiteChrome } from "@/components/SiteChrome";
 import { Analytics } from "@/components/Analytics";
+const manrope = localFont({ src: "./fonts/manrope-latin.woff2", variable: "--fd-sans", display: "swap", weight: "200 800" });
+const editorial = localFont({ src: "./fonts/instrument-serif-latin.woff2", variable: "--fd-serif", display: "swap", weight: "400" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.fazildigital.com"),
   title: {
-    default: "Mohammad Fazil | Digital Consultant in Dubai",
-    template: "%s | Mohammad Fazil",
+    default: "SEO Consultant Saudi Arabia | Fazil Digital",
+    template: "%s | Fazil Digital",
   },
   description:
-    "Digital Consultant based in Dubai, specializing in SEO, Digital Marketing, Paid Ads, Web Development and AI Automation for UAE & Saudi Arabia.",
+    "SEO and organic growth consultancy for Saudi businesses, with direct support from Mohammad Fazil.",
   icons: {
     icon: [{ url: "/icon.png", type: "image/png", sizes: "512x512" }],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    siteName: "Mohammad Fazil",
+    locale: "en_SA",
+    siteName: "Fazil Digital",
   },
   twitter: {
     card: "summary_large_image",
     site: "@fazilfazi",
-  },
-  // llms.txt — machine-readable site overview for AI crawlers
-  alternates: {
-    languages: {
-      "en-ae": "https://www.fazildigital.com/locations/dubai/",
-      "en-sa": "https://www.fazildigital.com/locations/riyadh/",
-    },
-    types: {
-      "text/plain": "https://www.fazildigital.com/llms.txt",
-    },
   },
 };
 
@@ -43,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-body bg-primary text-bg-base">
+      <body className={`min-h-full flex flex-col font-body bg-primary text-bg-base ${manrope.variable} ${editorial.variable}`}>
         <Analytics />
         <SiteChrome>{children}</SiteChrome>
       </body>

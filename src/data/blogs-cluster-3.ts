@@ -750,7 +750,7 @@ export const cluster3Blogs: BlogPost[] = [
       <h2>2. Overcoming the "Trust Deficit"</h2>
       <p>Saudi consumers, particularly in the Najd region (surrounding Riyadh), are highly discerning. They have a high "Trust Threshold." They don't just buy from a website; they buy from a <em>proven partner</em>. In 2026, building trust online requires more than just SSL certificates.</p>
 
-      <p><strong>The Social Proof Moat:</strong> In Riyadh, a testimonial from a locally respected business leader or a mention by a Saudi-specific industry publication is worth more than a thousand generic reviews. We prioritize building a "Trust Moat" for our clients by securing high-authority placements in regional media and showcasing deep-divers into local projects. Our <a href="/case-studies/riyadh-paid-ads/">Riyadh Paid Ads Case Study</a> illustrates how prioritizing trust-based creative over purely promotional offers tripled the conversion rate for a B2B service provider.</p>
+      <p><strong>Evidence customers can assess:</strong> Use genuine project material and approved testimonials with enough context to explain what they establish. The <a href="/case-studies/riyadh-paid-ads/">Riyadh paid-media project note</a> describes a recorded scope; no verified conversion-rate increase or numerical outcome is available for publication.</p>
 
       <h2>3. Content Localization: The Najdi Nuance</h2>
       <p>One of the most expensive mistakes you can make is using "Generic Arabic." While Modern Standard Arabic (MSA) is the baseline for professional communication, your social media and high-engagement content should reflect the Najdi dialect and cultural idioms of Riyadh.</p>

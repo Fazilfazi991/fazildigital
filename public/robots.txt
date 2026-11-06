@@ -79,7 +79,7 @@ Disallow: /
 User-agent: *
 Disallow: /admin/
 Disallow: /api/
-Disallow: /_next/
+# Rendering assets under /_next/ remain crawlable.
 
 # ── Sitemap ─────────────────────────────────────────────────
 Sitemap: https://www.fazildigital.com/sitemap.xml
