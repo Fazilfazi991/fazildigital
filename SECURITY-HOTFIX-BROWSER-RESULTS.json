@@ -1,0 +1,40 @@
+{
+  "target": "http://127.0.0.1:3002",
+  "next": "16.4.5",
+  "timestamp": "2026-11-06T16:28:19.841Z",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Digital Marketing Expert Dubai | SEO, Ads & AI | Free Audit"
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "title": "About Mohammad Fazil | Dubai Digital Consultant | UAE & KSA | Mohammad Fazil"
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "title": "Contact Mohammad Fazil | Get Your Free 30-Min Digital Audit | Mohammad Fazil"
+    },
+    {
+      "path": "/riyadh/seo",
+      "status": 200,
+      "title": "SEO Services in Riyadh | Arabic & English SEO Consultant | Mohammad Fazil"
+    },
+    {
+      "path": "/jeddah/seo",
+      "status": 200,
+      "title": "SEO Jeddah: Rank Higher on Google | Fazil Digital | Mohammad Fazil"
+    },
+    {
+      "path": "/dammam/seo",
+      "status": 200,
+      "title": "SEO Services in Dammam | Local & B2B SEO Consultant | Mohammad Fazil"
+    }
+  ],
+  "mobileMenu": "PASS",
+  "runtimeErrors": [],
+  "externalRequests": "blocked; no enquiries sent"
+}
