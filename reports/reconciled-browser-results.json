@@ -1,0 +1,1855 @@
+{
+  "generatedAt": "2026-11-06T19:57:33.516Z",
+  "baseURL": "http://127.0.0.1:3007",
+  "buildId": "_gqbeqkvfFxGI8-aQ8PbR",
+  "captureRun": "2026-11-06T19-56-22-133Z",
+  "screenshotRelativeDir": "previews/reconciled/verified-2026-11-06T19-56-22-133Z",
+  "passed": 49,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Page, metadata and semantics: /",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /services/seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /services/seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /services/local-seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /services/local-seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /services/technical-seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /services/technical-seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /services/content-marketing/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /services/content-marketing/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /riyadh/seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /riyadh/seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /jeddah/seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /jeddah/seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /dammam/seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /dammam/seo/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /about/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /about/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /contact/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /contact/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /case-studies/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /case-studies/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /blog/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /blog/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /blog/seo-services-saudi-arabia-guide/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /blog/seo-services-saudi-arabia-guide/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /blog/seo-cost-saudi-arabia-scope-guide/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /blog/seo-cost-saudi-arabia-scope-guide/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /blog/riyadh-seo-strategy-guide/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /blog/riyadh-seo-strategy-guide/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /blog/arabic-vs-english-seo-saudi-arabia/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /blog/arabic-vs-english-seo-saudi-arabia/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /blog/local-seo-saudi-businesses-guide/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /blog/local-seo-saudi-businesses-guide/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /blog/technical-seo-audit-saudi-websites/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /blog/technical-seo-audit-saudi-websites/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /blog/organic-content-strategy-saudi-businesses/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /blog/organic-content-strategy-saudi-businesses/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /blog/google-search-console-seo-measurement-guide/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /blog/google-search-console-seo-measurement-guide/",
+      "status": "PASS"
+    },
+    {
+      "name": "Page, metadata and semantics: /blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "status": "PASS"
+    },
+    {
+      "name": "Five responsive widths and screenshots: /blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "status": "PASS"
+    },
+    {
+      "name": "Internal navigation targets respond without missing pages",
+      "status": "PASS"
+    },
+    {
+      "name": "All 115 original HTML URLs remain reachable",
+      "status": "PASS"
+    },
+    {
+      "name": "Homepage guides and commercial journeys navigate to their destinations",
+      "status": "PASS"
+    },
+    {
+      "name": "Mobile menu, keyboard escape, real page navigation and FAQ",
+      "status": "PASS"
+    },
+    {
+      "name": "Honest contact draft, synthetic analytics mappings and data boundaries",
+      "status": "PASS"
+    },
+    {
+      "name": "Contact and reading remain useful without JavaScript",
+      "status": "PASS"
+    },
+    {
+      "name": "Reduced motion and no runtime/application resource errors",
+      "status": "PASS"
+    }
+  ],
+  "layouts": [
+    {
+      "route": "/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 388.5,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 554.34375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 741.5625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/seo/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/seo/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/seo/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 400.390625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/seo/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 566.796875,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/seo/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 780,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/local-seo/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/local-seo/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/local-seo/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 400.390625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/local-seo/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 566.796875,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/local-seo/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 780,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/technical-seo/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/technical-seo/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/technical-seo/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 400.390625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/technical-seo/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 566.796875,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/technical-seo/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 780,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/content-marketing/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/content-marketing/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/content-marketing/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 400.390625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/content-marketing/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 566.796875,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/services/content-marketing/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 780,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/riyadh/seo/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/riyadh/seo/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/riyadh/seo/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 400.390625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/riyadh/seo/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 566.796875,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/riyadh/seo/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 780,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/jeddah/seo/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/jeddah/seo/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/jeddah/seo/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 400.390625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/jeddah/seo/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 566.796875,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/jeddah/seo/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 780,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/dammam/seo/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/dammam/seo/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/dammam/seo/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 400.390625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/dammam/seo/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 566.796875,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/dammam/seo/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 780,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/about/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/about/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/about/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 400.390625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/about/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 566.796875,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/about/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 780,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/contact/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/contact/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/contact/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 400.390625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/contact/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 566.796875,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/contact/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 780,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/case-studies/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/case-studies/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/case-studies/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 400.390625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/case-studies/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 566.796875,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/case-studies/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 780,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 400.390625,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 566.796875,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 780,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/seo-services-saudi-arabia-guide/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/seo-services-saudi-arabia-guide/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/seo-services-saudi-arabia-guide/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 466.25,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/seo-services-saudi-arabia-guide/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 621.734375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/seo-services-saudi-arabia-guide/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 809.59375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/seo-cost-saudi-arabia-scope-guide/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/seo-cost-saudi-arabia-scope-guide/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/seo-cost-saudi-arabia-scope-guide/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 466.25,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/seo-cost-saudi-arabia-scope-guide/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 621.734375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/seo-cost-saudi-arabia-scope-guide/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 809.59375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 466.25,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 621.734375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 809.59375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/arabic-vs-english-seo-saudi-arabia/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/arabic-vs-english-seo-saudi-arabia/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/arabic-vs-english-seo-saudi-arabia/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 466.25,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/arabic-vs-english-seo-saudi-arabia/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 621.734375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/arabic-vs-english-seo-saudi-arabia/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 809.59375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/local-seo-saudi-businesses-guide/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/local-seo-saudi-businesses-guide/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/local-seo-saudi-businesses-guide/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 466.25,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/local-seo-saudi-businesses-guide/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 621.734375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/local-seo-saudi-businesses-guide/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 809.59375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/technical-seo-audit-saudi-websites/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/technical-seo-audit-saudi-websites/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/technical-seo-audit-saudi-websites/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 466.25,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/technical-seo-audit-saudi-websites/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 621.734375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/technical-seo-audit-saudi-websites/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 809.59375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/organic-content-strategy-saudi-businesses/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/organic-content-strategy-saudi-businesses/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/organic-content-strategy-saudi-businesses/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 466.25,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/organic-content-strategy-saudi-businesses/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 621.734375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/organic-content-strategy-saudi-businesses/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 809.59375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/google-search-console-seo-measurement-guide/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/google-search-console-seo-measurement-guide/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/google-search-console-seo-measurement-guide/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 466.25,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/google-search-console-seo-measurement-guide/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 621.734375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/google-search-console-seo-measurement-guide/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 809.59375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "viewport": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "h1Width": 272,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "viewport": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "h1Width": 342,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "viewport": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "h1Width": 466.25,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "bodyWidth": 1024,
+      "h1Width": 621.734375,
+      "mainBackground": "rgb(245, 243, 237)"
+    },
+    {
+      "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "h1Width": 809.59375,
+      "mainBackground": "rgb(245, 243, 237)"
+    }
+  ],
+  "metadata": [
+    {
+      "route": "/",
+      "title": "SEO Consultant Saudi Arabia | Fazil Digital",
+      "description": "Work directly with Mohammad Fazil on technical SEO, local search and original content for Saudi businesses. Focused on Riyadh, Jeddah and Dammam.",
+      "canonical": "https://www.fazildigital.com/",
+      "schemas": 1
+    },
+    {
+      "route": "/services/seo/",
+      "title": "SEO Services in Saudi Arabia | Fazil Digital",
+      "description": "SEO services for Saudi businesses: technical audits, local search, Arabic and English keyword planning, content strategy and clear reporting with Mohammad Fazil.",
+      "canonical": "https://www.fazildigital.com/services/seo/",
+      "schemas": 1
+    },
+    {
+      "route": "/services/local-seo/",
+      "title": "Local SEO Services for Saudi Businesses | Fazil Digital",
+      "description": "Local SEO for Saudi businesses: accurate business information, eligible Google Business Profiles, useful location content and meaningful enquiry measurement.",
+      "canonical": "https://www.fazildigital.com/services/local-seo/",
+      "schemas": 1
+    },
+    {
+      "route": "/services/technical-seo/",
+      "title": "Technical SEO Services & Audits Saudi Arabia | Fazil Digital",
+      "description": "Technical SEO audits for Saudi websites: crawlability, indexing, canonicals, site structure, multilingual requirements and performance priorities with clear validation.",
+      "canonical": "https://www.fazildigital.com/services/technical-seo/",
+      "schemas": 1
+    },
+    {
+      "route": "/services/content-marketing/",
+      "title": "SEO Content Strategy Saudi Arabia | Fazil Digital",
+      "description": "Original SEO content strategy for Saudi businesses: intent research, editorial briefs, subject-expert input, Arabic localization planning and content measurement.",
+      "canonical": "https://www.fazildigital.com/services/content-marketing/",
+      "schemas": 1
+    },
+    {
+      "route": "/riyadh/seo/",
+      "title": "SEO Services in Riyadh | Arabic & English SEO Consultant | Fazil Digital",
+      "description": "SEO services for Riyadh businesses: technical and local SEO, Arabic-English keyword planning, useful content, practical implementation and clear measurement.",
+      "canonical": "https://www.fazildigital.com/riyadh/seo/",
+      "schemas": 1
+    },
+    {
+      "route": "/jeddah/seo/",
+      "title": "SEO Services in Jeddah | Local & Organic Search Strategy | Fazil Digital",
+      "description": "SEO for Jeddah businesses: clear local information, technical foundations, Arabic-English intent planning and useful content for customer discovery and enquiries.",
+      "canonical": "https://www.fazildigital.com/jeddah/seo/",
+      "schemas": 1
+    },
+    {
+      "route": "/dammam/seo/",
+      "title": "SEO Services in Dammam | Local & B2B SEO Consultant | Fazil Digital",
+      "description": "SEO services for Dammam businesses: technical foundations, local search, supplier-focused content, Arabic-English planning and relevant enquiry measurement.",
+      "canonical": "https://www.fazildigital.com/dammam/seo/",
+      "schemas": 1
+    },
+    {
+      "route": "/about/",
+      "title": "About Mohammad Fazil | Saudi SEO Consultant | Fazil Digital",
+      "description": "Meet Mohammad Fazil and understand the direct, research-led approach behind Fazil Digital’s SEO and organic growth consultancy for Saudi businesses.",
+      "canonical": "https://www.fazildigital.com/about/",
+      "schemas": 1
+    },
+    {
+      "route": "/contact/",
+      "title": "Request a Saudi SEO Review | Fazil Digital",
+      "description": "Discuss your Saudi SEO goals directly with Mohammad Fazil. Prepare an SEO review request for WhatsApp and review the message before sending.",
+      "canonical": "https://www.fazildigital.com/contact/",
+      "schemas": 1
+    },
+    {
+      "route": "/case-studies/",
+      "title": "Project Notes & Evidence | Fazil Digital",
+      "description": "Review documented Fazil Digital project scope and clear evidence boundaries. Numerical outcomes are published only when source reporting and permission are available.",
+      "canonical": "https://www.fazildigital.com/case-studies/",
+      "schemas": 1
+    },
+    {
+      "route": "/blog/",
+      "title": "Saudi SEO Insights & Practical Guides | Fazil Digital",
+      "description": "Practical Saudi SEO guidance on services, pricing factors, Riyadh strategy, Arabic and English search, local visibility, technical SEO, content and measurement.",
+      "canonical": "https://www.fazildigital.com/blog/",
+      "schemas": 1
+    },
+    {
+      "route": "/blog/seo-services-saudi-arabia-guide/",
+      "title": "Choosing SEO services in Saudi Arabia: start with the scope | Fazil Digital",
+      "description": "A practical way to compare SEO proposals: define the business problem, the work to be delivered, implementation ownership and the evidence you will review.",
+      "canonical": "https://www.fazildigital.com/blog/seo-services-saudi-arabia-guide/",
+      "schemas": 1
+    },
+    {
+      "route": "/blog/seo-cost-saudi-arabia-scope-guide/",
+      "title": "What should SEO cost in Saudi Arabia? Compare the work first | Fazil Digital",
+      "description": "Understand the factors behind an SEO quote, compare responsibilities and content scope, and budget for implementation without relying on unsupported price bands.",
+      "canonical": "https://www.fazildigital.com/blog/seo-cost-saudi-arabia-scope-guide/",
+      "schemas": 1
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "title": "A Riyadh SEO strategy starts with the customer journey | Fazil Digital",
+      "description": "Separate local discovery from longer buying decisions, map Arabic and English intent, and turn a Riyadh SEO review into an implementable page and measurement plan.",
+      "canonical": "https://www.fazildigital.com/blog/riyadh-seo-strategy-guide/",
+      "schemas": 1
+    },
+    {
+      "route": "/blog/arabic-vs-english-seo-saudi-arabia/",
+      "title": "Arabic versus English SEO: decide page by page | Fazil Digital",
+      "description": "A bilingual planning framework for Saudi websites: research questions independently, choose useful localized pages and coordinate native editorial review with technical implementation.",
+      "canonical": "https://www.fazildigital.com/blog/arabic-vs-english-seo-saudi-arabia/",
+      "schemas": 1
+    },
+    {
+      "route": "/blog/local-seo-saudi-businesses-guide/",
+      "title": "Local SEO for Saudi businesses: get the real details right | Fazil Digital",
+      "description": "Review your operating model, accurate business information, useful location content and enquiry journey before building a local-search checklist.",
+      "canonical": "https://www.fazildigital.com/blog/local-seo-saudi-businesses-guide/",
+      "schemas": 1
+    },
+    {
+      "route": "/blog/technical-seo-audit-saudi-websites/",
+      "title": "A technical SEO audit that leads to useful fixes | Fazil Digital",
+      "description": "Follow an important page from discovery to indexing, distinguish performance evidence from scores, and turn technical findings into a prioritized implementation backlog.",
+      "canonical": "https://www.fazildigital.com/blog/technical-seo-audit-saudi-websites/",
+      "schemas": 1
+    },
+    {
+      "route": "/blog/organic-content-strategy-saudi-businesses/",
+      "title": "Build an organic content plan around customer questions | Fazil Digital",
+      "description": "Turn subject expertise, real customer questions and an existing content inventory into useful page briefs, clear ownership and a maintainable Saudi organic content plan.",
+      "canonical": "https://www.fazildigital.com/blog/organic-content-strategy-saudi-businesses/",
+      "schemas": 1
+    },
+    {
+      "route": "/blog/google-search-console-seo-measurement-guide/",
+      "title": "Measure SEO with Search Console without losing the context | Fazil Digital",
+      "description": "Read impressions, clicks, CTR and average position together, compare useful query and page groups, and distinguish enquiry intent from confirmed qualified leads.",
+      "canonical": "https://www.fazildigital.com/blog/google-search-console-seo-measurement-guide/",
+      "schemas": 1
+    },
+    {
+      "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "title": "Snapchat Ads Benchmarks Saudi Arabia 2026: CPA, CPC & ROAS | Fazil Digital",
+      "description": "A measurement-led guide to Snapchat CPA, CPC, and ROAS planning across e-commerce, B2B, and F&B in Riyadh and Jeddah.",
+      "canonical": "https://www.fazildigital.com/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "schemas": 1
+    }
+  ],
+  "observations": [
+    {
+      "route": "/",
+      "cls": 0,
+      "lcp": 1664,
+      "resources": 19,
+      "localEncodedBytes": 263173,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/services/seo/",
+      "cls": 0,
+      "lcp": 496,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/services/local-seo/",
+      "cls": 0,
+      "lcp": 624,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/services/technical-seo/",
+      "cls": 0,
+      "lcp": 332,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/services/content-marketing/",
+      "cls": 0,
+      "lcp": 296,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/riyadh/seo/",
+      "cls": 0,
+      "lcp": 212,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/jeddah/seo/",
+      "cls": 0,
+      "lcp": 272,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/dammam/seo/",
+      "cls": 0,
+      "lcp": 296,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/about/",
+      "cls": 0,
+      "lcp": 308,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/contact/",
+      "cls": 0,
+      "lcp": 316,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/case-studies/",
+      "cls": 0,
+      "lcp": 264,
+      "resources": 30,
+      "localEncodedBytes": 296864,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/blog/",
+      "cls": 0,
+      "lcp": 276,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/blog/seo-services-saudi-arabia-guide/",
+      "cls": 0,
+      "lcp": 288,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/blog/seo-cost-saudi-arabia-scope-guide/",
+      "cls": 0,
+      "lcp": 256,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "cls": 0,
+      "lcp": 304,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/blog/arabic-vs-english-seo-saudi-arabia/",
+      "cls": 0,
+      "lcp": 364,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/blog/local-seo-saudi-businesses-guide/",
+      "cls": 0,
+      "lcp": 320,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/blog/technical-seo-audit-saudi-websites/",
+      "cls": 0,
+      "lcp": 368,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/blog/organic-content-strategy-saudi-businesses/",
+      "cls": 0,
+      "lcp": 340,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/blog/google-search-console-seo-measurement-guide/",
+      "cls": 0,
+      "lcp": 288,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    },
+    {
+      "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "cls": 0,
+      "lcp": 352,
+      "resources": 27,
+      "localEncodedBytes": 286838,
+      "fonts": [
+        {
+          "path": "/_next/static/media/instrument_serif_latin-s.p.3_vslfxq_--4i.woff2",
+          "bytes": 21032
+        },
+        {
+          "path": "/_next/static/media/manrope_latin-s.p.3mbsihvb8fg7z.woff2",
+          "bytes": 24532
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "route": "/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/home-mobile.png",
+      "before": "previews/phase2/home-mobile.png"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/home-desktop.png",
+      "before": "previews/phase2/home-desktop.png"
+    },
+    {
+      "route": "/services/seo/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/services-seo-mobile.png",
+      "before": "previews/phase2/services-seo-mobile.png"
+    },
+    {
+      "route": "/services/seo/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/services-seo-desktop.png",
+      "before": "previews/phase2/services-seo-desktop.png"
+    },
+    {
+      "route": "/services/local-seo/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/services-local-seo-mobile.png",
+      "before": "previews/phase2/services-local-seo-mobile.png"
+    },
+    {
+      "route": "/services/local-seo/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/services-local-seo-desktop.png",
+      "before": "previews/phase2/services-local-seo-desktop.png"
+    },
+    {
+      "route": "/services/technical-seo/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/services-technical-seo-mobile.png",
+      "before": "previews/phase2/services-technical-seo-mobile.png"
+    },
+    {
+      "route": "/services/technical-seo/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/services-technical-seo-desktop.png",
+      "before": "previews/phase2/services-technical-seo-desktop.png"
+    },
+    {
+      "route": "/services/content-marketing/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/services-content-marketing-mobile.png",
+      "before": "previews/phase2/services-content-marketing-mobile.png"
+    },
+    {
+      "route": "/services/content-marketing/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/services-content-marketing-desktop.png",
+      "before": "previews/phase2/services-content-marketing-desktop.png"
+    },
+    {
+      "route": "/riyadh/seo/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/riyadh-seo-mobile.png",
+      "before": "previews/phase2/riyadh-seo-mobile.png"
+    },
+    {
+      "route": "/riyadh/seo/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/riyadh-seo-desktop.png",
+      "before": "previews/phase2/riyadh-seo-desktop.png"
+    },
+    {
+      "route": "/jeddah/seo/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/jeddah-seo-mobile.png",
+      "before": "previews/phase2/jeddah-seo-mobile.png"
+    },
+    {
+      "route": "/jeddah/seo/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/jeddah-seo-desktop.png",
+      "before": "previews/phase2/jeddah-seo-desktop.png"
+    },
+    {
+      "route": "/dammam/seo/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/dammam-seo-mobile.png",
+      "before": "previews/phase2/dammam-seo-mobile.png"
+    },
+    {
+      "route": "/dammam/seo/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/dammam-seo-desktop.png",
+      "before": "previews/phase2/dammam-seo-desktop.png"
+    },
+    {
+      "route": "/about/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/about-mobile.png",
+      "before": "previews/phase2/about-mobile.png"
+    },
+    {
+      "route": "/about/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/about-desktop.png",
+      "before": "previews/phase2/about-desktop.png"
+    },
+    {
+      "route": "/contact/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/contact-mobile.png",
+      "before": "previews/phase2/contact-mobile.png"
+    },
+    {
+      "route": "/contact/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/contact-desktop.png",
+      "before": "previews/phase2/contact-desktop.png"
+    },
+    {
+      "route": "/case-studies/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/case-studies-mobile.png",
+      "before": "previews/phase2/case-studies-mobile.png"
+    },
+    {
+      "route": "/case-studies/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/case-studies-desktop.png",
+      "before": "previews/phase2/case-studies-desktop.png"
+    },
+    {
+      "route": "/blog/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-mobile.png",
+      "before": "previews/phase2/blog-mobile.png"
+    },
+    {
+      "route": "/blog/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-desktop.png",
+      "before": "previews/phase2/blog-desktop.png"
+    },
+    {
+      "route": "/blog/seo-services-saudi-arabia-guide/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-seo-services-saudi-arabia-guide-mobile.png",
+      "before": "previews/phase2/blog-seo-services-saudi-arabia-guide-mobile.png"
+    },
+    {
+      "route": "/blog/seo-services-saudi-arabia-guide/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-seo-services-saudi-arabia-guide-desktop.png",
+      "before": "previews/phase2/blog-seo-services-saudi-arabia-guide-desktop.png"
+    },
+    {
+      "route": "/blog/seo-cost-saudi-arabia-scope-guide/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-seo-cost-saudi-arabia-scope-guide-mobile.png",
+      "before": "previews/phase2/blog-seo-cost-saudi-arabia-scope-guide-mobile.png"
+    },
+    {
+      "route": "/blog/seo-cost-saudi-arabia-scope-guide/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-seo-cost-saudi-arabia-scope-guide-desktop.png",
+      "before": "previews/phase2/blog-seo-cost-saudi-arabia-scope-guide-desktop.png"
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-riyadh-seo-strategy-guide-mobile.png",
+      "before": "previews/phase2/blog-riyadh-seo-strategy-guide-mobile.png"
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-riyadh-seo-strategy-guide-desktop.png",
+      "before": "previews/phase2/blog-riyadh-seo-strategy-guide-desktop.png"
+    },
+    {
+      "route": "/blog/arabic-vs-english-seo-saudi-arabia/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-arabic-vs-english-seo-saudi-arabia-mobile.png",
+      "before": "previews/phase2/blog-arabic-vs-english-seo-saudi-arabia-mobile.png"
+    },
+    {
+      "route": "/blog/arabic-vs-english-seo-saudi-arabia/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-arabic-vs-english-seo-saudi-arabia-desktop.png",
+      "before": "previews/phase2/blog-arabic-vs-english-seo-saudi-arabia-desktop.png"
+    },
+    {
+      "route": "/blog/local-seo-saudi-businesses-guide/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-local-seo-saudi-businesses-guide-mobile.png",
+      "before": "previews/phase2/blog-local-seo-saudi-businesses-guide-mobile.png"
+    },
+    {
+      "route": "/blog/local-seo-saudi-businesses-guide/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-local-seo-saudi-businesses-guide-desktop.png",
+      "before": "previews/phase2/blog-local-seo-saudi-businesses-guide-desktop.png"
+    },
+    {
+      "route": "/blog/technical-seo-audit-saudi-websites/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-technical-seo-audit-saudi-websites-mobile.png",
+      "before": "previews/phase2/blog-technical-seo-audit-saudi-websites-mobile.png"
+    },
+    {
+      "route": "/blog/technical-seo-audit-saudi-websites/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-technical-seo-audit-saudi-websites-desktop.png",
+      "before": "previews/phase2/blog-technical-seo-audit-saudi-websites-desktop.png"
+    },
+    {
+      "route": "/blog/organic-content-strategy-saudi-businesses/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-organic-content-strategy-saudi-businesses-mobile.png",
+      "before": "previews/phase2/blog-organic-content-strategy-saudi-businesses-mobile.png"
+    },
+    {
+      "route": "/blog/organic-content-strategy-saudi-businesses/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-organic-content-strategy-saudi-businesses-desktop.png",
+      "before": "previews/phase2/blog-organic-content-strategy-saudi-businesses-desktop.png"
+    },
+    {
+      "route": "/blog/google-search-console-seo-measurement-guide/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-google-search-console-seo-measurement-guide-mobile.png",
+      "before": "previews/phase2/blog-google-search-console-seo-measurement-guide-mobile.png"
+    },
+    {
+      "route": "/blog/google-search-console-seo-measurement-guide/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-google-search-console-seo-measurement-guide-desktop.png",
+      "before": "previews/phase2/blog-google-search-console-seo-measurement-guide-desktop.png"
+    },
+    {
+      "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "width": 390,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-snapchat-ads-cpa-benchmarks-saudi-arabia-2026-mobile.png",
+      "before": "previews/phase2/blog-snapchat-ads-cpa-benchmarks-saudi-arabia-2026-mobile.png"
+    },
+    {
+      "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+      "width": 1440,
+      "file": "previews/reconciled/verified-2026-11-06T19-56-22-133Z/blog-snapchat-ads-cpa-benchmarks-saudi-arabia-2026-desktop.png",
+      "before": "previews/phase2/blog-snapchat-ads-cpa-benchmarks-saudi-arabia-2026-desktop.png"
+    }
+  ],
+  "runtimeErrors": [],
+  "failedResources": [],
+  "blockedExternal": [
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY",
+    "https://www.googletagmanager.com/gtag/js?id=G-TESTONLY"
+  ]
+}
