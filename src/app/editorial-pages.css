@@ -14,6 +14,10 @@
 .fd-support-principles p { margin-top: 14px !important; color: var(--fd-muted); font-size: 13px; }
 .fd-home .fd-support-principles h3 { font-size: 17px; }
 .fd-support-reading { max-width: 900px; }
+.fd-archive-disclosure { border-top: 1px solid var(--fd-line); }
+.fd-archive-disclosure > summary { display: flex; justify-content: space-between; align-items: center; cursor: pointer; min-height: 60px; font-weight: 600; font-size: 14px; list-style: none; }
+.fd-archive-disclosure > summary::-webkit-details-marker { display: none; }
+.fd-archive-disclosure[open] > summary span { transform: rotate(45deg); }
 .fd-support-reading > p { max-width: 65ch; color: var(--fd-muted); margin-top: 28px !important; }
 .fd-support-reading > .fd-text-link { margin-top: 25px; }
 .fd-support-contact { display: grid; grid-template-columns: .95fr 1.05fr; gap: 85px; align-items: start; }

@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-06T18:15:12.756Z",
+  "sourceCommit": "4b81b631de2430b533970ce33096c1364a349627",
+  "results": [
+    {
+      "name": "Patched framework and lockfile are aligned",
+      "status": "PASS"
+    },
+    {
+      "name": "No production dependency vulnerabilities; no Critical or High full-audit findings",
+      "status": "PASS"
+    },
+    {
+      "name": "Remaining findings match the explicitly reviewed development-only minimatch chain",
+      "status": "PASS"
+    },
+    {
+      "name": "Security PR remains draft, unmerged and independent of redesign source",
+      "status": "PASS"
+    },
+    {
+      "name": "Release inspection targets the verified project and preserves production",
+      "status": "PASS"
+    },
+    {
+      "name": "GA4 environment presence is recorded without values and source contains no synthetic ID",
+      "status": "PASS"
+    }
+  ],
+  "fullAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 8,
+    "high": 0,
+    "critical": 0,
+    "total": 8
+  },
+  "productionAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "productionReady": false,
+  "releaseGate": "Owner approval, patched rollback anchor and real Production-environment verification remain required; this script does not authorize a release."
+}

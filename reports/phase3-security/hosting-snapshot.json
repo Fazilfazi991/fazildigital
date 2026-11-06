@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-11-06T18:03:51.187Z",
+  "project": {
+    "id": "prj_CmLqVHcl9jaE585rBNpDoWelS8xy",
+    "name": "fazil-digital",
+    "teamId": "team_FKtnAnds9Xak13ypGNvXO346",
+    "framework": "nextjs",
+    "nodeVersion": "24.x",
+    "ssoProtection": {
+      "enabled": true,
+      "deploymentType": "all_except_custom_domains"
+    },
+    "passwordProtectionEnabled": false,
+    "domains": [
+      "www.fazildigital.com",
+      "fazil-digital.vercel.app",
+      "fazildigital.com",
+      "fazil-digital-faziils-projects.vercel.app",
+      "fazil-digital-git-main-faziils-projects.vercel.app"
+    ]
+  },
+  "production": {
+    "id": "dpl_9WtYzrpB5LXDDHGu4VPKhxHkmPUa",
+    "url": "fazil-digital-lm512t4r7-faziils-projects.vercel.app",
+    "target": "production",
+    "state": "READY",
+    "branch": "main",
+    "commit": "833d3820ede59d9f96df12551f12d43e1695a363"
+  },
+  "redesignPreview": {
+    "id": "dpl_dXYZu42b2SMyMBq8xk4DE19hY8R4",
+    "url": "fazil-digital-aqliqrx37-faziils-projects.vercel.app",
+    "target": "preview",
+    "state": "READY",
+    "branch": "revamp/saudi-seo-organic",
+    "commit": "4b81b631de2430b533970ce33096c1364a349627"
+  },
+  "securityHotfixPreview": {
+    "id": "dpl_5gATxssfWvkDnx6dRZoSHzYFT2AB",
+    "url": "fazil-digital-odekqbpix-faziils-projects.vercel.app",
+    "target": "preview",
+    "state": "READY",
+    "branch": "security/nextjs-november-2026",
+    "commit": "75da19d47711ab3beeee8aff50b2628bb3928f5c"
+  },
+  "githubPR": {
+    "url": "https://github.com/Fazilfazi991/fazildigital/pull/1",
+    "number": 1,
+    "state": "open",
+    "merged": false,
+    "draft": true,
+    "base": "main",
+    "base_sha": "833d3820ede59d9f96df12551f12d43e1695a363",
+    "head": "security/nextjs-november-2026",
+    "head_sha": "75da19d47711ab3beeee8aff50b2628bb3928f5c"
+  },
+  "environment": {
+    "ga4KeyPresent": true,
+    "ga4Targets": [
+      "production"
+    ],
+    "ga4Type": "encrypted",
+    "valuesRead": false,
+    "valuesStored": false,
+    "hiddenProductionEnvCount": 0
+  },
+  "unauthenticatedChecks": {
+    "preview": {
+      "status": 302,
+      "destination": "https://vercel.com/sso-api",
+      "xRobotsTag": "noindex"
+    },
+    "apex": {
+      "status": 308,
+      "destination": "https://www.fazildigital.com/"
+    },
+    "www": {
+      "status": 200
+    }
+  },
+  "mutationsPerformed": []
+}

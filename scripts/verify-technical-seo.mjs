@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import path from "node:path";
 import { execFileSync } from "node:child_process";
 
 const baseURL = process.env.BASE_URL || "http://127.0.0.1:3001";
@@ -123,8 +124,9 @@ await check("Legacy schema describes coverage without fabricated offices", async
   }
 });
 
-fs.mkdirSync('reports', { recursive: true });
+const reportFile = process.env.SEO_REPORT_PATH || 'reports/technical-seo-results.json';
+fs.mkdirSync(path.dirname(reportFile), { recursive: true });
 const summary = { target: baseURL, timestamp: new Date().toISOString(), results, evidence };
-fs.writeFileSync('reports/technical-seo-results.json', JSON.stringify(summary, null, 2));
+fs.writeFileSync(reportFile, JSON.stringify(summary, null, 2));
 console.log(JSON.stringify(summary, null, 2));
 if (results.some(result => result.status === 'FAIL')) process.exitCode = 1;

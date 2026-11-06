@@ -6,65 +6,65 @@ export const cluster2Blogs: BlogPost[] = [
     title: "Sharjah Business Directory Guide 2026: Where to List Your Company for Local SEO",
     category: "SEO",
     date: "April 15, 2026",
-    lastModified: "2026-04-15",
-    excerpt: "The complete list of Sharjah business directories that boost local SEO. Get found by customers searching 'near me' in Al Majaz, Al Nahda, Muwaileh & more.",
-    llmSummary: "Complete guide to Sharjah business directories for local SEO in 2026. Includes Sharjah Chamber of Commerce, Yellow Pages UAE, Etisalat Business, and district-specific citations. Tips for NAP consistency, Arabic listings, and Google Maps optimization for Al Majaz, Al Nahda, Muwaileh.",
+    lastModified: "2026-11-06",
+    excerpt: "Assess relevant Sharjah business listings, verify current eligibility and keep business information accurate without treating a directory checklist as a ranking guarantee.",
+    llmSummary: "A local-listing review for Sharjah businesses: check current directory availability and eligibility, use accurate real-world details and assess usefulness to customers. No client count, local-use statistic or ranking outcome is verified.",
     searchIntent: "Informational → Decision",
     targetAudience: "Sharjah Business Owners",
     primaryKeyword: "Sharjah business directory",
     content: `
-      <p class="text-xl leading-relaxed text-text-muted mb-8"><strong>Short answer</strong>: To rank in Google Maps for Sharjah searches, list your business in these 7 directories: Sharjah Chamber of Commerce, Yellow Pages UAE (Sharjah filter), Etisalat Business Directory, Dubizzle Business, Sharjah Government Portal, Google Business Profile, and local district associations. Consistency in your business name, address, and phone number (NAP) across all listings is critical for ranking.</p>
+      <p>Directory listings can help people find accurate business information, but a fixed list is not a recipe for a Google Maps position. Check each operator’s current availability, eligibility and terms before submitting details. The <a href="https://sharjah.gov.ae/en/media-center/news/sharjah-chamber-launches-new-website/">Sharjah Chamber describes a Business Directory on its current website</a>; the other names below are candidates to verify, not a list of mandatory or confirmed active products.</p>
 
-      <p>If you own a business in Sharjah and you're not listed in local directories, you're invisible to customers searching "near me."</p>
+      <p>Relevant listings can be one route to discovery, but absence from a directory does not establish that customers cannot find a business. Review the actual website, profile and customer journey.</p>
 
       <p>Here's the reality:</p>
       <ul class="list-disc list-inside space-y-2 mb-8 text-white/90">
-        <li><strong>67% of Sharjah consumers</strong> use Google Maps to find local businesses before visiting.</li>
-        <li><strong>89% of "near me" searches</strong> end in a store visit or call within 24 hours.</li>
+        <li>Review how your actual customers discover the business; no Sharjah-wide Maps usage percentage is verified here.</li>
+        <li>Contact and store-visit behavior needs the business’s own evidence; no universal near-me conversion rate is established.</li>
         <li><strong>Consistent, relevant directory citations</strong> can support local search prominence; measure the effect in Search Console and local visibility reporting.</li>
       </ul>
 
       <p>But most Sharjah business owners make the same mistakes: Listing in random directories with inconsistent NAP, ignoring Arabic-language directories, and forgetting district-specific citations (Al Majaz, Al Nahda, Muwaileh).</p>
 
       <h2 class="text-3xl mt-12 mb-6">Why Directory Citations Matter for Sharjah Businesses</h2>
-      <p>Google uses directory citations as a <strong>trust signal</strong> to verify your business is legitimate and located where you claim.</p>
+      <p>Accurate public information can help people assess a business. This article does not describe a verified sequence of Google checks or a ranking formula based on directory membership.</p>
 
       <div class="bg-black/40 p-6 rounded-xl my-8 border border-white/10">
         <h3 class="text-xl font-bold mb-4">The Trust Loop:</h3>
         <ol class="space-y-3 text-sm text-white/80">
           <li>1. Google crawls directories like Sharjah Chamber of Commerce, Yellow Pages UAE, etc.</li>
           <li>2. It checks if your business name, address, and phone number (NAP) match across sources.</li>
-          <li>3. Consistent NAP = higher trust = better Google Maps rankings.</li>
-          <li>4. Inconsistent NAP = confusion = lower rankings or suspension.</li>
+          <li>3. Accurate business information helps customers assess and contact the real business.</li>
+          <li>4. Review inconsistencies; a formatting difference alone is not proof of a penalty or suspension.</li>
         </ol>
       </div>
 
-      <h2 class="text-3xl mt-12 mb-6">The 7 Essential Sharjah Business Directories (2026)</h2>
+      <h2 class="text-3xl mt-12 mb-6">Seven listing channels to investigate and verify</h2>
 
       <h3 class="text-2xl mt-8 mb-4">1. Sharjah Chamber of Commerce & Industry ️</h3>
-      <p>Official government-backed directory. Highest authority signal for Sharjah businesses. Register as a member, complete your profile with Arabic details, and ensure you link to your <a href="/sharjah/digital-marketing" class="text-accent hover:underline">Sharjah digital marketing</a> hub for maximum conversion.</p>
+      <p>The Sharjah Chamber describes a Business Directory on its website. Review its current membership, eligibility and publishing requirements before submitting a genuine business profile. No special Google authority score is established by a listing.</p>
 
       <h3 class="text-2xl mt-8 mb-4">2. Yellow Pages UAE (Sharjah Filter) </h3>
-      <p>One of the most crawled directories by Google in the UAE. Claim your free listing, verify via phone, and use location-specific keywords in your description: "Digital marketing expert in Sharjah specializing in SEO for Al Majaz businesses."</p>
+      <p>Check whether the current Yellow Pages operator has a suitable Sharjah category and what its listing terms require. Use accurate business information rather than assuming a free listing, verification method or ranking advantage.</p>
 
       <h3 class="text-2xl mt-8 mb-4">3. Etisalat Business Directory </h3>
-      <p>Etisalat is UAE's largest telecom. Their directory has high domain authority. Etisalat users often search by service + location ("SEO services Sharjah"). Include these phrases naturally.</p>
+      <p>Verify whether the named telecom directory is currently available and suitable for the actual business. A familiar operator name does not establish an active listing product or a Google ranking benefit.</p>
 
       <h3 class="text-2xl mt-8 mb-4">4. Dubizzle Business (Sharjah Category) ️</h3>
-      <p>Dubizzle is UAE's most visited classifieds site. High traffic + local intent. Add high-quality photos of your team and workspace to stand out.</p>
+      <p>Review the current classifieds categories, eligibility, fees and audience fit. No verified traffic ranking or automatic local-search benefit is supplied here.</p>
 
       <h3 class="text-2xl mt-8 mb-4">5. Sharjah Government Business Portal </h3>
-      <p>Official government portal. Strong trust signal for Google. Mention your Sharjah trade license number—this adds credibility and helps Google verify legitimacy.</p>
+      <p>Use an official portal only for the service and eligibility it actually provides. Do not publish a license number or other details on the assumption that it will create a Google trust signal.</p>
 
       <h3 class="text-2xl mt-8 mb-4">6. Google Business Profile (Critical!) ️</h3>
-      <p>Directly controls your Google Maps ranking. Set service areas for specific districts like Al Majaz, Al Nahda, Muwaileh, and University City. Post weekly updates and encourage reviews that mention your district.</p>
+      <p>A Google Business Profile can represent an eligible real business. Follow <a href="https://support.google.com/business/answer/3038177?hl=en">Google’s representation requirements</a>, use accurate coverage and invite genuine feedback. Setting service areas does not directly control map positions.</p>
 
       <h3 class="text-2xl mt-8 mb-4">7. Local District Associations ️</h3>
-      <p>Hyper-local citations like the Al Majaz Business Council help rank for neighborhood searches. Even a simple listing with NAP on a district association website can boost neighborhood rankings.</p>
+      <p>Verify that any local association or directory actually exists, accepts the business and serves a useful audience. No named district council, guaranteed listing or neighbourhood ranking effect is established by this article.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-2xl">
         <h3 class="text-3xl font-heading font-bold mb-4 text-bg-base">Ready to dominate Sharjah local search?</h3>
-        <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto text-bg-base/80">I've helped 12+ Sharjah businesses improve their local SEO rankings. Let's create a 30-day action plan to dominate your district.</p>
+        <p>A useful local-listing review can identify inaccurate details and suitable destinations. No verified Sharjah client count or thirty-day ranking outcome is supplied for this article.</p>
         <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white font-heading font-bold py-4 px-10 rounded hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
           Claim Your Free Sharjah Audit <span class="text-accent transition-transform group-hover:translate-x-1">→</span>
         </a>
@@ -76,16 +76,16 @@ export const cluster2Blogs: BlogPost[] = [
     title: "Google Maps SEO for UAE Businesses: How to Rank in the Local Pack in 2026",
     category: "SEO",
     date: "April 15, 2026",
-    lastModified: "2026-04-15",
+    lastModified: "2026-11-06",
     excerpt: "Rank higher in Google Maps for Dubai, Sharjah, Riyadh & Abu Dhabi searches. Step-by-step guide to optimizing your Google Business Profile for UAE local SEO in 2026.",
-    llmSummary: "Complete guide to Google Maps SEO for UAE businesses in 2026. Covers Google Business Profile optimization, citation building, review generation, and local content strategy for Dubai, Sharjah, Abu Dhabi, and Riyadh.",
+    llmSummary: "A local-search review framework for actual operations, eligible business representation, genuine feedback and useful page destinations. No visibility-lift percentage, ninety-day outcome or scripted review formula is verified.",
     searchIntent: "High commercial intent → Decision",
     targetAudience: "UAE Business Owners & Marketing Managers",
     primaryKeyword: "Google Maps SEO UAE",
     content: `
-      <p class="text-xl leading-relaxed text-text-muted mb-8"><strong>Short answer</strong>: To rank in Google Maps for UAE searches, optimize your Google Business Profile with accurate NAP, Arabic + English descriptions, district-specific service areas, and genuine reviews. Businesses following this framework typically see 40-70% more local visibility within 90 days.</p>
+      <p>Local SEO starts with accurate real-world information, eligible business representation and useful website destinations. This article does not establish a percentage visibility increase or a ninety-day outcome.</p>
 
-      <p>If you own a business in the UAE or Saudi Arabia, <strong>Google Maps is your most valuable real estate</strong>. Why? Because 76% of UAE consumers use Google Maps to find local businesses, and 89% of "near me" searches end in a visit or call within 24 hours.</p>
+      <p>Use the business’s actual customer and website evidence to decide which local-search work matters. No UAE-wide Maps-use percentage or visit-conversion statistic is verified here.</p>
 
       <h2 class="text-3xl mt-12 mb-6">How Google Maps Ranking Works in 2026</h2>
       <p>Google uses three core factors to rank businesses in the local pack:</p>
@@ -114,7 +114,7 @@ export const cluster2Blogs: BlogPost[] = [
       <p>Google indexes both languages in the UAE. Your description must be bilingual. For example: "Mohammad Fazil helps Sharjah businesses in Al Majaz..." vs "محمد فاضل يساعد الشركات في الشارقة...". Google prioritizes results that match the user's browser language settings.</p>
 
       <h3 class="text-2xl mt-8 mb-4">Step 3: Review Generation for UAE Districts</h3>
-      <p>Reviews are a major ranking factor. When asking for reviews, encourage clients to mention their location: "Thank you for the excellent SEO services in Sharjah!" These location-rich reviews are high-impact prominence signals.</p>
+      <p>Invite genuine customer feedback without scripting keywords or selectively soliciting only positive reviews. Respond appropriately and assess the actual experience described. See <a href="https://support.google.com/business/answer/7091?hl=en">Google’s local-search guidance</a> for the broader context.</p>
 
       <div class="blog-trust-badge my-12 bg-white/5 border border-accent/20 p-8 rounded-2xl relative overflow-hidden">
         <div class="absolute top-0 left-0 w-1 h-full bg-accent"></div>
@@ -124,9 +124,9 @@ export const cluster2Blogs: BlogPost[] = [
 
       <h2 class="text-3xl mt-16 mb-6">UAE Local SEO Technical Stack</h2>
       <ul class="list-disc list-inside space-y-4 mb-8 text-white/90">
-        <li><strong>Mobile Page Speed:</strong> Load time &lt;2.5 seconds on UAE mobile networks.</li>
+        <li><strong>Mobile Page Speed:</strong> Assess loading, interaction and stability using appropriate lab and real-user evidence.</li>
         <li><strong>Local Schema Markup:</strong> Implementing <code>LocalBusiness</code> and <code>GeoCoordinates</code> schema so Google understands exactly where you are.</li>
-        <li><strong>NAP Consistency:</strong> Maintaining a 100% match of your Name, Address, and Phone number across every UAE directory.</li>
+        <li><strong>NAP Consistency:</strong> Maintain accurate identity and contact details; do not imply that every directory or identical formatting is required.</li>
       </ul>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-2xl">
@@ -143,26 +143,26 @@ export const cluster2Blogs: BlogPost[] = [
     title: "AI Content vs Human Content in 2026: What Google's March Update Means for UAE Businesses",
     category: "SEO",
     date: "April 15, 2026",
-    lastModified: "2026-04-15",
-    excerpt: "Google's March 2026 Core Update emphasizes E-E-A-T and human expertise. Learn how UAE businesses can use AI content strategically without getting penalized.",
-    llmSummary: "Google's March 2026 Core Update emphasizes E-E-A-T and human expertise. UAE businesses can use AI content strategically by adding human editing, local expertise, original insights, and proper attribution.",
+    lastModified: "2026-11-06",
+    excerpt: "Use AI-assisted drafting with factual review, original substance and qualified editing. Do not infer a new penalty or a preferred content-production ratio from a core update.",
+    llmSummary: "Review the usefulness, originality, sources and accuracy of AI-assisted content. No special March2026 penalty or Google-required editorial production ratio is established.",
     searchIntent: "Informational → Commercial",
     targetAudience: "UAE CMOs & Content Managers",
     primaryKeyword: "AI content Google update UAE",
     content: `
-      <p class="text-xl leading-relaxed text-text-muted mb-8"><strong>Short answer</strong>: Google's March 2026 Core Update doesn't penalize AI content just for being AI-generated. But it <strong>does</strong> demote thin, generic, or unedited AI content that lacks human expertise, local context, or original insights. For UAE businesses, the winning strategy is <strong>AI-assisted content</strong>: use AI for research and drafting, but add human expertise and KSA/UAE examples.</p>
+      <p>The use of AI does not by itself establish whether a page is useful or accurate. Review the actual result, its sources and the value it gives the intended reader. <a href="https://developers.google.com/search/docs/fundamentals/using-gen-ai-content">Google’s guidance on generated content</a> focuses on accuracy, quality and relevance, rather than a tool-based publishing formula.</p>
 
-      <p>The question isn't whether you can use AI—it's whether your content demonstrates <strong>E-E-A-T: Experience, Expertise, Authoritativeness, and Trustworthiness</strong>. In the post-March 2026 landscape, "generic" is a death sentence for rankings.</p>
+      <p>Evaluate the page as a reader would: is it accurate, clear and useful, and is its evidence assessable? E-E-A-T is a quality-assessment concept, not a score or a newly verified March 2026 ranking factor.</p>
 
-      <h2 class="text-3xl mt-12 mb-6">What Google Is Demoting in the UAE</h2>
+      <h2 class="text-3xl mt-12 mb-6">Content-quality issues to review</h2>
       <ul class="list-disc list-inside space-y-4 mb-8 text-white/90">
         <li><strong>Thin AI Content:</strong> Generic advice with no UAE-specific context or unique data.</li>
         <li><strong>Unedited AI Translations:</strong> Content that reads like a literal translation rather than culturally-adapted Arabic.</li>
         <li><strong>Location Page Scalers:</strong> Replicating the same page for "Dubai", "Sharjah", and "Abu Dhabi" with AI-spun text that adds zero unique local value.</li>
       </ul>
 
-      <h2 class="text-3xl mt-12 mb-6">The Winning Mix: The 70/20/10 Rule</h2>
-      <p>For UAE content pipelines, use this as a starting framework for 2026 and adjust the balance using your own publishing and conversion data:</p>
+      <h2 class="text-3xl mt-12 mb-6">An illustrative editorial mix, not a ranking rule</h2>
+      <p>The following percentages are an illustrative planning example only. They are not Google guidance, measured market behavior or a required allocation; choose an editorial plan from the actual reader needs and review capacity.</p>
       
       <div class="overflow-x-auto my-8 border border-white/10 rounded-xl">
         <table class="w-full text-left border-collapse bg-black/20">
@@ -194,7 +194,7 @@ export const cluster2Blogs: BlogPost[] = [
       </div>
 
       <h2 class="text-3xl mt-16 mb-6">How to Verify Your Content Strategy</h2>
-      <p>Before publishing, ask: Are there specific cultural or regulatory nuances here? Does this mention UAE-specific hubs or KSA-native platforms like Snapchat? If it reads like it could apply to London or New York, it will not rank in the GCC.</p>
+      <p>Before publishing, ask whether the page solves its intended question and whether each factual claim can be checked. Add regional details where they are genuinely relevant, not simply to make a generic page look local. Geography alone does not determine ranking eligibility.</p>
 
       <div class="blog-cta-block mt-16 mb-12 p-10 bg-gradient-to-br from-accent/90 to-[#A67C2E]/80 backdrop-blur-md rounded-2xl text-primary text-center shadow-2xl">
         <h3 class="text-3xl font-heading font-bold mb-4 text-bg-base">Struggling with the March 2026 Update?</h3>
