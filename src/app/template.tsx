@@ -1,16 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function RootTemplate({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    if (pathname === "/") return;
     // Artificial staggering: Show progress bar first, then fade content in.
     // This solves the "instant open" feel on fast Next.js sites.
     const timer = setTimeout(() => setVisible(true), 150);
     return () => clearTimeout(timer);
-  }, []);
+  }, [pathname]);
+
+  if (pathname === "/") return children;
 
   return (
     <>

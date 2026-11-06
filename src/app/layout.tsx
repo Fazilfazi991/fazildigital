@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
-import { MobileStickyCTA } from "@/components/MobileStickyCTA";
-import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { SiteChrome } from "@/components/SiteChrome";
 import { Analytics } from "@/components/Analytics";
 
 export const metadata: Metadata = {
@@ -46,18 +43,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`h-full antialiased`}>
-      <head>
-        <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&amp;f[]=satoshi@400,500,600,700&amp;display=swap" />
-      </head>
       <body className="min-h-full flex flex-col font-body bg-primary text-bg-base">
         <Analytics />
-        <Navbar />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
-        <MobileStickyCTA />
-        <FloatingWhatsApp />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );
