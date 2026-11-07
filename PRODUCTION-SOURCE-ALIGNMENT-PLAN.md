@@ -1,0 +1,7 @@
+# Production source alignment plan
+
+Recorded on 7 November 2026. Live `www.fazildigital.com` serves Production deployment `dpl_A2Bk985CJEVkir3ZSZErqZdWZQ3U`, source commit `e8e9329eaeca22bc8612c7d2fb6645449af5ec43`. GitHub `main` points to patched commit `afbf5660486c26af1468f244376a5d35492e58c5`, an ancestor of the live redesign. Vercel's configured Production branch is `main`, and automatic custom-domain assignment is enabled. A future push to main can therefore replace the live redesign with a main-branch build.
+
+This UI refresh is isolated on `codex/visual-refresh-v2`, which starts from the deployed commit. The patched security rollback deployment is `dpl_BNHQp69PJvsDhxU6SvWHTmfLJSvW`. Do not merge either branch or deploy to Production merely to fix alignment.
+
+After separate owner approval for source reconciliation, an operator should review a focused PR from the deployed redesign source (`revamp/saudi-seo-organic` at `e8e9329`) into `main`, confirm branch heads and compare the resulting build against the already live deployment, then choose a controlled deployment window. Because a merge can trigger production automatically, verify Vercel's deployment controls and keep the patched rollback target available before merging. Record the resulting commit, deployment, alias and settings. Review the UI refresh in its own protected Preview and obtain separate approval before any release of it. Never select the older unpatched deployment for rollback.

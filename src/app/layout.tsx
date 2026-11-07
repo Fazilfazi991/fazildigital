@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./home.css";
 import "./site.css";
+import "./refresh.css";
 import localFont from "next/font/local";
 import { SiteChrome } from "@/components/SiteChrome";
 import { Analytics } from "@/components/Analytics";
