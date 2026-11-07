@@ -21,8 +21,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `Digital Consultant in ${location.city} | SEO, Marketing & Web Development | Mohammad Fazil`;
   const description = `Mohammad Fazil is a digital consultant offering SEO, digital marketing, paid ads, web development, AI automation and SaaS development for mid-size businesses in ${location.city}, ${location.country}.`;
 
-  const isUAE = ["dubai", "abu-dhabi", "sharjah", "ajman"].includes(city);
-  const isSA = ["riyadh", "jeddah", "dammam"].includes(city);
   const canonical = `https://www.fazildigital.com/locations/${city}/`;
 
   return {
@@ -30,11 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     alternates: {
       canonical,
-      languages: {
-        ...(isUAE ? { "en-ae": canonical } : {}),
-        ...(isSA ? { "en-sa": canonical } : {}),
-        "x-default": canonical,
-      },
+      languages: {},
     },
     openGraph: {
       title,
@@ -58,15 +52,15 @@ export default async function LocationHubPage({ params }: Props) {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Mohammad Fazil Digital Consulting",
+    "@type": "CollectionPage",
+    "name": `Consulting services for ${location.city}`,
     "url": `https://www.fazildigital.com/locations/${city}/`,
-    "areaServed": {
+    "spatialCoverage": {
       "@type": "City",
       "name": location.city,
       "addressCountry": location.country === "UAE" ? "AE" : "SA",
     },
-    "employee": {
+    "about": {
       "@type": "Person",
       "name": "Mohammad Fazil",
       "sameAs": "https://linkedin.com/in/fazilfazi"

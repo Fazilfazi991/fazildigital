@@ -22,9 +22,11 @@ export function Analytics() {
 
     const onConversion = (event: Event) => {
       const conversion = event as CustomEvent<{ event?: string }>;
+      if (conversion.detail?.event === "review_intent") {
+        sendEvent("seo_review_intent", { method: "whatsapp" });
+      }
       if (conversion.detail?.event === "form_submit") {
         sendEvent("contact_form_submit", { method: "whatsapp" });
-        sendEvent("generate_lead", { method: "whatsapp" });
       }
     };
 

@@ -13,7 +13,7 @@ export interface HeroProps {
   paragraphText?: string;
 }
 
-export function HeroA({ locationCity, locationCountry, locationSlug, serviceName, serviceSlug, longOpening, headingText, paragraphText }: HeroProps) {
+export function HeroA({ locationCity, locationCountry, locationSlug, serviceName, longOpening, headingText, paragraphText }: HeroProps) {
   return (
     <section className="pt-24 pb-20 border-b border-white/5 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
@@ -39,7 +39,7 @@ export function HeroA({ locationCity, locationCountry, locationSlug, serviceName
   );
 }
 
-export function HeroB({ locationCity, locationCountry, locationSlug, serviceName, serviceSlug, longOpening, headingText, paragraphText }: HeroProps) {
+export function HeroB({ locationCity, locationCountry, locationSlug, serviceName, longOpening, headingText, paragraphText }: HeroProps) {
   return (
     <section className="pt-32 pb-24 border-b border-white/5 px-4 sm:px-6 lg:px-8 bg-[#050505] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent/5 to-transparent pointer-events-none"></div>
@@ -68,7 +68,7 @@ export function HeroB({ locationCity, locationCountry, locationSlug, serviceName
   );
 }
 
-export function HeroC({ locationCity, locationCountry, locationSlug, serviceName, serviceSlug, longOpening, headingText, paragraphText }: HeroProps) {
+export function HeroC({ locationCity, locationCountry, serviceName, longOpening, headingText, paragraphText }: HeroProps) {
   return (
     <section className="pt-24 pb-20 border-b border-white/5 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">

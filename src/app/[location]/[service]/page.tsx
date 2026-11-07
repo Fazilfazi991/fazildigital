@@ -4,23 +4,20 @@ import { services } from "@/data/services";
 import { locations } from "@/data/locations";
 import { getMoneyPageLayout } from "@/data/moneyPageLayouts";
 import { BlockRenderer } from "@/components/money-pages/BlockRenderer";
+import { preservedLegacyCombinationPaths } from "@/data/seo-routes";
 
 interface Props {
   params: Promise<{ location: string; service: string }>;
 }
 
-/**
- * This generates all 36+ money pages at build time (6 cities × 7 services).
- * Add more cities to data/locations.ts and they are automatically included.
- */
+export const dynamicParams = false;
+
+/** Preserve the reviewed legacy routes without multiplying future city/service arrays. */
 export async function generateStaticParams() {
-  const params: { location: string; service: string }[] = [];
-  for (const loc of locations) {
-    for (const svc of services) {
-      params.push({ location: loc.slug, service: svc.slug });
-    }
-  }
-  return params;
+  return preservedLegacyCombinationPaths.map(path => {
+    const [location, service] = path.split('/').filter(Boolean);
+    return { location, service };
+  });
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -48,8 +45,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? "SEO services in Riyadh for technical, local, B2B, Arabic and English search. Build qualified visibility with direct senior strategy and clear measurement."
       : `${location.city} ${service.name} expert helping businesses ${hook.toLowerCase()}. Book your free 30-min growth consultation today.`;
 
-  const isUAE = ["dubai", "abu-dhabi", "sharjah", "ajman"].includes(locationSlug);
-  const isSA = ["riyadh", "jeddah", "dammam"].includes(locationSlug);
   const canonical = `https://www.fazildigital.com/${locationSlug}/${serviceSlug}/`;
 
   return {
@@ -57,11 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     alternates: {
       canonical,
-      languages: {
-        ...(isUAE ? { "en-ae": canonical } : {}),
-        ...(isSA ? { "en-sa": canonical } : {}),
-        "x-default": canonical,
-      },
+      languages: {},
     },
     openGraph: {
       title,
@@ -100,24 +91,8 @@ export default async function MoneyPage({ params }: Props) {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["LocalBusiness", "ProfessionalService"],
-        "name": "Fazil Digital Consulting",
-        "url": `https://www.fazildigital.com/${locationSlug}/${serviceSlug}/`,
-        "image": "https://www.fazildigital.com/og-image.jpg",
-        "description": `${service.name} expertise in ${location.city}. Helping mid-size businesses scale via direct-access strategic consulting.`,
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": location.city,
-          "addressRegion": location.city,
-          "addressCountry": location.country === "UAE" ? "AE" : "SA",
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": location.city
-        }
-      },
-      {
         "@type": "Service",
+        "url": `https://www.fazildigital.com/${locationSlug}/${serviceSlug}/`,
         "name": `${service.name} Expert in ${location.city}`,
         "description": service.fullDescription,
         "provider": {
@@ -151,7 +126,7 @@ export default async function MoneyPage({ params }: Props) {
   };
 
   // Determine the block structure depending on the slug
-  const layout = getMoneyPageLayout(locationSlug, serviceSlug, {});
+  const layout = getMoneyPageLayout(locationSlug, serviceSlug);
 
   // Common data passed to all blocks
   const commonData = {
@@ -164,9 +139,7 @@ export default async function MoneyPage({ params }: Props) {
     headingText: specialized?.heroHeading,
     deliverables: specialized?.deliverables || service.deliverables,
     faqs: mergedFaqs,
-    marketContext: specialized?.marketContext 
-      ? `${specialized.marketContext}\n<hr class="border-white/10 my-8"/>\n${location.marketContext}`
-      : location.marketContext,
+    marketContext: [specialized?.marketContext, location.marketContext].filter(Boolean).join('\n<hr class="border-white/10 my-8"/>\n') || undefined,
     localDistricts: location.localDistricts,
     platformNotes: location.platformNotes,
     vision2030Note: location.vision2030Note,

@@ -10,12 +10,18 @@
         "@typescript-eslint/type-utils",
         "@typescript-eslint/utils"
       ],
-      "effects": [],
+      "effects": [
+        "typescript-eslint"
+      ],
       "range": ">=6.16.0",
       "nodes": [
         "node_modules/@typescript-eslint/eslint-plugin"
       ],
-      "fixAvailable": true
+      "fixAvailable": {
+        "name": "eslint-config-next",
+        "version": "15.5.29",
+        "isSemVerMajor": true
+      }
     },
     "@typescript-eslint/parser": {
       "name": "@typescript-eslint/parser",
@@ -46,9 +52,7 @@
         "@typescript-eslint/typescript-estree",
         "@typescript-eslint/utils"
       ],
-      "effects": [
-        "@typescript-eslint/eslint-plugin"
-      ],
+      "effects": [],
       "range": ">=6.16.0",
       "nodes": [
         "node_modules/@typescript-eslint/type-utils"
@@ -86,6 +90,7 @@
         "@typescript-eslint/typescript-estree"
       ],
       "effects": [
+        "@typescript-eslint/eslint-plugin",
         "typescript-eslint"
       ],
       "range": ">=6.16.0",
@@ -186,11 +191,11 @@
     },
     "dependencies": {
       "prod": 17,
-      "dev": 384,
+      "dev": 381,
       "optional": 90,
       "peer": 0,
       "peerOptional": 0,
-      "total": 438
+      "total": 435
     }
   }
 }

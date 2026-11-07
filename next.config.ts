@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Existing metadata uses slash-terminated canonical URLs. Preserve both forms
+  // while making the framework's permanent normalization match those signals.
+  trailingSlash: true,
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "mir-s3-cdn-cf.behance.net" },
@@ -10,12 +13,10 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "fmauditors.com" },
       { protocol: "https", hostname: "ayishamuneer.com" },
       { protocol: "https", hostname: "desertgp.com" },
-      { protocol: "https", hostname: "Stepvisionhotelsupplies.com" },
       { protocol: "https", hostname: "stepvisionhotelsupplies.com" },
       { protocol: "https", hostname: "nuniversalyoga.ae" },
       { protocol: "https", hostname: "www.nuniversalyoga.ae" },
       { protocol: "https", hostname: "www.ayishamuneer.com" },
-      { protocol: "https", hostname: "ayishamuneer.com" },
       { protocol: "https", hostname: "www.payyolimixture.co.in" },
       { protocol: "https", hostname: "www.aurorasouq.com" },
       { protocol: "https", hostname: "www.alrizq.sa" },

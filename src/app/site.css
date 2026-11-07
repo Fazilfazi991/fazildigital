@@ -1,0 +1,13 @@
+.fd-page-hero{padding-block:65px 100px;border-bottom:1px solid var(--fd-line)}
+.fd-page-hero nav{font-size:12px;color:var(--fd-muted);margin-bottom:80px}.fd-page-hero nav a{text-decoration:underline}
+.fd-page-hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:80px;align-items:end}.fd-page-hero h1{font-size:clamp(55px,7vw,100px);max-width:800px}.fd-page-hero-grid>div:last-child>p{font-size:16px;color:var(--fd-muted);margin-bottom:25px}.fd-page-label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px!important;color:var(--fd-forest)}
+.fd-page-cta{background:var(--fd-forest);color:var(--fd-paper);padding-block:90px}.fd-page-cta h2{color:var(--fd-paper);max-width:700px}.fd-page-cta p{margin:25px 0!important;color:#d2dacb}.fd-page-cta .fd-button{margin-top:10px}
+.fd-legacy{background:#0a0a0a;color:#fafaf8}.fd-legacy h1,.fd-legacy h2,.fd-legacy h3{color:#fafaf8;font-family:system-ui,sans-serif}.fd-legacy a{color:inherit}
+.fd-legacy-notice { background: #1e4032; color: #f5f3ed; padding: 16px max(24px, calc((100vw - 1280px) / 2)); display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; font-size: 13px; }
+.fd-legacy-notice a { text-decoration: underline; text-underline-offset: 4px; }
+.fd-commercial-section{display:grid;grid-template-columns:1fr 1.2fr;gap:100px;border-bottom:1px solid var(--fd-line)}.fd-commercial-section h2{font-size:clamp(36px,4vw,54px)}.fd-commercial-section p{font-size:16px;color:var(--fd-muted);margin-bottom:20px}.fd-commercial-section ul{padding-left:20px;color:var(--fd-muted)}.fd-commercial-section li{margin-bottom:10px}.fd-commercial-links{display:flex;flex-wrap:wrap;gap:20px;margin-top:30px}
+.fd-market-riyadh > .fd-commercial-section:nth-of-type(2) { grid-template-columns: 1.15fr 1fr; }
+.fd-market-jeddah > .fd-commercial-section:nth-of-type(3) { grid-template-columns: .8fr 1.2fr; }
+.fd-market-dammam > .fd-commercial-section:nth-of-type(2) > div { padding: 30px; background: var(--fd-sage); border-radius: 3px; }
+@media(max-width:700px){.fd-page-hero{padding-block:40px 65px}.fd-page-hero nav{margin-bottom:45px}.fd-page-hero-grid,.fd-commercial-section{grid-template-columns:1fr;gap:28px}.fd-page-hero h1{font-size:clamp(50px,12vw,75px)}.fd-page-cta{padding-block:70px}}
+@media(max-width:700px){.fd-market-riyadh > .fd-commercial-section:nth-of-type(2),.fd-market-jeddah > .fd-commercial-section:nth-of-type(3){grid-template-columns:1fr}}
