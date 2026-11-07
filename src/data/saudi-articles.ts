@@ -1,7 +1,7 @@
 import type { BlogPost } from "./blog";
 
 const published = "November 6, 2026";
-const updated = "2026-11-06";
+const updated = "2026-11-07";
 
 /** Original English editorial content. Examples are hypothetical, not client results. */
 export const saudiArticles: BlogPost[] = [
@@ -28,6 +28,7 @@ export const saudiArticles: BlogPost[] = [
       <h2>Ask what you will receive</h2>
       <p>A deliverable should be reviewable. Instead of “technical optimization”, ask for the affected pages, the proposed fixes and the validation method. Instead of “keyword research”, ask how customer intent will be assigned to pages and how existing URLs will be protected.</p>
       <p>A content brief should identify the reader, the question, the evidence needed and the person approving it. A report should explain what was changed, what is still blocked and what decision follows. These artifacts make the work assessable even before search performance has had time to change.</p>
+      <p>Ask to see the structure of a sample recommendation: the page affected, the observation, the proposed action, the person responsible and the way it will be checked. A sample format can demonstrate the working method without presenting hypothetical figures as client results.</p>
       <h2>Clarify implementation ownership</h2>
       <p>An audit and an implemented improvement are not the same deliverable. Confirm who writes copy, who edits the CMS, who deploys technical changes and who checks the result. Ask how approvals and unexpected platform limitations will be handled.</p>
       <p>For Arabic work, identify the language editor and approval process. For local work, keep the business in control of its profiles and account permissions. Access should match the task rather than being granted broadly at the first conversation.</p>
@@ -64,6 +65,7 @@ export const saudiArticles: BlogPost[] = [
       <h2>Compare outputs on the same basis</h2>
       <p>Create a comparison sheet with four columns: deliverable, owner, approval and acceptance check. Put each proposal into that structure. Vague differences become easier to discuss when “content” must be described as an actual brief, draft, revision process or published page.</p>
       <p>For a hypothetical bilingual service website, compare whether both quotes include research in each language, an approved page map and qualified editorial review. Ten unreviewed translated posts are not equivalent to a smaller set of original, useful pages. This example illustrates a procurement decision; it is not a claim about a Fazil Digital engagement.</p>
+      <p>For example, if one proposal includes recommendations but not implementation, list the developer time separately. A second proposal that includes implementation should state the templates covered and how the changes will be verified; only then can the two scopes be compared on the same basis.</p>
       <h2>Include your internal work</h2>
       <p>Someone will need to approve access, explain the business, verify factual copy and sign off changes. Technical work may need a staging environment and a release window. Content may need interviews or approved product material. Allow for those dependencies instead of assuming that outsourcing removes them.</p>
       <p>Ask how work is reprioritized if a dependency is blocked. A clear change process protects both the budget and the relationship: what moves, what waits and what needs a revised scope should be visible.</p>
@@ -101,6 +103,7 @@ export const saudiArticles: BlogPost[] = [
         <li>Use guides to answer specific questions that deserve more explanation.</li>
       </ul>
       <p>Do not create multiple commercial pages for “Riyadh SEO consultant”, “SEO company Riyadh” and “SEO services Riyadh” unless evidence establishes genuinely different needs. Synonyms alone do not create three useful destinations. Existing URLs should be assessed before any new page is proposed.</p>
+      <p>A practical first check is to compare the queries and pages in Search Console for Saudi Arabia over a consistent date range. If both a general service page and a Riyadh page appear for a query, review their actual roles and the impression volume before calling it cannibalization. The <a href="/blog/seo-services-saudi-arabia-guide/">service scope guide</a> helps distinguish a national offer from a city-specific customer journey.</p>
       <h2>Turn findings into deliverable work</h2>
       <p>The roadmap should identify affected pages, the proposed changes and the person responsible. Technical tasks need acceptance checks. Content tasks need evidence and an approver. Local information needs someone who knows the real operation.</p>
       <p>Choose a manageable first work cycle. A hypothetical services firm might start by clarifying one priority offer, resolving a template problem and improving the route to contact. That is an implementation example, not a universal sequence or promised result.</p>
@@ -144,6 +147,7 @@ export const saudiArticles: BlogPost[] = [
       <p>Record which pages exist in each language and who updates them when the offer changes. Compare relevant queries and landing pages instead of assuming that one translation should reproduce the other version's traffic pattern.</p>
       <p>Interpret differences in context: audience size, competition, content history and the page's purpose can all matter. A low-volume page can still be useful if it answers an important customer question. A large impression count is not a substitute for relevant visits and a clear enquiry path.</p>
       <p>Fazil Digital's <a href="/services/content-marketing/">SEO content strategy</a> scope includes language planning; qualified Arabic production and approval must be arranged before Arabic publication. <a href="/contact/">Discuss your audience and language requirements</a> to decide what deserves a localized version.</p>
+      <p>When a page concerns a city-specific service, connect the language decision to the buyer's actual questions rather than translating a national template word for word. The <a href="/blog/riyadh-seo-strategy-guide/">Riyadh customer-journey guide</a> shows how to map those questions to existing pages.</p>
     `,
   },
   {
@@ -179,6 +183,7 @@ export const saudiArticles: BlogPost[] = [
       </ul>
       <p>Keep these signals separate. Clicking a call or WhatsApp link does not prove that a conversation happened, and a conversation does not automatically mean a qualified opportunity. Document what the tracking can and cannot establish.</p>
       <p>A local-search review should leave the business with accurate information, a clear list of changes and a practical maintenance process. Explore <a href="/services/local-seo/">local SEO services</a> or discuss the relevant city scope for <a href="/riyadh/seo/">Riyadh</a>, <a href="/jeddah/seo/">Jeddah</a> or <a href="/dammam/seo/">Dammam</a>.</p>
+      <p>For a Riyadh-focused review, document whether customers visit a staffed location, whether the business travels to them, and who can verify the operating details. These answers inform the review; they do not establish profile eligibility on their own. See the <a href="/blog/riyadh-seo-strategy-guide/">Riyadh strategy guide</a> for the related page-planning decisions.</p>
     `,
   },
   {
@@ -205,6 +210,7 @@ export const saudiArticles: BlogPost[] = [
       <h2>Write an actionable ticket</h2>
       <p>For each priority, record the affected template or URLs, the evidence, the proposed change, the owner and the acceptance check. Include the risk of changing an established behavior and the rollback option where relevant.</p>
       <p>A hypothetical ticket might explain that an important service is absent from crawlable navigation and specify where a descriptive link should be added. The acceptance check would confirm the link and destination on desktop and mobile. That is more useful than “improve internal linking” without a location or expected behavior.</p>
+      <p>A compact ticket can also record the inspected URL, Google-selected canonical if available, last inspection date and intended change. Keep an indexed-page observation separate from a live test, and ask the implementation owner to record when a verified fix reaches production.</p>
       <h2>Validate the change at the same level</h2>
       <p>Retest the template and the affected customer journey after implementation. Check that the intended problem is resolved and that nearby behavior has not regressed. Record the release date so later search observations can be interpreted with context.</p>
       <p>Not every technically valid page will rank for its intended queries, and not every warning deserves immediate work. Technical SEO supports an accessible, understandable website; useful content and a relevant offer still matter. Explore the <a href="/services/technical-seo/">technical SEO service scope</a> or use the <a href="/blog/google-search-console-seo-measurement-guide/">measurement guide</a> to plan follow-up evidence.</p>
@@ -241,6 +247,7 @@ export const saudiArticles: BlogPost[] = [
       <h2>Plan language and links deliberately</h2>
       <p>Arabic and English research should inform the brief independently. Agree qualified Arabic editorial support before commissioning localized content. Do not expand the calendar faster than the team can review and maintain the result.</p>
       <p>Use related links where they help a reader continue. Google's <a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable">link guidance</a> recommends crawlable destinations and descriptive text. In practice, link an explanation to the relevant service or deeper answer, rather than inserting a list of every city and keyword.</p>
+      <p>For example, a guide about evaluating a provider can point to a service-scope page when the reader is ready to compare deliverables. A guide about language planning can instead link to the <a href="/blog/arabic-vs-english-seo-saudi-arabia/">Arabic and English page-planning guide</a>. Each link should answer the reader's next question.</p>
       <h2>Review usefulness after publication</h2>
       <p>Record publication and meaningful update dates. Review which queries and landing pages attract the intended audience, and ask customer-facing teams whether the material answers recurring questions. A new impression is not automatically a relevant visit.</p>
       <p>Maintain a small backlog: improve an unclear explanation, verify an aging fact, update a broken link or add an approved example. Publishing less frequently can be a sensible choice when it protects accuracy and original substance.</p>
@@ -265,6 +272,7 @@ export const saudiArticles: BlogPost[] = [
       <h2>Use CTR with position and intent</h2>
       <p>Low CTR does not automatically mean the title is the main problem. First ask where the result appears, what the query means and which page is being shown. Improving a snippet cannot solve every mismatch between a page and a customer's need.</p>
       <p>Before an experiment, record the page, query group, baseline and hypothesis. Choose one meaningful change, note the release date and agree a suitable review window. Avoid repeatedly rewriting several protected titles at once, which makes later interpretation harder.</p>
+      <p>A practical weekly log can record country, device, page, query theme, clicks, impressions, CTR and average position alongside the date a change went live. Where counts are small, retain the raw counts and compare longer windows rather than treating a one-week percentage swing as a reliable trend. Do not put names or enquiry messages into the log.</p>
       <h2>Investigate the actual page when necessary</h2>
       <p>If an important URL appears absent or unexpected, the <a href="https://support.google.com/webmasters/answer/9012289?hl=en">URL Inspection documentation</a> explains indexed and live-page views, including the Google-selected canonical in indexed information. A successful live test does not guarantee indexing or search appearance.</p>
       <p>Connect that investigation to the implementation record. Has the URL changed? Was content updated? Is another page receiving the intended queries? The next task might be technical, editorial or simply waiting for clearer evidence; do not assume all low visibility has one cause.</p>
