@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
+import Image from "next/image";
 import { saudiArticles } from "@/data/saudi-articles";
 import { MobileMenu, ProcessMotion, ReviewForm } from "@/components/home/HomeInteractions";
 import "./home.css";
@@ -13,8 +14,8 @@ const description = "Work directly with Mohammad Fazil on technical SEO, local s
 export const metadata: Metadata = {
   title: { absolute: title }, description,
   alternates: { canonical: "https://www.fazildigital.com/", languages: {}, types: {} },
-  openGraph: { title, description, url: "https://www.fazildigital.com/", siteName: "Fazil Digital", type: "website", locale: "en_SA" },
-  twitter: { card: "summary", title, description },
+  openGraph: { title, description, url: "https://www.fazildigital.com/", siteName: "Fazil Digital", type: "website", locale: "en_SA", images: [{ url: "/images/visual-refresh/social-cover.jpg", width: 1200, height: 630, alt: "Fazil Digital editorial artwork" }] },
+  twitter: { card: "summary_large_image", title, description, images: ["/images/visual-refresh/social-cover.jpg"] },
 };
 
 const faqs = [
@@ -59,15 +60,14 @@ export default function Home() {
       <section className="fd-hero fd-container" aria-labelledby="hero-heading">
         <div className="fd-hero-copy">
           <p className="fd-eyebrow"><span className="fd-status-dot" />SEO CONSULTANT · SAUDI ARABIA</p>
-          <h1 id="hero-heading">SEO &amp; Organic<br className="fd-desktop-break" /> Growth for<br className="fd-desktop-break" /> Saudi Businesses.</h1>
+          <h1 id="hero-heading">SEO &amp; organic growth for Saudi businesses.</h1>
           <p className="fd-hero-description">Improve your Google visibility, reach customers searching for your services, and build lasting organic traffic through SEO and original content.</p>
           <div className="fd-actions"><a href="#review" className="fd-button">Request an SEO Review <Arrow diagonal /></a><a href="#services" className="fd-text-link">Explore SEO Services <Arrow /></a></div>
-          <p className="fd-hero-person">Independent thinking. Direct work with <Link href="/about/">Mohammad Fazil.</Link></p>
+          <p className="fd-hero-person">Work directly with <Link href="/about/">Mohammad Fazil</Link> on a clear, practical plan for search.</p>
         </div>
-        <aside className="fd-search-art" aria-label="Focused on the connection between search, useful content and customer discovery">
-          <div className="fd-art-top"><span>A clearer path to discovery</span><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 2v20M2 12h20m-17-7 14 14M5 19 19 5" /></svg></div>
-          <div className="fd-aperture" aria-hidden="true"><svg viewBox="0 0 400 400" fill="none"><circle cx="200" cy="200" r="172" stroke="currentColor" strokeOpacity=".19" /><circle cx="200" cy="200" r="134" stroke="currentColor" strokeOpacity=".32" /><circle cx="200" cy="200" r="96" stroke="currentColor" strokeOpacity=".5" /><circle cx="200" cy="200" r="58" stroke="currentColor" strokeOpacity=".8" /><path d="M200 12v376M12 200h376" stroke="currentColor" strokeOpacity=".15" /><path d="M78 322 322 78" stroke="currentColor" strokeOpacity=".35" /><circle cx="268" cy="132" r="8" fill="#C8B38B" /><path d="m185 200 11 11 22-25" stroke="#F5F3ED" strokeWidth="2" /></svg><span className="fd-aperture-caption">Be found.<br />For the right reasons.</span></div>
-          <div className="fd-art-bottom"><span>Technical clarity<br />Local relevance<br />Original content</span><span className="fd-art-seal">Built around<br />your business.</span></div>
+        <aside className="fd-hero-editorial" aria-label="An example of the work an SEO review can include">
+          <div className="fd-hero-image"><Image src="/images/visual-refresh/hero-stone.webp" alt="" fill sizes="(max-width: 700px) 100vw, 45vw" priority /></div>
+          <div className="fd-hero-note"><p className="fd-hero-note-label">A practical starting point</p><h2>From a clearer picture<br />to a focused plan.</h2><ul><li>Understand your website</li><li>Find relevant search opportunities</li><li>Prioritize the work that matters</li></ul><span>Illustrative review scope · tailored to your business</span></div>
         </aside>
       </section>
 
@@ -114,8 +114,8 @@ export default function Home() {
         <div className="fd-insight-grid">{["arabic-vs-english-seo-saudi-arabia", "local-seo-saudi-businesses-guide", "technical-seo-audit-saudi-websites"].map((slug, index) => {
           const post = saudiArticles.find(article => article.slug === slug);
           if (!post) return null;
-          const motif = ["circles", "arches", "lines"][index];
-          return <article key={post.slug} className="fd-insight"><div className={`fd-insight-art fd-art-${motif}`} aria-hidden="true"><svg viewBox="0 0 360 180" fill="none" stroke="currentColor" strokeWidth="1">{motif === "circles" ? <>{[36,60,84,108,132].map(r => <circle key={r} cx="180" cy="135" r={r} />)}</> : motif === "arches" ? <>{[0,26,52,78,104].map(x => <path key={x} d={`M${75+x} 180V90a${105-x} ${105-x} 0 0 1 ${210-2*x} 0v90`} />)}</> : <>{[0,24,48,72,96,120,144].map(x => <path key={x} d={`m${80+x} 180 100-180`} />)}</>}</svg></div><p className="fd-insight-topic">{post.category}</p><h3><Link href={`/blog/${post.slug}/`}>{post.title}</Link></h3><p>{post.excerpt}</p><Link className="fd-text-link" href={`/blog/${post.slug}/`}>Read the guide <Arrow diagonal /></Link></article>;
+          const image = ["content-editorial.webp", "local-landscape.webp", "technical-material.webp"][index];
+          return <article key={post.slug} className="fd-insight"><div className="fd-insight-art" aria-hidden="true"><Image src={`/images/visual-refresh/${image}`} alt="" fill sizes="(max-width: 700px) 100vw, 33vw" /></div><p className="fd-insight-topic">{post.category}</p><h3><Link href={`/blog/${post.slug}/`}>{post.title}</Link></h3><p>{post.excerpt}</p><Link className="fd-text-link" href={`/blog/${post.slug}/`}>Read the guide <Arrow diagonal /></Link></article>;
         })}</div>
         <div className="fd-more-insights"><h3>More Saudi SEO guides</h3><ul>{saudiArticles.filter(post => !["arabic-vs-english-seo-saudi-arabia", "local-seo-saudi-businesses-guide", "technical-seo-audit-saudi-websites"].includes(post.slug)).map(post => <li key={post.slug}><Link href={`/blog/${post.slug}/`}>{post.title}<Arrow diagonal /></Link></li>)}</ul></div>
       </section>

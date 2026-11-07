@@ -1,0 +1,154 @@
+{
+  "checks": [
+    {
+      "route": "/",
+      "status": "PASS",
+      "sizes": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ]
+    },
+    {
+      "route": "/riyadh/seo/",
+      "status": "PASS",
+      "sizes": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ]
+    },
+    {
+      "route": "/services/seo/",
+      "status": "PASS",
+      "sizes": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ]
+    },
+    {
+      "route": "/services/local-seo/",
+      "status": "PASS",
+      "sizes": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ]
+    },
+    {
+      "route": "/services/technical-seo/",
+      "status": "PASS",
+      "sizes": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ]
+    },
+    {
+      "route": "/services/content-marketing/",
+      "status": "PASS",
+      "sizes": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ]
+    },
+    {
+      "route": "/jeddah/seo/",
+      "status": "PASS",
+      "sizes": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ]
+    },
+    {
+      "route": "/dammam/seo/",
+      "status": "PASS",
+      "sizes": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ]
+    },
+    {
+      "route": "/about/",
+      "status": "PASS",
+      "sizes": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ]
+    },
+    {
+      "route": "/blog/",
+      "status": "PASS",
+      "sizes": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ]
+    },
+    {
+      "route": "/contact/",
+      "status": "PASS",
+      "sizes": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ]
+    },
+    {
+      "name": "keyboard mobile menu Enter/Escape",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "previews/qa-refresh/home-mobile.png",
+    "previews/qa-refresh/home-desktop.png",
+    "previews/qa-refresh/riyadh-seo-mobile.png",
+    "previews/qa-refresh/riyadh-seo-desktop.png",
+    "previews/qa-refresh/services-seo-mobile.png",
+    "previews/qa-refresh/services-seo-desktop.png",
+    "previews/qa-refresh/services-local-seo-mobile.png",
+    "previews/qa-refresh/services-local-seo-desktop.png",
+    "previews/qa-refresh/services-technical-seo-mobile.png",
+    "previews/qa-refresh/services-technical-seo-desktop.png",
+    "previews/qa-refresh/services-content-marketing-mobile.png",
+    "previews/qa-refresh/services-content-marketing-desktop.png",
+    "previews/qa-refresh/jeddah-seo-mobile.png",
+    "previews/qa-refresh/jeddah-seo-desktop.png",
+    "previews/qa-refresh/dammam-seo-mobile.png",
+    "previews/qa-refresh/dammam-seo-desktop.png",
+    "previews/qa-refresh/about-mobile.png",
+    "previews/qa-refresh/about-desktop.png",
+    "previews/qa-refresh/blog-mobile.png",
+    "previews/qa-refresh/blog-desktop.png",
+    "previews/qa-refresh/contact-mobile.png",
+    "previews/qa-refresh/contact-desktop.png"
+  ]
+}

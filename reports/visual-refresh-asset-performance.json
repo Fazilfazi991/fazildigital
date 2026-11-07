@@ -1,0 +1,24 @@
+{
+  "heroLoaded": true,
+  "editorialImagesLoaded": [
+    {
+      "loaded": true,
+      "width": 390
+    },
+    {
+      "loaded": true,
+      "width": 390
+    },
+    {
+      "loaded": true,
+      "width": 390
+    }
+  ],
+  "navigation": [
+    {
+      "domContentLoadedMs": 103,
+      "loadMs": 331
+    }
+  ],
+  "note": "Single local mobile synthetic sample, not field performance."
+}
