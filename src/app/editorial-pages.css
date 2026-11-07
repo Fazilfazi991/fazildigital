@@ -132,3 +132,19 @@
   .fd-support-byline { gap: 10px 18px; }
   .fd-home .fd-support-article-body { font-size: 15px; }
 }
+/* Journal layout: one featured guide, then a compact reading list. */
+.fd-home .fd-page-hero.fd-journal-hero { padding-block:32px 44px; }
+.fd-home .fd-page-hero.fd-journal-hero nav { margin-bottom:32px; }
+.fd-home .fd-page-hero.fd-journal-hero h1 { font-size:clamp(40px,4.2vw,60px); max-width:21ch; }
+.fd-home .fd-page-hero.fd-journal-hero .fd-page-hero-intro { margin:18px 0!important; max-width:63ch; }
+.fd-journal-hero + .fd-section { padding-top:60px; }
+.fd-journal-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:48px; }
+.fd-journal-card { border-top:1px solid var(--fd-line); padding:28px 0 34px; min-width:0; }
+.fd-journal-feature { grid-column:1 / -1; display:grid; grid-template-columns:1fr 1fr; gap:clamp(30px,5vw,72px); align-items:center; padding:0 0 44px; border-top:0; }
+.fd-journal-image { position:relative; min-height:300px; overflow:hidden; background:var(--fd-sage); }
+.fd-journal-image img { object-fit:cover; }
+.fd-home .fd-journal-card h3 { font-size:clamp(19px,2vw,25px); max-width:38ch; }
+.fd-home .fd-journal-feature h3 { font-size:clamp(25px,3vw,38px); line-height:1.2; }
+.fd-home .fd-journal-copy > p:not(.fd-support-caption) { color:var(--fd-muted); max-width:57ch; margin-top:14px!important; font-size:14px; line-height:1.75; }
+.fd-journal-copy > .fd-text-link { margin-top:20px; }
+@media(max-width:700px){ .fd-journal-grid { grid-template-columns:1fr; }.fd-journal-feature { grid-column:auto; grid-template-columns:1fr; gap:24px; padding-bottom:34px; }.fd-journal-image { min-height:215px; }.fd-journal-card { padding-block:24px; }}

@@ -19,3 +19,14 @@ Additional assets created in the same session:
 | `social-cover.jpg` | 1200 × 630 | Social-sharing artwork | Conceptual architectural forms on a dark green background |
 
 `content-editorial-small.webp` is a 640px responsive variant. The social artwork intentionally contains no text or logo; title and identity can be overlaid in a suitable social-image template without inventing client work.
+
+## City concept illustrations — autonomous refinement
+
+Two further original images were generated specifically for Fazil Digital using the OpenAI image generation tool on 7 November 2026. They are conceptual material studies, not photographs of Jeddah or Dammam, real places, offices, clients, or results. Do not caption them as documentary location imagery. Use empty alt text when decorative.
+
+| File | Intrinsic size | Intended use | Suggested alt when informative |
+| --- | --- | --- | --- |
+| `jeddah-coast.webp` | 1200 × 800 | Jeddah city-page visual | Abstract limestone forms and a muted green coastal horizon |
+| `dammam-terrain.webp` | 1200 × 800 | Dammam city-page visual | Abstract layered stone forms with a green inlay |
+
+Both also have `-small.webp` siblings at 640 × 427 for responsive display. Source PNGs are retained in the Codex generated-images directory; the website assets are WebP exports.

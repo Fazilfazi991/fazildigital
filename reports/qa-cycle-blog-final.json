@@ -1,0 +1,31 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "status": "PASS"
+    },
+    {
+      "width": 768,
+      "status": "PASS"
+    },
+    {
+      "width": 1024,
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "reports/qa-cycle-screens/blog-final-390.png",
+    "reports/qa-cycle-screens/blog-final-feature-390.png",
+    "reports/qa-cycle-screens/blog-final-1440.png",
+    "reports/qa-cycle-screens/blog-final-feature-1440.png"
+  ]
+}

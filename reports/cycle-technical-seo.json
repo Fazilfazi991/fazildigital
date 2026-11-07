@@ -1,0 +1,80 @@
+{
+  "target": "http://127.0.0.1:3015",
+  "timestamp": "2026-11-07T05:46:09.534Z",
+  "results": [
+    {
+      "name": "One sitemap authority includes every old and approved new content URL",
+      "status": "PASS"
+    },
+    {
+      "name": "Every historical and approved content route returns 200 with a self canonical",
+      "status": "PASS"
+    },
+    {
+      "name": "All raw and rewritten Markdown articles have noindex and canonical headers",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing redirect destinations survive and trailing-slash normalization is permanent",
+      "status": "PASS"
+    },
+    {
+      "name": "Robots allows rendering assets and machine-readable text has no invented results",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy schema describes coverage without fabricated offices",
+      "status": "PASS"
+    }
+  ],
+  "evidence": {
+    "sitemap": {
+      "entries": 126,
+      "preservedHTML": 115,
+      "newArticles": 8,
+      "newServices": 3
+    },
+    "content": {
+      "tested": 126,
+      "uniqueTitles": 126,
+      "allHTTP200": true,
+      "allSelfCanonical": true
+    },
+    "markdown": {
+      "articles": 49,
+      "representations": 98
+    },
+    "redirects": [
+      {
+        "source": "/blog/seo-cost-dubai",
+        "destination": "/blog/",
+        "status": 308
+      },
+      {
+        "source": "/case-studies/dammam-logistics-seo",
+        "destination": "/case-studies/dammam-marketing/",
+        "status": 308
+      },
+      {
+        "source": "/case-studies/dental-seo-dubai",
+        "destination": "/case-studies/dubai-seo/",
+        "status": 308
+      },
+      {
+        "source": "/dubai/social-media",
+        "destination": "/dubai/social-media-management/",
+        "status": 308
+      },
+      {
+        "source": "/en-US",
+        "destination": "/",
+        "status": 308
+      },
+      {
+        "source": "/snapchat-ads-saudi-arabia-benchmarks",
+        "destination": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+        "status": 308
+      }
+    ]
+  }
+}

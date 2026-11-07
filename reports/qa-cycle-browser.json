@@ -1,0 +1,172 @@
+{
+  "checks": [
+    {
+      "route": "/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/riyadh/seo/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/services/seo/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/services/local-seo/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/services/technical-seo/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/services/content-marketing/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/jeddah/seo/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/dammam/seo/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/about/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/blog/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/contact/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "checks": "HTTP, title heading, canonical, 5 widths",
+      "status": "PASS"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/riyadh/seo/",
+      "width": 390,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/services/seo/",
+      "width": 390,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/about/",
+      "width": 390,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/blog/",
+      "width": 390,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/contact/",
+      "width": 390,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "width": 390,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/riyadh/seo/",
+      "width": 1440,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/services/seo/",
+      "width": 1440,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/about/",
+      "width": 1440,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/blog/",
+      "width": 1440,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/contact/",
+      "width": 1440,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "route": "/blog/riyadh-seo-strategy-guide/",
+      "width": 1440,
+      "checks": "axe WCAG A/AA",
+      "status": "PASS"
+    },
+    {
+      "checks": "hydrated mobile menu Enter / Escape and focus",
+      "status": "PASS"
+    },
+    {
+      "checks": "contact form visual / DOM order",
+      "status": "PASS",
+      "evidence": {
+        "inputBeforeDirect": true,
+        "inputTop": 779,
+        "directTop": 1658
+      }
+    }
+  ],
+  "failures": [],
+  "screenshots": [
+    "reports/qa-cycle-screens/home-390.png",
+    "reports/qa-cycle-screens/home-1440.png",
+    "reports/qa-cycle-screens/riyadh-seo-390.png",
+    "reports/qa-cycle-screens/riyadh-seo-1440.png",
+    "reports/qa-cycle-screens/blog-390.png",
+    "reports/qa-cycle-screens/blog-1440.png",
+    "reports/qa-cycle-screens/contact-390.png",
+    "reports/qa-cycle-screens/contact-1440.png"
+  ]
+}

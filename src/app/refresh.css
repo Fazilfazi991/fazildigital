@@ -1,6 +1,6 @@
 /* A quieter editorial system for the Saudi consultancy pages. */
 .fd-home { --fd-paper:#f6f4ed; --fd-forest:#193c30; --fd-ink:#202b26; --fd-sand:#c4a77b; --fd-sage:#e5e9df; --fd-line:#d0d5c9; }
-.fd-home h1,.fd-home h2 { font-family:var(--fd-sans),sans-serif; font-weight:600; letter-spacing:-.045em; }
+.fd-home h1,.fd-home h2 { font-family:var(--fd-sans),sans-serif; font-weight:600; letter-spacing:-.03em; }
 .fd-home h2 { font-size:clamp(34px,3.4vw,50px); line-height:1.13; }
 .fd-home .fd-section { padding-block:clamp(72px,8vw,108px); }
 .fd-home .fd-header { min-height:88px; }
@@ -18,7 +18,7 @@
 .fd-home .fd-hero-note h2 { font:400 30px/1.08 var(--fd-serif),serif; letter-spacing:-.02em; margin:12px 0 16px; }
 .fd-hero-note ul { list-style:none; padding:0; margin:0; }
 .fd-hero-note li { border-top:1px solid #d5d8cd; font-size:12px; padding:8px 0; }
-.fd-hero-note span { display:block; color:#677168; font-size:10px; margin-top:8px; line-height:1.5; }
+.fd-hero-note span { display:block; color:#536259; font-size:12px; margin-top:8px; line-height:1.5; }
 .fd-home .fd-focus-strip { padding-block:20px; }
 .fd-home .fd-problem { gap:clamp(42px,7vw,100px); }
 .fd-home .fd-service-card { border-radius:0; border-top:2px solid #9eae9c; padding:32px; }
@@ -28,6 +28,7 @@
 .fd-home .fd-market-primary { border-radius:0; }
 .fd-home .fd-market-lines { display:none; }
 .fd-home .fd-method { background:#e4e4d9; }
+.fd-home .fd-step { color:#324b38; }
 .fd-home .fd-work { background:var(--fd-forest); color:var(--fd-paper); }
 .fd-home .fd-work h2 { color:var(--fd-paper); }
 .fd-home .fd-work .fd-section-intro { color:#d7e0d3; }
@@ -44,15 +45,22 @@
 .fd-home .fd-page-summary > p { font-size:12px; font-weight:700; color:var(--fd-forest); margin-bottom:20px; }
 .fd-page-summary ul { padding:0; margin:0; list-style:none; }
 .fd-page-summary li { padding:12px 0; border-top:1px solid #b9c8b7; line-height:1.5; font-size:14px; }
-.fd-page-summary span { display:block; font-size:11px; color:var(--fd-muted); margin-top:18px; }
+.fd-page-summary span { display:block; font-size:12px; color:var(--fd-muted); margin-top:18px; }
 .fd-home .fd-commercial-section { gap:clamp(40px,7vw,100px); }
+.fd-home .fd-commercial-section > div { max-width:68ch; }
 .fd-home .fd-commercial-section:nth-of-type(even) { background:#eeefe7; width:100%; max-width:none; padding-inline:max(56px, calc((100vw - 1280px)/2)); }
 .fd-home .fd-support-contact { padding-top:55px; }
+.fd-support-contact > .fd-support-contact-panel { grid-column:1; grid-row:1; }
+.fd-support-contact > div:not(.fd-support-contact-panel) { grid-column:2; grid-row:1; }
 .fd-home .fd-support-profile { border-radius:0; border-top:3px solid var(--fd-forest); }
 @media(max-width:900px){.fd-home .fd-hero { grid-template-columns:1fr 1fr; gap:28px; }.fd-home .fd-page-hero-commercial .fd-page-hero-grid { gap:32px; }}
 @media(max-width:700px){.fd-home .fd-header { min-height:76px; }.fd-home .fd-hero { grid-template-columns:1fr; padding-block:35px 42px; gap:28px; }.fd-home .fd-hero-copy { padding:0; }.fd-home .fd-hero h1 { font-size:clamp(44px,10vw,62px); max-width:13ch; }.fd-home .fd-hero-description { font-size:15px; margin-top:18px!important; }.fd-hero-editorial { min-height:350px; }.fd-hero-note { width:min(85%,350px); margin:16px; padding:20px; }.fd-home .fd-hero-note h2 { font-size:27px; }.fd-home .fd-page-hero { padding-block:30px 45px; }.fd-home .fd-page-hero nav { margin-bottom:30px; }.fd-home .fd-page-hero h1 { font-size:clamp(40px,10vw,58px); }.fd-home .fd-page-hero-commercial .fd-page-hero-grid { grid-template-columns:1fr; gap:30px; }.fd-page-summary { padding:24px; }.fd-home .fd-commercial-section:nth-of-type(even) { padding-inline:24px; }.fd-home .fd-support-contact { padding-top:32px; }}
 .fd-commercial-page .fd-page-summary::before { content:""; display:block; height:145px; margin:-30px -30px 24px; background:#c9c8b7 url('/images/visual-refresh/editorial-folio.webp') center/cover; }
 .fd-market-technical-seo .fd-page-summary::before { background-image:url('/images/visual-refresh/technical-material.webp'); }
 .fd-market-local-seo .fd-page-summary::before,.fd-market-riyadh .fd-page-summary::before,.fd-market-jeddah .fd-page-summary::before,.fd-market-dammam .fd-page-summary::before { background-image:url('/images/visual-refresh/local-landscape.webp'); }
+.fd-market-jeddah .fd-page-summary::before { background-image:url('/images/visual-refresh/jeddah-coast.webp'); }
+.fd-market-dammam .fd-page-summary::before { background-image:url('/images/visual-refresh/dammam-terrain.webp'); }
 .fd-market-content-marketing .fd-page-summary::before { background-image:url('/images/visual-refresh/content-editorial.webp'); }
-@media(max-width:700px){.fd-commercial-page .fd-page-summary::before { height:130px; margin:-24px -24px 22px; }.fd-support-contact-panel { order:-1; }}
+@media(max-width:800px){.fd-support-contact > .fd-support-contact-panel,.fd-support-contact > div:not(.fd-support-contact-panel) { grid-column:auto; grid-row:auto; }}
+@media(max-width:700px){.fd-commercial-page .fd-page-summary::before { height:130px; margin:-24px -24px 22px; background-image:url('/images/visual-refresh/editorial-folio-small.webp'); }.fd-market-technical-seo .fd-page-summary::before { background-image:url('/images/visual-refresh/technical-material-small.webp'); }.fd-market-local-seo .fd-page-summary::before,.fd-market-riyadh .fd-page-summary::before,.fd-market-jeddah .fd-page-summary::before,.fd-market-dammam .fd-page-summary::before { background-image:url('/images/visual-refresh/local-landscape-small.webp'); }.fd-market-content-marketing .fd-page-summary::before { background-image:url('/images/visual-refresh/content-editorial-small.webp'); }}
+@media(max-width:700px){.fd-market-jeddah .fd-page-summary::before { background-image:url('/images/visual-refresh/jeddah-coast-small.webp'); }.fd-market-dammam .fd-page-summary::before { background-image:url('/images/visual-refresh/dammam-terrain-small.webp'); }}

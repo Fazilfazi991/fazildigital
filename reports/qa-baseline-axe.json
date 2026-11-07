@@ -1,0 +1,50 @@
+[
+  {
+    "route": "/",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": [
+          [
+            "li:nth-child(1) > .fd-step"
+          ],
+          [
+            "li:nth-child(2) > .fd-step"
+          ],
+          [
+            "li:nth-child(3) > .fd-step"
+          ],
+          [
+            "li:nth-child(4) > .fd-step"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "route": "/riyadh/seo/",
+    "violations": []
+  },
+  {
+    "route": "/services/seo/",
+    "violations": []
+  },
+  {
+    "route": "/about/",
+    "violations": []
+  },
+  {
+    "route": "/blog/",
+    "violations": []
+  },
+  {
+    "route": "/contact/",
+    "violations": []
+  },
+  {
+    "route": "/blog/riyadh-seo-strategy-guide/",
+    "violations": []
+  }
+]
