@@ -48,6 +48,7 @@ export function ChatAssistant() {
   const [goal, setGoal] = useState("");
   const [copied, setCopied] = useState(false);
   const [dockVisible, setDockVisible] = useState(false);
+  const [dockSafe, setDockSafe] = useState(true);
   const [greetingVisible, setGreetingVisible] = useState(false);
   const greetingSeenRef = useRef(false);
   const characterTriggerRef = useRef<HTMLButtonElement>(null);
@@ -64,6 +65,30 @@ export function ChatAssistant() {
       .catch(() => { if (active) setAvailability("unavailable"); });
     return () => { active = false; };
   }, []);
+
+  useEffect(() => {
+    if (!dockVisible) return;
+    const assessDockSpace = () => {
+      if (window.innerWidth > 640) { setDockSafe(true); return; }
+      const dock = document.querySelector<HTMLElement>(".fazil-contact-dock");
+      if (!dock) { setDockSafe(true); return; }
+      const bounds = dock.getBoundingClientRect();
+      const overlapsContent = Array.from(document.querySelectorAll<HTMLElement>("main h1, main h2, main h3, main form input, main form textarea, main form select, main form button"))
+        .some((element) => {
+          if (element.closest(".fazil-contact-dock")) return false;
+          const rect = element.getBoundingClientRect();
+          return rect.bottom > 0 && rect.top < window.innerHeight && rect.right > bounds.left && rect.left < bounds.right && rect.bottom > bounds.top && rect.top < bounds.bottom;
+        });
+      setDockSafe(!overlapsContent);
+    };
+    assessDockSpace();
+    window.addEventListener("scroll", assessDockSpace, { passive: true });
+    window.addEventListener("resize", assessDockSpace);
+    return () => {
+      window.removeEventListener("scroll", assessDockSpace);
+      window.removeEventListener("resize", assessDockSpace);
+    };
+  }, [dockVisible]);
 
   useEffect(() => {
     let mounted = false;
@@ -225,7 +250,7 @@ export function ChatAssistant() {
 
   return (
     <>
-      {!open && dockVisible && <div className={`fazil-contact-dock${greetingVisible ? " is-greeting" : ""}`} role="group" aria-label="AI assistant and WhatsApp contact">
+      {!open && dockVisible && <div className={`fazil-contact-dock${greetingVisible ? " is-greeting" : ""}${dockSafe ? "" : " is-content-overlap"}`} role="group" aria-label="AI assistant and WhatsApp contact">
         {greetingVisible && <div className="fazil-character-greeting" role="status" aria-live="polite">
           <button type="button" className="fazil-greeting-open" onClick={openAssistant}>
             <span>{floatingGreeting}</span>
