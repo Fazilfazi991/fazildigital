@@ -25,7 +25,7 @@ export function MobileMenu() {
   </details>;
 }
 
-export function ReviewForm() {
+export function ReviewForm({ context = "saudi-seo" }: { context?: "saudi-seo" | "project" }) {
   const [draft, setDraft] = useState<string | null>(null);
   const [copyState, setCopyState] = useState<"idle" | "copied" | "manual">("idle");
   const ready = useSyncExternalStore(subscribeToHydration, () => true, () => false);
@@ -38,7 +38,9 @@ export function ReviewForm() {
     const name = String(data.get("name") || "").trim();
     const website = String(data.get("website") || "").trim();
     const goal = String(data.get("goal") || "").trim();
-    const message = `Hello Mohammad, I'd like to request an SEO review for my Saudi business.\nName: ${name}\nWebsite: ${website}${goal ? `\nPriority: ${goal}` : ""}`;
+    const message = context === "project"
+      ? `Hello Mohammad, I'd like to discuss a project.\nName: ${name}${website ? `\nWebsite: ${website}` : ""}${goal ? `\nProject context: ${goal}` : ""}`
+      : `Hello Mohammad, I'd like to request an SEO review for my Saudi business.\nName: ${name}\nWebsite: ${website}${goal ? `\nPriority: ${goal}` : ""}`;
     setDraft(message);
     setCopyState("idle");
     window.dispatchEvent(new CustomEvent("fazil:conversion", { detail: { event: "review_intent" } }));
@@ -50,10 +52,10 @@ export function ReviewForm() {
   }
   return <form className="fd-review-form" onSubmit={prepareMessage} onChange={() => { setDraft(null); setCopyState("idle"); }} aria-describedby="review-form-help">
     <fieldset disabled={!ready}>
-    <div className="fd-form-pair"><div><label htmlFor="review-name">Your name</label><input id="review-name" name="name" autoComplete="name" required maxLength={100} placeholder="How should I address you?" /></div><div><label htmlFor="review-website">Business website</label><input id="review-website" name="website" type="url" autoComplete="url" required maxLength={300} placeholder="https://yourcompany.com" /></div></div>
-    <div><label htmlFor="review-goal">What would you like to improve? <span>(optional)</span></label><textarea id="review-goal" name="goal" rows={2} maxLength={800} placeholder="Your market, visibility challenges or priorities" /></div>
+    <div className="fd-form-pair"><div><label htmlFor="review-name">Your name</label><input id="review-name" name="name" autoComplete="name" required maxLength={100} placeholder="How should I address you?" /></div><div><label htmlFor="review-website">{context === "project" ? <>Website <span>(optional)</span></> : "Business website"}</label><input id="review-website" name="website" type="url" autoComplete="url" required={context === "saudi-seo"} maxLength={300} placeholder={context === "project" ? "https://yourcompany.com (if available)" : "https://yourcompany.com"} /></div></div>
+    <div><label htmlFor="review-goal">{context === "project" ? "What are you working on? " : "What would you like to improve? "}<span>(optional)</span></label><textarea id="review-goal" name="goal" rows={2} maxLength={800} placeholder={context === "project" ? "The problem, idea or desired outcome" : "Your market, visibility challenges or priorities"} /></div>
     <div className="fd-honeypot" aria-hidden="true"><label htmlFor="company-fax">Leave this field blank</label><input id="company-fax" name="company-fax" tabIndex={-1} autoComplete="off" /></div>
-    <button type="submit" className="fd-button fd-button-light">Prepare SEO Review Request <span aria-hidden="true">↗</span></button>
+    <button type="submit" className="fd-button fd-button-light">{context === "project" ? "Prepare Project Enquiry" : "Prepare SEO Review Request"} <span aria-hidden="true">↗</span></button>
     </fieldset>
     <p className="fd-form-note" id="review-form-help">Prepare and copy your message, then paste it into WhatsApp and send it when you’re ready. Your details aren’t stored by this form.</p>
     <noscript><p className="fd-form-note">To prepare a message here, enable JavaScript. You can also <a href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer">contact Mohammad directly on WhatsApp</a>.</p></noscript>

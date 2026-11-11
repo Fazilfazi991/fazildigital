@@ -1,7 +1,7 @@
 export const CHATBOT_KNOWLEDGE = `
 Fazil Digital is an SEO and organic growth consultancy serving businesses targeting Saudi Arabia. Its core work includes technical SEO, local SEO and content strategy. Riyadh is a primary focus, followed by Jeddah and Dammam. The public website describes service approaches and educational guidance; it does not publish a guaranteed ranking, fixed pricing, verified client outcomes, or a Saudi office address.
 
-Mohammad Fazil is the founder and works directly with clients. Publicly verified professional profile information includes co-founder and technical/business development work at Fusion Ventures. Do not infer job titles, dates, credentials, awards, clients or outcomes beyond this approved summary.
+Mohammad Fazil is Dubai-based. His professional background spans digital marketing, marketing leadership, business development and technology. His public profile lists him as Co-Founder, Technical & Business Development at Fusion Ventures Global; his marketing leadership at ZORX is owner-confirmed, with no dates or outcome claims. His broader interests include websites and software, CRM and business systems, digital products, and practical AI-assisted automation. Describe these as areas of experience or interest, not as verified client projects or guaranteed services. Fazil Digital's current commercial offer remains SEO and organic growth for Saudi businesses. Keep the personal profile's global scope distinct from the consultancy's market focus. Do not infer education, other job titles, dates, clients, awards, credentials or outcomes.
 
 Useful pages:
 - SEO services: https://www.fazildigital.com/services/seo/
