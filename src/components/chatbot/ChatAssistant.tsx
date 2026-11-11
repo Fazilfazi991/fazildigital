@@ -245,10 +245,10 @@ export function ChatAssistant() {
           >
             <Image
               className="fazil-cutout-character"
-              src="/images/chatbot/fazil-at-work.webp"
-              width={480}
-              height={480}
-              sizes="(max-width: 360px) 112px, (max-width: 640px) 130px, 164px"
+              src="/images/chatbot/fazil-mini-cutout.webp"
+              width={520}
+              height={688}
+              sizes="(max-width: 360px) 116px, (max-width: 640px) 136px, 164px"
               alt=""
               aria-hidden="true"
               priority={false}
