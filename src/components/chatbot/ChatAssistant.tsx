@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import "./chatbot.css";
 
 type Message = { role: "assistant" | "user"; content: string };
@@ -20,6 +21,7 @@ declare global {
 }
 
 export function ChatAssistant() {
+  const pathname = usePathname() || "/";
   const [open, setOpen] = useState(false);
   const [availability, setAvailability] = useState<Availability>("checking");
   const [messages, setMessages] = useState<Message[]>([]);
@@ -31,6 +33,8 @@ export function ChatAssistant() {
   const [city, setCity] = useState("");
   const [goal, setGoal] = useState("");
   const [copied, setCopied] = useState(false);
+  const [heroInView, setHeroInView] = useState(true);
+  const pageHasHero = pathname === "/" || pathname === "/about" || pathname === "/digital-marketing-expert-calicut";
   const launcherRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -46,6 +50,16 @@ export function ChatAssistant() {
   }, []);
 
   useEffect(() => {
+    if (open) return;
+    if (!pageHasHero) return;
+    const hero = document.querySelector(".fr-hero, .fd-about-hero, .fd-calicut-hero");
+    if (!hero) return;
+    const observer = new IntersectionObserver(([entry]) => setHeroInView(entry.isIntersecting), { threshold: 0.08 });
+    observer.observe(hero);
+    return () => observer.disconnect();
+  }, [open, pageHasHero, pathname]);
+
+  useEffect(() => {
     if (open) {
       closeRef.current?.focus();
       document.body.classList.add("fazil-chat-open");
@@ -55,7 +69,10 @@ export function ChatAssistant() {
     return () => document.body.classList.remove("fazil-chat-open");
   }, [open]);
 
-  useEffect(() => { bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" }); }, [messages, busy]);
+  useEffect(() => {
+    const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+    bottomRef.current?.scrollIntoView({ behavior, block: "end" });
+  }, [messages, busy]);
 
   function close() {
     setOpen(false);
@@ -135,7 +152,7 @@ export function ChatAssistant() {
 
   return (
     <>
-      {!open && <button
+      {!open && !(pageHasHero && heroInView) && <button
         ref={launcherRef}
         type="button"
         className="fazil-chat-launcher"

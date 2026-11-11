@@ -1,27 +1,42 @@
 # Fazil Digital design system
 
 ## Direction
-Premium Editorial Minimal, as specified in the Phase 1 brief. The homepage is a consultant's considered point of view: expressive type, calm reading surfaces and a geometric search aperture. It replaces the old agency layout. Its mode is Persuade. The audience is Saudi business decision makers seeking a direct SEO relationship.
+
+**Search Wayfinding** presents Fazil Digital as a direct, practical SEO consultancy. The interface helps a visitor understand the path from a search problem to a useful page and a clear enquiry. It uses restrained editorial structure, navigational cues, clear evidence labels, and purposeful variation between sections. It avoids the earlier beige/forest-green and oversized serif treatment.
+
+Audience: Saudi business owners and marketing teams seeking direct SEO support, particularly in Riyadh, Jeddah, and Dammam. The Calicut page also describes remote consultancy for businesses in Calicut/Kozhikode and does not imply a local office.
 
 ## Tokens
+
 | Role | Value | Rule |
 | --- | --- | --- |
-| Paper | #F5F3ED | Main reading surface |
-| Forest | #1E4032 | Headings, primary actions, selected panels |
-| Ink | #222B28 | Body copy |
-| Sand | #C8B38B | Decorative linework, not small body text |
-| Muted ink | #59635C | Secondary copy on paper |
-| Pale sage | #E7EBE1 | Service and diagram surfaces |
+| Canvas | `#FAFAF8` | Default page surface |
+| Surface | `#FFFFFF` | Cards, menus, and form controls |
+| Ink | `#151B26` | Headings and primary copy |
+| Brand blue | `#2463EB` | Links, primary actions, and wayfinding |
+| Blue hover | `#1D4ED8` | Hover and pressed action state |
+| Lime | `#C6F36B` | Restrained marker and selected-state accent |
+| Cool neutral | `#E7EBF1` | Diagrams and secondary panels |
+| Muted copy | `#465366` | Supporting text on light surfaces |
+| Border | `#D5DBE4` | Decorative separators; do not use alone to distinguish controls |
+| Focus | `#142B55` | Visible keyboard focus against light surfaces |
 
-Instrument Serif carries display headlines with regular weight; Manrope carries UI and body text. Both are local WOFF2 assets loaded through next/font/local with swap, with OFL licenses alongside the files. Body descriptions have a 14px floor, leads are 14–15px, secondary UI has a 12px floor; nonessential artwork and the requested eyebrow can be smaller. Display scales from 50px to 112px; section headings from 37px to 62px. Comfortable copy measures under 65ch. Future Arabic typography: evaluate Noto Sans Arabic with a native-language editor, RTL layout and independent keyword research before publishing. No Arabic font payload or untranslated route ships in Phase 1.
+Plus Jakarta Sans is used for headings and DM Sans for body/UI text, self-hosted through `next/font/google`. Body copy is 16px or larger, with comfortable line height and measures generally under 70ch. Hero headings are fluid: approximately 40–72px desktop and 34–48px mobile. Avoid arbitrary small informational labels.
 
-## Layout and components
-Maximum content width 1280px, fluid gutters 24–64px, section rhythm 80–120px on desktop and 64–80px on mobile. Left-aligned editorial grid, with staggered widths rather than repeated identical section shells. Hairline rules separate content. Three service cards are a deliberate brief requirement. Riyadh receives a wider dark panel; Jeddah and Dammam are quieter linked rows. No numerical claims or logos stand in for evidence.
+## Layout and composition
 
-Primary actions are forest rectangles with a small radius and generous 48px minimum target height. Secondary actions use underlined text and a consistent 1.5px SVG arrow. Focus rings use a 3px contrasting outline with offset. Menu and FAQ use native details/summary semantics. The mobile menu closes after navigation and Escape, with focus returned on Escape. Form fields have persistent labels, native validation and explicit review/send boundaries.
+Use a 4px/8px spacing rhythm, a 1180px content measure, and fluid gutters. The shared header and footer provide consistent brand orientation. Home, About, and Calicut use route-specific compositions: personal introduction and search-to-enquiry path on home; founder story and readable career timeline on About; local market-specific remote consultancy on Calicut. Alternate split compositions, process diagrams, editorial rows, lists, and restrained feature panels. Do not add filler or repeat the same card grid in every section.
 
-## Motion and loading
-The hero has one subtle 600ms entrance. A single methodology rule draws when scrolled into view; its content is always visible. Reduced motion disables both. No content starts hidden behind JavaScript. No animation changes document geometry. The search motif is a decorative SVG with a fixed aspect ratio, not a data visualization. No image or animation dependencies.
+Primary buttons use blue with white text, at least a 44px target, and clear hover/focus feedback. Keep lime as a small accent. Use dark ink panels selectively. Keep visible text contrast AA; decorative separators may use the border token, but inputs and controls need a clearer boundary or focus treatment. Mobile navigation is a keyboard-operable native disclosure. FAQs use native details/summary where appropriate.
 
-## Scope and critique
-The pinned brief supersedes the concept-seed alternatives. The broad type and quiet forest search aperture identify an independent specialist. Streaming-catalog focus grammar and instrument trace systems would obscure the simple consultancy offer; expressionist poster styling conflicts with the specified calm palette. Their useful disciplines are retained as clear focus state, careful linework and confident typographic hierarchy, without importing their visual motifs. The code-led contract is a prominent readable headline, a functional review action in the first viewport, natural mobile reading order and fully operable navigation. Internal pages keep their existing presentation until Phase 2.
+## Motion and accessibility
+
+Motion is short and purposeful: 150–220ms control feedback and modest 350–550ms reveals. Essential content is visible without JavaScript. Respect `prefers-reduced-motion`, including programmatic scrolling. Preserve logical headings, landmarks, skip navigation, descriptive image alternatives, keyboard focus, and responsive reading order. Do not use scroll-jacking, parallax, or animation that changes layout geometry.
+
+The chatbot stays visually subordinate to page content, sits near the safe-area bottom, and must not cover the hero message or primary CTA. Keep server-side credential handling, rate limits, privacy notice, and explicit WhatsApp handoff. Never enable paid public requests without separate authorization.
+
+## Evidence and content boundaries
+
+Use the real owner-supplied portrait at `/images/about/mohammad-fazil.webp`; provenance and conversion details are recorded in `public/images/about/ASSET-PROVENANCE.md`. Label example deliverables as examples. Do not invent client outcomes, logos, credentials, education, dates, or office presence. The latest owner instruction authorizes undated ZORX marketing leadership; it remains labeled owner-confirmed and not independently verified in the About fact register. Preserve the verified Fusion Ventures title exactly.
+
+Calicut keeps its canonical and `noindex, follow` while it is a Preview and stays out of the sitemap. A later approved SEO launch must separately update indexing and sitemap inclusion. Preserve Saudi URLs, canonical metadata, redirects, analytics, privacy-safe forms, and existing content.

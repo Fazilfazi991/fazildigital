@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./home.css";
 import "./site.css";
-import localFont from "next/font/local";
+import "./visual-reset.css";
+import { DM_Sans, Plus_Jakarta_Sans } from "next/font/google";
 import { SiteChrome } from "@/components/SiteChrome";
 import { Analytics } from "@/components/Analytics";
-const manrope = localFont({ src: "./fonts/manrope-latin.woff2", variable: "--fd-sans", display: "swap", weight: "200 800" });
-const editorial = localFont({ src: "./fonts/instrument-serif-latin.woff2", variable: "--fd-serif", display: "swap", weight: "400" });
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-plus-jakarta", display: "swap", weight: ["500", "600", "700"] });
+const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans", display: "swap", weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.fazildigital.com"),
@@ -38,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`h-full antialiased`}>
-      <body className={`min-h-full flex flex-col font-body bg-primary text-bg-base ${manrope.variable} ${editorial.variable}`}>
+      <body className={`min-h-full flex flex-col font-body ${plusJakarta.variable} ${dmSans.variable}`}>
         <Analytics />
         <SiteChrome>{children}</SiteChrome>
       </body>
