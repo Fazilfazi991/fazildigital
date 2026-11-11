@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
+import { useEffect, useId, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import Link from "next/link";
 
 const subscribeToHydration = () => () => {};
@@ -26,6 +26,7 @@ export function MobileMenu() {
 }
 
 export function ReviewForm({ context = "saudi-seo" }: { context?: "saudi-seo" | "project" }) {
+  const formId = useId();
   const [draft, setDraft] = useState<string | null>(null);
   const [copyState, setCopyState] = useState<"idle" | "copied" | "manual">("idle");
   const ready = useSyncExternalStore(subscribeToHydration, () => true, () => false);
@@ -50,15 +51,16 @@ export function ReviewForm({ context = "saudi-seo" }: { context?: "saudi-seo" | 
     try { await navigator.clipboard.writeText(draft); setCopyState("copied"); }
     catch { setCopyState("manual"); }
   }
-  return <form className="fd-review-form" onSubmit={prepareMessage} onChange={() => { setDraft(null); setCopyState("idle"); }} aria-describedby="review-form-help">
+  const fieldId = (name: string) => `review-${formId}-${name}`;
+  return <form className="fd-review-form" onSubmit={prepareMessage} onChange={() => { setDraft(null); setCopyState("idle"); }} aria-describedby={fieldId("form-help")}>
     <fieldset disabled={!ready}>
-    <div className="fd-form-pair"><div><label htmlFor="review-name">Your name</label><input id="review-name" name="name" autoComplete="name" required maxLength={100} placeholder="How should I address you?" /></div><div><label htmlFor="review-website">{context === "project" ? <>Website <span>(optional)</span></> : "Business website"}</label><input id="review-website" name="website" type="url" autoComplete="url" required={context === "saudi-seo"} maxLength={300} placeholder={context === "project" ? "https://yourcompany.com (if available)" : "https://yourcompany.com"} /></div></div>
-    <div><label htmlFor="review-goal">{context === "project" ? "What are you working on? " : "What would you like to improve? "}<span>(optional)</span></label><textarea id="review-goal" name="goal" rows={2} maxLength={800} placeholder={context === "project" ? "The problem, idea or desired outcome" : "Your market, visibility challenges or priorities"} /></div>
-    <div className="fd-honeypot" aria-hidden="true"><label htmlFor="company-fax">Leave this field blank</label><input id="company-fax" name="company-fax" tabIndex={-1} autoComplete="off" /></div>
+    <div className="fd-form-pair"><div><label htmlFor={fieldId("name")}>Your name</label><input id={fieldId("name")} name="name" autoComplete="name" required maxLength={100} placeholder="How should I address you?" /></div><div><label htmlFor={fieldId("website")}>{context === "project" ? <>Website <span>(optional)</span></> : "Business website"}</label><input id={fieldId("website")} name="website" type="url" autoComplete="url" required={context === "saudi-seo"} maxLength={300} placeholder={context === "project" ? "https://yourcompany.com (if available)" : "https://yourcompany.com"} /></div></div>
+    <div><label htmlFor={fieldId("goal")}>{context === "project" ? "What are you working on? " : "What would you like to improve? "}<span>(optional)</span></label><textarea id={fieldId("goal")} name="goal" rows={2} maxLength={800} placeholder={context === "project" ? "The problem, idea or desired outcome" : "Your market, visibility challenges or priorities"} /></div>
+    <div className="fd-honeypot" aria-hidden="true"><label htmlFor={fieldId("company-fax")}>Leave this field blank</label><input id={fieldId("company-fax")} name="company-fax" tabIndex={-1} autoComplete="off" /></div>
     <button type="submit" className="fd-button fd-button-light">{context === "project" ? "Prepare Project Enquiry" : "Prepare SEO Review Request"} <span aria-hidden="true">↗</span></button>
     </fieldset>
-    <p className="fd-form-note" id="review-form-help">Prepare and copy your message, then paste it into WhatsApp and send it when you’re ready. Your details aren’t stored by this form.</p>
+    <p className="fd-form-note" id={fieldId("form-help")}>Your message is prepared in this browser. Nothing is stored or sent by this form; you decide whether to share it in WhatsApp.</p>
     <noscript><p className="fd-form-note">To prepare a message here, enable JavaScript. You can also <a href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer">contact Mohammad directly on WhatsApp</a>.</p></noscript>
-    <div role="status" aria-live="polite">{draft && <div className="fd-draft"><strong>Your message is ready. Nothing has been sent.</strong><p>Copy your message, then open WhatsApp and paste it into the conversation.</p><button type="button" onClick={copyMessage}>Copy message</button>{copyState === "copied" && <p>Copied. Open WhatsApp and paste your message.</p>}{copyState === "manual" && <div><label htmlFor="review-draft">Copy this message manually</label><textarea id="review-draft" readOnly value={draft} rows={5} onFocus={event => event.currentTarget.select()} /></div>}<a href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer" onClick={() => window.dispatchEvent(new CustomEvent("fazil:conversion", { detail: { event: "form_submit" } }))}>Open WhatsApp <span aria-hidden="true">↗</span></a></div>}</div>
+    <div role="status" aria-live="polite">{draft && <div className="fd-draft"><strong>Your message is ready. Nothing has been sent.</strong><p>Copy it here, or open WhatsApp and paste it into the conversation.</p><button type="button" onClick={copyMessage}>Copy message</button>{copyState === "copied" && <p>Copied. You can now paste your message into WhatsApp.</p>}{copyState === "manual" && <div><label htmlFor={fieldId("draft")}>Copy this message manually</label><textarea id={fieldId("draft")} readOnly value={draft} rows={5} onFocus={event => event.currentTarget.select()} /></div>}<a href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer" onClick={() => window.dispatchEvent(new CustomEvent("fazil:conversion", { detail: { event: "form_submit" } }))}>Open WhatsApp <span aria-hidden="true">↗</span></a></div>}</div>
   </form>;
 }

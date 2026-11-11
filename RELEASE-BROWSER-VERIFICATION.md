@@ -1,6 +1,6 @@
 # Final release browser verification
 
-Run: 2026-11-06T19:33:16.901Z. Local production target: http://127.0.0.1:3006. Installed Chromium via Playwright, headless. 49 checks passed; 0 failed.
+Run: 2026-11-11T08:14:30.282Z. Local production target: http://127.0.0.1:3006. Installed Chromium via Playwright, headless. 49 checks passed; 0 failed.
 
 ## Coverage
 
@@ -67,48 +67,48 @@ Twenty rebuilt/new routes (homepage, four services, three Saudi city pages, Abou
 
 ## Screenshots
 
-- [/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/home-mobile.png)
-- [/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/home-desktop.png)
-- [/services/seo/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/services-seo-mobile.png)
-- [/services/seo/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/services-seo-desktop.png)
-- [/services/local-seo/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/services-local-seo-mobile.png)
-- [/services/local-seo/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/services-local-seo-desktop.png)
-- [/services/technical-seo/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/services-technical-seo-mobile.png)
-- [/services/technical-seo/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/services-technical-seo-desktop.png)
-- [/services/content-marketing/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/services-content-marketing-mobile.png)
-- [/services/content-marketing/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/services-content-marketing-desktop.png)
-- [/riyadh/seo/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/riyadh-seo-mobile.png)
-- [/riyadh/seo/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/riyadh-seo-desktop.png)
-- [/jeddah/seo/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/jeddah-seo-mobile.png)
-- [/jeddah/seo/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/jeddah-seo-desktop.png)
-- [/dammam/seo/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/dammam-seo-mobile.png)
-- [/dammam/seo/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/dammam-seo-desktop.png)
-- [/about/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/about-mobile.png)
-- [/about/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/about-desktop.png)
-- [/contact/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/contact-mobile.png)
-- [/contact/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/contact-desktop.png)
-- [/case-studies/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/case-studies-mobile.png)
-- [/case-studies/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/case-studies-desktop.png)
-- [/blog/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-mobile.png)
-- [/blog/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-desktop.png)
-- [/blog/seo-services-saudi-arabia-guide/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-seo-services-saudi-arabia-guide-mobile.png)
-- [/blog/seo-services-saudi-arabia-guide/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-seo-services-saudi-arabia-guide-desktop.png)
-- [/blog/seo-cost-saudi-arabia-scope-guide/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-seo-cost-saudi-arabia-scope-guide-mobile.png)
-- [/blog/seo-cost-saudi-arabia-scope-guide/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-seo-cost-saudi-arabia-scope-guide-desktop.png)
-- [/blog/riyadh-seo-strategy-guide/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-riyadh-seo-strategy-guide-mobile.png)
-- [/blog/riyadh-seo-strategy-guide/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-riyadh-seo-strategy-guide-desktop.png)
-- [/blog/arabic-vs-english-seo-saudi-arabia/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-arabic-vs-english-seo-saudi-arabia-mobile.png)
-- [/blog/arabic-vs-english-seo-saudi-arabia/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-arabic-vs-english-seo-saudi-arabia-desktop.png)
-- [/blog/local-seo-saudi-businesses-guide/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-local-seo-saudi-businesses-guide-mobile.png)
-- [/blog/local-seo-saudi-businesses-guide/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-local-seo-saudi-businesses-guide-desktop.png)
-- [/blog/technical-seo-audit-saudi-websites/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-technical-seo-audit-saudi-websites-mobile.png)
-- [/blog/technical-seo-audit-saudi-websites/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-technical-seo-audit-saudi-websites-desktop.png)
-- [/blog/organic-content-strategy-saudi-businesses/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-organic-content-strategy-saudi-businesses-mobile.png)
-- [/blog/organic-content-strategy-saudi-businesses/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-organic-content-strategy-saudi-businesses-desktop.png)
-- [/blog/google-search-console-seo-measurement-guide/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-google-search-console-seo-measurement-guide-mobile.png)
-- [/blog/google-search-console-seo-measurement-guide/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-google-search-console-seo-measurement-guide-desktop.png)
-- [/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/ at 390px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-snapchat-ads-cpa-benchmarks-saudi-arabia-2026-mobile.png)
-- [/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/ at 1440px](previews/release-final/verified-2026-11-06T19-32-08-639Z/blog-snapchat-ads-cpa-benchmarks-saudi-arabia-2026-desktop.png)
+- [/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/home-mobile.png)
+- [/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/home-desktop.png)
+- [/services/seo/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/services-seo-mobile.png)
+- [/services/seo/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/services-seo-desktop.png)
+- [/services/local-seo/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/services-local-seo-mobile.png)
+- [/services/local-seo/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/services-local-seo-desktop.png)
+- [/services/technical-seo/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/services-technical-seo-mobile.png)
+- [/services/technical-seo/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/services-technical-seo-desktop.png)
+- [/services/content-marketing/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/services-content-marketing-mobile.png)
+- [/services/content-marketing/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/services-content-marketing-desktop.png)
+- [/riyadh/seo/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/riyadh-seo-mobile.png)
+- [/riyadh/seo/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/riyadh-seo-desktop.png)
+- [/jeddah/seo/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/jeddah-seo-mobile.png)
+- [/jeddah/seo/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/jeddah-seo-desktop.png)
+- [/dammam/seo/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/dammam-seo-mobile.png)
+- [/dammam/seo/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/dammam-seo-desktop.png)
+- [/about/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/about-mobile.png)
+- [/about/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/about-desktop.png)
+- [/contact/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/contact-mobile.png)
+- [/contact/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/contact-desktop.png)
+- [/case-studies/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/case-studies-mobile.png)
+- [/case-studies/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/case-studies-desktop.png)
+- [/blog/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-mobile.png)
+- [/blog/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-desktop.png)
+- [/blog/seo-services-saudi-arabia-guide/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-seo-services-saudi-arabia-guide-mobile.png)
+- [/blog/seo-services-saudi-arabia-guide/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-seo-services-saudi-arabia-guide-desktop.png)
+- [/blog/seo-cost-saudi-arabia-scope-guide/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-seo-cost-saudi-arabia-scope-guide-mobile.png)
+- [/blog/seo-cost-saudi-arabia-scope-guide/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-seo-cost-saudi-arabia-scope-guide-desktop.png)
+- [/blog/riyadh-seo-strategy-guide/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-riyadh-seo-strategy-guide-mobile.png)
+- [/blog/riyadh-seo-strategy-guide/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-riyadh-seo-strategy-guide-desktop.png)
+- [/blog/arabic-vs-english-seo-saudi-arabia/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-arabic-vs-english-seo-saudi-arabia-mobile.png)
+- [/blog/arabic-vs-english-seo-saudi-arabia/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-arabic-vs-english-seo-saudi-arabia-desktop.png)
+- [/blog/local-seo-saudi-businesses-guide/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-local-seo-saudi-businesses-guide-mobile.png)
+- [/blog/local-seo-saudi-businesses-guide/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-local-seo-saudi-businesses-guide-desktop.png)
+- [/blog/technical-seo-audit-saudi-websites/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-technical-seo-audit-saudi-websites-mobile.png)
+- [/blog/technical-seo-audit-saudi-websites/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-technical-seo-audit-saudi-websites-desktop.png)
+- [/blog/organic-content-strategy-saudi-businesses/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-organic-content-strategy-saudi-businesses-mobile.png)
+- [/blog/organic-content-strategy-saudi-businesses/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-organic-content-strategy-saudi-businesses-desktop.png)
+- [/blog/google-search-console-seo-measurement-guide/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-google-search-console-seo-measurement-guide-mobile.png)
+- [/blog/google-search-console-seo-measurement-guide/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-google-search-console-seo-measurement-guide-desktop.png)
+- [/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/ at 390px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-snapchat-ads-cpa-benchmarks-saudi-arabia-2026-mobile.png)
+- [/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/ at 1440px](previews/release-final/verified-2026-11-11T08-13-35-032Z/blog-snapchat-ads-cpa-benchmarks-saudi-arabia-2026-desktop.png)
 
 ## Interpretation and limits
 
@@ -118,4 +118,4 @@ Local LCP/CLS/resource observations are one synthetic navigation under a local s
 
 ## Build and comparison provenance
 
-Local build ID: `gBL3MnBcLSBEMnk7Tr8Zu`. Capture run: 2026-11-06T19-32-08-639Z. Actual screenshot folder: `previews/release-final/verified-2026-11-06T19-32-08-639Z`. See [before/after inventory](RELEASE-SCREENSHOT-INVENTORY.md). Phase 2 files were preserved and not overwritten.
+Local build ID: `neJg3BkjvL8-YvXvgckcN`. Capture run: 2026-11-11T08-13-35-032Z. Actual screenshot folder: `previews/release-final/verified-2026-11-11T08-13-35-032Z`. See [before/after inventory](RELEASE-SCREENSHOT-INVENTORY.md). Phase 2 files were preserved and not overwritten.

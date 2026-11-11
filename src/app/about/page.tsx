@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ProjectEnquiryDialog } from "@/components/about/ProjectEnquiryDialog";
 import { JsonLd, pageMetadata } from "@/components/site/PageElements";
 import "../home.css";
 import "./about.css";
@@ -31,7 +32,7 @@ const capabilities = [
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 
 export default function AboutPage() {
-  return <main className="fd-about-page">
+  return <div className="fd-about-page">
     <JsonLd data={profileSchema} />
     <section className="fd-about-hero fd-about-wrap" aria-labelledby="about-title">
       <div className="fd-about-copy">
@@ -39,7 +40,7 @@ export default function AboutPage() {
         <h1 id="about-title">I connect ideas, marketing and technology to build better businesses.</h1>
         <p className="fd-about-intro">I’m a Dubai-based marketing and technology professional. I work across digital growth, websites and software, business systems and practical automation—bringing customer needs and the way a business operates into the same conversation.</p>
         <p className="fd-about-intro fd-about-intro-second">Through Fazil Digital, I focus on SEO and organic growth for Saudi businesses. My wider professional work connects marketing leadership with technical and business development.</p>
-        <div className="fd-about-hero-actions"><Link className="fd-about-button" href="/contact/?context=project">Talk about your project <Arrow /></Link><a className="fd-about-link" href={profileUrl} target="_blank" rel="noopener noreferrer">View LinkedIn <Arrow /></a></div>
+        <div className="fd-about-hero-actions"><ProjectEnquiryDialog className="fd-about-button">Talk about your project <Arrow /></ProjectEnquiryDialog><a className="fd-about-link" href={profileUrl} target="_blank" rel="noopener noreferrer">View LinkedIn <Arrow /></a></div>
         <p className="fd-about-place"><span className="fd-about-place-mark" aria-hidden="true" />Based in Dubai, UAE</p>
       </div>
       <figure className="fd-about-photo"><Image src="/images/about/mohammad-fazil.webp" alt="Mohammad Fazil seated in a café" width={1126} height={1376} preload sizes="(max-width: 760px) 100vw, 46vw" /><figcaption><span>Mohammad Fazil</span><span>Dubai, UAE</span></figcaption></figure>
@@ -59,6 +60,6 @@ export default function AboutPage() {
 
     <section className="fd-about-practice fd-about-wrap" aria-labelledby="practice-title"><div className="fd-about-practice-intro"><span className="fd-about-overline">Areas of experience</span><h2 id="practice-title">A practical mix of disciplines.</h2><p>Choose a topic to see how it fits into the way I think about business problems.</p></div><div className="fd-about-capabilities" role="list">{capabilities.map(([name, text], index) => <details key={name} className="fd-about-capability" open={index === 0}><summary><span>{name}</span><span className="fd-about-capability-mark" aria-hidden="true">+</span></summary><p>{text}</p></details>)}</div></section>
 
-    <section className="fd-about-contact" aria-labelledby="contact-title"><div className="fd-about-wrap fd-about-contact-inner"><div><span className="fd-about-overline">Let’s connect</span><h2 id="contact-title">Have an idea, challenge or project in mind?</h2><p>Tell me what you’re trying to make clearer or easier. We can start with the problem and decide whether a useful next step makes sense.</p></div><div className="fd-about-contact-actions"><Link className="fd-about-button fd-about-button-lime" href="/contact/?context=project">Discuss a project <Arrow /></Link><a href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer">WhatsApp <Arrow /></a></div></div></section>
-  </main>;
+    <section className="fd-about-contact" aria-labelledby="contact-title"><div className="fd-about-wrap fd-about-contact-inner"><div><span className="fd-about-overline">Let’s connect</span><h2 id="contact-title">Have an idea, challenge or project in mind?</h2><p>Tell me what you’re trying to make clearer or easier. We can start with the problem and decide whether a useful next step makes sense.</p></div><div className="fd-about-contact-actions"><ProjectEnquiryDialog className="fd-about-button fd-about-button-lime">Discuss a project <Arrow /></ProjectEnquiryDialog><a href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer">WhatsApp <Arrow /></a></div></div></section>
+  </div>;
 }

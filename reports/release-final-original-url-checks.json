@@ -4,11 +4,11 @@
     "status": 200
   },
   {
-    "route": "/blog/agency-vs-consultant-vs-freelancer-uae/",
+    "route": "/blog/ai-automation-2026-agentic-ai-uae-businesses/",
     "status": 200
   },
   {
-    "route": "/blog/ai-automation-2026-agentic-ai-uae-businesses/",
+    "route": "/blog/agency-vs-consultant-vs-freelancer-uae/",
     "status": 200
   },
   {
@@ -20,11 +20,11 @@
     "status": 200
   },
   {
-    "route": "/blog/ai-automation-uae-sme-tasks/",
+    "route": "/blog/ai-search-optimization-2026-playbook/",
     "status": 200
   },
   {
-    "route": "/blog/ai-search-optimization-2026-playbook/",
+    "route": "/blog/ai-automation-uae-sme-tasks/",
     "status": 200
   },
   {
@@ -52,19 +52,15 @@
     "status": 200
   },
   {
-    "route": "/blog/digital-marketing-budget-uae-sme-2026/",
-    "status": 200
-  },
-  {
     "route": "/blog/digital-marketing-riyadh-saudi-businesses-2026/",
     "status": 200
   },
   {
-    "route": "/blog/digital-transformation-uae-sme-guide/",
+    "route": "/blog/digital-marketing-budget-uae-sme-2026/",
     "status": 200
   },
   {
-    "route": "/blog/google-march-2026-core-update-dubai-riyadh/",
+    "route": "/blog/digital-transformation-uae-sme-guide/",
     "status": 200
   },
   {
@@ -73,6 +69,10 @@
   },
   {
     "route": "/blog/google-maps-seo-uae-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/google-march-2026-core-update-dubai-riyadh/",
     "status": 200
   },
   {
@@ -128,10 +128,6 @@
     "status": 200
   },
   {
-    "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
-    "status": 200
-  },
-  {
     "route": "/blog/sharjah-digital-marketing-seo-guide/",
     "status": 200
   },
@@ -140,11 +136,11 @@
     "status": 200
   },
   {
-    "route": "/blog/snapchat-ads-uae-ksa-2026-ramadan-data/",
+    "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
     "status": 200
   },
   {
-    "route": "/blog/social-media-management-dubai-2026/",
+    "route": "/blog/snapchat-ads-uae-ksa-2026-ramadan-data/",
     "status": 200
   },
   {
@@ -156,6 +152,10 @@
     "status": 200
   },
   {
+    "route": "/blog/social-media-management-dubai-2026/",
+    "status": 200
+  },
+  {
     "route": "/blog/web-development-dubai-business-site-2026/",
     "status": 200
   },
@@ -164,11 +164,11 @@
     "status": 200
   },
   {
-    "route": "/abu-dhabi/digital-marketing/",
+    "route": "/abu-dhabi/ai-automation/",
     "status": 200
   },
   {
-    "route": "/abu-dhabi/ai-automation/",
+    "route": "/abu-dhabi/digital-marketing/",
     "status": 200
   },
   {
@@ -176,7 +176,7 @@
     "status": 200
   },
   {
-    "route": "/abu-dhabi/saas-development/",
+    "route": "/abu-dhabi/social-media-management/",
     "status": 200
   },
   {
@@ -184,7 +184,7 @@
     "status": 200
   },
   {
-    "route": "/abu-dhabi/social-media-management/",
+    "route": "/abu-dhabi/saas-development/",
     "status": 200
   },
   {
@@ -228,11 +228,11 @@
     "status": 200
   },
   {
-    "route": "/dubai/paid-ads/",
+    "route": "/dubai/saas-development/",
     "status": 200
   },
   {
-    "route": "/dubai/saas-development/",
+    "route": "/dubai/paid-ads/",
     "status": 200
   },
   {
@@ -244,11 +244,11 @@
     "status": 200
   },
   {
-    "route": "/dubai/web-development/",
+    "route": "/jeddah/ai-automation/",
     "status": 200
   },
   {
-    "route": "/jeddah/ai-automation/",
+    "route": "/dubai/web-development/",
     "status": 200
   },
   {
@@ -256,11 +256,11 @@
     "status": 200
   },
   {
-    "route": "/jeddah/paid-ads/",
+    "route": "/jeddah/seo/",
     "status": 200
   },
   {
-    "route": "/jeddah/seo/",
+    "route": "/jeddah/paid-ads/",
     "status": 200
   },
   {
@@ -272,7 +272,7 @@
     "status": 200
   },
   {
-    "route": "/jeddah/web-development/",
+    "route": "/riyadh/digital-marketing/",
     "status": 200
   },
   {
@@ -280,7 +280,7 @@
     "status": 200
   },
   {
-    "route": "/riyadh/digital-marketing/",
+    "route": "/jeddah/web-development/",
     "status": 200
   },
   {
@@ -288,11 +288,11 @@
     "status": 200
   },
   {
-    "route": "/riyadh/seo/",
+    "route": "/riyadh/saas-development/",
     "status": 200
   },
   {
-    "route": "/riyadh/saas-development/",
+    "route": "/riyadh/seo/",
     "status": 200
   },
   {
@@ -356,11 +356,11 @@
     "status": 200
   },
   {
-    "route": "/case-studies/dammam-marketing/",
+    "route": "/case-studies/dubai-seo/",
     "status": 200
   },
   {
-    "route": "/case-studies/dubai-seo/",
+    "route": "/case-studies/dammam-marketing/",
     "status": 200
   },
   {
@@ -384,15 +384,11 @@
     "status": 200
   },
   {
-    "route": "/services/saas-development/",
-    "status": 200
-  },
-  {
     "route": "/services/digital-marketing/",
     "status": 200
   },
   {
-    "route": "/services/seo/",
+    "route": "/services/saas-development/",
     "status": 200
   },
   {
@@ -400,11 +396,7 @@
     "status": 200
   },
   {
-    "route": "/about/",
-    "status": 200
-  },
-  {
-    "route": "/services/web-development/",
+    "route": "/services/seo/",
     "status": 200
   },
   {
@@ -412,15 +404,19 @@
     "status": 200
   },
   {
+    "route": "/services/web-development/",
+    "status": 200
+  },
+  {
     "route": "/",
     "status": 200
   },
   {
-    "route": "/case-studies/",
+    "route": "/about/",
     "status": 200
   },
   {
-    "route": "/contact/",
+    "route": "/case-studies/",
     "status": 200
   },
   {
@@ -432,15 +428,19 @@
     "status": 200
   },
   {
+    "route": "/contact/",
+    "status": 200
+  },
+  {
     "route": "/locations/",
     "status": 200
   },
   {
-    "route": "/methodology/",
+    "route": "/markets/",
     "status": 200
   },
   {
-    "route": "/markets/",
+    "route": "/methodology/",
     "status": 200
   },
   {

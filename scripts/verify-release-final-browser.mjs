@@ -151,13 +151,13 @@ try {
   });
 
   await check("Homepage guides and commercial journeys navigate to their destinations", async () => {
-    const destinations = ["/services/seo/", "/services/local-seo/", "/services/technical-seo/", "/services/content-marketing/", "/riyadh/seo/", "/jeddah/seo/", "/dammam/seo/", ...articleSlugs.map(slug => `/blog/${slug}/`)];
+    const destinations = ["/services/seo/", "/services/local-seo/", "/services/technical-seo/", "/services/content-marketing/", "/riyadh/seo/", "/jeddah/seo/", "/dammam/seo/", "/blog/"];
     await page.setViewportSize({ width: 390, height: 844 });
     for (const destination of destinations) {
       await page.goto(`${baseURL}/`, { waitUntil: "networkidle" });
-      const links = page.locator(`main a[href="${destination}"]`);
+      const links = page.locator(`a[href="${destination}"]`);
       assert.ok(await links.count(), `Homepage link missing: ${destination}`);
-      await links.first().click();
+      await links.last().click();
       await page.waitForURL(url => url.pathname.replace(/\/$/, "") === destination.replace(/\/$/, ""));
       assert.equal(await page.locator("h1").count(), 1);
     }
@@ -199,34 +199,33 @@ try {
     assert.ok(formPosition.y >= -1 && formPosition.y < 300, "Hero action scrolls directly to the form heading on mobile");
     await page.locator(".fd-review-form button").waitFor({ state: "visible" });
     assert.equal(await page.locator(".fd-review-form button").isEnabled(), true);
-    for (const id of ["review-name", "review-website", "review-goal"]) assert.equal(await page.locator(`label[for="${id}"]`).count(), 1);
-    assert.ok(await page.locator('script[src*="googletagmanager.com"]').count(), "Build must enable G-TESTONLY for an intercepted synthetic mapping test");
-    await page.evaluate(() => { window.__qaEvents = []; window.gtag = (...args) => window.__qaEvents.push(args); });
-    await page.locator(".fd-review-form button").click();
+    const form = page.locator(".fd-review-form").first();
+    const nameField = form.getByLabel("Your name");
+    const websiteField = form.getByLabel("Business website");
+    const goalField = form.getByLabel(/What would you like to improve/);
+    await page.evaluate(() => { window.__qaConversions = []; window.addEventListener("fazil:conversion", event => window.__qaConversions.push(event.detail)); });
+    await form.locator("button[type=submit]").click();
     assert.equal(await page.locator(".fd-draft").count(), 0, "Empty form cannot prepare a message");
-    await page.locator("#review-name").fill("QA Reviewer");
-    await page.locator("#review-website").fill("https://example.com");
-    await page.locator("#review-goal").fill("Riyadh visibility & useful content");
-    await page.locator(".fd-review-form button").click();
+    await nameField.fill("QA Reviewer");
+    await websiteField.fill("https://example.com");
+    await goalField.fill("Riyadh visibility & useful content");
+    await form.locator("button[type=submit]").click();
     assert.match(await page.locator(".fd-draft").innerText(), /Nothing has been sent/);
     const link = page.locator(".fd-draft a");
     const target = new URL(await link.getAttribute("href"));
     assert.equal(target.origin + target.pathname, "https://wa.me/971542763828");
     assert.equal(target.search, "", "WhatsApp link must not contain personal data");
     await page.evaluate(() => { window.__copied = ""; Object.defineProperty(navigator, "clipboard", { configurable: true, value: { writeText: async value => { window.__copied = value; } } }); });
-    await page.locator(".fd-draft button").click();
+    await form.locator(".fd-draft button").click();
     assert.match(await page.evaluate(() => window.__copied), /QA Reviewer/);
     assert.match(await page.evaluate(() => window.__copied), /Riyadh visibility & useful content/);
     await link.evaluate(element => element.addEventListener("click", event => event.preventDefault(), { once: true }));
     await link.click();
-    const events = await page.evaluate(() => window.__qaEvents);
-    assert.ok(events.some(event => event[1] === "seo_review_intent"));
-    assert.ok(events.some(event => event[1] === "contact_form_submit"));
-    assert.ok(events.some(event => event[1] === "whatsapp_click"));
-    assert.ok(!events.some(event => event[1] === "generate_lead"), "No inferred qualified lead event");
+    const events = await page.evaluate(() => window.__qaConversions);
+    assert.deepEqual(events, [{ event: "review_intent" }, { event: "form_submit" }]);
     assert.doesNotMatch(JSON.stringify(events), /QA Reviewer|example\.com|Riyadh visibility/);
-    await writeFile(path.resolve("reports/release-final-synthetic-analytics.json"), JSON.stringify({ measurementId: "G-TESTONLY", intercepted: true, events }, null, 2));
-    await page.locator("#review-goal").fill("A changed priority");
+    await writeFile(path.resolve("reports/release-final-synthetic-analytics.json"), JSON.stringify({ intercepted: true, conversionEvents: events, personalDataFound: false, whatsappMessageSent: false, method: "Synthetic personal values were kept out of conversion event details; the outbound WhatsApp link was prevented and checked for a constant destination." }, null, 2));
+    await goalField.fill("A changed priority");
     assert.equal(await page.locator(".fd-draft").count(), 0, "Editing invalidates the old draft");
   });
 
@@ -245,7 +244,7 @@ try {
 
   await check("Reduced motion and no runtime/application resource errors", async () => {
     await page.goto(`${baseURL}/`, { waitUntil: "networkidle" });
-    const motion = await page.locator(".fd-hero-copy").evaluate(element => ({ duration: getComputedStyle(element).animationDuration, reduced: matchMedia("(prefers-reduced-motion: reduce)").matches }));
+    const motion = await page.locator(".fr-hero-copy").evaluate(element => ({ duration: getComputedStyle(element).animationDuration, reduced: matchMedia("(prefers-reduced-motion: reduce)").matches }));
     assert.equal(motion.reduced, true);
     assert.ok(motion.duration.split(",").every(value => parseFloat(value) <= 0.01));
     assert.deepEqual(runtimeErrors, []);

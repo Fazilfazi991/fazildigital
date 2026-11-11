@@ -55,7 +55,7 @@ export default function SharjahDigitalMarketing() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <main className="bg-[#050505] pt-24 min-h-screen text-bg-base font-body selection:bg-accent selection:text-primary overflow-hidden">
+      <div className="bg-[#050505] pt-24 min-h-screen text-bg-base font-body selection:bg-accent selection:text-primary overflow-hidden">
         
         {/* BACKGROUND GLOWS - AI AESTHETIC */}
         <div className="fixed inset-0 pointer-events-none z-0">
@@ -229,7 +229,7 @@ export default function SharjahDigitalMarketing() {
           </div>
         </section>
 
-      </main>
+      </div>
     </>
   );
 }

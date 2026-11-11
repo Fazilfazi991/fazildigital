@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function MarketsPage() {
   return (
-    <main className="pt-24 pb-32 bg-primary">
+    <div className="pt-24 pb-32 bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -112,6 +112,6 @@ export default function MarketsPage() {
         </div>
 
       </div>
-    </main>
+    </div>
   );
 }

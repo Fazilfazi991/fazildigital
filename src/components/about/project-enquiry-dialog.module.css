@@ -1,0 +1,224 @@
+.dialog {
+  width: min(100% - 32px, 620px);
+  max-width: 620px;
+  max-height: min(88dvh, 820px);
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border: 1px solid #414141;
+  background: #f8f7f3;
+  color: #080808;
+  box-shadow: 0 28px 90px rgb(0 0 0 / 30%);
+}
+
+.dialog::backdrop {
+  background: rgb(8 8 8 / 72%);
+  backdrop-filter: blur(3px);
+}
+
+.panel {
+  position: relative;
+  padding: clamp(25px, 5vw, 48px);
+  border-top: 6px solid #ffb638;
+}
+
+.close {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid #d1cec7;
+  border-radius: 50%;
+  background: transparent;
+  color: #080808;
+  cursor: pointer;
+  font: inherit;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.close:hover {
+  background: #e7e5e1;
+}
+
+.close:focus-visible,
+.dialog :global(button):focus-visible,
+.dialog :global(input):focus-visible,
+.dialog :global(textarea):focus-visible,
+.dialog :global(a):focus-visible {
+  outline: 3px solid #a66400;
+  outline-offset: 3px;
+}
+
+.eyebrow {
+  max-width: calc(100% - 56px);
+  margin: 0 0 11px;
+  color: #414141;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.title {
+  max-width: 14ch;
+  margin: 0;
+  color: #080808;
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 650;
+  letter-spacing: -.04em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.intro {
+  max-width: 60ch;
+  margin: 14px 0 27px;
+  color: #414141;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.dialog :global(.fd-review-form) {
+  color: #080808;
+}
+
+.dialog :global(.fd-review-form label) {
+  margin-bottom: 7px;
+  color: #080808;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.dialog :global(.fd-review-form label span) {
+  color: #595650;
+}
+
+.dialog :global(.fd-form-pair) {
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.dialog :global(.fd-review-form input),
+.dialog :global(.fd-review-form textarea) {
+  border: 1px solid #9b9890;
+  border-radius: 2px;
+  background: #fffefa;
+  color: #080808;
+  font: inherit;
+  font-size: 16px;
+}
+
+.dialog :global(.fd-review-form input) {
+  min-height: 48px;
+}
+
+.dialog :global(.fd-review-form textarea) {
+  min-height: 94px;
+}
+
+.dialog :global(.fd-review-form input::placeholder),
+.dialog :global(.fd-review-form textarea::placeholder) {
+  color: #66625a;
+  opacity: 1;
+}
+
+.dialog :global(.fd-review-form fieldset:disabled) {
+  opacity: .65;
+}
+
+.dialog :global(.fd-review-form fieldset > button) {
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 13px 18px;
+  border: 1px solid #080808;
+  background: #080808;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.dialog :global(.fd-review-form fieldset > button:hover) {
+  background: #414141;
+}
+
+.dialog :global(.fd-review-form .fd-form-note) {
+  margin-top: 12px;
+  color: #595650;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.dialog :global(.fd-draft) {
+  padding: 17px;
+  border: 1px solid #b9b5ad;
+  color: #080808;
+  font-size: 14px;
+}
+
+.dialog :global(.fd-draft button) {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  margin: 14px 12px 0 0;
+  padding: 10px 14px;
+  border: 1px solid #080808;
+  background: transparent;
+  color: #080808;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 650;
+}
+
+.dialog :global(.fd-draft button:hover) {
+  background: #e7e5e1;
+}
+
+.dialog :global(.fd-draft a) {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: #ffb638;
+  color: #080808;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.dialog :global(.fd-draft p) {
+  margin-top: 9px;
+}
+
+.dialog :global(.fd-draft label) {
+  margin-top: 14px;
+}
+
+@media (max-width: 560px) {
+  .dialog {
+    width: min(100% - 20px, 620px);
+    max-height: min(92dvh, 820px);
+  }
+
+  .panel {
+    padding: 25px 20px max(24px, env(safe-area-inset-bottom));
+  }
+
+  .dialog :global(.fd-form-pair) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dialog::backdrop {
+    backdrop-filter: none;
+  }
+}

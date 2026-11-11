@@ -13,33 +13,29 @@ const artTitles: Record<ArtKind, string> = {
 
 function MotionArt({ kind }: { kind: ArtKind }) {
   const region = useRef<HTMLDivElement>(null);
-  const enabled = useRef(true);
   const [isVisible, setIsVisible] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
-  const [isEnabled, setIsEnabled] = useState(true);
   const [run, setRun] = useState(0);
 
   useEffect(() => {
     const element = region.current;
     if (!element) return;
 
-    if (!("IntersectionObserver" in window)) {
-      return;
-    }
+    if (!("IntersectionObserver" in window)) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
-        if (entry.isIntersecting && enabled.current) setHasStarted(true);
+        if (entry.isIntersecting) setHasStarted(true);
       },
-      { rootMargin: "80px", threshold: 0.05 },
+      { rootMargin: "0px", threshold: 0 },
     );
     observer.observe(element);
     return () => observer.disconnect();
   }, []);
 
   const className = `fr-work-art fr-${kind} fr-motion-art`;
-  const animationState = !hasStarted ? "static" : isEnabled && isVisible ? "running" : "paused";
+  const animationState = !hasStarted ? "idle" : isVisible ? "playing" : "paused";
 
   return (
     <div className="fr-work-motion" ref={region} data-motion={animationState}>
@@ -51,25 +47,17 @@ function MotionArt({ kind }: { kind: ArtKind }) {
       <button
         className="fr-motion-toggle"
         type="button"
-        aria-label={`Toggle ${artTitles[kind]} animation`}
-        aria-pressed={isEnabled}
+        aria-label={`Replay ${artTitles[kind]} animation`}
+        title={`Replay ${artTitles[kind]}`}
         onClick={() => {
-          if (isEnabled) {
-            enabled.current = false;
-            setIsEnabled(false);
-          }
-          else {
-            enabled.current = true;
-            if (isVisible) setHasStarted(true);
-            setRun((value) => value + 1);
-            setIsEnabled(true);
-          }
+          setHasStarted(isVisible);
+          setRun((value) => value + 1);
         }}
       >
         <svg aria-hidden="true" viewBox="0 0 16 16" fill="currentColor">
-          {isEnabled ? <path d="M4 3h3v10H4zm5 0h3v10H9z" /> : <path d="M5 3.8v8.4L12 8z" />}
+          <path d="M8 2.1a5.9 5.9 0 1 0 5.72 7.33.8.8 0 0 0-1.55-.4A4.3 4.3 0 1 1 8 3.7c.9 0 1.74.27 2.44.75H8.6a.8.8 0 1 0 0 1.6h3.8a.8.8 0 0 0 .8-.8v-3.8a.8.8 0 1 0-1.6 0v1.32A5.85 5.85 0 0 0 8 2.1Z" />
         </svg>
-        <span className="fr-sr-only">{isEnabled ? "Pause motion" : "Replay motion"}</span>
+        <span>Replay</span>
       </button>
     </div>
   );

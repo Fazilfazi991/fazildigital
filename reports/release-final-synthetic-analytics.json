@@ -1,25 +1,14 @@
 {
-  "measurementId": "G-TESTONLY",
   "intercepted": true,
-  "events": [
-    [
-      "event",
-      "seo_review_intent",
-      {
-        "method": "whatsapp"
-      }
-    ],
-    [
-      "event",
-      "contact_form_submit",
-      {
-        "method": "whatsapp"
-      }
-    ],
-    [
-      "event",
-      "whatsapp_click",
-      {}
-    ]
-  ]
+  "conversionEvents": [
+    {
+      "event": "review_intent"
+    },
+    {
+      "event": "form_submit"
+    }
+  ],
+  "personalDataFound": false,
+  "whatsappMessageSent": false,
+  "method": "Synthetic personal values were kept out of conversion event details; the outbound WhatsApp link was prevented and checked for a constant destination."
 }
