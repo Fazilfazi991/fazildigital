@@ -12,6 +12,7 @@
   width: min(224px, calc(100vw - 28px));
   flex-direction: column;
   align-items: flex-end;
+  gap: 10px;
   pointer-events: none;
 }
 .fazil-character-greeting {
@@ -19,7 +20,7 @@
   grid-template-columns: minmax(0, 1fr) 28px;
   align-self: stretch;
   width: 100%;
-  margin: 0 0 4px;
+  margin: 0;
   padding: 7px 8px 7px 13px;
   border: 1px solid #D2D0CC;
   border-radius: 15px 15px 4px 15px;
