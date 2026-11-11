@@ -22,6 +22,7 @@ declare global {
 
 export function ChatAssistant() {
   const pathname = usePathname() || "/";
+  const normalizedPathname = pathname.length > 1 ? pathname.replace(/\/$/, "") : pathname;
   const [open, setOpen] = useState(false);
   const [availability, setAvailability] = useState<Availability>("checking");
   const [messages, setMessages] = useState<Message[]>([]);
@@ -34,7 +35,7 @@ export function ChatAssistant() {
   const [goal, setGoal] = useState("");
   const [copied, setCopied] = useState(false);
   const [heroInView, setHeroInView] = useState(true);
-  const pageHasHero = pathname === "/" || pathname === "/about" || pathname === "/digital-marketing-expert-calicut";
+  const pageHasHero = normalizedPathname === "/" || normalizedPathname === "/about" || normalizedPathname === "/digital-marketing-expert-calicut";
   const launcherRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
