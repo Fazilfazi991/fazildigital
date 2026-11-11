@@ -32,7 +32,8 @@ assert.equal(preservedHTML.length, 115);
 const originalArticles = historical.filter(row => row[1] === "HTML article").map(row => row[0].split('/').filter(Boolean).at(-1));
 const newArticles = [...fs.readFileSync("src/data/saudi-articles.ts", "utf8").matchAll(/slug:\s*"([^"]+)"/g)].map(match => match[1]);
 const newServicePaths = ["/services/local-seo/", "/services/technical-seo/", "/services/content-marketing/"];
-const expectedContent = new Set([...preservedHTML, ...newServicePaths, ...newArticles.map(slug => `/blog/${slug}/`)]);
+const approvedSupplementalPaths = ["/digital-marketing-expert-calicut/"];
+const expectedContent = new Set([...preservedHTML, ...newServicePaths, ...newArticles.map(slug => `/blog/${slug}/`), ...approvedSupplementalPaths]);
 let sitemapURLs = [];
 
 await check("One sitemap authority includes every old and approved new content URL", async () => {

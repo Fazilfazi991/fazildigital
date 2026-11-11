@@ -21,7 +21,7 @@ export const preservedLegacyServicePaths = [
 ] as const;
 
 export const preservedCityHubPaths = ["/locations/dubai/", "/locations/riyadh/", "/locations/jeddah/", "/locations/abu-dhabi/", "/locations/dammam/", "/locations/sharjah/"] as const;
-export const staticContentPaths = ["/", "/about/", "/services/", "/locations/", "/case-studies/", "/blog/", "/portfolio/", "/methodology/", "/markets/", "/contact/", "/privacy-policy/", "/digital-marketing-expert-dubai/"] as const;
+export const staticContentPaths = ["/", "/about/", "/services/", "/locations/", "/case-studies/", "/blog/", "/portfolio/", "/methodology/", "/markets/", "/contact/", "/privacy-policy/", "/digital-marketing-expert-dubai/", "/digital-marketing-expert-calicut/"] as const;
 export const preservedCaseStudyPaths = ["/case-studies/green-bags-uae/", "/case-studies/dubai-seo/", "/case-studies/riyadh-paid-ads/", "/case-studies/dammam-marketing/", "/case-studies/jeddah-web-development/", "/case-studies/abu-dhabi-social-media/", "/case-studies/sharjah-ai-automation/"] as const;
 
 export function canonicalURL(path: string) {

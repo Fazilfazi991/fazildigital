@@ -25,7 +25,7 @@ export function MobileMenu() {
   </details>;
 }
 
-export function ReviewForm({ context = "saudi-seo" }: { context?: "saudi-seo" | "project" }) {
+export function ReviewForm({ context = "saudi-seo", market = "saudi" }: { context?: "saudi-seo" | "project"; market?: "saudi" | "calicut" }) {
   const formId = useId();
   const formRef = useRef<HTMLFormElement>(null);
   const [draft, setDraft] = useState<string | null>(null);
@@ -58,7 +58,9 @@ export function ReviewForm({ context = "saudi-seo" }: { context?: "saudi-seo" | 
     const name = String(data.get("name") || "").trim();
     const website = String(data.get("website") || "").trim();
     const goal = String(data.get("goal") || "").trim();
-    const message = context === "project"
+    const message = market === "calicut"
+      ? `Hello Mohammad, I'd like to discuss SEO and digital marketing for my business in Calicut/Kozhikode.\nName: ${name}\nWebsite: ${website}${goal ? `\nPriority: ${goal}` : ""}`
+      : context === "project"
       ? `Hello Mohammad, I'd like to discuss a project.\nName: ${name}${website ? `\nWebsite: ${website}` : ""}${goal ? `\nProject context: ${goal}` : ""}`
       : `Hello Mohammad, I'd like to request an SEO review for my Saudi business.\nName: ${name}\nWebsite: ${website}${goal ? `\nPriority: ${goal}` : ""}`;
     setDraft(message);
