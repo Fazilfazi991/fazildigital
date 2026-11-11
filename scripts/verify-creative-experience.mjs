@@ -184,6 +184,14 @@ try {
     const technicalCard = page.locator(".fr-service-primary");
     assert.match(await technicalCard.innerText(), /Crawlability[\s\S]*Indexing[\s\S]*Internal links[\s\S]*prioritize/i);
     assert.equal(await technicalCard.getAttribute("href"), "/services/technical-seo/");
+    assert.equal(await page.locator(".fr-audit-copy small").first().evaluate(element => getComputedStyle(element).position), "static");
+    const serviceHeights = await page.evaluate(() => {
+      const primary = document.querySelector(".fr-service-primary").getBoundingClientRect();
+      const local = document.querySelector(".fr-service-local").getBoundingClientRect();
+      const growth = document.querySelector(".fr-service-growth").getBoundingClientRect();
+      return { primary: primary.height, stack: growth.bottom - local.top };
+    });
+    assert.ok(Math.abs(serviceHeights.primary - serviceHeights.stack) <= 2, "Technical SEO card fills the three-card service stack");
     const process = page.getByRole("tablist", { name: "Engagement steps" });
     await process.getByRole("tab", { name: /Let’s talk/ }).focus();
     await process.getByRole("tab", { name: /Let’s talk/ }).press("ArrowRight");
@@ -197,6 +205,19 @@ try {
     assert.equal(await page.locator(".fr-review .fd-review-form button[type=submit]").isVisible(), true);
     const sitemap = await (await page.request.get(`${baseURL}/sitemap.xml`)).text();
     for (const route of ["/riyadh/seo/", "/jeddah/seo/", "/dammam/seo/", "/services/seo/"]) assert.ok(sitemap.includes(route), `${route} remains in sitemap`);
+  });
+
+  await check("Chatbot launcher returns after the homepage hero and opens its accessible panel", async () => {
+    await goHome();
+    await page.locator(".fr-service-bento").scrollIntoViewIfNeeded();
+    await page.waitForFunction(() => {
+      const launcher = document.querySelector(".fazil-chat-launcher");
+      return !!launcher && getComputedStyle(launcher).visibility !== "hidden";
+    });
+    const launcher = page.getByRole("button", { name: "Open Fazil Digital AI Assistant" });
+    assert.equal(await launcher.isVisible(), true);
+    await launcher.click();
+    assert.equal(await page.getByRole("dialog", { name: "Fazil Digital" }).isVisible(), true);
   });
 
   await check("Reduced motion disables authored showcase animation", async () => {
@@ -218,6 +239,14 @@ try {
       await page.setViewportSize({ width, height });
       await goHome();
       await page.screenshot({ path: path.join(screenshotDir, name), fullPage: true, animations: "disabled" });
+      await page.screenshot({ path: path.join(screenshotDir, width === 1440 ? "hero-desktop.png" : "hero-mobile.png"), animations: "disabled" });
+      if (width === 1440) {
+        await page.locator(".fr-about-band").screenshot({ path: path.join(screenshotDir, "about-section.png"), animations: "disabled" });
+        await page.locator(".fr-work-motion").first().screenshot({ path: path.join(screenshotDir, "technical-review-card.png"), animations: "disabled" });
+        await page.locator(".fr-service-bento").screenshot({ path: path.join(screenshotDir, "service-cards-desktop.png"), animations: "disabled" });
+      } else {
+        await page.locator(".fr-service-bento").screenshot({ path: path.join(screenshotDir, "service-cards-mobile.png"), animations: "disabled" });
+      }
     }
   });
 

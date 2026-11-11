@@ -130,6 +130,12 @@
   line-height: 1.35;
 }
 
+.fr-work-art .fr-audit-copy small,
+.fr-work-art .fr-audit-priority small {
+  position: static;
+  inset: auto;
+}
+
 .fr-audit-state {
   min-width: 54px;
   padding: 5px 7px;

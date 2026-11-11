@@ -53,7 +53,7 @@ export function ChatAssistant() {
   useEffect(() => {
     if (open) return;
     if (!pageHasHero) return;
-    const hero = document.querySelector(".fr-hero, .fd-about-hero, .fd-calicut-hero");
+    const hero = document.querySelector("[aria-labelledby='hero-title'], .fr-hero, .fd-about-hero, .fd-calicut-hero");
     if (!hero) return;
     const observer = new IntersectionObserver(([entry]) => setHeroInView(entry.isIntersecting), { threshold: 0.08 });
     observer.observe(hero);
