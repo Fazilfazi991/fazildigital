@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { ReviewForm } from "@/components/home/HomeInteractions";
+import { CinematicHero } from "@/components/home/CinematicHero";
 import { SiteFooter, SiteHeader } from "@/components/site/BrandChrome";
 import { saudiArticles } from "@/data/saudi-articles";
 import "./home-reset.css";
@@ -89,22 +89,7 @@ export default function Home() {
     <a className="fr-skip" href="#main-content">Skip to content</a>
     <SiteHeader />
     <main id="main-content" className="fr-main">
-      <section className="fr-hero" aria-labelledby="hero-title">
-        <div className="fr-hero-copy">
-          <p className="fr-eyebrow"><span className="fr-marker" aria-hidden="true" />Mohammad Fazil <span className="fr-eyebrow-separator">/</span> SEO Consultant</p>
-          <h1 id="hero-title">Helping Saudi businesses get found on Google.</h1>
-          <p className="fr-hero-lead">I help businesses across Saudi Arabia improve search visibility, develop stronger organic content, and turn relevant Google searches into business opportunities.</p>
-          <div className="fr-hero-actions"><a className="fr-button fr-button-primary" href="#review">Request an SEO review <Arrow diagonal /></a><a className="fr-link" href="#approach">Explore my approach <Arrow /></a></div>
-          <p className="fr-location"><span aria-hidden="true" />Based in Dubai. Working with Saudi businesses.</p>
-          <div className="fr-hero-route" aria-label="An illustrative search route: search, useful page, enquiry">
-            <span>Search</span><i aria-hidden="true" /><span>Useful page</span><i aria-hidden="true" /><span>Enquiry</span>
-          </div>
-        </div>
-        <figure className="fr-portrait">
-          <Image src="/images/about/mohammad-fazil.webp" alt="Mohammad Fazil seated in a café" fill priority sizes="(max-width: 760px) 100vw, (max-width: 1100px) 45vw, 540px" />
-          <figcaption><strong>Mohammad Fazil</strong><span>SEO &amp; organic growth consultant</span></figcaption>
-        </figure>
-      </section>
+      <CinematicHero />
 
       <section className="fr-credibility" aria-label="Professional focus">
         <p>What you can expect</p>
