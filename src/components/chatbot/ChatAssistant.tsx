@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
@@ -49,7 +50,6 @@ export function ChatAssistant() {
   const [dockVisible, setDockVisible] = useState(false);
   const [greetingVisible, setGreetingVisible] = useState(false);
   const greetingSeenRef = useRef(false);
-  const characterVideoRef = useRef<HTMLVideoElement>(null);
   const characterTriggerRef = useRef<HTMLButtonElement>(null);
   const restoreFocusRef = useRef(false);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -63,16 +63,6 @@ export function ChatAssistant() {
       .then((data: { available?: boolean }) => { if (active) setAvailability(data.available ? "available" : "unavailable"); })
       .catch(() => { if (active) setAvailability("unavailable"); });
     return () => { active = false; };
-  }, []);
-
-  useEffect(() => {
-    const updateMotionState = () => document.documentElement.classList.toggle("fazil-document-hidden", document.hidden);
-    updateMotionState();
-    document.addEventListener("visibilitychange", updateMotionState);
-    return () => {
-      document.removeEventListener("visibilitychange", updateMotionState);
-      document.documentElement.classList.remove("fazil-document-hidden");
-    };
   }, []);
 
   useEffect(() => {
@@ -108,33 +98,6 @@ export function ChatAssistant() {
     }, 900);
     return () => window.clearTimeout(timer);
   }, [dockVisible, open]);
-
-  useEffect(() => {
-    const video = characterVideoRef.current;
-    if (!video) return;
-
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const shouldPlay = greetingVisible && dockVisible && !open && !reducedMotion.matches;
-    const updatePlayback = () => {
-      if (document.hidden || !shouldPlay) {
-        video.pause();
-        if (!shouldPlay) video.currentTime = 0;
-        return;
-      }
-      if (video.ended) video.currentTime = 0;
-      void video.play().catch(() => {
-        // The poster remains visible when autoplay is unavailable.
-      });
-    };
-
-    updatePlayback();
-    document.addEventListener("visibilitychange", updatePlayback);
-    return () => {
-      document.removeEventListener("visibilitychange", updatePlayback);
-      video.pause();
-      video.currentTime = 0;
-    };
-  }, [dockVisible, greetingVisible, open]);
 
   useEffect(() => {
     if (open) {
@@ -280,23 +243,16 @@ export function ChatAssistant() {
             aria-label={isCalicut ? "Open Calicut AI SEO assistant" : "Open Fazil Digital AI Assistant"}
             onClick={openAssistant}
           >
-            <video
-              ref={characterVideoRef}
-              className="fazil-flow-character"
-              width={360}
-              height={640}
-              poster="/images/chatbot/fazil-mini-flow-poster.webp"
-              muted
-              playsInline
-              preload="none"
+            <Image
+              className="fazil-cutout-character"
+              src="/images/chatbot/fazil-at-work.webp"
+              width={480}
+              height={480}
+              sizes="(max-width: 360px) 112px, (max-width: 640px) 130px, 164px"
+              alt=""
               aria-hidden="true"
-              onEnded={(event) => {
-                event.currentTarget.pause();
-                event.currentTarget.currentTime = 0;
-              }}
-            >
-              <source src="/images/chatbot/fazil-mini-flow.webm" type="video/webm" />
-            </video>
+              priority={false}
+            />
           </button>
         </div>
         <div className="fazil-contact-actions">
