@@ -15,6 +15,7 @@
   gap: 10px;
   pointer-events: none;
 }
+.fazil-contact-dock.is-content-overlap { visibility: hidden; }
 .fazil-character-greeting {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 28px;
