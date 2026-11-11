@@ -73,7 +73,13 @@ export function ChatAssistant() {
       if (window.innerWidth > 640) { setDockSafe(true); setGreetingSafe(true); return; }
       const dock = document.querySelector<HTMLElement>(".fazil-contact-dock");
       if (!dock) { setDockSafe(true); return; }
-      const bounds = dock.getBoundingClientRect();
+      const dockBounds = dock.getBoundingClientRect();
+      const bounds = {
+        top: dockBounds.top - 48,
+        bottom: dockBounds.bottom + 24,
+        left: dockBounds.left - 12,
+        right: dockBounds.right + 12,
+      };
       const importantElements = Array.from(document.querySelectorAll<HTMLElement>("main h1, main h2, main h3, main a, main button, main form input, main form textarea, main form select, main form label, body footer:not(.fazil-chat-footer)"));
       const overlapsImportantContent = importantElements
         .some((element) => {
