@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { getChatbotGreeting } from "@/lib/chatbot/greetings";
 import "./chatbot.css";
 
 type Message = { role: "assistant" | "user"; content: string };
@@ -49,6 +49,7 @@ export function ChatAssistant() {
   const [dockVisible, setDockVisible] = useState(false);
   const [greetingVisible, setGreetingVisible] = useState(false);
   const greetingSeenRef = useRef(false);
+  const characterVideoRef = useRef<HTMLVideoElement>(null);
   const characterTriggerRef = useRef<HTMLButtonElement>(null);
   const restoreFocusRef = useRef(false);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -107,6 +108,33 @@ export function ChatAssistant() {
     }, 900);
     return () => window.clearTimeout(timer);
   }, [dockVisible, open]);
+
+  useEffect(() => {
+    const video = characterVideoRef.current;
+    if (!video) return;
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const shouldPlay = greetingVisible && dockVisible && !open && !reducedMotion.matches;
+    const updatePlayback = () => {
+      if (document.hidden || !shouldPlay) {
+        video.pause();
+        if (!shouldPlay) video.currentTime = 0;
+        return;
+      }
+      if (video.ended) video.currentTime = 0;
+      void video.play().catch(() => {
+        // The poster remains visible when autoplay is unavailable.
+      });
+    };
+
+    updatePlayback();
+    document.addEventListener("visibilitychange", updatePlayback);
+    return () => {
+      document.removeEventListener("visibilitychange", updatePlayback);
+      video.pause();
+      video.currentTime = 0;
+    };
+  }, [dockVisible, greetingVisible, open]);
 
   useEffect(() => {
     if (open) {
@@ -230,15 +258,7 @@ export function ChatAssistant() {
   }
 
   const greeting = isCalicut ? calicutGreeting : saudigreeting;
-  const floatingGreeting = isCalicut
-    ? "Need help growing your business online in Calicut?"
-    : normalizedPathname === "/about"
-      ? "Got a project in mind? Let’s talk."
-      : normalizedPathname === "/"
-        ? "Hey! Need help getting found on Google?"
-        : /\/(riyadh|jeddah|dammam)\/seo$/.test(normalizedPathname) || normalizedPathname === "/services/seo"
-          ? "Want to improve your SEO in Saudi Arabia?"
-          : "Hey! Need help with your website?";
+  const floatingGreeting = getChatbotGreeting(normalizedPathname);
 
   return (
     <>
@@ -260,14 +280,23 @@ export function ChatAssistant() {
             aria-label={isCalicut ? "Open Calicut AI SEO assistant" : "Open Fazil Digital AI Assistant"}
             onClick={openAssistant}
           >
-            <Image
-              src="/images/chatbot/fazil-at-work.webp"
-              alt=""
-              width={480}
-              height={480}
-              sizes="(max-width: 640px) 150px, 176px"
-              loading="lazy"
-            />
+            <video
+              ref={characterVideoRef}
+              className="fazil-flow-character"
+              width={360}
+              height={640}
+              poster="/images/chatbot/fazil-mini-flow-poster.webp"
+              muted
+              playsInline
+              preload="none"
+              aria-hidden="true"
+              onEnded={(event) => {
+                event.currentTarget.pause();
+                event.currentTarget.currentTime = 0;
+              }}
+            >
+              <source src="/images/chatbot/fazil-mini-flow.webm" type="video/webm" />
+            </video>
           </button>
         </div>
         <div className="fazil-contact-actions">
