@@ -49,6 +49,7 @@ export function ChatAssistant() {
   const [copied, setCopied] = useState(false);
   const [dockVisible, setDockVisible] = useState(false);
   const [dockSafe, setDockSafe] = useState(true);
+  const [greetingSafe, setGreetingSafe] = useState(true);
   const [greetingVisible, setGreetingVisible] = useState(false);
   const greetingSeenRef = useRef(false);
   const characterTriggerRef = useRef<HTMLButtonElement>(null);
@@ -69,17 +70,26 @@ export function ChatAssistant() {
   useEffect(() => {
     if (!dockVisible) return;
     const assessDockSpace = () => {
-      if (window.innerWidth > 640) { setDockSafe(true); return; }
+      if (window.innerWidth > 640) { setDockSafe(true); setGreetingSafe(true); return; }
       const dock = document.querySelector<HTMLElement>(".fazil-contact-dock");
       if (!dock) { setDockSafe(true); return; }
       const bounds = dock.getBoundingClientRect();
-      const overlapsContent = Array.from(document.querySelectorAll<HTMLElement>("main h1, main h2, main h3, main a, main button, main form input, main form textarea, main form select, main form label"))
+      const importantElements = Array.from(document.querySelectorAll<HTMLElement>("main h1, main h2, main h3, main a, main button, main form input, main form textarea, main form select, main form label"));
+      const overlapsImportantContent = importantElements
         .some((element) => {
           if (element.closest(".fazil-contact-dock")) return false;
           const rect = element.getBoundingClientRect();
           return rect.bottom > 0 && rect.top < window.innerHeight && rect.right > bounds.left && rect.left < bounds.right && rect.bottom > bounds.top && rect.top < bounds.bottom;
         });
-      setDockSafe(!overlapsContent);
+      const greeting = dock.querySelector<HTMLElement>(".fazil-character-greeting");
+      const greetingBounds = greeting?.getBoundingClientRect();
+      const overlapsGreetingCopy = !!greetingBounds && Array.from(document.querySelectorAll<HTMLElement>("main p, main li"))
+        .some((element) => {
+          const rect = element.getBoundingClientRect();
+          return rect.bottom > 0 && rect.top < window.innerHeight && rect.right > greetingBounds.left && rect.left < greetingBounds.right && rect.bottom > greetingBounds.top && rect.top < greetingBounds.bottom;
+        });
+      setDockSafe(!overlapsImportantContent);
+      setGreetingSafe(!overlapsImportantContent && !overlapsGreetingCopy);
     };
     assessDockSpace();
     window.addEventListener("scroll", assessDockSpace, { passive: true });
@@ -251,7 +261,7 @@ export function ChatAssistant() {
   return (
     <>
       {!open && dockVisible && <div className={`fazil-contact-dock${greetingVisible ? " is-greeting" : ""}${dockSafe ? "" : " is-content-overlap"}`} role="group" aria-label="AI assistant and WhatsApp contact">
-        {greetingVisible && <div className="fazil-character-greeting" role="status" aria-live="polite">
+        {greetingVisible && <div className={`fazil-character-greeting${greetingSafe ? "" : " is-content-overlap"}`} role="status" aria-live="polite">
           <button type="button" className="fazil-greeting-open" onClick={openAssistant}>
             <span>{floatingGreeting}</span>
             <span className="fazil-greeting-cta">Ask my AI assistant</span>
