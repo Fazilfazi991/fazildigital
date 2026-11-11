@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ReviewForm } from "@/components/home/HomeInteractions";
-import { ProblemExplorer, ProcessStepper } from "@/components/home/HomeExplorers";
+import { DestinationSelector, ProblemExplorer, ProcessStepper } from "@/components/home/HomeExplorers";
 import { SiteFooter, SiteHeader } from "@/components/site/BrandChrome";
 import { saudiArticles } from "@/data/saudi-articles";
 import "./home-reset.css";
@@ -35,18 +35,17 @@ export default function HomePage() {
   return <div className="fd-home fd-reset-home" id="top">
     <a className="fr-skip" href="#main-content">Skip to content</a><SiteHeader />
     <main id="main-content" className="fr-main">
-      <section className="fr-hero" aria-labelledby="hero-title">
-        <div className="fr-hero-copy"><p className="fr-eyebrow">Hey, I’m Mohammad Fazil.</p><h1 id="hero-title">I help businesses get found on Google.</h1>
-          <p className="fr-hero-lead">SEO, organic growth and digital strategy for businesses across Saudi Arabia.</p>
-          <div className="fr-hero-actions"><a className="fr-button" href="#review">Let’s discuss your SEO <Arrow diagonal /></a><a className="fr-link" href="#work">Explore my work <Arrow /></a></div>
-          <p className="fr-location"><span aria-hidden="true">●</span> Dubai-based · Serving Riyadh, Jeddah &amp; Dammam</p>
+      <section className="fr-hero fr-hero-editorial" aria-labelledby="hero-title">
+        <div className="fr-hero-copy"><p className="fr-eyebrow">Mohammad Fazil <span aria-hidden="true">·</span> SEO Consultant</p><h1 id="hero-title">I help businesses get found on <span className="fr-google-accent">Google.</span></h1>
+          <p className="fr-hero-lead">SEO and organic growth for Saudi businesses. Let’s connect your website with the people already searching for your services.</p>
+          <div className="fr-hero-actions"><a className="fr-button" href="#review">Request an SEO Review <Arrow diagonal /></a><a className="fr-link" href="#work">Explore My Work <Arrow /></a></div>
         </div>
-        <figure className="fr-portrait"><Image src="/images/about/mohammad-fazil.webp" alt="Mohammad Fazil seated at a café" fill loading="eager" fetchPriority="high" sizes="(max-width: 760px) 100vw, 52vw" /><span className="fr-orbit" aria-hidden="true">SEO<br/> &amp; growth<br/>partner</span><figcaption><strong>Mohammad Fazil</strong><span>Independent SEO consultant</span></figcaption></figure>
+        <DestinationSelector />
       </section>
 
       <section className="fr-signature" aria-label="How I approach SEO"><span>Marketing mindset</span><b>✳</b><span>Technology perspective</span><b>✳</b><span>Business focus</span></section>
 
-      <section className="fr-about-band" aria-labelledby="about-band-title"><div className="fr-about-photo"><Image src="/images/home/mohammad-fazil-portrait.webp" alt="Mohammad Fazil in a white shirt at a modern atrium" fill sizes="(max-width:760px) 100vw, 42vw" /></div><div className="fr-about-copy"><p className="fr-eyebrow">The person behind the work</p><h2 id="about-band-title">Clear thinking. Thoughtful execution.</h2><p>I bring marketing, technology and business perspectives together to help teams make better decisions about search. You work directly with me—from first review through implementation and improvement.</p><Link href="/about/" className="fr-light-link">Meet Mohammad <Arrow diagonal /></Link></div><span className="fr-band-mark" aria-hidden="true">F.</span></section>
+      <section className="fr-about-band" aria-labelledby="about-band-title"><div className="fr-about-photo"><Image src="/images/about/mohammad-fazil.webp" alt="Mohammad Fazil holding a coffee at a café" fill sizes="(max-width:760px) 100vw, 42vw" /></div><div className="fr-about-copy"><p className="fr-eyebrow">The person behind the work</p><h2 id="about-band-title">Clear thinking. Thoughtful execution.</h2><p>I bring marketing, technology and business perspectives together to help teams make better decisions about search. You work directly with me—from first review through implementation and improvement.</p><Link href="/about/" className="fr-light-link">Meet Mohammad <Arrow diagonal /></Link></div><span className="fr-band-mark" aria-hidden="true">F.</span></section>
 
       <section className="fr-section fr-problems" aria-labelledby="problems-title"><div className="fr-section-heading"><p className="fr-eyebrow">Start with what’s getting in the way</p><h2 id="problems-title">What would you like to change?</h2><p>Choose the closest match. I’ll show you a useful place to start.</p></div><ProblemExplorer /></section>
 

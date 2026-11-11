@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 function useMobileOrientation() {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,6 +20,36 @@ const steps = [
   { title: "Build a strategy", copy: "Agree the scope, sequence, responsibilities and measures that make sense for your goals." },
   { title: "Implement & improve", copy: "Put agreed changes into practice, review what happens and refine the next priorities." },
 ];
+
+const destinations = [
+  { name: "Riyadh", href: "/riyadh/seo/", description: "Explore SEO support for businesses targeting Riyadh.", action: "Explore Riyadh SEO" },
+  { name: "Jeddah", href: "/jeddah/seo/", description: "Connect your services with customers searching across Jeddah and the Western Region.", action: "Explore Jeddah SEO" },
+  { name: "Dammam", href: "/dammam/seo/", description: "Support discovery across Dammam and Saudi Arabia’s Eastern Region.", action: "Explore Dammam SEO" },
+  { name: "Saudi Arabia", href: "/services/seo/", description: "Plan organic growth for a wider Saudi audience, from local priorities to national demand.", action: "Explore SEO services" },
+];
+
+export function DestinationSelector() {
+  const [selected, setSelected] = useState(0);
+  const destination = destinations[selected];
+  function selectDestination(index: number) {
+    setSelected(index);
+    document.getElementById(`destination-${index}`)?.focus();
+  }
+  return <aside className="fr-destination" aria-labelledby="destination-title">
+    <div className="fr-destination-heading"><span>01 — 04 <i aria-hidden="true" /></span><p className="fr-eyebrow">Your next opportunity</p><h2 id="destination-title">Where do you want to grow?</h2></div>
+    <div className="fr-destination-options" role="radiogroup" aria-labelledby="destination-title">
+      {destinations.map((item, index) => <button type="button" role="radio" id={`destination-${index}`} aria-checked={selected === index} tabIndex={selected === index ? 0 : -1} key={item.name} onClick={() => setSelected(index)} onKeyDown={event => {
+        const forward = ["ArrowRight", "ArrowDown"];
+        const backward = ["ArrowLeft", "ArrowUp"];
+        const next = forward.includes(event.key) ? (selected + 1) % destinations.length : backward.includes(event.key) ? (selected + destinations.length - 1) % destinations.length : event.key === "Home" ? 0 : event.key === "End" ? destinations.length - 1 : selected;
+        if (next !== selected) { event.preventDefault(); selectDestination(next); }
+      }}><span className="fr-destination-radio" aria-hidden="true" /><span>{item.name}</span><span className="fr-destination-arrow" aria-hidden="true">↗</span></button>)}
+    </div>
+    <div className="fr-destination-result" id="destination-result" aria-live="polite" aria-atomic="true" key={destination.name}>
+      <p>{destination.description}</p><Link href={destination.href}>{destination.action}<span aria-hidden="true">↗</span></Link>
+    </div>
+  </aside>;
+}
 
 export function ProblemExplorer() {
   const [selected, setSelected] = useState(0);
