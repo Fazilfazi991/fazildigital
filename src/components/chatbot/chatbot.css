@@ -30,16 +30,16 @@
 }
 .fazil-character-stage {
   display: grid;
-  width: 204px;
-  height: 258px;
+  width: 184px;
+  height: 232px;
   place-items: end center;
   perspective: 800px;
   pointer-events: none;
 }
 .fazil-character-trigger {
   display: grid;
-  width: 182px;
-  height: 258px;
+  width: 164px;
+  height: 232px;
   place-items: end center;
   padding: 0;
   overflow: visible;
@@ -50,8 +50,8 @@
 }
 .fazil-character-trigger img {
   display: block;
-  width: 182px;
-  height: 258px;
+  width: 164px;
+  height: 232px;
   object-fit: contain;
   transform-origin: 50% 100%;
   filter: drop-shadow(0 8px 6px rgba(8, 8, 8, .18));
@@ -172,11 +172,11 @@
 body.fazil-chat-open { overflow: hidden; }
 
 @media (max-width: 640px) {
-  .fazil-contact-dock { right: max(12px, env(safe-area-inset-right)); bottom: calc(14px + env(safe-area-inset-bottom)); width: min(190px, calc(100vw - 24px)); }
+  .fazil-contact-dock { right: max(12px, env(safe-area-inset-right)); bottom: calc(14px + env(safe-area-inset-bottom)); width: min(176px, calc(100vw - 24px)); }
   .fazil-character-greeting { padding: 7px 10px; font-size: 12px; }
-  .fazil-character-stage { width: 166px; height: 190px; }
-  .fazil-character-trigger { width: 142px; height: 190px; }
-  .fazil-character-trigger img { width: 142px; height: 190px; }
+  .fazil-character-stage { width: 150px; height: 172px; }
+  .fazil-character-trigger { width: 130px; height: 172px; }
+  .fazil-character-trigger img { width: 130px; height: 172px; }
   .fazil-contact-actions { gap: 6px; }
   .fazil-whatsapp-launcher { min-height: 45px; gap: 7px; padding: 0 7px; font-size: 10.5px; }
   .fazil-whatsapp-launcher svg { width: 18px; height: 18px; }
