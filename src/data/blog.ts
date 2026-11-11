@@ -2,6 +2,7 @@ import { cluster1Blogs } from "./blogs-cluster-1";
 import { cluster2Blogs } from "./blogs-cluster-2";
 import { cluster3Blogs } from "./blogs-cluster-3";
 import { cluster4Blogs } from "./blogs-cluster-4";
+import { calicutArticles } from "./calicut-articles";
 import { saudiArticles } from "./saudi-articles";
 
 
@@ -21,6 +22,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  ...calicutArticles,
   ...saudiArticles,
   ...cluster4Blogs,
   ...cluster2Blogs,

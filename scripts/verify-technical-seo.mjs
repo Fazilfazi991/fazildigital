@@ -31,9 +31,10 @@ const preservedHTML = historical.filter(row => row[1]?.startsWith("HTML")).map(r
 assert.equal(preservedHTML.length, 115);
 const originalArticles = historical.filter(row => row[1] === "HTML article").map(row => row[0].split('/').filter(Boolean).at(-1));
 const newArticles = [...fs.readFileSync("src/data/saudi-articles.ts", "utf8").matchAll(/slug:\s*"([^"]+)"/g)].map(match => match[1]);
+const calicutArticles = [...fs.readFileSync("src/data/calicut-articles.ts", "utf8").matchAll(/slug:\s*"([^"]+)"/g)].map(match => match[1]);
 const newServicePaths = ["/services/local-seo/", "/services/technical-seo/", "/services/content-marketing/"];
 const approvedSupplementalPaths = ["/digital-marketing-expert-calicut/"];
-const expectedContent = new Set([...preservedHTML, ...newServicePaths, ...newArticles.map(slug => `/blog/${slug}/`), ...approvedSupplementalPaths]);
+const expectedContent = new Set([...preservedHTML, ...newServicePaths, ...newArticles.map(slug => `/blog/${slug}/`), ...calicutArticles.map(slug => `/blog/${slug}/`), ...approvedSupplementalPaths]);
 let sitemapURLs = [];
 
 await check("One sitemap authority includes every old and approved new content URL", async () => {
@@ -50,7 +51,7 @@ await check("One sitemap authority includes every old and approved new content U
   for (const path of expectedContent) assert.ok(sitemapURLs.includes(`${origin}${path}`), `Missing ${path}`);
   for (const url of sitemapURLs) { assert.ok(url.startsWith(`${origin}/`)); assert.ok(url.endsWith('/')); assert.ok(!url.includes('/raw/') && !url.endsWith('.md')); }
   assert.ok(sitemapURLs.includes(`${origin}/case-studies/green-bags-uae/`));
-  evidence.sitemap = { entries: sitemapURLs.length, preservedHTML: preservedHTML.length, newArticles: newArticles.length, newServices: 3 };
+  evidence.sitemap = { entries: sitemapURLs.length, preservedHTML: preservedHTML.length, saudiArticles: newArticles.length, calicutArticles: calicutArticles.length, newServices: 3 };
 });
 
 await check("Every historical and approved content route returns 200 with a self canonical", async () => {
@@ -77,7 +78,7 @@ await check("Every historical and approved content route returns 200 with a self
 });
 
 await check("All raw and rewritten Markdown articles have noindex and canonical headers", async () => {
-  const slugs = [...new Set([...originalArticles, ...newArticles])];
+  const slugs = [...new Set([...originalArticles, ...newArticles, ...calicutArticles])];
   let tested = 0;
   for (const slug of slugs) {
     for (const path of [`/blog/raw/${slug}/`, `/blog/${slug}.md`]) {

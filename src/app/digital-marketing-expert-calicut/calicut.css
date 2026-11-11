@@ -17,3 +17,41 @@ body:has(.cr-page) .fd-header{min-height:74px;border-bottom-color:#D4D0C9;backgr
 @media(max-width:390px){.cr-hero,.cr-meet-inner,.cr-problems,.cr-services-inner,.cr-work-inner,.cr-process{width:calc(100% - 32px)}.cr-hero{padding-top:19px}.fd-home.fd-reset-home .cr-hero h1{font-size:clamp(2.75rem,11vw,3.1rem)}.cr-hero h1 i{font-size:.48em}.cr-hero-actions .fd-button{padding-inline:14px;font-size:.82rem}.cr-photo-frame{aspect-ratio:1.05}.cr-meet-inner{padding-block:57px}.cr-problems,.cr-services,.cr-work,.cr-process{padding-block:60px}.cr-service-feature{min-height:385px;padding:21px}.cr-search-map{right:14px;left:18px}.cr-search-map>div{gap:4px}.cr-search-map b{font-size:.59rem}.cr-work-main .cr-art{min-height:315px}.cr-review{padding:18px}}
 @media(max-width:330px){.fd-home.fd-reset-home .cr-hero h1{font-size:2.62rem}.cr-hero-actions .fd-button{font-size:.77rem}.cr-service-list article{grid-template-columns:23px minmax(0,1fr) 35px;gap:7px}}
 @media(prefers-reduced-motion:reduce){.cr-page *,.cr-page *:before,.cr-page *:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+
+/* Keep the service illustration in its own flow on phones so it never covers copy. */
+@media(max-width:760px){
+  .cr-service-feature{min-height:0!important}
+  .cr-search-map{position:relative;right:auto;bottom:auto;left:auto;width:100%;margin-top:auto;padding-top:26px}
+  .cr-search-map>span{margin-bottom:12px}
+  .cr-search-map>i{height:15px}
+  .cr-search-map b{min-height:52px;overflow-wrap:anywhere}
+}
+
+@media(prefers-reduced-motion:no-preference){
+  @keyframes cr-rise-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes cr-panel-enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes cr-map-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  .cr-hero-copy{animation:cr-rise-in 620ms cubic-bezier(.2,.7,.2,1) both}
+  .cr-portrait{animation:cr-rise-in 700ms 100ms cubic-bezier(.2,.7,.2,1) both}
+  .cr-problems .fr-problem-panel,.cr-process .fr-step-panel{animation:cr-panel-enter 300ms cubic-bezier(.2,.7,.2,1) both}
+  .cr-service-feature .cr-search-map>span{animation:cr-map-arrive 420ms 90ms both}
+  .cr-service-feature .cr-search-map>div b{animation:cr-map-arrive 360ms both}
+  .cr-service-feature .cr-search-map>div b:nth-child(2){animation-delay:90ms}
+  .cr-service-feature .cr-search-map>div b:nth-child(3){animation-delay:180ms}
+}
+
+.cr-reading{padding:76px max(20px,calc((100% - 1200px)/2));color:#F8F7F3;background:#080808}
+.cr-reading-inner{width:min(100%,1200px);margin-inline:auto}
+.cr-reading-heading>p{color:#FFB638;font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.cr-reading-heading h2{max-width:14ch;margin-top:15px!important;font-size:clamp(2.4rem,4.5vw,3.8rem);line-height:1;letter-spacing:-.06em}
+.cr-reading-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:34px}
+.cr-reading-grid article{display:flex;min-height:260px;flex-direction:column;align-items:flex-start;padding:25px;border:1px solid #494744;background:#141312;transition:transform 180ms ease,border-color 180ms ease}
+.cr-reading-grid article:hover{transform:translateY(-3px);border-color:#FFB638}
+.cr-reading-grid article>span{color:#FFB638;font-size:.68rem;font-weight:700;letter-spacing:.07em}
+.cr-reading-grid h3{max-width:28ch;margin-top:22px!important;font-size:clamp(1.25rem,2.2vw,1.8rem)!important;line-height:1.2}
+.cr-reading-grid h3 a{color:#F8F7F3;text-decoration:none}
+.cr-reading-grid h3 a:hover{text-decoration:underline;text-underline-offset:4px}
+.cr-reading-grid article>p{max-width:55ch;margin-top:11px!important;color:#D7D4D0;font-size:.84rem;line-height:1.6}
+.cr-reading-link{display:inline-flex;align-items:center;gap:8px;margin-top:auto;padding-top:22px;color:#FFB638;font-size:.82rem;font-weight:700}
+@media(max-width:760px){.cr-reading{padding-block:60px}.cr-reading-grid{grid-template-columns:1fr;gap:12px}.cr-reading-grid article{min-height:230px;padding:21px}}
+@media(prefers-reduced-motion:reduce){.cr-reading-grid article{transition:none}}

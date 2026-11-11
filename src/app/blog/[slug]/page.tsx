@@ -3,7 +3,9 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { JsonLd, PageCTA, pageMetadata } from "@/components/site/PageElements";
 import { blogPosts } from "@/data/blog";
+import { calicutArticles } from "@/data/calicut-articles";
 import { saudiArticles } from "@/data/saudi-articles";
+import "../../calicut-editorial.css";
 import "../../editorial-pages.css";
 
 interface Props { params: Promise<{ slug: string }> }
@@ -42,18 +44,23 @@ export default async function BlogPostPage({ params }: Props) {
   const post = blogPosts.find(item => item.slug === slug);
   if (!post) notFound();
   const { html, sections } = articlePresentation(post.content);
-  const isNewEditorial = saudiArticles.some(item => item.slug === post.slug);
-  const related = saudiArticles.filter(item => item.slug !== post.slug).slice(0, 3);
+  const isSaudiEditorial = saudiArticles.some(item => item.slug === post.slug);
+  const isCalicutEditorial = calicutArticles.some(item => item.slug === post.slug);
+  const related = isCalicutEditorial
+    ? calicutArticles.filter(item => item.slug !== post.slug)
+    : isSaudiEditorial
+      ? saudiArticles.filter(item => item.slug !== post.slug).slice(0, 3)
+      : blogPosts.filter(item => item.slug !== post.slug && !saudiArticles.some(saudi => saudi.slug === item.slug)).slice(0, 3);
   const wordCount = post.content.replace(/<[^>]*>/g, " ").trim().split(/\s+/).length;
   const published = articleDate(post.date);
   const modified = articleDate(post.lastModified || post.date);
-  return <>
+  return <div className={isCalicutEditorial ? "fd-calicut-article" : undefined}>
     <JsonLd data={{ "@context": "https://schema.org", "@type": "BlogPosting", "@id": `https://www.fazildigital.com/blog/${slug}/#article`, mainEntityOfPage: `https://www.fazildigital.com/blog/${slug}/`, headline: post.title, description: post.excerpt, datePublished: published, dateModified: modified, wordCount, inLanguage: "en", author: { "@type": "Person", "@id": "https://www.fazildigital.com/#person", name: "Mohammad Fazil", url: "https://www.fazildigital.com/about/", sameAs: ["https://linkedin.com/in/fazilfazi"] }, publisher: { "@type": "Organization", "@id": "https://www.fazildigital.com/#organization", name: "Fazil Digital", url: "https://www.fazildigital.com/", logo: { "@type": "ImageObject", url: "https://www.fazildigital.com/icon.png" } } }} />
     <article>
-      <header className="fd-container fd-support-article-head"><nav aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><Link href="/blog/">Insights</Link><span aria-hidden="true">/</span><span>{post.category}</span></nav><p className="fd-support-caption">{isNewEditorial ? "Saudi SEO guide" : post.category}</p><h1>{post.title}</h1><p className="fd-support-article-deck">{post.excerpt}</p><div className="fd-support-byline"><Link href="/about/">Mohammad Fazil</Link><time dateTime={published}>{formatDate(post.date)}</time><span>{Math.max(1, Math.ceil(wordCount / 220))} min read</span>{post.lastModified && published !== modified && <span>Updated <time dateTime={modified}>{formatDate(post.lastModified)}</time></span>}</div></header>
-      <div className="fd-container fd-support-article-layout"><aside className="fd-support-toc"><nav aria-label="In this guide"><p>In this guide</p><ol>{sections.map(section => <li key={section.id}><a href={`#${section.id}`}>{section.title}</a></li>)}</ol></nav><Link href="/contact/" className="fd-text-link">Discuss your SEO goals <span aria-hidden="true">↗</span></Link></aside><div className="fd-support-article-body" dangerouslySetInnerHTML={{ __html: html }} /></div>
+      <header className="fd-container fd-support-article-head"><nav aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><Link href="/blog/">Insights</Link><span aria-hidden="true">/</span><span>{isCalicutEditorial ? "Calicut & Kerala" : post.category}</span></nav><p className="fd-support-caption">{isCalicutEditorial ? "Calicut & Kerala guide" : isSaudiEditorial ? "Saudi SEO guide" : post.category}</p><h1>{post.title}</h1><p className="fd-support-article-deck">{post.excerpt}</p><div className="fd-support-byline"><Link href="/about/">Mohammad Fazil</Link><time dateTime={published}>{formatDate(post.date)}</time><span>{Math.max(1, Math.ceil(wordCount / 220))} min read</span>{post.lastModified && published !== modified && <span>Updated <time dateTime={modified}>{formatDate(post.lastModified)}</time></span>}</div></header>
+      <div className="fd-container fd-support-article-layout"><aside className="fd-support-toc"><nav aria-label="In this guide"><p>In this guide</p><ol>{sections.map(section => <li key={section.id}><a href={`#${section.id}`}>{section.title}</a></li>)}</ol></nav><Link href={isCalicutEditorial ? "/contact/?market=calicut#contact-prepare" : "/contact/"} className="fd-text-link">{isCalicutEditorial ? "Discuss Calicut SEO" : "Discuss your SEO goals"} <span aria-hidden="true">↗</span></Link></aside><div className="fd-support-article-body" dangerouslySetInnerHTML={{ __html: html }} /></div>
     </article>
-    <section className="fd-support-band fd-section"><div className="fd-container"><div className="fd-section-heading"><h2>Keep the thinking going.</h2><Link href="/blog/" className="fd-text-link">All insights <span aria-hidden="true">↗</span></Link></div><div className="fd-support-related">{related.map(item => <article key={item.slug}><p className="fd-support-caption">{item.category}</p><h3><Link href={`/blog/${item.slug}/`}>{item.title}</Link></h3><p>{item.excerpt}</p></article>)}</div></div></section>
-    <PageCTA />
-  </>;
+    {related.length > 0 && <section className="fd-support-band fd-section"><div className="fd-container"><div className="fd-section-heading"><h2>{isCalicutEditorial ? "More Calicut & Kerala guides." : "Keep the thinking going."}</h2><Link href="/blog/" className="fd-text-link">All insights <span aria-hidden="true">↗</span></Link></div><div className="fd-support-related">{related.map(item => <article key={item.slug}><p className="fd-support-caption">{isCalicutEditorial ? "Calicut & Kerala" : item.category}</p><h3><Link href={`/blog/${item.slug}/`}>{item.title}</Link></h3><p>{item.excerpt}</p></article>)}</div></div></section>}
+    {isCalicutEditorial ? <section className="fd-support-band fd-section fd-calicut-article-cta"><div className="fd-container fd-support-reading"><p className="fd-support-caption">Calicut &amp; Kerala</p><h2>Want to discuss SEO for your business?</h2><p>Read about the remote consultancy for businesses serving Calicut and Kozhikode, or prepare a private enquiry when you are ready.</p><Link href="/digital-marketing-expert-calicut/" className="fd-text-link">Explore the Calicut consultancy <span aria-hidden="true">↗</span></Link><Link href="/contact/?market=calicut#contact-prepare" className="fd-text-link">Prepare a private enquiry <span aria-hidden="true">↗</span></Link></div></section> : <PageCTA />}
+  </div>;
 }

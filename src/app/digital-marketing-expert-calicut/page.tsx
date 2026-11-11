@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ReviewForm } from "@/components/home/HomeInteractions";
 import { ProblemExplorer, ProcessStepper } from "@/components/home/HomeExplorers";
 import { JsonLd } from "@/components/site/PageElements";
+import { calicutArticles } from "@/data/calicut-articles";
 import "../home-reset.css";
 import "./calicut.css";
 
@@ -75,6 +76,8 @@ export default function CalicutDigitalMarketingPage() {
         <div className="cr-work-grid"><article className="cr-work-item cr-work-main"><div className="cr-art cr-art-review"><span>TECHNICAL REVIEW</span><strong>Find the<br />right fixes.</strong><div className="cr-audit-sheet" aria-hidden="true"><i></i><i></i><i></i><i></i><b>Priority</b><b>Action</b></div><small>Example deliverable · findings &amp; next steps</small></div><h3>A prioritized technical review</h3><p>Findings, affected pages, recommended changes and validation checks.</p></article><article className="cr-work-item"><div className="cr-art cr-art-map"><span>SEARCH INTENT</span><strong>Make each page<br />do its job.</strong><div className="cr-intent-map" aria-hidden="true"><i></i><b>Service</b><b>Answer</b><b>Enquiry</b></div><small>Example deliverable · page purpose</small></div><h3>A page and intent map</h3><p>A simple structure joining audience questions to useful pages and internal links.</p></article><article className="cr-work-item"><div className="cr-art cr-art-roadmap"><span>ORGANIC GROWTH</span><strong>Know what<br />comes next.</strong><div className="cr-roadmap-lines" aria-hidden="true"><i>Review</i><i>Prioritise</i><i>Implement</i><i>Learn</i></div><small>Example deliverable · practical roadmap</small></div><h3>A workable growth plan</h3><p>Priorities, responsibilities and a baseline to guide the next review.</p></article></div>
         <Link className="cr-project-link" href="/case-studies/">See documented project notes <Arrow diagonal /></Link>
       </div></section>
+
+      <section className="cr-reading" aria-labelledby="reading-title"><div className="cr-reading-inner"><div className="cr-reading-heading"><p>Calicut &amp; Kerala · useful guides</p><h2 id="reading-title">Clearer answers for local search.</h2></div><div className="cr-reading-grid">{calicutArticles.map((article, index) => <article key={article.slug}><span>0{index + 1} / {index === 0 ? "SEARCH VISIBILITY" : "LOCAL DISCOVERY"}</span><h3><Link href={`/blog/${article.slug}/`}>{article.title}</Link></h3><p>{article.excerpt}</p><Link className="cr-reading-link" href={`/blog/${article.slug}/`}>Read the guide <Arrow diagonal /></Link></article>)}</div></div></section>
 
       <section className="cr-process" aria-labelledby="process-title"><div className="cr-process-intro"><h2 id="process-title">How we work together.</h2><p>A straightforward path from first conversation to a considered next step.</p></div><ProcessStepper /></section>
 

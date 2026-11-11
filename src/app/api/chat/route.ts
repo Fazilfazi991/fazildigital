@@ -1,4 +1,4 @@
-import { CHAT_SYSTEM_PROMPT } from "@/lib/chatbot/knowledge";
+import { CHAT_CALICUT_SYSTEM_PROMPT, CHAT_SYSTEM_PROMPT } from "@/lib/chatbot/knowledge";
 import { checkChatLimit, type LimitResult } from "@/lib/chatbot/rate-limit";
 
 export const runtime = "nodejs";
@@ -43,9 +43,11 @@ export async function POST(request: Request) {
     return jsonError(413, "invalid_request");
   }
   let turns: Turn[];
+  let market: "saudi" | "calicut" = "saudi";
   try {
-    const parsed = JSON.parse(raw) as { messages?: unknown };
+    const parsed = JSON.parse(raw) as { messages?: unknown; market?: unknown };
     turns = validateTurns(parsed.messages);
+    if (parsed.market === "calicut") market = "calicut";
   } catch {
     return jsonError(400, "invalid_request");
   }
@@ -74,7 +76,7 @@ export async function POST(request: Request) {
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
       body: JSON.stringify({
         model,
-        messages: [{ role: "system", content: CHAT_SYSTEM_PROMPT }, ...turns],
+        messages: [{ role: "system", content: market === "calicut" ? CHAT_CALICUT_SYSTEM_PROMPT : CHAT_SYSTEM_PROMPT }, ...turns],
         thinking: { type: "disabled" },
         stream: true,
         max_tokens: MAX_OUTPUT_TOKENS,

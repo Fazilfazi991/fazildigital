@@ -8,11 +8,14 @@ const playwrightPath = process.env.PLAYWRIGHT_MODULE;
 assert.ok(playwrightPath, "Set PLAYWRIGHT_MODULE to an installed Playwright module.");
 const { chromium } = await import(pathToFileURL(playwrightPath));
 const browser = await chromium.launch({ headless: true, ...(process.env.BROWSER_PATH ? { executablePath: process.env.BROWSER_PATH } : {}) });
-const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1, reducedMotion: "reduce" });
+const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1, reducedMotion: "no-preference" });
 await context.route("**/*", route => new URL(route.request().url()).origin === new URL(baseURL).origin ? route.continue() : route.abort());
+await context.route(`${baseURL}/api/chat`, route => route.request().method() === "GET" ? route.fulfill({ status: 200, contentType: "application/json", body: JSON.stringify({ available: false }) }) : route.abort());
 const page = await context.newPage();
 const runtimeErrors = [];
+const chatPosts = [];
 page.on("pageerror", error => runtimeErrors.push(error.message));
+page.on("request", request => { if (request.url().endsWith("/api/chat") && request.method() === "POST") chatPosts.push(request.url()); });
 const response = await page.goto(`${baseURL}/digital-marketing-expert-calicut/`, { waitUntil: "networkidle", timeout: 120000 });
 assert.equal(response.status(), 200);
 await page.evaluate(() => document.fonts.ready);
@@ -21,6 +24,7 @@ assert.equal(await page.locator("h1").count(), 1);
 assert.equal(await page.locator(".fd-home > .fd-header").count(), 1);
 assert.equal(await page.locator("footer").count(), 1);
 assert.equal(await page.title(), "Digital Marketing Expert in Calicut | Mohammad Fazil");
+assert.equal(await page.locator(".cr-hero-copy").evaluate(element => getComputedStyle(element).animationName), "cr-rise-in", "Hero entrance animation is present when motion is allowed");
 assert.ok((await page.locator('meta[name="description"]').getAttribute("content")).includes("Calicut and Kerala"));
 assert.equal(await page.locator('link[rel="canonical"]').getAttribute("href"), "https://www.fazildigital.com/digital-marketing-expert-calicut/");
 const robots = await page.locator('meta[name="robots"]').count() ? await page.locator('meta[name="robots"]').getAttribute("content") : null;
@@ -62,9 +66,26 @@ for (const width of widths) {
   assert.ok(layout.documentWidth <= width + 1 && layout.bodyWidth <= width + 1, `Horizontal overflow at ${width}px: ${layout.documentWidth}/${layout.bodyWidth}`);
   assert.ok(layout.headingWidth > 0 && layout.headingHeight > 0, `Visible H1 at ${width}px`);
   assert.ok(layout.heroActionBottom < layout.viewportHeight, `Hero enquiry CTA is visible in the first viewport at ${width}px`);
+  if (width <= 760) {
+    const card = await page.locator(".cr-service-feature").evaluate(element => {
+      const link = element.querySelector("a").getBoundingClientRect();
+      const map = element.querySelector(".cr-search-map");
+      return { mapPosition: getComputedStyle(map).position, mapTop: map.getBoundingClientRect().top, linkBottom: link.bottom };
+    });
+    assert.equal(card.mapPosition, "relative", `Service illustration stays in flow at ${width}px`);
+    assert.ok(card.mapTop >= card.linkBottom, `Service illustration does not overlap card copy at ${width}px`);
+  }
 }
 
 await page.setViewportSize({ width: 390, height: 844 });
+await page.locator("#problem-tab-1").click();
+assert.equal(await page.locator("#problem-tab-1").getAttribute("aria-selected"), "true");
+assert.ok(await page.locator("#problem-panel").innerText().then(value => value.includes("People visit, but don’t enquire")), "Challenge selection updates its panel");
+assert.equal(await page.locator("#problem-panel").evaluate(element => getComputedStyle(element).animationName), "cr-panel-enter", "Challenge selection animates when motion is allowed");
+await page.locator("#step-tab-1").click();
+assert.equal(await page.locator("#step-tab-1").getAttribute("aria-selected"), "true");
+assert.ok((await page.locator("#step-panel").innerText()).includes("Understand your website"), "Process selection updates its panel");
+assert.equal(await page.locator("#step-panel").evaluate(element => getComputedStyle(element).animationName), "cr-panel-enter", "Process selection animates when motion is allowed");
 const menuSummary = page.locator(".fd-mobile-menu > summary");
 await menuSummary.focus();
 await menuSummary.press("Enter");
@@ -78,6 +99,17 @@ assert.equal(await faq.getAttribute("open"), null);
 await faq.locator("summary").click();
 assert.equal(await faq.getAttribute("open"), "");
 assert.ok(await faq.locator("p").isVisible());
+
+await page.locator(".cr-services").scrollIntoViewIfNeeded();
+const chatLauncher = page.getByRole("button", { name: "Open Calicut SEO assistant" });
+await chatLauncher.waitFor({ state: "visible" });
+await chatLauncher.click();
+assert.ok(await page.getByRole("dialog", { name: "Fazil Digital" }).isVisible(), "Calicut chatbot opens after the hero");
+assert.ok((await page.locator(".fazil-chat-unavailable").innerText()).includes("Quick answers"), "Chatbot offers a useful local fallback when the provider is offline");
+await page.getByRole("button", { name: "Can I discuss SEO for a Calicut business?" }).click();
+assert.ok((await page.locator(".fazil-chat-message.assistant").last().innerText()).toLowerCase().includes("remote seo"), "Calicut quick answer works without an AI provider");
+assert.deepEqual(chatPosts, [], "Quick answers send no message to the chat API");
+await page.getByRole("button", { name: "Close chat" }).click();
 
 const unnamedLinks = await page.locator("a").evaluateAll(links => links.filter(link => link.getClientRects().length && !(link.getAttribute("aria-label") || link.innerText).trim()).map(link => link.outerHTML));
 assert.deepEqual(unnamedLinks, [], "Every link has an accessible name");
@@ -96,6 +128,7 @@ assert.deepEqual(contrastFailures, [], "Visible text meets sampled WCAG AA contr
 
 const screenshotDir = path.resolve("previews/calicut-final");
 await mkdir(screenshotDir, { recursive: true });
+await page.evaluate(() => { document.activeElement?.blur(); window.scrollTo(0, 0); });
 await page.setViewportSize({ width: 390, height: 844 });
 await page.screenshot({ path: path.join(screenshotDir, "calicut-mobile-full.png"), fullPage: true, animations: "disabled" });
 await page.setViewportSize({ width: 1440, height: 1000 });

@@ -8,8 +8,10 @@ import "./chatbot.css";
 type Message = { role: "assistant" | "user"; content: string };
 type Availability = "checking" | "available" | "unavailable";
 
-const greeting = "Hi! I'm Fazil Digital's AI assistant. I can help with SEO, organic growth and services for Saudi businesses. What would you like to know?";
-const suggestions = ["Help with my website SEO", "SEO services in Riyadh", "How SEO pricing works", "Talk to Mohammad"];
+const saudigreeting = "Hi! I'm Fazil Digital's AI assistant. I can help with SEO, organic growth and services for Saudi businesses. What would you like to know?";
+const calicutGreeting = "Hi! I can help you explore SEO and organic growth for a business serving Calicut or Kozhikode. Choose a quick question or prepare a message for Mohammad.";
+const saudiSuggestions = ["Help with my website SEO", "SEO services in Riyadh", "How SEO pricing works", "Talk to Mohammad"];
+const calicutSuggestions = ["Can I discuss SEO for a Calicut business?", "What SEO work can we discuss?", "Does Google Business Profile fit my business?", "Talk to Mohammad"];
 const handoffLink = "https://wa.me/971542763828";
 
 function track(name: "chat_open" | "chat_message_sent" | "chat_handoff_intent" | "chat_error") {
@@ -23,6 +25,7 @@ declare global {
 export function ChatAssistant() {
   const pathname = usePathname() || "/";
   const normalizedPathname = pathname.length > 1 ? pathname.replace(/\/$/, "") : pathname;
+  const isCalicut = normalizedPathname === "/digital-marketing-expert-calicut";
   const [open, setOpen] = useState(false);
   const [availability, setAvailability] = useState<Availability>("checking");
   const [messages, setMessages] = useState<Message[]>([]);
@@ -35,7 +38,7 @@ export function ChatAssistant() {
   const [goal, setGoal] = useState("");
   const [copied, setCopied] = useState(false);
   const [heroInView, setHeroInView] = useState(true);
-  const pageHasHero = normalizedPathname === "/" || normalizedPathname === "/about" || normalizedPathname === "/digital-marketing-expert-calicut";
+  const pageHasHero = normalizedPathname === "/" || normalizedPathname === "/about" || isCalicut;
   const launcherRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -53,7 +56,7 @@ export function ChatAssistant() {
   useEffect(() => {
     if (open) return;
     if (!pageHasHero) return;
-    const hero = document.querySelector("[aria-labelledby='hero-title'], .fr-hero, .fd-about-hero, .fd-calicut-hero");
+    const hero = document.querySelector("[aria-labelledby='hero-title'], .fr-hero, .fd-about-hero, .fd-calicut-hero, .cr-hero");
     if (!hero) return;
     const observer = new IntersectionObserver(([entry]) => setHeroInView(entry.isIntersecting), { threshold: 0.08 });
     observer.observe(hero);
@@ -105,7 +108,7 @@ export function ChatAssistant() {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: next.slice(-10) }),
+        body: JSON.stringify({ messages: next.slice(-10), market: isCalicut ? "calicut" : "saudi" }),
       });
       if (!response.ok || !response.body) {
         const payload = await response.json().catch(() => ({})) as { error?: string };
@@ -141,7 +144,10 @@ export function ChatAssistant() {
   }
 
   async function copyHandoff() {
-    const parts = ["Hi Mohammad, I'd like to discuss SEO support.", website.trim() && `Website: ${website.trim()}`, city.trim() && `Target city: ${city.trim()}`, goal.trim() && `Goal or challenge: ${goal.trim()}`].filter(Boolean);
+    const opening = isCalicut
+      ? "Hello Mohammad, I'd like to discuss SEO and digital marketing for my business in Calicut/Kozhikode."
+      : "Hi Mohammad, I'd like to discuss SEO support.";
+    const parts = [opening, website.trim() && `Website: ${website.trim()}`, city.trim() && `Target city: ${city.trim()}`, goal.trim() && `Goal or challenge: ${goal.trim()}`].filter(Boolean);
     try {
       await navigator.clipboard.writeText(parts.join("\n"));
       setCopied(true);
@@ -151,17 +157,31 @@ export function ChatAssistant() {
     }
   }
 
+  function answerCalicutQuestion(question: string) {
+    const answers: Record<string, string> = {
+      [calicutSuggestions[0]]: "Yes. Remote SEO and organic-growth consultancy is available to discuss for businesses serving Calicut, Kozhikode and Kerala. This does not represent a local office.",
+      [calicutSuggestions[1]]: "The current focus is SEO and organic growth: technical reviews, on-page and content strategy, local-search foundations and a practical roadmap. Paid ads and social media management are not listed as active services here.",
+      [calicutSuggestions[2]]: "We can discuss accurate local-search foundations. Google Business Profile eligibility depends on in-person customer contact and how a business operates. Never add a fictitious address; no Maps placement is guaranteed.",
+    };
+    const answer = answers[question];
+    if (answer) setMessages((current) => [...current, { role: "user", content: question }, { role: "assistant", content: answer }]);
+    else setHandoff(true);
+  }
+
+  const suggestions = isCalicut ? calicutSuggestions : saudiSuggestions;
+  const greeting = isCalicut ? calicutGreeting : saudigreeting;
+
   return (
     <>
       {!open && !(pageHasHero && heroInView) && <button
         ref={launcherRef}
         type="button"
         className="fazil-chat-launcher"
-        aria-label="Open Fazil Digital AI Assistant"
+        aria-label={isCalicut ? "Open Calicut SEO assistant" : "Open Fazil Digital AI Assistant"}
         onClick={() => { setOpen(true); track("chat_open"); }}
       >
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M4 5.75A2.75 2.75 0 0 1 6.75 3h10.5A2.75 2.75 0 0 1 20 5.75v7.5A2.75 2.75 0 0 1 17.25 16H10l-5 4v-6.5a2.75 2.75 0 0 1-1-2.1v-5.65Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round"/><path d="M8 8h8M8 11.5h5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"/></svg>
-        <span>Ask about SEO</span>
+        <span>{isCalicut ? "Ask about Calicut SEO" : "Ask about SEO"}</span>
       </button>}
 
       {open && <div className="fazil-chat-scrim" onMouseDown={(event) => { if (event.target === event.currentTarget) close(); }}>
@@ -183,20 +203,20 @@ export function ChatAssistant() {
             <article className="fazil-chat-message assistant"><p>{greeting}</p></article>
             {availability === "checking" && <p className="fazil-chat-state">Checking assistant availability…</p>}
             {availability === "unavailable" && <div className="fazil-chat-unavailable" role="status">
-              <p>Live chat is currently unavailable. You can browse the SEO services or contact Mohammad directly.</p>
-              <div className="fazil-chat-shortcuts"><Link href="/services/seo/">SEO services</Link><Link href="/riyadh/seo/">Riyadh SEO</Link><Link href="/contact/">Contact</Link></div>
+              <p>{isCalicut ? "Live AI replies are offline. Quick answers and useful Calicut guides are available below." : "Live chat is currently unavailable. You can browse the SEO services or contact Mohammad directly."}</p>
+              <div className="fazil-chat-shortcuts">{isCalicut ? <><Link href="/blog/calicut-business-google-visibility-guide/">Calicut SEO guide</Link><Link href="/blog/google-business-profile-vs-website-seo-kozhikode/">Profile vs website SEO</Link><Link href="/digital-marketing-expert-calicut/#review">Contact Mohammad</Link></> : <><Link href="/services/seo/">SEO services</Link><Link href="/riyadh/seo/">Riyadh SEO</Link><Link href="/contact/">Contact</Link></>}</div>
             </div>}
             {messages.map((message, index) => <article key={`${index}-${message.role}`} className={`fazil-chat-message ${message.role}`}>
               <p>{message.content || (busy && index === messages.length - 1 ? <span className="fazil-chat-typing" aria-label="Assistant is replying"><i /><i /><i /></span> : "")}</p>
             </article>)}
-            {messages.length === 0 && availability === "available" && <div className="fazil-chat-suggestions" aria-label="Suggested questions">
-              {suggestions.map((suggestion) => <button key={suggestion} type="button" disabled={busy} onClick={() => suggestion === "Talk to Mohammad" ? setHandoff(true) : send(suggestion)}>{suggestion}</button>)}
+            {messages.length === 0 && (availability === "available" || isCalicut) && <div className="fazil-chat-suggestions" aria-label="Suggested questions">
+              {suggestions.map((suggestion) => <button key={suggestion} type="button" disabled={busy} onClick={() => isCalicut && availability !== "available" ? answerCalicutQuestion(suggestion) : suggestion === "Talk to Mohammad" ? setHandoff(true) : send(suggestion)}>{suggestion}</button>)}
             </div>}
             {error && <p className="fazil-chat-error" role="alert">{error}</p>}
             {handoff && <div className="fazil-chat-handoff">
               <div><h3>Prepare a WhatsApp message</h3><p>Share only the context you want Mohammad to see. Nothing is sent automatically.</p></div>
               <label>Website (optional)<input value={website} onChange={(event) => setWebsite(event.target.value.slice(0, 200))} maxLength={200} placeholder="example.com" /></label>
-              <label>Saudi target city (optional)<input value={city} onChange={(event) => setCity(event.target.value.slice(0, 80))} maxLength={80} placeholder="Riyadh, Jeddah or Dammam" /></label>
+              <label>{isCalicut ? "Target city or area (optional)" : "Saudi target city (optional)"}<input value={city} onChange={(event) => setCity(event.target.value.slice(0, 80))} maxLength={80} placeholder={isCalicut ? "Calicut, Kozhikode or Kerala" : "Riyadh, Jeddah or Dammam"} /></label>
               <label>Main goal or challenge (optional)<textarea value={goal} onChange={(event) => setGoal(event.target.value.slice(0, 360))} maxLength={360} rows={2} placeholder="What would you like to improve?" /></label>
               <div className="fazil-chat-handoff-actions"><button type="button" onClick={copyHandoff}>{copied ? "Message copied" : "Copy message"}</button><a href={handoffLink} target="_blank" rel="noreferrer" onClick={() => track("chat_handoff_intent")}>Open WhatsApp</a></div>
             </div>}
