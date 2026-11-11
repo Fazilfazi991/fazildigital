@@ -13,15 +13,15 @@ This register records what the About page publishes and the limits of the resear
 | AvivDigital education listing | AvivDigital and 2017–2018 are described as items listed on the public LinkedIn profile; no diploma or credential title is claimed | [Public LinkedIn profile](https://ae.linkedin.com/in/fazilfazi) |
 | Portrait | Owner-supplied portrait; converted to WebP without generative alteration | See public/images/about/ASSET-PROVENANCE.md |
 
-## Owner-provided, not independently confirmed; not published as employer-specific facts
+## Owner-confirmed for this publication, not independently verified
 
-The supplied brief mentions a Chief Marketing Officer role at ZORX L.L.C. and earlier Digital Marketing Executive roles at Golden Point Advertising, Codeyaya Technologies, and Purpose Code Software Solutions. It also gives date ranges for several roles. These employer/title combinations and dates were not confirmed in the public LinkedIn profile or on first-party company pages available during this review, and no resume/CV document was present in the project. The page therefore describes the broad marketing foundation without naming those employers, asserting those titles, or displaying dates.
+The latest direct owner instruction confirms that Mohammad led marketing at ZORX and explicitly authorizes publishing that claim without dates. The About page uses “I led marketing at ZORX” / “Marketing leadership · ZORX”; this remains owner-confirmed, not independently verified. No CMO title, employment dates, performance outcomes or project results are attached to the statement. Earlier roles at Golden Point Advertising, Codeyaya Technologies and Purpose Code Software Solutions, including their titles and date ranges, remain unverified and are not published.
 
 ## Unverified or withheld
 
 | Detail | Treatment | Reason |
 | --- | --- | --- |
-| Chief Marketing Officer at ZORX L.L.C. | Omitted from page | Supplied in the brief but not independently verified |
+| Marketing leadership at ZORX | Published as an undated owner-confirmed statement; no CMO title or outcomes | Latest direct owner instruction authorizes the claim; not independently verified |
 | Earlier employer names, titles and employment dates | Omitted from page | Supplied in the brief but not independently verified; no resume/CV was available |
 | Bachelor of Arts, University of Calicut, 2015–2018 | Omitted | No public or project record was found to verify the degree |
 | AvivDigital credential/diploma name | Omitted | The public profile lists AvivDigital and dates, but not a credential title |
