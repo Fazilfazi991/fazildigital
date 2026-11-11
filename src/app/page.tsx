@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ReviewForm } from "@/components/home/HomeInteractions";
-import { DestinationSelector, ProblemExplorer, ProcessStepper } from "@/components/home/HomeExplorers";
+import { ProblemExplorer, ProcessStepper } from "@/components/home/HomeExplorers";
+import { HomepageHero } from "@/components/home/HomepageHero";
 import { GrowthRoadmapArt, SearchIntentArt, TechnicalReviewArt } from "@/components/home/WorkShowcaseMotion";
 import { SiteFooter, SiteHeader } from "@/components/site/BrandChrome";
 import { saudiArticles } from "@/data/saudi-articles";
@@ -36,13 +37,7 @@ export default function HomePage() {
   return <div className="fd-home fd-reset-home" id="top">
     <a className="fr-skip" href="#main-content">Skip to content</a><SiteHeader />
     <main id="main-content" className="fr-main">
-      <section className="fr-hero fr-hero-editorial" aria-labelledby="hero-title">
-        <div className="fr-hero-copy"><p className="fr-eyebrow">Mohammad Fazil <span aria-hidden="true">·</span> SEO Consultant</p><h1 id="hero-title">I help businesses get found on <span className="fr-google-accent">Google.</span></h1>
-          <p className="fr-hero-lead">SEO and organic growth for Saudi businesses. Let’s connect your website with the people already searching for your services.</p>
-          <div className="fr-hero-actions"><a className="fr-button" href="#review">Request an SEO Review <Arrow diagonal /></a><a className="fr-link" href="#work">Explore My Work <Arrow /></a></div>
-        </div>
-        <DestinationSelector />
-      </section>
+      <HomepageHero />
 
       <section className="fr-signature" aria-label="How I approach SEO"><span>Marketing mindset</span><b>✳</b><span>Technology perspective</span><b>✳</b><span>Business focus</span></section>
 
@@ -59,7 +54,7 @@ export default function HomePage() {
       </section>
 
       <section id="services" className="fr-section fr-services" aria-labelledby="services-title"><div className="fr-section-heading fr-two-column-heading"><div><p className="fr-eyebrow">Ways we can work together</p><h2 id="services-title">Focused support, built around your priorities.</h2></div><p>Start with the constraint that matters most to your business—not a preset package.</p></div>
-        <div className="fr-service-bento"><Link href="/services/technical-seo/" className="fr-service-card fr-service-primary"><span>01 / FOUNDATION</span><h3>Technical SEO</h3><p>Improve the crawl, indexing, structure and page experience that help search engines understand your site.</p><b>Explore technical SEO <Arrow diagonal /></b><i aria-hidden="true">⌁</i></Link><Link href="/services/local-seo/" className="fr-service-card fr-service-local"><span>02 / RELEVANCE</span><h3>Local search</h3><p>Make your services and eligible locations easier to find and understand.</p><b>Explore local SEO <Arrow diagonal /></b></Link><Link href="/services/content-marketing/" className="fr-service-card fr-service-content"><span>03 / USEFULNESS</span><h3>Content strategy</h3><p>Build pages around customer questions, search intent and clear business purpose.</p><b>Explore content strategy <Arrow diagonal /></b></Link><Link href="/services/" className="fr-service-card fr-service-growth"><span>04 / DIRECTION</span><h3>Organic growth</h3><p>Bring technical, local and content priorities into one practical plan.</p><b>View all services <Arrow diagonal /></b></Link></div>
+          <div className="fr-service-bento"><Link href="/services/technical-seo/" className="fr-service-card fr-service-primary"><span>01 / FOUNDATION</span><h3>Technical SEO</h3><p>Improve the crawl, indexing, structure and page experience that help search engines understand your site.</p><div className="fr-review-lens" aria-label="Illustrative areas in a technical SEO review"><p>What a focused review considers</p><ul><li><strong>Crawlability</strong><span>Can search engines reach important pages?</span></li><li><strong>Indexing</strong><span>Are priority pages eligible to appear?</span></li><li><strong>Internal links</strong><span>Can people and crawlers find key pages?</span></li><li><strong>Next actions</strong><span>Which fixes should the team prioritize?</span></li></ul></div><b>Explore technical SEO <Arrow diagonal /></b></Link><Link href="/services/local-seo/" className="fr-service-card fr-service-local"><span>02 / RELEVANCE</span><h3>Local search</h3><p>Make your services and eligible locations easier to find and understand.</p><b>Explore local SEO <Arrow diagonal /></b></Link><Link href="/services/content-marketing/" className="fr-service-card fr-service-content"><span>03 / USEFULNESS</span><h3>Content strategy</h3><p>Build pages around customer questions, search intent and clear business purpose.</p><b>Explore content strategy <Arrow diagonal /></b></Link><Link href="/services/" className="fr-service-card fr-service-growth"><span>04 / DIRECTION</span><h3>Organic growth</h3><p>Bring technical, local and content priorities into one practical plan.</p><b>View all services <Arrow diagonal /></b></Link></div>
       </section>
 
       <section className="fr-process" id="approach" aria-labelledby="process-title"><div className="fr-process-intro"><p className="fr-eyebrow">The engagement</p><h2 id="process-title">A clear path from question to action.</h2><p>We agree priorities, responsibilities and how progress will be reviewed before work begins.</p></div><ProcessStepper /></section>
@@ -68,7 +63,7 @@ export default function HomePage() {
 
       {articles.length > 0 && <section id="insights" className="fr-section fr-insights" aria-labelledby="insights-title"><div className="fr-section-heading fr-two-column-heading"><div><p className="fr-eyebrow">Notes on search</p><h2 id="insights-title">Useful reading for your next decision.</h2></div><Link className="fr-link" href="/blog/">All insights <Arrow diagonal /></Link></div><div className="fr-article-list">{articles.map((article, index) => <Link href={`/blog/${article.slug}/`} key={article.slug} className={index === 0 ? "fr-article-feature" : "fr-article-row"}><span>{index === 0 ? "FEATURED GUIDE" : `0${index + 1} / SEO NOTES`}</span><strong>{article.title}</strong><small>{article.excerpt}</small><Arrow diagonal /></Link>)}</div></section>}
 
-      <section id="review" className="fr-contact" aria-labelledby="contact-title"><div className="fr-contact-intro"><p className="fr-eyebrow">A good place to begin</p><h2 id="contact-title">Let’s talk about the search problem you need to solve.</h2><p>Share your website and one priority. I’ll use that context to prepare a focused first conversation.</p><div className="fr-faq" aria-label="Frequently asked questions">{faqs.map(faq => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></div><div className="fr-review"><h3>Request an SEO review</h3><p>Prepare a message with your website and goals. Nothing is sent until you choose to open WhatsApp.</p><ReviewForm/><a href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer">Prefer WhatsApp? Message Mohammad <Arrow diagonal /></a><small>The link opens WhatsApp without adding anything entered here.</small></div></section>
+      <section id="review" className="fr-contact" aria-labelledby="contact-title"><div className="fr-contact-intro"><p className="fr-eyebrow">A good place to begin</p><h2 id="contact-title">Let’s talk about the search problem you need to solve.</h2><p>Share your website and one priority. I’ll use that context to prepare a focused first conversation. Review your draft before choosing to copy it or continue in WhatsApp.</p><div className="fr-faq" aria-label="Frequently asked questions">{faqs.map(faq => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></div><div className="fr-review"><h3>Request an SEO review</h3><p>Prepare a message with your website and goals. Nothing is sent until you choose to open WhatsApp.</p><ReviewForm/><a className="fr-whatsapp-action" href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer">Prefer a direct message? Open WhatsApp <Arrow diagonal /></a><small>The link opens WhatsApp without adding anything entered here.</small></div></section>
     </main><SiteFooter/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
   </div>;
 }

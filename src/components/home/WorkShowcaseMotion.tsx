@@ -1,14 +1,14 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type KeyboardEvent } from "react";
 import "./work-showcase-motion.css";
 
 type ArtKind = "audit" | "intent" | "roadmap";
 
 const artTitles: Record<ArtKind, string> = {
-  audit: "Technical SEO review",
-  intent: "Search intent map",
-  roadmap: "Organic growth roadmap",
+  audit: "Illustrative technical audit sequence",
+  intent: "Illustrative search intent map",
+  roadmap: "Illustrative organic growth roadmap",
 };
 
 function MotionArt({ kind }: { kind: ArtKind }) {
@@ -19,9 +19,7 @@ function MotionArt({ kind }: { kind: ArtKind }) {
 
   useEffect(() => {
     const element = region.current;
-    if (!element) return;
-
-    if (!("IntersectionObserver" in window)) return;
+    if (!element || !("IntersectionObserver" in window)) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -34,12 +32,11 @@ function MotionArt({ kind }: { kind: ArtKind }) {
     return () => observer.disconnect();
   }, []);
 
-  const className = `fr-work-art fr-${kind} fr-motion-art`;
   const animationState = !hasStarted ? "idle" : isVisible ? "playing" : "paused";
 
   return (
     <div className="fr-work-motion" ref={region} data-motion={animationState}>
-      <div className={className} aria-hidden="true" key={run}>
+      <div className={`fr-work-art fr-${kind} fr-motion-art`} key={run}>
         {kind === "audit" && <AuditArt />}
         {kind === "intent" && <IntentArt />}
         {kind === "roadmap" && <RoadmapArt />}
@@ -47,7 +44,7 @@ function MotionArt({ kind }: { kind: ArtKind }) {
       <button
         className="fr-motion-toggle"
         type="button"
-        aria-label={`Replay ${artTitles[kind]} animation`}
+        aria-label={`Replay ${artTitles[kind]}`}
         title={`Replay ${artTitles[kind]}`}
         onClick={() => {
           setHasStarted(isVisible);
@@ -66,18 +63,31 @@ function MotionArt({ kind }: { kind: ArtKind }) {
 function AuditArt() {
   return (
     <>
-      <span>TECHNICAL REVIEW</span>
-      <strong>Find the<br />friction.</strong>
-      <svg className="fr-audit-graphic" viewBox="0 0 420 220" focusable="false">
-        <path className="fr-audit-scan" d="M22 16v188" />
-        <g className="fr-audit-bars">
-          <rect className="fr-audit-bar fr-audit-bar-1" x="55" y="30" width="320" height="17" />
-          <rect className="fr-audit-bar fr-audit-bar-2" x="96" y="72" width="230" height="17" />
-          <rect className="fr-audit-bar fr-audit-bar-3" x="55" y="114" width="280" height="17" />
-          <rect className="fr-audit-bar fr-audit-bar-4" x="126" y="156" width="190" height="17" />
-        </g>
-      </svg>
-      <small>crawl · index · structure</small>
+      <span className="fr-art-overline">Illustrative review workflow</span>
+      <h4 className="fr-audit-title">Find the next useful fix.</h4>
+      <div className="fr-audit-board" aria-label="Example technical audit checklist">
+        <div className="fr-audit-head"><span>Review area</span><span>Next action</span></div>
+        <div className="fr-audit-row">
+          <span className="fr-audit-mark" aria-hidden="true">01</span>
+          <span className="fr-audit-copy"><b>Crawlability</b><small>Can important pages be reached?</small></span>
+          <span className="fr-audit-state">Check</span>
+        </div>
+        <div className="fr-audit-row">
+          <span className="fr-audit-mark" aria-hidden="true">02</span>
+          <span className="fr-audit-copy"><b>Indexing</b><small>Are priority pages eligible?</small></span>
+          <span className="fr-audit-state">Review</span>
+        </div>
+        <div className="fr-audit-row">
+          <span className="fr-audit-mark" aria-hidden="true">03</span>
+          <span className="fr-audit-copy"><b>Internal links</b><small>Do useful paths connect?</small></span>
+          <span className="fr-audit-state">Map</span>
+        </div>
+        <div className="fr-audit-priority">
+          <span className="fr-priority-dot" aria-hidden="true" />
+          <span><b>Prioritized action</b><small>Fix the blocker before refining the detail.</small></span>
+        </div>
+      </div>
+      <p className="fr-art-disclaimer">Example format · no live site data</p>
     </>
   );
 }
@@ -85,33 +95,76 @@ function AuditArt() {
 function IntentArt() {
   return (
     <>
-      <span>SEARCH INTENT MAP</span>
-      <div className="fr-map-diagram">
-        <div className="fr-map-node">Customer question</div>
-        <svg className="fr-map-svg" viewBox="0 0 360 84" focusable="false">
-          <path className="fr-map-trunk" pathLength="1" d="M180 0v30M60 30h240" />
-          <path className="fr-map-branch fr-map-branch-1" pathLength="1" d="M60 30v54" />
-          <path className="fr-map-branch fr-map-branch-2" pathLength="1" d="M180 30v54" />
-          <path className="fr-map-branch fr-map-branch-3" pathLength="1" d="M300 30v54" />
-          <circle className="fr-map-dot fr-map-dot-1" cx="60" cy="30" r="3" />
-          <circle className="fr-map-dot fr-map-dot-2" cx="180" cy="30" r="3" />
-          <circle className="fr-map-dot fr-map-dot-3" cx="300" cy="30" r="3" />
+      <span className="fr-art-overline">Illustrative planning map</span>
+      <div className="fr-intent-flow" aria-label="Example path from search intent to enquiry">
+        <div className="fr-intent-node fr-intent-query"><span>Search intent</span><b>SEO services Riyadh</b></div>
+        <svg className="fr-intent-connector" viewBox="0 0 600 44" aria-hidden="true" focusable="false">
+          <defs><marker id="fr-intent-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="none" stroke="currentColor" strokeWidth="1.4" /></marker></defs>
+          <path className="fr-intent-path" pathLength="1" d="M20 22H580" markerEnd="url(#fr-intent-arrow)" />
         </svg>
-        <div className="fr-map-ends"><b>Useful page</b><b>Right next step</b><b>Clear answer</b></div>
+        <div className="fr-intent-steps">
+          <div className="fr-intent-node"><span>Useful destination</span><b>Relevant service page</b></div>
+          <div className="fr-intent-node"><span>Answer the question</span><b>Useful information</b></div>
+          <div className="fr-intent-node"><span>Clear next step</span><b>Customer enquiry</b></div>
+        </div>
       </div>
+      <p className="fr-art-disclaimer">Example journey · not a live result</p>
     </>
   );
 }
 
+const roadmapSteps = [
+  { name: "Audit", detail: "Understand the site, search demand and practical constraints." },
+  { name: "Prioritize", detail: "Choose the changes with the clearest value and a realistic path to delivery." },
+  { name: "Implement", detail: "Make and verify improvements with the people who own the work." },
+  { name: "Measure", detail: "Review what changed, learn from it and adjust the next steps." },
+];
+
 function RoadmapArt() {
+  const [activeStep, setActiveStep] = useState(0);
+  const tabsRef = useRef<Array<HTMLButtonElement | null>>([]);
+
+  function focusStep(event: KeyboardEvent<HTMLDivElement>) {
+    const currentIndex = roadmapSteps.findIndex((_, index) => tabsRef.current[index] === document.activeElement);
+    let nextIndex = currentIndex;
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (currentIndex + 1) % roadmapSteps.length;
+    else if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (currentIndex - 1 + roadmapSteps.length) % roadmapSteps.length;
+    else if (event.key === "Home") nextIndex = 0;
+    else if (event.key === "End") nextIndex = roadmapSteps.length - 1;
+    else return;
+    event.preventDefault();
+    setActiveStep(nextIndex);
+    tabsRef.current[nextIndex]?.focus();
+  }
+
   return (
     <>
-      <span>ORGANIC GROWTH ROADMAP</span>
-      <span className="fr-roadmap-marker" />
-      <div className="fr-roadmap-row"><b>01</b> Understand</div>
-      <div className="fr-roadmap-row"><b>02</b> Prioritise</div>
-      <div className="fr-roadmap-row"><b>03</b> Improve</div>
-      <small>Sequence based on evidence and capacity</small>
+      <span className="fr-art-overline">A practical sequence</span>
+      <div className="fr-roadmap-tabs" role="tablist" aria-label="Organic growth roadmap steps" onKeyDown={focusStep}>
+        {roadmapSteps.map((step, index) => (
+          <button
+            key={step.name}
+            ref={(element) => { tabsRef.current[index] = element; }}
+            className="fr-roadmap-tab"
+            id={`fr-roadmap-tab-${index}`}
+            type="button"
+            role="tab"
+            aria-selected={activeStep === index}
+            aria-controls="fr-roadmap-panel"
+            tabIndex={activeStep === index ? 0 : -1}
+            onClick={() => setActiveStep(index)}
+          >
+            <span className="fr-roadmap-tab-number">0{index + 1}</span>
+            <span>{step.name}</span>
+          </button>
+        ))}
+      </div>
+      <div className="fr-roadmap-track" aria-hidden="true"><span style={{ width: "100%", transform: `scaleX(${activeStep / (roadmapSteps.length - 1)})` }} /></div>
+      <div className="fr-roadmap-panel" id="fr-roadmap-panel" role="tabpanel" aria-labelledby={`fr-roadmap-tab-${activeStep}`}>
+        <h4>{roadmapSteps[activeStep].name}</h4>
+        <p>{roadmapSteps[activeStep].detail}</p>
+      </div>
+      <p className="fr-art-disclaimer">Select a step to see what it involves</p>
     </>
   );
 }

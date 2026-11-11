@@ -27,9 +27,28 @@ export function MobileMenu() {
 
 export function ReviewForm({ context = "saudi-seo" }: { context?: "saudi-seo" | "project" }) {
   const formId = useId();
+  const formRef = useRef<HTMLFormElement>(null);
   const [draft, setDraft] = useState<string | null>(null);
   const [copyState, setCopyState] = useState<"idle" | "copied" | "manual">("idle");
+  const [websiteValue, setWebsiteValue] = useState("");
   const ready = useSyncExternalStore(subscribeToHydration, () => true, () => false);
+  useEffect(() => {
+    function prefillReview(event: Event) {
+      const detail = (event as CustomEvent<{ website?: string }>).detail;
+      const website = detail?.website?.trim() ?? "";
+      const form = formRef.current;
+      if (!form) return;
+
+      setWebsiteValue(website);
+      setDraft(null);
+      setCopyState("idle");
+      const nextField = form.elements.namedItem(website ? "name" : "website") as HTMLInputElement | null;
+      nextField?.focus({ preventScroll: true });
+    }
+
+    window.addEventListener("fazil:prefill-review", prefillReview);
+    return () => window.removeEventListener("fazil:prefill-review", prefillReview);
+  }, []);
   function prepareMessage(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
@@ -52,9 +71,9 @@ export function ReviewForm({ context = "saudi-seo" }: { context?: "saudi-seo" | 
     catch { setCopyState("manual"); }
   }
   const fieldId = (name: string) => `review-${formId}-${name}`;
-  return <form className="fd-review-form" onSubmit={prepareMessage} onChange={() => { setDraft(null); setCopyState("idle"); }} aria-describedby={fieldId("form-help")}>
+  return <form ref={formRef} className="fd-review-form" onSubmit={prepareMessage} onChange={() => { setDraft(null); setCopyState("idle"); }} aria-describedby={fieldId("form-help")}>
     <fieldset disabled={!ready}>
-    <div className="fd-form-pair"><div><label htmlFor={fieldId("name")}>Your name</label><input id={fieldId("name")} name="name" autoComplete="name" required maxLength={100} placeholder="How should I address you?" /></div><div><label htmlFor={fieldId("website")}>{context === "project" ? <>Website <span>(optional)</span></> : "Business website"}</label><input id={fieldId("website")} name="website" type="url" autoComplete="url" required={context === "saudi-seo"} maxLength={300} placeholder={context === "project" ? "https://yourcompany.com (if available)" : "https://yourcompany.com"} /></div></div>
+    <div className="fd-form-pair"><div><label htmlFor={fieldId("name")}>Your name</label><input id={fieldId("name")} name="name" autoComplete="name" required maxLength={100} placeholder="How should I address you?" /></div><div><label htmlFor={fieldId("website")}>{context === "project" ? <>Website <span>(optional)</span></> : "Business website"}</label><input id={fieldId("website")} name="website" type="url" autoComplete="url" required={context === "saudi-seo"} maxLength={300} placeholder={context === "project" ? "https://yourcompany.com (if available)" : "https://yourcompany.com"} value={websiteValue} onChange={event => setWebsiteValue(event.currentTarget.value)} /></div></div>
     <div><label htmlFor={fieldId("goal")}>{context === "project" ? "What are you working on? " : "What would you like to improve? "}<span>(optional)</span></label><textarea id={fieldId("goal")} name="goal" rows={2} maxLength={800} placeholder={context === "project" ? "The problem, idea or desired outcome" : "Your market, visibility challenges or priorities"} /></div>
     <div className="fd-honeypot" aria-hidden="true"><label htmlFor={fieldId("company-fax")}>Leave this field blank</label><input id={fieldId("company-fax")} name="company-fax" tabIndex={-1} autoComplete="off" /></div>
     <button type="submit" className="fd-button fd-button-light">{context === "project" ? "Prepare Project Enquiry" : "Prepare SEO Review Request"} <span aria-hidden="true">↗</span></button>
