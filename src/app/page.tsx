@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReviewForm } from "@/components/home/HomeInteractions";
 import { DestinationSelector, ProblemExplorer, ProcessStepper } from "@/components/home/HomeExplorers";
+import { GrowthRoadmapArt, SearchIntentArt, TechnicalReviewArt } from "@/components/home/WorkShowcaseMotion";
 import { SiteFooter, SiteHeader } from "@/components/site/BrandChrome";
 import { saudiArticles } from "@/data/saudi-articles";
 import "./home-reset.css";
@@ -51,9 +52,9 @@ export default function HomePage() {
 
       <section id="work" className="fr-work" aria-labelledby="work-title"><div className="fr-work-heading"><div><p className="fr-eyebrow">A look at the work</p><h2 id="work-title">Make the next move easier to see.</h2></div><p>Examples of the practical thinking behind SEO work. These are illustrative formats, not client results.</p></div>
         <div className="fr-work-grid">
-          <article className="fr-work-item fr-work-large"><div className="fr-work-art fr-audit" aria-hidden="true"><span>TECHNICAL REVIEW</span><strong>Find the<br/>friction.</strong><div className="fr-audit-lines"><i/><i/><i/><i/></div><small>crawl · index · structure</small></div><p className="fr-art-label">Illustrative review format</p><h3>Technical SEO review</h3><p>Turn site signals into a clear, ordered set of checks.</p><Link href="/services/technical-seo/">Technical SEO <Arrow diagonal /></Link></article>
-          <article className="fr-work-item"><div className="fr-work-art fr-intent" aria-hidden="true"><span>SEARCH INTENT MAP</span><div className="fr-map-node">Customer question</div><div className="fr-map-connectors"><i/><i/><i/></div><div className="fr-map-ends"><b>Useful page</b><b>Right next step</b><b>Clear answer</b></div></div><p className="fr-art-label">Illustrative planning format</p><h3>Search intent map</h3><p>Connect real questions to pages with a clear purpose.</p><Link href="/services/content-marketing/">Content strategy <Arrow diagonal /></Link></article>
-          <article className="fr-work-item"><div className="fr-work-art fr-roadmap" aria-hidden="true"><span>ORGANIC GROWTH ROADMAP</span><div><b>01</b> Understand</div><div><b>02</b> Prioritise</div><div><b>03</b> Improve</div><small>Sequence based on evidence and capacity</small></div><p className="fr-art-label">Illustrative planning format</p><h3>Organic growth roadmap</h3><p>A sequence the team can act on and revisit.</p><Link href="/services/">Explore services <Arrow diagonal /></Link></article>
+          <article className="fr-work-item fr-work-large"><TechnicalReviewArt /><p className="fr-art-label">Illustrative review format</p><h3>Technical SEO review</h3><p>Turn site signals into a clear, ordered set of checks.</p><Link href="/services/technical-seo/">Technical SEO <Arrow diagonal /></Link></article>
+          <article className="fr-work-item"><SearchIntentArt /><p className="fr-art-label">Illustrative planning format</p><h3>Search intent map</h3><p>Connect real questions to pages with a clear purpose.</p><Link href="/services/content-marketing/">Content strategy <Arrow diagonal /></Link></article>
+          <article className="fr-work-item"><GrowthRoadmapArt /><p className="fr-art-label">Illustrative planning format</p><h3>Organic growth roadmap</h3><p>A sequence the team can act on and revisit.</p><Link href="/services/">Explore services <Arrow diagonal /></Link></article>
         </div>
       </section>
 
