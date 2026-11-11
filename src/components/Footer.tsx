@@ -95,7 +95,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer" className="text-sm text-text-muted hover:text-accent transition-colors">
+                <a href="https://wa.me/918086191325" target="_blank" rel="noopener noreferrer" className="text-sm text-text-muted hover:text-accent transition-colors">
                   WhatsApp Support
                 </a>
               </li>

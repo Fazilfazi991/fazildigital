@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import "./chatbot.css";
 
 type Message = { role: "assistant" | "user"; content: string };
@@ -12,7 +14,7 @@ const saudigreeting = "Hi! I'm Fazil Digital's AI assistant. I can help with SEO
 const calicutGreeting = "Hi! I can help you explore SEO and organic growth for a business serving Calicut or Kozhikode. Choose a quick question or prepare a message for Mohammad.";
 const saudiSuggestions = ["Help with my website SEO", "SEO services in Riyadh", "How SEO pricing works", "Talk to Mohammad"];
 const calicutSuggestions = ["Can I discuss SEO for a Calicut business?", "What SEO work can we discuss?", "Does Google Business Profile fit my business?", "Talk to Mohammad"];
-const handoffLink = "https://wa.me/971542763828";
+const handoffLink = "https://wa.me/918086191325";
 
 function track(name: "chat_open" | "chat_message_sent" | "chat_handoff_intent" | "chat_error") {
   window.gtag?.("event", name);
@@ -37,9 +39,8 @@ export function ChatAssistant() {
   const [city, setCity] = useState("");
   const [goal, setGoal] = useState("");
   const [copied, setCopied] = useState(false);
-  const [heroInView, setHeroInView] = useState(true);
-  const pageHasHero = normalizedPathname === "/" || normalizedPathname === "/about" || isCalicut;
-  const launcherRef = useRef<HTMLButtonElement>(null);
+  const [dockVisible, setDockVisible] = useState(false);
+  const returnFocusRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
@@ -54,14 +55,21 @@ export function ChatAssistant() {
   }, []);
 
   useEffect(() => {
-    if (open) return;
-    if (!pageHasHero) return;
-    const hero = document.querySelector("[aria-labelledby='hero-title'], .fr-hero, .fd-about-hero, .fd-calicut-hero, .cr-hero");
-    if (!hero) return;
-    const observer = new IntersectionObserver(([entry]) => setHeroInView(entry.isIntersecting), { threshold: 0.08 });
-    observer.observe(hero);
-    return () => observer.disconnect();
-  }, [open, pageHasHero, pathname]);
+    const updateMotionState = () => document.documentElement.classList.toggle("fazil-document-hidden", document.hidden);
+    updateMotionState();
+    document.addEventListener("visibilitychange", updateMotionState);
+    return () => {
+      document.removeEventListener("visibilitychange", updateMotionState);
+      document.documentElement.classList.remove("fazil-document-hidden");
+    };
+  }, []);
+
+  useEffect(() => {
+    const updateDockVisibility = () => setDockVisible(window.scrollY > 120);
+    updateDockVisibility();
+    window.addEventListener("scroll", updateDockVisibility, { passive: true });
+    return () => window.removeEventListener("scroll", updateDockVisibility);
+  }, []);
 
   useEffect(() => {
     if (open) {
@@ -80,7 +88,13 @@ export function ChatAssistant() {
 
   function close() {
     setOpen(false);
-    requestAnimationFrame(() => launcherRef.current?.focus());
+    requestAnimationFrame(() => returnFocusRef.current?.focus());
+  }
+
+  function openAssistant(event: React.MouseEvent<HTMLButtonElement>) {
+    returnFocusRef.current = event.currentTarget;
+    setOpen(true);
+    track("chat_open");
   }
 
   function onDialogKeyDown(event: React.KeyboardEvent) {
@@ -173,16 +187,29 @@ export function ChatAssistant() {
 
   return (
     <>
-      {!open && !(pageHasHero && heroInView) && <button
-        ref={launcherRef}
-        type="button"
-        className="fazil-chat-launcher"
-        aria-label={isCalicut ? "Open Calicut SEO assistant" : "Open Fazil Digital AI Assistant"}
-        onClick={() => { setOpen(true); track("chat_open"); }}
-      >
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M4 5.75A2.75 2.75 0 0 1 6.75 3h10.5A2.75 2.75 0 0 1 20 5.75v7.5A2.75 2.75 0 0 1 17.25 16H10l-5 4v-6.5a2.75 2.75 0 0 1-1-2.1v-5.65Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round"/><path d="M8 8h8M8 11.5h5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"/></svg>
-        <span>{isCalicut ? "Ask about Calicut SEO" : "Ask about SEO"}</span>
-      </button>}
+      {!open && dockVisible && <div className="fazil-contact-dock" role="group" aria-label="SEO assistant and WhatsApp contact">
+        <p className="fazil-character-greeting">Hi! Need a hand with SEO?</p>
+        <div className="fazil-character-stage">
+          <button
+            type="button"
+            className="fazil-character-trigger"
+            aria-label={isCalicut ? "Open Calicut SEO assistant" : "Open Fazil Digital AI Assistant"}
+            onClick={openAssistant}
+          >
+            <Image
+              src="/images/chatbot/fazil-avatar-dance.webp"
+              alt=""
+              width={480}
+              height={720}
+              sizes="(max-width: 640px) 116px, 174px"
+              preload
+            />
+          </button>
+        </div>
+        <div className="fazil-contact-actions">
+          <FloatingWhatsApp />
+        </div>
+      </div>}
 
       {open && <div className="fazil-chat-scrim" onMouseDown={(event) => { if (event.target === event.currentTarget) close(); }}>
         <section className="fazil-chat-panel" role="dialog" aria-modal="true" aria-labelledby="fazil-chat-title" onKeyDown={onDialogKeyDown}>

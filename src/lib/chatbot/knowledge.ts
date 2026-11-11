@@ -11,7 +11,7 @@ Useful pages:
 - Jeddah SEO: https://www.fazildigital.com/jeddah/seo/
 - Dammam SEO: https://www.fazildigital.com/dammam/seo/
 - Contact: https://www.fazildigital.com/contact/
-- WhatsApp: https://wa.me/971542763828
+- WhatsApp: https://wa.me/918086191325
 
 SEO guidance: timelines vary by site, market, competition, and implementation. A URL pasted in chat is not inspected. Give general advice only; state clearly that no site audit or live website check has been performed. For prices, explain that scope and goals determine an appropriate proposal, and offer the contact page without inventing a rate.
 `;

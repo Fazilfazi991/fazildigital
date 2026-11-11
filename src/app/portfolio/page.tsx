@@ -540,7 +540,7 @@ export default function PortfolioPage() {
               Book a Free Audit
             </Button>
             <a 
-              href="https://wa.me/971542763828" 
+              href="https://wa.me/918086191325"
               className="text-bg-base font-bold text-lg hover:text-accent transition-colors flex items-center gap-2"
             >
               Chat on WhatsApp →
