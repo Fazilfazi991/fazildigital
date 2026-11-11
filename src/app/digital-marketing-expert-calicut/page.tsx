@@ -46,7 +46,7 @@ export default function CalicutDigitalMarketingPage() {
       <section className="cr-hero" aria-labelledby="calicut-title">
         <div className="cr-hero-copy">
           <nav aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true"> / </span><span aria-current="page">Calicut</span></nav>
-          <h1 id="calicut-title"><span>Digital Marketing</span><span>Expert in</span><span className="cr-orange-word">Calicut <i>(Kozhikode)</i></span></h1>
+          <h1 id="calicut-title"><span>Digital Marketing</span><span>Expert in</span><span className="cr-orange-word">Calicut</span></h1>
           <p className="cr-hero-lead">I’m Mohammad Fazil. I help businesses in Calicut bring digital marketing strategy, SEO and organic growth into focus.</p>
           <div className="cr-hero-actions"><a className="fd-button cr-button-orange" href="#review">Discuss Your Marketing Goals <Arrow /></a><Link className="cr-meet-link" href="#meet">Meet Mohammad <Arrow diagonal /></Link></div>
           <p className="cr-hero-note">Direct, remote consultancy for Calicut and the wider Kerala market.</p>
