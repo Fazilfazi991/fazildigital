@@ -2,41 +2,36 @@
 
 ## Direction
 
-**Search Wayfinding** presents Fazil Digital as a direct, practical SEO consultancy. The interface helps a visitor understand the path from a search problem to a useful page and a clear enquiry. It uses restrained editorial structure, navigational cues, clear evidence labels, and purposeful variation between sections. It avoids the earlier beige/forest-green and oversized serif treatment.
+The current owner-approved visual language uses a black × off-white × orange palette inspired by a supplied modern editorial portfolio reference. Use bold, intentional compositions, oversized clear headings, real portraits, strong black panels and orange accents. Keep the About, Calicut, shared navigation, chatbot and homepage recognizably related while respecting the layouts and SEO purpose of each page. Avoid generic SaaS cards, excessive copy, fake proof, exaggerated results, and artificial scroll experiences.
 
-Audience: Saudi business owners and marketing teams seeking direct SEO support, particularly in Riyadh, Jeddah, and Dammam. The Calicut page also describes remote consultancy for businesses in Calicut/Kozhikode and does not imply a local office.
+Audience: Saudi business owners and marketing teams seeking direct SEO support, particularly in Riyadh, Jeddah and Dammam. The Calicut page describes remote consultancy for businesses in Calicut/Kozhikode and does not imply a local office.
 
 ## Tokens
 
 | Role | Value | Rule |
 | --- | --- | --- |
-| Canvas | `#FAFAF8` | Default page surface |
-| Surface | `#FFFFFF` | Cards, menus, and form controls |
-| Ink | `#151B26` | Headings and primary copy |
-| Brand blue | `#2463EB` | Links, primary actions, and wayfinding |
-| Blue hover | `#1D4ED8` | Hover and pressed action state |
-| Lime | `#C6F36B` | Restrained marker and selected-state accent |
-| Cool neutral | `#E7EBF1` | Diagrams and secondary panels |
-| Muted copy | `#465366` | Supporting text on light surfaces |
-| Border | `#D5DBE4` | Decorative separators; do not use alone to distinguish controls |
-| Focus | `#142B55` | Visible keyboard focus against light surfaces |
+| Canvas | `#F8F7F3` | Primary light background |
+| Ink | `#080808` | Headlines and high-contrast surfaces |
+| Orange | `#FFB638` | Accent, graphic frame, selected state, CTA with black text |
+| Neutral | `#E7E5E1` | Supporting panels and diagrams |
+| Muted copy | `#414141` | Supporting text on light surfaces |
+| White | `#FFFFFF` | Cards and reversed text on black |
+| Focus | `#8A4A00` | Visible keyboard outline on light surfaces |
 
-Plus Jakarta Sans is used for headings and DM Sans for body/UI text, self-hosted through `next/font/google`. Body copy is 16px or larger, with comfortable line height and measures generally under 70ch. Hero headings are fluid: approximately 40–72px desktop and 34–48px mobile. Avoid arbitrary small informational labels.
+Use about 65% off-white, 25% black/charcoal and 10% orange across the homepage. Avoid white text over orange. Continue Plus Jakarta Sans for display and DM Sans for body/UI unless a documented layout comparison establishes a better fit. Use bold display type with negative tracking and comfortable body line height. Keep body text at 16px or larger except genuinely compact labels.
 
-## Layout and composition
+## Layout and interaction
 
-Use a 4px/8px spacing rhythm, a 1180px content measure, and fluid gutters. The shared header and footer provide consistent brand orientation. Home, About, and Calicut use route-specific compositions: personal introduction and search-to-enquiry path on home; founder story and readable career timeline on About; local market-specific remote consultancy on Calicut. Alternate split compositions, process diagrams, editorial rows, lists, and restrained feature panels. Do not add filler or repeat the same card grid in every section.
+Use a 4/8px spacing rhythm, max content measure near 1280px, fluid gutters and mobile-first reading order. Give sections varied visual composition: photo-led hero, black founder introduction, interactive selector, designed illustrative artifacts, asymmetrical service bento, four-step click-to-expand process, city list, editorial article links and a high-contrast contact region. Avoid identical repeated card grids and filler whitespace. Buttons and touch targets should be at least 44px, with visible hover and focus states. Native details/summary is appropriate for FAQs.
 
-Primary buttons use blue with white text, at least a 44px target, and clear hover/focus feedback. Keep lime as a small accent. Use dark ink panels selectively. Keep visible text contrast AA; decorative separators may use the border token, but inputs and controls need a clearer boundary or focus treatment. Mobile navigation is a keyboard-operable native disclosure. FAQs use native details/summary where appropriate.
+Page flow uses normal document scrolling. Do not add scroll-scrubbed video, pinned sections, canvas storytelling, artificial page height, scroll-jacking, autoplay, or scroll-triggered paragraph reveals. Keep lightweight hover/click feedback brief and honor `prefers-reduced-motion`.
 
-## Motion and accessibility
+## Accessibility, forms and chat
 
-Motion is short and purposeful: 150–220ms control feedback and modest 350–550ms reveals. Essential content is visible without JavaScript. Respect `prefers-reduced-motion`, including programmatic scrolling. Preserve logical headings, landmarks, skip navigation, descriptive image alternatives, keyboard focus, and responsive reading order. Do not use scroll-jacking, parallax, or animation that changes layout geometry.
+Preserve semantic landmarks, a skip link, logical headings, keyboard access, descriptive image alternatives, responsive reading order and visible focus. The owner photo should not be covered by decorative text. The CTA form only prepares a message locally; it must not submit or retain personal information. Preserve validation, honeypot, privacy notice, explicit user handoff to WhatsApp and rate-limited server-side chatbot credential handling. Keep the chatbot subordinate and do not cover hero content.
 
-The chatbot stays visually subordinate to page content, sits near the safe-area bottom, and must not cover the hero message or primary CTA. Keep server-side credential handling, rate limits, privacy notice, and explicit WhatsApp handoff. Never enable paid public requests without separate authorization.
+## Content and SEO constraints
 
-## Evidence and content boundaries
+Use the real owner portraits `/images/home/mohammad-fazil-portrait.webp` and `/images/about/mohammad-fazil.webp`; provenance is beside each asset. Label illustrative artifacts as examples. Do not invent client results, logos, credentials, dates, education, or office presence. Preserve verified Fusion Ventures title exactly and the owner-confirmed ZORX role labeling in About.
 
-Use the real owner-supplied portrait at `/images/about/mohammad-fazil.webp`; provenance and conversion details are recorded in `public/images/about/ASSET-PROVENANCE.md`. Label example deliverables as examples. Do not invent client outcomes, logos, credentials, education, dates, or office presence. The latest owner instruction authorizes undated ZORX marketing leadership; it remains labeled owner-confirmed and not independently verified in the About fact register. Preserve the verified Fusion Ventures title exactly.
-
-Calicut keeps its canonical and `noindex, follow` while it is a Preview and stays out of the sitemap. A later approved SEO launch must separately update indexing and sitemap inclusion. Preserve Saudi URLs, canonical metadata, redirects, analytics, privacy-safe forms, and existing content.
+Preserve canonical metadata, redirects, analytics, Saudi service URLs, content and sitemap behavior. Calicut retains its canonical and `noindex, follow` and stays outside the sitemap. Any later public SEO launch must separately update indexing and sitemap inclusion.

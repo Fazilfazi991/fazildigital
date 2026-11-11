@@ -1,11 +1,7 @@
-# Design authority
+# Fazil Digital creative direction
 
-The homepage, About page, Calicut landing page, shared navigation, and chatbot follow the **Search Wayfinding** system documented in [DESIGN-SYSTEM.md](DESIGN-SYSTEM.md). The owner's November 11, 2026 visual-reset brief supersedes the previous beige, forest-green, and editorial-serif direction. Keep this system consistent across the named routes while preserving Saudi SEO pages and sitewide behavior.
+The approved identity combines off-white `#F8F7F3`, black `#080808`, charcoal `#414141`, neutral `#E7E5E1`, and orange `#FFB638`. Aim for confident independent-consultant energy and editorial composition: real portraits, expressive type, clean hierarchy, visible spacing and designed examples of the work. The screenshot supplied by the owner guides contrast, type scale and orange photo framing; do not copy its content or photography.
 
-## Implementation notes
+Homepage concept comparison and the selected “Portrait in an Orange Aperture” direction are recorded in [HOME-DESIGN-DIRECTION.md](HOME-DESIGN-DIRECTION.md). Keep service copy concise and honest, place the owner’s direct offer and CTA immediately in view, and use varied sections instead of generic repeated service cards. Orange surfaces use black text for contrast.
 
-- The home, About, and Calicut routes have distinct page compositions within one shared token and chrome system.
-- Use the supplied owner portrait at `/images/about/mohammad-fazil.webp`; its provenance is recorded beside the asset.
-- Calicut remains `noindex, follow` and out of the sitemap until a separate public SEO launch is approved.
-- Do not introduce unverified biography claims, client logos, metrics, office addresses, or generated personal imagery.
-- The live Production site is outside this design change; deliver only through a protected Preview.
+Do not introduce scroll-controlled animation, artificial page height, fake statistics, fabricated proof, or claims of a Saudi office. Maintain normal scrolling, responsive mobile composition, keyboard accessibility, privacy-safe enquiry flow, SEO route behavior and existing site infrastructure.

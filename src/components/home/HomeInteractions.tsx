@@ -25,20 +25,6 @@ export function MobileMenu() {
   </details>;
 }
 
-export function ProcessMotion() {
-  const marker = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const element = marker.current;
-    if (!element || !('IntersectionObserver' in window)) return;
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) { element.dataset.visible = "true"; observer.disconnect(); }
-    }, { threshold: 0.5 });
-    observer.observe(element);
-    return () => observer.disconnect();
-  }, []);
-  return <div ref={marker} className="fd-process-rule" aria-hidden="true" />;
-}
-
 export function ReviewForm() {
   const [draft, setDraft] = useState<string | null>(null);
   const [copyState, setCopyState] = useState<"idle" | "copied" | "manual">("idle");
