@@ -47,7 +47,7 @@ for (const width of widths) {
   await page.setViewportSize({ width, height: width >= 1024 ? 1000 : 844 });
   const layout = await page.evaluate(() => {
     const heading = document.querySelector("h1");
-    const action = document.querySelector(".fd-calicut-actions .fd-button");
+    const action = document.querySelector(".cr-hero-actions .fd-button");
     return {
       viewport: innerWidth,
       documentWidth: document.documentElement.scrollWidth,
@@ -73,7 +73,7 @@ await menuSummary.press("Escape");
 assert.equal(await page.locator(".fd-mobile-menu").getAttribute("open"), null);
 assert.ok(await menuSummary.evaluate(element => element === document.activeElement), "Escape returns focus to the menu control");
 
-const faq = page.locator(".fd-calicut-faq details").first();
+const faq = page.locator(".cr-faq-list details").first();
 assert.equal(await faq.getAttribute("open"), null);
 await faq.locator("summary").click();
 assert.equal(await faq.getAttribute("open"), "");
@@ -84,7 +84,7 @@ assert.deepEqual(unnamedLinks, [], "Every link has an accessible name");
 const contrastFailures = await page.locator("main p, main label, main summary, main h1, main h2, main h3, main a").evaluateAll(elements => {
   const rgb = value => { const match = value.match(/[\d.]+/g); return match ? match.map(Number) : [0, 0, 0, 0]; };
   const luminance = color => color.slice(0, 3).map(value => { const channel = value / 255; return channel <= .04045 ? channel / 12.92 : ((channel + .055) / 1.055) ** 2.4; }).reduce((sum, value, index) => sum + value * [.2126, .7152, .0722][index], 0);
-  return elements.filter(element => element.getClientRects().length && element.textContent.trim()).flatMap(element => {
+  return elements.filter(element => element.getClientRects().length && element.textContent.trim() && !element.closest('[aria-hidden="true"]')).flatMap(element => {
     const style = getComputedStyle(element); let ancestor = element; let background = [245, 243, 237];
     while (ancestor) { const candidate = rgb(getComputedStyle(ancestor).backgroundColor); if (candidate.length < 4 || candidate[3] >= .99) { background = candidate; break; } ancestor = ancestor.parentElement; }
     const foreground = rgb(style.color); const values = [luminance(foreground), luminance(background)].sort((a, b) => a - b);
