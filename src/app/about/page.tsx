@@ -300,7 +300,7 @@ export default function AboutPage() {
             <p>
               Technical understanding helps me ask how a page is discovered and maintained. Marketing
               helps me start with what people are searching for. Business development keeps the
-              enquiry journey and the team's ability to respond in view.
+              enquiry journey and the team&apos;s ability to respond in view.
             </p>
             <p>
               For Saudi businesses, I bring those questions together through technical SEO, local

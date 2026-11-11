@@ -1,17 +1,22 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import Image from "next/image";
 import Link from "next/link";
+import localFont from "next/font/local";
+import { ReviewForm } from "@/components/home/HomeInteractions";
+import { SiteFooter } from "@/components/site/BrandChrome";
+import { SiteHeader } from "@/components/site/BrandChrome";
 import { saudiArticles } from "@/data/saudi-articles";
-import { MobileMenu, ProcessMotion, ReviewForm } from "@/components/home/HomeInteractions";
 import "./home.css";
 
 const manrope = localFont({ src: "./fonts/manrope-latin.woff2", variable: "--fd-sans", display: "swap", weight: "200 800" });
 const editorial = localFont({ src: "./fonts/instrument-serif-latin.woff2", variable: "--fd-serif", display: "swap", weight: "400" });
+
 const title = "SEO Consultant Saudi Arabia | Fazil Digital";
 const description = "Work directly with Mohammad Fazil on technical SEO, local search and original content for Saudi businesses. Focused on Riyadh, Jeddah and Dammam.";
 
 export const metadata: Metadata = {
-  title: { absolute: title }, description,
+  title: { absolute: title },
+  description,
   alternates: { canonical: "https://www.fazildigital.com/", languages: {}, types: {} },
   openGraph: { title, description, url: "https://www.fazildigital.com/", siteName: "Fazil Digital", type: "website", locale: "en_SA" },
   twitter: { card: "summary", title, description },
@@ -25,18 +30,139 @@ const faqs = [
   { question: "What is it like to work with Mohammad?", answer: "You work directly with Mohammad Fazil. We start with your business goals and current search performance, then agree a practical roadmap, implementation responsibilities and reporting cadence. Reporting explains what changed, what the evidence shows and what comes next." },
 ];
 
-function Arrow({ diagonal = false }: { diagonal?: boolean }) {
-  return <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="20" height="20"><path d={diagonal ? "M6 18 18 6M6 6h12v12" : "M4 12h15m-6-6 6 6-6 6"} /></svg>;
-}
+const milestones = [
+  {
+    title: "A foundation in digital marketing",
+    label: "Marketing",
+    copy: "Digital marketing work across strategy and execution shaped how I think about the full customer journey, from discovery to the next useful action.",
+  },
+  {
+    title: "Co-founder at Fusion Ventures Global",
+    label: "Technology & business development",
+    copy: "My current role focuses on technical and business-development work. It keeps the business problem, the system and the people using it in view at the same time.",
+  },
+  {
+    title: "A focused SEO practice for Saudi businesses",
+    label: "Fazil Digital",
+    copy: "I bring that wider perspective to technical SEO, local search and original content, with Riyadh as the primary market, followed by Jeddah and Dammam.",
+  },
+];
 
-function ServiceIcon({ type }: { type: "technical" | "local" | "content" }) {
-  return <svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" width="48" height="48">{type === "technical" ? <><path d="m17 13-11 11 11 11m14-22 11 11-11 11M28 7l-8 34" /></> : type === "local" ? <><path d="M38 20c0 11-14 22-14 22S10 31 10 20a14 14 0 0 1 28 0Z" /><circle cx="24" cy="20" r="5" /></> : <><rect x="9" y="6" width="30" height="36" rx="2" /><path d="M16 15h16m-16 8h16m-16 8h9" /></>}</svg>;
-}
+const problems = [
+  {
+    title: "Your business is hard to find on Google.",
+    description: "Important pages may be difficult to crawl, unclear about their purpose or missing the searches your customers use.",
+    response: "Start with an SEO review that identifies technical, content and local-search priorities in a useful order.",
+  },
+  {
+    title: "Visits arrive, but the right enquiries do not.",
+    description: "A page can attract attention without matching what a searcher needs or making the next step clear.",
+    response: "Connect search intent to a relevant landing page, useful information and a clear, privacy-safe enquiry path.",
+  },
+  {
+    title: "Content keeps getting published without a plan.",
+    description: "Topics overlap, key questions go unanswered and each new page has to find its own way through the site.",
+    response: "Use research, page ownership, editorial planning and internal links to give every piece of content a reason to exist.",
+  },
+];
+
+const workExamples = [
+  {
+    title: "A technical review with owners and checks",
+    challenge: "Important pages need a clearer path to discovery.",
+    approach: "Review crawl and indexing signals, site structure, templates and page experience against the website’s actual priorities.",
+    deliverable: "A prioritized review that records the finding, affected page, proposed change, implementation owner and validation check.",
+  },
+  {
+    title: "A search-intent map for Saudi services",
+    challenge: "Several services and cities can compete for similar searches.",
+    approach: "Research the audience, service scope and search intent before assigning topics to existing or proposed pages.",
+    deliverable: "A page map connecting service and city intent with a clear purpose and internal-link path.",
+  },
+  {
+    title: "An editorial plan built around real questions",
+    challenge: "A publishing calendar needs evidence and a useful role for each page.",
+    approach: "Group customer questions, existing content and language needs into a manageable sequence.",
+    deliverable: "Content briefs with audience, evidence, outline, links and an approval step for each planned page.",
+  },
+];
+
+const expertise = [
+  {
+    title: "SEO services",
+    href: "/services/seo/",
+    problem: "Search work is split into disconnected tasks.",
+    engagement: "Set a shared direction for technical foundations, local discovery, content and measurement.",
+    deliverable: "A scoped SEO roadmap with priorities, responsibilities and review points.",
+  },
+  {
+    title: "Technical SEO",
+    href: "/services/technical-seo/",
+    problem: "Important pages are difficult to crawl, understand or use.",
+    engagement: "Review indexing, site structure, internal links, templates and page experience.",
+    deliverable: "A prioritized technical review with evidence and validation checks.",
+  },
+  {
+    title: "Local SEO",
+    href: "/services/local-seo/",
+    problem: "Nearby customers cannot easily connect a genuine service to a real business.",
+    engagement: "Improve accurate service information, local relevance and eligible business profiles.",
+    deliverable: "A local-search checklist grounded in how the business actually operates.",
+  },
+  {
+    title: "SEO content strategy",
+    href: "/services/content-marketing/",
+    problem: "Pages miss customer questions or overlap with one another.",
+    engagement: "Research intent, assign page roles and plan original content with internal links.",
+    deliverable: "A content architecture and briefs your team can review and implement.",
+  },
+  {
+    title: "Organic marketing",
+    href: "/services/seo/",
+    problem: "Organic activity is difficult to connect to a customer’s next step.",
+    engagement: "Bring search visibility, useful content and the enquiry journey into one plan.",
+    deliverable: "A connected set of page, content and measurement priorities.",
+  },
+  {
+    title: "Arabic and English SEO planning",
+    href: "/services/content-marketing/",
+    problem: "A direct translation can miss how people search in each language.",
+    engagement: "Research each language independently and agree qualified Arabic editorial review before publication.",
+    deliverable: "A bilingual page plan with terminology, localization and approval requirements.",
+  },
+];
+
+const process = [
+  ["Initial conversation", "Talk through your business, customers and the search problem you want to solve."],
+  ["Website and SEO review", "Understand the starting point, technical foundations and current pages."],
+  ["Keyword and competitor research", "Explore customer intent and the search landscape for your market."],
+  ["Prioritized strategy", "Agree the work, responsibilities and practical order of implementation."],
+  ["Implementation", "Make the changes together with your team and any subject or language specialists."],
+  ["Measurement and improvement", "Review visibility, relevant visits and enquiry signals, then decide what comes next."],
+];
+
+const audiences = [
+  {
+    title: "Saudi startups",
+    copy: "You are establishing search visibility while your offer and pages are still taking shape.",
+    need: "A clear first page plan, sound technical basics and a content direction you can maintain.",
+  },
+  {
+    title: "Small and medium businesses",
+    copy: "You want organic enquiries that fit your real services and the customers you can serve.",
+    need: "Better alignment between local intent, service pages and the path to contact.",
+  },
+  {
+    title: "Established businesses",
+    copy: "Your website and search strategy need to keep pace with a broader offer or changing priorities.",
+    need: "A careful review of page ownership, technical constraints, content and measurement.",
+  },
+];
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "Person", "@id": "https://www.fazildigital.com/#person", name: "Mohammad Fazil", url: "https://www.fazildigital.com/about/", sameAs: ["https://linkedin.com/in/fazilfazi"], jobTitle: "SEO Consultant" },
+    { "@type": "Person", "@id": "https://www.fazildigital.com/#person", name: "Mohammad Fazil", url: "https://www.fazildigital.com/about/", sameAs: ["https://ae.linkedin.com/in/fazilfazi"], jobTitle: "SEO Consultant" },
     { "@type": "Organization", "@id": "https://www.fazildigital.com/#organization", name: "Fazil Digital", url: "https://www.fazildigital.com/", founder: { "@id": "https://www.fazildigital.com/#person" }, areaServed: { "@type": "Country", name: "Saudi Arabia" } },
     { "@type": "Service", name: "SEO & Organic Growth", provider: { "@id": "https://www.fazildigital.com/#organization" }, areaServed: { "@type": "Country", name: "Saudi Arabia" }, serviceType: ["Technical SEO", "Local SEO", "SEO Content Strategy"] },
     { "@type": "WebSite", "@id": "https://www.fazildigital.com/#website", name: "Fazil Digital", url: "https://www.fazildigital.com/", inLanguage: "en", publisher: { "@id": "https://www.fazildigital.com/#organization" } },
@@ -44,86 +170,125 @@ const schema = {
   ],
 };
 
+function Arrow({ diagonal = false }: { diagonal?: boolean }) {
+  return <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="18" height="18"><path d={diagonal ? "M6 18 18 6M6 6h12v12" : "M4 12h15m-6-6 6 6-6 6"} /></svg>;
+}
+
+function SectionHeading({ title: heading, intro, id }: { title: string; intro?: string; id?: string }) {
+  return <div className="fd-redesign-heading"><h2 id={id}>{heading}</h2>{intro && <p>{intro}</p>}</div>;
+}
+
 export default function Home() {
-  return <div className={`fd-home ${manrope.variable} ${editorial.variable}`} id="top">
+  return <div className={`fd-home ${manrope.variable} ${editorial.variable} fd-redesign`} id="top">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
     <a className="fd-skip" href="#main-content">Skip to content</a>
-    <header className="fd-header fd-container">
-      <Link href="/" aria-label="Fazil Digital home" className="fd-wordmark">fazil<span className="fd-wordmark-dot">.</span><span className="fd-wordmark-digital">digital</span></Link>
-      <nav className="fd-desktop-nav" aria-label="Main navigation"><Link href="/" aria-current="page">Home</Link><a href="#services">SEO Services</a><a href="#locations">Locations</a><a href="#insights">Insights</a><Link href="/about/">About</Link><a href="#review">Contact</a></nav>
-      <a className="fd-button fd-header-cta" href="#review">Request an SEO Review <Arrow diagonal /></a>
-      <MobileMenu />
-    </header>
+    <SiteHeader />
 
     <main id="main-content">
-      <section className="fd-hero fd-container" aria-labelledby="hero-heading">
-        <div className="fd-hero-copy">
-          <p className="fd-eyebrow"><span className="fd-status-dot" />SEO CONSULTANT · SAUDI ARABIA</p>
-          <h1 id="hero-heading">SEO &amp; Organic<br className="fd-desktop-break" /> Growth for<br className="fd-desktop-break" /> Saudi Businesses.</h1>
-          <p className="fd-hero-description">Improve your Google visibility, reach customers searching for your services, and build lasting organic traffic through SEO and original content.</p>
-          <div className="fd-actions"><a href="#review" className="fd-button">Request an SEO Review <Arrow diagonal /></a><a href="#services" className="fd-text-link">Explore SEO Services <Arrow /></a></div>
-          <p className="fd-hero-person">Independent thinking. Direct work with <Link href="/about/">Mohammad Fazil.</Link></p>
+      <section className="fd-personal-hero fd-container" aria-labelledby="hero-heading">
+        <div className="fd-personal-copy">
+          <p className="fd-personal-eyebrow">MOHAMMAD FAZIL <span aria-hidden="true">·</span> SEO CONSULTANT</p>
+          <h1 id="hero-heading">Helping Saudi Businesses Get Found on Google.</h1>
+          <p className="fd-personal-intro">I&apos;m Mohammad Fazil. I help businesses across Saudi Arabia improve search visibility, develop stronger organic content, and turn relevant Google searches into business opportunities.</p>
+          <div className="fd-personal-actions">
+            <a className="fd-button" href="#review">Request an SEO Review <Arrow diagonal /></a>
+            <a className="fd-text-link" href="#approach">Explore My Approach <Arrow /></a>
+          </div>
+          <p className="fd-personal-location">Based in Dubai <span aria-hidden="true">/</span> Working with Saudi businesses</p>
         </div>
-        <aside className="fd-search-art" aria-label="Focused on the connection between search, useful content and customer discovery">
-          <div className="fd-art-top"><span>A clearer path to discovery</span><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M12 2v20M2 12h20m-17-7 14 14M5 19 19 5" /></svg></div>
-          <div className="fd-aperture" aria-hidden="true"><svg viewBox="0 0 400 400" fill="none"><circle cx="200" cy="200" r="172" stroke="currentColor" strokeOpacity=".19" /><circle cx="200" cy="200" r="134" stroke="currentColor" strokeOpacity=".32" /><circle cx="200" cy="200" r="96" stroke="currentColor" strokeOpacity=".5" /><circle cx="200" cy="200" r="58" stroke="currentColor" strokeOpacity=".8" /><path d="M200 12v376M12 200h376" stroke="currentColor" strokeOpacity=".15" /><path d="M78 322 322 78" stroke="currentColor" strokeOpacity=".35" /><circle cx="268" cy="132" r="8" fill="#C8B38B" /><path d="m185 200 11 11 22-25" stroke="#F5F3ED" strokeWidth="2" /></svg><span className="fd-aperture-caption">Be found.<br />For the right reasons.</span></div>
-          <div className="fd-art-bottom"><span>Technical clarity<br />Local relevance<br />Original content</span><span className="fd-art-seal">Built around<br />your business.</span></div>
-        </aside>
+        <figure className="fd-personal-portrait">
+          <Image src="/images/about/mohammad-fazil.webp" alt="Mohammad Fazil seated in a café, holding a coffee mug" fill priority sizes="(max-width: 760px) 100vw, (max-width: 1100px) 44vw, 520px" />
+          <figcaption><span>Mohammad Fazil</span><span>Dubai, United Arab Emirates</span></figcaption>
+        </figure>
       </section>
 
-      <div className="fd-focus-strip fd-container"><span>One market. A considered approach.</span><p>Riyadh <span aria-hidden="true">/</span> Jeddah <span aria-hidden="true">/</span> Dammam</p><a href="#methodology">Discover the approach <Arrow /></a></div>
-
-      <section className="fd-problem fd-section fd-container" aria-labelledby="problem-heading">
-        <div><h2 id="problem-heading">Your next customer<br />is already searching.</h2><p className="fd-section-intro">The question is whether they find you. Organic growth starts by understanding what stands between your business and the right search.</p></div>
-        <ul className="fd-problem-list">{[
-          ["Relevant searches. Missing visibility.", "Your services need to appear where real customer demand exists."],
-          ["Your competitors get the first click.", "A clearer search strategy helps you compete for the right opportunities."],
-          ["Local customers can’t find you.", "Your website and genuine business presence need consistent local signals."],
-          ["Technical issues hold the site back.", "Crawling, indexing and page experience need a sound foundation."],
-          ["Content misses the intent.", "Useful answers connect what people search for with what you offer."],
-        ].map(([heading, copy]) => <li key={heading}><span className="fd-list-mark" aria-hidden="true" /><div><h3>{heading}</h3><p>{copy}</p></div></li>)}</ul>
+      <section className="fd-credibility fd-container" aria-label="Professional focus">
+        <p className="fd-credibility-lead">A considered practice, shaped by</p>
+        <ul>
+          <li>Direct consultant involvement</li>
+          <li>Marketing and technology experience</li>
+          <li>SEO research and implementation</li>
+          <li>Saudi market focus</li>
+        </ul>
       </section>
 
-      <section id="services" className="fd-services fd-section" aria-labelledby="services-heading"><div className="fd-container">
-        <div className="fd-section-heading"><h2 id="services-heading">The foundations of<br />sustainable search growth.</h2><p>A focused SEO practice.<br />The right work, in the right order.</p></div>
-        <div className="fd-service-grid">{[
-          { type: "technical" as const, id: "technical-seo", href: "/services/technical-seo/", title: "Technical SEO", copy: "Give search engines a clear path through your website. Resolve the issues affecting discovery, indexing and page experience.", tags: "Site audits · Indexing · Site structure", action: "Discuss technical SEO" },
-          { type: "local" as const, id: "local-seo", href: "/services/local-seo/", title: "Local SEO", copy: "Connect with people searching in your market. Build accurate local signals around your real locations and the services you provide.", tags: "Local search · Business profiles · Relevance", action: "Discuss local SEO" },
-          { type: "content" as const, id: "content-strategy", href: "/services/content-marketing/", title: "SEO Content Strategy", copy: "Turn customer questions into useful, original content. Plan for Arabic and English search intent, with genuine localization.", tags: "Search intent · Content planning · Localization", action: "Discuss content strategy" },
-        ].map(service => <article className="fd-service-card" key={service.id} id={service.id}><ServiceIcon type={service.type} /><h3>{service.title}</h3><p>{service.copy}</p><p className="fd-service-tags">{service.tags}</p><Link href={service.href}>{service.action}<Arrow diagonal /></Link></article>)}</div>
-        <div className="fd-service-footnote"><span>One connected strategy, from technical foundations to content-led organic marketing.</span><Link className="fd-text-link" href="/services/seo/">SEO service overview <Arrow /></Link></div>
-      </div></section>
-
-      <section id="locations" className="fd-section fd-container" aria-labelledby="locations-heading">
-        <div className="fd-section-heading"><h2 id="locations-heading">Saudi focus.<br />Local understanding.</h2><p>Different cities. Different search journeys.<br />A strategy shaped around your customers.</p></div>
-        <div className="fd-market-grid"><Link href="/riyadh/seo/" className="fd-market-primary"><div className="fd-market-label"><span>Our primary focus</span><Arrow diagonal /></div><h3>Riyadh</h3><p>SEO for businesses competing in the Saudi capital. Connect technical foundations, local discovery and content that supports considered buying decisions.</p><span className="fd-market-link">Explore SEO in Riyadh <Arrow /></span><svg className="fd-market-lines" aria-hidden="true" viewBox="0 0 230 180" fill="none"><path d="M5 180V50l50-25v155m10 0V90l35-15v105m12 0V30l48-24v174m15 0V65l45-20v135" stroke="currentColor" strokeWidth="1" /><path d="M112 78h48m-48 25h48m-48 25h48m-48 25h48M5 75h50M5 100h50M5 125h50M5 150h50" stroke="currentColor" strokeOpacity=".45" /></svg></Link>
-          <div className="fd-market-secondary">{[{ city: "Jeddah", href: "/jeddah/seo/", copy: "Search visibility for the Red Sea city. Local relevance and useful content that reflect how your customers choose." }, { city: "Dammam", href: "/dammam/seo/", copy: "A focused approach for the Eastern Province, from nearby service searches to detailed B2B supplier research." }].map(city => <Link key={city.city} href={city.href}><div><h3>{city.city}</h3><Arrow diagonal /></div><p>{city.copy}</p><span>Explore SEO in {city.city}</span></Link>)}</div></div>
-        <p className="fd-location-note">Serving Saudi businesses through direct consultancy. Service areas describe our focus, not office locations.</p>
+      <section className="fd-milestones fd-section" aria-labelledby="milestone-heading">
+        <div className="fd-container">
+          <div className="fd-milestone-intro">
+            <div><p className="fd-redesign-kicker">THE WORK BEHIND THE PRACTICE</p><SectionHeading id="milestone-heading" title="A career across marketing, technology and business." /></div>
+            <p className="fd-milestone-note">Different roles have taught me to look beyond a channel or a tool. The useful question is what the business needs to make possible.</p>
+          </div>
+          <div className="fd-milestone-list">{milestones.map((item, index) => <article key={item.title} className={`fd-milestone fd-milestone-${index + 1}`}>
+            <span className="fd-milestone-label">{item.label}</span><div><h3>{item.title}</h3><p>{item.copy}</p></div>
+          </article>)}</div>
+          <Link className="fd-text-link" href="/about/">Read my professional story <Arrow diagonal /></Link>
+        </div>
       </section>
 
-      <section id="methodology" className="fd-method fd-section" aria-labelledby="method-heading"><div className="fd-container"><div className="fd-section-heading"><h2 id="method-heading">A clear process.<br />A shared direction.</h2><p>Thoughtful strategy is only useful<br />when it becomes practical work.</p></div><ProcessMotion /><ol className="fd-process-grid">{[
-        ["Audit", "Understand the starting point.", "Review your website, search performance, competitors and business priorities."], ["Strategy", "Decide what matters most.", "Map search intent, define page ownership and build a prioritized roadmap."], ["Implementation", "Put the plan into practice.", "Improve technical foundations, local signals and content with clear responsibilities."], ["Measurement", "Learn. Refine. Keep building.", "Track visibility, relevant visits and enquiries against the baseline. Report what comes next."],
-      ].map(([name, lead, copy], i) => <li key={name}><span className="fd-step">0{i + 1}</span><h3>{name}</h3><p className="fd-process-lead">{lead}</p><p>{copy}</p></li>)}</ol></div></section>
-
-      <section className="fd-about fd-section fd-container" aria-labelledby="about-heading"><div className="fd-consultant-note"><span className="fd-consultant-monogram" aria-hidden="true">mf.</span><p>Independent by choice.<br />Involved by design.</p><div><strong>Mohammad Fazil</strong><span>SEO &amp; organic growth consultant</span></div><Link href="/about/" className="fd-text-link">Meet your consultant <Arrow diagonal /></Link></div><div><h2 id="about-heading">A direct line to the person<br />doing the thinking.</h2><p className="fd-section-intro">You work with Mohammad, from the first conversation to the next set of priorities. Clear advice, researched decisions and a shared understanding of the work.</p><dl className="fd-principles"><div><dt>Direct involvement</dt><dd>One consultant connecting your goals, strategy and implementation.</dd></div><div><dt>Transparent communication</dt><dd>Clear scope, responsibilities and explanations without unnecessary jargon.</dd></div><div><dt>Research before assumptions</dt><dd>Recommendations grounded in your customers, website and search data.</dd></div><div><dt>Consistent reporting</dt><dd>Agreed reporting that connects the work to meaningful business signals.</dd></div></dl></div></section>
-
-      <section className="fd-work fd-section" aria-labelledby="work-heading"><div className="fd-container fd-work-grid"><div><h2 id="work-heading">Evidence belongs<br />at the centre.</h2><p className="fd-section-intro">Good SEO work should be explained with context, a clear scope and evidence you can assess.</p></div><div className="fd-work-placeholder"><svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8 5h17l7 7v23H8zM25 5v8h7M14 21h12m-12 6h8" /></svg><h3>What an SEO review can include</h3><p>A clear view of technical barriers, relevant search opportunities and content priorities.</p><span>Deliverable: a prioritized roadmap with next steps, responsibilities and ways to measure progress.</span></div></div></section>
-
-      <section id="insights" className="fd-section fd-container" aria-labelledby="insights-heading">
-        <div className="fd-section-heading"><h2 id="insights-heading">Saudi search.<br />A closer look.</h2><Link className="fd-text-link" href="/blog/">Explore the insights archive <Arrow /></Link></div>
-        <div className="fd-insight-grid">{["arabic-vs-english-seo-saudi-arabia", "local-seo-saudi-businesses-guide", "technical-seo-audit-saudi-websites"].map((slug, index) => {
-          const post = saudiArticles.find(article => article.slug === slug);
-          if (!post) return null;
-          const motif = ["circles", "arches", "lines"][index];
-          return <article key={post.slug} className="fd-insight"><div className={`fd-insight-art fd-art-${motif}`} aria-hidden="true"><svg viewBox="0 0 360 180" fill="none" stroke="currentColor" strokeWidth="1">{motif === "circles" ? <>{[36,60,84,108,132].map(r => <circle key={r} cx="180" cy="135" r={r} />)}</> : motif === "arches" ? <>{[0,26,52,78,104].map(x => <path key={x} d={`M${75+x} 180V90a${105-x} ${105-x} 0 0 1 ${210-2*x} 0v90`} />)}</> : <>{[0,24,48,72,96,120,144].map(x => <path key={x} d={`m${80+x} 180 100-180`} />)}</>}</svg></div><p className="fd-insight-topic">{post.category}</p><h3><Link href={`/blog/${post.slug}/`}>{post.title}</Link></h3><p>{post.excerpt}</p><Link className="fd-text-link" href={`/blog/${post.slug}/`}>Read the guide <Arrow diagonal /></Link></article>;
-        })}</div>
-        <div className="fd-more-insights"><h3>More Saudi SEO guides</h3><ul>{saudiArticles.filter(post => !["arabic-vs-english-seo-saudi-arabia", "local-seo-saudi-businesses-guide", "technical-seo-audit-saudi-websites"].includes(post.slug)).map(post => <li key={post.slug}><Link href={`/blog/${post.slug}/`}>{post.title}<Arrow diagonal /></Link></li>)}</ul></div>
+      <section className="fd-problems fd-section" aria-labelledby="problems-heading">
+        <div className="fd-container">
+          <div className="fd-problems-top"><div><p className="fd-redesign-kicker">WHERE SEARCH WORK STARTS</p><SectionHeading id="problems-heading" title="The problem is the starting point." /></div><p>Good SEO begins with the reason a customer is not finding the answer, page or next step they need.</p></div>
+          <div className="fd-problem-stories">{problems.map((item, index) => <article key={item.title} className="fd-problem-story">
+            <span className="fd-story-index" aria-hidden="true">0{index + 1}</span>
+            <div className="fd-story-problem"><p>THE PROBLEM</p><h3>{item.title}</h3><span>{item.description}</span></div>
+            <div className="fd-story-response"><p>HOW I APPROACH IT</p><span>{item.response}</span></div>
+          </article>)}</div>
+        </div>
       </section>
-      <section className="fd-faq fd-section fd-container" aria-labelledby="faq-heading"><div><h2 id="faq-heading">A few things<br />you might be asking.</h2><p>Have a question about your website?<br /><a href="#review" className="fd-text-link">Let’s talk it through <Arrow /></a></p></div><div>{faqs.map(faq => <details key={faq.question}><summary>{faq.question}<span aria-hidden="true" className="fd-faq-toggle" /></summary><p>{faq.answer}</p></details>)}</div></section>
 
-      <section id="review" className="fd-review fd-section" aria-labelledby="review-heading"><div className="fd-container fd-review-grid"><div><h2 id="review-heading">Ready to Improve Your Visibility in Saudi Arabia?</h2><p>Start with your website and what you want to achieve. Let’s find the right questions to ask, and the priorities worth pursuing.</p><a className="fd-text-link" href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer">Prefer a conversation? WhatsApp Mohammad <Arrow diagonal /></a></div><ReviewForm /></div></section>
+      <section className="fd-work fd-section" aria-labelledby="work-heading">
+        <div className="fd-container">
+          <div className="fd-work-heading"><div><p className="fd-redesign-kicker">EXAMPLE DELIVERABLES</p><SectionHeading id="work-heading" title="What the work can look like." intro="Illustrative examples of practical SEO deliverables, not customer case studies or performance claims." /></div><p>Each recommendation should show its evidence, its owner and how the change will be checked.</p></div>
+          <div className="fd-work-list">{workExamples.map((item, index) => <article className="fd-work-example" key={item.title}>
+            <div className="fd-work-example-title"><span>DELIVERABLE EXAMPLE · 0{index + 1}</span><h3>{item.title}</h3></div>
+            <dl><div><dt>Challenge</dt><dd>{item.challenge}</dd></div><div><dt>Approach</dt><dd>{item.approach}</dd></div><div><dt>Deliverable</dt><dd>{item.deliverable}</dd></div></dl>
+          </article>)}</div>
+        </div>
+      </section>
+
+      <section id="services" className="fd-expertise fd-section" aria-labelledby="expertise-heading">
+        <div className="fd-container">
+          <div className="fd-expertise-intro"><div><p className="fd-redesign-kicker">AREAS OF EXPERTISE</p><SectionHeading id="expertise-heading" title="Focused on the work that helps organic search." /></div><p>For businesses serving Saudi Arabia, from the technical foundations to useful information in the right language.</p></div>
+          <div className="fd-expertise-list">{expertise.map((item, index) => <article className="fd-expertise-item" key={item.title}>
+            <span className="fd-expertise-index" aria-hidden="true">0{index + 1}</span><div className="fd-expertise-name"><h3>{item.title}</h3><p>{item.problem}</p></div><div className="fd-expertise-scope"><p><strong>Engagement</strong> {item.engagement}</p><p><strong>Deliverable</strong> {item.deliverable}</p></div><Link href={item.href} aria-label={`Explore ${item.title}`}><Arrow diagonal /></Link>
+          </article>)}</div>
+          <p className="fd-expertise-footnote">Arabic content planning includes qualified language review before any publication is agreed.</p>
+        </div>
+      </section>
+
+      <section id="approach" className="fd-onboarding fd-section" aria-labelledby="onboarding-heading">
+        <div className="fd-container">
+          <div className="fd-onboarding-heading"><div><p className="fd-redesign-kicker">A CLEAR WAY TO BEGIN</p><SectionHeading id="onboarding-heading" title="From first conversation to steady improvement." /></div><p>Good work needs a shared view of the goal, the scope and what happens next.</p></div>
+          <ol className="fd-onboarding-list">{process.map(([titleText, copy], index) => <li key={titleText}><span className="fd-onboarding-number">0{index + 1}</span><div><h3>{titleText}</h3><p>{copy}</p></div></li>)}</ol>
+        </div>
+      </section>
+
+      <section className="fd-audience fd-section" aria-labelledby="audience-heading">
+        <div className="fd-container">
+          <div className="fd-audience-heading"><div><p className="fd-redesign-kicker">WHO I WORK WITH</p><SectionHeading id="audience-heading" title="Different businesses. A useful place to start." /></div><p>SEO work should fit the business, the website and the people responsible for putting changes into practice.</p></div>
+          <div className="fd-audience-list">{audiences.map((item, index) => <article className={`fd-audience-item fd-audience-item-${index + 1}`} key={item.title}><h3>{item.title}</h3><p>{item.copy}</p><div><strong>The SEO need</strong><p>{item.need}</p></div></article>)}</div>
+        </div>
+      </section>
+
+      <section className="fd-insights fd-section" id="insights" aria-labelledby="insights-heading">
+        <div className="fd-container">
+          <div className="fd-insights-heading"><div><p className="fd-redesign-kicker">SAUDI SEARCH INSIGHTS</p><SectionHeading id="insights-heading" title="Research for the questions behind search." /></div><Link className="fd-text-link" href="/blog/">Browse all insights <Arrow /></Link></div>
+          <div className="fd-insights-list">{["arabic-vs-english-seo-saudi-arabia", "local-seo-saudi-businesses-guide", "technical-seo-audit-saudi-websites"].map((slug, index) => {
+            const post = saudiArticles.find(article => article.slug === slug);
+            if (!post) return null;
+            return <article key={post.slug}><span>GUIDE · 0{index + 1}</span><p>{post.category}</p><h3><Link href={`/blog/${post.slug}/`}>{post.title}</Link></h3><p>{post.excerpt}</p><Link className="fd-text-link" href={`/blog/${post.slug}/`}>Read the guide <Arrow diagonal /></Link></article>;
+          })}</div>
+        </div>
+      </section>
+
+      <section className="fd-faq fd-section fd-container" aria-labelledby="faq-heading">
+        <div><p className="fd-redesign-kicker">QUESTIONS ABOUT SEO</p><SectionHeading id="faq-heading" title="A few things you may want to know." /><p className="fd-faq-lead">Want to talk through your own website? <a href="#review">Request an SEO review <Arrow /></a></p></div>
+        <div className="fd-faq-list">{faqs.map(faq => <details key={faq.question}><summary>{faq.question}<span aria-hidden="true" className="fd-faq-toggle" /></summary><p>{faq.answer}</p></details>)}</div>
+      </section>
+
+      <section id="review" className="fd-review fd-section" aria-labelledby="review-heading"><div className="fd-container fd-review-grid"><div><p className="fd-redesign-kicker">A GOOD PLACE TO START</p><h2 id="review-heading">Let&apos;s Make Your Business Easier to Find.</h2><p>Share your website and what you want to improve. I&apos;ll help you identify the questions worth asking and the priorities to consider.</p><a className="fd-review-whatsapp" href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer">Contact Mohammad on WhatsApp <Arrow diagonal /></a><p className="fd-review-direct">The link opens WhatsApp without adding anything you entered here.</p></div><div className="fd-review-panel"><h3>Request an SEO Review</h3><p>Prepare a message with your website and goals. Nothing is sent until you choose to open WhatsApp.</p><ReviewForm /></div></div></section>
     </main>
 
-    <footer className="fd-footer fd-container"><div className="fd-footer-top"><Link href="/" aria-label="Fazil Digital home" className="fd-wordmark">fazil<span className="fd-wordmark-dot">.</span><span className="fd-wordmark-digital">digital</span></Link><p>SEO &amp; organic growth<br />for Saudi businesses.</p><nav aria-label="Footer navigation"><Link href="/services/seo/">SEO Services</Link><Link href="/about/">About</Link><Link href="/blog/">Insights</Link><a href="#review">Contact</a></nav><a className="fd-back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></div><div className="fd-footer-bottom"><span>© {new Date().getFullYear()} Fazil Digital</span><span>Riyadh · Jeddah · Dammam</span><Link href="/privacy-policy/">Privacy policy</Link></div></footer>
+    <SiteFooter />
   </div>;
 }
