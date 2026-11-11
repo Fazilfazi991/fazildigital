@@ -74,7 +74,7 @@ export function ChatAssistant() {
       const dock = document.querySelector<HTMLElement>(".fazil-contact-dock");
       if (!dock) { setDockSafe(true); return; }
       const bounds = dock.getBoundingClientRect();
-      const importantElements = Array.from(document.querySelectorAll<HTMLElement>("main h1, main h2, main h3, main a, main button, main form input, main form textarea, main form select, main form label"));
+      const importantElements = Array.from(document.querySelectorAll<HTMLElement>("main h1, main h2, main h3, main a, main button, main form input, main form textarea, main form select, main form label, body footer:not(.fazil-chat-footer)"));
       const overlapsImportantContent = importantElements
         .some((element) => {
           if (element.closest(".fazil-contact-dock")) return false;
