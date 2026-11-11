@@ -15,31 +15,72 @@
   pointer-events: none;
 }
 .fazil-character-greeting {
-  align-self: flex-start;
-  max-width: 100%;
-  margin: 0 0 -2px 0;
-  padding: 9px 13px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 28px;
+  align-self: stretch;
+  width: 100%;
+  margin: 0 0 4px;
+  padding: 7px 8px 7px 13px;
   border: 1px solid #D2D0CC;
-  border-radius: 13px 13px 13px 3px;
+  border-radius: 15px 15px 4px 15px;
   color: #080808;
   background: #F8F7F3;
   box-shadow: 0 7px 22px rgba(8, 8, 8, .14);
-  font-size: 13px;
-  font-weight: 650;
-  line-height: 1.25;
+  animation: fazil-greeting-enter 220ms cubic-bezier(.2,.8,.2,1) both;
+  pointer-events: auto;
+}
+.fazil-greeting-open {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 2px 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+.fazil-greeting-open > span:first-child { font-size: 13px; font-weight: 650; line-height: 1.3; }
+.fazil-greeting-cta { color: #8B5900; font-size: 11px; font-weight: 750; line-height: 1.25; }
+.fazil-greeting-dismiss {
+  display: grid;
+  place-items: center;
+  align-self: start;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: #414141;
+  background: transparent;
+  cursor: pointer;
+}
+.fazil-greeting-dismiss:hover { background: #E7E5E1; }
+.fazil-greeting-dismiss svg { width: 15px; height: 15px; }
+.fazil-greeting-open:focus-visible,
+.fazil-greeting-dismiss:focus-visible { outline: 3px solid #080808; outline-offset: 2px; }
+@keyframes fazil-greeting-enter {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 .fazil-character-stage {
   display: grid;
-  width: 184px;
-  height: 232px;
+  width: 190px;
+  height: 182px;
   place-items: end center;
   perspective: 800px;
   pointer-events: none;
 }
+.fazil-contact-dock.is-greeting .fazil-character-stage { animation: fazil-character-notice 440ms cubic-bezier(.16,1,.3,1) 1; }
+@keyframes fazil-character-notice {
+  0% { transform: translateY(0) scale(1); }
+  55% { transform: translateY(-3px) scale(1.012); }
+  100% { transform: translateY(0) scale(1); }
+}
 .fazil-character-trigger {
   display: grid;
-  width: 164px;
-  height: 232px;
+  width: 176px;
+  height: 176px;
   place-items: end center;
   padding: 0;
   overflow: visible;
@@ -50,19 +91,17 @@
 }
 .fazil-character-trigger img {
   display: block;
-  width: 164px;
-  height: 232px;
+  width: 176px;
+  height: 176px;
   object-fit: contain;
-  transform-origin: 50% 100%;
-  filter: drop-shadow(0 8px 6px rgba(8, 8, 8, .18));
-  animation: fazil-character-dance 4.4s ease-in-out infinite;
+  transform-origin: 50% 90%;
+  filter: drop-shadow(0 4px 5px rgba(8, 8, 8, .14));
+  animation: fazil-character-work 6.4s ease-in-out infinite;
 }
 .fazil-document-hidden .fazil-character-trigger img { animation-play-state: paused; }
-@keyframes fazil-character-dance {
-  0%, 100% { transform: translate3d(0, 0, 0) rotateY(-2deg) rotateZ(-1deg); }
-  24% { transform: translate3d(0, -7px, 0) rotateY(5deg) rotateZ(2.2deg); }
-  50% { transform: translate3d(0, -2px, 0) rotateY(-4deg) rotateZ(-2deg); }
-  76% { transform: translate3d(0, -8px, 0) rotateY(4deg) rotateZ(1.8deg); }
+@keyframes fazil-character-work {
+  0%, 100% { transform: translate3d(0, 0, 0) rotateZ(0); }
+  48% { transform: translate3d(0, -1.5px, 0) rotateZ(.15deg); }
 }
 .fazil-whatsapp-launcher {
   display: inline-flex;
@@ -124,8 +163,7 @@
 .fazil-chat-mark { display: grid; place-items: center; flex: none; width: 38px; height: 38px; border: 1px solid #FFB638; border-radius: 12px; color: #FFB638; font-family: var(--font-heading), sans-serif; font-size: 13px; font-weight: 700; letter-spacing: -.02em; }
 .fazil-chat-heading { min-width: 0; flex: 1; }
 .fazil-chat-heading h2 { margin: 0 0 3px; color: inherit; font-family: var(--font-heading), sans-serif; font-size: 17px; font-weight: 650; line-height: 1.2; }
-.fazil-chat-heading p { display: flex; align-items: center; gap: 7px; margin: 0; color: #D2D0CC; font-size: 12px; line-height: 1.4; }
-.fazil-chat-status-dot { width: 7px; height: 7px; border-radius: 50%; background: #FFB638; }
+.fazil-chat-heading p { margin: 0; color: #D2D0CC; font-size: 11px; line-height: 1.4; }
 .fazil-chat-close { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid rgba(255,255,255,.35); border-radius: 12px; color: #FFFFFF; background: transparent; cursor: pointer; }
 .fazil-chat-close svg { width: 18px; height: 18px; }
 .fazil-chat-disclosure { padding: 12px 18px; color: #414141; background: #E7E5E1; border-bottom: 1px solid #D2D0CC; font-size: 12px; line-height: 1.5; }
@@ -173,10 +211,11 @@ body.fazil-chat-open { overflow: hidden; }
 
 @media (max-width: 640px) {
   .fazil-contact-dock { right: max(12px, env(safe-area-inset-right)); bottom: calc(14px + env(safe-area-inset-bottom)); width: min(176px, calc(100vw - 24px)); }
-  .fazil-character-greeting { padding: 7px 10px; font-size: 12px; }
-  .fazil-character-stage { width: 150px; height: 172px; }
-  .fazil-character-trigger { width: 130px; height: 172px; }
-  .fazil-character-trigger img { width: 130px; height: 172px; }
+  .fazil-character-greeting { padding: 6px 7px 6px 10px; }
+  .fazil-greeting-open > span:first-child { font-size: 12px; }
+  .fazil-character-stage { width: 158px; height: 152px; }
+  .fazil-character-trigger { width: 150px; height: 150px; }
+  .fazil-character-trigger img { width: 150px; height: 150px; }
   .fazil-contact-actions { gap: 6px; }
   .fazil-whatsapp-launcher { min-height: 45px; gap: 7px; padding: 0 7px; font-size: 10.5px; }
   .fazil-whatsapp-launcher svg { width: 18px; height: 18px; }
@@ -187,6 +226,8 @@ body.fazil-chat-open { overflow: hidden; }
   .fazil-chat-footer { padding: 10px 13px max(10px, env(safe-area-inset-bottom)); }
 }
 @media (prefers-reduced-motion: reduce) {
+  .fazil-character-greeting,
+  .fazil-character-stage,
   .fazil-character-trigger img,
   .fazil-whatsapp-launcher,
   .fazil-chat-panel,

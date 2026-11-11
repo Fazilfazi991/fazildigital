@@ -12,9 +12,16 @@ type Availability = "checking" | "available" | "unavailable";
 
 const saudigreeting = "Hi! I'm Fazil Digital's AI assistant. I can help with SEO, organic growth and services for Saudi businesses. What would you like to know?";
 const calicutGreeting = "Hi! I can help you explore SEO and organic growth for a business serving Calicut or Kozhikode. Choose a quick question or prepare a message for Mohammad.";
-const saudiSuggestions = ["Help with my website SEO", "SEO services in Riyadh", "How SEO pricing works", "Talk to Mohammad"];
-const calicutSuggestions = ["Can I discuss SEO for a Calicut business?", "What SEO work can we discuss?", "Does Google Business Profile fit my business?", "Talk to Mohammad"];
+const suggestions = [
+  "Improve my website SEO",
+  "I need digital marketing help",
+  "I want a website or CRM",
+  "I want to talk to Mohammad",
+  "I run a business in Saudi Arabia",
+  "I run a business in Calicut",
+];
 const handoffLink = "https://wa.me/918086191325";
+const greetingStorageKey = "fazil-digital-assistant-greeting-seen:v2";
 
 function track(name: "chat_open" | "chat_message_sent" | "chat_handoff_intent" | "chat_error") {
   window.gtag?.("event", name);
@@ -40,7 +47,10 @@ export function ChatAssistant() {
   const [goal, setGoal] = useState("");
   const [copied, setCopied] = useState(false);
   const [dockVisible, setDockVisible] = useState(false);
-  const returnFocusRef = useRef<HTMLButtonElement>(null);
+  const [greetingVisible, setGreetingVisible] = useState(false);
+  const greetingSeenRef = useRef(false);
+  const characterTriggerRef = useRef<HTMLButtonElement>(null);
+  const restoreFocusRef = useRef(false);
   const closeRef = useRef<HTMLButtonElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
@@ -65,11 +75,38 @@ export function ChatAssistant() {
   }, []);
 
   useEffect(() => {
-    const updateDockVisibility = () => setDockVisible(window.scrollY > 120);
+    let mounted = false;
+    const updateDockVisibility = () => {
+      const visible = window.scrollY > 120;
+      setDockVisible(visible);
+      if (mounted && !visible) setGreetingVisible(false);
+    };
     updateDockVisibility();
+    mounted = true;
     window.addEventListener("scroll", updateDockVisibility, { passive: true });
     return () => window.removeEventListener("scroll", updateDockVisibility);
   }, []);
+
+  useEffect(() => {
+    if (!dockVisible || open) return;
+
+    try {
+      if (window.sessionStorage.getItem(greetingStorageKey)) {
+        greetingSeenRef.current = true;
+        return;
+      }
+    } catch {
+      // Keep the greeting limited to one appearance during this component session.
+    }
+
+    if (greetingSeenRef.current) return;
+    const timer = window.setTimeout(() => {
+      greetingSeenRef.current = true;
+      setGreetingVisible(true);
+      try { window.sessionStorage.setItem(greetingStorageKey, "shown"); } catch { /* Session-only fallback is held in the ref. */ }
+    }, 900);
+    return () => window.clearTimeout(timer);
+  }, [dockVisible, open]);
 
   useEffect(() => {
     if (open) {
@@ -77,6 +114,10 @@ export function ChatAssistant() {
       document.body.classList.add("fazil-chat-open");
     } else {
       document.body.classList.remove("fazil-chat-open");
+      if (restoreFocusRef.current) {
+        restoreFocusRef.current = false;
+        characterTriggerRef.current?.focus();
+      }
     }
     return () => document.body.classList.remove("fazil-chat-open");
   }, [open]);
@@ -87,14 +128,22 @@ export function ChatAssistant() {
   }, [messages, busy]);
 
   function close() {
+    restoreFocusRef.current = true;
     setOpen(false);
-    requestAnimationFrame(() => returnFocusRef.current?.focus());
   }
 
-  function openAssistant(event: React.MouseEvent<HTMLButtonElement>) {
-    returnFocusRef.current = event.currentTarget;
+  function openAssistant() {
+    greetingSeenRef.current = true;
+    setGreetingVisible(false);
+    try { window.sessionStorage.setItem(greetingStorageKey, "shown"); } catch { /* The greeting stays dismissed for this component session. */ }
     setOpen(true);
     track("chat_open");
+  }
+
+  function dismissGreeting() {
+    greetingSeenRef.current = true;
+    setGreetingVisible(false);
+    try { window.sessionStorage.setItem(greetingStorageKey, "shown"); } catch { /* The greeting stays dismissed for this component session. */ }
   }
 
   function onDialogKeyDown(event: React.KeyboardEvent) {
@@ -171,38 +220,53 @@ export function ChatAssistant() {
     }
   }
 
-  function answerCalicutQuestion(question: string) {
-    const answers: Record<string, string> = {
-      [calicutSuggestions[0]]: "Yes. Remote SEO and organic-growth consultancy is available to discuss for businesses serving Calicut, Kozhikode and Kerala. This does not represent a local office.",
-      [calicutSuggestions[1]]: "The current focus is SEO and organic growth: technical reviews, on-page and content strategy, local-search foundations and a practical roadmap. Paid ads and social media management are not listed as active services here.",
-      [calicutSuggestions[2]]: "We can discuss accurate local-search foundations. Google Business Profile eligibility depends on in-person customer contact and how a business operates. Never add a fictitious address; no Maps placement is guaranteed.",
-    };
-    const answer = answers[question];
-    if (answer) setMessages((current) => [...current, { role: "user", content: question }, { role: "assistant", content: answer }]);
-    else setHandoff(true);
+  function handleSuggestion(suggestion: string) {
+    if (suggestion === "I want to talk to Mohammad" || availability !== "available") {
+      if (suggestion !== "I want to talk to Mohammad") setGoal(suggestion);
+      setHandoff(true);
+      return;
+    }
+    void send(suggestion);
   }
 
-  const suggestions = isCalicut ? calicutSuggestions : saudiSuggestions;
   const greeting = isCalicut ? calicutGreeting : saudigreeting;
+  const floatingGreeting = isCalicut
+    ? "Need help growing your business online in Calicut?"
+    : normalizedPathname === "/about"
+      ? "Got a project in mind? Let’s talk."
+      : normalizedPathname === "/"
+        ? "Hey! Need help getting found on Google?"
+        : /\/(riyadh|jeddah|dammam)\/seo$/.test(normalizedPathname) || normalizedPathname === "/services/seo"
+          ? "Want to improve your SEO in Saudi Arabia?"
+          : "Hey! Need help with your website?";
 
   return (
     <>
-      {!open && dockVisible && <div className="fazil-contact-dock" role="group" aria-label="SEO assistant and WhatsApp contact">
-        <p className="fazil-character-greeting">Hi! Need a hand with SEO?</p>
+      {!open && dockVisible && <div className={`fazil-contact-dock${greetingVisible ? " is-greeting" : ""}`} role="group" aria-label="AI assistant and WhatsApp contact">
+        {greetingVisible && <div className="fazil-character-greeting" role="status" aria-live="polite">
+          <button type="button" className="fazil-greeting-open" onClick={openAssistant}>
+            <span>{floatingGreeting}</span>
+            <span className="fazil-greeting-cta">Ask my AI assistant</span>
+          </button>
+          <button type="button" className="fazil-greeting-dismiss" aria-label="Dismiss greeting" onClick={dismissGreeting}>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
+          </button>
+        </div>}
         <div className="fazil-character-stage">
           <button
             type="button"
             className="fazil-character-trigger"
-            aria-label={isCalicut ? "Open Calicut SEO assistant" : "Open Fazil Digital AI Assistant"}
+            ref={characterTriggerRef}
+            aria-label={isCalicut ? "Open Calicut AI SEO assistant" : "Open Fazil Digital AI Assistant"}
             onClick={openAssistant}
           >
             <Image
-              src="/images/chatbot/fazil-avatar-dance.webp"
+              src="/images/chatbot/fazil-at-work.webp"
               alt=""
               width={480}
-              height={720}
-              sizes="(max-width: 640px) 116px, 174px"
-              preload
+              height={480}
+              sizes="(max-width: 640px) 150px, 176px"
+              loading="lazy"
             />
           </button>
         </div>
@@ -216,8 +280,8 @@ export function ChatAssistant() {
           <header className="fazil-chat-header">
             <div className="fazil-chat-mark" aria-hidden="true">FD</div>
             <div className="fazil-chat-heading">
-              <h2 id="fazil-chat-title">Fazil Digital</h2>
-              <p><span className="fazil-chat-status-dot" /> AI assistant for SEO</p>
+              <h2 id="fazil-chat-title">Fazil’s AI Assistant</h2>
+              <p>Here to help with SEO, digital marketing, websites, CRM and AI automation.</p>
             </div>
             <button ref={closeRef} className="fazil-chat-close" type="button" aria-label="Close chat" onClick={close}>
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
@@ -230,14 +294,14 @@ export function ChatAssistant() {
             <article className="fazil-chat-message assistant"><p>{greeting}</p></article>
             {availability === "checking" && <p className="fazil-chat-state">Checking assistant availability…</p>}
             {availability === "unavailable" && <div className="fazil-chat-unavailable" role="status">
-              <p>{isCalicut ? "Live AI replies are offline. Quick answers and useful Calicut guides are available below." : "Live chat is currently unavailable. You can browse the SEO services or contact Mohammad directly."}</p>
+              <p>Live AI replies are offline. Choose a prompt to prepare a WhatsApp message, or browse a useful page below.</p>
               <div className="fazil-chat-shortcuts">{isCalicut ? <><Link href="/blog/calicut-business-google-visibility-guide/">Calicut SEO guide</Link><Link href="/blog/google-business-profile-vs-website-seo-kozhikode/">Profile vs website SEO</Link><Link href="/digital-marketing-expert-calicut/#review">Contact Mohammad</Link></> : <><Link href="/services/seo/">SEO services</Link><Link href="/riyadh/seo/">Riyadh SEO</Link><Link href="/contact/">Contact</Link></>}</div>
             </div>}
             {messages.map((message, index) => <article key={`${index}-${message.role}`} className={`fazil-chat-message ${message.role}`}>
               <p>{message.content || (busy && index === messages.length - 1 ? <span className="fazil-chat-typing" aria-label="Assistant is replying"><i /><i /><i /></span> : "")}</p>
             </article>)}
-            {messages.length === 0 && (availability === "available" || isCalicut) && <div className="fazil-chat-suggestions" aria-label="Suggested questions">
-              {suggestions.map((suggestion) => <button key={suggestion} type="button" disabled={busy} onClick={() => isCalicut && availability !== "available" ? answerCalicutQuestion(suggestion) : suggestion === "Talk to Mohammad" ? setHandoff(true) : send(suggestion)}>{suggestion}</button>)}
+            {messages.length === 0 && availability !== "checking" && <div className="fazil-chat-suggestions" aria-label="Suggested questions">
+              {suggestions.map((suggestion) => <button key={suggestion} type="button" disabled={busy} onClick={() => handleSuggestion(suggestion)}>{suggestion}</button>)}
             </div>}
             {error && <p className="fazil-chat-error" role="alert">{error}</p>}
             {handoff && <div className="fazil-chat-handoff">
