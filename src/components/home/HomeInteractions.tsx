@@ -39,7 +39,7 @@ export function ProcessMotion() {
   return <div ref={marker} className="fd-process-rule" aria-hidden="true" />;
 }
 
-export function ReviewForm() {
+export function ReviewForm({ market = "saudi" }: { market?: "saudi" | "calicut" }) {
   const [draft, setDraft] = useState<string | null>(null);
   const [copyState, setCopyState] = useState<"idle" | "copied" | "manual">("idle");
   const ready = useSyncExternalStore(subscribeToHydration, () => true, () => false);
@@ -52,7 +52,10 @@ export function ReviewForm() {
     const name = String(data.get("name") || "").trim();
     const website = String(data.get("website") || "").trim();
     const goal = String(data.get("goal") || "").trim();
-    const message = `Hello Mohammad, I'd like to request an SEO review for my Saudi business.\nName: ${name}\nWebsite: ${website}${goal ? `\nPriority: ${goal}` : ""}`;
+    const greeting = market === "calicut"
+      ? "Hello Mohammad, I'd like to discuss SEO and digital marketing for my business in Calicut/Kozhikode."
+      : "Hello Mohammad, I'd like to request an SEO review for my Saudi business.";
+    const message = `${greeting}\nName: ${name}\nWebsite: ${website}${goal ? `\nPriority: ${goal}` : ""}`;
     setDraft(message);
     setCopyState("idle");
     window.dispatchEvent(new CustomEvent("fazil:conversion", { detail: { event: "review_intent" } }));

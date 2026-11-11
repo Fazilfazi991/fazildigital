@@ -9,17 +9,18 @@ assert.match(baseURL, /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?\/?$/, "Use a 
 const bundledPlaywright = "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1030-493-0_26.1030.493.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/playwright/index.mjs";
 const { chromium } = await import(pathToFileURL(process.env.PLAYWRIGHT_MODULE || bundledPlaywright));
 const executablePath = process.env.BROWSER_PATH || ["C:/Program Files/Google/Chrome/Application/chrome.exe", "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"].find(existsSync);
-const coreRoutes = ["/", "/services/seo/", "/services/local-seo/", "/services/technical-seo/", "/services/content-marketing/", "/riyadh/seo/", "/jeddah/seo/", "/dammam/seo/", "/about/", "/contact/", "/case-studies/", "/blog/"];
+const coreRoutes = ["/", "/services/seo/", "/services/local-seo/", "/services/technical-seo/", "/services/content-marketing/", "/riyadh/seo/", "/jeddah/seo/", "/dammam/seo/", "/about/", "/contact/", "/case-studies/", "/blog/", "/digital-marketing-expert-calicut/"];
 const articleSlugs = ["seo-services-saudi-arabia-guide", "seo-cost-saudi-arabia-scope-guide", "riyadh-seo-strategy-guide", "arabic-vs-english-seo-saudi-arabia", "local-seo-saudi-businesses-guide", "technical-seo-audit-saudi-websites", "organic-content-strategy-saudi-businesses", "google-search-console-seo-measurement-guide"];
 const legacyReadingSamples = ["/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/"];
 const routes = [...coreRoutes, ...articleSlugs.map(slug => `/blog/${slug}/`), ...legacyReadingSamples];
 const widths = [320, 390, 768, 1024, 1440];
 const captureRun = new Date().toISOString().replace(/[:.]/g, "-");
-const screenshotRelativeDir = `previews/release-final/verified-${captureRun}`;
+const artifactDir = path.resolve(process.env.QA_ARTIFACT_DIR || "reports");
+const screenshotRelativeDir = `previews/calicut-final-broad/verified-${captureRun}`;
 const screenshotDir = path.resolve(screenshotRelativeDir);
 const buildId = (await readFile(path.resolve(".next/BUILD_ID"), "utf8")).trim();
 await mkdir(screenshotDir, { recursive: true });
-await mkdir(path.resolve("reports"), { recursive: true });
+await mkdir(artifactDir, { recursive: true });
 const browser = await chromium.launch({ headless: true, ...(executablePath ? { executablePath } : {}) });
 const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1, reducedMotion: "reduce" });
 const results = [];
@@ -134,7 +135,7 @@ try {
       outcomes.push({ route, status: response.status() });
       assert.equal(response.status(), 200, route);
     }));
-    await writeFile(path.resolve("reports/release-final-link-checks.json"), JSON.stringify(outcomes, null, 2));
+    await writeFile(path.join(artifactDir, "calicut-release-final-link-checks.json"), JSON.stringify(outcomes, null, 2));
   });
 
   await check("All 115 original HTML URLs remain reachable", async () => {
@@ -147,7 +148,7 @@ try {
       outcomes.push({ route, status: response.status() });
       assert.equal(response.status(), 200, route);
     }));
-    await writeFile(path.resolve("reports/release-final-original-url-checks.json"), JSON.stringify(outcomes, null, 2));
+    await writeFile(path.join(artifactDir, "calicut-release-final-original-url-checks.json"), JSON.stringify(outcomes, null, 2));
   });
 
   await check("Homepage guides and commercial journeys navigate to their destinations", async () => {
@@ -225,7 +226,7 @@ try {
     assert.ok(events.some(event => event[1] === "whatsapp_click"));
     assert.ok(!events.some(event => event[1] === "generate_lead"), "No inferred qualified lead event");
     assert.doesNotMatch(JSON.stringify(events), /QA Reviewer|example\.com|Riyadh visibility/);
-    await writeFile(path.resolve("reports/release-final-synthetic-analytics.json"), JSON.stringify({ measurementId: "G-TESTONLY", intercepted: true, events }, null, 2));
+    await writeFile(path.join(artifactDir, "calicut-release-final-synthetic-analytics.json"), JSON.stringify({ measurementId: "G-TESTONLY", intercepted: true, events }, null, 2));
     await page.locator("#review-goal").fill("A changed priority");
     assert.equal(await page.locator(".fd-draft").count(), 0, "Editing invalidates the old draft");
   });
@@ -257,11 +258,11 @@ try {
   const passed = results.filter(result => result.status === "PASS").length;
   const failed = results.filter(result => result.status === "FAIL").length;
   const run = { generatedAt: new Date().toISOString(), baseURL, buildId, captureRun, screenshotRelativeDir, passed, failed, results, layouts, metadata, observations, screenshots, runtimeErrors, failedResources, blockedExternal };
-  await writeFile(path.resolve("reports/release-final-browser-results.json"), JSON.stringify(run, null, 2));
+  await writeFile(path.join(artifactDir, "calicut-release-final-browser-results.json"), JSON.stringify(run, null, 2));
   const report = `# Final release browser verification\n\nRun: ${run.generatedAt}. Local production target: ${baseURL}. Installed Chromium via Playwright, headless. ${passed} checks passed; ${failed} failed.\n\n## Coverage\n\nTwenty rebuilt/new routes (homepage, four services, three Saudi city pages, About, Contact, Case Studies, Blog and all eight original guides), plus the historically important Snapchat article, at 320, 390, 768, 1024 and 1440 pixels. Expected coverage is 42 desktop/mobile viewport screenshots plus two homepage full-page captures in previews/release-final; actual captures are listed below. All 115 original HTML URLs are checked separately.\n\n| Check | Result |\n| --- | --- |\n${results.map(result => `| ${result.name} | ${result.status} |`).join("\n")}\n\n${failed ? `## Failures\n\n${results.filter(result => result.status === "FAIL").map(result => `- ${result.name}: ${result.message}`).join("\n")}\n\n` : ""}## Evidence\n\n- Complete results, responsive dimensions, metadata and resource observations: reports/release-final-browser-results.json.\n- Link responses: reports/release-final-link-checks.json.\n- Original URL responses: reports/release-final-original-url-checks.json.\n- Synthetic analytics mapping: reports/release-final-synthetic-analytics.json.\n\n## Screenshots\n\n${screenshots.map(item => `- [${item.route} at ${item.width}px](${item.file})`).join("\n")}\n\n## Interpretation and limits\n\nAnalytics uses the synthetic G-TESTONLY build configuration. All Google and WhatsApp requests are intercepted; the outbound review link click is prevented from opening another page. These checks validate local intent and click mappings, not delivery to a GA account, a sent WhatsApp message or a qualified lead. The form stores no backend submission.\n\nLocal LCP/CLS/resource observations are one synthetic navigation under a local server; they are not field Core Web Vitals, an INP assessment or a Lighthouse score. Keyboard, semantics, native form validation, reduced motion and no-JavaScript checks are useful coverage, not a WCAG certification. Compilation, full lint, dependency audit and technical sitemap/redirect assertions are separately owned by the technical engineer. Screenshots require visual inspection before design approval. No production deployment, merge or external enquiry is performed.\n`;
   const comparisons = `# Phase 3 screenshot inventory\n\nCurrent local production build: \`${buildId}\`, captured at ${run.generatedAt}, target ${baseURL}. Phase 2 images are historical before-reference captures; Phase 3 images come from this verified current build, with matching 1440 × 1000 desktop and 390 × 844 mobile viewports. All network requests outside the local preview origin are intercepted. No production deployment or external enquiry is performed.\n\n| Page | Width | Before: Phase 2 | After: Phase 3 |\n| --- | ---: | --- | --- |\n${screenshots.map(item => `| ${item.route} | ${item.width} | ${item.before ? `[Before](${item.before})` : "No matching historical capture"} | [After](${item.file}) |`).join("\n")}\n\nHomepage full-page captures: [desktop](${screenshotRelativeDir}/home-desktop-full.png), [mobile](${screenshotRelativeDir}/home-mobile-full.png). These include the updated three insight cards and five additional Saudi guide links.\n\nVisual inspection observations are appended after reviewing the captures; compilation/overflow success alone does not constitute design approval.\n`;
-  await writeFile(path.resolve("RELEASE-SCREENSHOT-INVENTORY.md"), comparisons);
-  await writeFile(path.resolve("RELEASE-BROWSER-VERIFICATION.md"), report + `\n## Build and comparison provenance\n\nLocal build ID: \`${buildId}\`. Capture run: ${captureRun}. Actual screenshot folder: \`${screenshotRelativeDir}\`. See [before/after inventory](RELEASE-SCREENSHOT-INVENTORY.md). Phase 2 files were preserved and not overwritten.\n`);
+  await writeFile(path.join(artifactDir, "CALICUT-RELEASE-SCREENSHOT-INVENTORY.md"), comparisons);
+  await writeFile(path.join(artifactDir, "CALICUT-RELEASE-BROWSER-VERIFICATION.md"), report + `\n## Build and comparison provenance\n\nLocal build ID: \`${buildId}\`. Capture run: ${captureRun}. Actual screenshot folder: \`${screenshotRelativeDir}\`. See [before/after inventory](RELEASE-SCREENSHOT-INVENTORY.md). Phase 2 files were preserved and not overwritten.\n`);
   console.log(JSON.stringify({ passed, failed, screenshotCount: screenshots.length + fullScreenshots, responsiveCases: layouts.length }, null, 2));
   if (failed) process.exitCode = 1;
 }

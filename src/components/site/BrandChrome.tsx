@@ -21,8 +21,10 @@ export function SiteHeader() {
   const pathname = usePathname() || "/";
   const mobileMenu = useRef<HTMLDetailsElement>(null);
   const isHome = pathname === "/";
-  const reviewHref = isHome ? "#review" : "/contact/";
-  const navLinks = links.map(link => ({ ...link, href: link.homeHref && isHome ? link.homeHref : link.href }));
+  const isCalicut = pathname === "/digital-marketing-expert-calicut" || pathname === "/digital-marketing-expert-calicut/";
+  const calicutContact = "/contact/?market=calicut#contact-prepare";
+  const reviewHref = isHome ? "#review" : isCalicut ? calicutContact : "/contact/";
+  const navLinks = links.map(link => ({ ...link, href: link.homeHref && isHome ? link.homeHref : isCalicut && link.label === "Contact" ? calicutContact : link.href }));
 
   useEffect(() => {
     const closeOnEscape = (event: KeyboardEvent) => {
@@ -56,6 +58,8 @@ export function SiteHeader() {
 }
 
 export function SiteFooter() {
+  const pathname = usePathname() || "/";
+  const isCalicut = pathname === "/digital-marketing-expert-calicut" || pathname === "/digital-marketing-expert-calicut/";
   return <footer className="fd-footer fd-container">
     <div className="fd-footer-top">
       <div className="fd-footer-identity"><Link href="/" aria-label="Fazil Digital home" className="fd-wordmark">fazil<span className="fd-wordmark-dot">.</span><span className="fd-wordmark-digital">digital</span></Link><p>SEO and organic growth<br />for Saudi businesses.</p></div>
@@ -64,7 +68,7 @@ export function SiteFooter() {
         <Link href="/services/local-seo/">Local SEO</Link><Link href="/services/content-marketing/">Content Strategy</Link>
         <Link href="/riyadh/seo/">Riyadh SEO</Link><Link href="/jeddah/seo/">Jeddah SEO</Link>
         <Link href="/dammam/seo/">Dammam SEO</Link><Link href="/about/">About Me</Link>
-        <Link href="/case-studies/">Project Notes</Link><Link href="/blog/">Insights</Link><Link href="/contact/">Contact</Link>
+        <Link href="/case-studies/">Project Notes</Link><Link href="/blog/">Insights</Link><Link href={isCalicut ? "/contact/?market=calicut#contact-prepare" : "/contact/"}>Contact</Link>
       </nav>
       <a className="fd-back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </div>

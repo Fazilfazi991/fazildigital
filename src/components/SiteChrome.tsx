@@ -10,7 +10,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
   if (pathname === "/") return <>{children}<ChatAssistant /></>;
 
   const legacyOffer = /^(\/services|\/locations|\/markets|\/methodology|\/digital-marketing-expert-dubai|\/portfolio|\/case-studies\/|\/(dubai|abu-dhabi|sharjah|riyadh|jeddah|dammam)\/)/.test(pathname);
-  const modern = ["/about", "/contact", "/case-studies", "/blog", "/services/seo", "/services/local-seo", "/services/technical-seo", "/services/content-marketing", "/riyadh/seo", "/jeddah/seo", "/dammam/seo"].some(route => pathname === route || pathname === `${route}/` || (route === "/blog" && pathname.startsWith("/blog/")));
+  const modern = ["/about", "/contact", "/case-studies", "/blog", "/services/seo", "/services/local-seo", "/services/technical-seo", "/services/content-marketing", "/riyadh/seo", "/jeddah/seo", "/dammam/seo", "/digital-marketing-expert-calicut"].some(route => pathname === route || pathname === `${route}/` || (route === "/blog" && pathname.startsWith("/blog/")));
 
   return <div className="fd-home" id="top">
     <a className="fd-skip" href="#main-content">Skip to content</a>

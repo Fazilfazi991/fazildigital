@@ -362,6 +362,7 @@ export default function AboutPage() {
           </div>
           <div className="fd-about-contact-actions">
             <Link className="fd-about-button fd-about-button-light" href="/contact/">Discuss SEO goals <span aria-hidden="true">↗</span></Link>
+            <Link href="/digital-marketing-expert-calicut/">Calicut and Kozhikode consultancy</Link>
             <a href="https://wa.me/971542763828" target="_blank" rel="noopener noreferrer">Contact Mohammad on WhatsApp <span aria-hidden="true">↗</span></a>
             <a href={profileUrl} target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
