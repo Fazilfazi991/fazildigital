@@ -1,0 +1,25 @@
+{
+  "measurementId": "G-TESTONLY",
+  "intercepted": true,
+  "events": [
+    [
+      "event",
+      "seo_review_intent",
+      {
+        "method": "whatsapp"
+      }
+    ],
+    [
+      "event",
+      "contact_form_submit",
+      {
+        "method": "whatsapp"
+      }
+    ],
+    [
+      "event",
+      "whatsapp_click",
+      {}
+    ]
+  ]
+}

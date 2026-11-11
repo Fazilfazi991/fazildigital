@@ -7,10 +7,10 @@ import { clients } from "@/data/portfolio";
 import { Accordion } from "@/components/Accordion";
 
 export const metadata: Metadata = {
-  title: "Sharjah Digital Marketing | Top 3 Rankings & AI-First Strategy",
-  description: "Scale your Sharjah business with expert SEO, Snapchat ads, and Agentic AI automation. Specialized hubs for Shams, SAIF Zone, and Northern Emirates growth. Rank Top 3 guaranteed.",
+  title: "Digital Marketing in Sharjah | Strategy & Search Visibility",
+  description: "Explore digital marketing, SEO and content planning for Sharjah businesses. Work directly with Mohammad Fazil on a strategy shaped around your goals and evidence.",
   alternates: {
-    canonical: "https://www.fazildigital.com/sharjah/digital-marketing",
+    canonical: "https://www.fazildigital.com/sharjah/digital-marketing/",
   },
 };
 
@@ -19,23 +19,13 @@ export default function SharjahDigitalMarketing() {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "LocalBusiness",
-        "name": "Fazil Digital Consulting - Sharjah SEO Hub",
-        "description": "High-performance digital consultancy specialized in Northern Emirates market dominance.",
-        "url": "https://www.fazildigital.com/sharjah/digital-marketing",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Sharjah",
-          "addressCountry": "AE"
-        },
-        "areaServed": ["Sharjah", "Ajman", "Umm Al Quwain", "Ras Al Khaimah"]
-      },
-      {
         "@type": "Service",
-        "name": "Sharjah SEO & Performance Lead Gen",
+        "name": "Digital marketing consulting for Sharjah businesses",
+        "url": "https://www.fazildigital.com/sharjah/digital-marketing/",
         "provider": {
           "@type": "Person",
-          "name": "Mohammad Fazil"
+          "name": "Mohammad Fazil",
+          "@id": "https://www.fazildigital.com/#person"
         },
         "areaServed": "Sharjah"
       }

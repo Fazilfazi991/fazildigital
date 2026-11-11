@@ -1,127 +1,59 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { Button } from "@/components/Button";
+import { JsonLd, PageCTA, pageMetadata } from "@/components/site/PageElements";
 import { blogPosts } from "@/data/blog";
+import { saudiArticles } from "@/data/saudi-articles";
+import "../../editorial-pages.css";
 
-interface Props {
-  params: Promise<{ slug: string }>;
-}
-
-// Mock data for static generation (matching the hub page)
-
-
-export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
-    slug: post.slug,
-  }));
-}
+interface Props { params: Promise<{ slug: string }> }
+export function generateStaticParams() { return blogPosts.map(post => ({ slug: post.slug })); }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const post = blogPosts.find((p) => p.slug === slug);
+  const post = blogPosts.find(item => item.slug === slug);
   if (!post) return {};
+  return { ...pageMetadata({ title: post.title, description: post.excerpt || post.content.replace(/<[^>]*>/g, "").slice(0, 155), path: `/blog/${slug}/` }), openGraph: { type: "article", title: post.title, description: post.excerpt, url: `https://www.fazildigital.com/blog/${slug}/`, siteName: "Fazil Digital", publishedTime: articleDate(post.date), modifiedTime: articleDate(post.lastModified || post.date), authors: ["Mohammad Fazil"] } };
+}
 
-  return {
-    // The root layout applies the brand title template.
-    title: post.title,
-    description: post.excerpt || post.content.replace(/<[^>]*>/g, "").substring(0, 155),
-    alternates: {
-      canonical: `https://www.fazildigital.com/blog/${slug}/`,
-    },
-  };
+/** Data stores calendar dates; never interpret a named date in the server's local timezone. */
+function articleDate(value: string) { return new Date(/^\d{4}-\d{2}-\d{2}(?:T|$)/.test(value) ? value : `${value} UTC`).toISOString(); }
+function formatDate(value: string) { return new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(articleDate(value))); }
+
+/** Repository-authored HTML only. Drop historical presentation, preserve its content and links. */
+function articlePresentation(content: string) {
+  const sections: { id: string; title: string }[] = [];
+  let previousLevel = 1;
+  const readable = content.replace(/\s(?:class|style)="[^"]*"/g, "").replace(/<h([2-6])\b([^>]*)>([\s\S]*?)<\/h\1>/gi, (_match, level: string, attributes: string, heading: string) => {
+    const nextLevel = Math.min(Number(level), previousLevel + 1);
+    previousLevel = nextLevel;
+    return `<h${nextLevel}${attributes}>${heading}</h${nextLevel}>`;
+  });
+  const html = readable.replace(/<h2\b([^>]*)>([\s\S]*?)<\/h2>/gi, (_match, attributes: string, heading: string) => {
+    const id = attributes.match(/\s+id="([^"]*)"/)?.[1] || `guide-section-${sections.length + 1}`;
+    sections.push({ id, title: heading.replace(/<[^>]*>/g, "").replaceAll("&amp;", "&").replaceAll("&nbsp;", " ").replaceAll("&quot;", '"') });
+    return `<h2${attributes.replace(/\s+id="[^"]*"/g, "")} id="${id}">${heading}</h2>`;
+  });
+  return { html, sections };
 }
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
-  const post = blogPosts.find((p) => p.slug === slug);
-
+  const post = blogPosts.find(item => item.slug === slug);
   if (!post) notFound();
-
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: post.title,
-    description: post.excerpt || post.content.substring(0, 155).replace(/<[^>]*>/g, ""),
-    image: 'https://www.fazildigital.com/og-image.jpg',
-    wordCount: post.content.split(/\s+/).length,
-    datePublished: new Date(post.date).toISOString(),
-    dateModified: new Date(post.lastModified || post.date).toISOString(),
-    author: {
-      '@type': 'Person',
-      '@id': 'https://www.fazildigital.com/#person',
-      name: 'Mohammad Fazil',
-      url: 'https://www.fazildigital.com/about/',
-      sameAs: ['https://linkedin.com/in/fazilfazi']
-    },
-    publisher: {
-      '@type': 'Organization',
-      '@id': 'https://www.fazildigital.com/#organization',
-      name: 'Fazil Digital',
-      url: 'https://www.fazildigital.com/',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://www.fazildigital.com/icon.png'
-      }
-    }
-  };
-
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <article className="pt-24 pb-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/blog" className="text-accent hover:underline mb-8 inline-block font-medium">
-            ← Back to Blog
-          </Link>
-        
-        <header className="mb-12">
-          {/* LLM-Optimized Hidden Summary for Agent Triage */}
-          {post.llmSummary && (
-            <div className="hidden" aria-hidden="true" data-llm-summary>
-              {post.llmSummary}
-            </div>
-          )}
-          
-          <div className="flex flex-wrap items-center gap-4 text-xs font-bold tracking-widest uppercase text-accent mb-4">
-            <span>{post.category}</span>
-            <span className="w-1 h-1 rounded-full bg-white/20"></span>
-            <span className="text-text-muted">{post.date}</span>
-            {post.targetAudience && (
-              <>
-                <span className="w-1 h-1 rounded-full bg-white/20"></span>
-                <span className="text-text-muted/60 lowercase italic">Target: {post.targetAudience}</span>
-              </>
-            )}
-          </div>
-          <h1 className="text-4xl md:text-6xl font-heading font-bold text-bg-base leading-tight mb-6">
-            {post.title}
-          </h1>
-          <div className="flex items-center gap-3 pt-6 border-t border-white/5">
-            <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-primary font-bold text-xs">MF</div>
-            <p className="text-sm">
-              <span className="text-text-muted">By</span>{" "}
-              <Link href="/about" className="text-bg-base font-bold hover:text-accent transition-colors">Mohammad Fazil</Link>
-            </p>
-          </div>
-        </header>
-
-        <div 
-          className="blog-content-premium"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
-
-        <div className="mt-20 pt-12 border-t border-white/10 text-center">
-          <h2 className="text-2xl font-heading font-bold text-bg-base mb-6">
-            Ready to implement these insights in your business?
-          </h2>
-          <Button href="/contact">Get Your Free 30-Min Digital Audit</Button>
-        </div>
-      </div>
+  const { html, sections } = articlePresentation(post.content);
+  const isNewEditorial = saudiArticles.some(item => item.slug === post.slug);
+  const related = saudiArticles.filter(item => item.slug !== post.slug).slice(0, 3);
+  const wordCount = post.content.replace(/<[^>]*>/g, " ").trim().split(/\s+/).length;
+  const published = articleDate(post.date);
+  const modified = articleDate(post.lastModified || post.date);
+  return <>
+    <JsonLd data={{ "@context": "https://schema.org", "@type": "BlogPosting", "@id": `https://www.fazildigital.com/blog/${slug}/#article`, mainEntityOfPage: `https://www.fazildigital.com/blog/${slug}/`, headline: post.title, description: post.excerpt, datePublished: published, dateModified: modified, wordCount, inLanguage: "en", author: { "@type": "Person", "@id": "https://www.fazildigital.com/#person", name: "Mohammad Fazil", url: "https://www.fazildigital.com/about/", sameAs: ["https://linkedin.com/in/fazilfazi"] }, publisher: { "@type": "Organization", "@id": "https://www.fazildigital.com/#organization", name: "Fazil Digital", url: "https://www.fazildigital.com/", logo: { "@type": "ImageObject", url: "https://www.fazildigital.com/icon.png" } } }} />
+    <article>
+      <header className="fd-container fd-support-article-head"><nav aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><Link href="/blog/">Insights</Link><span aria-hidden="true">/</span><span>{post.category}</span></nav><p className="fd-support-caption">{isNewEditorial ? "Saudi SEO guide" : post.category}</p><h1>{post.title}</h1><p className="fd-support-article-deck">{post.excerpt}</p><div className="fd-support-byline"><Link href="/about/">Mohammad Fazil</Link><time dateTime={published}>{formatDate(post.date)}</time><span>{Math.max(1, Math.ceil(wordCount / 220))} min read</span>{post.lastModified && published !== modified && <span>Updated <time dateTime={modified}>{formatDate(post.lastModified)}</time></span>}</div></header>
+      <div className="fd-container fd-support-article-layout"><aside className="fd-support-toc"><nav aria-label="In this guide"><p>In this guide</p><ol>{sections.map(section => <li key={section.id}><a href={`#${section.id}`}>{section.title}</a></li>)}</ol></nav><Link href="/contact/" className="fd-text-link">Discuss your SEO goals <span aria-hidden="true">↗</span></Link></aside><div className="fd-support-article-body" dangerouslySetInnerHTML={{ __html: html }} /></div>
     </article>
-    </>
-  );
+    <section className="fd-support-band fd-section"><div className="fd-container"><div className="fd-section-heading"><h2>Keep the thinking going.</h2><Link href="/blog/" className="fd-text-link">All insights <span aria-hidden="true">↗</span></Link></div><div className="fd-support-related">{related.map(item => <article key={item.slug}><p className="fd-support-caption">{item.category}</p><h3><Link href={`/blog/${item.slug}/`}>{item.title}</Link></h3><p>{item.excerpt}</p></article>)}</div></div></section>
+    <PageCTA />
+  </>;
 }

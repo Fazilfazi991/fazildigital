@@ -1,0 +1,54 @@
+{
+  "captureRun": "2026-11-06T18-17-36-058Z",
+  "buildId": "NQj6taVFtuofoVXyiew00",
+  "sheets": [
+    {
+      "file": "previews/phase3/verified-2026-11-06T18-17-36-058Z/inspection-desktop-1.png",
+      "viewport": 1440,
+      "routes": [
+        "/",
+        "/services/seo/",
+        "/services/local-seo/",
+        "/services/technical-seo/",
+        "/services/content-marketing/",
+        "/riyadh/seo/"
+      ]
+    },
+    {
+      "file": "previews/phase3/verified-2026-11-06T18-17-36-058Z/inspection-desktop-2.png",
+      "viewport": 1440,
+      "routes": [
+        "/jeddah/seo/",
+        "/dammam/seo/",
+        "/about/",
+        "/contact/",
+        "/case-studies/",
+        "/blog/"
+      ]
+    },
+    {
+      "file": "previews/phase3/verified-2026-11-06T18-17-36-058Z/inspection-mobile-1.png",
+      "viewport": 390,
+      "routes": [
+        "/",
+        "/services/seo/",
+        "/services/local-seo/",
+        "/services/technical-seo/",
+        "/services/content-marketing/",
+        "/riyadh/seo/"
+      ]
+    },
+    {
+      "file": "previews/phase3/verified-2026-11-06T18-17-36-058Z/inspection-mobile-2.png",
+      "viewport": 390,
+      "routes": [
+        "/jeddah/seo/",
+        "/dammam/seo/",
+        "/about/",
+        "/contact/",
+        "/case-studies/",
+        "/blog/"
+      ]
+    }
+  ]
+}

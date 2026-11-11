@@ -55,7 +55,7 @@ export default function LocationsPage() {
         ))}
 
         <div className="border border-white/10 bg-[#050505] p-12 text-center mt-8">
-          <h2 className="text-3xl font-heading font-bold text-bg-base mb-4">Don't see your city?</h2>
+          <h2 className="text-3xl font-heading font-bold text-bg-base mb-4">Don&apos;t see your city?</h2>
           <p className="text-text-muted mb-8 max-w-xl mx-auto">Mohammad works with clients across the full GCC region — Bahrain, Kuwait, Qatar and beyond. Get in touch to discuss your location.</p>
           <Button href="/contact" className="text-lg px-8 py-4">Get in Touch</Button>
         </div>

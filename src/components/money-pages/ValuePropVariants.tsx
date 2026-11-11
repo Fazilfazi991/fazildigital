@@ -4,7 +4,7 @@ export interface ValuePropProps {
   deliverables: string[];
 }
 
-export function ValuePropGrid({ locationCity, serviceName, deliverables }: ValuePropProps) {
+export function ValuePropGrid({ locationCity, deliverables }: ValuePropProps) {
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#050505] border-b border-white/5">
       <div className="max-w-4xl mx-auto">

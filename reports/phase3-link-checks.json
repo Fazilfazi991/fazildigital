@@ -1,0 +1,286 @@
+[
+  {
+    "route": "/about/",
+    "status": 200
+  },
+  {
+    "route": "/services/technical-seo/",
+    "status": 200
+  },
+  {
+    "route": "/services/local-seo/",
+    "status": 200
+  },
+  {
+    "route": "/",
+    "status": 200
+  },
+  {
+    "route": "/jeddah/seo/",
+    "status": 200
+  },
+  {
+    "route": "/riyadh/seo/",
+    "status": 200
+  },
+  {
+    "route": "/services/seo/",
+    "status": 200
+  },
+  {
+    "route": "/services/content-marketing/",
+    "status": 200
+  },
+  {
+    "route": "/dammam/seo/",
+    "status": 200
+  },
+  {
+    "route": "/blog/arabic-vs-english-seo-saudi-arabia/",
+    "status": 200
+  },
+  {
+    "route": "/blog/local-seo-saudi-businesses-guide/",
+    "status": 200
+  },
+  {
+    "route": "/blog/",
+    "status": 200
+  },
+  {
+    "route": "/blog/technical-seo-audit-saudi-websites/",
+    "status": 200
+  },
+  {
+    "route": "/blog/seo-services-saudi-arabia-guide/",
+    "status": 200
+  },
+  {
+    "route": "/blog/seo-cost-saudi-arabia-scope-guide/",
+    "status": 200
+  },
+  {
+    "route": "/blog/riyadh-seo-strategy-guide/",
+    "status": 200
+  },
+  {
+    "route": "/privacy-policy/",
+    "status": 200
+  },
+  {
+    "route": "/blog/organic-content-strategy-saudi-businesses/",
+    "status": 200
+  },
+  {
+    "route": "/blog/google-search-console-seo-measurement-guide/",
+    "status": 200
+  },
+  {
+    "route": "/contact/",
+    "status": 200
+  },
+  {
+    "route": "/case-studies/",
+    "status": 200
+  },
+  {
+    "route": "/case-studies/green-bags-uae/",
+    "status": 200
+  },
+  {
+    "route": "/case-studies/dubai-seo/",
+    "status": 200
+  },
+  {
+    "route": "/case-studies/riyadh-paid-ads/",
+    "status": 200
+  },
+  {
+    "route": "/case-studies/dammam-marketing/",
+    "status": 200
+  },
+  {
+    "route": "/case-studies/jeddah-web-development/",
+    "status": 200
+  },
+  {
+    "route": "/case-studies/abu-dhabi-social-media/",
+    "status": 200
+  },
+  {
+    "route": "/case-studies/sharjah-ai-automation/",
+    "status": 200
+  },
+  {
+    "route": "/blog/claude-design-launch-uae-businesses-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/claude-opus-4-7-guide-uae-businesses-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/sharjah-business-directory-guide-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/google-maps-seo-uae-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/ai-content-vs-human-content-2026-google-update-uae/",
+    "status": 200
+  },
+  {
+    "route": "/blog/seo-for-uae-businesses-complete-guide-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/how-to-choose-a-digital-marketing-agency-in-dubai/",
+    "status": 200
+  },
+  {
+    "route": "/blog/paid-ads-guide-uae-saudi-arabia-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/social-media-management-dubai-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/web-development-dubai-business-site-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/ai-automation-for-small-business-uae/",
+    "status": 200
+  },
+  {
+    "route": "/blog/digital-marketing-riyadh-saudi-businesses-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/saas-development-uae-startup-guide/",
+    "status": 200
+  },
+  {
+    "route": "/blog/seo-jeddah-guide-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/marketing-roi-tracking-gcc-businesses/",
+    "status": 200
+  },
+  {
+    "route": "/blog/abu-dhabi-digital-marketing-guide-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/sharjah-digital-marketing-seo-guide/",
+    "status": 200
+  },
+  {
+    "route": "/blog/dammam-digital-marketing-eastern-province/",
+    "status": 200
+  },
+  {
+    "route": "/blog/how-to-rank-on-google-maps-uae/",
+    "status": 200
+  },
+  {
+    "route": "/blog/digital-marketing-budget-uae-sme-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/linkedin-marketing-b2b-uae-saudi-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/ecommerce-marketing-uae-saudi-guide-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/content-marketing-strategy-uae-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/digital-transformation-uae-sme-guide/",
+    "status": 200
+  },
+  {
+    "route": "/blog/why-your-uae-website-isnt-ranking-on-google/",
+    "status": 200
+  },
+  {
+    "route": "/blog/ai-search-optimization-2026-playbook/",
+    "status": 200
+  },
+  {
+    "route": "/blog/snapchat-ads-saudi-arabia-conversion-guide-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/vet-digital-consultant-dubai-checklist/",
+    "status": 200
+  },
+  {
+    "route": "/blog/rank-on-google-dubai-2025/",
+    "status": 200
+  },
+  {
+    "route": "/blog/tracking-marketing-roi-gcc-dashboard-guide/",
+    "status": 200
+  },
+  {
+    "route": "/blog/snapchat-ads-cpa-benchmarks-saudi-arabia-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/bilingual-seo-dubai-b2b-guide/",
+    "status": 200
+  },
+  {
+    "route": "/blog/riyadh-ecommerce-conversion-fixes/",
+    "status": 200
+  },
+  {
+    "route": "/blog/google-vs-snapchat-ads-saudi-roi/",
+    "status": 200
+  },
+  {
+    "route": "/blog/ai-automation-uae-sme-tasks/",
+    "status": 200
+  },
+  {
+    "route": "/blog/linkedin-vs-tiktok-b2b-dubai/",
+    "status": 200
+  },
+  {
+    "route": "/blog/digital-marketing-budget-jeddah-2026/",
+    "status": 200
+  },
+  {
+    "route": "/blog/agency-vs-consultant-vs-freelancer-uae/",
+    "status": 200
+  },
+  {
+    "route": "/blog/google-march-2026-core-update-dubai-riyadh/",
+    "status": 200
+  },
+  {
+    "route": "/blog/snapchat-ads-uae-ksa-2026-ramadan-data/",
+    "status": 200
+  },
+  {
+    "route": "/blog/ai-automation-2026-agentic-ai-uae-businesses/",
+    "status": 200
+  },
+  {
+    "route": "/contact",
+    "status": 200
+  },
+  {
+    "route": "/services/ai-automation",
+    "status": 200
+  }
+]

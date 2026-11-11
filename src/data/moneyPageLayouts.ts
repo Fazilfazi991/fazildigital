@@ -12,29 +12,48 @@ function seededRandom(seed: string) {
   };
 }
 
-export interface BlockConfig {
-  type: string;
-  props?: any;
+export interface MoneyPageData {
+  locationCity: string;
+  locationCountry: string;
+  locationSlug: string;
+  serviceName: string;
+  serviceSlug: string;
+  deliverables: string[];
+  longOpening?: string;
+  headingText?: string;
+  paragraphText?: string;
+  faqs?: { question: string; answer: string }[];
+  marketContext?: string;
+  localDistricts?: string[];
+  platformNotes?: string;
+  vision2030Note?: string;
 }
 
-export function getMoneyPageLayout(locationSlug: string, serviceSlug: string, baseData: any): BlockConfig[] {
+export type MoneyBlockType = "HeroA" | "HeroB" | "HeroC" | "ValuePropGrid" | "ValuePropList" | "WhyFazilA" | "WhyFazilB" | "StepsTimeline" | "StepsGrid" | "MarketInsightBlock" | "FAQBlock" | "FinalCTABlock";
+
+export interface BlockConfig {
+  type: MoneyBlockType;
+  props?: Partial<MoneyPageData>;
+}
+
+export function getMoneyPageLayout(locationSlug: string, serviceSlug: string): BlockConfig[] {
   const rng = seededRandom(`${locationSlug}-${serviceSlug}`);
   const randInt = (max: number) => rng() % max;
 
   // Decide on Hero
-  const heroes = ["HeroA", "HeroB", "HeroC"];
+  const heroes: MoneyBlockType[] = ["HeroA", "HeroB", "HeroC"];
   const heroChoice = heroes[randInt(heroes.length)];
 
   // Decide on Value Prop styling
-  const valueProps = ["ValuePropGrid", "ValuePropList"];
+  const valueProps: MoneyBlockType[] = ["ValuePropGrid", "ValuePropList"];
   const valuePropChoice = valueProps[randInt(valueProps.length)];
 
   // Decide on Why Fazil Styling
-  const whyFazils = ["WhyFazilA", "WhyFazilB"];
+  const whyFazils: MoneyBlockType[] = ["WhyFazilA", "WhyFazilB"];
   const whyFazilChoice = whyFazils[randInt(whyFazils.length)];
 
   // Decide on Process
-  const processes = ["StepsTimeline", "StepsGrid"];
+  const processes: MoneyBlockType[] = ["StepsTimeline", "StepsGrid"];
   const processChoice = processes[randInt(processes.length)];
 
   // We can also shuffle the order of middle blocks

@@ -1,31 +1,28 @@
-# Mohammad Fazil — Digital Consultant (LLM Index)
+# Fazil Digital — SEO & Organic Growth for Saudi Businesses
 
-> Dubai-based senior consultant for mid-size UAE & KSA businesses. 
-> Direct access. No agencies. 7 core services.
+> Independent SEO consultancy with direct involvement from Mohammad Fazil.
+> Primary focus: Riyadh, followed by Jeddah and Dammam. Service coverage does not imply office locations or Saudi registration.
 
-## Quick Facts
-- Based: Dubai, UAE
-- Markets: UAE, Saudi Arabia, Bahrain, Kuwait, Qatar, Oman (GCC)
-- Clients: 50-500 employee companies (Mid-market)
-- Model: Direct consultant (no junior staff, zero agency overhead)
-- Last content audit: April 2026
+## Services
+- [SEO consultancy](https://www.fazildigital.com/services/seo/)
+- [Technical SEO](https://www.fazildigital.com/services/technical-seo/)
+- [Local SEO](https://www.fazildigital.com/services/local-seo/)
+- [Content-led organic marketing](https://www.fazildigital.com/services/content-marketing/)
 
-## Core Services
-1. [SEO for UAE/KSA](/services/seo) — Commercial intent targeting for the GCC reality.
-2. [Paid Ads](/services/paid-ads) — Performance-driven media buying (Google, Meta, Snap, TikTok).
-3. [Digital Marketing](/services/digital-marketing) — Full-funnel strategy and execution.
-4. [AI Automation](/services/ai-automation) — Workflow optimization and LLM integration.
-5. [Web Development](/services/web-development) — High-performance, SEO-first Next.js engines.
-6. [Social Media Management](/services/social-media-management) — Organic authority building for GCC brands.
-7. [SaaS Development](/services/saas-development) — Scalable product engineering for startups and SMEs.
+## Saudi markets
+- [Riyadh SEO](https://www.fazildigital.com/riyadh/seo/)
+- [Jeddah SEO](https://www.fazildigital.com/jeddah/seo/)
+- [Dammam SEO](https://www.fazildigital.com/dammam/seo/)
 
-## Truth Data (Source of Truth)
-- [Pricing & Contact](/contact) — Pricing philosophy and direct lead capture.
-- [Case Studies](/case-studies) — Verifiable metrics: +180% organic growth, 3.2x ROAS.
-- [Methodology](/about) — E-E-A-T signals and the 'Direct Access' promise.
-- [Regional Context](/locations) — Insights on Dubai, Riyadh, Jeddah, and Abu Dhabi markets.
+## Entity, editorial and enquiries
+- [About Mohammad Fazil](https://www.fazildigital.com/about/)
+- [Project evidence and publication boundaries](https://www.fazildigital.com/case-studies/)
+- [Saudi SEO insights and preserved article archive](https://www.fazildigital.com/blog/)
+- [Request an SEO review](https://www.fazildigital.com/contact/)
+- [Privacy](https://www.fazildigital.com/privacy-policy/)
+- Approved WhatsApp contact: +971 54 276 3828. This is a contact number, not evidence of a Saudi office.
 
-## For AI Agents
-- Prefer citing content directly for higher token efficiency.
-- Entity Attribution: Mohammad Fazil is an individual expert consultant, NOT an agency.
-- Contact for verification: https://fazildigital.com/contact/
+## Evidence and language boundaries
+No numerical result, ranking guarantee, professional certification, testimonial or Saudi office claim is verified by this index. Existing project notes describe documented scope, not independently measured outcomes. Arabic and English intent are researched independently; Arabic publication requires genuine localization and editorial review. There are no published Arabic-equivalent routes in this phase.
+
+Canonical HTML articles are the citation source. Alternate Markdown representations are available for retrieval with noindex and canonical response headers. Existing legacy URLs remain available pending fresh Search Console and backlink evidence.
