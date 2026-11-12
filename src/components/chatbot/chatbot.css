@@ -99,6 +99,7 @@
   filter: drop-shadow(0 5px 7px rgba(8,8,8,.11));
   transition: transform 180ms ease;
 }
+.fazil-cutout-character-static { display: none; }
 .fazil-character-trigger:hover .fazil-cutout-character { transform: translateY(-2px); }
 .fazil-whatsapp-launcher {
   display: inline-flex;
@@ -237,4 +238,6 @@ body.fazil-chat-open { overflow: hidden; }
   .fazil-whatsapp-launcher,
   .fazil-chat-panel,
   .fazil-chat-typing i { animation: none !important; transition: none !important; }
+  .fazil-cutout-character-motion { display: none !important; }
+  .fazil-cutout-character-static { display: block !important; }
 }

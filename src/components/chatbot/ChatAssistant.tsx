@@ -285,11 +285,22 @@ export function ChatAssistant() {
             onClick={openAssistant}
           >
             <Image
-              className="fazil-cutout-character"
+              className="fazil-cutout-character fazil-cutout-character-motion"
+              src="/images/chatbot/fazil-mini-loop.gif"
+              width={176}
+              height={228}
+              sizes="(max-width: 360px) 88px, (max-width: 640px) 98px, 164px"
+              alt=""
+              aria-hidden="true"
+              unoptimized
+              priority={false}
+            />
+            <Image
+              className="fazil-cutout-character fazil-cutout-character-static"
               src="/images/chatbot/fazil-mini-cutout.webp"
               width={520}
               height={688}
-              sizes="(max-width: 360px) 116px, (max-width: 640px) 136px, 164px"
+              sizes="(max-width: 360px) 88px, (max-width: 640px) 98px, 164px"
               alt=""
               aria-hidden="true"
               priority={false}
