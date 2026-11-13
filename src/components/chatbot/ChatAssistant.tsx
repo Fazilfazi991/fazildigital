@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
-import { getChatbotGreeting } from "@/lib/chatbot/greetings";
 import "./chatbot.css";
 
 type Message = { role: "assistant" | "user"; content: string };
@@ -22,7 +21,6 @@ const suggestions = [
   "I run a business in Calicut",
 ];
 const handoffLink = "https://wa.me/918086191325";
-const greetingStorageKey = "fazil-digital-assistant-greeting-seen:v2";
 
 function track(name: "chat_open" | "chat_message_sent" | "chat_handoff_intent" | "chat_error") {
   window.gtag?.("event", name);
@@ -47,11 +45,6 @@ export function ChatAssistant() {
   const [city, setCity] = useState("");
   const [goal, setGoal] = useState("");
   const [copied, setCopied] = useState(false);
-  const [dockVisible, setDockVisible] = useState(false);
-  const [dockSafe, setDockSafe] = useState(true);
-  const [greetingSafe, setGreetingSafe] = useState(true);
-  const [greetingVisible, setGreetingVisible] = useState(false);
-  const greetingSeenRef = useRef(false);
   const characterTriggerRef = useRef<HTMLButtonElement>(null);
   const restoreFocusRef = useRef(false);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -66,79 +59,6 @@ export function ChatAssistant() {
       .catch(() => { if (active) setAvailability("unavailable"); });
     return () => { active = false; };
   }, []);
-
-  useEffect(() => {
-    if (!dockVisible) return;
-    const assessDockSpace = () => {
-      if (window.innerWidth > 640) { setDockSafe(true); setGreetingSafe(true); return; }
-      const dock = document.querySelector<HTMLElement>(".fazil-contact-dock");
-      if (!dock) { setDockSafe(true); return; }
-      const dockBounds = dock.getBoundingClientRect();
-      const bounds = {
-        top: dockBounds.top - 48,
-        bottom: dockBounds.bottom + 24,
-        left: dockBounds.left - 12,
-        right: dockBounds.right + 12,
-      };
-      const importantElements = Array.from(document.querySelectorAll<HTMLElement>("main h1, main h2, main h3, main a, main button, main form input, main form textarea, main form select, main form label, body footer:not(.fazil-chat-footer)"));
-      const overlapsImportantContent = importantElements
-        .some((element) => {
-          if (element.closest(".fazil-contact-dock")) return false;
-          const rect = element.getBoundingClientRect();
-          return rect.bottom > 0 && rect.top < window.innerHeight && rect.right > bounds.left && rect.left < bounds.right && rect.bottom > bounds.top && rect.top < bounds.bottom;
-        });
-      const greeting = dock.querySelector<HTMLElement>(".fazil-character-greeting");
-      const greetingBounds = greeting?.getBoundingClientRect();
-      const overlapsGreetingCopy = !!greetingBounds && Array.from(document.querySelectorAll<HTMLElement>("main p, main li"))
-        .some((element) => {
-          const rect = element.getBoundingClientRect();
-          return rect.bottom > 0 && rect.top < window.innerHeight && rect.right > greetingBounds.left && rect.left < greetingBounds.right && rect.bottom > greetingBounds.top && rect.top < greetingBounds.bottom;
-        });
-      setDockSafe(!overlapsImportantContent);
-      setGreetingSafe(!overlapsImportantContent && !overlapsGreetingCopy);
-    };
-    assessDockSpace();
-    window.addEventListener("scroll", assessDockSpace, { passive: true });
-    window.addEventListener("resize", assessDockSpace);
-    return () => {
-      window.removeEventListener("scroll", assessDockSpace);
-      window.removeEventListener("resize", assessDockSpace);
-    };
-  }, [dockVisible]);
-
-  useEffect(() => {
-    let mounted = false;
-    const updateDockVisibility = () => {
-      const visible = window.scrollY > 120;
-      setDockVisible(visible);
-      if (mounted && !visible) setGreetingVisible(false);
-    };
-    updateDockVisibility();
-    mounted = true;
-    window.addEventListener("scroll", updateDockVisibility, { passive: true });
-    return () => window.removeEventListener("scroll", updateDockVisibility);
-  }, []);
-
-  useEffect(() => {
-    if (!dockVisible || open) return;
-
-    try {
-      if (window.sessionStorage.getItem(greetingStorageKey)) {
-        greetingSeenRef.current = true;
-        return;
-      }
-    } catch {
-      // Keep the greeting limited to one appearance during this component session.
-    }
-
-    if (greetingSeenRef.current) return;
-    const timer = window.setTimeout(() => {
-      greetingSeenRef.current = true;
-      setGreetingVisible(true);
-      try { window.sessionStorage.setItem(greetingStorageKey, "shown"); } catch { /* Session-only fallback is held in the ref. */ }
-    }, 900);
-    return () => window.clearTimeout(timer);
-  }, [dockVisible, open]);
 
   useEffect(() => {
     if (open) {
@@ -165,17 +85,8 @@ export function ChatAssistant() {
   }
 
   function openAssistant() {
-    greetingSeenRef.current = true;
-    setGreetingVisible(false);
-    try { window.sessionStorage.setItem(greetingStorageKey, "shown"); } catch { /* The greeting stays dismissed for this component session. */ }
     setOpen(true);
     track("chat_open");
-  }
-
-  function dismissGreeting() {
-    greetingSeenRef.current = true;
-    setGreetingVisible(false);
-    try { window.sessionStorage.setItem(greetingStorageKey, "shown"); } catch { /* The greeting stays dismissed for this component session. */ }
   }
 
   function onDialogKeyDown(event: React.KeyboardEvent) {
@@ -262,20 +173,15 @@ export function ChatAssistant() {
   }
 
   const greeting = isCalicut ? calicutGreeting : saudigreeting;
-  const floatingGreeting = getChatbotGreeting(normalizedPathname);
-
   return (
     <>
-      {!open && dockVisible && <div className={`fazil-contact-dock${greetingVisible ? " is-greeting" : ""}${dockSafe ? "" : " is-content-overlap"}`} role="group" aria-label="AI assistant and WhatsApp contact">
-        {greetingVisible && <div className={`fazil-character-greeting${greetingSafe ? "" : " is-content-overlap"}`} role="status" aria-live="polite">
+      {!open && <div className="fazil-contact-dock" role="group" aria-label="AI assistant and WhatsApp contact">
+        <div className="fazil-character-greeting">
           <button type="button" className="fazil-greeting-open" onClick={openAssistant}>
-            <span>{floatingGreeting}</span>
-            <span className="fazil-greeting-cta">Ask my AI assistant</span>
+            <span>Hey! Need a hand?</span>
+            <span className="fazil-greeting-cta">Chat with Fazil Digital</span>
           </button>
-          <button type="button" className="fazil-greeting-dismiss" aria-label="Dismiss greeting" onClick={dismissGreeting}>
-            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
-          </button>
-        </div>}
+        </div>
         <div className="fazil-character-stage">
           <button
             type="button"
@@ -286,9 +192,9 @@ export function ChatAssistant() {
           >
             <Image
               className="fazil-cutout-character fazil-cutout-character-motion"
-              src="/images/chatbot/fazil-mini-loop.gif"
-              width={176}
-              height={228}
+              src="/images/chatbot/fazil-waving-slow.gif"
+              width={362}
+              height={362}
               sizes="(max-width: 360px) 88px, (max-width: 640px) 98px, 164px"
               alt=""
               aria-hidden="true"
@@ -297,9 +203,9 @@ export function ChatAssistant() {
             />
             <Image
               className="fazil-cutout-character fazil-cutout-character-static"
-              src="/images/chatbot/fazil-mini-cutout.webp"
-              width={520}
-              height={688}
+              src="/images/chatbot/fazil-waving-static.webp"
+              width={362}
+              height={362}
               sizes="(max-width: 360px) 88px, (max-width: 640px) 98px, 164px"
               alt=""
               aria-hidden="true"
