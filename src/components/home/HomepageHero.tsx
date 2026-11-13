@@ -63,9 +63,7 @@ export function HomepageHero() {
     <div className={styles.pitch}>
       <p className={styles.eyebrow}>MOHAMMAD FAZIL <span aria-hidden="true">·</span> SEO CONSULTANT</p>
       <h1 id="hero-title" className={styles.title}>I help businesses get found on <span>Google.</span></h1>
-      <p className={styles.intro}>SEO and organic growth for Saudi businesses. Let’s connect your website with the people already searching for your services.</p>
-      <div className={styles.actions}><a className={styles.primary} href="#enquiry-wizard">Request an SEO Review <Arrow /></a><a className={styles.secondary} href="#work">Explore My Work <span aria-hidden="true">↘</span></a></div>
-      <p className={styles.trust}><span aria-hidden="true">●</span> Direct, practical support from first review through implementation.</p>
+      <p className={styles.intro}>SEO and organic growth for Saudi businesses.</p>
     </div>
 
     <div className={styles.panel} id="enquiry-wizard">
