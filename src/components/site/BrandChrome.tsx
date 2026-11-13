@@ -10,7 +10,7 @@ const links: { label: string; href: string; homeHref?: string; current: (path: s
   { label: "Saudi Locations", href: "/locations/", current: path => path.startsWith("/riyadh/") || path.startsWith("/jeddah/") || path.startsWith("/dammam/") || path === "/locations/" },
   { label: "About Me", href: "/about/", current: path => path === "/about" || path === "/about/" },
   { label: "Insights", href: "/blog/", current: path => path === "/blog/" || path === "/blog" || path.startsWith("/blog/") },
-  { label: "Contact", homeHref: "#review", href: "/contact/", current: path => path === "/contact" || path === "/contact/" },
+  { label: "Contact", homeHref: "#enquiry-wizard", href: "/contact/", current: path => path === "/contact" || path === "/contact/" },
 ];
 
 function Arrow({ diagonal = false }: { diagonal?: boolean }) {
@@ -23,7 +23,7 @@ export function SiteHeader() {
   const isHome = pathname === "/";
   const isCalicut = pathname === "/digital-marketing-expert-calicut" || pathname === "/digital-marketing-expert-calicut/";
   const calicutContact = "/contact/?market=calicut#contact-prepare";
-  const reviewHref = isHome ? "#review" : isCalicut ? calicutContact : "/contact/";
+  const reviewHref = isHome ? "#enquiry-wizard" : isCalicut ? calicutContact : "/contact/";
   const navLinks = links.map(link => ({ ...link, href: link.homeHref && isHome ? link.homeHref : isCalicut && link.label === "Contact" ? calicutContact : link.href }));
 
   useEffect(() => {

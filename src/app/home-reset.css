@@ -39,5 +39,11 @@
 .fr-review .fr-whatsapp-action{display:inline-flex;min-height:44px;align-items:center;justify-content:center;gap:10px;margin-top:16px;padding:9px 13px;border:1px solid #080808;color:#080808;text-decoration:none;font-size:.82rem;font-weight:700;transition:color 160ms ease,background-color 160ms ease}
 .fr-review .fr-whatsapp-action:hover{color:#fff;background:#080808}
 .fr-review .fr-whatsapp-action:focus-visible{outline:3px solid #8A4A00;outline-offset:3px}
-@media(max-width:760px){.fr-service-primary .fr-review-lens ul{grid-template-columns:1fr}.fr-service-primary .fr-review-lens li{grid-template-columns:minmax(110px,.7fr) minmax(0,1fr)}.fr-service-primary{min-height:0}.fr-article-feature>strong{max-width:28ch!important;font-size:clamp(1.65rem,7vw,2.25rem)!important}}
+.fr-outcomes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--fr-border);border-bottom:1px solid var(--fr-border)}
+.fr-outcomes article{min-width:0;padding:24px 25px 28px;border-right:1px solid var(--fr-border)}
+.fr-outcomes article:first-child{padding-left:0}.fr-outcomes article:last-child{padding-right:0;border-right:0}
+.fr-outcomes article>span{color:#805000;font-size:.72rem;font-weight:750;letter-spacing:.08em}
+.fr-outcomes h3{margin:20px 0 7px;font-size:clamp(1.2rem,2vw,1.55rem);line-height:1.14;letter-spacing:-.035em}
+.fr-outcomes article>p{max-width:31ch;margin:0;color:var(--fr-muted);font-size:.91rem;line-height:1.5}
+@media(max-width:760px){.fr-service-primary .fr-review-lens ul{grid-template-columns:1fr}.fr-service-primary .fr-review-lens li{grid-template-columns:minmax(110px,.7fr) minmax(0,1fr)}.fr-service-primary{min-height:0}.fr-article-feature>strong{max-width:28ch!important;font-size:clamp(1.65rem,7vw,2.25rem)!important}.fr-outcomes{grid-template-columns:1fr}.fr-outcomes article,.fr-outcomes article:first-child,.fr-outcomes article:last-child{padding:19px 0;border-right:0;border-bottom:1px solid var(--fr-border)}.fr-outcomes article:last-child{border-bottom:0}}
 @media(prefers-reduced-motion:reduce){.fr-step-tabs button,.fr-review .fr-whatsapp-action{transition:none}}

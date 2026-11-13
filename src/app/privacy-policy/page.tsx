@@ -16,11 +16,11 @@ export default function PrivacyPolicyPage() {
         <div className="space-y-8 text-text-muted text-lg leading-relaxed">
           <section>
             <h2 className="text-2xl font-heading font-bold text-bg-base mb-3">Information you choose to share</h2>
-            <p>The contact form prepares a WhatsApp message using the name, email address, preferred contact method, and business information you enter. The website does not submit or store that form data in its own database. You can review the message in WhatsApp before choosing whether to send it.</p>
+            <p>If you submit an enquiry, Fazil Digital receives the name, service and priority you select, any optional details or website you provide, and your chosen reply contact. The site sends this information through Resend, an email delivery provider, to Fazil Digital’s enquiry inbox so Mohammad can respond. The website does not store enquiry content in its own database. The email provider and receiving mailbox may retain the message under their own terms and retention settings. Do not include passwords, payment details, or sensitive personal information.</p>
           </section>
           <section>
             <h2 className="text-2xl font-heading font-bold text-bg-base mb-3">External services</h2>
-            <p>Links to WhatsApp, email, and LinkedIn take you to third-party services. Information you send through those services is handled under their respective privacy terms. This website is hosted by an external hosting provider, which may process routine technical logs needed to deliver and secure the site.</p>
+            <p>Enquiry emails are delivered through Resend and sent to the Fazil Digital enquiry inbox. The site also uses Upstash Redis for abuse prevention: it processes a keyed, pseudonymous IP identifier and a keyed duplicate-submission fingerprint with short-lived counters and locks (up to ten minutes). The raw IP and enquiry text are not stored in those Redis keys. WhatsApp, email, and LinkedIn links open third-party services that handle information you send under their own terms. The hosting provider may process routine technical logs needed to deliver and secure the site.</p>
           </section>
           <section>
             <h2 className="text-2xl font-heading font-bold text-bg-base mb-3">AI chat</h2>
@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
           </section>
           <section>
             <h2 className="text-2xl font-heading font-bold text-bg-base mb-3">Analytics and advertising</h2>
-            <p>Google Analytics support is built into the site but only activates when a valid measurement ID is configured. When active, it records page views and interaction events such as contact-form continuation, WhatsApp clicks, email clicks and chatbot interaction counts. Chat analytics events do not include message text, pasted website addresses or other message contents. Contact-form analytics events do not include the name, email address, phone number or message entered into the contact form.</p>
+            <p>Google Analytics support is built into the site but only activates when a valid measurement ID is configured. When active, it records page views and interaction events such as enquiry steps, the selected service category, successful or failed submission, WhatsApp clicks, email clicks and chatbot interaction counts. Enquiry analytics do not include your name, phone number, email address, website, selected priority or free-text details. Chat analytics do not include message text, pasted website addresses or other message contents.</p>
           </section>
           <section>
             <h2 className="text-2xl font-heading font-bold text-bg-base mb-3">Questions or requests</h2>

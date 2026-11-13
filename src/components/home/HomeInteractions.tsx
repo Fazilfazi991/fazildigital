@@ -20,7 +20,7 @@ export function MobileMenu() {
   return <details ref={menu} className="fd-mobile-menu">
     <summary aria-label="Toggle main navigation"><span>Menu</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 8h16M4 16h16" /></svg></summary>
     <nav aria-label="Mobile navigation" onClick={(event) => { if ((event.target as Element).closest("a") && menu.current) menu.current.open = false; }}>
-      <Link href="/" aria-current="page">Home</Link><a href="#services">SEO Services</a><a href="#locations">Locations</a><a href="#insights">Insights</a><Link href="/about/">About</Link><a href="#review">Contact</a><a href="#review" className="fd-button">Request an SEO Review</a>
+      <Link href="/" aria-current="page">Home</Link><a href="#services">SEO Services</a><a href="#locations">Locations</a><a href="#insights">Insights</a><Link href="/about/">About</Link><a href="#enquiry-wizard">Contact</a><a href="#enquiry-wizard" className="fd-button">Request an SEO Review</a>
     </nav>
   </details>;
 }
